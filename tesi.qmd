@@ -1,0 +1,43 @@
+---
+title: 'Informazioni per la tesi di laurea'
+lang: it
+---
+
+In questo documento vengono raccolti suggerimenti ed indicazioni pratiche relative alla tesi di laurea. 
+
+Per chiedere informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento ogni **Martedì alle ore 17.30**.
+
+## Il software LaTeX {.central}
+
+L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura della tesi è [caldamente raccomandato]{.blue}. 
+
+LaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare [Overleaf](https://www.overleaf.com). Per una [guida in italiano]{.blue} all'uso di LaTeX si consiglia [LaTeX per l'impaziente](http://www.lorenzopantieri.net/LaTeX_files/LaTeXimpaziente.pdf) oppure [l'Arte di scrivere con LaTeX](http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf).
+
+Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). Se compilato, il risultato finale dovrebbe coincidere con [questo file](files/template_tesi.pdf), in formato .pdf.
+
+Si suggeriscono inoltre le seguenti [linee guida per la scrittura di testi matematici](http://www-math.mit.edu/~poonen/papers/writing.pdf).
+
+## Tesi passate (triennali e magistrali) {.central}
+
+Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore oppure correlatore.
+
+| Laurea | Candidata/o | Titolo |
+|:-------:|:------------:|:-------|
+| [Triennale]{.blue} | Marco Carrettoni | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf) |
+| [Triennale]{.blue} | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf) |
+| [Triennale]{.blue} | Erica Delvino | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf) |
+| [Triennale]{.blue} | Tommaso Menghini | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf) |
+| [Triennale]{.blue} | Anna Petranzan | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf) |
+| [Magistrale]{.blue} | Davide Agnoletto | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf) |
+
+## FAQ {.central}
+
+1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue}. Inoltre, non è ovviamente possibile laurearsi senza aver superato tutti gli esami. Pertanto, è fortemente raccomandato concludere gli esami prima di cominciare a lavorare alla tesi a tempo pieno.
+
+2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente validi e innovativi. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.
+
+3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici.
+
+4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca.
+
+5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato.

@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Pace \& Salvan(2001)}]{pacesalvan}
+\textsc{Pace, L.} \& \textsc{Salvan, A.} (2001).
+\newblock \textit{Introduzione alla statistica II}.
+\newblock Cedam.
+
+\end{thebibliography}

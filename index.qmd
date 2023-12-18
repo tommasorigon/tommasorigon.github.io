@@ -1,0 +1,197 @@
+---
+title: "Tommaso Rigon"
+subtitle: "Assistant Professor at University of Milano-Bicocca"
+page-layout: full
+about:
+  template: solana
+  image-width: 8em
+  image: images/profile.jpg
+  image-shape: round
+  links:
+    - icon: journal-text
+      text: "Curriculum vitae"
+      href: files/cv_Rigon.pdf
+    - icon: envelope-at
+      text: "Email address"
+      href: "mailto: tommaso.rigon@unimib.it"
+    - icon: google
+      text: "Google scholar"
+      href: https://scholar.google.it/citations?user=vRRVHqgAAAAJ&hl=en
+    - icon: github
+      text: "Github"
+      href: https://github.com/tommasorigon
+---
+
+----------------------------------------------------------------
+
+## About me {.central}
+
+I am an Assistant Professor of Statistical Science (RTD-B, SECS-S/01) at the [department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
+
+I am a member of the [Datalab](https://datalab.unimib.it) at the University of Milano-Bicocca, the [BayesLab](https://bayeslab.unibocconi.eu) at the Bocconi Institute for Data Science and Analytics (BIDSA), and the [MIDAS Complex Data Modeling Research Network](https://midas.mat.uc.cl/network/).
+
+My complete curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of publications is available [here](papers.qmd).
+
+[Research interests]{.blue}: applied Bayesian modeling; Bayesian clustering, Bayesian nonparametrics, computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.
+
+[E-mail]{.blue}:  tommaso.rigon@unimib.it
+
+----------------------------------------------------------------------
+
+<!-- My complete curriculum vitae is available at [this link](files/cv_Rigon.pdf).  -->
+
+<!-- --------------------------------------------------------------------- -->
+
+## News and awards {.central}
+
+[[2024]{.blue}] I will travel to Madagascar for the [annual meeting]{.blue} of [LIFEPLAN](https://cordis.europa.eu/project/id/856506) (a planetary inventory of life), awarded an [ERC Synergy Grant]{.blue} focusing on global biodiversity research.
+
+[[2024]{.blue}] [Daniele Durante](https://danieledurante.github.io/web/) was awarded an [ERC Starting Grant]{.blue} for the project [NEMESIS](https://danieledurante.github.io/web/nemesis.html), focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!
+
+[[2022]{.blue}] [National Scientific Qualification for Associate Professor in Statistics (13/D1)]{.blue}. 
+
+[[2021]{.blue}] [Young Talents Award 2021]{.blue}. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [[Award](https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf)]
+
+[[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)]
+
+[[2016]{.blue}] [Best Ph.D. student in Statistics]{.blue}, Bocconi University, Academic Year 2016/2017 (09/2017).
+
+----------------------------------------------------------------------
+
+## Academic positions {.central}
+
+
+:::: {layout="[14, 0, 90]"}
+
+::: {#second-column}
+![](images/logoB.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[University of Milano-Bicocca]{.blue}, Department of Economics, Management and Statistics (DEMS), Milan, Italy.
+
+- Assistant Professor (RTD-B), 2023 - Present
+- Assistant Professor (RTD-A), 2020 - 2023
+
+<!-- [I am currently an [Assistant Professor](https://en.unimib.it/tommaso-rigon) (_RTD-B_) at [University of Milano-Bicocca](https://en.unimib.it). I have been a fixed-term Assistant Professor (_RTD-A_), at the same institution from 2020 to 2023.]{.small} -->
+:::
+::::
+
+
+:::: {layout="[14, 0, 90]"}
+
+::: {#second-column}
+![](images/logoD.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Duke University]{.blue}, Department of Statistical Science, Durham (NC), U.S.A.
+
+- Postdoctoral Associate, 2020 - 2020
+- Research Associate, 2019 - 2020
+
+I worked with prof. [Amy Herring](https://scholars.duke.edu/person/Amy.Herring) and prof. [David Dunson](https://scholars.duke.edu/person/dunson). My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.
+:::
+::::
+
+:::: {layout="[14, 0, 90]"}
+
+::: {#second-column}
+![](images/logoCCA.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Collegio Carlo Alberto]{.blue}, Fondazione "de Castro" and Collegio Carlo Alberto, Turin, Italy.
+
+- Research Affiliate, 2017 - 2020
+
+I have been a Research affiliate at the [Statistics initiative](https://www.carloalberto.org/research/statistics-initiative/).
+:::
+::::
+
+---------------------------------------------------------------------
+
+
+## Education {.central}
+
+:::: {layout="[14, 0, 90]"}
+
+::: {#second-column}
+![](images/logoBocconi.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Ph.D. in Statistical Sciences]{.blue}, [Bocconi University](https://www.unibocconi.eu/), Milan, Italy.
+
+Period 2015--2020. Ph.D. awarded with honors.
+
+Thesis title: [*Finite-dimensional nonparametric priors: theory and applications*](files/papers/PhDThesis.pdf).  
+
+I worked under the joint supervision of  prof. [Antonio Lijoi](http://mypage.unibocconi.eu/antoniolijoi/) and prof. [Igor Prünster](http://mypage.unibocconi.eu/igorpruenster/). 
+
+:::
+
+
+::::
+
+:::: {layout="[14, 0, 90]"}
+
+
+::: {#second-column}
+![](images/logoP.png)
+:::
+
+::: {#middle-column}
+:::
+
+
+::: {#first-column}
+[M.Sc. in Statistical Sciences]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
+
+Period 2013 - 2015. Final mark: 110/110 with laude.
+
+Thesis title: [*Functional telecommunication data: a Bayesian nonparametric approach*](http://tesi.cab.unipd.it/49380/1/Rigon_Tommaso.pdf). 
+
+Advisor: [Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa/).
+:::
+
+
+::::
+
+:::: {layout="[14, 0, 90]"}
+
+::: {#second-column}
+![](images/logoP.png)
+:::
+
+
+::: {#middle-column}
+:::
+
+
+::: {#first-column}
+[B.Sc. in Statistics, Economics & Finance]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
+
+Period 2010--2013. Final mark: 110/110 with laude.
+
+Thesis title: [Box-Cox transformation: an analysis based on the likelihood](http://tesi.cab.unipd.it/42884/1/Rigon_Tommaso.pdf). 
+
+Advisor: [Nicola Sartori](https://homes.stat.unipd.it/nicolasartori/en/content/home).
+:::
+
+
+::::
+
+

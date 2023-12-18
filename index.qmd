@@ -44,7 +44,7 @@ My complete curriculum vitae is available [here](files/cv_Rigon.pdf). A complete
 
 ## News and awards {.central}
 
-[[2024]{.blue}] I will travel to Madagascar for the [annual meeting]{.blue} of [LIFEPLAN](https://cordis.europa.eu/project/id/856506) (a planetary inventory of life), awarded an [ERC Synergy Grant]{.blue} focusing on global biodiversity research.
+[[2024]{.blue}] I will travel to Madagascar for the [annual meeting]{.blue} of [LIFEPLAN](https://cordis.europa.eu/project/id/856506) (a planetary inventory of life), funded by an [ERC Synergy Grant]{.blue} focusing on global biodiversity research.
 
 [[2024]{.blue}] [Daniele Durante](https://danieledurante.github.io/web/) was awarded an [ERC Starting Grant]{.blue} for the project [NEMESIS](https://danieledurante.github.io/web/nemesis.html), focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!
 

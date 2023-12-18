@@ -15,22 +15,22 @@
 
 1. Catalano, M., Lijoi, A., Prünster, I. and **Rigon, T.** (2023). Bayesian modeling via discrete nonparametric priors. *Japanese Journal of Statistics and Data Science*, **6**, 607--624 [[Link](https://link.springer.com/article/10.1007/s42081-023-00210-5)]
 
+1. Lijoi, A., Prünster, I. and **Rigon, T.** (2023). Finite-dimensional discrete random structures and Bayesian clustering. *Journal of the American Statistical Association (T&M)*, forthcoming. [[Link]](https://www.tandfonline.com/doi/full/10.1080/01621459.2022.2149406).
+
+1. **Rigon, T.** (2023). An enriched mixture model for functional clustering. *Applied Stochastic Models in Business and Industry*, **39**, 232--250  [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/asmb.2736).
+
 1. **Rigon, T.** and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. *Statistics and Probability Letters*, **202**, 109901. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715223001256) [[Github repository]](https://github.com/tommasorigon/logistic-bias-reduction)
     
 1. **Rigon, T.**, Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. *Biometrika*, **110**(3), 559--578. [[Link]](https://doi.org/10.1093/biomet/asad004) [[Github repository]](https://github.com/tommasorigon/GBClust).
 
-1. Lijoi, A., Prünster, I. and **Rigon, T.** (2023). Finite-dimensional discrete random structures and Bayesian clustering. *Journal of the American Statistical Association (T&M)*, forthcoming. [[Link]](https://www.tandfonline.com/doi/full/10.1080/01621459.2022.2149406).
-
 1. Zito, A., **Rigon, T.** and Dunson, D. B. (2023).  Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. *Methods in Ecology and Evolution*, **14**, 529--542 [[Link]](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14009) [[GitHub Repository]](https://alessandrozito.github.io/BayesANT/vignette.html)
+
+1. Legramanti, S., **Rigon, T.**, Durante, D. and Dunson D. B. (2022).  Extended stochastic block models with application to criminal networks. *Annals of Applied Statistics*  **16**(4), 2369--2395. [[Link]](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-4/Extended-stochastic-block-models-with-application-to-criminal-networks/10.1214/21-AOAS1595.full) [[GitHub repository]](https://github.com/danieledurante/ESBM).
 
 1. Reverberi, C., **Rigon, T.**, Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. *Scientific Reports*, **12**(14952) [[Link]](https://www.nature.com/articles/s41598-022-18751-2)
 
-1. **Rigon, T.** (2023). An enriched mixture model for functional clustering. *Applied Stochastic Models in Business and Industry*, **39**, 232--250  [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/asmb.2736).
-
 1. Zito, A., **Rigon, T.**, Ovaskainen, O. and Dunson, D. B. (2022).  Bayesian modelling of sequential discoveries. *Journal of the American Statistical Association (T&M)*, forthcoming. [[Link]](https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2060835) [[GitHub Repository]](https://alessandrozito.github.io/BNPvegan/vignette.html).
 
-1. Legramanti, S., **Rigon, T.**, Durante, D. and Dunson D. B. (2022).  Extended stochastic block models with application to criminal networks. *Annals of Applied Statistics*  **16**(4), 2369--2395. [[Link]](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-4/Extended-stochastic-block-models-with-application-to-criminal-networks/10.1214/21-AOAS1595.full) [[GitHub repository]](https://github.com/danieledurante/ESBM).
-   
 1. Favaro, S., Panero, F. and **Rigon, T.** (2021). Bayesian nonparametric disclosure risk assessment. *Electronic Journal of Statistics* **15**(2), 5626--5651. [[Link]](https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/Bayesian-nonparametric-disclosure-risk-assessment/10.1214/21-EJS1933.full).
 
 1. **Rigon, T.** and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. *Journal of Statistical Planning and inference* **211**, 131--142. [[Link]](https://www.sciencedirect.com/science/article/pii/S0378375818300697?dgcid=author) [[GitHub Repository]](https://github.com/tommasorigon/LSBP).
@@ -43,9 +43,9 @@
 
 1. Durante, D. and **Rigon, T.** (2019). Conditionally conjugate mean-field variational Bayes for logistic models. *Statistical Science* **34**(3), 472--485. [[Link]](https://projecteuclid.org/euclid.ss/1570780980) [[GitHub Repository]](https://github.com/tommasorigon/logisticVB).
 
-1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society, Series A* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub Repository]](https://github.com/tommasorigon/India-SequentiaLogit).
-
 1. Durante, D., Canale, A. and **Rigon, T.** (2019).  A nested expectation-maximization algorithm for latent class models with covariates. *Statistics and Probability Letters* **146**, 97--103. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715218303390)  [[GitHub Repository]](https://github.com/danieledurante/nEM).
+
+1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society, Series A* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub Repository]](https://github.com/tommasorigon/India-SequentiaLogit).
 
 [Publications in monographs, volumes, and discussions]{.blue}
 

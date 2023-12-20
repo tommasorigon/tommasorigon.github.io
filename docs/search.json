@@ -32,7 +32,7 @@
     "href": "tesi.html",
     "title": "Informazioni per la tesi di laurea",
     "section": "",
-    "text": "In questo documento vengono raccolti suggerimenti ed indicazioni pratiche relative alla tesi di laurea.\nPer chiedere informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon@unimib.it e venire quindi a ricevimento ogni Martedì alle ore 17.30."
+    "text": "In questo documento vengono raccolti suggerimenti ed indicazioni pratiche relative alla tesi di laurea.\nPer chiedere informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon@unimib.it e venire quindi a ricevimento Martedì alle ore 17.30."
   },
   {
     "objectID": "tesi.html#il-software-latex",
@@ -145,5 +145,26 @@
     "title": "Tommaso Rigon",
     "section": "",
     "text": "Davide Agnoletto, University of Padova\nEmanuele Aliverti, University of Padova\nAlessia Caponera, University of Milano-Bicocca\nMarta Catalano, Luiss University\nPaolo Cherubini\nRiccardo Cogo, University of Milano-Bicocca\nFrancesco Denti\nDaniele Durante, Bocconi University\nDavid Dunson, Duke University\nAmy Herring, Duke University\nStefano Favaro\nAlan Gelfand, Duke University\nSirio Legramanti\nAntonio Lijoi, Bocconi University\nOtso Ovaskainen\nSally Paganin\nFrancesca Panero\nSonia Petrone, Bocconi University\nIgor Prünster, Bocconi University\nCarlo Reverberi\nMassimilano Russo\nBruno Scarpa, University of Padova\nAldo Solari, Ca’ Foscari University\nAndrea Sottosanti\nNicola Torelli\nAlessandro Zito, Harvard University"
+  },
+  {
+    "objectID": "bio.html",
+    "href": "bio.html",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
+  },
+  {
+    "objectID": "bio.html#academic-positions",
+    "href": "bio.html#academic-positions",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
+  },
+  {
+    "objectID": "bio.html#education",
+    "href": "bio.html#education",
+    "title": "Tommaso Rigon",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\n\n\nPh.D. in Statistical Sciences, Bocconi University, Milan, Italy.\nPeriod 2015–2020. Ph.D. awarded with honors.\nThesis title: Finite-dimensional nonparametric priors: theory and applications.\nI worked under the joint supervision of prof. Antonio Lijoi and prof. Igor Prünster.\n\n\n\n\n\n\n\n\n\n\n\n\nM.Sc. in Statistical Sciences, University of Padova, Padua, Italy.\nPeriod 2013 - 2015. Final mark: 110/110 with laude.\nThesis title: Functional telecommunication data: a Bayesian nonparametric approach.\nAdvisor: Bruno Scarpa.\n\n\n\n\n\n\n\n\n\n\n\n\nB.Sc. in Statistics, Economics & Finance, University of Padova, Padua, Italy.\nPeriod 2010–2013. Final mark: 110/110 with laude.\nThesis title: Box-Cox transformation: an analysis based on the likelihood.\nAdvisor: Nicola Sartori."
   }
 ]

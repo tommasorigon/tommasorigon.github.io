@@ -5,7 +5,7 @@ lang: it
 
 In questo documento vengono raccolti suggerimenti ed indicazioni pratiche relative alla tesi di laurea. 
 
-Per chiedere informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento ogni **Martedì alle ore 17.30**.
+Per chiedere informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento **Martedì alle ore 17.30**.
 
 ## Il software LaTeX {.central}
 

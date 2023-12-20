@@ -12,12 +12,14 @@ website:
         text: Home
       - href: papers.qmd
         text: Papers
+      - href: bio.qmd
+        text: Short Bio
       - href: teaching.qmd
-        text: Teaching and slides
+        text: Teaching & Slides
       - href: links.qmd
         text: Collaborators
       - href: tesi.qmd
-        text: Thesis information (ITA)
+        text: Thesis Information (ITA)
 
         
 format:

@@ -1,0 +1,138 @@
+---
+---
+
+## Academic positions {.central}
+
+
+:::: {layout="[10, 0, 90]"}
+
+::: {#second-column}
+![](images/logoB.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[University of Milano-Bicocca]{.blue}, Department of Economics, Management and Statistics (DEMS), Milan, Italy.
+
+- Assistant Professor (RTD-B), 2023 - Present
+- Assistant Professor (RTD-A), 2020 - 2023
+
+<!-- [I am currently an [Assistant Professor](https://en.unimib.it/tommaso-rigon) (_RTD-B_) at [University of Milano-Bicocca](https://en.unimib.it). I have been a fixed-term Assistant Professor (_RTD-A_), at the same institution from 2020 to 2023.]{.small} -->
+:::
+::::
+
+
+:::: {layout="[10, 0, 90]"}
+
+::: {#second-column}
+![](images/logoD.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Duke University]{.blue}, Department of Statistical Science, Durham (NC), U.S.A.
+
+- Postdoctoral Associate, 2020 - 2020
+- Research Associate, 2019 - 2020
+
+I worked with prof. [Amy Herring](https://scholars.duke.edu/person/Amy.Herring) and prof. [David Dunson](https://scholars.duke.edu/person/dunson). My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.
+:::
+::::
+
+:::: {layout="[10, 0, 90]"}
+
+::: {#second-column}
+![](images/logoCCA.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Collegio Carlo Alberto]{.blue}, Fondazione "de Castro" and Collegio Carlo Alberto, Turin, Italy.
+
+- Research Affiliate, 2017 - 2020
+
+I have been a Research affiliate at the [Statistics initiative](https://www.carloalberto.org/research/statistics-initiative/).
+:::
+::::
+
+
+## Education {.central}
+
+:::: {layout="[10, 0, 90]"}
+
+::: {#second-column}
+![](images/logoBocconi.png)
+:::
+
+::: {#middle-column}
+:::
+
+::: {#first-column}
+[Ph.D. in Statistical Sciences]{.blue}, [Bocconi University](https://www.unibocconi.eu/), Milan, Italy.
+
+Period 2015--2020. Ph.D. awarded with honors.
+
+Thesis title: [*Finite-dimensional nonparametric priors: theory and applications*](files/papers/PhDThesis.pdf).  
+
+I worked under the joint supervision of  prof. [Antonio Lijoi](http://mypage.unibocconi.eu/antoniolijoi/) and prof. [Igor Prünster](http://mypage.unibocconi.eu/igorpruenster/). 
+
+:::
+
+
+::::
+
+:::: {layout="[10, 0, 90]"}
+
+
+::: {#second-column}
+![](images/logoP.png)
+:::
+
+::: {#middle-column}
+:::
+
+
+::: {#first-column}
+[M.Sc. in Statistical Sciences]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
+
+Period 2013 - 2015. Final mark: 110/110 with laude.
+
+Thesis title: [*Functional telecommunication data: a Bayesian nonparametric approach*](http://tesi.cab.unipd.it/49380/1/Rigon_Tommaso.pdf). 
+
+Advisor: [Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa/).
+:::
+
+
+::::
+
+:::: {layout="[10, 0, 90]"}
+
+::: {#second-column}
+![](images/logoP.png)
+:::
+
+
+::: {#middle-column}
+:::
+
+
+::: {#first-column}
+[B.Sc. in Statistics, Economics & Finance]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
+
+Period 2010--2013. Final mark: 110/110 with laude.
+
+Thesis title: [Box-Cox transformation: an analysis based on the likelihood](http://tesi.cab.unipd.it/42884/1/Rigon_Tommaso.pdf). 
+
+Advisor: [Nicola Sartori](https://homes.stat.unipd.it/nicolasartori/en/content/home).
+:::
+
+
+::::
+
+

@@ -54,7 +54,5 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)]
 
-[[2016]{.blue}] [Best Ph.D. student in Statistics]{.blue}, Bocconi University, Academic Year 2016/2017 (09/2017).
-
 ----------------------------------------------------------------------
 

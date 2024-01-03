@@ -25,7 +25,7 @@
 
 1. Zito, A., **Rigon, T.** and Dunson, D. B. (2023).  Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. *Methods in Ecology and Evolution*, **14**, 529--542 [[Link]](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14009) [[GitHub Repository]](https://alessandrozito.github.io/BayesANT/vignette.html)
 
-1. Zito, A., **Rigon, T.**, Ovaskainen, O. and Dunson, D. B. (2023).  Bayesian modelling of sequential discoveries. *Journal of the American Statistical Association (T&M)*, **118**(544), 2521-2532. [[Link]](https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2060835) [[GitHub Repository]](https://alessandrozito.github.io/BNPvegan/vignette.html).
+1. Zito, A., **Rigon, T.**, Ovaskainen, O. and Dunson, D. B. (2023).  Bayesian modelling of sequential discoveries. *Journal of the American Statistical Association (T&M)*, **118**(544), 2521--2532. [[Link]](https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2060835) [[GitHub Repository]](https://alessandrozito.github.io/BNPvegan/vignette.html).
 
 1. Legramanti, S., **Rigon, T.**, Durante, D. and Dunson D. B. (2022).  Extended stochastic block models with application to criminal networks. *Annals of Applied Statistics*  **16**(4), 2369--2395. [[Link]](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-4/Extended-stochastic-block-models-with-application-to-criminal-networks/10.1214/21-AOAS1595.full) [[GitHub repository]](https://github.com/danieledurante/ESBM).
 

@@ -32,15 +32,11 @@ I am a member of the [Datalab](https://datalab.unimib.it) at the University of M
 
 My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of publications is available [here](papers.qmd).
 
-[Research interests]{.blue}: applied Bayesian modeling; Bayesian clustering, Bayesian nonparametrics, computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.
+[Research interests]{.blue}: applied Bayesian modeling; Bayesian clustering; Bayesian nonparametrics; computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.
 
 [E-mail]{.blue}:  tommaso.rigon@unimib.it
 
 ----------------------------------------------------------------------
-
-<!-- My complete curriculum vitae is available at [this link](files/cv_Rigon.pdf).  -->
-
-<!-- --------------------------------------------------------------------- -->
 
 ## News and awards {.central}
 

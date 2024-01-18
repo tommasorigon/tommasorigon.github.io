@@ -23,11 +23,13 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 
 | Laurea | Candidata/o | Titolo |
 |:-------:|:------------:|:-------|
+| | |**LAUREA TRIENNALE** |
 | [Triennale]{.blue} | Marco Carrettoni | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf) |
 | [Triennale]{.blue} | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf) |
 | [Triennale]{.blue} | Erica Delvino | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf) |
 | [Triennale]{.blue} | Tommaso Menghini | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf) |
 | [Triennale]{.blue} | Anna Petranzan | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf) |
+| | | **LAUREA MAGISTRALE**| 
 | [Magistrale]{.orange} | Davide Agnoletto | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf) |
 | [Magistrale]{.orange} | Gabriele Tinè | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tinè_magistrale_826904.pdf) |
 

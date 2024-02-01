@@ -35,6 +35,7 @@ gigante_f <- read.csv("gigante_femminile.csv", sep = ";")
 library(tidyverse)
 library(lubridate)
 library(stringr)
+library(ggthemes)
 
 gigante_f$Categoria <- as.numeric(str_remove(gigante_f$Categoria, "D"))
 
@@ -46,7 +47,7 @@ gigante_f$Categoria <- as.factor(gigante_f$Categoria)
 # glimpse(gigante_f)
 ```
 
-#### Tempi complessivi
+#### Tempo di arrivo (Gigante, Femminile)
 
 ```{r}
 #summary(gigante_f$Tempo)
@@ -59,24 +60,34 @@ gigante_f$Categoria <- as.factor(gigante_f$Categoria)
 ggplot(data = gigante_f, aes(x = Tempo, y = after_stat(count))) + geom_histogram(fill = "white", col = "black", bins = 35) + theme_light() + ylab("Frequenza assoluta") + xlab("Tempo (secondi)") + scale_x_continuous(n.breaks = 20)
 ```
 
-#### Tempi per ateneo
-
-Dopo aver rimosso quattro tempo $4$ tempi anomali (superiori ai 100 secondi), la distribuzione dei tempi per Ateneo è la seguente:
+#### Numero di partecipanti per ateneo (Gigante, Femminile)
 
 ```{r}
-#| warning: false
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot() + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90))
+ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20")
 ```
 
-#### Tempi per categoria
 
-La categoria D12 risulta vuota nel grafico sottostante perchè l'unica atleta ha un tempo superiore ai 100 secondi. 
+
+#### Tempi di arrivo per ateneo (Gigante, Femminile)
+
+Ho rimosso $4$ tempi tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La distribuzione dei tempi per Ateneo è la seguente:
 
 ```{r}
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot() + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D")
+ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot() + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
+```
+
+#### Tempi per categoria (Gigante, Femminile)
+
+Ho rimosso $4$ tempi tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria D0 sono gli "junior". 
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot() + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D") + scale_fill_tableau(palette = "Tableau 20")
 ```

@@ -1,0 +1,82 @@
+---
+title: "Campionato ANCIU sci 2024"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2024-02-01
+execute:
+  cache: false
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    theme: [cosmo, ../../template.css]
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+
+## Slalom gigante femminile
+
+```{r}
+#| echo: false
+#| message: false
+rm(list = ls())
+gigante_f <- read.csv("gigante_femminile.csv", sep = ";")
+
+library(tidyverse)
+library(lubridate)
+library(stringr)
+
+gigante_f$Categoria <- as.numeric(str_remove(gigante_f$Categoria, "D"))
+
+gigante_f$Tempo[1:62] <- paste("0:", gigante_f$Tempo[1:62], sep = "")
+gigante_f$Tempo <- ms(gigante_f$Tempo)
+
+gigante_f$Ateneo <- as.factor(gigante_f$Ateneo)
+gigante_f$Categoria <- as.factor(gigante_f$Categoria)
+# glimpse(gigante_f)
+```
+
+#### Tempi complessivi
+
+```{r}
+#summary(gigante_f$Tempo)
+```
+
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_f, aes(x = Tempo, y = after_stat(count))) + geom_histogram(fill = "white", col = "black", bins = 35) + theme_light() + ylab("Frequenza assoluta") + xlab("Tempo (secondi)") + scale_x_continuous(n.breaks = 20)
+```
+
+#### Tempi per ateneo
+
+Dopo aver rimosso quattro tempo $4$ tempi anomali (superiori ai 100 secondi), la distribuzione dei tempi per Ateneo è la seguente:
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot() + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90))
+```
+
+#### Tempi per categoria
+
+La categoria D12 risulta vuota nel grafico sottostante perchè l'unica atleta ha un tempo superiore ai 100 secondi. 
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot() + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D")
+```

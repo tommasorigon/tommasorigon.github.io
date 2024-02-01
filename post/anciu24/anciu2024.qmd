@@ -111,12 +111,12 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxpl
 #| warning: false
 #| fig-width: 10
 #| fig-height: 5
-ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "lm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)
+ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "lm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
 ```
 
 #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile)
 
-Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). Il tempo risulta addirittura irrilevante.
+Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa.
 
 ```{r}
 summary(lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq))

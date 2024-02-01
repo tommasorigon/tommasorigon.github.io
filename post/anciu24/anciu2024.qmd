@@ -81,13 +81,13 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) 
 
 Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. 
 
-Gli atenei sono stati ordinati considerando la media dei migliori tre tempi.
+Gli atenei sono stati ordinati considerando la media dei migliori quattro tempi, come nell'Eccellenza; gli Atenei con un numero di partecipanti inferiore a quattro sono stati posizionati in coda alla classifica.
 
 ```{r}
 #| warning: false
 #| fig-width: 8
 #| fig-height: 5
-ggplot(data = gigante_f, aes(x = reorder(Ateneo, as.numeric(Tempo), FUN = function(x) mean(head(x, n = 3)), decreasing = FALSE), y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_f, aes(x = reorder(Ateneo, as.numeric(Tempo), FUN = function(x) mean(sort(x)[1:4]), decreasing = FALSE), y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
 
 #### Numero di partecipanti per categoria (Gigante, Femminile)

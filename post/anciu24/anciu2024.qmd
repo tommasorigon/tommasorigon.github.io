@@ -72,7 +72,7 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) 
 
 #### Tempi di arrivo per ateneo (Gigante, Femminile)
 
-Ho rimosso $4$ tempi tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La distribuzione dei tempi per Ateneo è la seguente:
+Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità deel grafico. La distribuzione dei tempi per Ateneo è la seguente:
 
 ```{r}
 #| warning: false
@@ -83,7 +83,7 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxpl
 
 #### Tempi per categoria (Gigante, Femminile)
 
-Ho rimosso $4$ tempi tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria D0 sono gli "junior". 
+Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria `D0` corrisponde a "MASTER D S". 
 
 ```{r}
 #| warning: false

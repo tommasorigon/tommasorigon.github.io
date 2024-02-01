@@ -116,7 +116,7 @@ ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Atene
 
 #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile)
 
-Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro). Il tempo risulta addirittura irrilevante.
+Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). Il tempo risulta addirittura irrilevante.
 
 ```{r}
 summary(lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq))

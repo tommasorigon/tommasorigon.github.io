@@ -80,7 +80,7 @@ Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la
 #| warning: false
 #| fig-width: 8
 #| fig-height: 5
-ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_f, aes(x = reorder(Ateneo, Punti, FUN = sum, decreasing = TRUE), y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
 
 #### Numero di partecipanti per categoria (Gigante, Femminile)

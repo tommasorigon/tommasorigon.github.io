@@ -52,6 +52,18 @@ gigante_f$Categoria <- as.factor(gigante_f$Categoria)
 # glimpse(gigante_f)
 ```
 
+
+```{r}
+atenei <- read.csv("atenei.csv", sep = ";")
+
+gigante_freq <- data.frame(table(gigante_f$Ateneo))
+gigante_freq$Tempo_Eccellenza <- tapply(as.numeric(gigante_f$Tempo), 
+                                        gigante_f$Ateneo, function(x) mean(head(x, n = 4)))
+colnames(gigante_freq) <- c("Ateneo", "Partecipanti", "Tempo_migliori_4")
+gigante_freq <- merge(subset(atenei, select = c(Ateneo, Gigante_F)), gigante_freq, by = "Ateneo")
+colnames(gigante_freq) <- c("Ateneo", "Graduatoria","Partecipanti", "Tempo_migliori_4")
+```
+
 #### Tempo di arrivo (Gigante, Femminile)
 
 ```{r}
@@ -80,15 +92,36 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) 
 #### Tempi di arrivo per ateneo (Gigante, Femminile)
 
 Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. 
-
-Gli atenei sono stati ordinati considerando la media dei migliori quattro tempi, come nell'Eccellenza; gli Atenei con un numero di partecipanti inferiore a quattro sono stati posizionati in coda alla classifica.
+Gli atenei sono stati ordinati considerando [graduatoria complessiva]{.orange}.
 
 ```{r}
 #| warning: false
 #| fig-width: 8
 #| fig-height: 5
-ggplot(data = gigante_f, aes(x = reorder(Ateneo, as.numeric(Tempo), FUN = function(x) mean(sort(x)[1:4]), decreasing = FALSE), y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
+
+gigante_f$Ateneo <- factor(gigante_f$Ateneo, 
+                           levels = levels(gigante_f$Ateneo)[order(gigante_freq$Graduatoria, decreasing = TRUE)], 
+                           ordered = TRUE)
+ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
+
+#### Numero di partecipanti e graduatoria finale (Gigante, Femminile)
+
+```{r}
+#| warning: false
+#| fig-width: 10
+#| fig-height: 5
+ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "lm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)
+```
+
+#### Modello di regression lineare (Analisi avanzata, Gigante, Femminile)
+
+Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro). Il tempo risulta addirittura irrilevante.
+
+```{r}
+summary(lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq))
+```
+
 
 #### Numero di partecipanti per categoria (Gigante, Femminile)
 

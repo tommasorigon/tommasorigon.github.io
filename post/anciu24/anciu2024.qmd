@@ -50,15 +50,17 @@ gigante_f$Categoria <- as.factor(gigante_f$Categoria)
 #### Tempo di arrivo (Gigante, Femminile)
 
 ```{r}
-#summary(gigante_f$Tempo)
-```
-
-
-```{r}
 #| fig-width: 8
 #| fig-height: 4
 ggplot(data = gigante_f, aes(x = Tempo, y = after_stat(count))) + geom_histogram(fill = "white", col = "black", bins = 35) + theme_light() + ylab("Frequenza assoluta") + xlab("Tempo (secondi)") + scale_x_continuous(n.breaks = 20)
 ```
+
+```{r}
+tab <- c(summary(as.numeric(gigante_f$Tempo)))[-4]
+names(tab) <- c("Tempo migliore", "Primo quartile", "Tempo mediano", "Terzo quartile", "Tempo peggiore")
+knitr::kable(t(tab), digits = 2)
+```
+
 
 #### Numero di partecipanti per ateneo (Gigante, Femminile)
 

@@ -67,29 +67,39 @@ knitr::kable(t(tab), digits = 2)
 ```{r}
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10)
 ```
 
 
 
 #### Tempi di arrivo per ateneo (Gigante, Femminile)
 
-Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità deel grafico. La distribuzione dei tempi per Ateneo è la seguente:
+Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. 
 
 ```{r}
 #| warning: false
 #| fig-width: 8
-#| fig-height: 4
-ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot() + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
+#| fig-height: 5
+ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
+
+#### Numero di partecipanti per categoria (Gigante, Femminile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_f, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria D")
+```
+
 
 #### Tempi per categoria (Gigante, Femminile)
 
-Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria `D0` corrisponde a "MASTER D S". 
+Ho rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria `D0` corrisponde a "MASTER D S", mentre la categoria `D12` sembra vuota perchè i tempi sono tutti superiori ai 100 secondi. 
 
 ```{r}
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot() + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D") + scale_fill_tableau(palette = "Tableau 20")
 ```
+

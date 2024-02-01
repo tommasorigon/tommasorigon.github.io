@@ -24,6 +24,10 @@ editor_options:
 ---
 
 
+## Classifica per ateneo
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/16661823"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 ## Slalom gigante femminile
 
 ```{r}

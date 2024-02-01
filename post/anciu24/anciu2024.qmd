@@ -1,5 +1,6 @@
 ---
-title: "Campionato ANCIU sci 2024"
+title: "39esimo Campionato di sci ANCIU"
+subtitle: "San Martino di Castrozza (TN) - 28 gennaio - 4 Febbraio 2024"
 author: "[Tommaso Rigon]{.orange}"
 lang: it
 date: 2024-02-01

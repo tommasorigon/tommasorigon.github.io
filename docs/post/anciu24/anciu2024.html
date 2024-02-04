@@ -224,40 +224,106 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="numero-di-partecipanti-e-graduatoria-finale-gigante-femminile" class="level4">
-<h4 class="anchored" data-anchor-id="numero-di-partecipanti-e-graduatoria-finale-gigante-femminile">Numero di partecipanti e graduatoria finale (Gigante, Femminile)</h4>
+<section id="numero-di-partecipanti-e-talento-della-squadra-gigante-femminile" class="level4">
+<h4 class="anchored" data-anchor-id="numero-di-partecipanti-e-talento-della-squadra-gigante-femminile">Numero di partecipanti e “talento” della squadra (Gigante, Femminile)</h4>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="anciu2024_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="2500"></p>
 </div>
 </div>
-</section>
-<section id="modello-di-regression-lineare-analisi-avanzata-gigante-femminile" class="level4">
-<h4 class="anchored" data-anchor-id="modello-di-regression-lineare-analisi-avanzata-gigante-femminile">Modello di regression lineare (Analisi avanzata, Gigante, Femminile)</h4>
-<p>Modello di regression lineare. Il <span class="orange">fattore determinante</span> è il <span class="blue">numero di partecipanti</span> e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa.</p>
+<p>Il <span class="blue">talento medio della squadra</span> si può misurare come “<span class="orange">residuo</span>” della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--371.25 -138.05  -15.44   81.97  775.02 
-
-Coefficients:
-                 Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)       719.726    484.230   1.486    0.159    
-Partecipanti      158.181     23.379   6.766 9.08e-06 ***
-Tempo_migliori_4  -12.203      7.408  -1.647    0.122    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 263.7 on 14 degrees of freedom
-Multiple R-squared:  0.8576,    Adjusted R-squared:  0.8373 
-F-statistic: 42.17 on 2 and 14 DF,  p-value: 1.186e-06</code></pre>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ateneo</th>
+<th style="text-align: right;">Punti bonus/malus legati alla capacità dei partecipanti</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PADOVA</td>
+<td style="text-align: right;">1042</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BOLOGNA</td>
+<td style="text-align: right;">163</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MILANO BICOCCA</td>
+<td style="text-align: right;">144</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BRESCIA</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PARMA</td>
+<td style="text-align: right;">96</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CA FOSCARI</td>
+<td style="text-align: right;">93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CAGLIARI</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ANCONA</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FIRENZE</td>
+<td style="text-align: right;">-15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CAMERINO</td>
+<td style="text-align: right;">-23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">COSENZA</td>
+<td style="text-align: right;">-45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GENOVA</td>
+<td style="text-align: right;">-82</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CHIETI</td>
+<td style="text-align: right;">-109</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TRENTO</td>
+<td style="text-align: right;">-142</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PISA</td>
+<td style="text-align: right;">-155</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MILANO STATALE</td>
+<td style="text-align: right;">-200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CATANIA</td>
+<td style="text-align: right;">-225</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+<!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->
+<!-- Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa. -->
+<!-- ```{r} -->
+<!-- m2 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq) -->
+<!-- summary(m2) -->
+<!-- ``` -->
 </section>
 <section id="numero-di-partecipanti-per-categoria-gigante-femminile" class="level4">
 <h4 class="anchored" data-anchor-id="numero-di-partecipanti-per-categoria-gigante-femminile">Numero di partecipanti per categoria (Gigante, Femminile)</h4>

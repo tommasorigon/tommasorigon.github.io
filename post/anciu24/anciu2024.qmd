@@ -105,23 +105,34 @@ gigante_f$Ateneo <- factor(gigante_f$Ateneo,
 ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
 
-#### Numero di partecipanti e graduatoria finale (Gigante, Femminile)
+#### Numero di partecipanti e "talento" della squadra (Gigante, Femminile)
 
 ```{r}
 #| warning: false
+#| message: false
 #| fig-width: 10
 #| fig-height: 5
-ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "lm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
+library(MASS)
+ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
 ```
 
-#### Modello di regression lineare (Analisi avanzata, Gigante, Femminile)
-
-Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa.
+Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti.
 
 ```{r}
-m <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq)
-summary(m)
+contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_freq))
+names(contributo) <- gigante_freq$Ateneo
+knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti"))
 ```
+
+
+<!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->
+
+<!-- Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa. -->
+
+<!-- ```{r} -->
+<!-- m2 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq) -->
+<!-- summary(m2) -->
+<!-- ``` -->
 
 
 #### Numero di partecipanti per categoria (Gigante, Femminile)

@@ -306,7 +306,7 @@ ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom
 :::
 
 
-## Fondo Tecnica classica maschile
+## Fondo tecnica classica maschile
 
 ```{r}
 #| echo: false
@@ -378,7 +378,7 @@ Gli atenei sono stati ordinati considerando la [graduatoria complessiva]{.orange
 fondo_tc_m$Ateneo <- factor(fondo_tc_m$Ateneo, 
                            levels = levels(fondo_tc_m$Ateneo)[order(fondo_tc_m_freq$Graduatoria, decreasing = TRUE)], 
                            ordered = TRUE)
-ggplot(data = fondo_tc_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = fondo_tc_m, aes(x = Ateneo, y = as.numeric(Tempo)/60, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (minuti)") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 12)
 ```
 :::
 
@@ -412,7 +412,7 @@ ggplot(data = fondo_tc_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxp
 <!-- ``` -->
 
 ::: {.callout-note collapse=true}
-#### Numero di partecipanti per categoria (Gigante, Maschile)
+#### Numero di partecipanti per categoria (Fondo, Maschile)
 
 La categoria `0` corrisponde a "MASTER S R". 
 

@@ -27,7 +27,12 @@ editor_options:
 
 ## Classifica per ateneo
 
+::: {.callout-note collapse=true}
+#### Classifica complessiva per disciplina
+
 <div class="flourish-embed flourish-chart" data-src="visualisation/16661823"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+:::
+
 
 ## Slalom gigante femminile
 
@@ -56,15 +61,17 @@ gigante_f$Categoria <- as.factor(gigante_f$Categoria)
 ```{r}
 atenei <- read.csv("atenei.csv", sep = ";")
 
-gigante_freq <- data.frame(table(gigante_f$Ateneo))
-gigante_freq$Tempo_Eccellenza <- tapply(as.numeric(gigante_f$Tempo), 
+gigante_f_freq <- data.frame(table(gigante_f$Ateneo))
+gigante_f_freq$Tempo_Eccellenza <- tapply(as.numeric(gigante_f$Tempo), 
                                         gigante_f$Ateneo, function(x) mean(head(x, n = 4)))
-colnames(gigante_freq) <- c("Ateneo", "Partecipanti", "Tempo_migliori_4")
-gigante_freq <- merge(subset(atenei, select = c(Ateneo, Gigante_F)), gigante_freq, by = "Ateneo")
-colnames(gigante_freq) <- c("Ateneo", "Graduatoria","Partecipanti", "Tempo_migliori_4")
+colnames(gigante_f_freq) <- c("Ateneo", "Partecipanti", "Tempo_migliori_4")
+gigante_f_freq <- merge(subset(atenei, select = c(Ateneo, Gigante_F)), gigante_f_freq, by = "Ateneo")
+colnames(gigante_f_freq) <- c("Ateneo", "Graduatoria","Partecipanti", "Tempo_migliori_4")
 ```
 
-#### Tempo di arrivo (Gigante, Femminile)
+
+::: {.callout-note collapse=true}
+#### Tempi di arrivo (Gigante, Femminile)
 
 ```{r}
 #| fig-width: 8
@@ -77,7 +84,9 @@ tab <- c(summary(as.numeric(gigante_f$Tempo)))[-4]
 names(tab) <- c("Tempo migliore", "Primo quartile", "Tempo mediano", "Terzo quartile", "Tempo peggiore")
 knitr::kable(t(tab), digits = 2)
 ```
+:::
 
+::: {.callout-note collapse=true}
 
 #### Numero di partecipanti per ateneo (Gigante, Femminile)
 
@@ -87,12 +96,14 @@ knitr::kable(t(tab), digits = 2)
 ggplot(data = gigante_f, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10)
 ```
 
+:::
 
 
+::: {.callout-note collapse=true}
 #### Tempi di arrivo per ateneo (Gigante, Femminile)
 
 Ho rimosso $4$ tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. 
-Gli atenei sono stati ordinati considerando [graduatoria complessiva]{.orange}.
+Gli atenei sono stati ordinati considerando la [graduatoria complessiva]{.orange}.
 
 ```{r}
 #| warning: false
@@ -100,12 +111,14 @@ Gli atenei sono stati ordinati considerando [graduatoria complessiva]{.orange}.
 #| fig-height: 5
 
 gigante_f$Ateneo <- factor(gigante_f$Ateneo, 
-                           levels = levels(gigante_f$Ateneo)[order(gigante_freq$Graduatoria, decreasing = TRUE)], 
+                           levels = levels(gigante_f$Ateneo)[order(gigante_f_freq$Graduatoria, decreasing = TRUE)], 
                            ordered = TRUE)
 ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + scale_fill_tableau(palette = "Tableau 20")
 ```
+:::
 
-#### Numero di partecipanti e "talento" della squadra (Gigante, Femminile)
+::: {.callout-note collapse=true}
+#### Numero di partecipanti e punteggio della squadra (Gigante, Femminile)
 
 ```{r}
 #| warning: false
@@ -113,28 +126,28 @@ ggplot(data = gigante_f, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxpl
 #| fig-width: 10
 #| fig-height: 5
 library(MASS)
-ggplot(data = gigante_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
+ggplot(data = gigante_f_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
 ```
 
 Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti.
 
 ```{r}
-contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_freq))
-names(contributo) <- gigante_freq$Ateneo
+contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_f_freq))
+names(contributo) <- gigante_f_freq$Ateneo
 knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti"))
 ```
-
+:::
 
 <!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->
 
 <!-- Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa. -->
 
 <!-- ```{r} -->
-<!-- m2 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_freq) -->
+<!-- m2 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_f_freq) -->
 <!-- summary(m2) -->
 <!-- ``` -->
 
-
+::: {.callout-note collapse=true}
 #### Numero di partecipanti per categoria (Gigante, Femminile)
 
 ```{r}
@@ -142,8 +155,10 @@ knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ate
 #| fig-height: 4
 ggplot(data = gigante_f, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria D")
 ```
+:::
 
 
+::: {.callout-note collapse=true}
 #### Tempi per categoria (Gigante, Femminile)
 
 Ho rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria `D0` corrisponde a "MASTER D S", mentre la categoria `D12` sembra vuota perchè i tempi sono tutti superiori ai 100 secondi. 
@@ -154,4 +169,135 @@ Ho rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la l
 #| fig-height: 4
 ggplot(data = gigante_f, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria D") + scale_fill_tableau(palette = "Tableau 20")
 ```
+:::
 
+
+## Slalom gigante maschile
+
+```{r}
+#| echo: false
+#| message: false
+gigante_m <- read.csv("gigante_maschile.csv", sep = ";")
+
+gigante_m$Categoria <- str_remove(gigante_m$Categoria, "A")
+gigante_m$Categoria <- str_remove(gigante_m$Categoria, "B")
+gigante_m$Categoria <- str_remove(gigante_m$Categoria, "C")
+gigante_m$Categoria <- as.numeric(str_remove(gigante_m$Categoria, "D"))
+
+gigante_m$Tempo[1:173] <- paste("0:", gigante_m$Tempo[1:173], sep = "")
+gigante_m$Tempo <- ms(gigante_m$Tempo)
+
+gigante_m$Ateneo <- as.factor(gigante_m$Ateneo)
+gigante_m$Categoria <- as.factor(gigante_m$Categoria)
+# glimpse(gigante_m)
+```
+
+
+```{r}
+gigante_m_freq <- data.frame(table(gigante_m$Ateneo))
+gigante_m_freq$Tempo_Eccellenza <- tapply(as.numeric(gigante_m$Tempo), 
+                                        gigante_m$Ateneo, function(x) mean(head(x, n = 4)))
+colnames(gigante_m_freq) <- c("Ateneo", "Partecipanti", "Tempo_migliori_4")
+gigante_m_freq <- merge(subset(atenei, select = c(Ateneo, Gigante_M)), gigante_m_freq, by = "Ateneo")
+colnames(gigante_m_freq) <- c("Ateneo", "Graduatoria","Partecipanti", "Tempo_migliori_4")
+```
+
+
+::: {.callout-note collapse=true}
+#### Tempi di arrivo (Gigante, Maschile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_m, aes(x = Tempo, y = after_stat(count))) + geom_histogram(fill = "white", col = "black", bins = 35) + theme_light() + ylab("Frequenza assoluta") + xlab("Tempo (secondi)") + scale_x_continuous(n.breaks = 20)
+```
+
+```{r}
+tab <- c(summary(as.numeric(gigante_m$Tempo)))[-4]
+names(tab) <- c("Tempo migliore", "Primo quartile", "Tempo mediano", "Terzo quartile", "Tempo peggiore")
+knitr::kable(t(tab), digits = 2)
+```
+:::
+
+::: {.callout-note collapse=true}
+
+#### Numero di partecipanti per ateneo (Gigante, Maschile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_m, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10)
+```
+
+:::
+
+
+::: {.callout-note collapse=true}
+#### Tempi di arrivo per ateneo (Gigante, Maschile)
+
+Gli atenei sono stati ordinati considerando la [graduatoria complessiva]{.orange}.
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 5
+
+gigante_m$Ateneo <- factor(gigante_m$Ateneo, 
+                           levels = levels(gigante_m$Ateneo)[order(gigante_m_freq$Graduatoria, decreasing = TRUE)], 
+                           ordered = TRUE)
+ggplot(data = gigante_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + scale_fill_tableau(palette = "Tableau 20")
+```
+:::
+
+::: {.callout-note collapse=true}
+#### Numero di partecipanti e punteggio della squadra (Gigante, Maschile)
+
+```{r}
+#| warning: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 5
+ggplot(data = gigante_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
+```
+
+<!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
+
+<!-- ```{r} -->
+<!-- contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_m_freq)) -->
+<!-- names(contributo) <- gigante_m_freq$Ateneo -->
+<!-- knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti")) -->
+<!-- ``` -->
+:::
+
+<!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->
+
+<!-- Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa. -->
+
+<!-- ```{r} -->
+<!-- m3 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = gigante_m_freq) -->
+<!-- summary(m3) -->
+<!-- ``` -->
+
+::: {.callout-note collapse=true}
+#### Numero di partecipanti per categoria (Gigante, Maschile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_m, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria D")
+```
+:::
+
+
+::: {.callout-note collapse=true}
+#### Tempi per categoria (Gigante, Maschile)
+
+La categoria `0` corrisponde a "MASTER D S". 
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria") + scale_fill_tableau(palette = "Tableau 20")
+```
+:::

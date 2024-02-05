@@ -279,9 +279,10 @@ ggplot(data = gigante_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ate
 <!-- ``` -->
 
 ::: {.callout-note collapse=true}
+
 #### Numero di partecipanti per categoria (Gigante, Maschile)
 
-La categoria `0` corrisponde a "MASTER D S". 
+La categoria `0` corrisponde a "MASTER S R". 
 
 ```{r}
 #| fig-width: 8
@@ -294,12 +295,144 @@ ggplot(data = gigante_m, aes(x = Categoria, y = after_stat(count), fill = Catego
 ::: {.callout-note collapse=true}
 #### Tempi per categoria (Gigante, Maschile)
 
-La categoria `0` corrisponde a "MASTER D S". 
+La categoria `0` corrisponde a "MASTER S R". 
 
 ```{r}
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
 ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + xlab("Categoria (A,B,C,D)") + scale_fill_tableau(palette = "Tableau 20")
+```
+:::
+
+
+## Fondo Tecnica classica maschile
+
+```{r}
+#| echo: false
+#| message: false
+fondo_tc_m <- read.csv("fondo_tc_maschile.csv", sep = ";")
+
+fondo_tc_m$Categoria <- str_remove(fondo_tc_m$Categoria, "A")
+fondo_tc_m$Categoria <- str_remove(fondo_tc_m$Categoria, "B")
+fondo_tc_m$Categoria <- str_remove(fondo_tc_m$Categoria, "C")
+fondo_tc_m$Categoria <- as.numeric(str_remove(fondo_tc_m$Categoria, "D"))
+
+fondo_tc_m$Tempo <- ms(fondo_tc_m$Tempo)
+
+fondo_tc_m$Ateneo <- as.factor(fondo_tc_m$Ateneo)
+fondo_tc_m$Categoria <- as.factor(fondo_tc_m$Categoria)
+# glimpse(fondo_tc_m)
+```
+
+
+```{r}
+fondo_tc_m_freq <- data.frame(table(fondo_tc_m$Ateneo))
+fondo_tc_m_freq$Tempo_Eccellenza <- tapply(as.numeric(fondo_tc_m$Tempo), 
+                                        fondo_tc_m$Ateneo, function(x) mean(head(x, n = 4)))
+colnames(fondo_tc_m_freq) <- c("Ateneo", "Partecipanti", "Tempo_migliori_4")
+fondo_tc_m_freq <- merge(subset(atenei, select = c(Ateneo, Fondo_TC)), fondo_tc_m_freq, by = "Ateneo")
+colnames(fondo_tc_m_freq) <- c("Ateneo", "Graduatoria","Partecipanti", "Tempo_migliori_4")
+```
+
+
+::: {.callout-note collapse=true}
+#### Tempi di arrivo (Fondo, Maschile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = fondo_tc_m, aes(x = as.numeric(Tempo) / 60, y = after_stat(count))) + geom_histogram(fill = "white", col = "black", bins = 20) + theme_light() + ylab("Frequenza assoluta") + xlab("Tempo (minuti)") + scale_x_continuous(n.breaks = 20)
+```
+
+```{r}
+tab <- c(summary(as.numeric(fondo_tc_m$Tempo) / 60))[-4]
+names(tab) <- c("Tempo migliore", "Primo quartile", "Tempo mediano", "Terzo quartile", "Tempo peggiore")
+knitr::kable(t(tab), digits = 0)
+```
+:::
+
+::: {.callout-note collapse=true}
+
+#### Numero di partecipanti per ateneo (Fondo, Maschile)
+
+```{r}
+#| fig-width: 8
+#| fig-height: 5
+ggplot(data = fondo_tc_m, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 12)
+```
+
+:::
+
+
+::: {.callout-note collapse=true}
+#### Tempi di arrivo per ateneo (Fondo, Maschile)
+
+Gli atenei sono stati ordinati considerando la [graduatoria complessiva]{.orange}.
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 5
+
+fondo_tc_m$Ateneo <- factor(fondo_tc_m$Ateneo, 
+                           levels = levels(fondo_tc_m$Ateneo)[order(fondo_tc_m_freq$Graduatoria, decreasing = TRUE)], 
+                           ordered = TRUE)
+ggplot(data = fondo_tc_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + scale_fill_tableau(palette = "Tableau 20")
+```
+:::
+
+<!-- ::: {.callout-note collapse=true} -->
+<!-- #### Numero di partecipanti e punteggio della squadra (Fondo, Maschile) -->
+
+<!-- ```{r} -->
+<!-- #| warning: false -->
+<!-- #| message: false -->
+<!-- #| fig-width: 10 -->
+<!-- #| fig-height: 5 -->
+<!-- ggplot(data = fondo_tc_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 20) -->
+<!-- ``` -->
+
+<!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
+
+<!-- ```{r} -->
+<!-- contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = fondo_tc_m_freq)) -->
+<!-- names(contributo) <- fondo_tc_m_freq$Ateneo -->
+<!-- knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti")) -->
+<!-- ``` -->
+<!-- ::: -->
+
+<!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->
+
+<!-- Modello di regression lineare. Il [fattore determinante]{.orange} è il [numero di partecipanti]{.blue} e non il tempo (più precisamente, la media dei migliori quattro tempi per ateneo). La variabile tempo risulta addirittura statisticamente non significativa. -->
+
+<!-- ```{r} -->
+<!-- m3 <- lm(Graduatoria ~ Partecipanti + Tempo_migliori_4, data = fondo_tc_m_freq) -->
+<!-- summary(m3) -->
+<!-- ``` -->
+
+::: {.callout-note collapse=true}
+#### Numero di partecipanti per categoria (Gigante, Maschile)
+
+La categoria `0` corrisponde a "MASTER S R". 
+
+```{r}
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = fondo_tc_m, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria (A,B,C,D)")
+```
+:::
+
+
+::: {.callout-note collapse=true}
+#### Tempi per categoria (Fondo, Maschile)
+
+La categoria `0` corrisponde a "MASTER S R". 
+
+```{r}
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+ggplot(data = fondo_tc_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + xlab("Categoria (A,B,C,D)") + scale_fill_tableau(palette = "Tableau 20")
 ```
 :::

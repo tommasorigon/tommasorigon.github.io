@@ -129,13 +129,13 @@ library(MASS)
 ggplot(data = gigante_f_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
 ```
 
-Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti.
+<!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
 
-```{r}
-contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_f_freq))
-names(contributo) <- gigante_f_freq$Ateneo
-knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti"))
-```
+<!-- ```{r} -->
+<!-- contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_f_freq)) -->
+<!-- names(contributo) <- gigante_f_freq$Ateneo -->
+<!-- knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti")) -->
+<!-- ``` -->
 :::
 
 <!-- #### Modello di regression lineare (Analisi avanzata, Gigante, Femminile) -->

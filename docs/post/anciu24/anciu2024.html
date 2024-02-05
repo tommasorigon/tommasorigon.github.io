@@ -293,93 +293,12 @@ Numero di partecipanti e punteggio della squadra (Gigante, Femminile)
 <p><img src="anciu2024_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="2500"></p>
 </div>
 </div>
-<p>Il <span class="blue">talento medio della squadra</span> si può misurare come “<span class="orange">residuo</span>” della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti.</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 78%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Ateneo</th>
-<th style="text-align: right;">Punti bonus/malus legati alla capacità dei partecipanti</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">PADOVA</td>
-<td style="text-align: right;">1042</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">BOLOGNA</td>
-<td style="text-align: right;">163</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MILANO BICOCCA</td>
-<td style="text-align: right;">144</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">BRESCIA</td>
-<td style="text-align: right;">125</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">PARMA</td>
-<td style="text-align: right;">96</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CA FOSCARI</td>
-<td style="text-align: right;">93</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">CAGLIARI</td>
-<td style="text-align: right;">90</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ANCONA</td>
-<td style="text-align: right;">60</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FIRENZE</td>
-<td style="text-align: right;">-15</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CAMERINO</td>
-<td style="text-align: right;">-23</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">COSENZA</td>
-<td style="text-align: right;">-45</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GENOVA</td>
-<td style="text-align: right;">-82</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">CHIETI</td>
-<td style="text-align: right;">-109</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">TRENTO</td>
-<td style="text-align: right;">-142</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">PISA</td>
-<td style="text-align: right;">-155</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MILANO STATALE</td>
-<td style="text-align: right;">-200</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">CATANIA</td>
-<td style="text-align: right;">-225</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
+<!-- ```{r} -->
+<!-- contributo <- residuals(rlm(Graduatoria ~ Partecipanti, data = gigante_f_freq)) -->
+<!-- names(contributo) <- gigante_f_freq$Ateneo -->
+<!-- knitr::kable(sort(contributo, decreasing = TRUE), digits = 0, col.names = c("Ateneo",  "Punti bonus/malus legati alla capacità dei partecipanti")) -->
+<!-- ``` -->
 </div>
 </div>
 </div>
@@ -403,7 +322,7 @@ Numero di partecipanti per categoria (Gigante, Femminile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>
@@ -424,7 +343,7 @@ Tempi per categoria (Gigante, Femminile)
 <p>Ho rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria <code>D0</code> corrisponde a “MASTER D S”, mentre la categoria <code>D12</code> sembra vuota perchè i tempi sono tutti superiori ai 100 secondi.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>
@@ -447,7 +366,7 @@ Tempi di arrivo (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 <div class="cell">
@@ -498,7 +417,7 @@ Numero di partecipanti per ateneo (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>
@@ -519,7 +438,7 @@ Tempi di arrivo per ateneo (Gigante, Maschile)
 <p>Gli atenei sono stati ordinati considerando la <span class="orange">graduatoria complessiva</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>
@@ -539,7 +458,7 @@ Numero di partecipanti e punteggio della squadra (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="2500"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="2500"></p>
 </div>
 </div>
 <!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
@@ -572,7 +491,7 @@ Numero di partecipanti per categoria (Gigante, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER D S”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>
@@ -593,7 +512,7 @@ Tempi per categoria (Gigante, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER D S”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="2000"></p>
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="2000"></p>
 </div>
 </div>
 </div>

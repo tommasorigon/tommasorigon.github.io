@@ -245,7 +245,7 @@ Gli atenei sono stati ordinati considerando la [graduatoria complessiva]{.orange
 gigante_m$Ateneo <- factor(gigante_m$Ateneo, 
                            levels = levels(gigante_m$Ateneo)[order(gigante_m_freq$Graduatoria, decreasing = TRUE)], 
                            ordered = TRUE)
-ggplot(data = gigante_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + xlab("Ateneo") + ylab("Tempo (secondi)") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10)
 ```
 :::
 
@@ -301,7 +301,7 @@ La categoria `0` corrisponde a "MASTER S R".
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + xlab("Categoria (A,B,C,D)") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + xlab("Categoria (A,B,C,D)") + scale_fill_tableau(palette = "Tableau 20")+ scale_y_continuous(n.breaks = 12)
 ```
 :::
 

@@ -225,8 +225,8 @@ knitr::kable(t(tab), digits = 2)
 
 ```{r}
 #| fig-width: 8
-#| fig-height: 4
-ggplot(data = gigante_m, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10)
+#| fig-height: 5
+ggplot(data = gigante_m, aes(x = Ateneo, y = after_stat(count), fill = Ateneo)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(axis.text.x = element_text(angle = 90), legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 12)
 ```
 
 :::
@@ -257,7 +257,7 @@ ggplot(data = gigante_m, aes(x = Ateneo, y = Tempo, fill = Ateneo)) + geom_boxpl
 #| message: false
 #| fig-width: 10
 #| fig-height: 5
-ggplot(data = gigante_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 10)
+ggplot(data = gigante_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ateneo))  + theme_light() + xlab("Numero di partecipanti") + ylab("Punteggio finale") + geom_smooth(method = "rlm", se = F, linetype = "dotted", size = 0.6) + geom_text(size = 3, vjust = "top", check_overlap = TRUE)+ scale_x_continuous(n.breaks = 20)
 ```
 
 <!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
@@ -281,10 +281,12 @@ ggplot(data = gigante_m_freq, aes(x = Partecipanti, y = Graduatoria, label = Ate
 ::: {.callout-note collapse=true}
 #### Numero di partecipanti per categoria (Gigante, Maschile)
 
+La categoria `0` corrisponde a "MASTER D S". 
+
 ```{r}
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_m, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria D")
+ggplot(data = gigante_m, aes(x = Categoria, y = after_stat(count), fill = Categoria)) + geom_bar() + theme_light() + ylab("Frequenza assoluta") + theme_light() + theme(legend.position = "none") + scale_fill_tableau(palette = "Tableau 20") + scale_y_continuous(n.breaks = 10) + xlab("Categoria (A,B,C,D)")
 ```
 :::
 
@@ -298,6 +300,6 @@ La categoria `0` corrisponde a "MASTER D S".
 #| warning: false
 #| fig-width: 8
 #| fig-height: 4
-ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + ylim(c(35, 90)) + xlab("Categoria") + scale_fill_tableau(palette = "Tableau 20")
+ggplot(data = gigante_m, aes(x = Categoria, y = Tempo, fill = Categoria)) + geom_boxplot(outlier.size = 0, outlier.alpha = 0) + geom_jitter(width = 0.15, size = 0.5) + theme_light() + theme( legend.position = "none") + ylab("Tempo (secondi)") + xlab("Categoria (A,B,C,D)") + scale_fill_tableau(palette = "Tableau 20")
 ```
 :::

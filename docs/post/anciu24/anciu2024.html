@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,6 +45,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "ci sono altri risultati in questo documento",
     "search-more-matches-text": "ulteriori risultati in questo documento",
     "search-clear-button-title": "Pulire",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancellare",
     "search-submit-button-title": "Inviare",
     "search-label": "Ricerca"
@@ -69,13 +70,40 @@ ul.task-list li input[type="checkbox"] {
   </script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -83,33 +111,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../papers.html" rel="" target="">
- <span class="menu-text">Papers</span></a>
+    <a class="nav-link" href="../../papers.html"> 
+<span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../bio.html" rel="" target="">
- <span class="menu-text">Short Bio</span></a>
+    <a class="nav-link" href="../../bio.html"> 
+<span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html" rel="" target="">
- <span class="menu-text">Teaching &amp; Slides</span></a>
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../links.html" rel="" target="">
- <span class="menu-text">Collaborators</span></a>
+    <a class="nav-link" href="../../links.html"> 
+<span class="menu-text">Collaborators</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tesi.html" rel="" target="">
- <span class="menu-text">Thesis Information (ITA)</span></a>
+    <a class="nav-link" href="../../tesi.html"> 
+<span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -140,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Autore/Autrice</div>
@@ -160,7 +188,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="classifica-per-ateneo" class="level2">
 <h2 class="anchored" data-anchor-id="classifica-per-ateneo">Classifica per ateneo</h2>
@@ -199,7 +229,11 @@ Tempi di arrivo (Gigante, Femminile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 <div class="cell">
@@ -250,7 +284,11 @@ Numero di partecipanti per ateneo (Gigante, Femminile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -271,7 +309,11 @@ Tempi di arrivo per ateneo (Gigante, Femminile)
 <p>Ho rimosso <span class="math inline">4</span> tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. Gli atenei sono stati ordinati considerando la <span class="orange">graduatoria complessiva</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -291,7 +333,11 @@ Numero di partecipanti e punteggio della squadra (Gigante, Femminile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="2500"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="2500"></p>
+</figure>
+</div>
 </div>
 </div>
 <!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
@@ -323,7 +369,11 @@ Numero di partecipanti per categoria (Gigante, Femminile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -344,7 +394,11 @@ Tempi per categoria (Gigante, Femminile)
 <p>Ho rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria <code>D0</code> corrisponde a “MASTER D S”, mentre la categoria <code>D12</code> sembra vuota perchè i tempi sono tutti superiori ai 100 secondi.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -367,7 +421,11 @@ Tempi di arrivo (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 <div class="cell">
@@ -418,7 +476,11 @@ Numero di partecipanti per ateneo (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -439,7 +501,11 @@ Tempi di arrivo per ateneo (Gigante, Maschile)
 <p>Gli atenei sono stati ordinati considerando la <span class="orange">graduatoria complessiva</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -459,7 +525,11 @@ Numero di partecipanti e punteggio della squadra (Gigante, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="2500"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="2500"></p>
+</figure>
+</div>
 </div>
 </div>
 <!-- Il [talento medio della squadra]{.blue} si può misurare come "[residuo]{.orange}" della precedente retta di regressione. In altri termini, la tabella seguente indica quanti punti in più o in meno ha ottenuto ciascun ateneo rispetto a quanti ce ne si aspetterebbe considerato il numero di partecipanti. -->
@@ -492,7 +562,11 @@ Numero di partecipanti per categoria (Gigante, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER S R”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -513,7 +587,11 @@ Tempi per categoria (Gigante, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER S R”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -536,7 +614,11 @@ Tempi di arrivo (Fondo, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 <div class="cell">
@@ -587,7 +669,11 @@ Numero di partecipanti per ateneo (Fondo, Maschile)
 <div class="callout-body-container callout-body">
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -608,7 +694,11 @@ Tempi di arrivo per ateneo (Fondo, Maschile)
 <p>Gli atenei sono stati ordinati considerando la <span class="orange">graduatoria complessiva</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -651,7 +741,11 @@ Numero di partecipanti per categoria (Fondo, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER S R”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -672,7 +766,11 @@ Tempi per categoria (Fondo, Maschile)
 <p>La categoria <code>0</code> corrisponde a “MASTER S R”.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="anciu2024_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="2000"></p>
+<div>
+<figure class="figure">
+<p><img src="anciu2024_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="2000"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -762,10 +860,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -775,8 +872,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -789,6 +895,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -832,6 +1057,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -857,6 +1083,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -917,6 +1169,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

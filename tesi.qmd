@@ -35,9 +35,9 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 
 ## FAQ {.central}
 
-1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue}. Inoltre, non è ovviamente possibile laurearsi senza aver superato tutti gli esami. Pertanto, è fortemente raccomandato concludere gli esami prima di cominciare a lavorare alla tesi a tempo pieno.
+1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, è fortemente raccomandato concludere gli esami prima di cominciare a lavorare alla tesi a tempo pieno.
 
-2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.
+2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.
 
 3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici.
 

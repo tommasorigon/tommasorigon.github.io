@@ -1,0 +1,32 @@
+---
+title: "Torneo di birrapong"
+subtitle: "Caldes (TN) - 13 aprile 2024"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2024-04-14
+execute:
+  cache: false
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    theme: [cosmo, ../../template.css]
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+## Il risultato del torneo
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/17584594"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+

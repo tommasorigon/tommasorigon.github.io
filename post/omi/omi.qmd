@@ -1,0 +1,97 @@
+---
+title: "Torneo di birrapong"
+subtitle: "Caldes (TN) - 13 aprile 2024"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2024-07-10
+execute:
+  cache: false
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    theme: [cosmo, ../../template.css]
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+## asd
+
+
+I dati provengono da qui: 
+
+http://dati.comune.milano.it/dataset/ds1996-quotazioni-immobiliari-omi-compravendita-e-locazione-riepilogo
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+
+rm(list = ls())
+dataset <- read_csv("quotazioni_omi.csv")
+zone_omi <- read_csv("zone_omi.csv")
+```
+
+```{r}
+zone_omi <- zone_omi %>% select(Zona, Zona_Descr)
+dataset <- dataset %>% select(Anno, Periodo, Zona, Descr_Tipologia, Stato, Compr_min, Compr_max,Loc_min, Loc_max)
+
+dataset <- left_join(dataset, zone_omi, by = "Zona")
+dataset <- dataset %>% mutate(Compr_media = (Compr_max + Compr_min) / 2, Loc_media = (Loc_max + Loc_min) / 2, Anno_Periodo = Anno + 0.5*(as.numeric(factor(Periodo))-1))
+dataset$Stato <- factor(dataset$Stato)
+levels(dataset$Stato) <- c("Normale", "Ottimo", "Scadente")
+```
+
+```{r}
+data_plot <- dataset %>% filter(Anno >= 2023, Descr_Tipologia %in% c("Abitazioni civili")) %>% group_by(Zona_Descr, Stato, Anno) %>% summarise(min = mean(Compr_min), avg = mean(Compr_media), max = mean(Compr_max)) %>% arrange(avg)
+
+ggplot(data = data_plot, aes(y = fct_reorder(factor(Zona_Descr), avg), x = avg, col = Stato, xmin = min, xmax = max)) + geom_pointrange(size = 0.3) + facet_grid(.~Stato, scales = "free_x") + theme_light() + ylab("") + xlab("Prezzo al metro quadro (compravendita)") + ggtitle("Abitazioni civili  (Dati OMI, Agenzia delle Entrate)") +scale_color_tableau(palette = "Color Blind") + scale_x_continuous(breaks = 1000*0:15) 
+```
+
+
+```{r}
+# PIOLA, ARGONNE, CORSICA
+ggplot(data = dataset %>% filter(Descr_Tipologia %in% c("Abitazioni civili"), Zona %in% c("D12", "D34", "E6", "D13", "D25", "C17")), aes(x = Anno_Periodo, y = Compr_media, col = Stato)) + facet_wrap(.~Zona_Descr, ncol = 2) + geom_line() + geom_point() + theme_light() + xlab("Anno") + ylab("Prezzo medio al metro quadro (compravendita)") + ggtitle("Abitazioni civili  (Dati OMI, Agenzia delle Entrate)") +  scale_color_tableau(palette = "Color Blind") + scale_y_continuous(breaks = 1000*1:8) + scale_x_continuous(breaks = c(2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024))
+```
+
+```{r}
+dataset_export <- dataset %>% filter(Descr_Tipologia %in% c("Abitazioni civili"), Zona %in% c("D12", "D34", "E6", "D13", "D25", "C17")) %>% select(Compr_media, Anno_Periodo, Zona_Descr, Stato) 
+
+dataset_export <- dataset_export %>% spread(key = Zona_Descr, value = Compr_media)
+write_csv(dataset_export, file ="omi_clean.csv", na = "")
+```
+
+```{r}
+# Venezia
+rm(list = ls())
+dataset1 <- read.table("QI_1053900_1_20231_VALORI.csv", sep = ";", skip = 1, header = T, dec = ",") %>% mutate(Anno = 2023, Periodo = 1)
+dataset2 <- read.table("QI_1053898_1_20232_VALORI.csv", sep = ";", skip = 1, header = T, dec = ",")%>% mutate(Anno = 2023, Periodo = 2)
+dataset <- rbind(dataset1, dataset2); rm(dataset1, dataset2)
+zone_omi <- read.table("QI_1053898_1_20232_ZONE.csv", sep = ";", skip = 1, header = T)
+
+zone_omi <- zone_omi %>% select(Zona, Zona_Descr)
+dataset <- dataset %>% select(Anno, Periodo, Zona, Descr_Tipologia, Stato, Compr_min, Compr_max,Loc_min, Loc_max)
+
+dataset <- left_join(dataset, zone_omi, by = "Zona")
+dataset <- dataset %>% mutate(Compr_media = (Compr_max + Compr_min) / 2, Loc_media = (Loc_max + Loc_min) / 2, Anno_Periodo = Anno + 0.5*(as.numeric(factor(Periodo))-1))
+dataset$Stato <- factor(dataset$Stato)
+levels(dataset$Stato) <- c("Normale", "Ottimo", "Scadente")
+```
+
+```{r}
+data_plot <- dataset %>% filter(Anno >= 2023, Descr_Tipologia %in% c("Abitazioni civili"), Stato != "Scadente") %>% group_by(Zona_Descr, Stato, Anno) %>% summarise(min = mean(Compr_min), avg = mean(Compr_media), max = mean(Compr_max)) %>% arrange(avg)
+
+ggplot(data = data_plot, aes(y = fct_reorder(factor(Zona_Descr), avg), x = avg, col = Stato, xmin = min, xmax = max)) + geom_pointrange(size = 0.3) + facet_grid(.~Stato, scales = "free_x") + theme_light() + ylab("") + xlab("Prezzo al metro quadro (compravendita)") + ggtitle("Abitazioni civili  (Dati OMI, Agenzia delle Entrate)") +scale_color_tableau(palette = "Color Blind") + scale_x_continuous(breaks = 1000*0:15) 
+```
+
+

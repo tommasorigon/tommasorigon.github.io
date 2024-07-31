@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  24 JUL 2024 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  31 JUL 2024 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,13 +527,13 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 12625 strings out of 478268
- 199014 string characters out of 5846347
- 544423 words of memory out of 5000000
+ 12623 strings out of 478268
+ 198992 string characters out of 5846347
+ 544378 words of memory out of 5000000
  30451 multiletter control sequences out of 15000+600000
- 518381 words of font info for 130 fonts, out of 8000000 for 9000
+ 518229 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1005b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,80p,1005b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
 local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}{/usr/local/
 texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
@@ -542,7 +542,7 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 247632 bytes).
+Output written on cv_Rigon.pdf (7 pages, 247633 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  208 compressed objects within 3 object streams

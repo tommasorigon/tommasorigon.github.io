@@ -40,7 +40,9 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 ## News and awards {.central}
 
-[[2024]{.blue}] I will attend both [BAYSM 2024](https://events.stat.uconn.edu/BAYSM2024/) and the [ISBA world meeting 2024](https://www.unive.it/web/en/2208/home), between June and July. ISBA is the [main international conference]{.blue} for [Bayesian]{.blue} statistics. BAYSM is organized by [j-ISBA](https://j-isba.github.io) and is devoted to [young researchers]{.blue}.
+[[2024]{.blue}] [Mitchell Prize 2023]{.blue} for the paper "Extended Stochastic Block Models with Application to Criminal Networks". International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/mitchell-prize/)]
+
+[[2024]{.blue}] I attended [BAYSM 2024](https://events.stat.uconn.edu/BAYSM2024/) and the [ISBA world meeting 2024](https://www.unive.it/web/en/2208/home), between June and July. ISBA is the [main international conference]{.blue} for [Bayesian]{.blue} statistics. BAYSM is organized by [j-ISBA](https://j-isba.github.io) and is devoted to [young researchers]{.blue}.
 
 [[2024]{.blue}] I have been to Madagascar for the [annual meeting]{.blue} of [LIFEPLAN](https://cordis.europa.eu/project/id/856506) (a planetary inventory of life), funded by an [ERC Synergy Grant]{.blue} focusing on global biodiversity research. [[Photos](https://www.icloud.com/sharedalbum/it-it/#B19Grq0zw0xLA7t)]
 

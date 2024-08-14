@@ -1,6 +1,5 @@
 ---
-title: "Torneo di birrapong"
-subtitle: "Caldes (TN) - 13 aprile 2024"
+title: "Quotazioni OMI"
 author: "[Tommaso Rigon]{.orange}"
 lang: it
 date: 2024-07-10

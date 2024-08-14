@@ -3,17 +3,17 @@ title: 'Informazioni per la tesi di laurea'
 lang: it
 ---
 
-Una popolare e per certi versi naturale credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in "Statistica I" oppure in "Introduzione ad R", anche perché sono corsi introduttivi.
+Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in "Statistica I" oppure in "Introduzione ad R", anche perché sono corsi introduttivi.
 
 Le tematiche di cui mi occupo sono: applicazioni e metodi di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
 
-Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d'ipotesi, metodi boostrap, etc.). 
+Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d'ipotesi, metodi boostrap, etc.).
 
 Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [Martedì alle ore 17.30]{.blue}.
 
 ## Il software LaTeX {.central}
 
-L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura della tesi è [caldamente raccomandato]{.blue}. 
+L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura della tesi è [caldamente raccomandato]{.blue}.
 
 LaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare [Overleaf](https://www.overleaf.com). Per una [guida in italiano]{.blue} all'uso di LaTeX si consiglia [LaTeX per l'impaziente](http://www.lorenzopantieri.net/LaTeX_files/LaTeXimpaziente.pdf) oppure [l'Arte di scrivere con LaTeX](http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf).
 
@@ -25,17 +25,18 @@ Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). S
 
 Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore oppure correlatore.
 
-| Laurea | Candidata/o | Titolo |
-|:-------:|:------------:|:-------|
-| | |**LAUREA TRIENNALE** |
-| [Triennale]{.blue} | Marco Carrettoni | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf) |
-| [Triennale]{.blue} | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf) |
-| [Triennale]{.blue} | Erica Delvino | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf) |
-| [Triennale]{.blue} | Tommaso Menghini | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf) |
-| [Triennale]{.blue} | Anna Petranzan | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf) |
-| | | **LAUREA MAGISTRALE**| 
-| [Magistrale]{.orange} | Davide Agnoletto | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf) |
-| [Magistrale]{.orange} | Gabriele Tinè | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tine_magistrale_826904.pdf) |
+| Anno Accademico |        Laurea         | Candidata/o           | Titolo                                                                                                                                                                   |
+|:-------------:|:-------------:|:---------------------|:-------------------------------------------|
+|                 |                       |                       | **LAUREA TRIENNALE**                                                                                                                                                     |
+|    2021/2022    |  [Triennale]{.blue}   | Marco Carrettoni      | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf)                               |
+|    2021/2022    |  [Triennale]{.blue}   | Erica Delvino         | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf)                                                                       |
+|    2021/2022    |  [Triennale]{.blue}   | Anna Petranzan        | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf)                                                               |
+|    2022/2023    |  [Triennale]{.blue}   | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf)                                                                |
+|    2022/2023    |  [Triennale]{.blue}   | Tommaso Menghini      | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf)                                                              |
+|    2023/2024    |  [Triennale]{.blue}   | Stefano Andreoli      | [Metodi di stima intervallare in un modello binomiale](files/papers/Andreoli_triennale_880053.pdf)                                                                       |
+|                 |                       |                       | **LAUREA MAGISTRALE**                                                                                                                                                    |
+|    2020/2021    | [Magistrale]{.orange} | Davide Agnoletto      | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf)                                   |
+|    2022/2023    | [Magistrale]{.orange} | Gabriele Tinè         | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tine_magistrale_826904.pdf) |
 
 ## FAQ {.central}
 

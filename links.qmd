@@ -1,15 +1,54 @@
 ---
 ---
 
-## Co-authors {.central}
 
-[Davide Agnoletto](https://davideagno.github.io), University of Padova
+## University of Milano-Bicocca {.central}
 
-[Emanuele Aliverti](https://emanuelealiverti.github.io), University of Padova
+[Federico Camerlenghi](https://sites.google.com/unimib.it/camerlenghi-federico/home-page)
 
-[Federico Camerlenghi](https://sites.google.com/unimib.it/camerlenghi-federico/home-page), University of Milano-Bicocca
+[Riccardo Cogo](https://www.linkedin.com/in/riccardo-cogo-9039a6150/), Ph.D. student
 
-[Antonio Canale](https://tonycanale.github.io), University of Padova
+[Lorenzo Ghilotti](https://lghilotti.github.io), Ph.D. student
+
+[Luca Presicce](https://lucapresicce.github.io), Ph.D. student
+
+[Carlo Reverberi](https://neuromi.it/author/carlo-reverberi/)
+
+## Bocconi University {.central}
+
+[Daniele Durante](https://danieledurante.github.io/web/)
+
+[Antonio Lijoi](https://mypage.unibocconi.eu/antoniolijoi/), Ph.D. advisor
+
+[Sonia Petrone](https://dec.unibocconi.eu/people/sonia-petrone)
+
+[Igor Prünster](https://mypage.unibocconi.eu/igorpruenster/), Ph.D. advisor
+
+## Duke University {.central}
+
+[David Dunson](https://scholars.duke.edu/person/dunson), Post-doc advisor
+
+[Amy Herring](https://scholars.duke.edu/person/Amy.Herring), Post-doc advisor
+
+[Ching-Lung Hsu](https://sites.duke.edu/ch408/), Ph.D. student
+
+[Alan Gelfand](https://scholars.duke.edu/person/alan)
+
+## University of Padova {.central}
+
+[Davide Agnoletto](https://davideagno.github.io), Ph.D. student
+
+[Emanuele Aliverti](https://emanuelealiverti.github.io)
+
+[Antonio Canale](https://tonycanale.github.io)
+
+[Francesco Denti](https://fradenti.github.io)
+
+[Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa.html), M.Sc. advisor
+
+[Andrea Sottosanti](https://andreasottosanti.github.io)
+
+## Other Universities {.central}
 
 [Alessia Caponera](https://alessiacaponera.github.io), Luiss University
 
@@ -17,49 +56,19 @@
 
 [Paolo Cherubini](https://scholar.google.it/citations?user=xDkyPXUAAAAJ&hl=en), University of Pavia
 
-[Riccardo Cogo](https://www.linkedin.com/in/riccardo-cogo-9039a6150/), University of Milano-Bicocca
-
-[Francesco Denti](https://fradenti.github.io), University of Padova
-
-[David Dunson](https://scholars.duke.edu/person/dunson), Duke University
-
-[Daniele Durante](https://danieledurante.github.io/web/), Bocconi University
-
-[Amy Herring](https://scholars.duke.edu/person/Amy.Herring), Duke University
-
-[Ching-Lung Hsu](https://sites.duke.edu/ch408/), Duke University
-
 [Stefano Favaro](http://sites.carloalberto.org/favaro/), University of Turin
 
-[Alan Gelfand](https://scholars.duke.edu/person/alan), Duke University
-
-[Lorenzo Ghilotti](https://lghilotti.github.io), University of Milano-Bicocca
-
 [Sirio Legramanti](https://siriolegramanti.wordpress.com), University of Bergamo
-
-[Antonio Lijoi](https://mypage.unibocconi.eu/antoniolijoi/), Bocconi University
 
 [Otso Ovaskainen](https://researchportal.helsinki.fi/en/persons/otso-ovaskainen), University of Helsinki
 
 [Sally Paganin](https://salleuska.github.io), Ohio State University
 
-[Francesca Panero](https://francescapanero.github.io), London School of Economics
-
-[Sonia Petrone](https://dec.unibocconi.eu/people/sonia-petrone), Bocconi University
-
-[Luca Presicce](https://lucapresicce.github.io), University of Milano-Bicocca
-
-[Igor Prünster](https://mypage.unibocconi.eu/igorpruenster/), Bocconi University
-
-[Carlo Reverberi](https://neuromi.it/author/carlo-reverberi/), University of Milano-Bicocca
+[Francesca Panero](https://francescapanero.github.io), Sapienza University
 
 [Massimilano Russo](https://rmassimiliano.github.io), Ohio State University
 
-[Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa.html), University of Padova
-
 [Aldo Solari](https://aldosolari.github.io), Ca' Foscari University
-
-[Andrea Sottosanti](https://andreasottosanti.github.io), University of Padova
 
 [Nicola Torelli](https://scholar.google.it/citations?user=l5fIs0wAAAAJ&hl=en), University of Trieste
 

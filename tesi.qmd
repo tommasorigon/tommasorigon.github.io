@@ -23,7 +23,7 @@ Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). S
 
 ## Tesi passate (triennali, magistrali e dottorato) {.central}
 
-Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore oppure correlatore.
+Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure sono stato attivamente coinvolto nel progetto di ricerca come mentore.
 
 | A. A. |            Laurea             | Candidata/o           | Titolo                                                                                                                                                                   |
 |:---------------:|:-----------------------------:|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

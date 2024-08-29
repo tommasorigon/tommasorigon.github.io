@@ -5,6 +5,8 @@
 
 [Preprints]{.blue}
 
+1. Ghilotti, D., Camerlenghi, F., and **Rigon, T.** (2024+). Bayesian analysis of product feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
+
 1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2024+). Bayesian inference for generalized linear models via quasi-posteriors. Submitted. [[ArXiv]](https://arxiv.org/abs/2311.00820).
 
 1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2024+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. Submitted.  [[ArXiv]](https://arxiv.org/abs/2306.02360).

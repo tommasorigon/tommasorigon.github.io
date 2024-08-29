@@ -25,7 +25,7 @@ Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). S
 
 Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi.
 
-|   A. A.   |            Laurea             | Candidata/o           | Titolo                                                                                                                                                                   |
+|   A.A.   |            Laurea             | Candidata/o           | Titolo                                                                                                                                                                   |
 |:---------:|:---------:|:----------|:----------------------------------------|
 |           |                               |                       | **Laurea Triennale**                                                                                                                                                     |
 | 2012/2013 |      [Triennale]{.blue} (Unipd)      | Tommaso Rigon         | [Trasformazione Box-Cox: un’analisi basata sulla verosimiglianza](files/papers/Rigon_triennale.pdf)                                                                      |

@@ -44,7 +44,7 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 |   2020    | [**Ph.D.**]{.darkred} (Bocconi)  | Tommaso Rigon       | [Finite-dimensional nonparametric priors: theory and applications](files/papers/PhDThesis.pdf)                                  |
 |   2023    | [**Ph.D.**]{.darkred} (Duke)  | Alessandro Zito       | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf)                                  |
 
-: Thesis {tbl-colwidths="\[5, 15, 20, 70\]"}
+: Thesis {tbl-colwidths="\[5, 10, 20, 75\]"}
 
 ## FAQ {.central}
 

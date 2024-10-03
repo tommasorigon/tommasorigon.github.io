@@ -1,0 +1,58 @@
+---
+title: "Atenei"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+execute:
+  cache: false
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    theme: [cosmo, ../../template.css]
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+## asd
+
+
+I dati provengono da qui: 
+
+https://dati-ustat.mur.gov.it/dataset/iscritti/resource/32d26e28-a0b5-45f3-9152-6072164f3e63?inner_span=True
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+
+rm(list = ls())
+dataset <- read_csv("atenei.csv")
+dataset$Ateneo <- dataset$AteneoNOME
+dataset$Anno <- as.numeric(str_trunc(dataset$AnnoA, 4, "right", ellipsis = ""))
+dataset <- dataset %>% group_by(Anno, Ateneo) %>% summarise(Iscritti = sum(Isc))
+write_csv(spread(dataset, Ateneo, Iscritti), "atenei_clean.csv")
+```
+
+```{r}
+rm(list = ls())
+dataset <- read_csv("CdL.csv")
+dataset$Anno <- as.numeric(str_trunc(dataset$AnnoA, 4, "right", ellipsis = ""))
+dataset <- dataset %>% group_by(Anno, ClasseNUMERO) %>% summarise(Iscritti = sum(Isc))
+write_csv(spread(dataset, ClasseNUMERO, Iscritti), "cdd_clean.csv")
+```
+
+
+
+```{r}
+ggplot(data = filter(dataset, Ateneo %in% c("Milano Politecnico", "Milano Bocconi", "Milano Bicocca", "Milano", "Roma UNINETTUNO - telematica", "Roma UNICUSANO - telematica", "Roma UNITELMA - telematica", "Roma  Mercatorum - telematica", "Padova", "Milano Cattolica")), aes(x = Anno, col = Ateneo, y = Iscritti)) + geom_line(size = 0.7)  + theme_light() + ylab("") + xlab("Anno di immatricolazione") + ggtitle("Studenti iscritti (dati MIUR)") + scale_color_tableau(palette = "Color Blind")
+```

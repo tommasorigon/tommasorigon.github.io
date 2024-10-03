@@ -28,7 +28,7 @@ about:
 
 I am an Assistant Professor of Statistical Science (RTD-B, SECS-S/01) at the [department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
 
-I am a member of the [Datalab](https://datalab.unimib.it) at the University of Milano-Bicocca, the [BayesLab](https://bayeslab.unibocconi.eu) at the Bocconi Institute for Data Science and Analytics (BIDSA), and the [MIDAS Complex Data Modeling Research Network](https://midas.mat.uc.cl/network/).
+I am a member of the [BayesLab](https://bayeslab.unibocconi.eu) at the Bocconi Institute for Data Science and Analytics (BIDSA), and the [MIDAS Complex Data Modeling Research Network](https://midas.mat.uc.cl/network/).
 
 My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of publications is available [here](papers.qmd).
 

@@ -40,7 +40,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 ## News and awards {.central}
 
-[[2024]{.blue}] I volunteered for the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)]
+[[2024]{.blue}] I am part of the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)]
 
 [[2024]{.blue}] [Mitchell Prize 2023]{.blue} for the paper "Extended Stochastic Block Models with Application to Criminal Networks". International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/mitchell-prize/)]
 

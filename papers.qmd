@@ -5,7 +5,7 @@
 
 [Preprints]{.blue}
 
-1. Anceschi, N., **Rigon, T.**, Zanella, G., and Durante D. (2024+).  Optimal lower bounds for logistic log-likelihoods. [[ArXiv]](https://arxiv.org/abs/2410.10309).
+1. Anceschi, N., **Rigon, T.**, Zanella, G., and Durante D. (2024+).  Optimal lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
 
 1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2024+). Bayesian analysis of product feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
 

@@ -40,12 +40,11 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 ## News and awards {.central}
 
-[[2024]{.blue}] [Blackwell and Rosenbluth Award 2024]{.blue}] The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community. Junior section of International Society for Bayesian Analysis (j-ISBA). [[Award](https://j-isba.github.io/blackwell-rosenbluth.html)]
-
+[[2024]{.blue}] [Blackwell and Rosenbluth Award 2024]{.blue}. *The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community*. Junior Section of International Society for Bayesian Analysis (j-ISBA). [[Award](https://j-isba.github.io/blackwell-rosenbluth.html)]
 
 [[2024]{.blue}] I am part of the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)]
 
-[[2024]{.blue}] [Mitchell Prize 2023]{.blue} for the paper "Extended Stochastic Block Models with Application to Criminal Networks". International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/mitchell-prize/)]
+[[2024]{.blue}] [Mitchell Prize 2023]{.blue} *for the paper "Extended Stochastic Block Models with Application to Criminal Networks"*. International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/mitchell-prize/)]
 
 <!-- [[2024]{.blue}] I attended [BAYSM 2024](https://events.stat.uconn.edu/BAYSM2024/) and the [ISBA world meeting 2024](https://www.unive.it/web/en/2208/home), between June and July. ISBA is the [main international conference]{.blue} for [Bayesian]{.blue} statistics. BAYSM is organized by [j-ISBA](https://j-isba.github.io) and is devoted to [young researchers]{.blue}. -->
 
@@ -57,7 +56,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [[2021]{.blue}] [Young Talents Award 2021]{.blue}. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [[Award](https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf)]
 
-[[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)]
+[[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. *The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis*. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)]
 
 ----------------------------------------------------------------------
 

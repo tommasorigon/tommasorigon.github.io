@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  15 OCT 2024 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  7 NOV 2024 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,27 +484,22 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/qpl/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
@@ -513,15 +508,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
 \c@publications=\count289
 [3] [4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 467.
+(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 470.
 
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 487
+(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 490
 .
 
 [5] [6] 
@@ -533,7 +533,7 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 Here is how much of TeX's memory you used:
  12647 strings out of 478268
  199247 string characters out of 5846347
- 544006 words of memory out of 5000000
+ 543984 words of memory out of 5000000
  30453 multiletter control sequences out of 15000+600000
  522695 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -546,7 +546,7 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 248980 bytes).
+Output written on cv_Rigon.pdf (7 pages, 249344 bytes).
 PDF statistics:
  238 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams

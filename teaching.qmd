@@ -5,6 +5,8 @@
 
 [Ph.D. courses]{.blue} (*Dottorato*)
 
+  - [Statistical Inference](https://tommasorigon.github.io/InferentialStat/), Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca. 
+
   - [Bayesian Computations](https://tommasorigon.github.io/CompStat/), Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca. 
     
 [M.Sc. courses]{.blue} (*Laurea magistrale*)

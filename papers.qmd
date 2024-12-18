@@ -11,11 +11,11 @@
 
 1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2024+). Bayesian inference for generalized linear models via quasi-posteriors. Submitted. [[ArXiv]](https://arxiv.org/abs/2311.00820).
 
-1. **Rigon, T.**, Scarpa, B. and Petrone, S. (2024+). Enriched Pitman-Yor processes. Submitted. [[ArXiv]](https://arxiv.org/abs/2003.12200).
-
 [Articles in refereed journals]{.blue}
 
-1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2024+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
+1. **Rigon, T.**, Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. Submitted. *Scandinavian Journal of Statistics*, to appear. [[ArXiv]](https://arxiv.org/abs/2003.12200).
+
+1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
 
 1. Lijoi, A., Prünster, I. and **Rigon, T.** (2024). Finite-dimensional discrete random structures and Bayesian clustering. *Journal of the American Statistical Association (T&M)*, **119**(546), 929–941. [[Link]](https://www.tandfonline.com/doi/full/10.1080/01621459.2022.2149406).
 

@@ -17,7 +17,6 @@
 
   - [Statistics I (ITA)](https://tommasorigon.github.io/StatI/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
   
-  
   - [R for the multivariate statistical analysis (ITA)](https://tommasorigon.github.io/introR/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.
 
 ## Slides of talks and seminars {.central}

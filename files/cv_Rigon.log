@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  7 NOV 2024 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  18 DEC 2024 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -509,7 +509,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
@@ -517,11 +517,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--369
 [3] [4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 470.
+(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 468.
 
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 490
+(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 488
 .
 
 [5] [6] 
@@ -531,11 +531,11 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 12647 strings out of 478268
- 199247 string characters out of 5846347
+ 12649 strings out of 478268
+ 199265 string characters out of 5846347
  543984 words of memory out of 5000000
  30453 multiletter control sequences out of 15000+600000
- 522695 words of font info for 140 fonts, out of 8000000 for 9000
+ 522799 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,80p,1005b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
@@ -546,7 +546,7 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 249344 bytes).
+Output written on cv_Rigon.pdf (7 pages, 249214 bytes).
 PDF statistics:
  238 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams

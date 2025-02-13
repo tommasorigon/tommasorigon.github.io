@@ -1,0 +1,80 @@
+---
+---
+
+## Papers {.central}
+
+[Preprints]{.blue}
+
+1. **Rigon, T.**, Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).
+
+1. Anceschi, N., **Rigon, T.**, Zanella, G., and Durante D. (2025+).  Optimal lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
+
+1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
+
+1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Submitted. [[ArXiv]](https://arxiv.org/abs/2311.00820).
+
+[Articles in refereed journals]{.blue}
+
+1. **Rigon, T.**, Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. *Scandinavian Journal of Statistics*, to appear. [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1111/sjos.12765).
+
+1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
+
+1. Lijoi, A., Prünster, I. and **Rigon, T.** (2024). Finite-dimensional discrete random structures and Bayesian clustering. *Journal of the American Statistical Association (T&M)*, **119**(546), 929–941. [[Link]](https://www.tandfonline.com/doi/full/10.1080/01621459.2022.2149406).
+
+1. Catalano, M., Lijoi, A., Prünster, I. and **Rigon, T.** (2023). Bayesian modeling via discrete nonparametric priors. *Japanese Journal of Statistics and Data Science*, **6**, 607--624 [[Link]](https://link.springer.com/article/10.1007/s42081-023-00210-5).
+
+1. **Rigon, T.** (2023). An enriched mixture model for functional clustering. *Applied Stochastic Models in Business and Industry*, **39**, 232--250  [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/asmb.2736).
+
+1. **Rigon, T.** and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. *Statistics and Probability Letters*, **202**, 109901. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715223001256) [[Github repository]](https://github.com/tommasorigon/logistic-bias-reduction).
+    
+1. **Rigon, T.**, Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. *Biometrika*, **110**(3), 559--578. [[Link]](https://doi.org/10.1093/biomet/asad004) [[Github repository]](https://github.com/tommasorigon/GBClust).
+
+1. Zito, A., **Rigon, T.** and Dunson, D. B. (2023).  Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. *Methods in Ecology and Evolution*, **14**, 529--542 [[Link]](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14009) [[GitHub Repository]](https://alessandrozito.github.io/BayesANT/vignette.html).
+
+1. Zito, A., **Rigon, T.**, Ovaskainen, O. and Dunson, D. B. (2023).  Bayesian modelling of sequential discoveries. *Journal of the American Statistical Association (T&M)*, **118**(544), 2521--2532. [[Link]](https://www.tandfonline.com/doi/abs/10.1080/01621459.2022.2060835) [[GitHub Repository]](https://alessandrozito.github.io/BNPvegan/vignette.html).
+
+1. Legramanti, S., **Rigon, T.**, Durante, D. and Dunson D. B. (2022).  Extended stochastic block models with application to criminal networks. *Annals of Applied Statistics*  **16**(4), 2369--2395. [[Link]](https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-4/Extended-stochastic-block-models-with-application-to-criminal-networks/10.1214/21-AOAS1595.full) [[GitHub repository]](https://github.com/danieledurante/ESBM).
+
+1. Reverberi, C., **Rigon, T.**, Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. *Scientific Reports*, **12**(14952) [[Link]](https://www.nature.com/articles/s41598-022-18751-2).
+
+1. Favaro, S., Panero, F. and **Rigon, T.** (2021). Bayesian nonparametric disclosure risk assessment. *Electronic Journal of Statistics* **15**(2), 5626--5651. [[Link]](https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/Bayesian-nonparametric-disclosure-risk-assessment/10.1214/21-EJS1933.full).
+
+1. **Rigon, T.** and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. *Journal of Statistical Planning and inference* **211**, 131--142. [[Link]](https://www.sciencedirect.com/science/article/pii/S0378375818300697?dgcid=author) [[GitHub Repository]](https://github.com/tommasorigon/LSBP).
+    
+1. Legramanti, S., **Rigon, T.** and Durante, D. (2020).  Bayesian testing for exogenous partition structures in stochastic block models. *Sankhya A: The Indian Journal of Statistics*, **84**, 108--126. [[Link]](https://link.springer.com/article/10.1007%2Fs13171-020-00231-2) [[GitHub repository]](https://github.com/danieledurante/TESTsbm).
+    
+1. Lijoi, A., Prünster, I. and **Rigon, T.** (2020). Sampling hierarchies of discrete random structures. *Statistics and Computing* **30**, 1591--1607. [[Link]](https://link.springer.com/article/10.1007/s11222-020-09961-7).
+    
+1. Lijoi, A., Prünster, I. and **Rigon, T.** (2020). The Pitman--Yor multinomial process for mixture modeling. *Biometrika* **107**(4), 891--906. [[Link]](https://academic.oup.com/biomet/article-abstract/107/4/891/5854095).
+
+1. Durante, D. and **Rigon, T.** (2019). Conditionally conjugate mean-field variational Bayes for logistic models. *Statistical Science* **34**(3), 472--485. [[Link]](https://projecteuclid.org/euclid.ss/1570780980) [[GitHub Repository]](https://github.com/tommasorigon/logisticVB).
+
+1. Durante, D., Canale, A. and **Rigon, T.** (2019).  A nested expectation-maximization algorithm for latent class models with covariates. *Statistics and Probability Letters* **146**, 97--103. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715218303390)  [[GitHub Repository]](https://github.com/danieledurante/nEM).
+
+1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society, Series A* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub Repository]](https://github.com/tommasorigon/India-SequentiaLogit).
+
+[Publications in monographs, volumes, and discussions]{.blue}
+
+1. Agnoletto, D., **Rigon, T.** and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In *Methodological and Applied Statistics and Demography III* (Pollice, A. and Mariani, P., editors). Springer. [[Link]](https://doi.org/10.1007/978-3-031-64431-3_1)
+
+
+1. **Rigon, T.**, Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: "Centered partition processes: Informative priors for clustering" Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in *Bayesian Analysis* **16**(1) 301--370. [[Link]](https://projecteuclid.org/journals/bayesian-analysis/volume-16/issue-1/Centered-Partition-Processes-Informative-Priors-for-Clustering-with-Discussion/10.1214/20-BA1197.full).
+
+1. Aliverti, E., Paganin, S., **Rigon, T.** and Russo, M. (2019). A discussion on: "Latent nested nonparametric priors" by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in *Bayesian Analysis* **14**(4), 1303--1356. [[Link]](https://projecteuclid.org/euclid.ba/1561601089).
+
+1. Caponera, A., Denti, F., **Rigon, T.**, Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In *Studies in Neural Data Science* (Canale, A., Durante, D., Paci, L. And Scarpa, B., editors). Springer. [[Link]](https://www.springer.com/us/book/9783030000387) [[GitHub Repository]](https://github.com/tommasorigon/StartUpResearch).
+
+[National conference proceedings]{.blue}
+
+1. Agnoletto, D., **Rigon, T.** and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In *Book of Short Papers of the Italian Statistical Society* (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [[Link]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/bozza-book-compresso.pdf).
+
+1. Cogo, R., Camerlenghi, F. and **Rigon, T.** (2023). Hierarchical processes in survival analysis. In *Book of Short Papers of the Italian Statistical Society* (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [[Link]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/bozza-book-compresso.pdf).
+
+1. Presicce, L., **Rigon, T.** and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In *Book of Short Papers of the Italian Statistical Society* (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [[Link]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/bozza-book-compresso.pdf).
+
+1. Legramanti S., **Rigon, T.** and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In *Book of Short Papers of the Italian Statistical Society* (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN: 9788891932310. [[Link]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/Sis-2022-4c-low.pdf).
+    
+1. Zito, A., **Rigon, T.** and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions.  In *Book of Short Papers of the Italian Statistical Society 2021* (Perna, C., Salvati, N. and Schirripa Spagnolo, F., editors). ISBN: 9788891927361. [[Link - Part 1]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/pearson-sis-book-2021-parte-1.pdf) [[Link - Part 2]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/Università/pearson-sis-book-2021-parte-2.pdf).
+
+1. **Rigon, T.** (2018). Logit stick-breaking priors for partially exchangeable count data. In *Book of Short Papers SIS 2018* (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E., editors). ISBN: 9788891910233. [[Link]](https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Docenti/ISTITUZIONI%20-%20HE%20-%20PDF%20-%20SIS%20V2.pdf).
+

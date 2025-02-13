@@ -1,0 +1,636 @@
+
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{etaremune}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{microtype}
+
+%\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Courier} % Main document font
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+%%\usepackage[paper=letterpaper,
+%            includefoot, % Uncomment to put page number above margin
+%            marginparwidth=1.2in,     % Length of section titles
+%            marginparsep=.05in,       % Space between titles and text
+%            margin=1in,               % 1 inch margins
+%            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+\usepackage[paper=a4paper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=30mm,    % Length of section titles
+            marginparsep=1.5mm,       % Space between titles and text
+            margin=17mm,              % 25mm margins
+            includemp]{geometry}
+%\usepackage{fontawesome}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+\usepackage{marvosym}
+
+\usepackage{tgpagella}
+%\usepackage{palatino}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.4}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\ita}{}%\includegraphics[height=0.02\textwidth]{ita}}
+\newcommand{\eng}{}%\includegraphics[height=0.02\textwidth]{eng}}
+\newcommand{\orcid}{}%{\includegraphics[height=0.025\textwidth]{orcid-icon}$\,$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\newcommand{\bottomcenter}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+\begin{center}
+                {#1}\\[-0.15\baselineskip]%
+\end{center}
+         \end{minipage}}
+
+
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\tiny\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\tiny\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\tiny\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{\textsc{Tommaso Rigon}}
+
+\section{Contact Information}
+\newlength{\rcollength}\setlength{\rcollength}{2.5in}%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} &
+\textit{Email:} \href{mailto:tommaso.rigon@unimib.it}{tommaso.rigon@unimib.it}
+\\
+\href{https://en.unimib.it}{University of Milano-Bicocca} & 
+\textit{Website:}
+\href{https:tommasorigon.github.io}{https:tommasorigon.github.io}
+\\
+Building: U07, Room: 2034   & \textit{Orcid:} \href{https://orcid.org/0000-0002-9224-543X}{orcid.org/0000-0002-9224-543X}\\
+Via Bicocca degli Arcimboldi, 8, 20126, Milan, Italy     & \\
+\end{tabular}
+
+
+\section{Research Interests}
+Applied Bayesian Modeling, Bayesian clustering, Bayesian Nonparametrics, Computational Statistics, Functional Data Analysis, Mixture Models, Species Sampling Models
+
+\section{Research network}
+Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institute for Data Science and Analytics (\textsc{bidsa}), and the \href{https://midas.mat.uc.cl/network/}{\textsc{midas}} Complex Data Modeling Research Network
+
+
+\section{Current position} 
+\textbf{Assistant Professor} (\textit{Ricercatore \textsc{secs-s/01}, Legge 240/10 tipo B})\\
+\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 05/2023 to present)
+
+
+\section{Past academic positions}
+\textbf{Assistant Professor} (\textit{Ricercatore \textsc{secs-s/01}, Legge 240/10 tipo A})\\
+\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 10/2020 to 04/2023) \vspace{5pt} \\ 
+\textbf{Postdoctoral Associate} \\
+\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 02/2020 to 09/2020) \vspace{5pt} \\ 
+\textbf{Research Associate} \\
+\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 10/2019 to 02/2020) \vspace{5pt} \\ 
+\textbf{Research Affiliate} \\
+\href{http://www.carloalberto.org/research/statistics-initiative/}{de Castro Statistics Initiative}, \href{http://www.carloalberto.org/}{Collegio Carlo Alberto}, Turin, Italy (from 09/2017 to 09/2020)
+
+
+
+\section{Education}
+\href{http://www.unibocconi.eu}{\textbf{Bocconi University}}, Milan, Italy
+\begin{outerlist}
+\item[] \textbf{Ph.D. in Statistics} (\textit{Dottorato di ricerca in Statistica}), 
+        \href{https://dec.unibocconi.eu}
+             {Department of Decision Sciences} (from 09/2015 to 09/2019, thesis defense 01/2020)
+        \begin{innerlist}
+        \item Thesis Topic: \emph{Finite-dimensional nonparametric priors: theory and applications}
+        \item Advisors: 
+              \href{http://mypage.unibocconi.eu/antoniolijoi/}{Antonio Lijoi} and \href{http://mypage.unibocconi.eu/igorpruenster/}{Igor Pr\"unster}
+        \item Ph.D. awarded with honors
+        \end{innerlist}
+\end{outerlist}
+
+\blankline
+
+\href{http://www.unipd.it}{\textbf{Universit\`a degli Studi di Padova}}, Padova, Italy
+\begin{outerlist}
+\item[] \textbf{M.Sc. in Statistical Sciences} (\textit{Laurea Magistrale in Scienze Statistiche}), 
+        \href{http://www.stat.unipd.it/}{School of Statistics} (from 10/2013 to 09/2015)
+        \begin{innerlist}
+        \item Thesis Topic: \href{http://tesi.cab.unipd.it/49380/1/Rigon_Tommaso.pdf}{\emph{Functional telecommunication data: a Bayesian nonparametric approach}}
+        \item Advisor: \href{https://homes.stat.unipd.it/brunoscarpa/}{Bruno Scarpa}
+        \item Final mark: 110/110 with honors
+        \end{innerlist}
+\item[] \textbf{B.Sc. in Statistics, Economics \& Finance} (\textit{Laurea Triennale in Statistica, Economia \& Finanza}), 
+        \href{http://www.stat.unipd.it/}
+             {School of Statistics} (from 10/2010 to 04/2013)
+                     \begin{innerlist}
+        \item Thesis Topic: \href{http://tesi.cab.unipd.it/42884/1/Rigon_Tommaso.pdf}{\emph{Box-Cox transformation: an analysis based on the likelihood}}
+        \item Advisor:  \href{https://homes.stat.unipd.it/nicolasartori/}{Nicola Sartori}
+        \item Final mark: 110/110 with honors
+        \end{innerlist}
+\end{outerlist}
+
+
+\section{Awards}
+\textbf{Academic awards}
+\begin{outerlist}
+\item[\textbf{[2024]}] \emph{Blackwell-Rosenbluth Award 2024}. Junior Section of the International Society for Bayesian Analysis (\textsc{j-isba})
+
+\item[\textbf{[2024]}] \emph{Mitchell Prize 2023}. American Statistical Association (\textsc{asa}) \& International Society for Bayesian Analysis (\textsc{isba})
+
+\item[\textbf{[2022]}] \emph{National Scientific Qualification for Associate Professor in Statistics} (\textsc{13/d1})
+\item[\textbf{[2021]}] \emph{Young Talents Award}. University of Milano-Bicocca \& Accademia Nazionale dei Lincei
+\item[\textbf{[2021]}] \emph{Savage Award 2020 (Theory and Methods)}. American Statistical Association (\textsc{asa}) \& International Society for Bayesian Analysis (\textsc{isba})
+\item[\textbf{[2017]}] \emph{Best Ph.D. student in Statistics}. Bocconi University
+%\item[\textbf{[2015]}] \emph{Ph.D. fellowship}. Bocconi University
+\end{outerlist}
+\blankline
+
+\textbf{Data competitions}
+\begin{outerlist}
+\item[\textbf{[2018]}] \emph{Best objective prediction}. \href{https://www.unipa.it/dipartimenti/seas/sus4/}{Stat under the Stars 4}
+\item[\textbf{[2017]}] \emph{Young-\textsc{cladag} data contest}. Classification and Data Analysis group
+\item[\textbf{[2017]}] \emph{Bocconi summer school data competition}. Bocconi summer school
+\end{outerlist}
+\blankline
+
+\textbf{Travel awards}
+\begin{outerlist}
+\item[\textbf{[2019]}] \emph{Travel award (accommodation)}. \textsc{bnp12} conference Oxford, UK
+\item[\textbf{[2019]}] \emph{Travel award (400\pounds)}. O'Bayes 2019 conference, Warwick, UK
+\item[\textbf{[2018]}] \emph{ISBA travel award (250\$)}. \textsc{isba} 2018 world meeting, Edinburgh, UK 
+\item[\textbf{[2017]}] \emph{ISBA travel award (700\$)}. O'Bayes 2017 conference, Austin, Texas 
+\end{outerlist}
+
+\section{Service to profession}
+\textbf{Editorial activity}
+\begin{outerlist}
+\item[\textbf{[2022/Present]}] Associate Editor of Bayesian Analysis
+\end{outerlist}
+\blankline
+
+\textbf{Referee service (alphabetical order)}
+\begin{outerlist}
+\item[] Annals of Applied Statistics $\bullet$ Annals of Statistics $\bullet$  Bayesian Analysis $\bullet$  Bernoulli $\bullet$  Biometrics $\bullet$  Biometrika $\bullet$  Computational Statistics \& Data Analysis $\bullet$  Electronic Journal of Statistics $\bullet$  European Journal of Operational Research $\bullet$  \textsc{ieee} Transactions on Neural Networks and Learning Systems $\bullet$  Journal of Computational \& Graphical Statistics $\bullet$  Journal of the American Statistical Association $\bullet$ Journal of Statistical Planning and Inference $\bullet$  NeurIPS $\bullet$  Plos One $\bullet$  Statistical Methods \& Applications $\bullet$  Social Indicators Research $\bullet$  Statistics \& Probability Letters $\bullet$ Statistical Science
+\end{outerlist}
+\blankline
+
+\textbf{Positions in Academic Societies}
+\begin{outerlist}
+\item[\textbf{[2024]}] \textbf{Peer mentor} in the \href{https://j-isba.github.io/peer-mentoring.html}{j-ISBA Peer Mentoring Scheme}, ``Researchers supporting other researchers''
+\item[\textbf{[2024]}]  \textbf{Member of the committee} for the DeGroot Prize
+\item[\textbf{[2022]}]  \textbf{Member of the committee} for the Savage Award, Theory and Methods
+\item[\textbf{[2021/24]}] \textbf{Social media manager} of the International Society for Bayesian Analysis
+\item[\textbf{[2016/18]}] \textbf{Elected member of the board}  of the \href{https://youngsis.github.io}{young group (ySIS)} of the Italian Statistical Society
+\end{outerlist}
+\blankline
+
+\textbf{Organization of Scientific Events}
+
+\begin{outerlist}
+
+\item[\textbf{[2024]}] \textbf{Member of the local and scientific committees} of the \emph{BAyesian Young Statisticians Meeting 2024} (\textsc{baysm 2024}), Venice, Italy
+
+\item[\textbf{[2022]}] \textbf{Organizer of the session} \emph{Flexible Bayesian modelling for biostatistics} at the \href{http://www.cmstatistics.org/CMStatistics2022/}{15th International Conference of the \textsc{ercim wg} on Computational and Methodological Statistics} conference, London, UK
+
+\item[\textbf{[2021]}] \textbf{Organizer of the j-\textsc{isba} session} \emph{Computational and modeling advances for complex biological data} at the \href{https://events.stat.uconn.edu/ISBA2021/}{2021 World Meeting of the International Society for Bayesian Analysis} conference, virtual
+\item[\textbf{[2019]}] \textbf{Organizer of the y\textsc{sis} session} \emph{think outside of the black-box: statistical reasoning in applications} of the \href{http://meetings3.sis-statistica.org/index.php/SIS2019/index/schedConfs/current}{\textsc{sis2019}: Smart Statistics for Smart Applications} conference, Milan, Italy
+\item[\textbf{[2019]}]  \textbf{Member of the organizing committee} of \href{http://www.sus5.unibocconi.eu}{\emph{Stats under the Stars 5}}, a hackathon for young Data Scientists, Milan, Italy
+\item[\textbf{[2017]}]  \textbf{Member of the local organizing committee} of the  \href{https://www.unibocconi.eu/wps/wcm/connect/Site/BISP10/Home/}{\emph{10th international workshop on Bayesian inference in stochastic processes (\textsc{bisp10})}}, Milan, Italy
+\end{outerlist}
+\blankline
+
+\section{Service to University}
+\textbf{Positions in Boards and Committees}
+\begin{outerlist}
+\item \textbf{Faculty member of the Ph.D. program} in \emph{Economics, Statistics and Data Science}, of the University of Milano-Bicocca (from 2024 to present)
+
+\item \textbf{Member admission committee for the Ph.D. program} in \emph{Economics, Statistics and Data Science}, of the University of Milano-Bicocca (2024)
+\item \textbf{Member of the selection committee for adjunct professors} at the University of Milano-Bicocca (4 times, 2023/2024)
+\item \textbf{Doctoral thesis committee member} for
+\begin{itemize}
+\item \emph{PhD in Statistics and Computer Science} at Bocconi University (Patric Dolmeta, 2024)
+\item \emph{Ph.D. in Economics and Statistics} at the University of Milano-Bicocca (Camilla Salvatore, Luca Brusa, 2023; Luca Aiello, 2024)
+\item \emph{Ph.D. Mathematics, Information sciences and technologies, Computer science} at the University Grenoble Alpes (Louise Alamichel, 2024)
+\end{itemize}
+\item \textbf{Social media manager of the Department} (\textsc{dems}), of the University of Milano-Bicocca, from 2021 to present
+\end{outerlist}
+\blankline
+
+\textbf{Students Supervised, Co-supervised, and Mentored}
+\begin{outerlist}
+\item \textbf{Current Ph.D. students}: Luca Presicce (\textbf{Ph.D.}), Davide Agnoletto (\textbf{M.Sc.}, \textbf{Ph.D.}, supervisor: Bruno Scarpa), Riccardo Cogo (\textbf{Ph.D.}, supervisor: Federico Camerlenghi),  Ching-Lung Hsu (\textbf{Ph.D.}, supervisor: David Dunson)
+\item \textbf{Former Ph.D. students}: Alessandro Zito (\textbf{Ph.D.}, supervisor: David Dunson, 2024)
+\item I have supervised and co-supervised about $30$ B.Sc./M.Sc. students in applied and research-oriented theses on a broad range of topics
+\end{outerlist}
+\blankline
+
+\section{Funding and grants}  \textbf{Collaborator} of the \textsc{nemesis erc} project entitled ``\emph{sociogeNEsis of criMinal nEtworks: reconStruction, dIscovery and diSruption}'', funded by the European Research Council \textsc{erc} starting grant for the years 2024-2029.  \textsc{pi}: Daniele Durante  \\
+
+\textbf{Member of the research group} of the grant \textsc{prin} 2022 entitled ``\emph{Measuring Biodiversity via Bayesian Nonparametrics: Estimation, Clustering and Uncertainty Quantification}'' for the years 2023-2025. \textsc{pi}: Igor Pr\"unster. \textsc{co-pi}: Federico Camerlenghi \\
+
+\textbf{Member of the research group} of the grant \textsc{prin} 2022 entitled ``\emph{Discrete random structures for Bayesian learning and prediction}'' for the years 2023-2025. \textsc{pi}: Antonio Lijoi. \textsc{co-pi}: Bernardo Nipoti \\
+
+\textbf{Member of the research group} of the grant FAQC 2021 funded by the University of Milano-Bicocca. \textsc{pi}: Bernardo Nipoti  \\
+
+\textbf{Member of the research group} of the \textsc{lifeplan erc} project, funded by the European Research Council through a 12.6M€ \textsc{erc}-synergy grant for the years 2020-2026. Global biodiversity research \textsc{pi}: prof. Tomas Roslin. Statistical research \textsc{pi}: prof. David B. Dunson. Corresponding \textsc{pi}: prof. Otso Ovaskainen   \\
+
+\textbf{Member of the research group} of the grant R01ES027498 funded by the National Institute of Environmental Health Sciences of the United States National Institutes of Health. \textsc{pi}: Amy H. Herring  \\
+
+
+\section{Publications}
+\textbf{Refereed journals}
+\newcounter{publications}
+
+\begin{enumerate}
+
+\item Zito, A., \textbf{Rigon, T.}, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. \textit{Bayesian Analysis}, to appear
+
+\item \textbf{Rigon, T.}, Scarpa, B. and Petrone, S. (2025). Enriched Pitman--Yor processes. \textit{Scandinavian Journal of Statistics}, to appear
+
+\item Lijoi, A., Pr\"unster, I. and \textbf{Rigon, T.} (2024). Finite-dimensional discrete random structures and Bayesian clustering. \textit{Journal of the American Statistical Association (T\&M)}, \textbf{119}(546), 929--941. 
+
+\item Catalano, M., Lijoi, A., Pr\"unster, I. and \textbf{Rigon, T.} (2023). Bayesian modeling via discrete nonparametric priors. \textit{Japanese Journal of Statistics and Data Science}, \textbf{6}, 607--624
+
+\item \textbf{Rigon, T.} (2023). An enriched mixture model for functional clustering. \emph{Applied Stochastic Models in Business and Industry}, \textbf{39}, 232--250
+
+\item \textbf{Rigon, T.} and Aliverti, E. (2023) Conjugate priors and bias reduction for logistic regression models. \textit{Statistics \& Probability Letters}, \textbf{202}, 109901
+
+\item \textbf{Rigon, T.}, Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. \textit{Biometrika}, \textbf{110}(3), 559--578
+
+\item Zito, A., \textbf{Rigon, T.} and Dunson, D. B. (2023). Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. \emph{Methods in Ecology \& Evolution}, \textbf{14}, 529--542
+
+\item Zito, A., \textbf{Rigon, T.}, Ovaskainen, O. and Dunson, D. B. (2023). Bayesian modelling of sequential discoveries. \textit{Journal of the American Statistical Association (T\&M)}, \textbf{118}(544), 2521--2532
+
+\item Legramanti, S., \textbf{Rigon, T.} and Durante, D. (2022). Bayesian testing for exogenous partition structures in stochastic block models. \textit{Sankhya A: The Indian Journal of Statistics}, \textbf{84}, 108--126
+
+\item Legramanti, S., \textbf{Rigon, T.}, Durante, D. and Dunson, D. B. (2022). Extended stochastic block models with application to criminal networks. \textit{Annals of Applied Statistics}, \textbf{16}(4), 2369-2395
+
+\item Reverberi, C., \textbf{Rigon, T.}, Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. \textit{Scientific Reports}, \textbf{12}(14952)
+
+\item Favaro, S., Panero, F. and \textbf{Rigon, T.} (2021). Bayesian nonparametric disclosure risk assessment. \textit{Electronic Journal of Statistics}, \textbf{15}(2), 5626--5651
+
+\item \textbf{Rigon, T.} and Durante, D. (2021). Tractable Bayesian density regression via logit stick-breaking priors. \textit{Journal of Statistical Planning and Inference}, \textbf{211}, 131--142
+
+\item Lijoi, A., Pr\"unster, I. and \textbf{Rigon, T.} (2020). Sampling hierarchies of discrete random structures. \textit{Statistics \& Computing}, \textbf{30}, 1591--1607
+
+\item Lijoi, A., Pr\"unster, I. and \textbf{Rigon, T.} (2020). The Pitman--Yor multinomial process for mixture modeling. \textit{Biometrika}, \textbf{107}(4), 891--906
+
+\item Durante, D. and \textbf{Rigon, T.} (2019). Conditionally conjugate mean-field variational Bayes for logistic models. \textit{Statistical Science}, \textbf{34}(3), 472--485
+
+\item \textbf{Rigon, T.}, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. \textit{Journal of the Royal Statistical Society, Series A}, \textbf{182}(1) 225--247
+
+\item Durante, D., Canale, A. and \textbf{Rigon, T.} (2019). A nested expectation-maximization algorithm for latent class regression models. \textit{Statistics \& Probability Letters}, \textbf{146}, 97--103
+\setcounter{publications}{\value{enumi}}
+\end{enumerate}
+
+\textbf{Submitted and working papers}
+\begin{enumerate}
+\setcounter{enumi}{\value{publications}}
+
+\item \textbf{Rigon, T.}, Hsu, C. and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted, \emph{arXiv:2502.01333}
+
+\item Anceschi, N., \textbf{Rigon, T.}, Zanella, G., and Durante D. (2025+).  Optimal lower bounds for logistic log-likelihoods. Submitted, \emph{arXiv:2410.10309}
+
+\item Ghilotti, L., Camerlenghi, F., and \textbf{Rigon, T.} (2025+). Bayesian analysis of product feature allocation models. Submitted, \emph{arXiv:2408.15806}
+
+\item Agnoletto, D., \textbf{Rigon, T.}, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Submitted, \emph{arXiv:2311.00820}
+\setcounter{publications}{\value{enumi}}
+\end{enumerate}
+
+\textbf{Publications in monographs, volumes, and discussions}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{publications}}
+
+\item Agnoletto, D., \textbf{Rigon, T.} and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In \emph{Methodological and Applied Statistics and Demography III} (Pollice, A. and Mariani, P., editors). Springer. 
+
+\item \textbf{Rigon, T.}, Aliverti, E., Russo, M. and Scarpa, B. (2021). A discussion on: ``Centered partition processes: Informative priors for clustering'' Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in \textit{Bayesian Analysis} \textbf{16}(1) 301--370
+
+\item Aliverti, E., Paganin, S., \textbf{Rigon, T.} and Russo, M. (2019). A discussion on: ``Latent nested nonparametric priors'' by Camerlenghi, F., Dunson, D. B., Lijoi, A., Pr\"unster, I. and Rodr\'iguez, A. in \textit{Bayesian Analysis} \textbf{14}(4), 1303--1356
+
+\item Caponera, A., Denti, F., \textbf{Rigon, T.}, Sottosanti, A. and Gelfand, A. (2018). Hierarchical spatio-temporal modeling of resting state fMRI data. In \emph{Studies in Neural Data Science} (Canale, A., Durante, D., Paci, L. and Scarpa, B., editors). Springer.
+\setcounter{publications}{\value{enumi}}
+\end{enumerate}
+
+\textbf{National conference proceedings}
+\begin{enumerate}
+\setcounter{enumi}{\value{publications}}
+
+
+\item Agnoletto, D., \textbf{Rigon, T.} and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In \emph{Book of Short Papers of the Italian Statistical Society} (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. 
+
+\item Cogo, R., Camerlenghi, F. and \textbf{Rigon, T.} (2023). Hierarchical processes in survival analysis. In \emph{Book of Short Papers of the Italian Statistical Society} (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. 
+
+\item Presicce, L., \textbf{Rigon, T.} and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In \emph{Book of Short Papers of the Italian Statistical Society} (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618.
+
+\item Legramanti S., \textbf{Rigon, T.} and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In \emph{Book of Short Papers of the Italian Statistical Society} (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN:~9788891932310. % 
+
+\item Zito, A., \textbf{Rigon, T.} and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In \emph{Book of Short Papers of the Italian Statistical Society 2021} (Perna, C., Salvati, N. and Schirripa Spagnolo, F.). ISBN:~9788891927361
+
+\item \textbf{Rigon, T.} (2018). Logit stick-breaking priors for partially exchangeable count data. In \emph{Book of Short Papers of the Italian Statistical Society 2018} (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E.). ISBN:~9788891910233
+
+\end{enumerate}
+
+%\subsection{\emph{\textbf{Refereed conference proceedings, publications in monographs}}}
+%
+%\cvitem{}}
+%
+%\cvitem{}{}
+%
+
+\section{Visiting periods} \textbf{Universities and research centers}
+\begin{outerlist}
+\item[\textbf{[2023]}] \textsl{Duke University}, North Carolina, USA (April 12th, 2023 - May 9th, 2023) 
+\item[\textbf{[2022]}] \textsl{Inria centre at the University Grenoble Alpes}, France (April 3rd, 2022 - April 10th, 2022) 
+\end{outerlist}
+
+\section{Presentations} 
+\textbf{Seminars}
+\begin{outerlist}
+\item[\textbf{[2024]}] \textsl{Inria centre at the University Grenoble Alpes}, Grenoble, France
+\item[\textbf{[2023]}] \textsl{University of California in Los Angeles (UCLA)}, California, USA
+\item[\textbf{[2023]}] \textsl{Duke University}, North Carolina, USA
+\item[\textbf{[2023]}] \textsl{Università Ca' Foscari}, Italy
+\item[\textbf{[2021]}] \textsl{University of Crete}, Greece
+\item[\textbf{[2020]}] \textsl{Collegio Carlo Alberto, Università degli studi di Torino}, Italy
+\end{outerlist}
+\blankline
+
+
+\textbf{Invited presentations}
+\begin{outerlist}
+
+\item[\textbf{[2024]}] \textsl{\textsc{birs-cmo} 2024: Frontiers of Bayesian Inference and Data Science}, Oaxaca, Mexico (hybrid)
+
+\item[\textbf{[2024]}] \textsl{Bernoulli-\textsc{ims} 11th World Congress in Probability and Statistics}, Bochum, Germany
+
+\item[\textbf{[2024]}] \textsl{2024 \textsc{isba} world meeting (Biometrika invited session)}, Venice, Italy
+
+\item[\textbf{[2024]}] \textsl{\textsc{isba} satellite workshop in Lugano}, Lugano, Switzerland
+
+\item[\textbf{[2023]}] \textsl{13th Bayesian Inference for Stochastic Processes}, Madrid, Spain
+
+\item[\textbf{[2023]}] \textsl{BayesComp 2023: Bayesian computing without exact likelihoods (satellite event)}, Levi, Finland
+\item[\textbf{[2022]}] \textsl{The \textsc{iisa} International Conference on Statistics}, Bangalore, India
+\item[\textbf{[2022]}] \textsl{15th International Conference of the \textsc{ercim wg} on Computational and Methodological Statistics}, London, UK
+\item[\textbf{[2022]}] \textsl{Statistical methods and models for complex data} (invited discussant), Padova, Italy
+\item[\textbf{[2022]}] \textsl{\textsc{csda} \& EcoSta Workshop on Statistical Data Science (\textsc{sds} 2022)}, Bologna, Italy
+\item[\textbf{[2022]}] \textsl{5th International Conference on Econometrics and Statistics}, Tokyo, Japan (hybrid)
+\item[\textbf{[2022]}] \textsl{\textsc{bnp} Networking Event}, Nicosia, Cyprus
+\item[\textbf{[2021]}] \textsl{14th International Conference of the \textsc{ercim wg} on Computational and Methodological Statistics}, London, UK (hybrid)
+\item[\textbf{[2021]}] \textsl{2021 \textsc{isba} world meeting}, virtual
+\item[\textbf{[2020]}] \textsl{Bayes Comp 2020}, Gainesville, Florida, USA
+\item[\textbf{[2019]}] \textsl{The \textsc{iisa} International Conference on Statistics}, Mumbai, India
+\item[\textbf{[2019]}] \textsl{12th International Conference of the \textsc{ercim wg} on Computational and Methodological Statistics}, London, UK
+\item[\textbf{[2018]}] \textsl{11th International Conference of the \textsc{ercim wg} on Computational and Methodological Statistics}, Pisa, Italy
+\item[\textbf{[2018]}] \textsl{\textsc{jsm} 2018: Joint Statistical Meetings}, Vancouver, Canada
+\item[\textbf{[2018]}] \textsl{49th Scientific meeting of the Italian Statistical Society}, Palermo, Italy
+\item[\textbf{[2017]}] \textsl{The \textsc{iisa} International Conference on Statistics}, Hyderabad, India 
+\end{outerlist}
+\blankline
+
+\textbf{Contributed presentations}
+\begin{outerlist}
+\item[\textbf{[2024]}] \textsl{\textsc{bnp} Networking Event}, Singapore
+
+\item[\textbf{[2023]}] \textsl{Approximation methods in Bayesian Analysis}, CIRM, Marseille, France
+\item[\textbf{[2019]}] \textsl{12th International Conference on Bayesian Nonparametrics}, Oxford, UK
+\item[\textbf{[2018]}] \textsl{\textsc{baysm} 2018: Bayesian Young Statisticians Meeting}, Warwick, UK
+\item[\textbf{[2018]}] \textsl{\textsc{yes ix} Scalable Statistics: on Accuracy and Computational Complexity}, Eindhoven, Netherlands
+\end{outerlist}
+
+\blankline
+
+\textbf{Poster presentations}
+\begin{outerlist}
+\item[\textbf{[2019]}] \textsl{O'Bayes 2019}, Warwick, UK
+\item[\textbf{[2018]}] \textsl{2018 \textsc{isba} world meeting}, Edinburgh, UK 
+\item[\textbf{[2017]}] \textsl{O'Bayes 2017}, Austin, USA
+\item[\textbf{[2017]}]  \textsl{10th international workshop on Bayesian inference in stochastic processes (\textsc{bisp10})}, Milan, Italy
+\item[\textbf{[2017]}] \textsl{Italian Statistical Society (\textsc{sis}) Bayes 2017}, Rome, Italy
+\item[\textbf{[2016]}] \textsl{2016 \textsc{isba} world meeting}, Cagliari, Italy
+\end{outerlist}
+
+\section{Teaching}
+\href{https://www.unimib.it}{\textbf{University of Milano-Bicocca}}, Milan, Italy
+\begin{outerlist}
+\item[] As lecturer
+\begin{innerlist}
+\item \href{https://tommasorigon.github.io/CompStat/}{Bayesian Computations} (Ph.D.) A.Y. 2020/21, 2021/22 - 12h - 2022/23, 2023/24 - 15h
+\item \href{https://tommasorigon.github.io/datamining/}{Data Mining} (M.Sc.) - A.Y. 2023/2024 - 42h - A.Y. 2024/2025 - 47h
+\item \href{https://tommasorigon.github.io/StatI/}{Statistics 1} (B.Sc.) - A.Y. 2020/21, 2021/22, 2022/23  - 42h - 2023/24, 2024/2025 - 48h
+\item \href{https://tommasorigon.github.io/introR/}{R for the multivariate statistical analysis} (B.Sc.) - A.Y. 2020/21, 2021/22, 2022/23 - 21h
+\end{innerlist}
+\end{outerlist}
+
+\blankline
+
+
+\href{https://www.sdabocconi.it/}{\textbf{SDA Bocconi School of Management}}, Milan, Italy
+\begin{outerlist}
+\item[] As lecturer
+\begin{innerlist}
+\item AXA Italia - Mastering data for insurance III ed. - A.Y. 2022/23 - 12h
+\item AXA Italia - Mastering data for insurance II ed. - A.Y. 2021/22 - 8h
+\end{innerlist}
+\end{outerlist}
+
+\blankline
+
+
+\href{http://www.unibocconi.eu}{\textbf{Bocconi University}}, Milan, Italy
+
+\begin{outerlist}
+\item[] As lecturer
+\begin{innerlist}
+\item Foundations of data science (B.Sc.) - A.Y. 2022/23, 2023/24 - 10h
+\end{innerlist}
+\end{outerlist}
+
+\begin{outerlist}
+\item[] As teaching assistant
+\begin{innerlist}
+\item Data analysis (B.Sc.) - A.Y. 2016/17
+\item Statistics for economic and business (M.Sc.) - A.Y. 2016/17
+\end{innerlist}
+\end{outerlist}
+
+
+
+\blankline
+
+\href{http://www.unipd.it}{\textbf{Universit\`a degli Studi di Padova}}, Padova, Italy
+\begin{outerlist}
+\item[] As lecturer
+\begin{innerlist}
+\item Data mining (M.Sc.) - A.Y. 2020/21 - 8h
+\end{innerlist}
+
+\end{outerlist}
+\begin{outerlist}
+\item[] As teaching assistant
+\begin{innerlist}
+\item Introduction to real analysis (B.Sc.) - A.Y. 2014/15
+\item Advanced statistical inference (M.Sc.) - A.Y. 2014/15
+\end{innerlist}
+\end{outerlist}
+
+
+\section{Past business positions}
+\textbf{Intern} \\ 
+Groupon, Dublin, Ireland (from 09/2014 to 11/2014) \vspace{5pt} \\ 
+\textbf{Business analyst} \\
+Bravofly Rumbo Group, Chiasso, Switzerland (from 10/2013 to 07/2014)  \vspace{5pt} \\ 
+\textbf{Intern} \\
+Bravofly Rumbo Group, Chiasso, Switzerland (from 05/2013 to 10/2013)
+
+\section{Summer schools and workshops}
+\textbf{Summer Schools and workshops}
+\begin{outerlist}
+\item \textsl{StartUp Research}, Certosa di Pontignano, Italy (06/2017)
+\item \textsl{Bocconi Summer School in Advanced Statistics and Probability}, Como, Italy (07/2017)
+\item \textsl{J. T. Schwartz International School for Scientific Research}, Lipari, Italy (07/2013) 
+\end{outerlist}
+
+\vfill
+
+\bottomcenter{
+\begin{footnotesize}
+Le dichiarazioni rese nel presente curriculum sono da ritenersi rilasciate ai sensi degli artt. 46 e 47 del D.P.R. 445/2000. \\
+\medskip 
+Autorizzo la pubblicazione ai sensi del D.Lgs. n. 33/2013 “Riordino della disciplina riguardante gli obblighi di pubblicità, trasparenza e diffusione di informazioni da parte delle pubbliche amministrazioni” e acconsento all’utilizzo delle informazioni ivi contenute ai sensi del D.L. n. 196/2003 “Codice in materia di protezione dei dati personali”. \\
+\end{footnotesize}
+\medskip
+Updated \today}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

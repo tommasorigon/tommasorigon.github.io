@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Tommaso Rigon"
+  search: false
+  navbar: 
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: papers.qmd
+        text: Papers
+      - href: bio.qmd
+        text: Short Bio
+      - href: teaching.qmd
+        text: Teaching & Slides
+      - href: tesi.qmd
+        text: Thesis Information (ITA)
+      - href: post.qmd
+        text: Blogpost
+
+format:
+  html:
+    page-layout: full
+    theme: [simplex, template.css]
+    toc: false
+    fontsize: 1.1em

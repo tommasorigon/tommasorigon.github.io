@@ -1,0 +1,139 @@
+---
+title: "Previsioni Champions League: com'è andata?"
+subtitle: "Una valutazione degli errori"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2025-01-30
+execute:
+  cache: true
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+rm(list = ls())
+classifica <- read.table("classifica2025.csv", dec = ",", sep = ";", header = TRUE)
+quotazioni <- read.table("quotazioni2025.csv", dec = ",", sep = ";", header = TRUE)
+```
+
+![](referee.jpg){width=40% fig-align="center"}
+
+## Com'è andata?
+
+[Ieri]{.orange} ho diffuso in [un post](champions2025.html) le previsioni per l'ultima giornata di Champions League, basandomi sulle quotazioni dei *bookmakers*. [Oggi]{.blue} vogliamo controllare com'è andata. Ci sono state previsioni centrate (ad es. Inter - Monaco, Manchester City - Brugge) e altre che invece non si sono avverate (Milan - Dinamo Zagabria). 
+
+## Le previsioni principali
+
+Anzitutto, facciamo il punto sulle affermazioni fatte in TV o [nel mio post](champions.html).  
+
+- [Previsione corretta]{.blue}. L'Inter è passata direttamente agli ottavi di finale, classificandosi tra le prime quattro posizioni, come previsto.
+- [Previsione errata]{.orange}. Il Milan non è passato agli ottavi, nonostante avesse l'82% di probabilità di farlo.  
+- [Previsione corretta]{.blue}. L'Atalanta è stata effettivamente in bilico (è arrivata 9ª) ed è infine andata ai playoff, come previsto.  
+- [Previsione corretta]{.blue}. La Juventus è andata ai playoff, come ampiamente previsto. Questa però era davvero facile da indovinare.  
+- [Previsione corretta]{.blue}. Il Manchester City è andato ai playoff, come previsto.  
+
+Entriamo ora maggiormente nel dettaglio delle singole previsioni.
+
+## L'errore commesso dai *bookmakers*
+
+Quando facciamo una "previsione secca", cioè indichiamo se l'esito sarà 1, X o 2, ci basiamo sulle probabilità di ciascun risultato. Pertanto, per la $i$-esima partita la [probabilità di indovinare]{.blue} sarà:  
+$$
+\text{Probabilità di indovinare l'}i\text{-esima previsione} = \hat{p}_i = \max \{p_{i1}, p_{iX}, p_{i2}\},
+$$
+dove $p_{i1}, p_{iX}, p_{i2}$ sono le probabilità di vittoria, pareggio e sconfitta.  Viceversa, la [probabilità di sbagliare]{.orange} sarà:  
+$$
+\text{Probabilità di sbagliare l'}i\text{-esima previsione} = 1 - \hat{p}_i.
+$$  
+
+#### Alcuni esempi
+
+Ad esempio, l'Aston Villa era favorito contro il Celtic FC (ed in effetti ha vinto 4-2) perché il 62% rappresentava una probabilità più alta rispetto al 22% (pareggio) e al 16% (sconfitta).  
+
+```{r}
+probs <- cbind(quotazioni$prob1_media, quotazioni$probX_media, quotazioni$prob2_media)
+# knitr::kable(data.frame(Squadra1 = quotazioni$squadra1, Squadra2 = quotazioni$squadra2, probs)[1:8, ], digits = 2)
+```
+
+|Squadra 1          |Squadra 2          |   1|   X|   2| Probabilità di indovinare $(\hat{p}_i)$ | Probabilità di sbagliare $(1 - \hat{p}_i)$ | 
+|:----------|:----------|----:|----:|----:|-----------------:|-----------------:|
+|Aston Villa       |Celtic FC         | 0.62| 0.22| 0.16| 0.62 | 0.38 |
+|Barcellona        |Atalanta          | 0.55| 0.23| 0.22| 0.55 | 0.45 |
+|Dinamo Zagabria   |Milan             | 0.17| 0.21| 0.62| 0.62 | 0.38 |
+
+#### Le nostre aspettative sugli errori commessi
+
+Su [18 partite]{.blue}, quindi, ci aspettiamo che il [numero medio di errori commessi]{.orange} sia pari alla [somma delle probabilità di sbagliare]{.orange}, vale a dire circa:  
+$$
+\text{Numero medio di errori commessi} = \sum_{i=1}^{18}(1 - \hat{p}_i) = 0.38 + 0.45 + 0.48 + \cdots = 7.17.
+$$  
+
+```{r}
+quotazioni$Esito_pred <- factor(apply(probs, 1, which.max))
+levels(quotazioni$Esito_pred) <- c("1", "X", "2")
+quotazioni$Esito <- factor(quotazioni$Esito, levels = c("1", "X", "2"))
+tab <- table(quotazioni$Esito_pred, quotazioni$Esito)
+errs <- 1 - apply(probs, 1, max)
+# sum(errs)
+# knitr::kable(tab)
+```
+
+:::callout-warning
+
+- Come fare per ridurre il numero medio di errori? Una parte di questo errore dipende dalla bravura dei *bookmakers*. Purtroppo però, oltre una certa soglia, non si può migliorare. 
+
+- Il [minimo errore di previsione]{.blue} possibile è chiamato "[*Bayes error rate*](https://en.wikipedia.org/wiki/Bayes_error_rate)" ed è ragionevole credere che, nel nostro caso, sia di poco inferiore a $7.17/18 = 40\%$. 
+
+- Il *Bayes error rate* nel calcio è spesso un numero abbastanza alto, perché si tratta di uno [sport imprevedibile]{.blue}. Sbagliare, quindi, è [inevitabile]{.orange}. 
+:::
+
+#### Quanti errori sono stati effettivamente commessi?
+
+Nella prossima tabella, chiamata [matrice di confusione](https://it.wikipedia.org/wiki/Matrice_di_confusione), abbiamo confrontato le previsioni dei *bookmakers* con i risultati effettivi.
+
+|   |  1 (Reale) |  X (Reale) |  2 (Reale) |
+|:--|--:|--:|--:|
+| **1 (Previsto)** |  7 |  2 |  1 |
+| **X (Previsto)** |  0 |  0 |  1 |
+| **2 (Previsto)** |  3 |  0 |  4 |
+
+:::callout-note
+- I *bookmakers* hanno [previsto correttamente]{.blue} l'esito di $7 + 4 = 11$ partite su $18$, ovvero hanno [sbagliato]{.orange} $7$ volte su $18$.  
+
+- Tutto è andato esattamente secondo le aspettative: sapevamo che avremmo commesso circa 7 errori, ed è andata proprio così. Uno di questi errori, purtroppo, è stato proprio il Milan. 
+:::
+
+## La previsione della classifica
+
+Prevedere una singola partita è difficile, perché ci sono molti fattori imprevedibili. Tuttavia, prevedere la classifica finale è un compito un po' più semplice, anche perchè le squadre non partivano dallo stesso punteggio. 
+
+Anche in questo caso, ci sono [buone notizie]{.blue}: ci possiamo quindi ritenere [ragionevolmente soddisfatti]{.orange} delle nostre previsioni.
+
+:::callout-note
+- In media, la classifica prevista è [più simile]{.blue} a quella finale di quanto non lo fosse quella della 7ª giornata. (I dettagli qui sono omessi).
+
+- Questo fatto si può quantificare tramite il cosiddetto "errore quadratico medio", che misura quanto sia diversa la nostra previsione dai risultati reali. 
+:::
+
+Nel seguito ho rappresentato graficamente la classifica alla settima giornata, la [previsione]{.blue} ottenuta con il metodo Monte Carlo e, infine, la [graduatoria finale]{.orange}.  
+
+```{r}
+#mean(abs(classifica$X - classifica$classifica_finale))
+#mean(abs(classifica$classifica_mediana - classifica$classifica_finale))
+```
+
+
+<div class="flourish-embed flourish-slope" data-src="visualisation/21389412"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21389412/thumbnail" width="100%" alt="slope visualization" /></noscript></div>
+

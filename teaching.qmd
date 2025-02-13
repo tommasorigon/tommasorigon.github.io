@@ -1,0 +1,53 @@
+---
+---
+
+## Teaching @ Unimib {.central}
+
+[Ph.D. courses]{.blue} (*Dottorato*)
+
+  - [Statistical Inference](https://tommasorigon.github.io/InferentialStat/), Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca. 
+
+  - [Bayesian Computations](https://tommasorigon.github.io/CompStat/), Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca. 
+    
+[M.Sc. courses]{.blue} (*Laurea magistrale*)
+    
+  - [Data Mining](https://tommasorigon.github.io/datamining/), CdL Magistrale in Scienze Statistiche ed Economiche, University of Milano-Bicocca. 
+
+[B.Sc. courses]{.blue} (*Laurea triennale*)
+
+  - [Statistics I (ITA)](https://tommasorigon.github.io/StatI/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
+  
+  - [R for the multivariate statistical analysis (ITA)](https://tommasorigon.github.io/introR/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.
+
+## Slides of talks and seminars {.central}
+
+- [Slides](files/slides/Rigon_UCLA.pdf). *Bayesian nonparametric prediction of the taxonomic affiliation of DNA sequences*, UCLA, 2023.
+
+- [Slides](files/slides/Rigon_Duke.pdf). *Finite-dimensional discrete random structures and Bayesian clustering*, Duke University, 2023.
+
+- [Slides](files/slides/Rigon_Madrid.pdf). *The Stirling-gamma process and its application to Bayesian nonparametrics*, BISP13, 2023. 
+
+- [Slides](files/slides/Rigon_PWC.pdf). *An enriched mixture model for functional clustering*, PwC, 2022. 
+
+- [Slides](files/slides/Rigon_Bicocca2020.pdf). *Statistical learning via Bayesian nonparametrics*, University of Milano-Bicocca, 2020. 
+
+- [Slides](files/slides/Rigon_CCA.pdf). *A generalized Bayes framework for probabilistic clustering*, Collegio Carlo Alberto, 2020. 
+
+## Open Day, Science Statistiche ed Economiche (SSE) {.central}
+
+:::: {layout="[30, 80, 30]"}
+
+:::{#blackspace1}
+:::
+
+:::{#video}
+{{< video https://www.youtube.com/embed/PtOihLTn444?si=JxaXDsVEQbyu9EbH&amp;start=461 >}}
+:::
+
+:::{#blackspace2}
+:::
+
+::::
+
+- [Slides](files/slides/SSE_OpenDay.pdf). *Open Day, Science Statistiche ed Economiche (SSE)*, Università Milano-Bicocca, Dicembre 2022. 
+

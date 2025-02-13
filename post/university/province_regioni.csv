@@ -1,0 +1,113 @@
+province;regione
+TORINO;Piemonte
+VERCELLI;Piemonte
+NOVARA;Piemonte
+CUNEO;Piemonte
+ASTI;Piemonte
+ALESSANDRIA;Piemonte
+AOSTA;Valle D’Aosta
+IMPERIA;Liguria
+SAVONA;Liguria
+GENOVA;Liguria
+LA SPEZIA;Liguria
+VARESE;Lombardia
+COMO;Lombardia
+SONDRIO;Lombardia
+MILANO;Lombardia
+BERGAMO;Lombardia
+BRESCIA;Lombardia
+PAVIA;Lombardia
+CREMONA;Lombardia
+MANTOVA;Lombardia
+BOLZANO;Trentino-Alto Adige
+TRENTO;Trentino-Alto Adige
+VERONA;Veneto
+VICENZA;Veneto
+BELLUNO;Veneto
+TREVISO;Veneto
+VENEZIA;Veneto
+PADOVA;Veneto
+ROVIGO;Veneto
+UDINE;Friuli Venezia Giulia
+GORIZIA;Friuli Venezia Giulia
+TRIESTE;Friuli Venezia Giulia
+PIACENZA;Emilia-Romagna
+PARMA;Emilia-Romagna
+REGGIO EMILIA;Emilia-Romagna
+MODENA;Emilia-Romagna
+BOLOGNA;Emilia-Romagna
+FERRARA;Emilia-Romagna
+RAVENNA;Emilia-Romagna
+FORLI'-CESENA;Emilia-Romagna
+PESARO E URBINO;Marche
+ANCONA;Marche
+MACERATA;Marche
+ASCOLI PICENO;Marche
+MASSA CARRARA;Toscana
+LUCCA;Toscana
+PISTOIA;Toscana
+FIRENZE;Toscana
+LIVORNO;Toscana
+PISA;Toscana
+AREZZO;Toscana
+SIENA;Toscana
+GROSSETO;Toscana
+PERUGIA;Umbria
+TERNI;Umbria
+VITERBO;Lazio
+RIETI;Lazio
+ROMA;Lazio
+LATINA;Lazio
+FROSINONE;Lazio
+CASERTA;Campania
+BENEVENTO;Campania
+NAPOLI;Campania
+AVELLINO;Campania
+SALERNO;Campania
+L'AQUILA;Abruzzo
+TERAMO;Abruzzo
+PESCARA;Abruzzo
+CHIETI;Abruzzo
+CAMPOBASSO;Molise
+FOGGIA;Puglia
+BARI;Puglia
+TARANTO;Puglia
+BRINDISI;Puglia
+LECCE;Puglia
+POTENZA;Basilicata
+MATERA;Basilicata
+COSENZA;Calabria
+CATANZARO;Calabria
+REGGIO CALABRIA;Calabria
+TRAPANI;Sicilia
+PALERMO;Sicilia
+MESSINA;Sicilia
+AGRIGENTO;Sicilia
+CALTANISSETTA;Sicilia
+ENNA;Sicilia
+CATANIA;Sicilia
+RAGUSA;Sicilia
+SIRACUSA;Sicilia
+SASSARI;Sardegna
+NUORO;Sardegna
+CAGLIARI;Sardegna
+PORDENONE;Friuli Venezia Giulia
+ISERNIA;Molise
+ORISTANO;Sardegna
+BIELLA;Piemonte
+LECCO;Lombardia
+LODI;Lombardia
+RIMINI;Emilia-Romagna
+PRATO;Toscana
+CROTONE;Calabria
+VIBO VALENTIA;Calabria
+VERBANO CUSIO OSSOLA;Piemonte
+MONZA E BRIANZA;Lombardia
+FERMO;Marche
+BARLETTA - ANDRIA - TRANI;Puglia
+SUD SARDEGNA;Sardegna
+PROVINCIA ESTERA;Estero
+PROVINCIA NON DEFINITA;Sconosciuta
+OLBIA-TEMPIO;Sardegna
+OGLIASTRA;Sardegna
+CARBONIA-IGLESIAS;Sardegna

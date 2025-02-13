@@ -1,0 +1,157 @@
+---
+title: "Università in cifre"
+subtitle: "Dati ottenuti dal sito del ministero"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2025-02-11
+execute:
+  cache: false
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| message: false
+#| warning: false
+library(tidyverse)
+library(ggthemes)
+library(scales)
+
+rm(list = ls())
+
+provenienze <- read_delim("provenienze.csv", delim = ";")
+provenienze <- filter(provenienze, AnnoA == "2023/2024") %>% group_by(AnnoA, ProvinciaSedeDiploma, provcorso) %>% summarise(Iscritti = sum(Isc))
+province_regioni <- read_delim("province_regioni.csv", delim = ";")
+
+provenienze <- left_join(left_join(provenienze, province_regioni, by = join_by("ProvinciaSedeDiploma" == "province")), province_regioni, by = join_by("provcorso" == "province"))
+colnames(provenienze) <- c("Anno", "DiplomaP", "CorsoP", "Iscritti", "DiplomaR", "CorsoR")
+provenienze <- filter(provenienze, Anno == "2023/2024") %>% group_by(DiplomaR, CorsoR) %>% summarise(Iscritti = sum(Iscritti))
+
+# write_csv(provenienze, "provenienze_clean.csv")
+
+atenei_meta <- read_delim("atenei_meta.csv", delim = ";")
+atenei_meta$COD_Ateneo <- as.numeric(atenei_meta$COD_Ateneo)
+atenei_meta$Ateneo <- atenei_meta$NomeEsteso
+dataset <- read_delim("atenei.csv", delim = ";")
+dataset$Anno <- as.numeric(str_trunc(dataset$AnnoA, 4, "right", ellipsis = ""))
+dataset <- left_join(dataset, atenei_meta, by = join_by("AteneoCOD" == "COD_Ateneo"))
+dataset <- filter(dataset, status == "Attivo    ") %>% select(-status)
+
+dataset <- dataset %>% group_by(Anno, Ateneo, AteneoCOD, Tipologia_ateneo_descrizione, `Statale/NonStataleLibera`, `Classe dimensione`, `Zona Geografica`, PROVINCIA, REGIONE, COMUNE, SESSO) %>% summarise(Iscritti = min(Isc))
+
+dataset <- dataset %>% group_by(Anno, Ateneo, AteneoCOD, Tipologia_ateneo_descrizione, `Statale/NonStataleLibera`, `Classe dimensione`, `Zona Geografica`, PROVINCIA, REGIONE, COMUNE) %>% summarise(Iscritti = sum(Iscritti))
+
+
+
+write_csv(pivot_wider(dataset, 
+            id_cols = c(Ateneo, `Zona Geografica`), values_from = Iscritti, names_from = Anno, values_fill = 0), "atenei_race.csv")
+```
+
+## Iscritti per ateneo A.A. 2023/2024
+
+```{r}
+#| fig-height: 8
+#| fig-width: 12
+data_plot <- filter(dataset, Anno == "2023", `Classe dimensione` == "60.000 e oltre" | `Classe dimensione` == "da 30.000 a 59.999", Tipologia_ateneo_descrizione != "Università telematica")
+ggplot(data = data_plot, aes(y = reorder(Ateneo, Iscritti), x = Iscritti, fill = `Classe dimensione`)) + geom_bar(stat = "identity") + theme_light() + ylab("") + xlab("Studenti iscritti") + scale_fill_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+
+```
+
+
+## Atenei di grandi dimensioni (oltre 60.000 iscritti)
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| message: false
+#| warning: false
+ggplot(data = filter(dataset, `Classe dimensione` == "60.000 e oltre"), aes(x = Anno, col = Ateneo, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10))+ scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+## Atenei di Milano (medie e grandi dimensioni)
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+ggplot(data = filter(dataset, COMUNE == "MILANO", `Classe dimensione` != "inferiore a 10.000"), aes(x = Anno, col = Ateneo, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10))+ scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+## Atenei di ROMA (medie e grandi dimensioni)
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+ggplot(data = filter(dataset, COMUNE == "ROMA", `Classe dimensione` != "inferiore a 10.000", Tipologia_ateneo_descrizione == "Università"), aes(x = Anno, col = Ateneo, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10))+ scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+
+## Università e politecnici per zona geografica
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| message: false
+
+data_zona <- filter(dataset, Tipologia_ateneo_descrizione == "Università" | Tipologia_ateneo_descrizione == "Politecnico") %>% group_by(Anno, `Zona Geografica`) %>% summarise(Iscritti = sum(Iscritti))
+
+ggplot(data = data_zona, aes(x = Anno, col = `Zona Geografica`, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10)) + scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+## Università e politecnici per zona geografica
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| message: false
+
+dataset$Tipologia <- "Università e politecnici"
+dataset$Tipologia[dataset$Tipologia_ateneo_descrizione == "Università telematica"] <- "Università telematica"
+data_telematiche <- dataset %>% group_by(Anno, Tipologia) %>% summarise(Iscritti = sum(Iscritti))
+
+ggplot(data = data_telematiche, aes(x = Anno, col = Tipologia, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10)) + scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+
+## Tipologia di ateneo
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| message: false
+
+
+data_dimensioni <- filter(dataset, Tipologia_ateneo_descrizione == "Università" | Tipologia_ateneo_descrizione == "Politecnico") %>% group_by(Anno, `Classe dimensione`) %>% summarise(Iscritti = sum(Iscritti))
+
+ggplot(data = data_dimensioni, aes(x = Anno, col = `Classe dimensione`, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico") + scale_color_tableau(palette = "Color Blind") + theme(legend.position = "right") + scale_x_continuous(breaks = pretty_breaks(n = 10)) + scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+## Iscritti per regione
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| message: false
+
+data_dimensioni <- filter(dataset, Tipologia_ateneo_descrizione == "Università" | Tipologia_ateneo_descrizione == "Politecnico") %>% group_by(Anno, REGIONE) %>% summarise(Iscritti = sum(Iscritti))
+
+ggplot(data = filter(data_dimensioni, Iscritti > 70000), aes(x = Anno, col = REGIONE, y = Iscritti)) + geom_line(linewidth = 0.7) + geom_point() + theme_light() + ylab("Studenti iscritti") + xlab("Anno Accademico")  + theme(legend.position = "right")+ scale_color_tableau(palette = "Color Blind") + scale_x_continuous(breaks = pretty_breaks(n = 10)) + scale_y_continuous(breaks = pretty_breaks(n = 10), labels = label_comma()) 
+```
+
+## Provenienze e destinazioni
+
+<div class="flourish-embed flourish-sankey" data-src="visualisation/21568877"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21568877/thumbnail" width="100%" alt="sankey visualization" /></noscript></div>
+
+<div class="flourish-embed flourish-sankey" data-src="visualisation/21563614"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21563614/thumbnail" width="100%" alt="sankey visualization" /></noscript></div>

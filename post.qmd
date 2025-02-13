@@ -1,0 +1,15 @@
+---
+title: 'Blogpost'
+lang: it
+listing:
+  id: post
+  type: default
+  fields: [date, title, author, image, description]
+  contents: post
+  sort:
+    - "date desc"
+  max-items: 15
+---
+
+::: {#post}
+:::

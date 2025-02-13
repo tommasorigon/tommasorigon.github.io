@@ -1,0 +1,263 @@
+---
+title: "Previsioni Champions League"
+subtitle: "8a giornata"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2025-01-29
+execute:
+  cache: true
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+rm(list = ls())
+classifica <- read.table("classifica2025.csv", dec = ",", sep = ";", header = TRUE)
+quotazioni <- read.table("quotazioni2025.csv", dec = ",", sep = ";", header = TRUE)
+```
+
+![](calcio.jpg){width=65% fig-align="center"}
+
+## La classifica
+
+Nella Champions League del 2025, [36 squadre]{.blue} competono in una prima fase
+con un formato “all’italiana”, disputando un totale di 8 partite
+ciascuna. Ad oggi, 29 gennaio 2024, sono state giocate 7 delle 8
+giornate previste. Siamo quindi interessati a formulare una previsione
+sulla classifica finale. Alla settima giornata, la classifica della
+Champions League era la seguente.
+
+```{r}
+#knitr::kable(cbind(1:18, classifica[1:18, ], 19:36, classifica[19:36, ]))
+```
+
+::: {.callout-note collapse="true"}
+## Classifica Champions League alla 7a giornata
+
+| Posizione | Squadra           | Punti | Posizione | Squadra           | Punti |
+|----------:|:------------------|------:|----------:|:------------------|------:|
+|         1 | Liverpool         |    21 |        19 | Club Brugge       |    11 |
+|         2 | Barcellona        |    18 |        20 | PSV Eindhoven     |    11 |
+|         3 | Arsenal           |    16 |        21 | Benfica           |    10 |
+|         4 | Inter             |    16 |        22 | PSG               |    10 |
+|         5 | Atletico Madrid   |    15 |        23 | Sporting          |    10 |
+|         6 | Milan             |    15 |        24 | Stoccarda         |    10 |
+|         7 | Atalanta          |    14 |        25 | Dinamo Zagabria   |     8 |
+|         8 | Aston Villa       |    13 |        26 | Manchester City   |     8 |
+|         9 | Bayer Leverkusen  |    13 |        27 | Shaktar Donetsk   |     7 |
+|        10 | Brest             |    13 |        28 | Bologna           |     5 |
+|        11 | Feyenoord         |    13 |        29 | Sparta Praga      |     4 |
+|        12 | Lille             |    13 |        30 | Girona            |     3 |
+|        13 | Monaco            |    13 |        31 | Lipsia            |     3 |
+|        14 | Bayern Monaco     |    12 |        32 | Salisburgo        |     3 |
+|        15 | Borussia Dortmund |    12 |        33 | Stella Rossa      |     3 |
+|        16 | Celtic FC         |    12 |        34 | Sturm             |     3 |
+|        17 | Juventus          |    12 |        35 | Slovan Bratislava |     0 |
+|        18 | Real Madrid       |    12 |        36 | Young Boys        |     0 |
+:::
+
+Dopo le prime 8 giornate, il regolamento della Champions League
+stabilisce quanto segue:
+
+-   Le prime 8 squadre accedono direttamente agli [ottavi di
+    finale]{.blue};
+-   Le squadre classificate dalla 9a alla 24a posizione partecipano ai
+    [playoff]{.grey};
+-   Le squadre dalla 25a posizione in poi vengono [eliminate]{.orange}.
+
+## Quotazioni delle partite
+
+Per poter formulare delle previsioni, è innanzitutto necessario stimare
+in modo ragionevole l'esito di ciascuno dei 18 incontri dell'ultima
+giornata. Una possibilità consiste nell'utilizzare modelli avanzati,
+basati sullo storico delle squadre. Tuttavia, per semplicità, sia
+espositiva che computazionale, adotteremo qui un approccio molto più
+semplice, basato sulle [quote]{.orange} rese pubbliche da alcuni
+*bookmaker* (facendo la media delle quote di alcuni tra i bookmaker più
+popolari).
+
+Siano $q_1, q_X, q_2$ le quote associate, rispettivamente, alla
+[vittoria della squadra 1]{.blue}, al [pareggio]{.grey} e alla [vittoria
+della squadra 2]{.orange}. Le probabilità corrispondenti $p_1, p_X, p_2$
+possono essere calcolate come segue:
+
+$$
+p_1 = \frac{1/q_1}{1/q_1 + 1/q_X + 1/q_2}, \quad p_X = \frac{1/q_X}{1/q_1 + 1/q_X + 1/q_2}, \quad p_2 = \frac{1/q_2}{1/q_1 + 1/q_X + 1/q_2}, 
+$$
+
+Si noti che per costruzione si ha che $p_1 + p_X + p_2 = 1$. Si noti
+inoltre che le scommesse non sono eque, ecco perché è necessario
+"normalizzare" le quote tramite il termine $1/q_1 + 1/q_X + 1/q_2$.
+Infatti, se i bookmaker fossero equi, si avrebbe
+$1/q_1 + 1/q_X + 1/q_2 = 1$.
+
+Ecco il risultato di questa operazione, per i 18 incontri dell'ultima
+giornata.
+
+::: {.flourish-embed .flourish-chart data-src="visualisation/21300195"}
+```{=html}
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+```
+
+<noscript><img src="https://public.flourish.studio/visualisation/21300195/thumbnail" alt="chart visualization" width="100%"/></noscript>
+:::
+
+## Il metodo Monte Carlo
+
+A partire dalle probabilità di vittoria/sconfitta di ciascuna partita, è
+possibile [simulare]{.orange} tramite [Monte
+Carlo](https://tommasorigon.github.io/introR/lezioni/un_J.html) la
+[classifica finale]{.blue}. In altri termini, simuliamo per 100,000 volte le 18
+partite della 8a giornata e valutiamo la frequenza con cui un certo
+evento si è verificato.
+
+::: callout-warning
+In caso di parità di punteggio, il regolamento prevede che si guardi in prima battuta
+la differenza reti e poi ad ulteriori indicatori. Non avendo elementi
+per prevedere questi aspetti, la posizione in classifica delle squadre a
+pari merito viene assegnata casualmente.
+:::
+
+L'evento che più ci interessa è la probabilità che ha ciascuna squadra
+di finire agli ottavi, ai playoff o di essere eliminata.
+
+```{r, cache = TRUE}
+set.seed(123)
+R <- 100000
+
+classifica_sim <- matrix(classifica$punti, ncol = nrow(classifica), nrow = R, byrow = TRUE)
+ranking_sim <- matrix(0, ncol = nrow(classifica), nrow = R)
+colnames(classifica_sim) <- colnames(ranking_sim) <- classifica$squadra
+
+for (r in 1:R) {
+  # Simulo le partite e aggiorno la classifica
+  for (j in 1:18) {
+    probs <- c(quotazioni$prob1_media[j], quotazioni$probX_media[j], quotazioni$prob2_media[j])
+    out <- sample(c(1, "X", 2), 1, probs, replace = TRUE)
+    if (out == "1") {
+      # Vittoria squadra 1
+      classifica_sim[r, quotazioni$squadra1[j]] <- classifica_sim[r, quotazioni$squadra1[j]] + 3
+    } else if (out == "X") {
+      # Pareggio
+      classifica_sim[r, quotazioni$squadra1[j]] <- classifica_sim[r, quotazioni$squadra1[j]] + 1
+      classifica_sim[r, quotazioni$squadra2[j]] <- classifica_sim[r, quotazioni$squadra2[j]] + 1
+    } else {
+      # Vittoria squadra 2
+      classifica_sim[r, quotazioni$squadra2[j]] <- classifica_sim[r, quotazioni$squadra2[j]] + 3
+    }
+  }
+  # Verifico il ranking
+  ranking_sim[r, ] <- 37 - rank(classifica_sim[r, ], ties.method = "random")
+}
+```
+
+```{r}
+classifica$punti_media <- apply(classifica_sim, 2, function(x) mean(x))
+classifica$classifica_mediana <- apply(ranking_sim, 2, function(x) median(x))
+classifica$classifica_media <- apply(ranking_sim, 2, function(x) mean(x))
+write.table(classifica, "classifica2025.csv", sep = ";", dec = ",")
+```
+
+
+
+```{r}
+qualificazione <- apply(ranking_sim, 2, function(x) mean(x <= 8))
+playoff <- apply(ranking_sim, 2, function(x) mean(x <= 24 & x > 8))
+eliminazione <- apply(ranking_sim, 2, function(x) mean(x > 24))
+final_probs <- cbind(qualificazione, playoff, eliminazione)
+# write.table(final_probs * 100, "final_probs.csv", sep = ";", dec = ",")
+```
+
+::: {.flourish-embed .flourish-chart data-src="visualisation/21302160"}
+```{=html}
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+```
+
+<noscript><img src="https://public.flourish.studio/visualisation/21302160/thumbnail" alt="chart visualization" width="100%"/></noscript>
+:::
+
+## Commento ai risultati e focus su squadre italiane
+
+Sulle base dei risultati precedenti, possiamo fare alcune considerazioni.
+
+-   Salvo grosse sorprese, [Inter]{.blue} dovrebbe andare direttamente agli ottavi di finale.
+-   Anche il [Milan]{.orange} ha un'alta probabilità di andare direttamente agli ottavi, anche se meno schiacciante di quella dell'Inter.
+-   [Atalanta]{.grey} è in bilico: il passaggio agli ottavi è dato soltanto al 24%, principalmente a causa dello scontro difficile contro il Barcelona, in cui quest'ultima è data per favorita.
+-   È davvero molto difficile che [Juventus]{.blue} passi agli ottavi (2%), ma è anche impossibile che venga [eliminata]{.red}. Al 98% andrà ai playoff.
+
+<!-- Possiamo inoltre calcolare la probabilità di Inter e Milan di capitare -->
+<!-- tra le prime 4, non soltanto le prime 8 posizioni. -->
+
+<!-- ::: {.flourish-embed .flourish-chart data-src="visualisation/21307240"} -->
+<!-- ```{=html} -->
+<!-- <script src="https://public.flourish.studio/resources/embed.js"></script> -->
+<!-- ``` -->
+
+<!-- <noscript><img src="https://public.flourish.studio/visualisation/21307240/thumbnail" alt="chart visualization" width="100%"/></noscript> -->
+<!-- ::: -->
+
+Possiamo anche calcolare la distribuzione della posizione in classifica di Inter, Milan, Atalanta e Juventus, che è riportata qui di seguito. La variabilità è notevole, perchè le squadre hanno punteggi molto simili tra loro.
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/21338392"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21338392/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+```{r}
+# library(ggplot2)
+# 
+# # Position of specific teams
+# par(mfrow = c(2, 2))
+# plot(prop.table(table(ranking_sim[, 4])), ylab = "Probabilità", main = "Posizione in classifica di Inter", xlab = "Posizione in classifica") # Inter
+# plot(prop.table(table(ranking_sim[, 6])), ylab = "Probabilità", main = "Posizione in classifica di Milan", xlab = "Posizione in classifica") # Inter
+# plot(prop.table(table(ranking_sim[, 7])), ylab = "Probabilità", main = "Posizione in classifica di Atalanta", xlab = "Posizione in classifica") # Atalanta
+# plot(prop.table(table(ranking_sim[, 17])), ylab = "Probabilità", main = "Posizione in classifica di Juventus", xlab = "Posizione in classifica") # Juventus
+# plot(prop.table(table(ranking_sim[, 26])), ylab = "Probabilità", main = "Posizione in classifica di Manchester City", xlab = "Posizione in classifica") # Juventus
+```
+
+```{r}
+
+#100 * prop.table(table(ranking_sim[, 1])) # Liverpool
+#100 * prop.table(table(ranking_sim[, 2])) # Barcelona
+#100 * prop.table(table(ranking_sim[, 4])) # Inter
+#100 * prop.table(table(ranking_sim[, 6])) # Milan
+#100 * prop.table(table(ranking_sim[, 7])) # Atalanta
+#100 * prop.table(table(ranking_sim[, 17])) # Juventus
+```
+
+```{r}
+# # Inter top 4
+# sum(ranking_sim[, 4] <= 4)
+# sum(ranking_sim[, 4] > 4 & ranking_sim[, 4] <= 8)
+# sum(ranking_sim[, 4] > 8)
+# 
+# # Milan top 4
+# sum(ranking_sim[, 6] <= 4)
+# sum(ranking_sim[, 6] > 4 & ranking_sim[, 6] <= 8)
+# sum(ranking_sim[, 6] > 8)
+# 
+# # Inter entrambe nei primi 8
+# 100 * mean(ranking_sim[, 4] <= 8)
+# 
+# # Milan e Inter entrambe nei primi 8
+# 100 * mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8)
+# 100 * (1 - mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8))
+# 
+# # Milan, Inter e Atalanta nei primi 8
+# 100 * mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8 & ranking_sim[, 7] <= 8)
+# 100 * (1 - mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8 & ranking_sim[, 7] <= 8))
+# 
+# # Milan, Inter e Atalanta, Juventus nei primi 8
+# 100 * mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8 & ranking_sim[, 7] <= 8 & ranking_sim[, 17] <= 8)
+# 100 * (1 - mean(ranking_sim[, 4] <= 8 & ranking_sim[, 6] <= 8 & ranking_sim[, 7] <= 8 & ranking_sim[, 17] <= 8))
+```

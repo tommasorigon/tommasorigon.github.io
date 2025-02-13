@@ -1,0 +1,57 @@
+---
+title: 'Informazioni per la tesi di laurea'
+lang: it
+---
+
+Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in "Statistica I" oppure in "Introduzione ad R", anche perché sono corsi introduttivi.
+
+Le tematiche di cui mi occupo sono: applicazioni e metodi di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
+
+Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d'ipotesi, metodi boostrap, etc.).
+
+Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [Martedì alle ore 17.30]{.blue}.
+
+## Il software LaTeX {.central}
+
+L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura della tesi è [caldamente raccomandato]{.blue}.
+
+LaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare [Overleaf](https://www.overleaf.com). Per una [guida in italiano]{.blue} all'uso di LaTeX si consiglia [LaTeX per l'impaziente](http://www.lorenzopantieri.net/LaTeX_files/LaTeXimpaziente.pdf) oppure [l'Arte di scrivere con LaTeX](http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf).
+
+Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). Se compilato, il risultato finale dovrebbe coincidere con [questo file](files/template_tesi.pdf), in formato .pdf.
+
+<!-- Si suggeriscono inoltre le seguenti [linee guida per la scrittura di testi matematici](http://www-math.mit.edu/~poonen/papers/writing.pdf). -->
+
+## Tesi passate (triennali, magistrali e dottorato) {.central}
+
+Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi.
+
+|   A.A.    |             Laurea              | Candidata/o           | Titolo                                                                                                                                                                                                             |
+|:-----------:|:-----------:|:------------|:--------------------------------|
+|           |                                 |                       | **Laurea Triennale**                                                                                                                                                                                               |
+| 2021/2022 |       [Triennale]{.blue}        | Marco Carrettoni      | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf)                                                                         |
+| 2021/2022 |       [Triennale]{.blue}        | Erica Delvino         | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf)                                                                                                                 |
+| 2021/2022 |       [Triennale]{.blue}        | Anna Petranzan        | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf)                                                                                                         |
+| 2022/2023 |       [Triennale]{.blue}        | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf)                                                                                                          |
+| 2022/2023 |       [Triennale]{.blue}        | Tommaso Menghini      | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf)                                                                                                        |
+| 2023/2024 |       [Triennale]{.blue}        | Stefano Andreoli      | [Metodi di stima intervallare in un modello binomiale](files/papers/Andreoli_triennale_880053.pdf)                                                                                                                 |
+| 2023/2024 |       [Triennale]{.blue}        | Riccardo Cicuttin     | [Metodi di campionamento per distribuzioni univariate](files/papers/Cicuttin_triennale_879735.pdf)                                                                                                                 |
+|           |                                 |                       | **Laurea Magistrale**                                                                                                                                                                                              |
+| 2020/2021 |  [Magistrale]{.orange} (Unipd)  | Davide Agnoletto      | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf)                                                                             |
+| 2022/2023 |      [Magistrale]{.orange}      | Gabriele Tinè         | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tine_magistrale_826904.pdf)                                           |
+| 2023/2024 |      [Magistrale]{.orange}      | Anna Petranzan         | [The Gnedin model: recent developments and future perspectives](files/papers/Petranzan_magistrale_858541.pdf)                                           |
+|           |                                 |                       | **Dottorato di ricerca**                                                                                                                                                                                           |
+|   2023    |  [**Ph.D.**]{.darkred} (Duke)   | Alessandro Zito       | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) |
+
+: Thesis {tbl-colwidths="\[5, 10, 20, 75\]"}
+
+## FAQ {.central}
+
+1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi.
+
+2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.
+
+3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici.
+
+4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca.
+
+5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato.

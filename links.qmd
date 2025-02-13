@@ -1,0 +1,75 @@
+---
+---
+
+
+## University of Milano-Bicocca {.central}
+
+[Federico Camerlenghi](https://sites.google.com/unimib.it/camerlenghi-federico/home-page)
+
+[Riccardo Cogo](https://www.linkedin.com/in/riccardo-cogo-9039a6150/), Ph.D. student
+
+[Lorenzo Ghilotti](https://lghilotti.github.io), Ph.D. student
+
+[Luca Presicce](https://lucapresicce.github.io), Ph.D. student
+
+[Carlo Reverberi](https://neuromi.it/author/carlo-reverberi/)
+
+## Bocconi University {.central}
+
+[Daniele Durante](https://danieledurante.github.io/web/)
+
+[Antonio Lijoi](https://mypage.unibocconi.eu/antoniolijoi/), Ph.D. advisor
+
+[Sonia Petrone](https://dec.unibocconi.eu/people/sonia-petrone)
+
+[Igor Prünster](https://mypage.unibocconi.eu/igorpruenster/), Ph.D. advisor
+
+## Duke University {.central}
+
+[David Dunson](https://scholars.duke.edu/person/dunson), Post-doc advisor
+
+[Amy Herring](https://scholars.duke.edu/person/Amy.Herring), Post-doc advisor
+
+[Ching-Lung Hsu](https://sites.duke.edu/ch408/), Ph.D. student
+
+[Alan Gelfand](https://scholars.duke.edu/person/alan)
+
+## University of Padova {.central}
+
+[Davide Agnoletto](https://davideagno.github.io), Ph.D. student
+
+[Emanuele Aliverti](https://emanuelealiverti.github.io)
+
+[Antonio Canale](https://tonycanale.github.io)
+
+[Francesco Denti](https://fradenti.github.io)
+
+[Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa.html), M.Sc. advisor
+
+[Andrea Sottosanti](https://andreasottosanti.github.io)
+
+## Other Universities {.central}
+
+[Alessia Caponera](https://alessiacaponera.github.io), Luiss University
+
+[Marta Catalano](https://martacatalano.github.io), Luiss University
+
+[Paolo Cherubini](https://scholar.google.it/citations?user=xDkyPXUAAAAJ&hl=en), University of Pavia
+
+[Stefano Favaro](http://sites.carloalberto.org/favaro/), University of Turin
+
+[Sirio Legramanti](https://siriolegramanti.wordpress.com), University of Bergamo
+
+[Otso Ovaskainen](https://researchportal.helsinki.fi/en/persons/otso-ovaskainen), University of Helsinki
+
+[Sally Paganin](https://salleuska.github.io), Ohio State University
+
+[Francesca Panero](https://francescapanero.github.io), Sapienza University
+
+[Massimilano Russo](https://rmassimiliano.github.io), Ohio State University
+
+[Aldo Solari](https://aldosolari.github.io), Ca' Foscari University
+
+[Nicola Torelli](https://scholar.google.it/citations?user=l5fIs0wAAAAJ&hl=en), University of Trieste
+
+[Alessandro Zito](https://alessandrozito.github.io/web/), Harvard University, Ph.D. student

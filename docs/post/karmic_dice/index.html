@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2023-08-20">
+
+<title>Karmic dice for Baldur’s Gate III</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#karmic-dice-what-do-they-do" id="toc-karmic-dice-what-do-they-do" class="nav-link active" data-scroll-target="#karmic-dice-what-do-they-do">Karmic dice: what do they do?</a></li>
+  <li><a href="#a-simple-algorithm-for-the-karmic-dice" id="toc-a-simple-algorithm-for-the-karmic-dice" class="nav-link" data-scroll-target="#a-simple-algorithm-for-the-karmic-dice">A simple algorithm for the karmic dice</a></li>
+  <li><a href="#analyzing-the-algorithm" id="toc-analyzing-the-algorithm" class="nav-link" data-scroll-target="#analyzing-the-algorithm">Analyzing the algorithm</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Karmic dice for Baldur’s Gate III</h1>
+<p class="subtitle lead">A simple algorithm that accounts for karma</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><span class="orange">Tommaso Rigon</span> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 20, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="karmic-dice-what-do-they-do" class="level2">
+<h2 class="anchored" data-anchor-id="karmic-dice-what-do-they-do">Karmic dice: what do they do?</h2>
+<p>I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned computer and I thought it was a great game. When <a href="https://baldursgate3.game">Baldur’s Gate III</a> was released a few weeks ago, it caught my attention.</p>
+<p>The central dynamic of the game is based on Dungeons &amp; Dragons, meaning that players need to roll the famous <span class="orange">20 sided dice</span> several times. On a laptop/console, these <span class="blue">“random” numbers</span> (actually, pseudo-random) are automatically generated by the software.</p>
+<p>A specific feature of the game, the <a href="https://www.ign.com/wikis/baldurs-gate-3/Karmic_Dice_Explained">karmic dice</a>, was very much discussed by the online community.</p>
+<p>The karmic dice <span class="blue">avoid subsequent</span> successes and <span class="blue">failures</span>. In other terms, the results of the dice are <span class="orange">not independent</span> anymore.</p>
+<p>I am an <a href="https://tommasorigon.github.io">Assistant Professor of Statistical Science</a>, so I had a few questions: how does this algorithm work, exactly? Will it preserve basic properties that do not <span class="blue">screw up</span> the <span class="blue">balance</span> of the game?</p>
+<p>Perhaps more importantly: is it possible to find a simple way to generate “karmic” rolls?</p>
+<section id="regular-dice-vs-karmic-dice" class="level4">
+<h4 class="anchored" data-anchor-id="regular-dice-vs-karmic-dice">Regular dice vs karmic dice</h4>
+<p>Let us step back for a second. Why do we need a karmic dice in the first place?</p>
+<p>Most people find “<span class="orange">true randomness</span>” (independent trials, in the language of probability) quite <span class="orange">counter-intuitive</span>.</p>
+<p>Suppose we toss a fair dice with 20 sides, say, 100 times. A compatible sequence of results could be:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_8f0439e61c82804916c20d952001b1fe">
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 15  5 11 14  1  8 13  6 17  2 13 15  7 12  7  8  9  5  3  8  8  6  2 20 15
+ [26] 20 13  8 15 11 12  4  3 15  3 11 14 20 14 14 11  7 11  1 11 14 17  1  2  7
+ [51] 11 13  1  1 17 18  4  2  2  9 13 11 11  6  2  8 17  2 11  4 11  6  1 15 11
+ [76]  5  8 17  3 14  3 18 14  8 18 17  7 10  1 10 18 19 14 20 10 19  8 12  3 20</code></pre>
+</div>
+</div>
+<p>A surprising amount of people would find this sequence “non-random” or would suspect that something is off with the random number generator (RNG). There is indeed a sequence of bad rolls: <code>7, 8, 9, 5, 3, 8, 8, 6</code>, and <code>2</code>. Is this some mistake?</p>
+<p>Long story short: nothing fishy is going on, this is the normal behavior of a regular dice. Yet, a non-trained eye would expect something like the following <span class="blue">karmic sequence</span> (dependent trials):</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-4_0ec0abc88de678e6d49d53c91ebcb3e2">
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 16 12  6 11  1  4 19  9  5 16  7 12 18  4 10 19  5 16  6 15  7  8 16 14 12
+ [26] 13  8  2 20 15  7 20  5  8 14  2  9  5 15  7 20 14 12 13 14 16  1 17 20 12
+ [51] 19 17 15  8 15  2 12 10  7 12 10  3  7  2 19 10  7  8 17 15 15 14  9 15 10
+ [76] 15 10  3 10  4 14 19 19 16  7 15  4  5 13  5 11 12 19  8 14  9 20  8  9  3</code></pre>
+</div>
+</div>
+<p>In this sequence, there are fewer streaks of negative results, and many players find this kind of pattern more enjoyable.</p>
+</section>
+<section id="the-long-run-behavior-and-weighted-dice" class="level4">
+<h4 class="anchored" data-anchor-id="the-long-run-behavior-and-weighted-dice">The long-run behavior and weighted dice</h4>
+<p>There are many ways to obtain a sequence with fewer unlucky rolls. A simple idea could be using a <span class="orange">weighted dice</span>, e.g.&nbsp;an hypothetical dice with non-uniform probabilities.</p>
+<p>Such a weighted dice accomplishes the goal of reducing extreme events, but it is modifying a fundamental aspect of Dungeons &amp; Dragons and therefore affecting the <span class="orange">balance of the game</span>.</p>
+<p>Changing the rules is not necessarily bad, but it has consequences. Indeed, most role players are well aware that there is a difference between <span class="blue">1d20</span> and <span class="orange">2d10</span>.</p>
+</section>
+<section id="desiderata-for-a-karmic-dice" class="level4">
+<h4 class="anchored" data-anchor-id="desiderata-for-a-karmic-dice">Desiderata for a karmic dice</h4>
+<p>I think a more <span class="blue">gentle approach</span> would be tweaking the algorithm in such a way:</p>
+<ul>
+<li><p>The <span class="blue">long-rung proportions</span> are identical to those of a regular dice, i.e., each side of the dice has a <span class="math inline">5\%</span> probability of being picked if we were to roll the dice a considerable amount of times.</p></li>
+<li><p>The rolls are <span class="orange">dependent</span>, meaning the values obtained at the previous step influence future behavior.</p></li>
+</ul>
+<p>Moreover, the algorithm should be <span class="orange">easy to implement</span> and tunable to account for players’ preferences (e.g., weak vs strong karma effect).</p>
+</section>
+</section>
+<section id="a-simple-algorithm-for-the-karmic-dice" class="level2">
+<h2 class="anchored" data-anchor-id="a-simple-algorithm-for-the-karmic-dice">A simple algorithm for the karmic dice</h2>
+<p>I do not know which approach is implemented in Baldur’s Gate III, I can only make educated guesses. However, it turns out that a simple idea, based on the notion of <span class="blue">latent karma</span>, has all the above desiderata.</p>
+<p>Let us focus on the generic <span class="math inline">t</span>th roll. The latent karma <span class="math inline">Y_t</span> of the is a real number that identifies how lucky we have been, say the <span class="blue">positive</span> values <span class="math inline">1.5</span> or <span class="math inline">3.2</span> (lucky events) or the <span class="orange">negative</span> value <span class="math inline">-4.3</span> (unlucky event).</p>
+<p>Let <span class="math inline">0 &lt; \kappa &lt; 1</span> be a constant determining the “karma effect.” The <span class="blue">first</span> karma score <span class="math inline">Y_1</span> does not depend on the past (because there is no past), and we generate it according to a Gaussian random variable:</p>
+<p><span class="math display">
+Y_1 \sim \text{N}\left(0, \frac{1}{1 - \kappa^2}\right).
+</span></p>
+<p>The subsequent karma scores are obtained by adjusting the previous karma score as follows:</p>
+<p><span class="math display">
+Y_t = - \kappa \:Y_{t-1} + \epsilon_t, \qquad \epsilon_t \sim \text{N}(0, 1),
+</span> for <span class="math inline">t = 2,\dots,n</span>. In other words, <span class="orange">if we were unlucky</span> at step <span class="math inline">t</span>, we had <span class="blue">better chances to be lucky</span> at step <span class="math inline">t+1</span> (and vice-versa). The amount of this <span class="grey">effect</span> is <span class="grey">regulated by the parameter <span class="math inline">\kappa</span></span>.</p>
+<p>In <strong>R / python code</strong>, the generation of the latent karma scores is straightforward:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Python code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-5_d3d588665978e84d9ab3988e833c441f">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>karmic_score <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  </span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="co"># First latent karma Y_1</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  latent_score[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, sigma)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>  </span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="cf">for</span> (t <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>(n <span class="sc">-</span> <span class="dv">1</span>)) {</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    latent_score[t <span class="sc">+</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="sc">-</span>kappa <span class="sc">*</span> latent_score[t] <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb3-11"><a href="#cb3-11"></a>  }</span>
+<span id="cb3-12"><a href="#cb3-12"></a>  </span>
+<span id="cb3-13"><a href="#cb3-13"></a>  <span class="fu">return</span>(latent_score)</span>
+<span id="cb3-14"><a href="#cb3-14"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-6_2ed1760328963d17913a2bd5bf491081">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">def</span> karmic_score(n, kappa):</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    latent_score <span class="op">=</span> np.zeros(n)</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    </span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="co"># First latent karma Y_1</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>    latent_score[<span class="dv">0</span>] <span class="op">=</span> np.random.normal(<span class="dv">0</span>, sigma)</span>
+<span id="cb4-9"><a href="#cb4-9"></a>    </span>
+<span id="cb4-10"><a href="#cb4-10"></a>    <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
+<span id="cb4-12"><a href="#cb4-12"></a>        latent_score[t] <span class="op">=</span> <span class="op">-</span>kappa <span class="op">*</span> latent_score[t <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb4-13"><a href="#cb4-13"></a>    </span>
+<span id="cb4-14"><a href="#cb4-14"></a>    <span class="cf">return</span> latent_score</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>Once we have obtained the karma scores <span class="math inline">Y_t</span>, we simply <span class="orange">convert</span> them into integers <span class="math inline">D_t</span>, belonging to <span class="math inline">1,\dots,20</span>, using the following formula</p>
+<p><span class="math display">
+D_t = \text{ceiling}\{20 \Phi_\kappa(Y_t)\}, \qquad t = 1,\dots,n,
+</span> where <span class="math inline">\Phi_\kappa(y)</span> is the <span class="blue">cumulative distribution function</span> of a Gaussian with zero mean and variance <span class="math inline">1 / (1 - \kappa^2)</span>.</p>
+<p>The <span class="math inline">\text{ceiling}</span> operation rounds up its argument, producing an integer. Once again, this operation can be performed with a few lines of R / Python code.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Python code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-7_55af9c1f29a092def3ffbaeb4c008448">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>karmic_dice <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
+<span id="cb5-2"><a href="#cb5-2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb5-3"><a href="#cb5-3"></a>  </span>
+<span id="cb5-4"><a href="#cb5-4"></a>  <span class="co"># Generate the latent scores</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">karmic_score</span>(n, kappa)</span>
+<span id="cb5-6"><a href="#cb5-6"></a>  <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>  dice_results <span class="ot">&lt;-</span> <span class="fu">ceiling</span>(<span class="dv">20</span> <span class="sc">*</span> <span class="fu">pnorm</span>(latent_score, <span class="dv">0</span>, sigma))</span>
+<span id="cb5-8"><a href="#cb5-8"></a>  <span class="fu">return</span>(dice_results)</span>
+<span id="cb5-9"><a href="#cb5-9"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-8_83649d4e968de130919756a656e42443">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="kw">def</span> karmic_dice(n, kappa):</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb6-5"><a href="#cb6-5"></a>    </span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="co"># Generate the latent scores</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>    latent_score <span class="op">=</span> karmic_score(n, kappa)</span>
+<span id="cb6-8"><a href="#cb6-8"></a>    <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>    dice_results <span class="op">=</span> np.ceil(<span class="dv">20</span> <span class="op">*</span> norm.cdf(latent_score, loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span>sigma))</span>
+<span id="cb6-10"><a href="#cb6-10"></a>    <span class="cf">return</span> dice_results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>The usage of this function is also straightforward. In R, we can get a bunch of values for the latent score and the dice as follows:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-9_4b84e4521c63fc1c74adb6fee8e5776c">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">30</span>, <span class="at">kappa =</span> <span class="fl">0.35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 17 17  1 11 19  1  8  2  7  6 17  1  9  9  7  2  5 14  8 10 11  5 15  4 13
+[26]  5 17 18 17 20</code></pre>
+</div>
+</div>
+</section>
+<section id="analyzing-the-algorithm" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-the-algorithm">Analyzing the algorithm</h2>
+<p>The most interesting property of this karmic dice is that it <span class="blue">preserves</span> the <span class="blue">long-run proportions</span>. If you have a solid background on the theory of <span class="blue">auto-regressive processes</span> and the so-called <span class="orange">inversion theorem</span> for generating random variables, this should be immediately obvious to you.</p>
+<p>If you are not familiar with probability theory, the following <span class="blue">empirical demonstration</span> should give you an intuition of why this idea works nicely.</p>
+<p>Suppose I were to get <span class="orange">one million rolls</span>, then I could check how many times I got each of the values <span class="math inline">1,2,\dots, 20</span>. With a computer, this can be quickly done (using <span class="math inline">\kappa = 0.35</span>), and these are the <span class="blue">proportions</span> we get:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-10_6e49c2832f293f6f6ea9ee5adcb0a748">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+       1        2        3        4        5        6        7        8 
+0.049854 0.049871 0.049799 0.049926 0.050014 0.050330 0.050038 0.050022 
+       9       10       11       12       13       14       15       16 
+0.049772 0.049845 0.050407 0.050344 0.049760 0.050350 0.049981 0.049673 
+      17       18       19       20 
+0.050130 0.049961 0.049937 0.049986 </code></pre>
+</div>
+</div>
+<p>Each number is roughly appearing in the sequence <span class="math inline">5\%</span> of the times, as it should!</p>
+<p>The take-home message is that this algorithm <span class="blue">does not affect the overall balance</span> of the game because the long-term behavior (called stationary distribution) coincides with that of the regular dice.</p>
+<section id="the-karmic-effect" class="level4">
+<h4 class="anchored" data-anchor-id="the-karmic-effect">The karmic effect</h4>
+<p>Another aspect we would like to understand is the <span class="orange">dependence</span> between the current roll and the following. These two rolls are independent in the case of a regular dice, but the situation is quite different in a karmic dice.</p>
+<p>Let us start noticing that when <span class="math inline">\kappa = 0</span>, the above karmic dice algorithm is just a convoluted way of sampling from a regular dice! It can be “easily” proved using standard probability tools.</p>
+<p>When <span class="math inline">\kappa &gt; 0</span>, the karmic dice tweaks the probability and induces a negative correlation between subsequent rolls. Let us visualize what happens when <span class="math inline">\kappa = 0.35</span>.</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-12_add25d061bb79344544aa8ce27b60f0b">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="1750"></p>
+</div>
+</div>
+<p><span class="blue">Blue squares</span> are more likely values (compared to the regular dice), whereas <span class="orange">orange squares</span> are less likely values. This graph reveals a few interesting facts:</p>
+<ul>
+<li>If the current roll is a 1, then the most likely outcome of the following will be in the range of 15-20, with a peak in 20.</li>
+<li>If the current roll is 20, then the most likely outcome of the following will be in the range of 1-5, with a peak in 1.</li>
+<li>If the current roll is either 10 or 11, the following roll will roughly behave like a regular dice.</li>
+</ul>
+<p>This version of the karmic effect therefore <span class="orange">compensate</span> positive values with negative values in a balanced manner so that the long-run proportions are correct.</p>
+</section>
+<section id="the-choice-of-kappa" class="level4">
+<h4 class="anchored" data-anchor-id="the-choice-of-kappa">The choice of <span class="math inline">\kappa</span></h4>
+<p>The amount of compensation is regulated by <span class="math inline">\kappa</span>, a <span class="blue">crucial tuning parameter</span> that can be used to tune the dynamic of the karma dice.</p>
+<p>If <span class="math inline">\kappa</span> is close to <span class="math inline">0</span>, we get a regular dice. Vice versa, if <span class="math inline">\kappa</span> is close to <span class="math inline">1</span>, i.e., the theoretical maximum, we would get sequences like this:</p>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-13_873f1e310bd6e1d821acaed385d5a691">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">kappa =</span> <span class="fl">0.999</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1]  7 13  7 14  7 14  7 14  7 13  8 13  8 13  7 13  8 13  8 13  8 13  7 14  7
+ [26] 14  7 14  7 14  7 14  8 13  7 14  7 14  8 14  8 13  8 13  8 13  8 13  9 13
+ [51]  8 13  8 13  8 12  8 12  9 12 10 11 10 11 10 11 10 11 10 11  9 12  9 12  9
+ [76] 12  9 12 10 11 10 12 10 11 10 11 10 10 10 11 10 11 10 11 10 11 11 10 12 10</code></pre>
+</div>
+</div>
+<p>Even though, in the (very) long run, the correct proportions are still preserved for any <span class="math inline">\kappa &lt; 1</span>, such an extreme choice of <span class="math inline">\kappa = 0.999</span> leads to almost <span class="orange">deterministic compensations</span>, which are not appropriate for a game, because it would become <span class="blue">too predictable</span>.</p>
+<p>There is no “statistical” optimal choice for <span class="math inline">\kappa</span>, which instead should be selected based on the <span class="blue">player preferences</span>. Here I picked <span class="math inline">\kappa = 0.35</span> as it seems like a reasonable default, being a middle-ground solution between the independence case (regular dice) and an almost determinist pattern.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

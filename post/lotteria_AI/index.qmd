@@ -65,15 +65,15 @@ L'analisi completa è disponibile in [questo articolo](https://probability.ca/je
 
 ## Le coincidenze sono sorprendenti?
 
-Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico [fraintendimento]{.orange}: *"Poiché l'evento è raro, non può essere stato un caso!"*. In realtà, gli eventi rari accadono ogni giorno; altrimenti, nessuno vincerebbe mai il Superenalotto.  
+Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico [fraintendimento]{.orange}: *"Poiché l'evento è raro, non può essere stato un caso!"*. In realtà, gli [eventi rari accadono ogni giorno]{.blue}; altrimenti, nessuno vincerebbe mai il Superenalotto.  
 
 Per districare questo apparente paradosso, è utile considerare il [numero di tentativi]{.blue} effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l'intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.  
 
 Questo stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il [caso di Sally Clark](https://www.theguardian.com/society/2007/mar/17/childrensservices.uknews), ingiustamente accusata di aver ucciso i propri figli a causa di un'errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita.
 
-## Riferimenti
+## Alcuni riferimenti
 
 Tutti questi fraintendimenti sono ben raccontati nel libro divulgativo [*Struck By Lightning: The Curious World Of Probabilities*](https://probability.ca/sbl/) di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo [*Le regole del caso: istruzioni per l'uso*](https://www.amazon.it/regole-del-caso-istruzioni-luso/dp/883042370X).
 
-Si veda anche il video YouTube divulgativo: [*Statistician Answers Stats Questions From Twitter*](https://www.youtube.com/watch?v=QW3KRaz4aI4&t=605s) di WIRED.
+Si veda anche il video YouTube: [*Statistician Answers Stats Questions From Twitter*](https://www.youtube.com/watch?v=QW3KRaz4aI4&t=605s) di WIRED.
 

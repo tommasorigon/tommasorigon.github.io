@@ -32,8 +32,7 @@ Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.
 ![](lotto.jpg){width=2.5in fig-align="center"} 
 
 Non è sorprendente che un comunicato del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
-
-Purtroppo, però, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml), sebbene con enfasi minore rispetto alla notizia iniziale.
+Purtroppo, però, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml) ed infine anche da [Repubblica](https://bari.repubblica.it/cronaca/2025/03/06/news/vittoria_al_lotto_grazie_all_ia_i_prof_di_lecce_smontano_il_sistema_degli_universitari_fortuna-424046558/?ref=RHLM-BG-P15-S1-T1), sebbene con enfasi minore rispetto alla notizia iniziale. 
 
 ## È possibile prevedere i numeri del lotto?
 
@@ -60,7 +59,7 @@ Questi concetti dovrebbero essere ben noti agli studenti di statistica e da doce
 :::callout-note
 Se le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando invece queste si manifestano, significa che almeno una delle ipotesi non è rispettata, a volte purtroppo per ragioni fraudolente.  
 
-Dopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. Un precedente famoso è descritto qui nel seguito.
+Dopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. In effetti, in Canada è capitato davvero, come raccontato nel seguito.
 :::
 
 Nel 2006, i produttori del programma investigativo canadese *The Fifth Estate* della CBC contattarono il prof. [Jeff Rosenthal](https://probability.ca/jeff/) per un caso di [frode]{.orange} alla lotteria dell'Ontario. Il caso riguardava Bob Edmonds, un anziano giocatore truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una battaglia legale durata 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la *Ontario Lottery and Gaming Corporation* (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e chiese a Rosenthal di analizzare i dati da un punto di vista statistico.  

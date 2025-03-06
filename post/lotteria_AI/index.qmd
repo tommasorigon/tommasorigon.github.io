@@ -27,19 +27,19 @@ editor_options:
 
 ## Il caso di cronaca
 
-Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come [Repubblica](https://bari.repubblica.it/cronaca/2025/03/05/news/vinti_50mila_euro_al_lotto_grazie_all_intelligenza_artificiale_il_sistema_di_3_studenti_di_fisica-424043596/) e il [Corriere della Sera](https://lecce.corriere.it/notizie/cronaca/25_marzo_05/lecce-i-numeri-del-lotto-con-l-intelligenza-artificiale-tre-studenti-universitari-ci-provano-e-vincono-fino-a-43mila-euro-372cc4cf-54c6-4992-a7b7-6c17e0a0axlk.shtml). È comparsa inoltre su testate minori: [Torino Cronaca](https://torinocronaca.it/news/ultime-notizie/474276/tre-studenti-dell-universita-del-salento-vincono-al-lotto-con-l-ai-ecco-come.html) e [Orizzonte Scuola](https://www.orizzontescuola.it/studenti-vincono-al-lotto-con-lintelligenza-artificiale-50mila-euro-grazie-a-un-algoritmo/).
+Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come [Repubblica](https://bari.repubblica.it/cronaca/2025/03/05/news/vinti_50mila_euro_al_lotto_grazie_all_intelligenza_artificiale_il_sistema_di_3_studenti_di_fisica-424043596/) e il [Corriere della Sera](https://lecce.corriere.it/notizie/cronaca/25_marzo_05/lecce-i-numeri-del-lotto-con-l-intelligenza-artificiale-tre-studenti-universitari-ci-provano-e-vincono-fino-a-43mila-euro-372cc4cf-54c6-4992-a7b7-6c17e0a0axlk.shtml). È comparsa inoltre su testate minori, tra cui: [Torino Cronaca](https://torinocronaca.it/news/ultime-notizie/474276/tre-studenti-dell-universita-del-salento-vincono-al-lotto-con-l-ai-ecco-come.html) e [Orizzonte Scuola](https://www.orizzontescuola.it/studenti-vincono-al-lotto-con-lintelligenza-artificiale-50mila-euro-grazie-a-un-algoritmo/).
 
 ![](lotto.jpg){width=2.5in fig-align="center"} 
 
-Non è sorprendente che una notizia del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
+Non è sorprendente che un comunicato del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
 
-Purtroppo, però, la notizia è stata data in modo errato ed è estremamente fuorviante. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml), sebbene con enfasi minore rispetto alla notizia iniziale.
+Purtroppo, però, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml), sebbene con enfasi minore rispetto alla notizia iniziale.
 
 ## È possibile prevedere i numeri del lotto?
 
 Il gioco del lotto prevede che i numeri siano estratti [casualmente]{.blue} e che ciascun numero abbia la [stessa identica probabilità]{.blue} di essere estratto, cioè $1 / 90$. Inoltre, le estrazioni sono tra loro [indipendenti]{.orange}, ovvero l'estrazione di un numero non influenza l'estrazione successiva. In gergo, si dirà che ciascuna estrazione "non ha memoria" di cosa è successo in passato.
 
-La prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente $1/90$. Di conseguenza, [non ha senso]{.blue} basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono [oscillazioni casuali]{.blue} [prive di significato]{.orange}.
+La prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente $1/90$. Di conseguenza, [non ha senso]{.orange} basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono [oscillazioni casuali prive di significato]{.blue}.
 
 ::: callout-warning
 #### I numeri ritardatari
@@ -49,7 +49,7 @@ Un errore comune è credere che un numero che non esce da molto tempo abbia magg
 Questo fraintendimento nasce da un [errore di interpretazione]{.blue} della probabilità[^LGN]. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero $1/90$. Questo perché le estrazioni sono [indipendenti]{.blue} le une dalle altre.
 :::
 
-A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è [impossibile prevedere i numeri del lotto]{.orange}. Questi concetti dovrebbero essere ben noti agli studenti di statistica e da docente di statistica, trovo sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica.
+A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è [impossibile prevedere i numeri del lotto]{.orange}. Questi concetti dovrebbero essere ben noti agli studenti di statistica e da docente di statistica, trovo [sconfortante]{.blue} che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica.
 
 [^LGN]: È possibile che questo fraintendimento derivi dalla errata comprensione della [legge dei grandi numeri](https://it.wikipedia.org/wiki/Legge_dei_grandi_numeri), la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad $1/90$ all'aumentare del numero di prove. Questa affermazione è vera, ma [non implica]{.orange} alcun effetto di "compensazione" tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.  
 
@@ -67,7 +67,7 @@ L'analisi completa è disponibile in [questo articolo](https://probability.ca/je
 
 ## Le coincidenze sono sorprendenti?
 
-Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico [fraintendimento]{.orange}: *"Poiché l'evento è raro, non può essere stato un caso!"*. In realtà, gli [eventi rari accadono ogni giorno]{.blue}; altrimenti, nessuno vincerebbe mai il Superenalotto.  
+Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico [fraintendimento]{.orange}: *"Poiché l'evento è raro, non può essere stato un caso! Come avrebbero fatto i 3 studenti, altrimenti?"*. In realtà, gli [eventi rari accadono ogni giorno]{.blue}; altrimenti, nessuno vincerebbe mai il Superenalotto.  
 
 Per districare questo apparente paradosso, è utile considerare il [numero di tentativi]{.blue} effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l'intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.  
 

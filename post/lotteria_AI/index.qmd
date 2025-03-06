@@ -33,7 +33,7 @@ Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.
 
 Non è sorprendente che una notizia del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. Purtroppo, però, la notizia è stata data in modo errato. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml), sebbene con enfasi minore rispetto alla notizia iniziale.
 
-## È possibile prevedere il numero del lotto?
+## È possibile prevedere il numeri del lotto?
 
 Il gioco del lotto prevede che i numeri siano estratti [casualmente]{.blue} e che ciascun numero abbia la [stessa identica probabilità]{.blue} di essere estratto, cioè $1 / 90$. Inoltre, le estrazioni sono tra loro [indipendenti]{.orange}, ovvero l'estrazione di un numero non influenza l'estrazione successiva. In gergo, si dirà che ciascuna estrazione "non ha memoria" di cosa è successo in passato.
 

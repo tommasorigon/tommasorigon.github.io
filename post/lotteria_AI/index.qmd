@@ -32,6 +32,7 @@ Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.
 ![](lotto.jpg){width=2.5in fig-align="center"} 
 
 Non è sorprendente che un comunicato del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
+
 Purtroppo, però, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml) ed infine anche da [Repubblica](https://bari.repubblica.it/cronaca/2025/03/06/news/vittoria_al_lotto_grazie_all_ia_i_prof_di_lecce_smontano_il_sistema_degli_universitari_fortuna-424046558/?ref=RHLM-BG-P15-S1-T1), sebbene con enfasi minore rispetto alla notizia iniziale. 
 
 ## È possibile prevedere i numeri del lotto?

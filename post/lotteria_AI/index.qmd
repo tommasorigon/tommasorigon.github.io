@@ -33,7 +33,7 @@ Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.
 
 Non è sorprendente che una notizia del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. Purtroppo, però, la notizia è stata data in modo errato. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml), sebbene con enfasi minore rispetto alla notizia iniziale.
 
-## È possibile prevedere il numeri del lotto?
+## È possibile prevedere i numeri del lotto?
 
 Il gioco del lotto prevede che i numeri siano estratti [casualmente]{.blue} e che ciascun numero abbia la [stessa identica probabilità]{.blue} di essere estratto, cioè $1 / 90$. Inoltre, le estrazioni sono tra loro [indipendenti]{.orange}, ovvero l'estrazione di un numero non influenza l'estrazione successiva. In gergo, si dirà che ciascuna estrazione "non ha memoria" di cosa è successo in passato.
 
@@ -47,7 +47,7 @@ Un errore comune è credere che un numero che non esce da molto tempo abbia magg
 Questo fraintendimento nasce da un [errore di interpretazione]{.blue} della probabilità[^LGN]. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero $1/90$. Questo perché le estrazioni sono [indipendenti]{.blue} le une dalle altre.
 :::
 
-A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è [impossibile prevedere i numeri del lotto]{.orange}. Questi concetti dovrebbero essere ben noti agli studenti di statistica, anche se lo sono meno per il pubblico più ampio. Da docente di Statistica, trovo piuttosto sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di Matematica e Fisica.
+A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è [impossibile prevedere i numeri del lotto]{.orange}. Questi concetti dovrebbero essere ben noti agli studenti di statistica e da docente di Statistica, trovo un po' sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica.
 
 [^LGN]: È possibile che questo fraintendimento derivi dalla errata comprensione della [legge dei grandi numeri](https://it.wikipedia.org/wiki/Legge_dei_grandi_numeri), la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad $1/90$ all'aumentare del numero di prove. Questa affermazione è vera, ma [non implica]{.orange} alcun effetto di "compensazione" tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.  
 
@@ -73,7 +73,7 @@ Questo stesso fraintendimento, che in questo caso ha conseguenze relativamente i
 
 ## Alcuni riferimenti
 
-Tutti questi fraintendimenti sono ben raccontati nel libro divulgativo [*Struck By Lightning: The Curious World Of Probabilities*](https://probability.ca/sbl/) di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo [*Le regole del caso: istruzioni per l'uso*](https://www.amazon.it/regole-del-caso-istruzioni-luso/dp/883042370X).
+Tutti questi fraintendimenti sono ben raccontati nel libro [*Struck By Lightning: The Curious World Of Probabilities*](https://probability.ca/sbl/) di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo [*Le regole del caso: istruzioni per l'uso*](https://www.amazon.it/regole-del-caso-istruzioni-luso/dp/883042370X).
 
 Si veda anche il video YouTube: [*Statistician Answers Stats Questions From Twitter*](https://www.youtube.com/watch?v=QW3KRaz4aI4&t=605s) di WIRED.
 

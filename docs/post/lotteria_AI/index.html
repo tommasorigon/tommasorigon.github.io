@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tommaso Rigon">
 
-<title>Blogpost – Tommaso Rigon</title>
+<title>Come mai non è possibile prevedere i numeri del lotto – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,20 +24,18 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "Nessun risultato",
@@ -52,38 +51,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Ricerca"
   }
 }</script>
-<script>
+<style>html{ scroll-behavior: smooth; }</style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-post .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-post'] = new List('listing-post', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -114,7 +99,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -126,27 +111,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bio.html"> 
+    <a class="nav-link" href="../../bio.html"> 
 <span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tesi.html"> 
+    <a class="nav-link" href="../../tesi.html"> 
 <span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./post.html" aria-current="page"> 
+    <a class="nav-link" href="../../post.html"> 
 <span class="menu-text">Blogpost</span></a>
   </li>  
 </ul>
@@ -159,21 +144,48 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In questa pagina</h2>
+   
+  <ul>
+  <li><a href="#il-caso-di-cronaca" id="toc-il-caso-di-cronaca" class="nav-link active" data-scroll-target="#il-caso-di-cronaca">Il caso di cronaca</a></li>
+  <li><a href="#è-possibile-prevedere-il-numero-del-lotto" id="toc-è-possibile-prevedere-il-numero-del-lotto" class="nav-link" data-scroll-target="#è-possibile-prevedere-il-numero-del-lotto">È possibile prevedere il numero del lotto?</a></li>
+  <li><a href="#lo-scandalo-della-lotteria-dellontario" id="toc-lo-scandalo-della-lotteria-dellontario" class="nav-link" data-scroll-target="#lo-scandalo-della-lotteria-dellontario">Lo scandalo della lotteria dell’Ontario</a></li>
+  <li><a href="#le-coincidenze-sono-sorprendenti" id="toc-le-coincidenze-sono-sorprendenti" class="nav-link" data-scroll-target="#le-coincidenze-sono-sorprendenti">Le coincidenze sono sorprendenti?</a></li>
+  <li><a href="#riferimenti" id="toc-riferimenti" class="nav-link" data-scroll-target="#riferimenti">Riferimenti</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blogpost</h1>
+<h1 class="title">Come mai non è possibile prevedere i numeri del lotto</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autore/Autrice</div>
+    <div class="quarto-title-meta-contents">
+             <p><span class="orange">Tommaso Rigon</span> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">6 marzo 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -183,130 +195,73 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-post" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1741215600000" data-listing-file-modified-sort="1741273210186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="934">
-<div class="thumbnail">
-<p><a href="./post/lotteria_AI/index.html" class="no-external"></a></p><a href="./post/lotteria_AI/index.html" class="no-external">
-<p class="card-img-top"><img src="post/lotteria_AI/lotto.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/lotteria_AI/index.html" class="no-external"></a></p>
+<section id="il-caso-di-cronaca" class="level2">
+<h2 class="anchored" data-anchor-id="il-caso-di-cronaca">Il caso di cronaca</h2>
+<p>Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come <a href="https://bari.repubblica.it/cronaca/2025/03/05/news/vinti_50mila_euro_al_lotto_grazie_all_intelligenza_artificiale_il_sistema_di_3_studenti_di_fisica-424043596/">Repubblica</a> e il <a href="https://lecce.corriere.it/notizie/cronaca/25_marzo_05/lecce-i-numeri-del-lotto-con-l-intelligenza-artificiale-tre-studenti-universitari-ci-provano-e-vincono-fino-a-43mila-euro-372cc4cf-54c6-4992-a7b7-6c17e0a0axlk.shtml">Corriere della Sera</a>. È comparsa inoltre su testate minori: <a href="https://torinocronaca.it/news/ultime-notizie/474276/tre-studenti-dell-universita-del-salento-vincono-al-lotto-con-l-ai-ecco-come.html">Torino Cronaca</a> e <a href="https://www.orizzontescuola.it/studenti-vincono-al-lotto-con-lintelligenza-artificiale-50mila-euro-grazie-a-un-algoritmo/">Orizzonte Scuola</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lotto.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2.5in"></p>
+</figure>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/lotteria_AI/index.html" class="no-external">Come mai non è possibile prevedere i numeri del lotto</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/lotteria_AI/index.html" class="no-external"></a>
+<p>Non è sorprendente che una notizia del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l’attenzione del pubblico: il <span class="orange">gioco d’azzardo</span> e l’<span class="blue">intelligenza artificiale</span>. Il titolo scelto da Repubblica è <em>“Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”</em>. Purtroppo, però, la notizia è stata data in modo errato. <span class="orange">Non è possibile prevedere</span> in alcun modo i <span class="orange">numeri</span> del <span class="orange">lotto</span>, nè tramite strumenti tradizionali nè tramite l’intelligenza artificiale. La notizia è stata poi corretta in un <a href="https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml">comunicato del Corriere</a>, sebbene con enfasi minore rispetto alla notizia iniziale.</p>
+</section>
+<section id="è-possibile-prevedere-il-numero-del-lotto" class="level2">
+<h2 class="anchored" data-anchor-id="è-possibile-prevedere-il-numero-del-lotto">È possibile prevedere il numero del lotto?</h2>
+<p>Il gioco del lotto prevede che i numeri siano estratti <span class="blue">casualmente</span> e che ciascun numero abbia la <span class="blue">stessa identica probabilità</span> di essere estratto, cioè <span class="math inline">1 / 90</span>. Inoltre, le estrazioni sono tra loro <span class="orange">indipendenti</span>, ovvero l’estrazione di un numero non influenza l’estrazione successiva. In gergo, si dirà che ciascuna estrazione “non ha memoria” di cosa è successo in passato.</p>
+<p>La prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente <span class="math inline">1/90</span>. Di conseguenza, <span class="blue">non ha senso</span> basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono <span class="blue">oscillazioni casuali</span> <span class="orange">prive di significato</span>.</p>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="listing-description">
-<a href="./post/lotteria_AI/index.html" class="no-external">Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/lotteria_AI/index.html" class="no-external">
-<div class="listing-date">
-6 mar 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+I numeri ritardatari
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1738191600000" data-listing-file-modified-sort="1738273490000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="860">
-<div class="thumbnail">
-<p><a href="./post/champions/champions2025_esiti.html" class="no-external"></a></p><a href="./post/champions/champions2025_esiti.html" class="no-external">
-<p class="card-img-top"><img src="post/champions/referee.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/champions/champions2025_esiti.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">Previsioni Champions League: com’è andata?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">Una valutazione degli errori</a>
-</div>
-<div class="listing-description">
-<a href="./post/champions/champions2025_esiti.html" class="no-external"><span class="orange">Ieri</span> ho diffuso in un post le previsioni per l’ultima giornata di Champions League, basandomi sulle quotazioni dei <em>bookmakers</em>. <span class="blue">Oggi</span> vogliamo controllare com’è andata. Ci…</a>
+<div class="callout-body-container callout-body">
+<p>Un errore comune è credere che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i “numeri ritardatari” vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.</p>
+<p>Questo fraintendimento nasce da un <span class="blue">errore di interpretazione</span> della probabilità<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero <span class="math inline">1/90</span>. Questo perché le estrazioni sono <span class="blue">indipendenti</span> le une dalle altre.</p>
 </div>
 </div>
-<div class="metadata">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">
-<div class="listing-date">
-30 gen 2025
+<p>A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è <span class="orange">impossibile prevedere i numeri del lotto</span>. Questi concetti dovrebbero essere ben noti agli studenti di statistica, anche se lo sono meno per il pubblico più ampio. Da docente di Statistica, trovo piuttosto sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di Matematica e Fisica.</p>
+</section>
+<section id="lo-scandalo-della-lotteria-dellontario" class="level2">
+<h2 class="anchored" data-anchor-id="lo-scandalo-della-lotteria-dellontario">Lo scandalo della lotteria dell’Ontario</h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738255241832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2096">
-<div class="thumbnail">
-<p><a href="./post/champions/champions2025.html" class="no-external"></a></p><a href="./post/champions/champions2025.html" class="no-external">
-<p class="card-img-top"><img src="post/champions/calcio.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/champions/champions2025.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025.html" class="no-external">Previsioni Champions League</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/champions/champions2025.html" class="no-external">8a giornata</a>
-</div>
-<div class="listing-description">
-<a href="./post/champions/champions2025.html" class="no-external">Nella Champions League del 2025, <span class="blue">36 squadre</span> competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 29 gennaio 2024…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/champions/champions2025.html" class="no-external">
-<div class="listing-date">
-29 gen 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1738079997037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1802">
-<div class="thumbnail">
-<p><a href="./post/karmic_dice/karmic.html" class="no-external"></a></p><a href="./post/karmic_dice/karmic.html" class="no-external">
-<p class="card-img-top"><img src="post/karmic_dice/karmic_files/figure-html/unnamed-chunk-12-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/karmic_dice/karmic.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/karmic_dice/karmic.html" class="no-external">Karmic dice for Baldur’s Gate III</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/karmic_dice/karmic.html" class="no-external">A simple algorithm that accounts for karma</a>
-</div>
-<div class="listing-description">
-<a href="./post/karmic_dice/karmic.html" class="no-external">I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned computer and I thought it was a great game. When Baldur’s Gate III was released a few weeks ago, it…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/karmic_dice/karmic.html" class="no-external">
-<div class="listing-date">
-20 ago 2023
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-body-container">
+<p>Se le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando invece queste si manifestano, significa che almeno una delle ipotesi non è rispettata, a volte purtroppo per ragioni fraudolente.</p>
+<p>Dopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò implicherebbe accusare lo Stato italiano di incompetenza o addirittura di frode. Un precedente famoso è descritto qui nel seguito.</p>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-Nessun risultato
-</div>
-</div>
+<p>Nel 2006, i produttori del programma investigativo canadese <em>The Fifth Estate</em> della CBC contattarono il prof. <a href="https://probability.ca/jeff/">Jeff Rosenthal</a> per un caso di <span class="orange">frode</span> alla lotteria dell’Ontario. Il caso riguardava Bob Edmonds, un anziano giocatore truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una battaglia legale durata 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la <em>Ontario Lottery and Gaming Corporation</em> (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e chiese a Rosenthal di analizzare i dati da un punto di vista statistico.</p>
+<p>L’analisi completa è disponibile in <a href="https://probability.ca/jeff/ftpdir/lotteryartref.pdf">questo articolo</a>, che descrive come una semplice analisi statistica abbia contribuito a svelare lo scandalo dei rivenditori della lotteria dell’Ontario. Il caso divenne una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari. Questa storia rappresenta una potente testimonianza dell’importanza e del potere della statistica.</p>
+</section>
+<section id="le-coincidenze-sono-sorprendenti" class="level2">
+<h2 class="anchored" data-anchor-id="le-coincidenze-sono-sorprendenti">Le coincidenze sono sorprendenti?</h2>
+<p>Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico <span class="orange">fraintendimento</span>: <em>“Poiché l’evento è raro, non può essere stato un caso!”</em>. In realtà, gli eventi rari accadono ogni giorno; altrimenti, nessuno vincerebbe mai il Superenalotto.</p>
+<p>Per districare questo apparente paradosso, è utile considerare il <span class="blue">numero di tentativi</span> effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l’intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.</p>
+<p>Questo stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il <a href="https://www.theguardian.com/society/2007/mar/17/childrensservices.uknews">caso di Sally Clark</a>, ingiustamente accusata di aver ucciso i propri figli a causa di un’errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita.</p>
+</section>
+<section id="riferimenti" class="level2">
+<h2 class="anchored" data-anchor-id="riferimenti">Riferimenti</h2>
+<p>Tutti questi fraintendimenti sono ben raccontati nel libro divulgativo <a href="https://probability.ca/sbl/"><em>Struck By Lightning: The Curious World Of Probabilities</em></a> di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo <a href="https://www.amazon.it/regole-del-caso-istruzioni-luso/dp/883042370X"><em>Le regole del caso: istruzioni per l’uso</em></a>.</p>
+<p>Si veda anche il video YouTube divulgativo: <a href="https://www.youtube.com/watch?v=QW3KRaz4aI4&amp;t=605s"><em>Statistician Answers Stats Questions From Twitter</em></a> di WIRED.</p>
 
 
+</section>
 
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Note</h2>
+
+<ol>
+<li id="fn1"><p>È possibile che questo fraintendimento derivi dalla errata comprensione della <a href="https://it.wikipedia.org/wiki/Legge_dei_grandi_numeri">legge dei grandi numeri</a>, la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad <span class="math inline">1/90</span> all’aumentare del numero di prove. Questa affermazione è vera, ma <span class="orange">non implica</span> alcun effetto di “compensazione” tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -732,4 +687,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

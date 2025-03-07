@@ -31,49 +31,53 @@ Il 5 marzo 2025, tre studenti dell'Università del Salento hanno vinto quasi 50.
 
 ![](lotto.jpg){width=2.5in fig-align="center"} 
 
-Non è sorprendente che un comunicato del genere abbia riscosso un certo successo, perchè integra due elementi che attirano l'attenzione del pubblico: il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Il titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
+Non sorprende che una notizia del genere abbia attirato l'attenzione, perchè coinvolge temi sensibili come il [gioco d'azzardo]{.orange} e l'[intelligenza artificiale]{.blue}. Lo sfortunato titolo scelto da Repubblica è *"Vinti 50mila euro al Lotto grazie all’intelligenza artificiale"*. 
 
-Purtroppo, però, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi corretta in un [comunicato del Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml) ed infine anche da [Repubblica](https://bari.repubblica.it/cronaca/2025/03/06/news/vittoria_al_lotto_grazie_all_ia_i_prof_di_lecce_smontano_il_sistema_degli_universitari_fortuna-424046558/?ref=RHLM-BG-P15-S1-T1), sebbene con enfasi minore rispetto alla notizia iniziale. 
+Purtroppo, infatti, la notizia è stata data in modo [errato]{.blue} ed [estremamente fuorviante]{.blue}. [Non è possibile prevedere]{.orange} in alcun modo  i [numeri]{.orange} del [lotto]{.orange}, nè tramite strumenti tradizionali nè tramite l'intelligenza artificiale. La notizia è stata poi rettificata dal [Corriere](https://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml) ed infine anche da [Repubblica](https://bari.repubblica.it/cronaca/2025/03/06/news/vittoria_al_lotto_grazie_all_ia_i_prof_di_lecce_smontano_il_sistema_degli_universitari_fortuna-424046558/?ref=RHLM-BG-P15-S1-T1), sebbene con enfasi minore rispetto alla notizia iniziale. 
 
 ## È possibile prevedere i numeri del lotto?
 
-Il gioco del lotto prevede che i numeri siano estratti [casualmente]{.blue} e che ciascun numero abbia la [stessa identica probabilità]{.blue} di essere estratto, cioè $1 / 90$. Inoltre, le estrazioni sono tra loro [indipendenti]{.orange}, ovvero l'estrazione di un numero non influenza l'estrazione successiva. In gergo, si dirà che ciascuna estrazione "non ha memoria" di cosa è successo in passato.
+Il gioco del lotto prevede che i numeri siano estratti [casualmente]{.blue} e che ciascun numero abbia la [stessa probabilità]{.blue} di essere estratto, cioè $1 / 90$. Inoltre, le estrazioni sono tra loro [indipendenti]{.orange}, ovvero l'estrazione di un numero non influenza quella successiva. In gergo, si dirà che ciascuna estrazione "non ha memoria" di cosa è successo in passato.
 
-La prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente $1/90$. Di conseguenza, [non ha senso]{.orange} basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono [oscillazioni casuali prive di significato]{.blue}.
+Dunque, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà circa $1/90$. Di conseguenza, [non ha senso]{.orange} basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali differenze nelle frequenze dei numeri del lotto sono [oscillazioni casuali prive di significato]{.blue}.
 
 ::: callout-warning
 #### I numeri ritardatari
 
-Un errore comune è credere che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i "numeri ritardatari" vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.
+Una credenza comune è che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i "numeri ritardatari" vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.[^LGN]
 
-Questo fraintendimento nasce da un [errore di interpretazione]{.blue} della probabilità[^LGN]. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero $1/90$. Questo proprio perché le estrazioni sono [indipendenti]{.blue} le une dalle altre.
+Come detto prima, anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero $1/90$. Questo proprio perché le estrazioni sono [indipendenti]{.blue} le une dalle altre e "non si ricordano" cosa sia successo in passato.
 :::
 
 A costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è [impossibile prevedere i numeri del lotto]{.orange}. 
 
-Questi concetti dovrebbero essere ben noti agli studenti di statistica e da docente di statistica, trovo [sconfortante]{.blue} che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica.
+Questi concetti dovrebbero essere ben noti agli studenti di statistica. Da docente, trovo [sconfortante]{.blue} che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica.
 
 [^LGN]: È possibile che questo fraintendimento derivi dalla errata comprensione della [legge dei grandi numeri](https://it.wikipedia.org/wiki/Legge_dei_grandi_numeri), la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad $1/90$ all'aumentare del numero di prove. Questa affermazione è vera, ma [non implica]{.orange} alcun effetto di "compensazione" tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.  
+
+## Le coincidenze sono sorprendenti?
+
+Cerchiamo ora di fare luce su un aspetto controintuitivo di questa vicenda. Infatti, vincere 50.000 euro al lotto è un evento piuttosto raro. Questo potrebbe indurre a pensare che non possa essere stata una [coincidenza]{.orange} e che sia sotto qualcosa di più. In realtà, gli [eventi rari accadono ogni giorno]{.blue}; altrimenti, nessuno vincerebbe mai il Superenalotto.  
+
+Per districare questo apparente paradosso, è utile considerare il [numero di tentativi]{.blue} effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l'intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.  
+
+Questo stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il [caso di Sally Clark](https://www.theguardian.com/society/2007/mar/17/childrensservices.uknews), ingiustamente accusata di aver ucciso i propri figli a causa di un'errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita.
+
 
 ## Lo scandalo della lotteria dell'Ontario
 
 :::callout-note
 Se le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando invece queste si manifestano, significa che almeno una delle ipotesi non è rispettata, a volte purtroppo per ragioni fraudolente.  
 
-Dopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. In effetti, in Canada è capitato davvero, come raccontato nel seguito.
+Dopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. In effetti, in Canada è capitato davvero, come raccontato in questa storia.
 :::
 
 Nel 2006, i produttori del programma investigativo canadese *The Fifth Estate* della CBC contattarono il prof. [Jeff Rosenthal](https://probability.ca/jeff/) per un caso di [frode]{.orange} alla lotteria dell'Ontario. Il caso riguardava Bob Edmonds, un anziano giocatore truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una battaglia legale durata 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la *Ontario Lottery and Gaming Corporation* (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e chiese a Rosenthal di analizzare i dati da un punto di vista statistico.  
 
-L'analisi completa è disponibile in [questo articolo](https://probability.ca/jeff/ftpdir/lotteryartref.pdf), che descrive come una semplice analisi statistica abbia contribuito a svelare lo scandalo dei rivenditori della lotteria dell'Ontario. Il caso divenne una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari. Questa storia rappresenta una potente testimonianza dell'importanza e del potere della statistica.
+L'analisi completa è disponibile in [questo articolo](https://probability.ca/jeff/ftpdir/lotteryartref.pdf), che descrive come una semplice analisi statistica abbia contribuito a svelare lo scandalo dei rivenditori della lotteria dell'Ontario. Il caso divenne una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari. 
 
-## Le coincidenze sono sorprendenti?
+Questa storia rappresenta una potente testimonianza dell'importanza e del potere della statistica. 
 
-Un aspetto controintuitivo della vicenda riguarda il fatto che vincere 50.000 euro è un evento piuttosto raro. Questo porta ad un altro tipico [fraintendimento]{.orange}: *"Poiché l'evento è raro, non può essere stato un caso! Come avrebbero fatto i 3 studenti, altrimenti?"*. In realtà, gli [eventi rari accadono ogni giorno]{.blue}; altrimenti, nessuno vincerebbe mai il Superenalotto.  
-
-Per districare questo apparente paradosso, è utile considerare il [numero di tentativi]{.blue} effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l'intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.  
-
-Questo stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il [caso di Sally Clark](https://www.theguardian.com/society/2007/mar/17/childrensservices.uknews), ingiustamente accusata di aver ucciso i propri figli a causa di un'errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita.
 
 ## Alcuni riferimenti
 

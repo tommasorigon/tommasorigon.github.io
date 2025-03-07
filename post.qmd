@@ -4,6 +4,8 @@ lang: it
 listing:
   id: post
   type: default
+  image-height: 2in
+  max-description-length: 250
   fields: [date, title, author, image, description]
   contents: post
   sort:

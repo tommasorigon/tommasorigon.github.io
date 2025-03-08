@@ -68,6 +68,7 @@ knitr::kable(t(freq[76:90]))
 ```
 :::
 
+
 In totale sono state effettuate $n$ = `r sum(freq)` estrazioni. Ad un occhio poco esperto, potrebbe sembrare che i numeri 15 ed 80 compaiano con maggiore frequenza rispetto agli altri (51 volte e 50 volte, rispettivamente). È anche ironico notare che non si tratta dei numeri (21 e 48) usati nella famosa scommessa -- non saprei proprio dire quale criterio abbiano seguito i tre studenti salentini. In ogni caso, si tratta di [oscillazioni casuali]{.orange}, come vedremo. 
 
 Possiamo anche rappresentare graficamente queste frequenze, ottenendo il seguente [diagramma a bastoncini](https://tommasorigon.github.io/StatI/slides/sl_G.pdf). 
@@ -86,7 +87,7 @@ La tabella ed il grafico confermano che ci sono delle oscillazioni nelle frequen
 
 Per stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli [strumenti statistici]{.orange} un po' più complicati. Sotto l'ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con $n_1,\dots,n_{90}$, seguono una [distribuzione multinomiale]{.blue} di parametro $n$ = `r sum(freq)` e probabilità $p_1,\dots,p_{90}$. 
 
-Vogliamo verificare se le probabilità $p_1,\dots,p_{90}$ sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario "difettoso", oppure se sono uguali tra loro e pari a $1/90$. Per far questo, facciamo uso del celeberrimo [test del Chi-quadrato]{.orange}. In pratica, confrontiamo le frequenze che abbiamo osservato $n_1,\dots,n_{90}$ con quelle "teoriche", pari a $n_\text{teo} = n / 90 = 35.233$. Otteniamo:
+Vogliamo verificare se le probabilità $p_1,\dots,p_{90}$ sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario "difettoso", oppure se sono uguali tra loro e pari a $1/90$. Per far questo, facciamo uso del celeberrimo [test del Chi-quadrato]{.orange}[^chisq]. In pratica, confrontiamo le frequenze che abbiamo osservato $n_1,\dots,n_{90}$ con quelle "teoriche", pari a $n_\text{teo} = n / 90 = 35.233$. Otteniamo:
 $$
 X^2 = \frac{(n_1 - n_\text{teo})^2 + \cdots + (n_{90} - n_\text{teo})^2}{n_\text{teo}} = 102.12. 
 $$
@@ -110,3 +111,5 @@ In questa analisi abbiamo fatto uso dell'ipotesi di indipendenza tra le diverse 
 
 In linea di principio, anche l'ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po' di lavoro aggiuntivo. Mi sembra, però, che l'accusa di frode allo stato italiano sfoci nel [complottismo]{.blue}, soprattutto se non supportata da ulteriori prove indiziali di altra natura.
 :::
+
+[^chisq]: Il [test del chi-quadrato](https://it.wikipedia.org/wiki/Test_chi_quadrato) è un famoso test statistico introdotto da Karl Pearson all'inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro [Agresti (2013)](https://www.amazon.it/Categorical-Data-Analysis-Alan-Agresti/dp/0470463635).

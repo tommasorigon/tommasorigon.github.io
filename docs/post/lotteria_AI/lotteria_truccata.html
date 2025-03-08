@@ -536,7 +536,7 @@ window.Quarto = {
 <section id="oscillazioni-casuali-o-lotteria-difettosa" class="level2">
 <h2 class="anchored" data-anchor-id="oscillazioni-casuali-o-lotteria-difettosa">Oscillazioni casuali o lotteria difettosa?</h2>
 <p>Per stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli <span class="orange">strumenti statistici</span> un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con <span class="math inline">n_1,\dots,n_{90}</span>, seguono una <span class="blue">distribuzione multinomiale</span> di parametro <span class="math inline">n</span> = 3171 e probabilità <span class="math inline">p_1,\dots,p_{90}</span>.</p>
-<p>Vogliamo verificare se le probabilità <span class="math inline">p_1,\dots,p_{90}</span> sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a <span class="math inline">1/90</span>. Per far questo, facciamo uso del celeberrimo <span class="orange">test del Chi-quadrato</span>. In pratica, confrontiamo le frequenze che abbiamo osservato <span class="math inline">n_1,\dots,n_{90}</span> con quelle “teoriche”, pari a <span class="math inline">n_\text{teo} = n / 90 = 35.233</span>. Otteniamo: <span class="math display">
+<p>Vogliamo verificare se le probabilità <span class="math inline">p_1,\dots,p_{90}</span> sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a <span class="math inline">1/90</span>. Per far questo, facciamo uso del celeberrimo <span class="orange">test del Chi-quadrato</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In pratica, confrontiamo le frequenze che abbiamo osservato <span class="math inline">n_1,\dots,n_{90}</span> con quelle “teoriche”, pari a <span class="math inline">n_\text{teo} = n / 90 = 35.233</span>. Otteniamo: <span class="math display">
 X^2 = \frac{(n_1 - n_\text{teo})^2 + \cdots + (n_{90} - n_\text{teo})^2}{n_\text{teo}} = 102.12.
 </span> Il numero <span class="math inline">X^2</span> = 102.12 va confrontato con i valori che ci aspetteremmo di osservare se la lotteria fosse regolare, che sono compresi tra circa 65 e 117. Più rigorosamente, calcoliamo il cosiddetto <span class="blue">p-value</span>, un concetto tecnico un po’ difficile da raccontare, ma che in buona sostanza ci conferma che <span class="orange">non ci sono anomalie statistiche</span>. Per gli statistici in ascolto, ecco i risultati completi:</p>
 <div class="cell">
@@ -583,7 +583,13 @@ E l’ipotesi di indipendenza?
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Note</h2>
+
+<ol>
+<li id="fn1"><p>Il <a href="https://it.wikipedia.org/wiki/Test_chi_quadrato">test del chi-quadrato</a> è un famoso test statistico introdotto da Karl Pearson all’inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro <a href="https://www.amazon.it/Categorical-Data-Analysis-Alan-Agresti/dp/0470463635">Agresti (2013)</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

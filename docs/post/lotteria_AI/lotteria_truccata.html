@@ -8,7 +8,7 @@
 
 <meta name="author" content="Tommaso Rigon">
 
-<title>La lotteria nazionale non è sbilanciata – Tommaso Rigon</title>
+<title>La lotteria nazionale non è difettosa – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,7 +151,7 @@ window.Quarto = {
   <ul>
   <li><a href="#unanalisi-delle-estrazioni-della-lotteria-nazionale" id="toc-unanalisi-delle-estrazioni-della-lotteria-nazionale" class="nav-link active" data-scroll-target="#unanalisi-delle-estrazioni-della-lotteria-nazionale">Un’analisi delle estrazioni della lotteria nazionale</a></li>
   <li><a href="#i-dati-della-lotteria-nazionale" id="toc-i-dati-della-lotteria-nazionale" class="nav-link" data-scroll-target="#i-dati-della-lotteria-nazionale">I dati della lotteria nazionale</a></li>
-  <li><a href="#oscillazioni-casuali-o-lotteria-sbilanciata" id="toc-oscillazioni-casuali-o-lotteria-sbilanciata" class="nav-link" data-scroll-target="#oscillazioni-casuali-o-lotteria-sbilanciata">Oscillazioni casuali o lotteria sbilanciata?</a></li>
+  <li><a href="#oscillazioni-casuali-o-lotteria-difettosa" id="toc-oscillazioni-casuali-o-lotteria-difettosa" class="nav-link" data-scroll-target="#oscillazioni-casuali-o-lotteria-difettosa">Oscillazioni casuali o lotteria difettosa?</a></li>
   <li><a href="#un-cenno-a-metodi-statistici-più-complessi" id="toc-un-cenno-a-metodi-statistici-più-complessi" class="nav-link" data-scroll-target="#un-cenno-a-metodi-statistici-più-complessi">Un cenno a metodi statistici più complessi</a></li>
   </ul>
 </nav>
@@ -165,7 +165,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">La lotteria nazionale non è sbilanciata</h1>
+<h1 class="title">La lotteria nazionale non è difettosa</h1>
 </div>
 
 
@@ -533,8 +533,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="oscillazioni-casuali-o-lotteria-sbilanciata" class="level2">
-<h2 class="anchored" data-anchor-id="oscillazioni-casuali-o-lotteria-sbilanciata">Oscillazioni casuali o lotteria sbilanciata?</h2>
+<section id="oscillazioni-casuali-o-lotteria-difettosa" class="level2">
+<h2 class="anchored" data-anchor-id="oscillazioni-casuali-o-lotteria-difettosa">Oscillazioni casuali o lotteria difettosa?</h2>
 <p>Per stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli <span class="orange">strumenti statistici</span> un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con <span class="math inline">n_1,\dots,n_{90}</span>, seguono una <span class="blue">distribuzione multinomiale</span> di parametro <span class="math inline">n</span> = 3171 e probabilità <span class="math inline">p_1,\dots,p_{90}</span>.</p>
 <p>Vogliamo verificare se le probabilità <span class="math inline">p_1,\dots,p_{90}</span> sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a <span class="math inline">1/90</span>. Per far questo, facciamo uso del celeberrimo <span class="orange">test del Chi-quadrato</span>. In pratica, confrontiamo le frequenze che abbiamo osservato <span class="math inline">n_1,\dots,n_{90}</span> con quelle “teoriche”, pari a <span class="math inline">n_\text{teo} = n / 90 = 35.233</span>. Otteniamo: <span class="math display">
 X^2 = \frac{(n_1 - n_\text{teo})^2 + \cdots + (n_{90} - n_\text{teo})^2}{n_\text{teo}} = 102.12.

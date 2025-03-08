@@ -1,5 +1,5 @@
 ---
-title: "La lotteria nazionale non è sbilanciata"
+title: "La lotteria nazionale non è difettosa"
 author: "[Tommaso Rigon]{.orange}"
 lang: it
 date: 2025-03-08
@@ -82,7 +82,7 @@ plot(table(lot_naz$N1), ylab = "Frequenza", xlab = "Primo numero estratto", main
 La tabella ed il grafico confermano che ci sono delle oscillazioni nelle frequenze: alcuni numeri sono comparsi di più, altri di meno. Questo è un fenomeno assolutamente normale! 
 :::
 
-## Oscillazioni casuali o lotteria sbilanciata?
+## Oscillazioni casuali o lotteria difettosa?
 
 Per stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli [strumenti statistici]{.orange} un po' più complicati. Sotto l'ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con $n_1,\dots,n_{90}$, seguono una [distribuzione multinomiale]{.blue} di parametro $n$ = `r sum(freq)` e probabilità $p_1,\dots,p_{90}$. 
 

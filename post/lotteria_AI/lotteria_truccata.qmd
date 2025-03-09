@@ -39,7 +39,7 @@ Per dare un po' di contesto, i 3 studenti dell'Università del Salento hanno sco
 
 ![Immagine tratta dall'articolo originale di [Repubblica](https://bari.repubblica.it/cronaca/2025/03/05/news/vinti_50mila_euro_al_lotto_grazie_all_intelligenza_artificiale_il_sistema_di_3_studenti_di_fisica-424043596/).](biglietti.jpg){width=5in}
 
-A titolo di esempio, le ultime tre estrazioni sono state:
+A titolo di esempio, le ultime cinque estrazioni sono state:
 
 ```{r}
 rm(list = ls())
@@ -50,7 +50,7 @@ lotteria$Data <- as.Date(lotteria$Data)
 # Seleziono lotteria nazionale (Codice RN)
 lot_naz <- lotteria[lotteria$Provincia == "RN", ]
 
-knitr::kable(tail(lot_naz[, -2], 3), row.names = F)
+knitr::kable(tail(lot_naz[, -2], 5), row.names = F)
 ```
 
 A detta stessa dei 3 studenti e di alcuni commentatori dei social, ci sarebbero delle anomalie nelle frequenze dei numeri del lotto. Ho calcolato le frequenze di ciascun numero, per verificare questa affermazione e non ho riscontrato anomalie. Per semplicità, qui di seguito riporto le frequenze del primo numero estratto (`N1`). 

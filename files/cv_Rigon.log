@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  10 MAR 2025 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  10 MAR 2025 14:57
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **cv_Rigon.tex
 (./cv_Rigon.tex
@@ -318,7 +319,7 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box51
 )
-(./cv_Rigon.aux)
+No file cv_Rigon.aux.
 \openout1 = `cv_Rigon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
@@ -339,7 +340,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
 LaTeX Font Info:    ... okay on input line 183.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
 LaTeX Font Info:    ... okay on input line 183.
-
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
@@ -434,7 +434,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 183.
 LaTeX Info: Redefining \pageref on input line 183.
 LaTeX Info: Redefining \nameref on input line 183.
- (./cv_Rigon.out) (./cv_Rigon.out)
 \@outlinefile=\write3
 \openout3 = `cv_Rigon.out'.
 
@@ -445,8 +444,7 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/qpl/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 \rcollength=\skip68
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -476,13 +474,21 @@ LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 2
 28.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
-) [1
+)
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 275.
+
+[1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/qpl/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [2]
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 336.
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
@@ -513,7 +519,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
  []
 
 \c@publications=\count289
-[3] [4]
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 381.
+
+[3]
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 435.
+
+[4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
 (Font)              Font shape `OT1/qpl/m/it' tried instead on input line 472.
@@ -523,17 +536,39 @@ LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
 (Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 492
 .
 
-[5] [6] 
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 502.
+
+[5]
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 551.
+
+[6] 
 AED: lastpage setting LastPage
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 635.
+
 [7] (./cv_Rigon.aux)
-Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
-(rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `cv_Rigon.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv_Rigon.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 12659 strings out of 478268
- 199367 string characters out of 5846347
- 543817 words of memory out of 5000000
- 30453 multiletter control sequences out of 15000+600000
+ 12636 strings out of 478268
+ 199088 string characters out of 5846347
+ 543888 words of memory out of 5000000
+ 30436 multiletter control sequences out of 15000+600000
  523403 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,80p,1005b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -545,10 +580,10 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 250030 bytes).
+Output written on cv_Rigon.pdf (7 pages, 249103 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
+ 190 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  57 named destinations out of 1000 (max. 500000)
- 34433 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 34305 words of extra memory for PDF output out of 35830 (max. 10000000)
 

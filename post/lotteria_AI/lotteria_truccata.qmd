@@ -124,7 +124,7 @@ In linea di principio, anche l'ipotesi di indipendenza può essere messa sotto a
 
 Proprio nel paragrafo precedente, ho accennato alla possibilità di modellare la distribuzione congiunta dei $5$ numeri della lotteria e confrontarla con una distribuzione ipergeometrica multivariata. L'approccio è corretto ma un po' complicato. Fortunamente, esiste una [elegante soluzione]{.blue} che consente di semplificare notevolmente il problema.
 
-Nell'articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze $N_1,\dots, N_{90}$ di [tutti e 5 i numeri della lotteria]{.orange} e considera quindi una correzione di $X^2$ che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all'autorevole libro [McCullagh \& Nelder]{.blue} (1986, pag. 191-192), in cui è dato come esercizio (!).
+Nell'articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze $N_1,\dots, N_{90}$ di [tutti e 5 i numeri della lotteria]{.orange} e considera quindi una correzione di $X^2$ che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all'autorevole libro [McCullagh \& Nelder]{.blue} (1986, pag. 191-192) per i dettagli formali, in cui il problema è dato come esercizio (!).
 
 
 ```{r}

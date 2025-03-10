@@ -61,7 +61,7 @@ lot_naz <- lotteria[lotteria$Provincia == "RN", ]
 knitr::kable(tail(lot_naz[, -2], 5), row.names = F)
 ```
 
-A detta stessa dei 3 studenti e di alcuni commentatori dei social, ci sarebbero delle anomalie nelle frequenze dei numeri del lotto. Ho calcolato le frequenze di ciascun numero, per verificare questa affermazione e non ho riscontrato anomalie. Per semplicità, qui di seguito riporto le frequenze del primo numero estratto (`N1`). 
+A detta stessa dei 3 studenti e di alcuni commentatori dei social, ci sarebbero delle anomalie nelle frequenze dei numeri del lotto. Ho calcolato le frequenze di ciascun numero, per verificare questa affermazione e non ho riscontrato anomalie. Per semplicità, qui di seguito riporto le frequenze del [primo numero estratto]{.blue} (`N1`); si veda la fine di questo post per un approccio leggermente [più sofisticato]{.orange}, che tenga conto di tutti i numeri.
 
 :::{.small}
 ```{r}
@@ -115,7 +115,7 @@ Ancor meglio, si potrebbe modellare la distribuzione congiunta dei $5$ numeri de
 
 :::callout-warning
 #### E l'ipotesi di indipendenza?
-In questa analisi abbiamo fatto uso dell'ipotesi di indipendenza tra le diverse estrazioni. È un'ipotesi molto ragionevole, perchè l'unico modo per violarla è tramite una [frode]{.blue}. 
+In questa analisi abbiamo fatto uso dell'ipotesi di indipendenza tra le diverse estrazioni. È un'ipotesi molto ragionevole, anche perchè la sua violazione è molto probabilmente legata ad una [frode]{.blue}. 
 
 In linea di principio, anche l'ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po' di lavoro aggiuntivo. Mi sembra, però, che l'accusa di frode allo stato italiano sfoci nel [complottismo]{.blue}, soprattutto se non supportata da ulteriori prove indiziali di altra natura.
 :::

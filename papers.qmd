@@ -11,9 +11,9 @@
 
 1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
 
-1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Submitted. [[ArXiv]](https://arxiv.org/abs/2311.00820).
-
 [Articles in refereed journals]{.blue}
+
+1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear. [[ArXiv]](https://arxiv.org/abs/2311.00820).
 
 1. **Rigon, T.**, Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. *Scandinavian Journal of Statistics*, to appear. [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1111/sjos.12765).
 

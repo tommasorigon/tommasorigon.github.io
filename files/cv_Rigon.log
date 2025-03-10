@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  13 FEB 2025 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  10 MAR 2025 14:55
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **cv_Rigon.tex
 (./cv_Rigon.tex
@@ -517,11 +516,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 [3] [4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 471.
+(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 472.
 
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 491
+(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 492
 .
 
 [5] [6] 
@@ -546,7 +545,7 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 250002 bytes).
+Output written on cv_Rigon.pdf (7 pages, 250030 bytes).
 PDF statistics:
  240 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams

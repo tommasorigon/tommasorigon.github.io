@@ -31,6 +31,23 @@ Sebbene l'[onere della prova]{.blue} dovrebbe spettare a chi muove questa accusa
 
 Dopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, [non ho registrato alcun tipo di anomalia statistica]{.orange}. In altri termini, non c'è evidenza di alcun macchinario difettoso. 
 
+I numeri del lotto vengono estratti tramite un macchinario che utilizza [palline numerate]{.blue}. Il video seguente mostra come avviene l'estrazione dei numeri (7 Marzo 2025).
+
+:::: {layout="[30, 80, 30]"}
+
+:::{#blackspace1}
+:::
+
+:::{#video}
+{{< video https://www.youtube.com/watch?v=LJENLIqZzx4 >}}
+:::
+
+:::{#blackspace2}
+:::
+
+::::
+
+
 ## Un problema storico
 
 Il problema dell'equità di una lotteria ha una lunga e importante storia, che è elegantemente raccontata nell'articolo di [storia della statistica]{.blue} di Stigler (2003)[^Aldo]: 

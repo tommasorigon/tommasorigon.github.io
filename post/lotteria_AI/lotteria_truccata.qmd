@@ -13,7 +13,7 @@ format:
     code-line-numbers: true
     smooth-scroll: true
     fig-dpi: 250
-    toc-location: left
+    toc-location: right
 editor: 
   markdown: 
     wrap: 72
@@ -30,6 +30,14 @@ Se ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per an
 Sebbene l'[onere della prova]{.blue} dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione. 
 
 Dopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, [non ho registrato alcun tipo di anomalia statistica]{.orange}. In altri termini, non c'è evidenza di alcun macchinario difettoso. 
+
+## Un problema storico
+
+Il problema dell'equità di una lotteria ha una lunga e importante storia, che è elegantemente raccontata nell'articolo di [storia della statistica]{.blue} di Stigler (2003)[^Aldo]: 
+
+- Stigler S. M. (2003), [Casanova, «Bonaparte», and the loterie de France](http://www.numdam.org/item/JSFS_2003__144_1-2_5_0.pdf), *Journal de la société française de statistique*, **144**(1-2), 5--34.
+
+Gli strumenti statistici che qui presenteremo sono simili a quelli usati da Stigler per analizzare la lotteria francese del 18esimo secolo. L'articolo di Stigler è molto [più completo e dettagliato]{.blue} di questo post, e ne consiglio caldamente la lettura. Anzitutto, è una testimonianza importante di quanta intelligenza sia già stata dedicata alla questione della lotteria, oltre che esempio di come la statistica possa risolvere problemi concreti.
 
 ## I dati della lotteria nazionale
 
@@ -111,5 +119,35 @@ In questa analisi abbiamo fatto uso dell'ipotesi di indipendenza tra le diverse 
 
 In linea di principio, anche l'ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po' di lavoro aggiuntivo. Mi sembra, però, che l'accusa di frode allo stato italiano sfoci nel [complottismo]{.blue}, soprattutto se non supportata da ulteriori prove indiziali di altra natura.
 :::
+
+#### Un aggiornamento ed un'elegante soluzione
+
+Proprio nel paragrafo precedente, ho accennato alla possibilità di modellare la distribuzione congiunta dei $5$ numeri della lotteria e confrontarla con una distribuzione ipergeometrica multivariata. L'approccio è corretto ma un po' complicato. Fortunamente, esiste una [elegante soluzione]{.blue} che consente di semplificare notevolmente il problema.
+
+Nell'articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze $N_1,\dots, N_{90}$ di [tutti e 5 i numeri della lotteria]{.orange} e considera quindi una correzione di $X^2$ che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all'autorevole libro [McCullagh \& Nelder]{.blue} (1986, pag. 191-192), in cui è dato come esercizio (!).
+
+
+```{r}
+freq_complete <- c(table(c(lot_naz$N1, lot_naz$N2, lot_naz$N3, lot_naz$N4, lot_naz$N5)))
+freq_teo <- rep(sum(freq_complete) / 90, 90)
+X2 <- sum((freq_complete - freq_teo)^2 / freq_teo)
+X2_adjusted <- X2 * 89 / 85
+p_value <- 1 - pchisq(X2_adjusted, 89)
+#knitr::kable(data.frame(X2 = X2, X2_adjusted = X2_adjusted, p_value = p_value))
+```
+
+In questo caso, avremo che $N$ = `r sum(freq_complete)` e che $N_\text{teo} = N / 90 = 176.167$. Il test del chi-quadrato, aggiustato per tener conto dei reinserimenti, è
+$$
+(X^2 \text{ corretto}) = \frac{89}{85}X^2 = \frac{89}{85}\frac{(N_1 - N_\text{teo})^2 + \cdots + (N_{90} - N_\text{teo})^2}{N_\text{teo}} = 87.33.
+$$
+I risultati completi sono riportati nel seguito, incluso il p-value, che nuovamente [non mostra alcuna evidenza]{.orange} di uno [sbilanciamento della lotteria]{.orange}.
+
+|       $X^2$ | $X^2$ corretto | Gradi di libertà |  p-value|
+|--------:|-----------:|----:|---------:|
+| 83.40114|    87.32589| 89 | 0.5303704|
+
+L'articolo di Stigler inoltre menziona anche a test utili a verificare l'ipotesi di indipendenza delle estrazioni, che tuttavia qui non approfondiremo.
+
+[^Aldo]: Questo bell'articolo mi è stato segnalato dal prof. Aldo Solari, che ha letto una versione iniziale di questo post e che ringrazio molto.
 
 [^chisq]: Il [test del chi-quadrato](https://it.wikipedia.org/wiki/Test_chi_quadrato) è un famoso test statistico introdotto da Karl Pearson all'inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro [Agresti (2013)](https://www.amazon.it/Categorical-Data-Analysis-Alan-Agresti/dp/0470463635).

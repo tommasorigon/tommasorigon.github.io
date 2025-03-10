@@ -99,7 +99,7 @@ window.Quarto = {
 
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -144,24 +144,22 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">In questa pagina</h2>
    
   <ul>
   <li><a href="#unanalisi-delle-estrazioni-della-lotteria-nazionale" id="toc-unanalisi-delle-estrazioni-della-lotteria-nazionale" class="nav-link active" data-scroll-target="#unanalisi-delle-estrazioni-della-lotteria-nazionale">Un’analisi delle estrazioni della lotteria nazionale</a></li>
+  <li><a href="#un-problema-storico" id="toc-un-problema-storico" class="nav-link" data-scroll-target="#un-problema-storico">Un problema storico</a></li>
   <li><a href="#i-dati-della-lotteria-nazionale" id="toc-i-dati-della-lotteria-nazionale" class="nav-link" data-scroll-target="#i-dati-della-lotteria-nazionale">I dati della lotteria nazionale</a></li>
   <li><a href="#oscillazioni-casuali-o-lotteria-difettosa" id="toc-oscillazioni-casuali-o-lotteria-difettosa" class="nav-link" data-scroll-target="#oscillazioni-casuali-o-lotteria-difettosa">Oscillazioni casuali o lotteria difettosa?</a></li>
   <li><a href="#un-cenno-a-metodi-statistici-più-complessi" id="toc-un-cenno-a-metodi-statistici-più-complessi" class="nav-link" data-scroll-target="#un-cenno-a-metodi-statistici-più-complessi">Un cenno a metodi statistici più complessi</a></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -170,7 +168,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Autore/Autrice</div>
@@ -200,6 +198,14 @@ window.Quarto = {
 <p>Se ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un <span class="orange">grave errore</span>, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.</p>
 <p>Sebbene l’<span class="blue">onere della prova</span> dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.</p>
 <p>Dopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, <span class="orange">non ho registrato alcun tipo di anomalia statistica</span>. In altri termini, non c’è evidenza di alcun macchinario difettoso.</p>
+</section>
+<section id="un-problema-storico" class="level2">
+<h2 class="anchored" data-anchor-id="un-problema-storico">Un problema storico</h2>
+<p>Il problema dell’equità di una lotteria ha una lunga e importante storia, che è elegantemente raccontata nell’articolo di <span class="blue">storia della statistica</span> di Stigler (2003)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
+<ul>
+<li>Stigler S. M. (2003), <a href="http://www.numdam.org/item/JSFS_2003__144_1-2_5_0.pdf">Casanova, «Bonaparte», and the loterie de France</a>, <em>Journal de la société française de statistique</em>, <strong>144</strong>(1-2), 5–34.</li>
+</ul>
+<p>Gli strumenti statistici che qui presenteremo sono simili a quelli usati da Stigler per analizzare la lotteria francese del 18esimo secolo. L’articolo di Stigler è molto <span class="blue">più completo e dettagliato</span> di questo post, e ne consiglio caldamente la lettura. Anzitutto, è una testimonianza importante di quanta intelligenza sia già stata dedicata alla questione della lotteria, oltre che esempio di come la statistica possa risolvere problemi concreti.</p>
 </section>
 <section id="i-dati-della-lotteria-nazionale" class="level2">
 <h2 class="anchored" data-anchor-id="i-dati-della-lotteria-nazionale">I dati della lotteria nazionale</h2>
@@ -552,7 +558,7 @@ window.Quarto = {
 <section id="oscillazioni-casuali-o-lotteria-difettosa" class="level2">
 <h2 class="anchored" data-anchor-id="oscillazioni-casuali-o-lotteria-difettosa">Oscillazioni casuali o lotteria difettosa?</h2>
 <p>Per stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli <span class="orange">strumenti statistici</span> un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con <span class="math inline">n_1,\dots,n_{90}</span>, seguono una <span class="blue">distribuzione multinomiale</span> di parametro <span class="math inline">n</span> = 3171 e probabilità <span class="math inline">p_1,\dots,p_{90}</span>.</p>
-<p>Vogliamo verificare se le probabilità <span class="math inline">p_1,\dots,p_{90}</span> sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a <span class="math inline">1/90</span>. Per far questo, facciamo uso del celeberrimo <span class="orange">test del Chi-quadrato</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In pratica, confrontiamo le frequenze che abbiamo osservato <span class="math inline">n_1,\dots,n_{90}</span> con quelle “teoriche”, pari a <span class="math inline">n_\text{teo} = n / 90 = 35.233</span>. Otteniamo: <span class="math display">
+<p>Vogliamo verificare se le probabilità <span class="math inline">p_1,\dots,p_{90}</span> sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a <span class="math inline">1/90</span>. Per far questo, facciamo uso del celeberrimo <span class="orange">test del Chi-quadrato</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. In pratica, confrontiamo le frequenze che abbiamo osservato <span class="math inline">n_1,\dots,n_{90}</span> con quelle “teoriche”, pari a <span class="math inline">n_\text{teo} = n / 90 = 35.233</span>. Otteniamo: <span class="math display">
 X^2 = \frac{(n_1 - n_\text{teo})^2 + \cdots + (n_{90} - n_\text{teo})^2}{n_\text{teo}} = 102.12.
 </span> Il numero <span class="math inline">X^2</span> = 102.12 va confrontato con i valori che ci aspetteremmo di osservare se la lotteria fosse regolare, che sono compresi tra circa 65 e 117. Più rigorosamente, calcoliamo il cosiddetto <span class="blue">p-value</span>, un concetto tecnico un po’ difficile da raccontare, ma che in buona sostanza ci conferma che <span class="orange">non ci sono anomalie statistiche</span>. Per gli statistici in ascolto, ecco i risultati completi:</p>
 <div class="cell">
@@ -595,15 +601,43 @@ E l’ipotesi di indipendenza?
 <p>In linea di principio, anche l’ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po’ di lavoro aggiuntivo. Mi sembra, però, che l’accusa di frode allo stato italiano sfoci nel <span class="blue">complottismo</span>, soprattutto se non supportata da ulteriori prove indiziali di altra natura.</p>
 </div>
 </div>
+<section id="un-aggiornamento-ed-unelegante-soluzione" class="level4">
+<h4 class="anchored" data-anchor-id="un-aggiornamento-ed-unelegante-soluzione">Un aggiornamento ed un’elegante soluzione</h4>
+<p>Proprio nel paragrafo precedente, ho accennato alla possibilità di modellare la distribuzione congiunta dei <span class="math inline">5</span> numeri della lotteria e confrontarla con una distribuzione ipergeometrica multivariata. L’approccio è corretto ma un po’ complicato. Fortunamente, esiste una <span class="blue">elegante soluzione</span> che consente di semplificare notevolmente il problema.</p>
+<p>Nell’articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze <span class="math inline">N_1,\dots, N_{90}</span> di <span class="orange">tutti e 5 i numeri della lotteria</span> e considera quindi una correzione di <span class="math inline">X^2</span> che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all’autorevole libro <span class="blue">McCullagh &amp; Nelder</span> (1986, pag. 191-192), in cui è dato come esercizio (!).</p>
+<p>In questo caso, avremo che <span class="math inline">N</span> = 15855 e che <span class="math inline">N_\text{teo} = N / 90 = 176.167</span>. Il test del chi-quadrato, aggiustato per tener conto dei reinserimenti, è <span class="math display">
+(X^2 \text{ corretto}) = \frac{89}{85}X^2 = \frac{89}{85}\frac{(N_1 - N_\text{teo})^2 + \cdots + (N_{90} - N_\text{teo})^2}{N_\text{teo}} = 87.33.
+</span> I risultati completi sono riportati nel seguito, incluso il p-value, che nuovamente <span class="orange">non mostra alcuna evidenza</span> di uno <span class="orange">sbilanciamento della lotteria</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;"><span class="math inline">X^2</span></th>
+<th style="text-align: right;"><span class="math inline">X^2</span> corretto</th>
+<th style="text-align: right;">Gradi di libertà</th>
+<th style="text-align: right;">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">83.40114</td>
+<td style="text-align: right;">87.32589</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;">0.5303704</td>
+</tr>
+</tbody>
+</table>
+<p>L’articolo di Stigler inoltre menziona anche a test utili a verificare l’ipotesi di indipendenza delle estrazioni, che tuttavia qui non approfondiremo.</p>
 
 
+</section>
 </section>
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Note</h2>
 
 <ol>
-<li id="fn1"><p>Il <a href="https://it.wikipedia.org/wiki/Test_chi_quadrato">test del chi-quadrato</a> è un famoso test statistico introdotto da Karl Pearson all’inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro <a href="https://www.amazon.it/Categorical-Data-Analysis-Alan-Agresti/dp/0470463635">Agresti (2013)</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Questo bell’articolo mi è stato segnalato dal prof. Aldo Solari, che ha letto una versione iniziale di questo post e che ringrazio molto.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Il <a href="https://it.wikipedia.org/wiki/Test_chi_quadrato">test del chi-quadrato</a> è un famoso test statistico introdotto da Karl Pearson all’inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro <a href="https://www.amazon.it/Categorical-Data-Analysis-Alan-Agresti/dp/0470463635">Agresti (2013)</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

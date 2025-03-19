@@ -39,6 +39,7 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 | 2020/2021 | [Magistrale]{.orange} (Unipd) | Davide Agnoletto | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf) |
 | 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tine_magistrale_826904.pdf) |
 | 2023/2024 | [Magistrale]{.orange} | Anna Petranzan | [The Gnedin model: recent developments and future perspectives](files/papers/Petranzan_magistrale_858541.pdf) |
+| 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | Analisi della struttura interna de *La Lombardia*, attraverso l’utilizzo di modelli per blocchi stocastici estesi |
 |  |  |  | **Dottorato di ricerca** |
 | 2023 | [**Ph.D.**]{.darkred} (Duke) | Alessandro Zito | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) |
 

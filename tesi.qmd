@@ -5,7 +5,7 @@ lang: it
 
 Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in "Statistica I" oppure in "Introduzione ad R", anche perché sono corsi introduttivi.
 
-Le tematiche di cui mi occupo sono: applicazioni e metodi di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
+Le tematiche di cui mi occupo sono: [applicazioni]{.orange} e [metodi]{.orange} di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
 
 Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d'ipotesi, metodi boostrap, etc.).
 
@@ -45,14 +45,14 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 
 : Thesis {tbl-colwidths="\[5, 10, 20, 75\]"}
 
-## FAQ {.central}
+<!-- ## FAQ {.central} -->
 
-1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi.
+<!-- 1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi. -->
 
-2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.
+<!-- 2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare. -->
 
-3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici.
+<!-- 3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici. -->
 
-4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca.
+<!-- 4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca. -->
 
-5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato.
+<!-- 5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato. -->

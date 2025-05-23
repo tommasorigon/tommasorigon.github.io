@@ -1,297 +1,136 @@
 [
   {
-    "objectID": "bio.html",
-    "href": "bio.html",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
-  },
-  {
-    "objectID": "bio.html#academic-positions",
-    "href": "bio.html#academic-positions",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
-  },
-  {
-    "objectID": "bio.html#education",
-    "href": "bio.html#education",
-    "title": "Tommaso Rigon",
-    "section": "Education",
-    "text": "Education\n\n\n\n\n\n\n\n\n\n\n\n\nPh.D. in Statistical Sciences, Bocconi University, Milan, Italy.\nPeriod 2015–2020. Ph.D. awarded with honors.\nThesis title: Finite-dimensional nonparametric priors: theory and applications.\nI worked under the joint supervision of prof. Antonio Lijoi and prof. Igor Prünster.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nM.Sc. in Statistical Sciences, University of Padova, Padua, Italy.\nPeriod 2013 - 2015. Final mark: 110/110 with laude.\nThesis title: Functional telecommunication data: a Bayesian nonparametric approach.\nAdvisor: Bruno Scarpa.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nB.Sc. in Statistics, Economics & Finance, University of Padova, Padua, Italy.\nPeriod 2010–2013. Final mark: 110/110 with laude.\nThesis title: Box-Cox transformation: an analysis based on the likelihood.\nAdvisor: Nicola Sartori."
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Tommaso Rigon",
-    "section": "About me",
-    "text": "About me\nI am an Assistant Professor of Statistical Science (RTD-B, SECS-S/01) at the department of Economics, Management and Statistics (DEMS) of University of Milano-Bicocca. I currently live in Milan, Italy.\nI am a member of the BayesLab at the Bocconi Institute for Data Science and Analytics (BIDSA), and the MIDAS Complex Data Modeling Research Network.\nMy curriculum vitae is available here. A complete list of publications is available here.\nResearch interests: applied Bayesian modeling; Bayesian clustering; Bayesian nonparametrics; computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.\nE-mail: tommaso.rigon@unimib.it"
-  },
-  {
-    "objectID": "index.html#news-and-awards",
-    "href": "index.html#news-and-awards",
-    "title": "Tommaso Rigon",
-    "section": "News and awards",
-    "text": "News and awards\n[2025] Bnews Bicocca (ITA). Statistica, tripletta di premi internazionali per il ricercatore di Bicocca Tommaso Rigon\n[2024] Blackwell and Rosenbluth Award 2024. The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community. Junior Section of International Society for Bayesian Analysis (j-ISBA). [Award] [News]\n[2024] I am part of the j-ISBA Peer Mentoring, which is meant to provide advice on academic matters. [Program Info]\n[2024] Mitchell Prize 2023 for the paper “Extended Stochastic Block Models with Application to Criminal Networks”. International Society for Bayesian Analysis (ISBA). [Award]\n\n\n[2024] Daniele Durante was awarded an ERC Starting Grant for the project NEMESIS, focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!\n[2022] National Scientific Qualification for Associate Professor in Statistics (13/D1).\n[2021] Young Talents Award 2021. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [Award]\n[2020] Savage Award 2020 (Theory and Methods). The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [Award] [News]"
-  },
-  {
-    "objectID": "post/anciu24/anciu2024.html",
-    "href": "post/anciu24/anciu2024.html",
-    "title": "39esimo Campionato di sci ANCIU",
-    "section": "",
-    "text": "Classifica complessiva per disciplina"
-  },
-  {
-    "objectID": "post/anciu24/anciu2024.html#classifica-per-ateneo",
-    "href": "post/anciu24/anciu2024.html#classifica-per-ateneo",
-    "title": "39esimo Campionato di sci ANCIU",
-    "section": "",
-    "text": "Classifica complessiva per disciplina"
-  },
-  {
-    "objectID": "post/anciu24/anciu2024.html#slalom-gigante-femminile",
-    "href": "post/anciu24/anciu2024.html#slalom-gigante-femminile",
-    "title": "39esimo Campionato di sci ANCIU",
-    "section": "Slalom gigante femminile",
-    "text": "Slalom gigante femminile\n\n\n\n\n\n\nTempi di arrivo (Gigante, Femminile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempo migliore\nPrimo quartile\nTempo mediano\nTerzo quartile\nTempo peggiore\n\n\n\n\n36.36\n48.03\n53.97\n60.78\n214.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per ateneo (Gigante, Femminile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi di arrivo per ateneo (Gigante, Femminile)\n\n\n\n\n\nHo rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità del grafico. Gli atenei sono stati ordinati considerando la graduatoria complessiva.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti e punteggio della squadra (Gigante, Femminile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per categoria (Gigante, Femminile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi per categoria (Gigante, Femminile)\n\n\n\n\n\nHo rimosso 4 tempi anomali, ovvero superiori ai 100 secondi, per migliorare la leggibilità. La categoria D0 corrisponde a “MASTER D S”, mentre la categoria D12 sembra vuota perchè i tempi sono tutti superiori ai 100 secondi."
-  },
-  {
-    "objectID": "post/anciu24/anciu2024.html#slalom-gigante-maschile",
-    "href": "post/anciu24/anciu2024.html#slalom-gigante-maschile",
-    "title": "39esimo Campionato di sci ANCIU",
-    "section": "Slalom gigante maschile",
-    "text": "Slalom gigante maschile\n\n\n\n\n\n\nTempi di arrivo (Gigante, Maschile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempo migliore\nPrimo quartile\nTempo mediano\nTerzo quartile\nTempo peggiore\n\n\n\n\n34.26\n46.37\n51.5\n58.02\n116.06\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per ateneo (Gigante, Maschile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi di arrivo per ateneo (Gigante, Maschile)\n\n\n\n\n\nGli atenei sono stati ordinati considerando la graduatoria complessiva.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti e punteggio della squadra (Gigante, Maschile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per categoria (Gigante, Maschile)\n\n\n\n\n\nLa categoria 0 corrisponde a “MASTER S R”.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi per categoria (Gigante, Maschile)\n\n\n\n\n\nLa categoria 0 corrisponde a “MASTER S R”."
-  },
-  {
-    "objectID": "post/anciu24/anciu2024.html#fondo-tecnica-classica-maschile",
-    "href": "post/anciu24/anciu2024.html#fondo-tecnica-classica-maschile",
-    "title": "39esimo Campionato di sci ANCIU",
-    "section": "Fondo tecnica classica maschile",
-    "text": "Fondo tecnica classica maschile\n\n\n\n\n\n\nTempi di arrivo (Fondo, Maschile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempo migliore\nPrimo quartile\nTempo mediano\nTerzo quartile\nTempo peggiore\n\n\n\n\n13\n19\n23\n28\n48\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per ateneo (Fondo, Maschile)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi di arrivo per ateneo (Fondo, Maschile)\n\n\n\n\n\nGli atenei sono stati ordinati considerando la graduatoria complessiva.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumero di partecipanti per categoria (Fondo, Maschile)\n\n\n\n\n\nLa categoria 0 corrisponde a “MASTER S R”.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTempi per categoria (Fondo, Maschile)\n\n\n\n\n\nLa categoria 0 corrisponde a “MASTER S R”."
-  },
-  {
-    "objectID": "post/omi/omi.html",
-    "href": "post/omi/omi.html",
-    "title": "Quotazioni OMI",
-    "section": "",
-    "text": "I dati provengono da qui:\nhttp://dati.comune.milano.it/dataset/ds1996-quotazioni-immobiliari-omi-compravendita-e-locazione-riepilogo\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\nRows: 25460 Columns: 24\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (15): Periodo, Area_territoriale, Regione, Prov, Comune_cat, Comune_amm,...\ndbl  (6): _id, Anno, Comune_ISTAT, Cod_Tip, Compr_min, Compr_max\nnum  (2): Loc_min, Loc_max\nlgl  (1): Sez\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 41 Columns: 17\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (12): Area_territoriale, Regione, Prov, Comune_cat, Comune_amm, Comune_d...\ndbl  (4): _id, Comune_ISTAT, Cod_tip_prev, Microzona\nlgl  (1): Sez\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n`summarise()` has grouped output by 'Zona_Descr', 'Stato'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`summarise()` has grouped output by 'Zona_Descr', 'Stato'. You can override\nusing the `.groups` argument."
-  },
-  {
-    "objectID": "post/omi/omi.html#asd",
-    "href": "post/omi/omi.html#asd",
-    "title": "Quotazioni OMI",
-    "section": "",
-    "text": "I dati provengono da qui:\nhttp://dati.comune.milano.it/dataset/ds1996-quotazioni-immobiliari-omi-compravendita-e-locazione-riepilogo\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\nRows: 25460 Columns: 24\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (15): Periodo, Area_territoriale, Regione, Prov, Comune_cat, Comune_amm,...\ndbl  (6): _id, Anno, Comune_ISTAT, Cod_Tip, Compr_min, Compr_max\nnum  (2): Loc_min, Loc_max\nlgl  (1): Sez\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 41 Columns: 17\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (12): Area_territoriale, Regione, Prov, Comune_cat, Comune_amm, Comune_d...\ndbl  (4): _id, Comune_ISTAT, Cod_tip_prev, Microzona\nlgl  (1): Sez\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n`summarise()` has grouped output by 'Zona_Descr', 'Stato'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`summarise()` has grouped output by 'Zona_Descr', 'Stato'. You can override\nusing the `.groups` argument."
-  },
-  {
-    "objectID": "tesi.html",
-    "href": "tesi.html",
-    "title": "Informazioni per la tesi di laurea",
-    "section": "",
-    "text": "Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma la didattica, soprattutto quella “di base”, non riflette gli interessi di ricerca di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in “Statistica I” oppure in “Introduzione ad R”, anche perché sono corsi introduttivi.\nLe tematiche di cui mi occupo sono: applicazioni e metodi di statistica bayesiana (nonparametrica) & statistica computazionale. Per maggiori informazioni, si consiglia di consultare la lista delle pubblicazioni, oppure la lista di tesi passate che trovate in questa pagina.\nNel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d’ipotesi, metodi boostrap, etc.).\nPer informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon@unimib.it e venire quindi a ricevimento Martedì alle ore 17.30."
-  },
-  {
-    "objectID": "tesi.html#il-software-latex",
-    "href": "tesi.html#il-software-latex",
-    "title": "Informazioni per la tesi di laurea",
-    "section": "Il software LaTeX",
-    "text": "Il software LaTeX\nL’utilizzo del software LaTeX per la scrittura della tesi è caldamente raccomandato.\nLaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare Overleaf. Per una guida in italiano all’uso di LaTeX si consiglia LaTeX per l’impaziente oppure l’Arte di scrivere con LaTeX.\nViene inoltre reso disponibile un template LaTeX. Se compilato, il risultato finale dovrebbe coincidere con questo file, in formato .pdf."
-  },
-  {
-    "objectID": "tesi.html#tesi-passate-triennali-e-magistrali",
-    "href": "tesi.html#tesi-passate-triennali-e-magistrali",
-    "title": "Informazioni per la tesi di laurea",
-    "section": "Tesi passate (triennali e magistrali)",
-    "text": "Tesi passate (triennali e magistrali)\nVengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore oppure correlatore.\n\nThesis\n\n\n\n\n\n\n\n\nA. A.\nLaurea\nCandidata/o\nTitolo\n\n\n\n\n\n\n\nLaurea Triennale\n\n\n2021/2022\nTriennale\nMarco Carrettoni\nAnalisi dei consumi energetici degli edifici dell’Università degli studi di Milano-Bicocca\n\n\n2021/2022\nTriennale\nErica Delvino\nRegressione nonparametrica tramite processi gaussiani\n\n\n2021/2022\nTriennale\nAnna Petranzan\nAn introduction to Bayesian mixture models and applications\n\n\n2022/2023\nTriennale\nGiulia De Innocentiis\nCriteri di selezione di un modello in ambito bayesiano\n\n\n2022/2023\nTriennale\nTommaso Menghini\nApproccio bayesiano applicato a modelli di regressione probit\n\n\n2023/2024\nTriennale\nStefano Andreoli\nMetodi di stima intervallare in un modello binomiale\n\n\n2023/2024\nTriennale\nRiccardo Cicuttin\nMetodi di campionamento per distribuzioni univariate\n\n\n\n\n\nLaurea Magistrale\n\n\n2020/2021\nMagistrale (Unipd)\nDavide Agnoletto\nAnalisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano\n\n\n2022/2023\nMagistrale\nGabriele Tinè\nPrevisione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità\n\n\n\n\n\nPh.D.\n\n\n2023\nPh.D. (Duke)\nAlessandro Zito\nEcological Modeling via Bayesian Nonparametric Species Sampling Priors"
-  },
-  {
-    "objectID": "tesi.html#faq",
-    "href": "tesi.html#faq",
-    "title": "Informazioni per la tesi di laurea",
-    "section": "FAQ",
-    "text": "FAQ\n\nDevo ancora finire gli esami, posso cominciare a lavorare alla tesi? Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di almeno un paio di mesi per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi.\nÈ possibile proporre un personale progetto per la tesi? Si, ma verranno considerati solamente progetti estremamente innovativi e che siano in linea gli interessi di ricerca del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare.\nNon ho mai usato LaTeX, posso usare Word? Si, anche se l’uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici.\nÈ possibile scrivere la tesi in lingua inglese? Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca.\nÈ possibile provare a pubblicare la propria tesi su una rivista scientifica? Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato."
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Ph.D. courses (Dottorato)\n\nStatistical Inference, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\nBayesian Computations, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\n\nM.Sc. courses (Laurea magistrale)\n\nData Mining, CdL Magistrale in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\n\nB.Sc. courses (Laurea triennale)\n\nStatistics I (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\nR for the multivariate statistical analysis (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca."
-  },
-  {
-    "objectID": "teaching.html#teaching-unimib",
-    "href": "teaching.html#teaching-unimib",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Ph.D. courses (Dottorato)\n\nStatistical Inference, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\nBayesian Computations, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\n\nM.Sc. courses (Laurea magistrale)\n\nData Mining, CdL Magistrale in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\n\nB.Sc. courses (Laurea triennale)\n\nStatistics I (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\nR for the multivariate statistical analysis (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca."
-  },
-  {
-    "objectID": "teaching.html#slides-of-talks-and-seminars",
-    "href": "teaching.html#slides-of-talks-and-seminars",
-    "title": "Tommaso Rigon",
-    "section": "Slides of talks and seminars",
-    "text": "Slides of talks and seminars\n\nSlides. Bayesian nonparametric prediction of the taxonomic affiliation of DNA sequences, UCLA, 2023.\nSlides. Finite-dimensional discrete random structures and Bayesian clustering, Duke University, 2023.\nSlides. The Stirling-gamma process and its application to Bayesian nonparametrics, BISP13, 2023.\nSlides. An enriched mixture model for functional clustering, PwC, 2022.\nSlides. Statistical learning via Bayesian nonparametrics, University of Milano-Bicocca, 2020.\nSlides. A generalized Bayes framework for probabilistic clustering, Collegio Carlo Alberto, 2020."
-  },
-  {
-    "objectID": "teaching.html#open-day-science-statistiche-ed-economiche-sse",
-    "href": "teaching.html#open-day-science-statistiche-ed-economiche-sse",
-    "title": "Tommaso Rigon",
-    "section": "Open Day, Science Statistiche ed Economiche (SSE)",
-    "text": "Open Day, Science Statistiche ed Economiche (SSE)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlides. Open Day, Science Statistiche ed Economiche (SSE), Università Milano-Bicocca, Dicembre 2022."
-  },
-  {
-    "objectID": "papers.html",
-    "href": "papers.html",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Preprints\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [ArXiv].\nAnceschi, N., Rigon, T., Zanella, G., and Durante D. (2025+). Optimal lower bounds for logistic log-likelihoods. Submitted. [ArXiv].\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025+). Bayesian analysis of product feature allocation models. Submitted. [ArXiv] [Github repository].\n\nArticles in refereed journals\n\nAgnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Biometrika, to appear. [ArXiv].\nRigon, T., Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. Scandinavian Journal of Statistics, to appear. [Link].\nZito, A., Rigon, T., and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. Bayesian Analysis, to appear. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2024). Finite-dimensional discrete random structures and Bayesian clustering. Journal of the American Statistical Association (T&M), 119(546), 929–941. [Link].\nCatalano, M., Lijoi, A., Prünster, I. and Rigon, T. (2023). Bayesian modeling via discrete nonparametric priors. Japanese Journal of Statistics and Data Science, 6, 607–624 [Link].\nRigon, T. (2023). An enriched mixture model for functional clustering. Applied Stochastic Models in Business and Industry, 39, 232–250 [Link].\nRigon, T. and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. Statistics and Probability Letters, 202, 109901. [Link] [Github repository].\nRigon, T., Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. Biometrika, 110(3), 559–578. [Link] [Github repository].\nZito, A., Rigon, T. and Dunson, D. B. (2023). Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. Methods in Ecology and Evolution, 14, 529–542 [Link] [GitHub Repository].\nZito, A., Rigon, T., Ovaskainen, O. and Dunson, D. B. (2023). Bayesian modelling of sequential discoveries. Journal of the American Statistical Association (T&M), 118(544), 2521–2532. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T., Durante, D. and Dunson D. B. (2022). Extended stochastic block models with application to criminal networks. Annals of Applied Statistics 16(4), 2369–2395. [Link] [GitHub repository].\nReverberi, C., Rigon, T., Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. Scientific Reports, 12(14952) [Link].\nFavaro, S., Panero, F. and Rigon, T. (2021). Bayesian nonparametric disclosure risk assessment. Electronic Journal of Statistics 15(2), 5626–5651. [Link].\nRigon, T. and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. Journal of Statistical Planning and inference 211, 131–142. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T. and Durante, D. (2020). Bayesian testing for exogenous partition structures in stochastic block models. Sankhya A: The Indian Journal of Statistics, 84, 108–126. [Link] [GitHub repository].\nLijoi, A., Prünster, I. and Rigon, T. (2020). Sampling hierarchies of discrete random structures. Statistics and Computing 30, 1591–1607. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2020). The Pitman–Yor multinomial process for mixture modeling. Biometrika 107(4), 891–906. [Link].\nDurante, D. and Rigon, T. (2019). Conditionally conjugate mean-field variational Bayes for logistic models. Statistical Science 34(3), 472–485. [Link] [GitHub Repository].\nDurante, D., Canale, A. and Rigon, T. (2019). A nested expectation-maximization algorithm for latent class models with covariates. Statistics and Probability Letters 146, 97–103. [Link] [GitHub Repository].\nRigon, T., Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. Journal of the Royal Statistical Society, Series A 182(1), 225–247. [Link] [GitHub Repository].\n\nPublications in monographs, volumes, and discussions\n\nAgnoletto, D., Rigon, T. and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In Methodological and Applied Statistics and Demography III (Pollice, A. and Mariani, P., editors). Springer. [Link]\nRigon, T., Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: “Centered partition processes: Informative priors for clustering” Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in Bayesian Analysis 16(1) 301–370. [Link].\nAliverti, E., Paganin, S., Rigon, T. and Russo, M. (2019). A discussion on: “Latent nested nonparametric priors” by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in Bayesian Analysis 14(4), 1303–1356. [Link].\nCaponera, A., Denti, F., Rigon, T., Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In Studies in Neural Data Science (Canale, A., Durante, D., Paci, L. And Scarpa, B., editors). Springer. [Link] [GitHub Repository].\n\nNational conference proceedings\n\nAgnoletto, D., Rigon, T. and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nCogo, R., Camerlenghi, F. and Rigon, T. (2023). Hierarchical processes in survival analysis. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nPresicce, L., Rigon, T. and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nLegramanti S., Rigon, T. and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In Book of Short Papers of the Italian Statistical Society (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN: 9788891932310. [Link].\nZito, A., Rigon, T. and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In Book of Short Papers of the Italian Statistical Society 2021 (Perna, C., Salvati, N. and Schirripa Spagnolo, F., editors). ISBN: 9788891927361. [Link - Part 1] [Link - Part 2].\nRigon, T. (2018). Logit stick-breaking priors for partially exchangeable count data. In Book of Short Papers SIS 2018 (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E., editors). ISBN: 9788891910233. [Link]."
-  },
-  {
-    "objectID": "papers.html#papers",
-    "href": "papers.html#papers",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Preprints\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [ArXiv].\nAnceschi, N., Rigon, T., Zanella, G., and Durante D. (2025+). Optimal lower bounds for logistic log-likelihoods. Submitted. [ArXiv].\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025+). Bayesian analysis of product feature allocation models. Submitted. [ArXiv] [Github repository].\n\nArticles in refereed journals\n\nAgnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Biometrika, to appear. [ArXiv].\nRigon, T., Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. Scandinavian Journal of Statistics, to appear. [Link].\nZito, A., Rigon, T., and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. Bayesian Analysis, to appear. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2024). Finite-dimensional discrete random structures and Bayesian clustering. Journal of the American Statistical Association (T&M), 119(546), 929–941. [Link].\nCatalano, M., Lijoi, A., Prünster, I. and Rigon, T. (2023). Bayesian modeling via discrete nonparametric priors. Japanese Journal of Statistics and Data Science, 6, 607–624 [Link].\nRigon, T. (2023). An enriched mixture model for functional clustering. Applied Stochastic Models in Business and Industry, 39, 232–250 [Link].\nRigon, T. and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. Statistics and Probability Letters, 202, 109901. [Link] [Github repository].\nRigon, T., Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. Biometrika, 110(3), 559–578. [Link] [Github repository].\nZito, A., Rigon, T. and Dunson, D. B. (2023). Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. Methods in Ecology and Evolution, 14, 529–542 [Link] [GitHub Repository].\nZito, A., Rigon, T., Ovaskainen, O. and Dunson, D. B. (2023). Bayesian modelling of sequential discoveries. Journal of the American Statistical Association (T&M), 118(544), 2521–2532. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T., Durante, D. and Dunson D. B. (2022). Extended stochastic block models with application to criminal networks. Annals of Applied Statistics 16(4), 2369–2395. [Link] [GitHub repository].\nReverberi, C., Rigon, T., Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. Scientific Reports, 12(14952) [Link].\nFavaro, S., Panero, F. and Rigon, T. (2021). Bayesian nonparametric disclosure risk assessment. Electronic Journal of Statistics 15(2), 5626–5651. [Link].\nRigon, T. and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. Journal of Statistical Planning and inference 211, 131–142. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T. and Durante, D. (2020). Bayesian testing for exogenous partition structures in stochastic block models. Sankhya A: The Indian Journal of Statistics, 84, 108–126. [Link] [GitHub repository].\nLijoi, A., Prünster, I. and Rigon, T. (2020). Sampling hierarchies of discrete random structures. Statistics and Computing 30, 1591–1607. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2020). The Pitman–Yor multinomial process for mixture modeling. Biometrika 107(4), 891–906. [Link].\nDurante, D. and Rigon, T. (2019). Conditionally conjugate mean-field variational Bayes for logistic models. Statistical Science 34(3), 472–485. [Link] [GitHub Repository].\nDurante, D., Canale, A. and Rigon, T. (2019). A nested expectation-maximization algorithm for latent class models with covariates. Statistics and Probability Letters 146, 97–103. [Link] [GitHub Repository].\nRigon, T., Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. Journal of the Royal Statistical Society, Series A 182(1), 225–247. [Link] [GitHub Repository].\n\nPublications in monographs, volumes, and discussions\n\nAgnoletto, D., Rigon, T. and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In Methodological and Applied Statistics and Demography III (Pollice, A. and Mariani, P., editors). Springer. [Link]\nRigon, T., Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: “Centered partition processes: Informative priors for clustering” Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in Bayesian Analysis 16(1) 301–370. [Link].\nAliverti, E., Paganin, S., Rigon, T. and Russo, M. (2019). A discussion on: “Latent nested nonparametric priors” by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in Bayesian Analysis 14(4), 1303–1356. [Link].\nCaponera, A., Denti, F., Rigon, T., Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In Studies in Neural Data Science (Canale, A., Durante, D., Paci, L. And Scarpa, B., editors). Springer. [Link] [GitHub Repository].\n\nNational conference proceedings\n\nAgnoletto, D., Rigon, T. and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nCogo, R., Camerlenghi, F. and Rigon, T. (2023). Hierarchical processes in survival analysis. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nPresicce, L., Rigon, T. and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nLegramanti S., Rigon, T. and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In Book of Short Papers of the Italian Statistical Society (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN: 9788891932310. [Link].\nZito, A., Rigon, T. and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In Book of Short Papers of the Italian Statistical Society 2021 (Perna, C., Salvati, N. and Schirripa Spagnolo, F., editors). ISBN: 9788891927361. [Link - Part 1] [Link - Part 2].\nRigon, T. (2018). Logit stick-breaking priors for partially exchangeable count data. In Book of Short Papers SIS 2018 (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E., editors). ISBN: 9788891910233. [Link]."
-  },
-  {
-    "objectID": "links.html",
-    "href": "links.html",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Federico Camerlenghi\nRiccardo Cogo, Ph.D. student\nLorenzo Ghilotti, Ph.D. student\nLuca Presicce, Ph.D. student\nCarlo Reverberi"
-  },
-  {
-    "objectID": "links.html#co-authors",
-    "href": "links.html#co-authors",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Federico Camerlenghi, University of Milano-Bicocca\nRiccardo Cogo, University of Milano-Bicocca\nLorenzo Ghilotti, University of Milano-Bicocca\nLuca Presicce, University of Milano-Bicocca"
-  },
-  {
-    "objectID": "tesi.html#tesi-passate-triennali-magistrali-e-dottorato",
-    "href": "tesi.html#tesi-passate-triennali-magistrali-e-dottorato",
-    "title": "Informazioni per la tesi di laurea",
-    "section": "Tesi passate (triennali, magistrali e dottorato)",
-    "text": "Tesi passate (triennali, magistrali e dottorato)\nVengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi.\n\nThesis\n\n\n\n\n\n\n\n\nA.A.\nLaurea\nCandidata/o\nTitolo\n\n\n\n\n\n\n\nLaurea Triennale\n\n\n2021/2022\nTriennale\nMarco Carrettoni\nAnalisi dei consumi energetici degli edifici dell’Università degli studi di Milano-Bicocca\n\n\n2021/2022\nTriennale\nErica Delvino\nRegressione nonparametrica tramite processi gaussiani\n\n\n2021/2022\nTriennale\nAnna Petranzan\nAn introduction to Bayesian mixture models and applications\n\n\n2022/2023\nTriennale\nGiulia De Innocentiis\nCriteri di selezione di un modello in ambito bayesiano\n\n\n2022/2023\nTriennale\nTommaso Menghini\nApproccio bayesiano applicato a modelli di regressione probit\n\n\n2023/2024\nTriennale\nStefano Andreoli\nMetodi di stima intervallare in un modello binomiale\n\n\n2023/2024\nTriennale\nRiccardo Cicuttin\nMetodi di campionamento per distribuzioni univariate\n\n\n\n\n\nLaurea Magistrale\n\n\n2020/2021\nMagistrale (Unipd)\nDavide Agnoletto\nAnalisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano\n\n\n2022/2023\nMagistrale\nGabriele Tinè\nPrevisione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità\n\n\n2023/2024\nMagistrale\nAnna Petranzan\nThe Gnedin model: recent developments and future perspectives\n\n\n2023/2024\nMagistrale\nLuna Cantaroni\nAnalisi della struttura interna de La Lombardia, attraverso l’utilizzo di modelli per blocchi stocastici estesi\n\n\n\n\n\nDottorato di ricerca\n\n\n2023\nPh.D. (Duke)\nAlessandro Zito\nEcological modeling via Bayesian nonparametric species sampling priors - Slides"
-  },
-  {
-    "objectID": "links.html#bocconi-university",
-    "href": "links.html#bocconi-university",
-    "title": "Tommaso Rigon",
-    "section": "Bocconi University",
-    "text": "Bocconi University\nDaniele Durante\nAntonio Lijoi, Ph.D. advisor\nSonia Petrone\nIgor Prünster, Ph.D. advisor"
-  },
-  {
-    "objectID": "links.html#university-of-milano-bicocca",
-    "href": "links.html#university-of-milano-bicocca",
-    "title": "Tommaso Rigon",
-    "section": "",
-    "text": "Federico Camerlenghi\nRiccardo Cogo, Ph.D. student\nLorenzo Ghilotti, Ph.D. student\nLuca Presicce, Ph.D. student\nCarlo Reverberi"
-  },
-  {
-    "objectID": "links.html#duke-university",
-    "href": "links.html#duke-university",
-    "title": "Tommaso Rigon",
-    "section": "Duke University",
-    "text": "Duke University\nDavid Dunson, Post-doc advisor\nAmy Herring, Post-doc advisor\nChing-Lung Hsu, Ph.D. student\nAlan Gelfand"
-  },
-  {
-    "objectID": "links.html#university-of-padova",
-    "href": "links.html#university-of-padova",
-    "title": "Tommaso Rigon",
-    "section": "University of Padova",
-    "text": "University of Padova\nDavide Agnoletto, Ph.D. student\nEmanuele Aliverti\nAntonio Canale\nFrancesco Denti\nBruno Scarpa, M.Sc. advisor\nAndrea Sottosanti"
-  },
-  {
-    "objectID": "links.html#all-other-universities",
-    "href": "links.html#all-other-universities",
-    "title": "Tommaso Rigon",
-    "section": "All other Universities",
-    "text": "All other Universities\nAlessia Caponera, Luiss University\nMarta Catalano, Luiss University\nPaolo Cherubini, University of Pavia\nStefano Favaro, University of Turin\nSirio Legramanti, University of Bergamo\nOtso Ovaskainen, University of Helsinki\nSally Paganin, Ohio State University\nFrancesca Panero, London School of Economics\nMassimilano Russo, Ohio State University\nAldo Solari, Ca’ Foscari University\nNicola Torelli, University of Trieste\nAlessandro Zito, Harvard University"
-  },
-  {
-    "objectID": "links.html#other-universities",
-    "href": "links.html#other-universities",
-    "title": "Tommaso Rigon",
-    "section": "Other Universities",
-    "text": "Other Universities\nAlessia Caponera, Luiss University\nMarta Catalano, Luiss University\nPaolo Cherubini, University of Pavia\nStefano Favaro, University of Turin\nSirio Legramanti, University of Bergamo\nOtso Ovaskainen, University of Helsinki\nSally Paganin, Ohio State University\nFrancesca Panero, Sapienza University\nMassimilano Russo, Ohio State University\nAldo Solari, Ca’ Foscari University\nNicola Torelli, University of Trieste\nAlessandro Zito, Harvard University, Ph.D. student"
-  },
-  {
-    "objectID": "post/champions/champions2025.html",
-    "href": "post/champions/champions2025.html",
-    "title": "Previsioni Champions League",
-    "section": "",
-    "text": "Nella Champions League del 2025, 36 squadre competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 27 gennaio 2024, sono state giocate 7 delle 8 giornate previste. Siamo quindi interessati a formulare una previsione sulla classifica finale. Alla settima giornata, la classifica della Champions League era la seguente.\n\n\n\n\n\n\nClassifica Champions League alla 7a giornata\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPosizione\nSquadra\nPunti\nPosizione\nSquadra\nPunti\n\n\n\n\n1\nLiverpool\n21\n19\nClub Brugge\n11\n\n\n2\nBarcellona\n18\n20\nPSV Eindhoven\n11\n\n\n3\nArsenal\n16\n21\nBenfica\n10\n\n\n4\nInter\n16\n22\nPSG\n10\n\n\n5\nAtletico Madrid\n15\n23\nSporting\n10\n\n\n6\nMilan\n15\n24\nStoccarda\n10\n\n\n7\nAtalanta\n14\n25\nDinamo Zagabria\n8\n\n\n8\nAston Villa\n13\n26\nManchester City\n8\n\n\n9\nBayer Leverkusen\n13\n27\nShaktar Donetsk\n7\n\n\n10\nBrest\n13\n28\nBologna\n5\n\n\n11\nFeyenoord\n13\n29\nSparta Praga\n4\n\n\n12\nLille\n13\n30\nGirona\n3\n\n\n13\nMonaco\n13\n31\nLipsia\n3\n\n\n14\nBayern Monaco\n12\n32\nSalisburgo\n3\n\n\n15\nBorussia Dortmund\n12\n33\nStella Rossa\n3\n\n\n16\nCeltic FC\n12\n34\nSturm\n3\n\n\n17\nJuventus\n12\n35\nSlovan Bratislava\n0\n\n\n18\nReal Madrid\n12\n36\nYoung Boys\n0\n\n\n\n\n\n\nDopo le prime 8 giornate, il regolamento della Champions League stabilisce quanto segue:\n\nLe prime 8 squadre accedono direttamente agli ottavi di finale;\nLe squadre classificate dalla 9a alla 24a posizione partecipano ai playoff;\nLe squadre dalla 25a posizione in poi vengono eliminate."
-  },
-  {
-    "objectID": "post/champions/champions2025.html#quotazioni-delle-partite",
-    "href": "post/champions/champions2025.html#quotazioni-delle-partite",
-    "title": "Previsioni Champions League",
-    "section": "Quotazioni delle partite",
-    "text": "Quotazioni delle partite\nPer poter formulare delle previsioni, è innanzitutto necessario stimare in modo ragionevole l’esito di ciascuno dei 18 incontri dell’ultima giornata. Una possibilità consiste nell’utilizzare modelli avanzati, basati sullo storico delle squadre. Tuttavia, per semplicità, sia espositiva che computazionale, adotteremo qui un approccio molto più semplice, basato sulle quote rese pubbliche da alcuni bookmaker (facendo la media delle quote di alcuni tra i bookmaker più popolari).\nSiano q_1, q_X, q_2 le quote associate, rispettivamente, alla vittoria della squadra 1, al pareggio e alla vittoria della squadra 2. Le probabilità corrispondenti p_1, p_X, p_2 possono essere calcolate come segue:\n\np_1 = \\frac{1/q_1}{1/q_1 + 1/q_X + 1/q_2}, \\quad p_X = \\frac{1/q_X}{1/q_1 + 1/q_X + 1/q_2}, \\quad p_2 = \\frac{1/q_2}{1/q_1 + 1/q_X + 1/q_2},\n\nSi noti che per costruzione si ha che p_1 + p_X + p_2 = 1. Si noti inoltre che le scommesse non sono eque, ecco perché è necessario “normalizzare” le quote tramite il termine 1/q_1 + 1/q_X + 1/q_2. Infatti, se i bookmaker fossero equi, si avrebbe 1/q_1 + 1/q_X + 1/q_2 = 1.\nEcco il risultato di questa operazione, per i 18 incontri dell’ultima giornata."
-  },
-  {
-    "objectID": "post/champions/champions2025.html#classifica",
-    "href": "post/champions/champions2025.html#classifica",
-    "title": "Champions",
-    "section": "Classifica",
-    "text": "Classifica"
-  },
-  {
-    "objectID": "post/champions/champions2025.html#classifica-di-champions-league-7a-giornata",
-    "href": "post/champions/champions2025.html#classifica-di-champions-league-7a-giornata",
-    "title": "Champions",
-    "section": "",
-    "text": "Nella Champions League del 2025, 36 squadre competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 27 gennaio 2024, sono state giocate 7 delle 8 giornate previste. Siamo quindi interessati a formulare una previsione sulla classifica finale. Alla settima giornata, la classifica della Champions League era la seguente.\n\n\n\n\n\n\nClassifica Champions League alla 7a giornata\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPosizione\nSquadra\nPunti\nPosizione\nSquadra\nPunti\n\n\n\n\n1\nLiverpool\n21\n19\nClub Brugge\n11\n\n\n2\nBarcellona\n18\n20\nPSV Eindhoven\n11\n\n\n3\nArsenal\n16\n21\nBenfica\n10\n\n\n4\nInter\n16\n22\nPSG\n10\n\n\n5\nAtletico Madrid\n15\n23\nSporting\n10\n\n\n6\nMilan\n15\n24\nStoccarda\n10\n\n\n7\nAtalanta\n14\n25\nDinamo Zagabria\n8\n\n\n8\nAston Villa\n13\n26\nManchester City\n8\n\n\n9\nBayer Leverkusen\n13\n27\nShaktar Donetsk\n7\n\n\n10\nBrest\n13\n28\nBologna\n5\n\n\n11\nFeyenoord\n13\n29\nSparta Praga\n4\n\n\n12\nLille\n13\n30\nGirona\n3\n\n\n13\nMonaco\n13\n31\nLipsia\n3\n\n\n14\nBayern Monaco\n12\n32\nSalisburgo\n3\n\n\n15\nBorussia Dortmund\n12\n33\nStella Rossa\n3\n\n\n16\nCeltic FC\n12\n34\nSturm\n3\n\n\n17\nJuventus\n12\n35\nSlovan Bratislava\n0\n\n\n18\nReal Madrid\n12\n36\nYoung Boys\n0\n\n\n\n\n\n\nDopo le prime 8 giornate, il regolamento della Champions League stabilisce quanto segue:\n\nLe prime 8 squadre accedono direttamente agli ottavi di finale;\nLe squadre classificate dalla 9a alla 24a posizione partecipano ai playoff;\nLe squadre dalla 25a posizione in poi vengono eliminate."
-  },
-  {
-    "objectID": "post/champions/champions2025.html#probabilità-di",
-    "href": "post/champions/champions2025.html#probabilità-di",
-    "title": "Champions",
-    "section": "Probabilità di",
-    "text": "Probabilità di"
-  },
-  {
-    "objectID": "post/champions/champions2025.html#classifica-7a-giornata",
-    "href": "post/champions/champions2025.html#classifica-7a-giornata",
-    "title": "Champions",
-    "section": "Classifica 7a giornata",
-    "text": "Classifica 7a giornata\n\n\n\n\n\n\n\n\n\n\n\nPosizione\nSquadra\nPunti\nPosizione\nSquadra\nPunti\n\n\n\n\n1\nLiverpool\n21\n19\nClub Brugge\n11\n\n\n2\nBarcellona\n18\n20\nPSV Eindhoven\n11\n\n\n3\nArsenal\n16\n21\nBenfica\n10\n\n\n4\nInter\n16\n22\nPSG\n10\n\n\n5\nAtletico Madrid\n15\n23\nSporting\n10\n\n\n6\nMilan\n15\n24\nStoccarda\n10\n\n\n7\nAtalanta\n14\n25\nDinamo Zagabria\n8\n\n\n8\nAston Villa\n13\n26\nManchester City\n8\n\n\n9\nBayer Leverkusen\n13\n27\nShaktar Donetsk\n7\n\n\n10\nBrest\n13\n28\nBologna\n5\n\n\n11\nFeyenoord\n13\n29\nSparta Praga\n4\n\n\n12\nLille\n13\n30\nGirona\n3\n\n\n13\nMonaco\n13\n31\nLipsia\n3\n\n\n14\nBayern Monaco\n12\n32\nSalisburgo\n3\n\n\n15\nBorussia Dortmund\n12\n33\nStella Rossa\n3\n\n\n16\nCeltic FC\n12\n34\nSturm\n3\n\n\n17\nJuventus\n12\n35\nSlovan Bratislava\n0\n\n\n18\nReal Madrid\n12\n36\nYoung Boys\n0"
-  },
-  {
-    "objectID": "post/champions/champions2025.html#la-classifica",
-    "href": "post/champions/champions2025.html#la-classifica",
-    "title": "Previsioni Champions League",
-    "section": "La classifica",
-    "text": "La classifica\nNella Champions League del 2025, 36 squadre competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 29 gennaio 2024, sono state giocate 7 delle 8 giornate previste. Siamo quindi interessati a formulare una previsione sulla classifica finale. Alla settima giornata, la classifica della Champions League era la seguente.\n\n\n\n\n\n\nClassifica Champions League alla 7a giornata\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPosizione\nSquadra\nPunti\nPosizione\nSquadra\nPunti\n\n\n\n\n1\nLiverpool\n21\n19\nClub Brugge\n11\n\n\n2\nBarcellona\n18\n20\nPSV Eindhoven\n11\n\n\n3\nArsenal\n16\n21\nBenfica\n10\n\n\n4\nInter\n16\n22\nPSG\n10\n\n\n5\nAtletico Madrid\n15\n23\nSporting\n10\n\n\n6\nMilan\n15\n24\nStoccarda\n10\n\n\n7\nAtalanta\n14\n25\nDinamo Zagabria\n8\n\n\n8\nAston Villa\n13\n26\nManchester City\n8\n\n\n9\nBayer Leverkusen\n13\n27\nShaktar Donetsk\n7\n\n\n10\nBrest\n13\n28\nBologna\n5\n\n\n11\nFeyenoord\n13\n29\nSparta Praga\n4\n\n\n12\nLille\n13\n30\nGirona\n3\n\n\n13\nMonaco\n13\n31\nLipsia\n3\n\n\n14\nBayern Monaco\n12\n32\nSalisburgo\n3\n\n\n15\nBorussia Dortmund\n12\n33\nStella Rossa\n3\n\n\n16\nCeltic FC\n12\n34\nSturm\n3\n\n\n17\nJuventus\n12\n35\nSlovan Bratislava\n0\n\n\n18\nReal Madrid\n12\n36\nYoung Boys\n0\n\n\n\n\n\n\nDopo le prime 8 giornate, il regolamento della Champions League stabilisce quanto segue:\n\nLe prime 8 squadre accedono direttamente agli ottavi di finale;\nLe squadre classificate dalla 9a alla 24a posizione partecipano ai playoff;\nLe squadre dalla 25a posizione in poi vengono eliminate."
-  },
-  {
-    "objectID": "post/champions/champions2025.html#il-metodo-monte-carlo",
-    "href": "post/champions/champions2025.html#il-metodo-monte-carlo",
-    "title": "Previsioni Champions League",
-    "section": "Il metodo Monte Carlo",
-    "text": "Il metodo Monte Carlo\nA partire dalle probabilità di vittoria/sconfitta di ciascuna partita, è possibile simulare tramite Monte Carlo la classifica finale. In altri termini, simuliamo per 100,000 volte le 18 partite della 8a giornata e valutiamo la frequenza con cui un certo evento si è verificato.\n\n\n\n\n\n\nIn caso di parità di punteggio, il regolamento prevede che si guardi in prima battuta la differenza reti e poi ad ulteriori indicatori. Non avendo elementi per prevedere questi aspetti, la posizione in classifica delle squadre a pari merito viene assegnata casualmente.\n\n\n\nL’evento che più ci interessa è la probabilità che ha ciascuna squadra di finire agli ottavi, ai playoff o di essere eliminata."
-  },
-  {
-    "objectID": "post/champions/champions2025.html#focus-su-squadre-italiane",
-    "href": "post/champions/champions2025.html#focus-su-squadre-italiane",
-    "title": "Champions",
-    "section": "",
-    "text": "Sulle base dei risultati precedenti, possiamo fare alcune considerazioni.\n\nSalvo grosse sorprese, Inter dovrebbe andare direttamente agli ottavi di finale.\nAnche il Milan ha un’alta probabilità di andare direttamente agli ottavi, anche se meno schiacciante di quella dell’Inter.\nAtalanta è in bilico: il passaggio agli ottavi è dato al 24%, principalmente a causa dello scontro difficile contro il Barcelona.\n\nPossiamo inoltre calcolare la probabilità di Inter e Milan di capitare tra le prime 4, non soltanto le prime 8 posizioni.\n\n\n\n\n\n\nPer quel che riguarda le 4 squadre italiane meglio piazzate in classifica, le stima"
-  },
-  {
-    "objectID": "post/champions/champions2025.html#commento-ai-risultati-e-focus-su-squadre-italiane",
-    "href": "post/champions/champions2025.html#commento-ai-risultati-e-focus-su-squadre-italiane",
-    "title": "Previsioni Champions League",
-    "section": "Commento ai risultati e focus su squadre italiane",
-    "text": "Commento ai risultati e focus su squadre italiane\nSulle base dei risultati precedenti, possiamo fare alcune considerazioni.\n\nSalvo grosse sorprese, Inter dovrebbe andare direttamente agli ottavi di finale.\nAnche il Milan ha un’alta probabilità di andare direttamente agli ottavi, anche se meno schiacciante di quella dell’Inter.\nAtalanta è in bilico: il passaggio agli ottavi è dato soltanto al 24%, principalmente a causa dello scontro difficile contro il Barcelona, in cui quest’ultima è data per favorita.\nÈ davvero molto difficile che Juventus passi agli ottavi (2%), ma è anche impossibile che venga eliminata. Al 98% andrà ai playoff.\n\n\n\n\n\n\n\n\n\nPossiamo anche calcolare la distribuzione della posizione in classifica di Inter, Milan, Atalanta e Juventus, che è riportata qui di seguito. La variabilità è notevole, perchè le squadre hanno punteggi molto simili tra loro."
-  },
-  {
     "objectID": "post.html",
     "href": "post.html",
     "title": "Blogpost",
     "section": "",
     "text": "BISP14 workshop\n\n\nBayesian inference for generalized linear models via quasi-posteriors\n\n\n\n\n\n\n\n\n27 mag 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\nLa lotteria nazionale non è difettosa\n\n\n\n\n\n\n\n\n\n\n\n8 mar 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\nCome mai non è possibile prevedere i numeri del lotto\n\n\n\n\n\n\n\n\n\n\n\n6 mar 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League: com’è andata?\n\n\nUna valutazione degli errori\n\n\n\n\n\n\n\n\n30 gen 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League\n\n\n8a giornata\n\n\n\n\n\n\n\n\n29 gen 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\nKarmic dice for Baldur’s Gate III\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\n20 ago 2023\n\n\nTommaso Rigon\n\n\n\n\n\n\nNessun risultato"
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html",
+    "href": "post/lotteria_AI/index.html",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "",
+    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come Repubblica e il Corriere della Sera. È comparsa inoltre su testate minori, tra cui: Torino Cronaca e Orizzonte Scuola.\n\n\n\n\n\nNon sorprende che una notizia del genere abbia attirato l’attenzione, perchè coinvolge temi sensibili come il gioco d’azzardo e l’intelligenza artificiale. Lo sfortunato titolo scelto da Repubblica è “Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”.\nPurtroppo, infatti, la notizia è stata data in modo errato ed estremamente fuorviante. Non è possibile prevedere in alcun modo i numeri del lotto, nè tramite strumenti tradizionali nè tramite l’intelligenza artificiale. La notizia è stata poi rettificata dal Corriere ed infine anche da Repubblica, sebbene con enfasi minore rispetto alla notizia iniziale."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#il-caso-di-cronaca",
+    "href": "post/lotteria_AI/index.html#il-caso-di-cronaca",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "",
+    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come Repubblica e il Corriere della Sera. È comparsa inoltre su testate minori, tra cui: Torino Cronaca e Orizzonte Scuola.\n\n\n\n\n\nNon sorprende che una notizia del genere abbia attirato l’attenzione, perchè coinvolge temi sensibili come il gioco d’azzardo e l’intelligenza artificiale. Lo sfortunato titolo scelto da Repubblica è “Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”.\nPurtroppo, infatti, la notizia è stata data in modo errato ed estremamente fuorviante. Non è possibile prevedere in alcun modo i numeri del lotto, nè tramite strumenti tradizionali nè tramite l’intelligenza artificiale. La notizia è stata poi rettificata dal Corriere ed infine anche da Repubblica, sebbene con enfasi minore rispetto alla notizia iniziale."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#è-possibile-prevedere-i-numeri-del-lotto",
+    "href": "post/lotteria_AI/index.html#è-possibile-prevedere-i-numeri-del-lotto",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "È possibile prevedere i numeri del lotto?",
+    "text": "È possibile prevedere i numeri del lotto?\nIl gioco del lotto prevede che i numeri siano estratti casualmente e che ciascun numero abbia la stessa probabilità di essere estratto, cioè 1 / 90. Inoltre, le estrazioni sono tra loro indipendenti, ovvero l’estrazione di un numero non influenza quella successiva. In gergo, si dirà che ciascuna estrazione “non ha memoria” di cosa è successo in passato.\nDunque, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà circa 1/90. Di conseguenza, non ha senso basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali differenze nelle frequenze dei numeri del lotto sono oscillazioni casuali prive di significato.\n\n\n\n\n\n\nI numeri ritardatari\n\n\n\nUna credenza comune è che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i “numeri ritardatari” vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.1\nCome detto prima, anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero 1/90. Questo proprio perché le estrazioni sono indipendenti le une dalle altre e “non si ricordano” cosa sia successo in passato.\n\n\nA costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è impossibile prevedere i numeri del lotto.\nQuesti concetti dovrebbero essere ben noti agli studenti di statistica. Da docente, trovo sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#le-coincidenze-sono-sorprendenti",
+    "href": "post/lotteria_AI/index.html#le-coincidenze-sono-sorprendenti",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "Le coincidenze sono sorprendenti?",
+    "text": "Le coincidenze sono sorprendenti?\nCerchiamo ora di fare luce su un aspetto controintuitivo di questa vicenda. Infatti, vincere 50.000 euro al lotto è un evento piuttosto raro. Questo potrebbe indurre a pensare che non possa essere stata una coincidenza e che sia sotto qualcosa di più. In realtà, gli eventi rari accadono ogni giorno; altrimenti, nessuno vincerebbe mai il Superenalotto.\nPer districare questo apparente paradosso, è utile considerare il numero di tentativi effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l’intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.\nQuesto stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il caso di Sally Clark, ingiustamente accusata di aver ucciso i propri figli a causa di un’errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#lo-scandalo-della-lotteria-dellontario",
+    "href": "post/lotteria_AI/index.html#lo-scandalo-della-lotteria-dellontario",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "Lo scandalo della lotteria dell’Ontario",
+    "text": "Lo scandalo della lotteria dell’Ontario\n\n\n\n\n\n\nSe le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando invece queste si manifestano, significa che almeno una delle ipotesi non è rispettata, a volte purtroppo per ragioni fraudolente.\nDopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. In effetti, in Canada è capitato davvero, come raccontato in questa storia.\n\n\n\nNel 2006, i produttori del programma investigativo canadese The Fifth Estate della CBC contattarono il prof. Jeff Rosenthal per un caso di frode alla lotteria dell’Ontario. Il caso riguardava Bob Edmonds, un anziano giocatore truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una battaglia legale durata 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la Ontario Lottery and Gaming Corporation (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e chiese a Rosenthal di analizzare i dati da un punto di vista statistico.\nL’analisi completa è disponibile in questo articolo, che descrive come una semplice analisi statistica abbia contribuito a svelare lo scandalo dei rivenditori della lotteria dell’Ontario. Il caso divenne una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari.\nQuesta storia rappresenta una potente testimonianza dell’importanza e del potere della statistica."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#alcuni-riferimenti",
+    "href": "post/lotteria_AI/index.html#alcuni-riferimenti",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "Alcuni riferimenti",
+    "text": "Alcuni riferimenti\nTutti questi fraintendimenti sono ben raccontati nel libro Struck By Lightning: The Curious World Of Probabilities di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo Le regole del caso: istruzioni per l’uso.\nSi veda anche il video YouTube: Statistician Answers Stats Questions From Twitter di WIRED."
+  },
+  {
+    "objectID": "post/lotteria_AI/index.html#footnotes",
+    "href": "post/lotteria_AI/index.html#footnotes",
+    "title": "Come mai non è possibile prevedere i numeri del lotto",
+    "section": "Note",
+    "text": "Note\n\n\nÈ possibile che questo fraintendimento derivi dalla errata comprensione della legge dei grandi numeri, la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad 1/90 all’aumentare del numero di prove. Questa affermazione è vera, ma non implica alcun effetto di “compensazione” tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.↩︎"
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html",
+    "href": "post/lotteria_AI/lotteria_truccata.html",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "",
+    "text": "Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un grave errore, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nI numeri del lotto vengono estratti tramite un macchinario che utilizza palline numerate. Il video seguente mostra come avviene l’estrazione dei numeri (estrazione del 6 Marzo 2025).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSebbene l’onere della prova dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#unanalisi-delle-estrazioni-della-lotteria-nazionale",
+    "href": "post/lotteria_AI/lotteria_truccata.html#unanalisi-delle-estrazioni-della-lotteria-nazionale",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "",
+    "text": "Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un grave errore, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nI numeri del lotto vengono estratti tramite un macchinario che utilizza palline numerate. Il video seguente mostra come avviene l’estrazione dei numeri (estrazione del 6 Marzo 2025).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSebbene l’onere della prova dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#un-problema-storico",
+    "href": "post/lotteria_AI/lotteria_truccata.html#un-problema-storico",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "Un problema storico",
+    "text": "Un problema storico\nIl problema dell’equità di una lotteria ha una lunga e importante storia, che è elegantemente raccontata nell’articolo di storia della statistica di Stigler (2003)1:\n\nStigler S. M. (2003), Casanova, «Bonaparte», and the loterie de France, Journal de la société française de statistique, 144(1-2), 5–34.\n\nGli strumenti statistici che qui presenteremo sono simili a quelli usati da Stigler per analizzare la lotteria francese del 18esimo secolo. L’articolo di Stigler è molto più completo e dettagliato di questo post, e ne consiglio caldamente la lettura. Anzitutto, è una testimonianza importante di quanta intelligenza sia già stata dedicata alla questione della lotteria, oltre che esempio di come la statistica possa risolvere problemi concreti."
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-nazionale",
+    "href": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-nazionale",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "I dati della lotteria nazionale",
+    "text": "I dati della lotteria nazionale\nI dati delle estrazioni del Lotto sono a disposizione sul sito ufficiale del Lotto a partire dalle estrazioni del 1939. La lotteria nazionale inizia invece dal 5 Maggio 2005, cioè la data della prima estrazione nazionale. Questa analisi è replicabile da chiunque avesse interesse a farlo.\nPer dare un po’ di contesto, i 3 studenti dell’Università del Salento hanno scommesso sui numeri 21 e 48 della lotteria nazionale in data 1 Marzo 2025, vincendo, come si può vedere nella fotografia allegata.\n\n\n\nImmagine tratta dall’articolo originale di Repubblica.\n\n\nA titolo di esempio, le ultime cinque estrazioni sono state:\n\n\n\n\n\nData\nN1\nN2\nN3\nN4\nN5\n\n\n\n\n2025-02-28\n14\n78\n18\n40\n8\n\n\n2025-03-01\n21\n48\n3\n17\n62\n\n\n2025-03-04\n57\n54\n79\n44\n40\n\n\n2025-03-06\n34\n83\n53\n81\n14\n\n\n2025-03-07\n45\n81\n88\n30\n28\n\n\n\n\n\nA detta stessa dei 3 studenti e di alcuni commentatori dei social, ci sarebbero delle anomalie nelle frequenze dei numeri del lotto. Ho calcolato le frequenze di ciascun numero, per verificare questa affermazione e non ho riscontrato anomalie. Per semplicità, qui di seguito riporto le frequenze del primo numero estratto (N1); si veda la fine di questo post per un approccio leggermente più sofisticato, che tenga conto di tutti i numeri.\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n\n\n\n\n25\n43\n32\n41\n32\n40\n42\n30\n31\n42\n31\n35\n36\n34\n51\n\n\n\n\n\n\n\n\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\n\n\n\n41\n36\n28\n25\n33\n32\n37\n41\n23\n33\n29\n40\n39\n39\n31\n\n\n\n\n\n\n\n\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n\n\n\n\n43\n28\n31\n40\n32\n26\n30\n26\n32\n41\n30\n41\n32\n34\n37\n\n\n\n\n\n\n\n\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n\n\n\n\n42\n40\n34\n35\n43\n39\n40\n41\n34\n36\n39\n39\n39\n32\n35\n\n\n\n\n\n\n\n\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n\n\n\n\n38\n39\n37\n46\n29\n35\n22\n30\n33\n43\n28\n30\n36\n37\n26\n\n\n\n\n\n\n\n\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n\n\n\n\n27\n40\n47\n32\n50\n30\n22\n43\n31\n41\n45\n25\n33\n44\n29\n\n\n\n\n\n\nIn totale sono state effettuate n = 3171 estrazioni. Ad un occhio poco esperto, potrebbe sembrare che i numeri 15 ed 80 compaiano con maggiore frequenza rispetto agli altri (51 volte e 50 volte, rispettivamente). È anche ironico notare che non si tratta dei numeri (21 e 48) usati nella famosa scommessa – non saprei proprio dire quale criterio abbiano seguito i tre studenti salentini. In ogni caso, si tratta di oscillazioni casuali, come vedremo.\nPossiamo anche rappresentare graficamente queste frequenze, ottenendo il seguente diagramma a bastoncini.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa tabella ed il grafico confermano che ci sono delle oscillazioni nelle frequenze: alcuni numeri sono comparsi di più, altri di meno. Questo è un fenomeno assolutamente normale!"
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-difettosa",
+    "href": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-difettosa",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "Oscillazioni casuali o lotteria difettosa?",
+    "text": "Oscillazioni casuali o lotteria difettosa?\nPer stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli strumenti statistici un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con n_1,\\dots,n_{90}, seguono una distribuzione multinomiale di parametro n = 3171 e probabilità p_1,\\dots,p_{90}.\nVogliamo verificare se le probabilità p_1,\\dots,p_{90} sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a 1/90. Per far questo, facciamo uso del celeberrimo test del Chi-quadrato2. In pratica, confrontiamo le frequenze che abbiamo osservato n_1,\\dots,n_{90} con quelle “teoriche”, pari a n_\\text{teo} = n / 90 = 35.233. Otteniamo: \nX^2 = \\frac{(n_1 - n_\\text{teo})^2 + \\cdots + (n_{90} - n_\\text{teo})^2}{n_\\text{teo}} = 102.12.\n Il numero X^2 = 102.12 va confrontato con i valori che ci aspetteremmo di osservare se la lotteria fosse regolare, che sono compresi tra circa 65 e 117. Più rigorosamente, calcoliamo il cosiddetto p-value, un concetto tecnico un po’ difficile da raccontare, ma che in buona sostanza ci conferma che non ci sono anomalie statistiche. Per gli statistici in ascolto, ecco i risultati completi:\n\n\n\n    Chi-squared test for given probabilities\n\ndata:  freq\nX-squared = 102.12, df = 89, p-value = 0.1615"
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-statistici-più-complessi",
+    "href": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-statistici-più-complessi",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "Un cenno a metodi statistici più complessi",
+    "text": "Un cenno a metodi statistici più complessi\n\n\n\n\n\n\nE gli altri numeri?\n\n\n\nIn effetti, i numeri della lotteria sono 5 mentre noi abbiamo analizzato soltanto il primo (N1). Ho pertanto eseguito la stessa analisi per tutti i numeri N1, N2, N3, N4 ed N5, applicando una correzione di Bonferroni, senza registrare alcuna anomalia. A dirla tutta, nessun p-value risultava inferiore a 0.1, rendendo superflua la correzione di Bonferroni.\nAncor meglio, si potrebbe modellare la distribuzione congiunta dei 5 numeri della lotteria e confrontarla quindi con una distribuzione ipergeometrica multivariata. Questra strada è forse la migliore ed è anche tecnicamente percorribile, ma richiede un po’ troppo lavoro aggiuntivo che mi sembrava eccessivo ai fini di questo post.\n\n\n\n\n\n\n\n\nE l’ipotesi di indipendenza?\n\n\n\nIn questa analisi abbiamo fatto uso dell’ipotesi di indipendenza tra le diverse estrazioni. È un’ipotesi molto ragionevole, anche perchè la sua violazione è molto probabilmente legata ad una frode.\nIn linea di principio, anche l’ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po’ di lavoro aggiuntivo. Mi sembra, però, che l’accusa di frode allo stato italiano sfoci nel complottismo, soprattutto se non supportata da ulteriori prove indiziali di altra natura.\n\n\n\nUn aggiornamento ed un’elegante soluzione\nProprio nel paragrafo precedente, ho accennato alla possibilità di modellare la distribuzione congiunta dei 5 numeri della lotteria e confrontarla con una distribuzione ipergeometrica multivariata. L’approccio è corretto ma un po’ complicato. Fortunamente, esiste una elegante soluzione che consente di semplificare notevolmente il problema.\nNell’articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze N_1,\\dots, N_{90} di tutti e 5 i numeri della lotteria e considera quindi una correzione di X^2 che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all’autorevole libro McCullagh & Nelder (1986, pag. 191-192) per i dettagli formali, in cui il problema è dato come esercizio (!).\nIn questo caso, avremo che N = 15855 e che N_\\text{teo} = N / 90 = 176.167. Il test del chi-quadrato, aggiustato per tener conto dei reinserimenti, è \n(X^2 \\text{ corretto}) = \\frac{89}{85}X^2 = \\frac{89}{85}\\frac{(N_1 - N_\\text{teo})^2 + \\cdots + (N_{90} - N_\\text{teo})^2}{N_\\text{teo}} = 87.33.\n I risultati completi sono riportati nel seguito, incluso il p-value, che nuovamente non mostra alcuna evidenza di uno sbilanciamento della lotteria.\n\n\n\nX^2\nX^2 corretto\nGradi di libertà\np-value\n\n\n\n\n83.40114\n87.32589\n89\n0.5303704\n\n\n\nL’articolo di Stigler inoltre menziona anche a test utili a verificare l’ipotesi di indipendenza delle estrazioni, che tuttavia qui non approfondiremo."
+  },
+  {
+    "objectID": "post/lotteria_AI/lotteria_truccata.html#footnotes",
+    "href": "post/lotteria_AI/lotteria_truccata.html#footnotes",
+    "title": "La lotteria nazionale non è difettosa",
+    "section": "Note",
+    "text": "Note\n\n\nQuesto bell’articolo mi è stato segnalato dal prof. Aldo Solari, che ha letto una versione iniziale di questo post e che ringrazio molto.↩︎\nIl test del chi-quadrato è un famoso test statistico introdotto da Karl Pearson all’inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro Agresti (2013).↩︎"
+  },
+  {
+    "objectID": "post/BISP2025/BISP2025_slides.html#foundations",
+    "href": "post/BISP2025/BISP2025_slides.html#foundations",
+    "title": "BISP14 workshop",
+    "section": "Foundations",
+    "text": "Foundations\nDe Finetti’s representation Theorem (De Finetti 1937) has a central role in Bayesian statistics because it provides the fundamental justification to the two approaches to Bayesian statistics:\n\nthe hypothetical approach;\nthe predictive approach.\n\n\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\n\nLet (Y_n)_{n\\ge 1}, Y_n\\in\\mathcal{Y}, be a sequence of exchangeable random variables with probability law P. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1,\n\nP(y_1,\\ldots,y_n) = \\int_{\\mathcal{F}} \\prod_{i=1}^n F(y_i)\\,\\Pi(\\mathrm{d}F).\n\n\n\n\nWhile representing opposite interpretations of the Theorem, the two approaches are intrinsically connected."
+  },
+  {
+    "objectID": "post/BISP2025/BISP2025_slides.html#hypothetical-approach",
+    "href": "post/BISP2025/BISP2025_slides.html#hypothetical-approach",
+    "title": "BISP14 workshop",
+    "section": "Hypothetical approach",
+    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p, p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{F}_{\\boldsymbol{\\theta}}=\\{F_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_1,\\ldots,y_n) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n f_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and f_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and F_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: Chernozhukov and Hong (2003); Bissiri et al. (2016) Heide et al. (2020); Grünwald and Mehta (2020); Knoblauch et al. (2022); Matsubara et al. (2022); Matsubara et al. (2023); Jewson and Rossell (2022); Rigon et al. (2023)"
+  },
+  {
+    "objectID": "post/BISP2025/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
+    "href": "post/BISP2025/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
+    "title": "BISP14 workshop",
+    "section": "Generalizations of the hypothetical approach",
+    "text": "Generalizations of the hypothetical approach\n\nBissiri et al. (2016) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid \\mathbf{y}_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\textcolor{teal}{\\omega} \\sum_{i=1}^n \\textcolor{purple}{\\ell(\\boldsymbol{\\theta}; y_i)} \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: Holmes and Walker (2017); Lyddon et al. (2019); Syring and Martin (2019); Matsubara et al. (2023).\n\n\nOur contribution: Bayesian inference for generalized linear models via quasi-posteriors"
+  },
+  {
+    "objectID": "post/BISP2025/BISP2025_slides.html#references",
+    "href": "post/BISP2025/BISP2025_slides.html#references",
+    "title": "BISP14 workshop",
+    "section": "References",
+    "text": "References\n\n\nBissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), “A general framework for updating belief distributions,” Journal of the Royal Statistical Society: Series B (Statistical Methodology), Wiley Online Library, 78, 1103–1130.\n\n\nChernozhukov, V., and Hong, H. (2003), “An MCMC approach to classical estimation,” Journal of econometrics, Elsevier, 115, 293–346.\n\n\nDe Finetti, B. (1937), “La prévision: Ses lois logiques, ses sources subjectives,” in Annales de l’institut henri poincaré, pp. 1–68.\n\n\nGrünwald, P. D., and Mehta, N. A. (2020), “Fast rates for general unbounded loss functions: from ERM to generalized Bayes,” The Journal of Machine Learning Research, JMLRORG, 21, 2040–2119.\n\n\nHeide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), “Safe-bayesian generalized linear regression,” in Proceedings of the twenty third international conference on artificial intelligence and statistics, PMLR, pp. 2623–2633.\n\n\nHolmes, C. C., and Walker, S. G. (2017), “Assigning a value to a power likelihood in a general Bayesian model,” Biometrika, Oxford University Press, 104, 497–503.\n\n\nJewson, J., and Rossell, D. (2022), “General bayesian loss function selection and the use of improper models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 1640–1665.\n\n\nKnoblauch, J., Jewson, J., and Damoulas, T. (2022), “An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,” Journal of Machine Learning Research, 23, 1–109.\n\n\nLyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), “General Bayesian updating and the loss-likelihood bootstrap,” Biometrika, Oxford University Press, 106, 465–478.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), “Robust generalised bayesian inference for intractable likelihoods,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 997–1022.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), “Generalized bayesian inference for discrete intractable likelihood,” Journal of the American Statistical Association, Taylor & Francis, 1–11.\n\n\nRigon, T., Herring, A. H., and Dunson, D. B. (2023), “A generalized Bayes framework for probabilistic clustering,” Biometrika, Oxford University Press, 10, 559–578.\n\n\nSyring, N., and Martin, R. (2019), “Calibrating general posterior credible regions,” Biometrika, Oxford University Press, 106, 479–486."
   },
   {
     "objectID": "post/karmic_dice/karmic.html",
@@ -322,39 +161,102 @@
     "text": "Analyzing the algorithm\nThe most interesting property of this karmic dice is that it preserves the long-run proportions. If you have a solid background on the theory of auto-regressive processes and the so-called inversion theorem for generating random variables, this should be immediately obvious to you.\nIf you are not familiar with probability theory, the following empirical demonstration should give you an intuition of why this idea works nicely.\nSuppose I were to get one million rolls, then I could check how many times I got each of the values 1,2,\\dots, 20. With a computer, this can be quickly done (using \\kappa = 0.35), and these are the proportions we get:\n\n\n\n       1        2        3        4        5        6        7        8 \n0.049854 0.049871 0.049799 0.049926 0.050014 0.050330 0.050038 0.050022 \n       9       10       11       12       13       14       15       16 \n0.049772 0.049845 0.050407 0.050344 0.049760 0.050350 0.049981 0.049673 \n      17       18       19       20 \n0.050130 0.049961 0.049937 0.049986 \n\n\nEach number is roughly appearing in the sequence 5\\% of the times, as it should!\nThe take-home message is that this algorithm does not affect the overall balance of the game because the long-term behavior (called stationary distribution) coincides with that of the regular dice.\n\nThe karmic effect\nAnother aspect we would like to understand is the dependence between the current roll and the following. These two rolls are independent in the case of a regular dice, but the situation is quite different in a karmic dice.\nLet us start noticing that when \\kappa = 0, the above karmic dice algorithm is just a convoluted way of sampling from a regular dice! It can be “easily” proved using standard probability tools.\nWhen \\kappa &gt; 0, the karmic dice tweaks the probability and induces a negative correlation between subsequent rolls. Let us visualize what happens when \\kappa = 0.35.\n\n\n\n\n\n\n\n\n\nBlue squares are more likely values (compared to the regular dice), whereas orange squares are less likely values. This graph reveals a few interesting facts:\n\nIf the current roll is a 1, then the most likely outcome of the following will be in the range of 15-20, with a peak in 20.\nIf the current roll is 20, then the most likely outcome of the following will be in the range of 1-5, with a peak in 1.\nIf the current roll is either 10 or 11, the following roll will roughly behave like a regular dice.\n\nThis version of the karmic effect therefore compensate positive values with negative values in a balanced manner so that the long-run proportions are correct.\n\n\nThe choice of \\kappa\nThe amount of compensation is regulated by \\kappa, a crucial tuning parameter that can be used to tune the dynamic of the karma dice.\nIf \\kappa is close to 0, we get a regular dice. Vice versa, if \\kappa is close to 1, i.e., the theoretical maximum, we would get sequences like this:\n\nkarmic_dice(n = 100, kappa = 0.999)\n\n  [1]  7 13  7 14  7 14  7 14  7 13  8 13  8 13  7 13  8 13  8 13  8 13  7 14  7\n [26] 14  7 14  7 14  7 14  8 13  7 14  7 14  8 14  8 13  8 13  8 13  8 13  9 13\n [51]  8 13  8 13  8 12  8 12  9 12 10 11 10 11 10 11 10 11 10 11  9 12  9 12  9\n [76] 12  9 12 10 11 10 12 10 11 10 11 10 10 10 11 10 11 10 11 10 11 11 10 12 10\n\n\nEven though, in the (very) long run, the correct proportions are still preserved for any \\kappa &lt; 1, such an extreme choice of \\kappa = 0.999 leads to almost deterministic compensations, which are not appropriate for a game, because it would become too predictable.\nThere is no “statistical” optimal choice for \\kappa, which instead should be selected based on the player preferences. Here I picked \\kappa = 0.35 as it seems like a reasonable default, being a middle-ground solution between the independence case (regular dice) and an almost determinist pattern."
   },
   {
-    "objectID": "post.html#blogpost",
-    "href": "post.html#blogpost",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Tommaso Rigon",
+    "section": "About me",
+    "text": "About me\nI am an Assistant Professor of Statistical Science (RTD-B, SECS-S/01) at the department of Economics, Management and Statistics (DEMS) of University of Milano-Bicocca. I currently live in Milan, Italy.\nI am a member of the BayesLab at the Bocconi Institute for Data Science and Analytics (BIDSA), and the MIDAS Complex Data Modeling Research Network.\nMy curriculum vitae is available here. A complete list of publications is available here.\nResearch interests: applied Bayesian modeling; Bayesian clustering; Bayesian nonparametrics; computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.\nE-mail: tommaso.rigon@unimib.it"
+  },
+  {
+    "objectID": "index.html#news-and-awards",
+    "href": "index.html#news-and-awards",
+    "title": "Tommaso Rigon",
+    "section": "News and awards",
+    "text": "News and awards\n[2025] Bnews Bicocca (ITA). Statistica, tripletta di premi internazionali per il ricercatore di Bicocca Tommaso Rigon\n[2024] Blackwell and Rosenbluth Award 2024. The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community. Junior Section of International Society for Bayesian Analysis (j-ISBA). [Award] [News]\n[2024] I am part of the j-ISBA Peer Mentoring, which is meant to provide advice on academic matters. [Program Info]\n[2024] Mitchell Prize 2023 for the paper “Extended Stochastic Block Models with Application to Criminal Networks”. International Society for Bayesian Analysis (ISBA). [Award]\n\n\n[2024] Daniele Durante was awarded an ERC Starting Grant for the project NEMESIS, focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!\n[2022] National Scientific Qualification for Associate Professor in Statistics (13/D1).\n[2021] Young Talents Award 2021. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [Award]\n[2020] Savage Award 2020 (Theory and Methods). The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [Award] [News]"
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
     "title": "Tommaso Rigon",
     "section": "",
-    "text": "Una valutazione degli errori\n\n\n\n\n\n\n\n\n30 gen 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\n\n8a giornata\n\n\n\n\n\n\n\n\n29 gen 2025\n\n\nTommaso Rigon\n\n\n\n\n\n\n\n\n\n\n\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\n20 ago 2023\n\n\nTommaso Rigon\n\n\n\n\n\n\nNessun risultato"
+    "text": "Preprints\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [ArXiv].\nAnceschi, N., Rigon, T., Zanella, G., and Durante D. (2025+). Optimal lower bounds for logistic log-likelihoods. Submitted. [ArXiv].\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025+). Bayesian analysis of product feature allocation models. Submitted. [ArXiv] [Github repository].\n\nArticles in refereed journals\n\nAgnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Biometrika, to appear. [ArXiv].\nRigon, T., Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. Scandinavian Journal of Statistics, to appear. [Link].\nZito, A., Rigon, T., and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. Bayesian Analysis, to appear. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2024). Finite-dimensional discrete random structures and Bayesian clustering. Journal of the American Statistical Association (T&M), 119(546), 929–941. [Link].\nCatalano, M., Lijoi, A., Prünster, I. and Rigon, T. (2023). Bayesian modeling via discrete nonparametric priors. Japanese Journal of Statistics and Data Science, 6, 607–624 [Link].\nRigon, T. (2023). An enriched mixture model for functional clustering. Applied Stochastic Models in Business and Industry, 39, 232–250 [Link].\nRigon, T. and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. Statistics and Probability Letters, 202, 109901. [Link] [Github repository].\nRigon, T., Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. Biometrika, 110(3), 559–578. [Link] [Github repository].\nZito, A., Rigon, T. and Dunson, D. B. (2023). Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. Methods in Ecology and Evolution, 14, 529–542 [Link] [GitHub Repository].\nZito, A., Rigon, T., Ovaskainen, O. and Dunson, D. B. (2023). Bayesian modelling of sequential discoveries. Journal of the American Statistical Association (T&M), 118(544), 2521–2532. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T., Durante, D. and Dunson D. B. (2022). Extended stochastic block models with application to criminal networks. Annals of Applied Statistics 16(4), 2369–2395. [Link] [GitHub repository].\nReverberi, C., Rigon, T., Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. Scientific Reports, 12(14952) [Link].\nFavaro, S., Panero, F. and Rigon, T. (2021). Bayesian nonparametric disclosure risk assessment. Electronic Journal of Statistics 15(2), 5626–5651. [Link].\nRigon, T. and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. Journal of Statistical Planning and inference 211, 131–142. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T. and Durante, D. (2020). Bayesian testing for exogenous partition structures in stochastic block models. Sankhya A: The Indian Journal of Statistics, 84, 108–126. [Link] [GitHub repository].\nLijoi, A., Prünster, I. and Rigon, T. (2020). Sampling hierarchies of discrete random structures. Statistics and Computing 30, 1591–1607. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2020). The Pitman–Yor multinomial process for mixture modeling. Biometrika 107(4), 891–906. [Link].\nDurante, D. and Rigon, T. (2019). Conditionally conjugate mean-field variational Bayes for logistic models. Statistical Science 34(3), 472–485. [Link] [GitHub Repository].\nDurante, D., Canale, A. and Rigon, T. (2019). A nested expectation-maximization algorithm for latent class models with covariates. Statistics and Probability Letters 146, 97–103. [Link] [GitHub Repository].\nRigon, T., Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. Journal of the Royal Statistical Society, Series A 182(1), 225–247. [Link] [GitHub Repository].\n\nPublications in monographs, volumes, and discussions\n\nAgnoletto, D., Rigon, T. and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In Methodological and Applied Statistics and Demography III (Pollice, A. and Mariani, P., editors). Springer. [Link]\nRigon, T., Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: “Centered partition processes: Informative priors for clustering” Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in Bayesian Analysis 16(1) 301–370. [Link].\nAliverti, E., Paganin, S., Rigon, T. and Russo, M. (2019). A discussion on: “Latent nested nonparametric priors” by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in Bayesian Analysis 14(4), 1303–1356. [Link].\nCaponera, A., Denti, F., Rigon, T., Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In Studies in Neural Data Science (Canale, A., Durante, D., Paci, L. And Scarpa, B., editors). Springer. [Link] [GitHub Repository].\n\nNational conference proceedings\n\nAgnoletto, D., Rigon, T. and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nCogo, R., Camerlenghi, F. and Rigon, T. (2023). Hierarchical processes in survival analysis. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nPresicce, L., Rigon, T. and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nLegramanti S., Rigon, T. and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In Book of Short Papers of the Italian Statistical Society (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN: 9788891932310. [Link].\nZito, A., Rigon, T. and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In Book of Short Papers of the Italian Statistical Society 2021 (Perna, C., Salvati, N. and Schirripa Spagnolo, F., editors). ISBN: 9788891927361. [Link - Part 1] [Link - Part 2].\nRigon, T. (2018). Logit stick-breaking priors for partially exchangeable count data. In Book of Short Papers SIS 2018 (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E., editors). ISBN: 9788891910233. [Link]."
   },
   {
-    "objectID": "post/champions/champions2025_esiti.html#le-previsioni-dei-bookmakers",
-    "href": "post/champions/champions2025_esiti.html#le-previsioni-dei-bookmakers",
-    "title": "Previsioni Champions League: com’è andata?",
-    "section": "Le previsioni dei bookmakers",
-    "text": "Le previsioni dei bookmakers\nQuando facciamo una “previsione secca”, cioè diciamo che l’esito sarà 1, X o 2, ci basiamo sulle probabilità di ciascun risultato. Ad esempio, l’Aston Villa era favorito contro il Celtic FC (e infatti ha vinto 4-2) perché il 62% rappresentava una probabilità più alta rispetto al 22% (pareggio) e al 16% (sconfitta).\nPertanto, per la i-esima partita, avremo:\n\n\\text{Probabilità di indovinare l'}i\\text{-esimo incontro} = \\hat{p}_i = \\max(p_{i1}, p_{iX}, p_{i2}),\n\ndove p_{i1}, p_{iX}, p_{i2} sono le probabilità di vittoria, pareggio e sconfitta. Viceversa, la probabilità di sbagliare sarà:\n\n\\text{Probabilità di sbagliare l'}i\\text{-esimo incontro} = 1 - \\hat{p}_i.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSquadra 1\nSquadra 2\n1\nX\n2\nProbabilità di indovinare (\\hat{p}_i)\nProbabilità di sbagliare (1 - \\hat{p}_i)\n\n\n\n\nAston Villa\nCeltic FC\n0.62\n0.22\n0.16\n0.62\n0.38\n\n\nBarcellona\nAtalanta\n0.55\n0.23\n0.22\n0.55\n0.45\n\n\nDinamo Zagabria\nMilan\n0.17\n0.21\n0.62\n0.62\n0.38\n\n\n\nSu 18 partite, quindi, ci aspettiamo che il numero di errori commessi sia circa:\n\n\\text{Numero di errori commessi} = \\sum_{i=1}^{18}(1 - \\hat{p}_i) = 0.38 + 0.45 + 0.48 + \\cdots = 7.17.\n\n\n\n\n\n\n\nErrare è l’unica certezza\n\n\n\nÈ possibile commettere meno errori? Purtroppo, oltre una certa soglia, non è possibile migliorare. L’errore minimo teorico si chiama “Bayes error rate” ed è ragionevole credere che, nel nostro caso, sia leggermente inferiore a 7.17/18 = 40\\%.\nL’errore minimo teorico nel calcio è piuttosto alto, perché si tratta di uno sport imprevedibile. Sbagliare, quindi, è inevitabile.\n\n\nNella prossima tabella (in gergo, una matrice di confusione) abbiamo confrontato le previsioni dei bookmaker con gli effettivi risultati.\n\n\n\n\n1 (Reale)\nX (Reale)\n2 (Reale)\n\n\n\n\n1 (Previsto)\n7\n2\n1\n\n\nX (Previsto)\n0\n0\n1\n\n\n2 (Previsto)\n3\n0\n4\n\n\n\nI bookmaker hanno quindi previsto correttamente l’esito di 11 partite su 18, ovvero hanno sbagliato 7 volte su 18. Tutto è andato esattamente come previsto: sapevamo che avremmo commesso circa 7 errori, ed è andata proprio così."
-  },
-  {
-    "objectID": "post/champions/champions2025_esiti.html#la-previsione-della-classifica",
-    "href": "post/champions/champions2025_esiti.html#la-previsione-della-classifica",
-    "title": "Previsioni Champions League: com’è andata?",
-    "section": "La previsione della classifica",
-    "text": "La previsione della classifica\nPrevedere una singola partita è difficile, perché ci sono molti fattori imprevedibili. Tuttavia, prevedere la classifica finale è un compito un po’ più semplice, anche perchè le squadre non partivano dallo stesso punteggio.\nAnche in questo caso, ci sono buone notizie: ci possiamo quindi ritenere ragionevolmente soddisfatti delle nostre previsioni.\n\n\n\n\n\n\n\nIn media, la classifica prevista è più simile a quella finale di quanto non lo fosse quella della 7ª giornata. (I dettagli qui sono omessi).\nQuesto fatto si può quantificare tramite il cosiddetto “errore quadratico medio”, che misura quanto sia diversa la nostra previsione dai risultati reali.\n\n\n\n\nNel seguito ho rappresentato graficamente la classifica alla settima giornata, la previsione ottenuta con il metodo Monte Carlo e, infine, la graduatoria finale."
-  },
-  {
-    "objectID": "post/champions/champions2025_esiti.html#possibili-miglioramenti-ed-estensioni",
-    "href": "post/champions/champions2025_esiti.html#possibili-miglioramenti-ed-estensioni",
-    "title": "Previsioni Champions League: com’è andata?",
-    "section": "Possibili miglioramenti ed estensioni",
-    "text": "Possibili miglioramenti ed estensioni"
-  },
-  {
-    "objectID": "post/champions/champions2025_esiti.html",
-    "href": "post/champions/champions2025_esiti.html",
-    "title": "Previsioni Champions League: com’è andata?",
+    "objectID": "papers.html#papers",
+    "href": "papers.html#papers",
+    "title": "Tommaso Rigon",
     "section": "",
-    "text": "Ieri ho diffuso in un post le previsioni per l’ultima giornata di Champions League, basandomi sulle quotazioni dei bookmakers. Oggi vogliamo controllare com’è andata. Ci sono state previsioni centrate (ad es. Inter - Monaco, Manchester City - Brugge) e altre che invece non si sono avverate (Milan - Dinamo Zagabria).\nAnzitutto, facciamo il punto sulle affermazioni fatte in TV o nel mio post.\n\nPrevisione corretta. L’Inter è passata direttamente agli ottavi di finale, classificandosi tra le prime quattro posizioni, come previsto.\nPrevisione errata. Il Milan non è passato agli ottavi, nonostante avesse l’82% di probabilità.\n\nPrevisione corretta. L’Atalanta è stata effettivamente in bilico (è arrivata 9ª) ed è infine andata ai playoff, come previsto.\n\nPrevisione corretta. La Juventus è andata ai playoff, come ampiamente previsto. Questa però era davvero facile da indovinare.\n\nPrevisione corretta. Il Manchester City è andato ai playoff, come previsto.\n\nComplessivamente, il quadro sembra abbastanza buono. Andiamo ora a verificare più nel dettaglio cosa ha funzionato e cosa no."
+    "text": "Preprints\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [ArXiv].\nAnceschi, N., Rigon, T., Zanella, G., and Durante D. (2025+). Optimal lower bounds for logistic log-likelihoods. Submitted. [ArXiv].\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025+). Bayesian analysis of product feature allocation models. Submitted. [ArXiv] [Github repository].\n\nArticles in refereed journals\n\nAgnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. Biometrika, to appear. [ArXiv].\nRigon, T., Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. Scandinavian Journal of Statistics, to appear. [Link].\nZito, A., Rigon, T., and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. Bayesian Analysis, to appear. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2024). Finite-dimensional discrete random structures and Bayesian clustering. Journal of the American Statistical Association (T&M), 119(546), 929–941. [Link].\nCatalano, M., Lijoi, A., Prünster, I. and Rigon, T. (2023). Bayesian modeling via discrete nonparametric priors. Japanese Journal of Statistics and Data Science, 6, 607–624 [Link].\nRigon, T. (2023). An enriched mixture model for functional clustering. Applied Stochastic Models in Business and Industry, 39, 232–250 [Link].\nRigon, T. and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. Statistics and Probability Letters, 202, 109901. [Link] [Github repository].\nRigon, T., Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. Biometrika, 110(3), 559–578. [Link] [Github repository].\nZito, A., Rigon, T. and Dunson, D. B. (2023). Inferring taxonomic placement from DNA barcoding aiding in discovery of new taxa. Methods in Ecology and Evolution, 14, 529–542 [Link] [GitHub Repository].\nZito, A., Rigon, T., Ovaskainen, O. and Dunson, D. B. (2023). Bayesian modelling of sequential discoveries. Journal of the American Statistical Association (T&M), 118(544), 2521–2532. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T., Durante, D. and Dunson D. B. (2022). Extended stochastic block models with application to criminal networks. Annals of Applied Statistics 16(4), 2369–2395. [Link] [GitHub repository].\nReverberi, C., Rigon, T., Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. Scientific Reports, 12(14952) [Link].\nFavaro, S., Panero, F. and Rigon, T. (2021). Bayesian nonparametric disclosure risk assessment. Electronic Journal of Statistics 15(2), 5626–5651. [Link].\nRigon, T. and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. Journal of Statistical Planning and inference 211, 131–142. [Link] [GitHub Repository].\nLegramanti, S., Rigon, T. and Durante, D. (2020). Bayesian testing for exogenous partition structures in stochastic block models. Sankhya A: The Indian Journal of Statistics, 84, 108–126. [Link] [GitHub repository].\nLijoi, A., Prünster, I. and Rigon, T. (2020). Sampling hierarchies of discrete random structures. Statistics and Computing 30, 1591–1607. [Link].\nLijoi, A., Prünster, I. and Rigon, T. (2020). The Pitman–Yor multinomial process for mixture modeling. Biometrika 107(4), 891–906. [Link].\nDurante, D. and Rigon, T. (2019). Conditionally conjugate mean-field variational Bayes for logistic models. Statistical Science 34(3), 472–485. [Link] [GitHub Repository].\nDurante, D., Canale, A. and Rigon, T. (2019). A nested expectation-maximization algorithm for latent class models with covariates. Statistics and Probability Letters 146, 97–103. [Link] [GitHub Repository].\nRigon, T., Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. Journal of the Royal Statistical Society, Series A 182(1), 225–247. [Link] [GitHub Repository].\n\nPublications in monographs, volumes, and discussions\n\nAgnoletto, D., Rigon, T. and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In Methodological and Applied Statistics and Demography III (Pollice, A. and Mariani, P., editors). Springer. [Link]\nRigon, T., Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: “Centered partition processes: Informative priors for clustering” Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in Bayesian Analysis 16(1) 301–370. [Link].\nAliverti, E., Paganin, S., Rigon, T. and Russo, M. (2019). A discussion on: “Latent nested nonparametric priors” by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in Bayesian Analysis 14(4), 1303–1356. [Link].\nCaponera, A., Denti, F., Rigon, T., Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In Studies in Neural Data Science (Canale, A., Durante, D., Paci, L. And Scarpa, B., editors). Springer. [Link] [GitHub Repository].\n\nNational conference proceedings\n\nAgnoletto, D., Rigon, T. and Scarpa, B. (2023). Bayesian density estimation for modeling age-at-death distribution. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nCogo, R., Camerlenghi, F. and Rigon, T. (2023). Hierarchical processes in survival analysis. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nPresicce, L., Rigon, T. and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In Book of Short Papers of the Italian Statistical Society (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618. [Link].\nLegramanti S., Rigon, T. and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In Book of Short Papers of the Italian Statistical Society (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN: 9788891932310. [Link].\nZito, A., Rigon, T. and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In Book of Short Papers of the Italian Statistical Society 2021 (Perna, C., Salvati, N. and Schirripa Spagnolo, F., editors). ISBN: 9788891927361. [Link - Part 1] [Link - Part 2].\nRigon, T. (2018). Logit stick-breaking priors for partially exchangeable count data. In Book of Short Papers SIS 2018 (Abbruzzo, A., Piacentino, D., Chiodi, M. and Brentari, E., editors). ISBN: 9788891910233. [Link]."
+  },
+  {
+    "objectID": "bio.html",
+    "href": "bio.html",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
+  },
+  {
+    "objectID": "bio.html#academic-positions",
+    "href": "bio.html#academic-positions",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "University of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nAssistant Professor (RTD-B), 2023 - Present\nAssistant Professor (RTD-A), 2020 - 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\nI worked with prof. Amy Herring and prof. David Dunson. My research focused on Bayesian methods for robust clustering, dimensionality reduction, and sequential species discovery.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollegio Carlo Alberto, Fondazione “de Castro” and Collegio Carlo Alberto, Turin, Italy.\n\nResearch Affiliate, 2017 - 2020\n\nI have been a Research affiliate at the Statistics initiative."
+  },
+  {
+    "objectID": "bio.html#education",
+    "href": "bio.html#education",
+    "title": "Tommaso Rigon",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\n\n\n\n\n\nPh.D. in Statistical Sciences, Bocconi University, Milan, Italy.\nPeriod 2015–2020. Ph.D. awarded with honors.\nThesis title: Finite-dimensional nonparametric priors: theory and applications.\nI worked under the joint supervision of prof. Antonio Lijoi and prof. Igor Prünster.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nM.Sc. in Statistical Sciences, University of Padova, Padua, Italy.\nPeriod 2013 - 2015. Final mark: 110/110 with laude.\nThesis title: Functional telecommunication data: a Bayesian nonparametric approach.\nAdvisor: Bruno Scarpa.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nB.Sc. in Statistics, Economics & Finance, University of Padova, Padua, Italy.\nPeriod 2010–2013. Final mark: 110/110 with laude.\nThesis title: Box-Cox transformation: an analysis based on the likelihood.\nAdvisor: Nicola Sartori."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "Ph.D. courses (Dottorato)\n\nStatistical Inference, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\nBayesian Computations, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\n\nM.Sc. courses (Laurea magistrale)\n\nData Mining, CdL Magistrale in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\n\nB.Sc. courses (Laurea triennale)\n\nStatistics I (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\nR for the multivariate statistical analysis (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca."
+  },
+  {
+    "objectID": "teaching.html#teaching-unimib",
+    "href": "teaching.html#teaching-unimib",
+    "title": "Tommaso Rigon",
+    "section": "",
+    "text": "Ph.D. courses (Dottorato)\n\nStatistical Inference, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\nBayesian Computations, Ph.D. in Economics, Statistics and Data Science, University of Milano-Bicocca.\n\nM.Sc. courses (Laurea magistrale)\n\nData Mining, CdL Magistrale in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\n\nB.Sc. courses (Laurea triennale)\n\nStatistics I (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.\nR for the multivariate statistical analysis (ITA), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca."
+  },
+  {
+    "objectID": "teaching.html#slides-of-talks-and-seminars",
+    "href": "teaching.html#slides-of-talks-and-seminars",
+    "title": "Tommaso Rigon",
+    "section": "Slides of talks and seminars",
+    "text": "Slides of talks and seminars\n\nSlides. Bayesian nonparametric prediction of the taxonomic affiliation of DNA sequences, UCLA, 2023.\nSlides. Finite-dimensional discrete random structures and Bayesian clustering, Duke University, 2023.\nSlides. The Stirling-gamma process and its application to Bayesian nonparametrics, BISP13, 2023.\nSlides. An enriched mixture model for functional clustering, PwC, 2022.\nSlides. Statistical learning via Bayesian nonparametrics, University of Milano-Bicocca, 2020.\nSlides. A generalized Bayes framework for probabilistic clustering, Collegio Carlo Alberto, 2020."
+  },
+  {
+    "objectID": "teaching.html#open-day-science-statistiche-ed-economiche-sse",
+    "href": "teaching.html#open-day-science-statistiche-ed-economiche-sse",
+    "title": "Tommaso Rigon",
+    "section": "Open Day, Science Statistiche ed Economiche (SSE)",
+    "text": "Open Day, Science Statistiche ed Economiche (SSE)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlides. Open Day, Science Statistiche ed Economiche (SSE), Università Milano-Bicocca, Dicembre 2022."
+  },
+  {
+    "objectID": "tesi.html",
+    "href": "tesi.html",
+    "title": "Informazioni per la tesi di laurea",
+    "section": "",
+    "text": "Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma la didattica, soprattutto quella “di base”, non riflette gli interessi di ricerca di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in “Statistica I” oppure in “Introduzione ad R”, anche perché sono corsi introduttivi.\nLe tematiche di cui mi occupo sono: applicazioni e metodi di statistica bayesiana (nonparametrica) & statistica computazionale. Per maggiori informazioni, si consiglia di consultare la lista delle pubblicazioni, oppure la lista di tesi passate che trovate in questa pagina.\nNel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d’ipotesi, metodi boostrap, etc.).\nPer informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon@unimib.it e venire quindi a ricevimento Martedì alle ore 17.30."
+  },
+  {
+    "objectID": "tesi.html#il-software-latex",
+    "href": "tesi.html#il-software-latex",
+    "title": "Informazioni per la tesi di laurea",
+    "section": "Il software LaTeX",
+    "text": "Il software LaTeX\nL’utilizzo del software LaTeX per la scrittura della tesi è caldamente raccomandato.\nLaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare Overleaf. Per una guida in italiano all’uso di LaTeX si consiglia LaTeX per l’impaziente oppure l’Arte di scrivere con LaTeX.\nViene inoltre reso disponibile un template LaTeX. Se compilato, il risultato finale dovrebbe coincidere con questo file, in formato .pdf."
+  },
+  {
+    "objectID": "tesi.html#tesi-passate-triennali-magistrali-e-dottorato",
+    "href": "tesi.html#tesi-passate-triennali-magistrali-e-dottorato",
+    "title": "Informazioni per la tesi di laurea",
+    "section": "Tesi passate (triennali, magistrali e dottorato)",
+    "text": "Tesi passate (triennali, magistrali e dottorato)\nVengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi.\n\nThesis\n\n\n\n\n\n\n\n\nA.A.\nLaurea\nCandidata/o\nTitolo\n\n\n\n\n\n\n\nLaurea Triennale\n\n\n2021/2022\nTriennale\nMarco Carrettoni\nAnalisi dei consumi energetici degli edifici dell’Università degli studi di Milano-Bicocca\n\n\n2021/2022\nTriennale\nErica Delvino\nRegressione nonparametrica tramite processi gaussiani\n\n\n2021/2022\nTriennale\nAnna Petranzan\nAn introduction to Bayesian mixture models and applications\n\n\n2022/2023\nTriennale\nGiulia De Innocentiis\nCriteri di selezione di un modello in ambito bayesiano\n\n\n2022/2023\nTriennale\nTommaso Menghini\nApproccio bayesiano applicato a modelli di regressione probit\n\n\n2023/2024\nTriennale\nStefano Andreoli\nMetodi di stima intervallare in un modello binomiale\n\n\n2023/2024\nTriennale\nRiccardo Cicuttin\nMetodi di campionamento per distribuzioni univariate\n\n\n\n\n\nLaurea Magistrale\n\n\n2020/2021\nMagistrale (Unipd)\nDavide Agnoletto\nAnalisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano\n\n\n2022/2023\nMagistrale\nGabriele Tinè\nPrevisione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità\n\n\n2023/2024\nMagistrale\nAnna Petranzan\nThe Gnedin model: recent developments and future perspectives\n\n\n2023/2024\nMagistrale\nLuna Cantaroni\nAnalisi della struttura interna de La Lombardia, attraverso l’utilizzo di modelli per blocchi stocastici estesi\n\n\n\n\n\nDottorato di ricerca\n\n\n2023\nPh.D. (Duke)\nAlessandro Zito\nEcological modeling via Bayesian nonparametric species sampling priors - Slides"
   },
   {
     "objectID": "post/champions/champions2025_esiti.html#comè-andata",
@@ -364,11 +266,11 @@
     "text": "Com’è andata?\nIeri ho diffuso in un post le previsioni per l’ultima giornata di Champions League, basandomi sulle quotazioni dei bookmakers. Oggi vogliamo controllare com’è andata. Ci sono state previsioni centrate (ad es. Inter - Monaco, Manchester City - Brugge) e altre che invece non si sono avverate (Milan - Dinamo Zagabria)."
   },
   {
-    "objectID": "post/champions/champions2025_esiti.html#errore-commesso-dai-bookmakers",
-    "href": "post/champions/champions2025_esiti.html#errore-commesso-dai-bookmakers",
+    "objectID": "post/champions/champions2025_esiti.html#le-previsioni-principali",
+    "href": "post/champions/champions2025_esiti.html#le-previsioni-principali",
     "title": "Previsioni Champions League: com’è andata?",
-    "section": "Errore commesso dai bookmakers",
-    "text": "Errore commesso dai bookmakers\nQuando facciamo una “previsione secca”, cioè diciamo che l’esito sarà 1, X o 2, ci basiamo sulle probabilità di ciascun risultato. Ad esempio, l’Aston Villa era favorito contro il Celtic FC (e infatti ha vinto 4-2) perché il 62% rappresentava una probabilità più alta rispetto al 22% (pareggio) e al 16% (sconfitta).\nPertanto, per la i-esima partita, avremo:\n\n\\text{Probabilità di indovinare l'}i\\text{-esimo incontro} = \\hat{p}_i = \\max(p_{i1}, p_{iX}, p_{i2}),\n\ndove p_{i1}, p_{iX}, p_{i2} sono le probabilità di vittoria, pareggio e sconfitta. Viceversa, la probabilità di sbagliare sarà:\n\n\\text{Probabilità di sbagliare l'}i\\text{-esimo incontro} = 1 - \\hat{p}_i.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSquadra 1\nSquadra 2\n1\nX\n2\nProbabilità di indovinare (\\hat{p}_i)\nProbabilità di sbagliare (1 - \\hat{p}_i)\n\n\n\n\nAston Villa\nCeltic FC\n0.62\n0.22\n0.16\n0.62\n0.38\n\n\nBarcellona\nAtalanta\n0.55\n0.23\n0.22\n0.55\n0.45\n\n\nDinamo Zagabria\nMilan\n0.17\n0.21\n0.62\n0.62\n0.38\n\n\n\nSu 18 partite, quindi, ci aspettiamo che il numero di errori commessi sia circa:\n\n\\text{Numero di errori commessi} = \\sum_{i=1}^{18}(1 - \\hat{p}_i) = 0.38 + 0.45 + 0.48 + \\cdots = 7.17.\n\n\n\n\n\n\n\nÈ possibile commettere meno errori? Purtroppo, oltre una certa soglia, non è possibile migliorare. L’errore minimo teorico si chiama “Bayes error rate” ed è ragionevole credere che, nel nostro caso, sia leggermente inferiore a 7.17/18 = 40\\%.\nL’errore minimo teorico nel calcio è piuttosto alto, perché si tratta di uno sport imprevedibile. Sbagliare, quindi, è inevitabile.\n\n\n\nNella prossima tabella (in gergo, una matrice di confusione) abbiamo confrontato le previsioni dei bookmaker con gli effettivi risultati.\n\n\n\n\n1 (Reale)\nX (Reale)\n2 (Reale)\n\n\n\n\n1 (Previsto)\n7\n2\n1\n\n\nX (Previsto)\n0\n0\n1\n\n\n2 (Previsto)\n3\n0\n4\n\n\n\nI bookmakers hanno quindi previsto correttamente l’esito di 11 partite su 18, ovvero hanno sbagliato 7 volte su 18. Tutto è andato esattamente come previsto: sapevamo che avremmo commesso circa 7 errori, ed è andata proprio così."
+    "section": "Le previsioni principali",
+    "text": "Le previsioni principali\nAnzitutto, facciamo il punto sulle affermazioni fatte in TV o nel mio post.\n\nPrevisione corretta. L’Inter è passata direttamente agli ottavi di finale, classificandosi tra le prime quattro posizioni, come previsto.\nPrevisione errata. Il Milan non è passato agli ottavi, nonostante avesse l’82% di probabilità di farlo.\n\nPrevisione corretta. L’Atalanta è stata effettivamente in bilico (è arrivata 9ª) ed è infine andata ai playoff, come previsto.\n\nPrevisione corretta. La Juventus è andata ai playoff, come ampiamente previsto. Questa però era davvero facile da indovinare.\n\nPrevisione corretta. Il Manchester City è andato ai playoff, come previsto.\n\nEntriamo ora maggiormente nel dettaglio delle singole previsioni."
   },
   {
     "objectID": "post/champions/champions2025_esiti.html#lerrore-commesso-dai-bookmakers",
@@ -378,458 +280,10 @@
     "text": "L’errore commesso dai bookmakers\nQuando facciamo una “previsione secca”, cioè indichiamo se l’esito sarà 1, X o 2, ci basiamo sulle probabilità di ciascun risultato. Pertanto, per la i-esima partita la probabilità di indovinare sarà:\n\n\\text{Probabilità di indovinare l'}i\\text{-esima previsione} = \\hat{p}_i = \\max \\{p_{i1}, p_{iX}, p_{i2}\\},\n dove p_{i1}, p_{iX}, p_{i2} sono le probabilità di vittoria, pareggio e sconfitta. Viceversa, la probabilità di sbagliare sarà:\n\n\\text{Probabilità di sbagliare l'}i\\text{-esima previsione} = 1 - \\hat{p}_i.\n\n\nAlcuni esempi\nAd esempio, l’Aston Villa era favorito contro il Celtic FC (ed in effetti ha vinto 4-2) perché il 62% rappresentava una probabilità più alta rispetto al 22% (pareggio) e al 16% (sconfitta).\n\n\n\n\n\n\n\n\n\n\n\n\nSquadra 1\nSquadra 2\n1\nX\n2\nProbabilità di indovinare (\\hat{p}_i)\nProbabilità di sbagliare (1 - \\hat{p}_i)\n\n\n\n\nAston Villa\nCeltic FC\n0.62\n0.22\n0.16\n0.62\n0.38\n\n\nBarcellona\nAtalanta\n0.55\n0.23\n0.22\n0.55\n0.45\n\n\nDinamo Zagabria\nMilan\n0.17\n0.21\n0.62\n0.62\n0.38\n\n\n\n\n\nLe nostre aspettative sugli errori commessi\nSu 18 partite, quindi, ci aspettiamo che il numero medio di errori commessi sia pari alla somma delle probabilità di sbagliare, vale a dire circa:\n\n\\text{Numero medio di errori commessi} = \\sum_{i=1}^{18}(1 - \\hat{p}_i) = 0.38 + 0.45 + 0.48 + \\cdots = 7.17.\n\n\n\n\n\n\n\n\nCome fare per ridurre il numero medio di errori? Una parte di questo errore dipende dalla bravura dei bookmakers. Purtroppo però, oltre una certa soglia, non si può migliorare.\nIl minimo errore di previsione possibile è chiamato “Bayes error rate” ed è ragionevole credere che, nel nostro caso, sia di poco inferiore a 7.17/18 = 40\\%.\nIl Bayes error rate nel calcio è spesso un numero abbastanza alto, perché si tratta di uno sport imprevedibile. Sbagliare, quindi, è inevitabile.\n\n\n\n\n\n\nQuanti errori sono stati effettivamente commessi?\nNella prossima tabella, chiamata matrice di confusione, abbiamo confrontato le previsioni dei bookmakers con i risultati effettivi.\n\n\n\n\n1 (Reale)\nX (Reale)\n2 (Reale)\n\n\n\n\n1 (Previsto)\n7\n2\n1\n\n\nX (Previsto)\n0\n0\n1\n\n\n2 (Previsto)\n3\n0\n4\n\n\n\n\n\n\n\n\n\n\nI bookmakers hanno previsto correttamente l’esito di 7 + 4 = 11 partite su 18, ovvero hanno sbagliato 7 volte su 18.\nTutto è andato esattamente secondo le aspettative: sapevamo che avremmo commesso circa 7 errori, ed è andata proprio così. Uno di questi errori, purtroppo, è stato proprio il Milan."
   },
   {
-    "objectID": "post/champions/champions2025_esiti.html#le-previsioni-principali",
-    "href": "post/champions/champions2025_esiti.html#le-previsioni-principali",
+    "objectID": "post/champions/champions2025_esiti.html#la-previsione-della-classifica",
+    "href": "post/champions/champions2025_esiti.html#la-previsione-della-classifica",
     "title": "Previsioni Champions League: com’è andata?",
-    "section": "Le previsioni principali",
-    "text": "Le previsioni principali\nAnzitutto, facciamo il punto sulle affermazioni fatte in TV o nel mio post.\n\nPrevisione corretta. L’Inter è passata direttamente agli ottavi di finale, classificandosi tra le prime quattro posizioni, come previsto.\nPrevisione errata. Il Milan non è passato agli ottavi, nonostante avesse l’82% di probabilità di farlo.\n\nPrevisione corretta. L’Atalanta è stata effettivamente in bilico (è arrivata 9ª) ed è infine andata ai playoff, come previsto.\n\nPrevisione corretta. La Juventus è andata ai playoff, come ampiamente previsto. Questa però era davvero facile da indovinare.\n\nPrevisione corretta. Il Manchester City è andato ai playoff, come previsto.\n\nEntriamo ora maggiormente nel dettaglio delle singole previsioni."
-  },
-  {
-    "objectID": "post/university/university.html",
-    "href": "post/university/university.html",
-    "title": "Università in cifre",
-    "section": "",
-    "text": "Attaching package: 'scales'\n\n\nThe following object is masked from 'package:purrr':\n\n    discard\n\n\nThe following object is masked from 'package:readr':\n\n    col_factor"
-  },
-  {
-    "objectID": "post/university/university.html#atenei-grandi-dimensioni",
-    "href": "post/university/university.html#atenei-grandi-dimensioni",
-    "title": "Università in cifre",
-    "section": "",
-    "text": "Attaching package: 'scales'\n\n\nThe following object is masked from 'package:purrr':\n\n    discard\n\n\nThe following object is masked from 'package:readr':\n\n    col_factor"
-  },
-  {
-    "objectID": "post/university/university.html#atenei",
-    "href": "post/university/university.html#atenei",
-    "title": "Università in cifre",
-    "section": "Atenei",
-    "text": "Atenei"
-  },
-  {
-    "objectID": "post/university/university.html#atenei-di-milano-di-medie-e-grandi-dimensioni",
-    "href": "post/university/university.html#atenei-di-milano-di-medie-e-grandi-dimensioni",
-    "title": "Università in cifre",
-    "section": "Atenei di Milano di medie e grandi dimensioni",
-    "text": "Atenei di Milano di medie e grandi dimensioni"
-  },
-  {
-    "objectID": "post/university/university.html#atenei-di-milano-medie-e-grandi-dimensioni",
-    "href": "post/university/university.html#atenei-di-milano-medie-e-grandi-dimensioni",
-    "title": "Università in cifre",
-    "section": "Atenei di Milano (medie e grandi dimensioni)",
-    "text": "Atenei di Milano (medie e grandi dimensioni)"
-  },
-  {
-    "objectID": "post/university/university.html#studenti-iscritti-università-e-politecnici-per-zona-geografica",
-    "href": "post/university/university.html#studenti-iscritti-università-e-politecnici-per-zona-geografica",
-    "title": "Università in cifre",
-    "section": "Studenti iscritti Università e Politecnici per zona geografica",
-    "text": "Studenti iscritti Università e Politecnici per zona geografica"
-  },
-  {
-    "objectID": "post/university/university.html#università-e-politecnici-per-zona-geografica",
-    "href": "post/university/university.html#università-e-politecnici-per-zona-geografica",
-    "title": "Università in cifre",
-    "section": "Università e politecnici per zona geografica",
-    "text": "Università e politecnici per zona geografica"
-  },
-  {
-    "objectID": "post/university/university.html#atenei-di-roma-medie-e-grandi-dimensioni",
-    "href": "post/university/university.html#atenei-di-roma-medie-e-grandi-dimensioni",
-    "title": "Università in cifre",
-    "section": "Atenei di ROMA (medie e grandi dimensioni)",
-    "text": "Atenei di ROMA (medie e grandi dimensioni)"
-  },
-  {
-    "objectID": "post/university/university.html#università-e-politecnici-per-zona-geografica-1",
-    "href": "post/university/university.html#università-e-politecnici-per-zona-geografica-1",
-    "title": "Università in cifre",
-    "section": "Università e politecnici per zona geografica",
-    "text": "Università e politecnici per zona geografica"
-  },
-  {
-    "objectID": "post/university/university.html#tipologia-di-ateneo",
-    "href": "post/university/university.html#tipologia-di-ateneo",
-    "title": "Università in cifre",
-    "section": "Tipologia di ateneo",
-    "text": "Tipologia di ateneo"
-  },
-  {
-    "objectID": "post/university/university.html#tipologia-di-ateneo-1",
-    "href": "post/university/university.html#tipologia-di-ateneo-1",
-    "title": "Università in cifre",
-    "section": "Tipologia di ateneo",
-    "text": "Tipologia di ateneo"
-  },
-  {
-    "objectID": "post/university/university.html#provenienze-e-destinazioni",
-    "href": "post/university/university.html#provenienze-e-destinazioni",
-    "title": "Università in cifre",
-    "section": "Provenienze e destinazioni",
-    "text": "Provenienze e destinazioni"
-  },
-  {
-    "objectID": "post/university/university.html#iscritti-per-regione",
-    "href": "post/university/university.html#iscritti-per-regione",
-    "title": "Università in cifre",
-    "section": "Iscritti per regione",
-    "text": "Iscritti per regione"
-  },
-  {
-    "objectID": "post/university/university.html#atenei-di-grandi-dimensioni-oltre-60.000-iscritti",
-    "href": "post/university/university.html#atenei-di-grandi-dimensioni-oltre-60.000-iscritti",
-    "title": "Università in cifre",
-    "section": "Atenei di grandi dimensioni (oltre 60.000 iscritti)",
-    "text": "Atenei di grandi dimensioni (oltre 60.000 iscritti)"
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html",
-    "href": "post/lotteria_AI/index.html",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "",
-    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come Repubblica e il Corriere della Sera. È comparsa inoltre su testate minori, tra cui: Torino Cronaca e Orizzonte Scuola.\n\n\n\n\n\nNon sorprende che una notizia del genere abbia attirato l’attenzione, perchè coinvolge temi sensibili come il gioco d’azzardo e l’intelligenza artificiale. Lo sfortunato titolo scelto da Repubblica è “Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”.\nPurtroppo, infatti, la notizia è stata data in modo errato ed estremamente fuorviante. Non è possibile prevedere in alcun modo i numeri del lotto, nè tramite strumenti tradizionali nè tramite l’intelligenza artificiale. La notizia è stata poi rettificata dal Corriere ed infine anche da Repubblica, sebbene con enfasi minore rispetto alla notizia iniziale."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#la-diffusione-della-notizia-falsa",
-    "href": "post/lotteria_AI/index.html#la-diffusione-della-notizia-falsa",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "",
-    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto 50.000 euro al lotto dichiarando di aver usato un algoritmo di intelligenza artificiale. La notizia è stata ripresa da vari quotidiani come Repubblica e il Corriere. È comparsa inoltre su testate minori: Torino Cronaca e Orizzonte Scuola.\nhttps://lecce.corriere.it/notizie/cronaca/25_marzo_06/lecce-studenti-vincono-al-lotto-con-l-intelligenza-artificiale-ma-l-esperto-spiega-impossibile-prevedere-e-solo-fortuna-4e6d734d-c81f-4d9f-9049-969cd1030xlk.shtml"
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#la-notizia",
-    "href": "post/lotteria_AI/index.html#la-notizia",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "",
-    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come Repubblica e il Corriere della Sera. È comparsa inoltre su testate minori: Torino Cronaca e Orizzonte Scuola.\nIl titolo scelto da Repubblica è “Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”. Purtroppo, però, la notizia è stata data in modo errato. Non è possibile prevedere i numeri del lotto. I tre studenti hanno semplicemente avuto fortuna. La notizia è stata poi corretta in un comunicato del Corriere, sebbene con enfasi minore rispetto alla notizia iniziale."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#i-precedenti-storici",
-    "href": "post/lotteria_AI/index.html#i-precedenti-storici",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "I precedenti storici",
-    "text": "I precedenti storici"
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#prevedere-il-lotto",
-    "href": "post/lotteria_AI/index.html#prevedere-il-lotto",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Prevedere il lotto",
-    "text": "Prevedere il lotto"
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#il-caso-di-cronaca",
-    "href": "post/lotteria_AI/index.html#il-caso-di-cronaca",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "",
-    "text": "Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani come Repubblica e il Corriere della Sera. È comparsa inoltre su testate minori, tra cui: Torino Cronaca e Orizzonte Scuola.\n\n\n\n\n\nNon sorprende che una notizia del genere abbia attirato l’attenzione, perchè coinvolge temi sensibili come il gioco d’azzardo e l’intelligenza artificiale. Lo sfortunato titolo scelto da Repubblica è “Vinti 50mila euro al Lotto grazie all’intelligenza artificiale”.\nPurtroppo, infatti, la notizia è stata data in modo errato ed estremamente fuorviante. Non è possibile prevedere in alcun modo i numeri del lotto, nè tramite strumenti tradizionali nè tramite l’intelligenza artificiale. La notizia è stata poi rettificata dal Corriere ed infine anche da Repubblica, sebbene con enfasi minore rispetto alla notizia iniziale."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#è-possibile-prevedere-il-numero-del-lotto",
-    "href": "post/lotteria_AI/index.html#è-possibile-prevedere-il-numero-del-lotto",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "È possibile prevedere il numero del lotto?",
-    "text": "È possibile prevedere il numero del lotto?\nIl gioco del lotto prevede che i numeri siano estratti casualmente e che ciascun numero abbia la stessa identica probabilità di essere estratto, cioè 1 / 90. Inoltre, le estrazioni sono tra loro indipendenti, ovvero l’estrazione di un numero non influenza l’estrazione successiva. In gergo, si dirà che ciascuna estrazione “non ha memoria” di cosa è successo in passato.\nLa prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente 1/90. Di conseguenza, non ha senso basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono oscillazioni casuali prive di significato.\n\n\n\n\n\n\nI numeri ritardatari\n\n\n\nUn errore comune è credere che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i “numeri ritardatari” vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.\nQuesto fraintendimento nasce da un errore di interpretazione della probabilità1. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero 1/90. Questo perché le estrazioni sono indipendenti le une dalle altre.\n\n\nA costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è impossibile prevedere i numeri del lotto. Questi concetti dovrebbero essere ben noti agli studenti di statistica, anche se lo sono meno per il pubblico più ampio. Da docente di Statistica, trovo piuttosto sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di Matematica e Fisica."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#footnotes",
-    "href": "post/lotteria_AI/index.html#footnotes",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Note",
-    "text": "Note\n\n\nÈ possibile che questo fraintendimento derivi dalla errata comprensione della legge dei grandi numeri, la quale stabilisce che la frazione di volte in cui un numero viene estratto si avvicina ad 1/90 all’aumentare del numero di prove. Questa affermazione è vera, ma non implica alcun effetto di “compensazione” tra due estrazioni successive. La probabilità è, in effetti, un argomento a volte controintuitivo.↩︎"
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#alcuni-precedenti-storici",
-    "href": "post/lotteria_AI/index.html#alcuni-precedenti-storici",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Alcuni precedenti storici",
-    "text": "Alcuni precedenti storici\n\n\n\n\n\n\nasd\n\n\n\nNel 2006, i produttori del programma investigativo The Fifth Estate della CBC contattarono prof. Jeff Rosenthal per un caso di frode alla lotteria. Il caso riguardava Bob Edmonds, un anziano giocatore di lotterie truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una lunga battaglia legale di 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la Ontario Lottery and Gaming Corporation (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e mi chiese di analizzare i dati da un punto di vista statistico.\nLa vicenda è discussa in questo articolo, che descrive il ruolo che una semplice analisi statistica ha avuto nello svelare lo scandalo dei rivenditori della lotteria dell’Ontario. Il caso è diventato una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari.\nQuesta storia rappresenta una potente testimonianza dell’importanza e del potere della statistica."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#gli-studenti-sono-stati-fortunati",
-    "href": "post/lotteria_AI/index.html#gli-studenti-sono-stati-fortunati",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Gli studenti sono stati fortunati?",
-    "text": "Gli studenti sono stati fortunati?\nUn aspetto controintuitivo della vicenda riguarda il fatto che la probabilità di vincere 50’000 euro è un avvenimento piuttosto raro. Questo porta ad un altro tipico fraintendimento: “poichè l’evento è raro, non può essere stato un caso!”. In realtà, gli eventi rari capitano tutti giorni, del resto altrimenti nessuno vincerebbe mai il superenalotto."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#lo-scandalo-della-ontario-lottery-and-gaming-corporation",
-    "href": "post/lotteria_AI/index.html#lo-scandalo-della-ontario-lottery-and-gaming-corporation",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Lo scandalo della Ontario Lottery and Gaming Corporation",
-    "text": "Lo scandalo della Ontario Lottery and Gaming Corporation\n\n\n\n\n\n\nSe le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando questo accade, è perchè qualche ipotesi non è stata rispettata, anche per motivi fraudolenti.\n\n\n\nNel 2006, i produttori del programma investigativo The Fifth Estate della CBC contattarono prof. Jeff Rosenthal per un caso di frode alla lotteria. Il caso riguardava Bob Edmonds, un anziano giocatore di lotterie truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una lunga battaglia legale di 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la Ontario Lottery and Gaming Corporation (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e mi chiese di analizzare i dati da un punto di vista statistico.\nLa vicenda è discussa in questo articolo, che descrive il ruolo che una semplice analisi statistica ha avuto nello svelare lo scandalo dei rivenditori della lotteria dell’Ontario. Il caso è diventato una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari.\nQuesta storia rappresenta una potente testimonianza dell’importanza e del potere della statistica."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#lo-scandalo-della-lotteria-dellontario",
-    "href": "post/lotteria_AI/index.html#lo-scandalo-della-lotteria-dellontario",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Lo scandalo della lotteria dell’Ontario",
-    "text": "Lo scandalo della lotteria dell’Ontario\n\n\n\n\n\n\nSe le assunzioni che abbiamo menzionato sono rispettate, allora non dovrebbero emergere anomalie statistiche. Quando invece queste si manifestano, significa che almeno una delle ipotesi non è rispettata, a volte purtroppo per ragioni fraudolente.\nDopotutto, se fosse davvero possibile prevedere i numeri del lotto, ciò equivarebbe ad accusare lo Stato italiano di incompetenza o addirittura di frode. In effetti, in Canada è capitato davvero, come raccontato in questa storia.\n\n\n\nNel 2006, i produttori del programma investigativo canadese The Fifth Estate della CBC contattarono il prof. Jeff Rosenthal per un caso di frode alla lotteria dell’Ontario. Il caso riguardava Bob Edmonds, un anziano giocatore truffato da un commesso che si appropriò del suo biglietto vincente da 250.000 dollari. Dopo una battaglia legale durata 3,5 anni, Edmonds riuscì a ottenere 200.000 dollari, ma solo accettando un accordo di riservatezza con la Ontario Lottery and Gaming Corporation (OLG). La CBC sospettò che l’OLG volesse coprire altri casi simili e chiese a Rosenthal di analizzare i dati da un punto di vista statistico.\nL’analisi completa è disponibile in questo articolo, che descrive come una semplice analisi statistica abbia contribuito a svelare lo scandalo dei rivenditori della lotteria dell’Ontario. Il caso divenne una notizia di primo piano in Canada, portando a dibattiti legislativi, al licenziamento di due CEO, a diverse accuse penali, condanne al carcere e risarcimenti per oltre venti milioni di dollari.\nQuesta storia rappresenta una potente testimonianza dell’importanza e del potere della statistica."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#le-coincidenze-sono-sorprendenti",
-    "href": "post/lotteria_AI/index.html#le-coincidenze-sono-sorprendenti",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Le coincidenze sono sorprendenti?",
-    "text": "Le coincidenze sono sorprendenti?\nCerchiamo ora di fare luce su un aspetto controintuitivo di questa vicenda. Infatti, vincere 50.000 euro al lotto è un evento piuttosto raro. Questo potrebbe indurre a pensare che non possa essere stata una coincidenza e che sia sotto qualcosa di più. In realtà, gli eventi rari accadono ogni giorno; altrimenti, nessuno vincerebbe mai il Superenalotto.\nPer districare questo apparente paradosso, è utile considerare il numero di tentativi effettuati. In altre parole, quante persone hanno giocato al lotto in tutta Italia, magari utilizzando l’intelligenza artificiale? Tantissime, e la stragrande maggioranza di loro non ha vinto nulla.\nQuesto stesso fraintendimento, che in questo caso ha conseguenze relativamente innocue, può avere effetti ben più gravi in altri contesti. Un esempio tristemente noto è il caso di Sally Clark, ingiustamente accusata di aver ucciso i propri figli a causa di un’errata interpretazione della probabilità. Purtroppo, dopo essere stata scagionata, si tolse la vita."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#qualche-nota-biografica",
-    "href": "post/lotteria_AI/index.html#qualche-nota-biografica",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Qualche nota biografica",
-    "text": "Qualche nota biografica\nTutti questi fraintendimenti sono ben raccontati nel libro divulgativo “Struck By Lightning: The Curious World Of Probabilities” di Jeff Rosenthal, edito in italiano da Longanesi, “Le regole del caso: istruzioni per l’uso”.\nSi veda anche il video YouTube in inglese di WIRED: “Jeff Rosenthal: Stat support (WIRED)”."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#riferimenti",
-    "href": "post/lotteria_AI/index.html#riferimenti",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Riferimenti",
-    "text": "Riferimenti\nTutti questi fraintendimenti sono ben raccontati nel libro divulgativo Struck By Lightning: The Curious World Of Probabilities di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo Le regole del caso: istruzioni per l’uso.\nSi veda anche il video YouTube divulgativo: Statistician Answers Stats Questions From Twitter di WIRED."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#alcuni-riferimenti",
-    "href": "post/lotteria_AI/index.html#alcuni-riferimenti",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "Alcuni riferimenti",
-    "text": "Alcuni riferimenti\nTutti questi fraintendimenti sono ben raccontati nel libro Struck By Lightning: The Curious World Of Probabilities di Jeff Rosenthal, pubblicato in italiano da Longanesi con il titolo Le regole del caso: istruzioni per l’uso.\nSi veda anche il video YouTube: Statistician Answers Stats Questions From Twitter di WIRED."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#è-possibile-prevedere-il-numeri-del-lotto",
-    "href": "post/lotteria_AI/index.html#è-possibile-prevedere-il-numeri-del-lotto",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "È possibile prevedere il numeri del lotto?",
-    "text": "È possibile prevedere il numeri del lotto?\nIl gioco del lotto prevede che i numeri siano estratti casualmente e che ciascun numero abbia la stessa identica probabilità di essere estratto, cioè 1 / 90. Inoltre, le estrazioni sono tra loro indipendenti, ovvero l’estrazione di un numero non influenza l’estrazione successiva. In gergo, si dirà che ciascuna estrazione “non ha memoria” di cosa è successo in passato.\nLa prima conseguenza di queste assunzioni è che, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà approssimativamente 1/90. Di conseguenza, non ha senso basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali discrepanze nelle frequenze empiriche dei singoli numeri sono oscillazioni casuali prive di significato.\n\n\n\n\n\n\nI numeri ritardatari\n\n\n\nUn errore comune è credere che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i “numeri ritardatari” vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.\nQuesto fraintendimento nasce da un errore di interpretazione della probabilità1. Anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero 1/90. Questo perché le estrazioni sono indipendenti le une dalle altre.\n\n\nA costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è impossibile prevedere i numeri del lotto. Questi concetti dovrebbero essere ben noti agli studenti di statistica, anche se lo sono meno per il pubblico più ampio. Da docente di Statistica, trovo piuttosto sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di Matematica e Fisica."
-  },
-  {
-    "objectID": "post/lotteria_AI/index.html#è-possibile-prevedere-i-numeri-del-lotto",
-    "href": "post/lotteria_AI/index.html#è-possibile-prevedere-i-numeri-del-lotto",
-    "title": "Come mai non è possibile prevedere i numeri del lotto",
-    "section": "È possibile prevedere i numeri del lotto?",
-    "text": "È possibile prevedere i numeri del lotto?\nIl gioco del lotto prevede che i numeri siano estratti casualmente e che ciascun numero abbia la stessa probabilità di essere estratto, cioè 1 / 90. Inoltre, le estrazioni sono tra loro indipendenti, ovvero l’estrazione di un numero non influenza quella successiva. In gergo, si dirà che ciascuna estrazione “non ha memoria” di cosa è successo in passato.\nDunque, nel lungo periodo, la frequenza delle estrazioni di ciascun numero sarà circa 1/90. Di conseguenza, non ha senso basare le proprie scelte sui numeri usciti più di frequente, come fatto dai tre studenti, apparentemente su suggerimento del loro tabaccaio. Eventuali differenze nelle frequenze dei numeri del lotto sono oscillazioni casuali prive di significato.\n\n\n\n\n\n\nI numeri ritardatari\n\n\n\nUna credenza comune è che un numero che non esce da molto tempo abbia maggior probabilità di essere estratto. Questa superstizione è rafforzata dal fatto che, nelle tabaccherie, i “numeri ritardatari” vengono spesso mostrati su monitor e tabelloni, come se questa informazione fosse utile ai giocatori. In realtà, non lo è.1\nCome detto prima, anche se un numero non è stato estratto per molto tempo, la probabilità che esca al prossimo sorteggio rimane invariata, ovvero 1/90. Questo proprio perché le estrazioni sono indipendenti le une dalle altre e “non si ricordano” cosa sia successo in passato.\n\n\nA costo di risultare ripetitivo: sotto queste assunzioni (casualità delle estrazioni, probabilità uguali tra di loro, indipendenza) è impossibile prevedere i numeri del lotto.\nQuesti concetti dovrebbero essere ben noti agli studenti di statistica. Da docente, trovo sconfortante che un fraintendimento così elementare provenga proprio da studenti universitari di matematica e fisica."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html",
-    "href": "post/lotteria_AI/lotteria_truccata.html",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "",
-    "text": "Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un grave errore, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nI numeri del lotto vengono estratti tramite un macchinario che utilizza palline numerate. Il video seguente mostra come avviene l’estrazione dei numeri (estrazione del 6 Marzo 2025).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSebbene l’onere della prova dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-di-bari-è-truccata",
-    "href": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-di-bari-è-truccata",
-    "title": "La lotteria di Bari non è sbilanciata",
-    "section": "",
-    "text": "Dopo la pubblicazione del post di qualche giorno fa riguardante il caso della lotteria di Bari, alcuni commentatori social hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria di Bari hanno per anni commesso un errore grave, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nSebbene l’onere della prova dovrebbe spettare anzitutto a chi questa accusa la muove, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria di Bari degli ultimi 25 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#il-test-dipotesi",
-    "href": "post/lotteria_AI/lotteria_truccata.html#il-test-dipotesi",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "Il test d’ipotesi",
-    "text": "Il test d’ipotesi\n\n\n\n    Chi-squared test for given probabilities\n\ndata:  freq\nX-squared = 82.232, df = 89, p-value = 0.681"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-di-bari-dal-2-gennaio-2010-ad-oggi",
-    "href": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-di-bari-dal-2-gennaio-2010-ad-oggi",
-    "title": "La lotteria di Bari non è sbilanciata",
-    "section": "I dati della lotteria di Bari, dal 2 Gennaio 2010 ad oggi",
-    "text": "I dati della lotteria di Bari, dal 2 Gennaio 2010 ad oggi\nI dati del Lotto sono a disposizione sul sito del Lotto a partire dalle estrazioni del 1939. Pertanto questa analisi è replicabile da chiunque avesse interesse a farlo.\n\n\n\n\n\nData\nProvincia\nN1\nN2\nN3\nN4\nN5\n\n\n\n\n2001-01-03\nBA\n26\n59\n60\n67\n17\n\n\n2001-01-08\nBA\n84\n80\n40\n15\n9\n\n\n2001-01-10\nBA\n14\n87\n29\n75\n76\n\n\n2001-01-13\nBA\n57\n64\n32\n84\n18\n\n\n2001-01-17\nBA\n16\n5\n41\n3\n68\n\n\n2001-01-20\nBA\n14\n32\n28\n75\n82\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n\n\n\n\n27\n19\n28\n25\n31\n33\n25\n29\n31\n34\n23\n24\n35\n25\n33\n\n\n\n\n\n\n\n\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\n\n\n\n37\n30\n23\n30\n27\n26\n19\n29\n28\n27\n26\n27\n23\n28\n34\n\n\n\n\n\n\n\n\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n\n\n\n\n28\n26\n27\n30\n33\n29\n26\n31\n23\n28\n28\n26\n33\n29\n17\n\n\n\n\n\n\n\n\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n\n\n\n\n32\n42\n20\n28\n18\n30\n26\n22\n35\n27\n21\n33\n27\n20\n29\n\n\n\n\n\n\n\n\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n\n\n\n\n28\n24\n18\n16\n20\n31\n26\n22\n30\n27\n20\n26\n29\n29\n29\n\n\n\n\n\n\n\n\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n\n\n\n\n27\n22\n18\n33\n33\n33\n21\n40\n25\n29\n26\n24\n26\n28\n27"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#approcci-di-verifica-più-sofisticati",
-    "href": "post/lotteria_AI/lotteria_truccata.html#approcci-di-verifica-più-sofisticati",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "Approcci di verifica più sofisticati",
-    "text": "Approcci di verifica più sofisticati"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-è-truccata",
-    "href": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-è-truccata",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "",
-    "text": "Dopo la pubblicazione del post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un errore grave, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nSebbene l’onere della prova dovrebbe spettare anzitutto a chi questa accusa la muove, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-nazionale",
-    "href": "post/lotteria_AI/lotteria_truccata.html#i-dati-della-lotteria-nazionale",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "I dati della lotteria nazionale",
-    "text": "I dati della lotteria nazionale\nI dati delle estrazioni del Lotto sono a disposizione sul sito ufficiale del Lotto a partire dalle estrazioni del 1939. La lotteria nazionale inizia invece dal 5 Maggio 2005, cioè la data della prima estrazione nazionale. Questa analisi è replicabile da chiunque avesse interesse a farlo.\nPer dare un po’ di contesto, i 3 studenti dell’Università del Salento hanno scommesso sui numeri 21 e 48 della lotteria nazionale in data 1 Marzo 2025, vincendo, come si può vedere nella fotografia allegata.\n\n\n\nImmagine tratta dall’articolo originale di Repubblica.\n\n\nA titolo di esempio, le ultime cinque estrazioni sono state:\n\n\n\n\n\nData\nN1\nN2\nN3\nN4\nN5\n\n\n\n\n2025-02-28\n14\n78\n18\n40\n8\n\n\n2025-03-01\n21\n48\n3\n17\n62\n\n\n2025-03-04\n57\n54\n79\n44\n40\n\n\n2025-03-06\n34\n83\n53\n81\n14\n\n\n2025-03-07\n45\n81\n88\n30\n28\n\n\n\n\n\nA detta stessa dei 3 studenti e di alcuni commentatori dei social, ci sarebbero delle anomalie nelle frequenze dei numeri del lotto. Ho calcolato le frequenze di ciascun numero, per verificare questa affermazione e non ho riscontrato anomalie. Per semplicità, qui di seguito riporto le frequenze del primo numero estratto (N1); si veda la fine di questo post per un approccio leggermente più sofisticato, che tenga conto di tutti i numeri.\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n\n\n\n\n25\n43\n32\n41\n32\n40\n42\n30\n31\n42\n31\n35\n36\n34\n51\n\n\n\n\n\n\n\n\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n\n\n\n\n41\n36\n28\n25\n33\n32\n37\n41\n23\n33\n29\n40\n39\n39\n31\n\n\n\n\n\n\n\n\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n\n\n\n\n43\n28\n31\n40\n32\n26\n30\n26\n32\n41\n30\n41\n32\n34\n37\n\n\n\n\n\n\n\n\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n\n\n\n\n42\n40\n34\n35\n43\n39\n40\n41\n34\n36\n39\n39\n39\n32\n35\n\n\n\n\n\n\n\n\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n\n\n\n\n38\n39\n37\n46\n29\n35\n22\n30\n33\n43\n28\n30\n36\n37\n26\n\n\n\n\n\n\n\n\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n\n\n\n\n27\n40\n47\n32\n50\n30\n22\n43\n31\n41\n45\n25\n33\n44\n29\n\n\n\n\n\n\nIn totale sono state effettuate n = 3171 estrazioni. Ad un occhio poco esperto, potrebbe sembrare che i numeri 15 ed 80 compaiano con maggiore frequenza rispetto agli altri (51 volte e 50 volte, rispettivamente). È anche ironico notare che non si tratta dei numeri (21 e 48) usati nella famosa scommessa – non saprei proprio dire quale criterio abbiano seguito i tre studenti salentini. In ogni caso, si tratta di oscillazioni casuali, come vedremo.\nPossiamo anche rappresentare graficamente queste frequenze, ottenendo il seguente diagramma a bastoncini.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa tabella ed il grafico confermano che ci sono delle oscillazioni nelle frequenze: alcuni numeri sono comparsi di più, altri di meno. Questo è un fenomeno assolutamente normale!"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-nazionale-è-truccata",
-    "href": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-nazionale-è-truccata",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "",
-    "text": "Dopo la pubblicazione del post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un errore grave, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nSebbene l’onere della prova dovrebbe spettare anzitutto a chi questa accusa la muove, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-sbilanciata",
-    "href": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-sbilanciata",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "Oscillazioni casuali o lotteria sbilanciata?",
-    "text": "Oscillazioni casuali o lotteria sbilanciata?\nPer stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli strumenti statistici un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con n_1,\\dots,n_{90}, seguono una distribuzione multinomiale di parametro n = 3171 e probabilità p_1,\\dots,p_{90}.\nVogliamo verificare se le probabilità p_1,\\dots,p_{90} sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a 1/90. Per far questo, facciamo uso del celeberrimo test del Chi-quadrato. In pratica, confrontiamo le frequenze che abbiamo osservato n_1,\\dots,n_{90} con quelle “teoriche”, pari a n_\\text{teo} = n / 90 = 35.233. Otteniamo: \nX^2 = \\frac{(n_1 - n_\\text{teo})^2 + \\cdots + (n_{90} - n_\\text{teo})^2}{n_\\text{teo}} = 102.12.\n Il numero X^2 = 102.12 va confrontato con i valori che ci aspetteremmo di osservare se la lotteria fosse regolare, che sono compresi tra circa 65 e 117. Più rigorosamente, calcoliamo il cosiddetto p-value, un concetto tecnico un po’ difficile da raccontare, ma che in buona sostanza ci conferma che non ci sono anomalie statistiche. Per gli statistici in ascolto, ecco i risultati completi:\n\n\n\n    Chi-squared test for given probabilities\n\ndata:  freq\nX-squared = 102.12, df = 89, p-value = 0.1615"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-nazionale-è-sbilanciata",
-    "href": "post/lotteria_AI/lotteria_truccata.html#la-lotteria-nazionale-è-sbilanciata",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "",
-    "text": "Dopo la pubblicazione del post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un errore grave, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nSebbene l’onere della prova dovrebbe spettare anzitutto a chi questa accusa la muove, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-più-complessi",
-    "href": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-più-complessi",
-    "title": "La lotteria nazionale non è sbilanciata",
-    "section": "Un cenno a metodi più complessi",
-    "text": "Un cenno a metodi più complessi\n\n\n\n\n\n\nE gli altri numeri?\n\n\n\nasd\n\n\n\n\n\n\n\n\nE l’ipotesi di indipendenza?\n\n\n\nasd"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-statistici-più-complessi",
-    "href": "post/lotteria_AI/lotteria_truccata.html#un-cenno-a-metodi-statistici-più-complessi",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "Un cenno a metodi statistici più complessi",
-    "text": "Un cenno a metodi statistici più complessi\n\n\n\n\n\n\nE gli altri numeri?\n\n\n\nIn effetti, i numeri della lotteria sono 5 mentre noi abbiamo analizzato soltanto il primo (N1). Ho pertanto eseguito la stessa analisi per tutti i numeri N1, N2, N3, N4 ed N5, applicando una correzione di Bonferroni, senza registrare alcuna anomalia. A dirla tutta, nessun p-value risultava inferiore a 0.1, rendendo superflua la correzione di Bonferroni.\nAncor meglio, si potrebbe modellare la distribuzione congiunta dei 5 numeri della lotteria e confrontarla quindi con una distribuzione ipergeometrica multivariata. Questra strada è forse la migliore ed è anche tecnicamente percorribile, ma richiede un po’ troppo lavoro aggiuntivo che mi sembrava eccessivo ai fini di questo post.\n\n\n\n\n\n\n\n\nE l’ipotesi di indipendenza?\n\n\n\nIn questa analisi abbiamo fatto uso dell’ipotesi di indipendenza tra le diverse estrazioni. È un’ipotesi molto ragionevole, anche perchè la sua violazione è molto probabilmente legata ad una frode.\nIn linea di principio, anche l’ipotesi di indipendenza può essere messa sotto attento scrutinio statistico, al costo di un po’ di lavoro aggiuntivo. Mi sembra, però, che l’accusa di frode allo stato italiano sfoci nel complottismo, soprattutto se non supportata da ulteriori prove indiziali di altra natura.\n\n\n\nUn aggiornamento ed un’elegante soluzione\nProprio nel paragrafo precedente, ho accennato alla possibilità di modellare la distribuzione congiunta dei 5 numeri della lotteria e confrontarla con una distribuzione ipergeometrica multivariata. L’approccio è corretto ma un po’ complicato. Fortunamente, esiste una elegante soluzione che consente di semplificare notevolmente il problema.\nNell’articolo Stigler (2003), che quando ho scritto questo post non avevo letto, si fa riferimento ad un test del chi-quadrato simile a quello che ho eseguito qui sopra. Stigler considera le frequenze N_1,\\dots, N_{90} di tutti e 5 i numeri della lotteria e considera quindi una correzione di X^2 che tenga conto del fatto che le cinquine sono state estratte senza reinserimento. Stigler, a sua volta, rimanda all’autorevole libro McCullagh & Nelder (1986, pag. 191-192) per i dettagli formali, in cui il problema è dato come esercizio (!).\nIn questo caso, avremo che N = 15855 e che N_\\text{teo} = N / 90 = 176.167. Il test del chi-quadrato, aggiustato per tener conto dei reinserimenti, è \n(X^2 \\text{ corretto}) = \\frac{89}{85}X^2 = \\frac{89}{85}\\frac{(N_1 - N_\\text{teo})^2 + \\cdots + (N_{90} - N_\\text{teo})^2}{N_\\text{teo}} = 87.33.\n I risultati completi sono riportati nel seguito, incluso il p-value, che nuovamente non mostra alcuna evidenza di uno sbilanciamento della lotteria.\n\n\n\nX^2\nX^2 corretto\nGradi di libertà\np-value\n\n\n\n\n83.40114\n87.32589\n89\n0.5303704\n\n\n\nL’articolo di Stigler inoltre menziona anche a test utili a verificare l’ipotesi di indipendenza delle estrazioni, che tuttavia qui non approfondiremo."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#unanalisi-delle-estrazioni-della-lotteria-nazionale",
-    "href": "post/lotteria_AI/lotteria_truccata.html#unanalisi-delle-estrazioni-della-lotteria-nazionale",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "",
-    "text": "Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in particolare l’equiprobabilità dei numeri del lotto. In altri termini, secondo loro, alcuni numeri avrebbero maggiore probabilità di essere estratti rispetto ad altri.\nSe ciò fosse vero, significherebbe che i dipendenti della lotteria hanno per anni commesso un grave errore, fatto che probabilmente avrebbero ripercussioni legali importanti. In buona sostanza, l’ipotesi alternativa di alcuni commentatori è che il macchinario con cui vengono estratti i numeri sia “difettoso” e che questo favorisca alcuni numeri rispetto ad altri.\nI numeri del lotto vengono estratti tramite un macchinario che utilizza palline numerate. Il video seguente mostra come avviene l’estrazione dei numeri (estrazione del 6 Marzo 2025).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSebbene l’onere della prova dovrebbe spettare a chi muove questa accusa, ho deciso ugualmente di prendere le parti della difesa e di analizzare i dati a disposizione.\nDopo aver studiato i dati della lotteria nazionale degli ultimi 20 anni, non ho registrato alcun tipo di anomalia statistica. In altri termini, non c’è evidenza di alcun macchinario difettoso."
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-difettosa",
-    "href": "post/lotteria_AI/lotteria_truccata.html#oscillazioni-casuali-o-lotteria-difettosa",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "Oscillazioni casuali o lotteria difettosa?",
-    "text": "Oscillazioni casuali o lotteria difettosa?\nPer stabilire se le oscillazioni che abbiamo registrato sono frutto del caso o meno, dobbiamo usare degli strumenti statistici un po’ più complicati. Sotto l’ipotesi di indipendenza delle estrazioni, ma non quella di equidistribuzione, la frequenze che abbiano riportato sopra, che indichiamo con n_1,\\dots,n_{90}, seguono una distribuzione multinomiale di parametro n = 3171 e probabilità p_1,\\dots,p_{90}.\nVogliamo verificare se le probabilità p_1,\\dots,p_{90} sono diverse tra loro, cosa che indicherebbe la presenza di un macchinario “difettoso”, oppure se sono uguali tra loro e pari a 1/90. Per far questo, facciamo uso del celeberrimo test del Chi-quadrato2. In pratica, confrontiamo le frequenze che abbiamo osservato n_1,\\dots,n_{90} con quelle “teoriche”, pari a n_\\text{teo} = n / 90 = 35.233. Otteniamo: \nX^2 = \\frac{(n_1 - n_\\text{teo})^2 + \\cdots + (n_{90} - n_\\text{teo})^2}{n_\\text{teo}} = 102.12.\n Il numero X^2 = 102.12 va confrontato con i valori che ci aspetteremmo di osservare se la lotteria fosse regolare, che sono compresi tra circa 65 e 117. Più rigorosamente, calcoliamo il cosiddetto p-value, un concetto tecnico un po’ difficile da raccontare, ma che in buona sostanza ci conferma che non ci sono anomalie statistiche. Per gli statistici in ascolto, ecco i risultati completi:\n\n\n\n    Chi-squared test for given probabilities\n\ndata:  freq\nX-squared = 102.12, df = 89, p-value = 0.1615"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#footnotes",
-    "href": "post/lotteria_AI/lotteria_truccata.html#footnotes",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "Note",
-    "text": "Note\n\n\nQuesto bell’articolo mi è stato segnalato dal prof. Aldo Solari, che ha letto una versione iniziale di questo post e che ringrazio molto.↩︎\nIl test del chi-quadrato è un famoso test statistico introdotto da Karl Pearson all’inizio del secolo scorso. Una trattazione più dettagliata si può trovare in Sezione 1.5.2 del libro Agresti (2013).↩︎"
-  },
-  {
-    "objectID": "post/lotteria_AI/lotteria_truccata.html#un-problema-storico",
-    "href": "post/lotteria_AI/lotteria_truccata.html#un-problema-storico",
-    "title": "La lotteria nazionale non è difettosa",
-    "section": "Un problema storico",
-    "text": "Un problema storico\nIl problema dell’equità di una lotteria ha una lunga e importante storia, che è elegantemente raccontata nell’articolo di storia della statistica di Stigler (2003)1:\n\nStigler S. M. (2003), Casanova, «Bonaparte», and the loterie de France, Journal de la société française de statistique, 144(1-2), 5–34.\n\nGli strumenti statistici che qui presenteremo sono simili a quelli usati da Stigler per analizzare la lotteria francese del 18esimo secolo. L’articolo di Stigler è molto più completo e dettagliato di questo post, e ne consiglio caldamente la lettura. Anzitutto, è una testimonianza importante di quanta intelligenza sia già stata dedicata alla questione della lotteria, oltre che esempio di come la statistica possa risolvere problemi concreti."
-  },
-  {
-    "objectID": "post/talks/BISP2025.html#homepage",
-    "href": "post/talks/BISP2025.html#homepage",
-    "title": "Point estimation",
-    "section": "Homepage",
-    "text": "Homepage"
-  },
-  {
-    "objectID": "post/talks/BISP2025.html#foundations",
-    "href": "post/talks/BISP2025.html#foundations",
-    "title": "BISP14 workshop",
-    "section": "Foundations",
-    "text": "Foundations\nDe Finetti’s representation Theorem (De Finetti 1937) has a central role in Bayesian statistics because it provides the fundamental justification to the two approaches to Bayesian statistics:\n\nthe hypothetical approach;\nthe predictive approach.\n\n\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\n\nLet (Y_n)_{n\\ge 1}, Y_n\\in\\mathcal{Y}, be a sequence of exchangeable random variables with probability law P. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1,\n\nP(y_1,\\ldots,y_n) = \\int_{\\mathcal{F}} \\prod_{i=1}^n F(y_i)\\,\\Pi(\\mathrm{d}F).\n\n\n\n\nWhile representing opposite interpretations of the Theorem, the two approaches are intrinsically connected."
-  },
-  {
-    "objectID": "post/talks/BISP2025.html#references",
-    "href": "post/talks/BISP2025.html#references",
-    "title": "BISP14 workshop",
-    "section": "References",
-    "text": "References\n\n\nBissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), “A general framework for updating belief distributions,” Journal of the Royal Statistical Society: Series B (Statistical Methodology), Wiley Online Library, 78, 1103–1130.\n\n\nChernozhukov, V., and Hong, H. (2003), “An MCMC approach to classical estimation,” Journal of econometrics, Elsevier, 115, 293–346.\n\n\nDe Finetti, B. (1937), “La prévision: Ses lois logiques, ses sources subjectives,” in Annales de l’institut henri poincaré, pp. 1–68.\n\n\nGrünwald, P. D., and Mehta, N. A. (2020), “Fast rates for general unbounded loss functions: from ERM to generalized Bayes,” The Journal of Machine Learning Research, JMLRORG, 21, 2040–2119.\n\n\nGrünwald, P., and Van Ommen, T. (2017), “Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it,” Bayesian Analysis, 12, 1069–1103.\n\n\nHeide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), “Safe-bayesian generalized linear regression,” in Proceedings of the twenty third international conference on artificial intelligence and statistics, PMLR, pp. 2623–2633.\n\n\nHolmes, C. C., and Walker, S. G. (2017), “Assigning a value to a power likelihood in a general Bayesian model,” Biometrika, Oxford University Press, 104, 497–503.\n\n\nJewson, J., and Rossell, D. (2022), “General bayesian loss function selection and the use of improper models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 1640–1665.\n\n\nKnoblauch, J., Jewson, J., and Damoulas, T. (2022), “An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,” Journal of Machine Learning Research, 23, 1–109.\n\n\nLyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), “General Bayesian updating and the loss-likelihood bootstrap,” Biometrika, Oxford University Press, 106, 465–478.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), “Robust generalised bayesian inference for intractable likelihoods,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 997–1022.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), “Generalized bayesian inference for discrete intractable likelihood,” Journal of the American Statistical Association, Taylor & Francis, 1–11.\n\n\nRigon, T., Herring, A. H., and Dunson, D. B. (2023), “A generalized Bayes framework for probabilistic clustering,” Biometrika, Oxford University Press, 10, 559–578.\n\n\nSyring, N., and Martin, R. (2019), “Calibrating general posterior credible regions,” Biometrika, Oxford University Press, 106, 479–486."
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#homepage",
-    "href": "post/talks/BISP2025_slides.html#homepage",
-    "title": "Bayesian inference for generalized linear models via quasi-posteriors",
-    "section": "Homepage",
-    "text": "Homepage"
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#foundations",
-    "href": "post/talks/BISP2025_slides.html#foundations",
-    "title": "BISP14 workshop",
-    "section": "Foundations",
-    "text": "Foundations\nDe Finetti’s representation Theorem (De Finetti 1937) has a central role in Bayesian statistics because it provides the fundamental justification to the two approaches to Bayesian statistics:\n\nthe hypothetical approach;\nthe predictive approach.\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\nLet (Y_n)_{n\\ge 1}, Y_n\\in\\mathcal{Y}, be a sequence of exchangeable random variables with probability law P. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1,\n\nP(y_1,\\ldots,y_n) = \\int_{\\mathcal{F}} \\prod_{i=1}^n F(y_i)\\,\\Pi(\\mathrm{d}F).\n\n\n\n\n\n\nWhile representing opposite interpretations of the Theorem, the two approaches are intrinsically connected."
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#references",
-    "href": "post/talks/BISP2025_slides.html#references",
-    "title": "BISP14 workshop",
-    "section": "References",
-    "text": "References\n\n\nBissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), “A general framework for updating belief distributions,” Journal of the Royal Statistical Society: Series B (Statistical Methodology), Wiley Online Library, 78, 1103–1130.\n\n\nChernozhukov, V., and Hong, H. (2003), “An MCMC approach to classical estimation,” Journal of econometrics, Elsevier, 115, 293–346.\n\n\nDe Finetti, B. (1937), “La prévision: Ses lois logiques, ses sources subjectives,” in Annales de l’institut henri poincaré, pp. 1–68.\n\n\nGrünwald, P. D., and Mehta, N. A. (2020), “Fast rates for general unbounded loss functions: from ERM to generalized Bayes,” The Journal of Machine Learning Research, JMLRORG, 21, 2040–2119.\n\n\nHeide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), “Safe-bayesian generalized linear regression,” in Proceedings of the twenty third international conference on artificial intelligence and statistics, PMLR, pp. 2623–2633.\n\n\nHolmes, C. C., and Walker, S. G. (2017), “Assigning a value to a power likelihood in a general Bayesian model,” Biometrika, Oxford University Press, 104, 497–503.\n\n\nJewson, J., and Rossell, D. (2022), “General bayesian loss function selection and the use of improper models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 1640–1665.\n\n\nKnoblauch, J., Jewson, J., and Damoulas, T. (2022), “An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,” Journal of Machine Learning Research, 23, 1–109.\n\n\nLyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), “General Bayesian updating and the loss-likelihood bootstrap,” Biometrika, Oxford University Press, 106, 465–478.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), “Robust generalised bayesian inference for intractable likelihoods,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 997–1022.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), “Generalized bayesian inference for discrete intractable likelihood,” Journal of the American Statistical Association, Taylor & Francis, 1–11.\n\n\nRigon, T., Herring, A. H., and Dunson, D. B. (2023), “A generalized Bayes framework for probabilistic clustering,” Biometrika, Oxford University Press, 10, 559–578.\n\n\nSyring, N., and Martin, R. (2019), “Calibrating general posterior credible regions,” Biometrika, Oxford University Press, 106, 479–486.\n\n\n\n\n\n\nHome page"
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#warm-thanks",
-    "href": "post/talks/BISP2025_slides.html#warm-thanks",
-    "title": "BISP14 workshop",
-    "section": "Warm thanks",
-    "text": "Warm thanks"
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#hypothetical-approach",
-    "href": "post/talks/BISP2025_slides.html#hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Hypothetical approach",
-    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p, p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{F}_{\\boldsymbol{\\theta}}=\\{F_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_1,\\ldots,y_n) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n f_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and f_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and F_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.\n\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: Chernozhukov and Hong (2003); Bissiri et al. (2016) Heide et al. (2020); Grünwald and Mehta (2020); Knoblauch et al. (2022); Matsubara et al. (2022); Matsubara et al. (2023); Jewson and Rossell (2022); Rigon et al. (2023)"
-  },
-  {
-    "objectID": "post/talks/BISP2025.html#hypothetical-approach",
-    "href": "post/talks/BISP2025.html#hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Hypothetical approach",
-    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p, p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{F}_{\\boldsymbol{\\theta}}=\\{F_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_1,\\ldots,y_n) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n f_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and f_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and F_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: Chernozhukov and Hong (2003); Bissiri et al. (2016) Heide et al. (2020); Grünwald and Mehta (2020); Knoblauch et al. (2022); Matsubara et al. (2022); Matsubara et al. (2023); Jewson and Rossell (2022); Rigon et al. (2023)"
-  },
-  {
-    "objectID": "post/talks/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
-    "href": "post/talks/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Generalizations of the hypothetical approach",
-    "text": "Generalizations of the hypothetical approach\n\nBissiri et al. (2016) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid \\mathbf{y}_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\textcolor{teal}{\\omega} \\sum_{i=1}^n \\textcolor{purple}{\\ell(\\boldsymbol{\\theta}; y_i)} \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: Holmes and Walker (2017); Lyddon et al. (2019); Syring and Martin (2019); Matsubara et al. (2023).\n\n\n\n\nOur contribution: Bayesian inference for generalized linear models via quasi-posteriors"
-  },
-  {
-    "objectID": "post/talks/BISP2025.html#generalizations-of-the-hypothetical-approach",
-    "href": "post/talks/BISP2025.html#generalizations-of-the-hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Generalizations of the hypothetical approach",
-    "text": "Generalizations of the hypothetical approach\n\nBissiri et al. (2016) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid \\mathbf{y}_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\textcolor{teal}{\\omega} \\sum_{i=1}^n \\textcolor{purple}{\\ell(\\boldsymbol{\\theta}; y_i)} \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: Holmes and Walker (2017); Grünwald and Van Ommen (2017); Lyddon et al. (2019); Syring and Martin (2019); Matsubara et al. (2023).\n\n\nOur contribution: Bayesian inference for generalized linear models via quasi-posteriors"
-  },
-  {
-    "objectID": "post/BISP2025/BISP2025_slides.html#warm-thanks",
-    "href": "post/BISP2025/BISP2025_slides.html#warm-thanks",
-    "title": "BISP14 workshop",
-    "section": "Warm thanks",
-    "text": "Warm thanks"
-  },
-  {
-    "objectID": "post/BISP2025/BISP2025_slides.html#foundations",
-    "href": "post/BISP2025/BISP2025_slides.html#foundations",
-    "title": "BISP14 workshop",
-    "section": "Foundations",
-    "text": "Foundations\nDe Finetti’s representation Theorem (De Finetti 1937) has a central role in Bayesian statistics because it provides the fundamental justification to the two approaches to Bayesian statistics:\n\nthe hypothetical approach;\nthe predictive approach.\n\n\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\n\nLet (Y_n)_{n\\ge 1}, Y_n\\in\\mathcal{Y}, be a sequence of exchangeable random variables with probability law P. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1,\n\nP(y_1,\\ldots,y_n) = \\int_{\\mathcal{F}} \\prod_{i=1}^n F(y_i)\\,\\Pi(\\mathrm{d}F).\n\n\n\n\nWhile representing opposite interpretations of the Theorem, the two approaches are intrinsically connected."
-  },
-  {
-    "objectID": "post/BISP2025/BISP2025_slides.html#hypothetical-approach",
-    "href": "post/BISP2025/BISP2025_slides.html#hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Hypothetical approach",
-    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p, p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{F}_{\\boldsymbol{\\theta}}=\\{F_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_1,\\ldots,y_n) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n f_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and f_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and F_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: Chernozhukov and Hong (2003); Bissiri et al. (2016) Heide et al. (2020); Grünwald and Mehta (2020); Knoblauch et al. (2022); Matsubara et al. (2022); Matsubara et al. (2023); Jewson and Rossell (2022); Rigon et al. (2023)"
-  },
-  {
-    "objectID": "post/BISP2025/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
-    "href": "post/BISP2025/BISP2025_slides.html#generalizations-of-the-hypothetical-approach",
-    "title": "BISP14 workshop",
-    "section": "Generalizations of the hypothetical approach",
-    "text": "Generalizations of the hypothetical approach\n\nBissiri et al. (2016) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid \\mathbf{y}_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\textcolor{teal}{\\omega} \\sum_{i=1}^n \\textcolor{purple}{\\ell(\\boldsymbol{\\theta}; y_i)} \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: Holmes and Walker (2017); Lyddon et al. (2019); Syring and Martin (2019); Matsubara et al. (2023).\n\n\nOur contribution: Bayesian inference for generalized linear models via quasi-posteriors"
-  },
-  {
-    "objectID": "post/BISP2025/BISP2025_slides.html#references",
-    "href": "post/BISP2025/BISP2025_slides.html#references",
-    "title": "BISP14 workshop",
-    "section": "References",
-    "text": "References\n\n\nBissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), “A general framework for updating belief distributions,” Journal of the Royal Statistical Society: Series B (Statistical Methodology), Wiley Online Library, 78, 1103–1130.\n\n\nChernozhukov, V., and Hong, H. (2003), “An MCMC approach to classical estimation,” Journal of econometrics, Elsevier, 115, 293–346.\n\n\nDe Finetti, B. (1937), “La prévision: Ses lois logiques, ses sources subjectives,” in Annales de l’institut henri poincaré, pp. 1–68.\n\n\nGrünwald, P. D., and Mehta, N. A. (2020), “Fast rates for general unbounded loss functions: from ERM to generalized Bayes,” The Journal of Machine Learning Research, JMLRORG, 21, 2040–2119.\n\n\nHeide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), “Safe-bayesian generalized linear regression,” in Proceedings of the twenty third international conference on artificial intelligence and statistics, PMLR, pp. 2623–2633.\n\n\nHolmes, C. C., and Walker, S. G. (2017), “Assigning a value to a power likelihood in a general Bayesian model,” Biometrika, Oxford University Press, 104, 497–503.\n\n\nJewson, J., and Rossell, D. (2022), “General bayesian loss function selection and the use of improper models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 1640–1665.\n\n\nKnoblauch, J., Jewson, J., and Damoulas, T. (2022), “An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,” Journal of Machine Learning Research, 23, 1–109.\n\n\nLyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), “General Bayesian updating and the loss-likelihood bootstrap,” Biometrika, Oxford University Press, 106, 465–478.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), “Robust generalised bayesian inference for intractable likelihoods,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 997–1022.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), “Generalized bayesian inference for discrete intractable likelihood,” Journal of the American Statistical Association, Taylor & Francis, 1–11.\n\n\nRigon, T., Herring, A. H., and Dunson, D. B. (2023), “A generalized Bayes framework for probabilistic clustering,” Biometrika, Oxford University Press, 10, 559–578.\n\n\nSyring, N., and Martin, R. (2019), “Calibrating general posterior credible regions,” Biometrika, Oxford University Press, 106, 479–486."
+    "section": "La previsione della classifica",
+    "text": "La previsione della classifica\nPrevedere una singola partita è difficile, perché ci sono molti fattori imprevedibili. Tuttavia, prevedere la classifica finale è un compito un po’ più semplice, anche perchè le squadre non partivano dallo stesso punteggio.\nAnche in questo caso, ci sono buone notizie: ci possiamo quindi ritenere ragionevolmente soddisfatti delle nostre previsioni.\n\n\n\n\n\n\n\nIn media, la classifica prevista è più simile a quella finale di quanto non lo fosse quella della 7ª giornata. (I dettagli qui sono omessi).\nQuesto fatto si può quantificare tramite il cosiddetto “errore quadratico medio”, che misura quanto sia diversa la nostra previsione dai risultati reali.\n\n\n\n\nNel seguito ho rappresentato graficamente la classifica alla settima giornata, la previsione ottenuta con il metodo Monte Carlo e, infine, la graduatoria finale."
   }
 ]

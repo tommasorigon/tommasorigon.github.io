@@ -2,6 +2,7 @@
 title: "BISP14 workshop"
 subtitle: "*Bayesian inference for generalized linear models via quasi-posteriors*"
 date: "2025-05-27"
+lang: en
 author: "[Tommaso Rigon]{.orange}"
 institute: "_Università degli Studi di Milano-Bicocca_"
 page-layout: full
@@ -12,10 +13,10 @@ reference-location: margin
 execute:
   cache: false
 format:
-  revealjs:
-    output-file: BISP2025_slides.html
   html:
     toc: true
+    revealjs:
+    output-file: BISP2025_slides.html
 format-links: true
 ---
 
@@ -76,11 +77,11 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 
 - *Learning the loss scale* $\omega$ from the data is a *delicate* task. Assuming a prior for $\omega$ can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.  
 
-- However, there are several solutions for its calibration: @holmes2017assigning; @grunwald2017inconsistency; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
+- However, there are several solutions for its calibration: @holmes2017assigning; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
 
 . . .
 
-- **Our contribution:** Bayesian inference for generalized linear models via quasi-posteriors
+- [Our contribution]{.orange}: Bayesian inference for generalized linear models via quasi-posteriors
 
 
 ## References {.unnumbered}

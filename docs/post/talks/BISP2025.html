@@ -174,6 +174,7 @@ window.Quarto = {
   <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
   <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">Foundations</a></li>
   <li><a href="#hypothetical-approach" id="toc-hypothetical-approach" class="nav-link" data-scroll-target="#hypothetical-approach">Hypothetical approach</a></li>
+  <li><a href="#generalizations-of-the-hypothetical-approach" id="toc-generalizations-of-the-hypothetical-approach" class="nav-link" data-scroll-target="#generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BISP2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -257,21 +258,75 @@ P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
 <li><p>In a <span class="orange">parametric</span> setting, <span class="math inline">\Pi</span> has support on a class <span class="math inline">\Theta\subseteq\mathbb{R}^p</span>, <span class="math inline">p&lt;\infty</span>, such that <span class="math inline">\boldsymbol{\theta}\in\Theta</span> indexes the class of distributions <span class="math inline">\mathcal{F}_{\boldsymbol{\theta}}=\{F_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}</span>.</p></li>
 <li><p>Bayes’ rule takes the well-known formulation: <span class="math display">
 \pi(\boldsymbol{\theta}\mid y_1,\ldots,y_n) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n f_{\boldsymbol{\theta}}(y_i),
-</span></p></li>
-</ul>
-<p>where <span class="math inline">\pi</span> and <span class="math inline">f_{\boldsymbol{\theta}}</span> denote the probability density functions associated with <span class="math inline">\Pi</span> and <span class="math inline">F_{\boldsymbol{\theta}}</span>, respectively.</p>
-<ul>
-<li>However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.</li>
+</span> where <span class="math inline">\pi</span> and <span class="math inline">f_{\boldsymbol{\theta}}</span> denote the probability density functions associated with <span class="math inline">\Pi</span> and <span class="math inline">F_{\boldsymbol{\theta}}</span>, respectively.</p></li>
+<li><p>However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.</p></li>
 </ul>
 <ul>
-<li>Solution: <span class="orange">Generalized posterior distributions</span> (Gibbs-posterior).</li>
+<li>Solution: <span class="orange">generalized posterior distributions</span>, sometimes called <span class="blue">Gibbs-posteriors</span>.</li>
+<li>This is a <span class="blue">lively recent topic</span>, see for instance: <span class="citation" data-cites="chernozhukov2003mcmc">Chernozhukov and Hong (<a href="#ref-chernozhukov2003mcmc" role="doc-biblioref">2003</a>)</span>; <span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> <span class="citation" data-cites="heide2020safe">Heide et al. (<a href="#ref-heide2020safe" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="grunwald2020fast">Grünwald and Mehta (<a href="#ref-grunwald2020fast" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="knoblauch2022optimization">Knoblauch et al. (<a href="#ref-knoblauch2022optimization" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2022robust">Matsubara et al. (<a href="#ref-matsubara2022robust" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>; <span class="citation" data-cites="jewson_rossell_2022">Jewson and Rossell (<a href="#ref-jewson_rossell_2022" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="rigon2023generalized">Rigon et al. (<a href="#ref-rigon2023generalized" role="doc-biblioref">2023</a>)</span></li>
+</ul>
+</section>
+<section id="generalizations-of-the-hypothetical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</h2>
+<ul>
+<li><span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> showed that the <span class="blue">generalized posterior</span> <span class="math display">
+\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \textcolor{teal}{\omega} \sum_{i=1}^n \textcolor{purple}{\ell(\boldsymbol{\theta}; y_i)} \right\},
+</span> is the only coherent update of the prior beliefs about <span class="math display">
+\boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}\in\Theta} \int_{\mathcal{Y}} \ell(\boldsymbol{\theta}; y)\, F_0(\mathrm{d}y),
+</span> where <span class="math inline">\ell(\boldsymbol{\theta}, y)</span> is a <span class="orange">loss function</span>, <span class="math inline">\omega</span> is the <span class="grey">loss-scale</span>, and <span class="math inline">F_0</span> is the unknown true sampling distribution.</li>
+</ul>
+<ul>
+<li><p><em>Learning the loss scale</em> <span class="math inline">\omega</span> from the data is a <em>delicate</em> task. Assuming a prior for <span class="math inline">\omega</span> can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.</p></li>
+<li><p>However, there are several solutions for its calibration: <span class="citation" data-cites="holmes2017assigning">Holmes and Walker (<a href="#ref-holmes2017assigning" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="grunwald2017inconsistency">Grünwald and Van Ommen (<a href="#ref-grunwald2017inconsistency" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#ref-lyddon2019general" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="syring2019calibrating">Syring and Martin (<a href="#ref-syring2019calibrating" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>.</p></li>
+</ul>
+<ul>
+<li><strong>Our contribution:</strong> Bayesian inference for generalized linear models via quasi-posteriors</li>
 </ul>
 </section>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bissiri2016general" class="csl-entry" role="listitem">
+Bissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), <span>“A general framework for updating belief distributions,”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, Wiley Online Library, 78, 1103–1130.
+</div>
+<div id="ref-chernozhukov2003mcmc" class="csl-entry" role="listitem">
+Chernozhukov, V., and Hong, H. (2003), <span>“An <span>MCMC</span> approach to classical estimation,”</span> <em>Journal of econometrics</em>, Elsevier, 115, 293–346.
+</div>
 <div id="ref-de1937prevision" class="csl-entry" role="listitem">
 De Finetti, B. (1937), <span>“La pr<span>é</span>vision: Ses lois logiques, ses sources subjectives,”</span> in <em>Annales de l’institut henri poincar<span>é</span></em>, pp. 1–68.
+</div>
+<div id="ref-grunwald2020fast" class="csl-entry" role="listitem">
+Grünwald, P. D., and Mehta, N. A. (2020), <span>“<span class="nocase">Fast rates for general unbounded loss functions: from ERM to generalized Bayes</span>,”</span> <em>The Journal of Machine Learning Research</em>, JMLRORG, 21, 2040–2119.
+</div>
+<div id="ref-grunwald2017inconsistency" class="csl-entry" role="listitem">
+Grünwald, P., and Van Ommen, T. (2017), <span>“Inconsistency of <span>B</span>ayesian inference for misspecified linear models, and a proposal for repairing it,”</span> <em>Bayesian Analysis</em>, 12, 1069–1103.
+</div>
+<div id="ref-heide2020safe" class="csl-entry" role="listitem">
+Heide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), <span>“Safe-bayesian generalized linear regression,”</span> in <em>Proceedings of the twenty third international conference on artificial intelligence and statistics</em>, PMLR, pp. 2623–2633.
+</div>
+<div id="ref-holmes2017assigning" class="csl-entry" role="listitem">
+Holmes, C. C., and Walker, S. G. (2017), <span>“Assigning a value to a power likelihood in a general <span>B</span>ayesian model,”</span> <em>Biometrika</em>, Oxford University Press, 104, 497–503.
+</div>
+<div id="ref-jewson_rossell_2022" class="csl-entry" role="listitem">
+Jewson, J., and Rossell, D. (2022), <span>“General bayesian loss function selection and the use of improper models,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 84, 1640–1665.
+</div>
+<div id="ref-knoblauch2022optimization" class="csl-entry" role="listitem">
+Knoblauch, J., Jewson, J., and Damoulas, T. (2022), <span>“An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,”</span> <em>Journal of Machine Learning Research</em>, 23, 1–109.
+</div>
+<div id="ref-lyddon2019general" class="csl-entry" role="listitem">
+Lyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), <span>“General <span>B</span>ayesian updating and the loss-likelihood bootstrap,”</span> <em>Biometrika</em>, Oxford University Press, 106, 465–478.
+</div>
+<div id="ref-matsubara2022robust" class="csl-entry" role="listitem">
+Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), <span>“Robust generalised bayesian inference for intractable likelihoods,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 84, 997–1022.
+</div>
+<div id="ref-matsubara2023generalized" class="csl-entry" role="listitem">
+Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), <span>“Generalized bayesian inference for discrete intractable likelihood,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 1–11.
+</div>
+<div id="ref-rigon2023generalized" class="csl-entry" role="listitem">
+Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <span>B</span>ayes framework for probabilistic clustering,”</span> <em>Biometrika</em>, Oxford University Press, 10, 559–578.
+</div>
+<div id="ref-syring2019calibrating" class="csl-entry" role="listitem">
+Syring, N., and Martin, R. (2019), <span>“Calibrating general posterior credible regions,”</span> <em>Biometrika</em>, Oxford University Press, 106, 479–486.
 </div>
 </div>
 

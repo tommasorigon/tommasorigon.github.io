@@ -15,7 +15,7 @@ execute:
 format:
   html:
     toc: true
-    revealjs:
+  revealjs:
     output-file: BISP2025_slides.html
 format-links: true
 ---
@@ -82,6 +82,24 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 . . .
 
 - [Our contribution]{.orange}: Bayesian inference for generalized linear models via quasi-posteriors
+
+## Generalized Bayes for GLMs
+
+- [Generalized linear models]{.blue} (GLMs) are routinely used to model a wide variety of data.
+
+- However, they often incur [misspecification]{.orange}, and this could compromise inferential conclusions.  
+
+. . .
+
+- A common case is **overdispersion**, i.e., when proportion or count observations show larger variability than the one assumed by the model.  
+
+- Traditional solutions have important drawbacks:
+  - [Model-based]{.orange}: may lead to computational bottlenecks and can result again in misspecification. 
+  - [Nonparametric]{.blue}: increased computational cost and loss of efficiency and interpretability.  
+
+. . .
+
+- We rely on a [semi-parametric]{.blue} approach, making only assumptions on the [mean]{.grey} and [variance]{.grey} of the response while preserving computational tractability.
 
 
 ## References {.unnumbered}

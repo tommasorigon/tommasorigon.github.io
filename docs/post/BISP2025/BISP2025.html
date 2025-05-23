@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2025-05-27">
 
-<title>Blogpost – Tommaso Rigon</title>
+<title>BISP14 workshop – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,67 +22,56 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "Nessun risultato",
-    "search-matching-documents-text": "documenti trovati",
-    "search-copy-link-title": "Copiare il link nella ricerca",
-    "search-hide-matches-text": "Nascondere i risultati aggiuntivi",
-    "search-more-match-text": "ci sono altri risultati in questo documento",
-    "search-more-matches-text": "ulteriori risultati in questo documento",
-    "search-clear-button-title": "Pulire",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancellare",
-    "search-submit-button-title": "Inviare",
-    "search-label": "Ricerca"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-post .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-post'] = new List('listing-post', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
@@ -135,33 +126,33 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bio.html"> 
+    <a class="nav-link" href="../../bio.html"> 
 <span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tesi.html"> 
+    <a class="nav-link" href="../../tesi.html"> 
 <span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./post.html" aria-current="page"> 
+    <a class="nav-link" href="../../post.html"> 
 <span class="menu-text">Blogpost</span></a>
   </li>  
 </ul>
@@ -175,20 +166,53 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
+  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">Foundations</a></li>
+  <li><a href="#hypothetical-approach" id="toc-hypothetical-approach" class="nav-link" data-scroll-target="#hypothetical-approach">Hypothetical approach</a></li>
+  <li><a href="#generalizations-of-the-hypothetical-approach" id="toc-generalizations-of-the-hypothetical-approach" class="nav-link" data-scroll-target="#generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</a></li>
+  <li><a href="#generalized-bayes-for-glms" id="toc-generalized-bayes-for-glms" class="nav-link" data-scroll-target="#generalized-bayes-for-glms">Generalized Bayes for GLMs</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BISP2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blogpost</h1>
+<h1 class="title">BISP14 workshop</h1>
+<p class="subtitle lead"><em>Bayesian inference for generalized linear models via quasi-posteriors</em></p>
 </div>
 
 
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><span class="orange">Tommaso Rigon</span> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <em>Università degli Studi di Milano-Bicocca</em>
+          </p>
+      </div>
+  </div>
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 27, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -198,184 +222,134 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-post" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1748296800000" data-listing-file-modified-sort="1748015155147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="432">
-<div class="thumbnail">
-<p><a href="./post/BISP2025/BISP2025.html" class="no-external"></a></p><a href="./post/BISP2025/BISP2025.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" style="height: 2in;">&nbsp;</div>
-</a><p><a href="./post/BISP2025/BISP2025.html" class="no-external"></a></p>
+<section id="warm-thanks" class="level2">
+<h2 class="anchored" data-anchor-id="warm-thanks">Warm thanks</h2>
+</section>
+<section id="foundations" class="level2">
+<h2 class="anchored" data-anchor-id="foundations">Foundations</h2>
+<p>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#ref-de1937prevision" role="doc-biblioref">De Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:</p>
+<ul>
+<li>the <span class="orange">hypothetical</span> approach;</li>
+<li>the <span class="blue">predictive</span> approach.</li>
+</ul>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled" title="De Finetti's representation theorem">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/BISP2025/BISP2025.html" class="no-external">BISP14 workshop</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/BISP2025/BISP2025.html" class="no-external"><em>Bayesian inference for generalized linear models via quasi-posteriors</em></a>
-</div>
-<div class="listing-description">
-<a href="./post/BISP2025/BISP2025.html" class="no-external">De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(De Finetti 1937)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/BISP2025/BISP2025.html" class="no-external">
-<div class="listing-date">
-27 mag 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+De Finetti’s representation theorem
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1741388400000" data-listing-file-modified-sort="1741614615000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1385">
-<div class="thumbnail">
-<p><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external"></a></p><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
-<p class="card-img-top"><img src="post/lotteria_AI/biglietti.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">La lotteria nazionale non è difettosa</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in…<span class="blue"></span></a>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">(Y_n)_{n\ge 1}</span>, <span class="math inline">Y_n\in\mathcal{Y}</span>, be a sequence of exchangeable random variables with probability law <span class="math inline">P</span>. Then there exists a unique probability measure <span class="math inline">\Pi</span> such that, for any <span class="math inline">n\ge 1</span>,</p>
+<p><span class="math display">
+P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+</span></p>
 </div>
 </div>
-<div class="metadata">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
-<div class="listing-date">
-8 mar 2025
+<ul>
+<li>While representing opposite interpretations of the Theorem, the two approaches are intrinsically connected.</li>
+</ul>
+</section>
+<section id="hypothetical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="hypothetical-approach">Hypothetical approach</h2>
+<ul>
+<li><p>The hypothetical approach represents the the <span class="blue">most common</span> way to operate within the Bayesian community.</p></li>
+<li><p>In a <span class="orange">parametric</span> setting, <span class="math inline">\Pi</span> has support on a class <span class="math inline">\Theta\subseteq\mathbb{R}^p</span>, <span class="math inline">p&lt;\infty</span>, such that <span class="math inline">\boldsymbol{\theta}\in\Theta</span> indexes the class of distributions <span class="math inline">\mathcal{F}_{\boldsymbol{\theta}}=\{F_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}</span>.</p></li>
+<li><p>Bayes’ rule takes the well-known formulation: <span class="math display">
+\pi(\boldsymbol{\theta}\mid y_1,\ldots,y_n) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n f_{\boldsymbol{\theta}}(y_i),
+</span> where <span class="math inline">\pi</span> and <span class="math inline">f_{\boldsymbol{\theta}}</span> denote the probability density functions associated with <span class="math inline">\Pi</span> and <span class="math inline">F_{\boldsymbol{\theta}}</span>, respectively.</p></li>
+<li><p>However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.</p></li>
+</ul>
+<ul>
+<li>Solution: <span class="orange">generalized posterior distributions</span>, sometimes called <span class="blue">Gibbs-posteriors</span>.</li>
+<li>This is a <span class="blue">lively recent topic</span>, see for instance: <span class="citation" data-cites="chernozhukov2003mcmc">Chernozhukov and Hong (<a href="#ref-chernozhukov2003mcmc" role="doc-biblioref">2003</a>)</span>; <span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> <span class="citation" data-cites="heide2020safe">Heide et al. (<a href="#ref-heide2020safe" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="grunwald2020fast">Grünwald and Mehta (<a href="#ref-grunwald2020fast" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="knoblauch2022optimization">Knoblauch et al. (<a href="#ref-knoblauch2022optimization" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2022robust">Matsubara et al. (<a href="#ref-matsubara2022robust" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>; <span class="citation" data-cites="jewson_rossell_2022">Jewson and Rossell (<a href="#ref-jewson_rossell_2022" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="rigon2023generalized">Rigon et al. (<a href="#ref-rigon2023generalized" role="doc-biblioref">2023</a>)</span></li>
+</ul>
+</section>
+<section id="generalizations-of-the-hypothetical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</h2>
+<ul>
+<li><span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> showed that the <span class="blue">generalized posterior</span> <span class="math display">
+\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \textcolor{teal}{\omega} \sum_{i=1}^n \textcolor{purple}{\ell(\boldsymbol{\theta}; y_i)} \right\},
+</span> is the only coherent update of the prior beliefs about <span class="math display">
+\boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}\in\Theta} \int_{\mathcal{Y}} \ell(\boldsymbol{\theta}; y)\, F_0(\mathrm{d}y),
+</span> where <span class="math inline">\ell(\boldsymbol{\theta}, y)</span> is a <span class="orange">loss function</span>, <span class="math inline">\omega</span> is the <span class="grey">loss-scale</span>, and <span class="math inline">F_0</span> is the unknown true sampling distribution.</li>
+</ul>
+<ul>
+<li><p><em>Learning the loss scale</em> <span class="math inline">\omega</span> from the data is a <em>delicate</em> task. Assuming a prior for <span class="math inline">\omega</span> can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.</p></li>
+<li><p>However, there are several solutions for its calibration: <span class="citation" data-cites="holmes2017assigning">Holmes and Walker (<a href="#ref-holmes2017assigning" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#ref-lyddon2019general" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="syring2019calibrating">Syring and Martin (<a href="#ref-syring2019calibrating" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>.</p></li>
+</ul>
+<ul>
+<li><span class="orange">Our contribution</span>: Bayesian inference for generalized linear models via quasi-posteriors</li>
+</ul>
+</section>
+<section id="generalized-bayes-for-glms" class="level2">
+<h2 class="anchored" data-anchor-id="generalized-bayes-for-glms">Generalized Bayes for GLMs</h2>
+<ul>
+<li><p><em>Generalized linear models</em> (GLMs) are routinely used to model a wide variety of data.</p></li>
+<li><p>However, they often incur misspecification, and this could compromise inferential conclusions.</p></li>
+</ul>
+<ul>
+<li><p>A common case is <strong>overdispersion</strong>, i.e., when proportion or count observations show larger variability than the one assumed by the model.<br>
+Traditional solutions have important drawbacks:</p>
+<ul>
+<li><strong>Model-based</strong> → may lead to computational bottlenecks and can result again in misspecification.<br>
+</li>
+<li><strong>Nonparametric</strong> → increased computational cost and loss of efficiency and interpretability.<br>
+<br></li>
+</ul></li>
+</ul>
+<ul>
+<li>We rely on a <em>semi-parametric</em> approach, making only assumptions on the mean and variance of the response while preserving computational tractability.</li>
+</ul>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bissiri2016general" class="csl-entry" role="listitem">
+Bissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), <span>“A general framework for updating belief distributions,”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, Wiley Online Library, 78, 1103–1130.
 </div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
+<div id="ref-chernozhukov2003mcmc" class="csl-entry" role="listitem">
+Chernozhukov, V., and Hong, H. (2003), <span>“An <span>MCMC</span> approach to classical estimation,”</span> <em>Journal of econometrics</em>, Elsevier, 115, 293–346.
 </div>
-</a>
+<div id="ref-de1937prevision" class="csl-entry" role="listitem">
+De Finetti, B. (1937), <span>“La pr<span>é</span>vision: Ses lois logiques, ses sources subjectives,”</span> in <em>Annales de l’institut henri poincar<span>é</span></em>, pp. 1–68.
 </div>
+<div id="ref-grunwald2020fast" class="csl-entry" role="listitem">
+Grünwald, P. D., and Mehta, N. A. (2020), <span>“<span class="nocase">Fast rates for general unbounded loss functions: from ERM to generalized Bayes</span>,”</span> <em>The Journal of Machine Learning Research</em>, JMLRORG, 21, 2040–2119.
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1741215600000" data-listing-file-modified-sort="1741337472000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="930">
-<div class="thumbnail">
-<p><a href="./post/lotteria_AI/index.html" class="no-external"></a></p><a href="./post/lotteria_AI/index.html" class="no-external">
-<p class="card-img-top"><img src="post/lotteria_AI/lotto.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/lotteria_AI/index.html" class="no-external"></a></p>
+<div id="ref-heide2020safe" class="csl-entry" role="listitem">
+Heide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), <span>“Safe-bayesian generalized linear regression,”</span> in <em>Proceedings of the twenty third international conference on artificial intelligence and statistics</em>, PMLR, pp. 2623–2633.
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/lotteria_AI/index.html" class="no-external">Come mai non è possibile prevedere i numeri del lotto</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/lotteria_AI/index.html" class="no-external"></a>
+<div id="ref-holmes2017assigning" class="csl-entry" role="listitem">
+Holmes, C. C., and Walker, S. G. (2017), <span>“Assigning a value to a power likelihood in a general <span>B</span>ayesian model,”</span> <em>Biometrika</em>, Oxford University Press, 104, 497–503.
 </div>
-<div class="listing-description">
-<a href="./post/lotteria_AI/index.html" class="no-external">Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani…</a>
+<div id="ref-jewson_rossell_2022" class="csl-entry" role="listitem">
+Jewson, J., and Rossell, D. (2022), <span>“General bayesian loss function selection and the use of improper models,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 84, 1640–1665.
 </div>
+<div id="ref-knoblauch2022optimization" class="csl-entry" role="listitem">
+Knoblauch, J., Jewson, J., and Damoulas, T. (2022), <span>“An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,”</span> <em>Journal of Machine Learning Research</em>, 23, 1–109.
 </div>
-<div class="metadata">
-<a href="./post/lotteria_AI/index.html" class="no-external">
-<div class="listing-date">
-6 mar 2025
+<div id="ref-lyddon2019general" class="csl-entry" role="listitem">
+Lyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), <span>“General <span>B</span>ayesian updating and the loss-likelihood bootstrap,”</span> <em>Biometrika</em>, Oxford University Press, 106, 465–478.
 </div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
+<div id="ref-matsubara2022robust" class="csl-entry" role="listitem">
+Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), <span>“Robust generalised bayesian inference for intractable likelihoods,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 84, 997–1022.
 </div>
-</a>
+<div id="ref-matsubara2023generalized" class="csl-entry" role="listitem">
+Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), <span>“Generalized bayesian inference for discrete intractable likelihood,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 1–11.
 </div>
+<div id="ref-rigon2023generalized" class="csl-entry" role="listitem">
+Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <span>B</span>ayes framework for probabilistic clustering,”</span> <em>Biometrika</em>, Oxford University Press, 10, 559–578.
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1738191600000" data-listing-file-modified-sort="1738273490599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="860">
-<div class="thumbnail">
-<p><a href="./post/champions/champions2025_esiti.html" class="no-external"></a></p><a href="./post/champions/champions2025_esiti.html" class="no-external">
-<p class="card-img-top"><img src="post/champions/referee.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/champions/champions2025_esiti.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">Previsioni Champions League: com’è andata?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">Una valutazione degli errori</a>
-</div>
-<div class="listing-description">
-<a href="./post/champions/champions2025_esiti.html" class="no-external"><span class="orange">Ieri</span> ho diffuso in un post le previsioni per l’ultima giornata di Champions League, basandomi sulle quotazioni dei <em>bookmakers</em>. <span class="blue">Oggi</span> vogliamo controllare com’è andata. Ci sono state previsioni centrate (ad es. Inter - Monaco, Manchester City -…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">
-<div class="listing-date">
-30 gen 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738255241000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2096">
-<div class="thumbnail">
-<p><a href="./post/champions/champions2025.html" class="no-external"></a></p><a href="./post/champions/champions2025.html" class="no-external">
-<p class="card-img-top"><img src="post/champions/calcio.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/champions/champions2025.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025.html" class="no-external">Previsioni Champions League</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/champions/champions2025.html" class="no-external">8a giornata</a>
-</div>
-<div class="listing-description">
-<a href="./post/champions/champions2025.html" class="no-external">Nella Champions League del 2025, <span class="blue">36 squadre</span> competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 29 gennaio 2024, sono state giocate 7 delle 8 giornate previste. Siamo quindi interessati a…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/champions/champions2025.html" class="no-external">
-<div class="listing-date">
-29 gen 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1738079997000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1802">
-<div class="thumbnail">
-<p><a href="./post/karmic_dice/karmic.html" class="no-external"></a></p><a href="./post/karmic_dice/karmic.html" class="no-external">
-<p class="card-img-top"><img src="post/karmic_dice/karmic_files/figure-html/unnamed-chunk-12-1.png" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./post/karmic_dice/karmic.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/karmic_dice/karmic.html" class="no-external">Karmic dice for Baldur’s Gate III</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./post/karmic_dice/karmic.html" class="no-external">A simple algorithm that accounts for karma</a>
-</div>
-<div class="listing-description">
-<a href="./post/karmic_dice/karmic.html" class="no-external">I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned computer and I thought it was a great game. When Baldur’s Gate III was released a few weeks ago, it caught my attention.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./post/karmic_dice/karmic.html" class="no-external">
-<div class="listing-date">
-20 ago 2023
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Nessun risultato
+<div id="ref-syring2019calibrating" class="csl-entry" role="listitem">
+Syring, N., and Martin, R. (2019), <span>“Calibrating general posterior credible regions,”</span> <em>Biometrika</em>, Oxford University Press, 106, 479–486.
 </div>
 </div>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -421,12 +395,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiato!");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiato!");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -803,5 +777,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

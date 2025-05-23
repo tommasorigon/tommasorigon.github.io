@@ -1,0 +1,89 @@
+---
+title: "BISP14 workshop"
+subtitle: "*Bayesian inference for generalized linear models via quasi-posteriors*"
+date: "2025-05-27"
+author: "[Tommaso Rigon]{.orange}"
+institute: "_Università degli Studi di Milano-Bicocca_"
+page-layout: full
+bibliography: biblio.bib
+citeproc: true
+csl: https://www.zotero.org/styles/journal-of-the-american-statistical-association
+reference-location: margin
+execute:
+  cache: false
+format:
+  revealjs:
+    output-file: BISP2025_slides.html
+  html:
+    toc: true
+format-links: true
+---
+
+## Warm thanks
+
+
+
+## Foundations
+
+De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
+
+- the [hypothetical]{.orange} approach; 
+- the [predictive]{.blue} approach.
+
+::: {.callout-warning title="De Finetti's representation theorem"}
+Let $(Y_n)_{n\ge 1}$, $Y_n\in\mathcal{Y}$, be a sequence of exchangeable random variables with probability law $P$. Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$,
+
+$$
+P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+$$
+:::
+
+- While representing opposite interpretations of the Theorem, the two approaches are intrinsically connected.
+
+## Hypothetical approach
+
+- The hypothetical approach represents the the [most common]{.blue} way to operate within the Bayesian community.
+
+- In a [parametric]{.orange} setting, $\Pi$ has support on a class $\Theta\subseteq\mathbb{R}^p$, $p<\infty$, such that $\boldsymbol{\theta}\in\Theta$ indexes the class of distributions $\mathcal{F}_{\boldsymbol{\theta}}=\{F_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}$.
+
+- Bayes' rule takes the well-known formulation:
+$$
+\pi(\boldsymbol{\theta}\mid y_1,\ldots,y_n) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n f_{\boldsymbol{\theta}}(y_i),
+$$
+where $\pi$ and $f_{\boldsymbol{\theta}}$ denote the probability density functions associated with $\Pi$ and $F_{\boldsymbol{\theta}}$, respectively.
+
+- However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.
+
+. . .
+
+- Solution: [generalized posterior distributions]{.orange}, sometimes called [Gibbs-posteriors]{.blue}. 
+- This is a [lively recent topic]{.blue}, see for instance: @chernozhukov2003mcmc; @bissiri2016general @heide2020safe; @grunwald2020fast; @knoblauch2022optimization; @matsubara2022robust; @matsubara2023generalized; @jewson_rossell_2022; @rigon2023generalized
+
+
+## Generalizations of the hypothetical approach
+
+- @bissiri2016general showed that the [generalized posterior]{.blue} 
+$$
+\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \textcolor{teal}{\omega} \sum_{i=1}^n \textcolor{purple}{\ell(\boldsymbol{\theta}; y_i)} \right\},
+$$
+is the only coherent update of the prior beliefs about
+$$
+\boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}\in\Theta} \int_{\mathcal{Y}} \ell(\boldsymbol{\theta}; y)\, F_0(\mathrm{d}y),
+$$
+where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is the [loss-scale]{.grey}, and $F_0$ is the unknown true sampling distribution.
+
+. . .
+
+- *Learning the loss scale* $\omega$ from the data is a *delicate* task. Assuming a prior for $\omega$ can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.  
+
+- However, there are several solutions for its calibration: @holmes2017assigning; @grunwald2017inconsistency; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
+
+. . .
+
+- **Our contribution:** Bayesian inference for generalized linear models via quasi-posteriors
+
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

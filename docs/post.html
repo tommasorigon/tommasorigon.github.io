@@ -81,9 +81,24 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -185,7 +200,35 @@ window.Quarto = {
 
 <div id="listing-post" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1741388400000" data-listing-file-modified-sort="1741614615371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1385">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1748296800000" data-listing-file-modified-sort="1748013933204" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
+<div class="thumbnail">
+<p><a href="./post/talks/BISP2025.html" class="no-external"></a></p><a href="./post/talks/BISP2025.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" style="height: 2in;">&nbsp;</div>
+</a><p><a href="./post/talks/BISP2025.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./post/talks/BISP2025.html" class="no-external">BISP14 workshop</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./post/talks/BISP2025.html" class="no-external"><em>Bayesian inference for generalized linear models via quasi-posteriors</em></a>
+</div>
+<div class="listing-description">
+<a href="./post/talks/BISP2025.html" class="no-external">De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(De Finetti 1937)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./post/talks/BISP2025.html" class="no-external">
+<div class="listing-date">
+27 mag 2025
+</div>
+<div class="listing-author">
+<span class="orange">Tommaso Rigon</span>
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1741388400000" data-listing-file-modified-sort="1741614615000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1385">
 <div class="thumbnail">
 <p><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external"></a></p><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
 <p class="card-img-top"><img src="post/lotteria_AI/biglietti.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
@@ -213,7 +256,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1741215600000" data-listing-file-modified-sort="1741337472711" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="930">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1741215600000" data-listing-file-modified-sort="1741337472000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="930">
 <div class="thumbnail">
 <p><a href="./post/lotteria_AI/index.html" class="no-external"></a></p><a href="./post/lotteria_AI/index.html" class="no-external">
 <p class="card-img-top"><img src="post/lotteria_AI/lotto.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
@@ -241,7 +284,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1738191600000" data-listing-file-modified-sort="1738273490000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="860">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1738191600000" data-listing-file-modified-sort="1738273490599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="860">
 <div class="thumbnail">
 <p><a href="./post/champions/champions2025_esiti.html" class="no-external"></a></p><a href="./post/champions/champions2025_esiti.html" class="no-external">
 <p class="card-img-top"><img src="post/champions/referee.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
@@ -269,7 +312,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738255241832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2096">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1738255241000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2096">
 <div class="thumbnail">
 <p><a href="./post/champions/champions2025.html" class="no-external"></a></p><a href="./post/champions/champions2025.html" class="no-external">
 <p class="card-img-top"><img src="post/champions/calcio.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
@@ -297,7 +340,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1738079997037" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1802">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1738079997000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1802">
 <div class="thumbnail">
 <p><a href="./post/karmic_dice/karmic.html" class="no-external"></a></p><a href="./post/karmic_dice/karmic.html" class="no-external">
 <p class="card-img-top"><img src="post/karmic_dice/karmic_files/figure-html/unnamed-chunk-12-1.png" style="height: 2in;"  class="thumbnail-image card-img"/></p>
@@ -760,4 +803,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

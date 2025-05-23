@@ -27,3 +27,32 @@ format:
     theme: [simplex, template.css]
     toc: false
     fontsize: 1.1em
+    callout-appearance: minimal
+    message: false
+    html-math-method: katex
+    echo: false
+    code-line-numbers: true
+    smooth-scroll: true
+    code-fold: false
+    code-summary: "Show the code"
+    fig-dpi: 200
+    highlight-style: github
+  revealjs:
+    auto-stretch: true
+    center: true
+    html-math-method: katex
+    transition: none
+    slide-number: true
+    callout-appearance: minimal
+    theme: [default, template.css] # alternative themes (subset): default, night, dark
+    embed-resources: false
+    echo: false
+    fig-dpi: 200
+    # incremental: true  # Remove comment if you like incremental bullet points
+    logo: images/logoB.png
+    footer: "[Home page](https://tommasorigon.github.io/)"
+    highlight-style: github
+format-links: false
+
+filters: 
+  - remove-pause.lua

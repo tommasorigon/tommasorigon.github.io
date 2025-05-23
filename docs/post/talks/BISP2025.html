@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2025-05-27">
 
-<title>Tommaso Rigon</title>
+<title>BISP14 workshop – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,20 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -49,7 +72,51 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -65,27 +132,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bio.html"> 
+    <a class="nav-link" href="../../bio.html"> 
 <span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tesi.html"> 
+    <a class="nav-link" href="../../tesi.html"> 
 <span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./post.html"> 
+    <a class="nav-link" href="../../post.html"> 
 <span class="menu-text">Blogpost</span></a>
   </li>  
 </ul>
@@ -99,70 +166,119 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<div class="quarto-about-solana column-page">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tommaso Rigon</h1>
-<p class="subtitle lead">Assistant Professor at University of Milano-Bicocca</p>
-</div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header> <div class="about-links">
-  <a href="/files/cv_Rigon.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-journal-text"></i>
-     <span class="about-link-text">Curriculum vitae</span>
-  </a>
-  <a href="mailto: tommaso.rigon@unimib.it" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-at"></i>
-     <span class="about-link-text">Email address</span>
-  </a>
-  <a href="https://scholar.google.it/citations?user=vRRVHqgAAAAJ&amp;hl=en" class="about-link" rel="" target="">
-    <i class="bi bi-google"></i>
-     <span class="about-link-text">Google scholar</span>
-  </a>
-  <a href="https://github.com/tommasorigon" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content column-page" id="quarto-document-content">
-<hr>
-<section id="about-me" class="level2 central">
-<h2 class="central" data-anchor-id="about-me">About me</h2>
-<p>I am an Assistant Professor of Statistical Science (RTD-B, SECS-S/01) at the <a href="https://www.dems.unimib.it/en">department of Economics, Management and Statistics</a> (DEMS) of <a href="https://en.unimib.it">University of Milano-Bicocca</a>. I currently live in Milan, Italy.</p>
-<p>I am a member of the <a href="https://bayeslab.unibocconi.eu">BayesLab</a> at the Bocconi Institute for Data Science and Analytics (BIDSA), and the <a href="https://midas.mat.uc.cl/network/">MIDAS Complex Data Modeling Research Network</a>.</p>
-<p>My curriculum vitae is available <a href="files/cv_Rigon.pdf">here</a>. A complete list of publications is available <a href="./papers.html">here</a>.</p>
-<p><span class="blue">Research interests</span>: applied Bayesian modeling; Bayesian clustering; Bayesian nonparametrics; computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.</p>
-<p><span class="blue">E-mail</span>: tommaso.rigon@unimib.it</p>
-<hr>
-</section>
-<section id="news-and-awards" class="level2 central">
-<h2 class="central" data-anchor-id="news-and-awards">News and awards</h2>
-<p><span class="blue">[2025] Bnews Bicocca (ITA)</span>. <a href="https://bnews.unimib.it/blog/statistica-premi-internazionali-tommaso-rigon/"><em>Statistica, tripletta di premi internazionali per il ricercatore di Bicocca Tommaso Rigon</em></a></p>
-<p>[<span class="blue">2024</span>] <span class="blue">Blackwell and Rosenbluth Award 2024</span>. <em>The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community</em>. Junior Section of International Society for Bayesian Analysis (j-ISBA). [<a href="https://j-isba.github.io/blackwell-rosenbluth.html">Award</a>] [<a href="https://stat.duke.edu/news/bu-rigon-win-blackwell-rosenbluth-awards">News</a>]</p>
-<p>[<span class="blue">2024</span>] I am part of the <span class="blue">j-ISBA Peer Mentoring</span>, which is meant to provide advice on academic matters. [<a href="https://j-isba.github.io/peer-mentoring.html">Program Info</a>]</p>
-<p>[<span class="blue">2024</span>] <span class="blue">Mitchell Prize 2023</span> <em>for the paper “Extended Stochastic Block Models with Application to Criminal Networks”</em>. International Society for Bayesian Analysis (ISBA). [<a href="https://bayesian.org/project/mitchell-prize/">Award</a>]</p>
-<!-- [[2024]{.blue}] I attended [BAYSM 2024](https://events.stat.uconn.edu/BAYSM2024/) and the [ISBA world meeting 2024](https://www.unive.it/web/en/2208/home), between June and July. ISBA is the [main international conference]{.blue} for [Bayesian]{.blue} statistics. BAYSM is organized by [j-ISBA](https://j-isba.github.io) and is devoted to [young researchers]{.blue}. -->
-<!-- [[2024]{.blue}] I have been to Madagascar for the [annual meeting]{.blue} of [LIFEPLAN](https://cordis.europa.eu/project/id/856506) (a planetary inventory of life), funded by an [ERC Synergy Grant]{.blue} focusing on global biodiversity research. [[Photos](https://www.icloud.com/sharedalbum/it-it/#B19Grq0zw0xLA7t)] -->
-<p>[<span class="blue">2024</span>] <a href="https://danieledurante.github.io/web/">Daniele Durante</a> was awarded an <span class="blue">ERC Starting Grant</span> for the project <a href="https://danieledurante.github.io/web/nemesis.html">NEMESIS</a>, focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!</p>
-<p>[<span class="blue">2022</span>] <span class="blue">National Scientific Qualification for Associate Professor in Statistics (13/D1)</span>.</p>
-<p>[<span class="blue">2021</span>] <span class="blue">Young Talents Award 2021</span>. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [<a href="https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf">Award</a>]</p>
-<p>[<span class="blue">2020</span>] <span class="blue">Savage Award 2020 (Theory and Methods)</span>. <em>The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis</em>. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [<a href="https://bayesian.org/project/savage-award/">Award</a>] [<a href="https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation">News</a>]</p>
-<hr>
-
-
-</section>
-</main></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
+  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">Foundations</a></li>
+  <li><a href="#hypothetical-approach" id="toc-hypothetical-approach" class="nav-link" data-scroll-target="#hypothetical-approach">Hypothetical approach</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BISP2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
-    <img src="images/profile.jpg" class="about-image
-  round " style="height: 8em; width: 8em;">
-  </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BISP14 workshop</h1>
+<p class="subtitle lead"><em>Bayesian inference for generalized linear models via quasi-posteriors</em></p>
 </div>
- <!-- /main -->
+
+
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><span class="orange">Tommaso Rigon</span> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <em>Università degli Studi di Milano-Bicocca</em>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-page-left">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 27, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="warm-thanks" class="level2">
+<h2 class="anchored" data-anchor-id="warm-thanks">Warm thanks</h2>
+</section>
+<section id="foundations" class="level2">
+<h2 class="anchored" data-anchor-id="foundations">Foundations</h2>
+<p>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#ref-de1937prevision" role="doc-biblioref">De Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:</p>
+<ul>
+<li>the <span class="orange">hypothetical</span> approach;</li>
+<li>the <span class="blue">predictive</span> approach.</li>
+</ul>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled" title="De Finetti's representation theorem">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+De Finetti’s representation theorem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">(Y_n)_{n\ge 1}</span>, <span class="math inline">Y_n\in\mathcal{Y}</span>, be a sequence of exchangeable random variables with probability law <span class="math inline">P</span>. Then there exists a unique probability measure <span class="math inline">\Pi</span> such that, for any <span class="math inline">n\ge 1</span>,</p>
+<p><span class="math display">
+P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+</span></p>
+</div>
+</div>
+<ul>
+<li>While representing opposite interpretations of the Theorem, the two approaches are intrinsically connected.</li>
+</ul>
+</section>
+<section id="hypothetical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="hypothetical-approach">Hypothetical approach</h2>
+<ul>
+<li><p>The hypothetical approach represents the the <span class="blue">most common</span> way to operate within the Bayesian community.</p></li>
+<li><p>In a <span class="orange">parametric</span> setting, <span class="math inline">\Pi</span> has support on a class <span class="math inline">\Theta\subseteq\mathbb{R}^p</span>, <span class="math inline">p&lt;\infty</span>, such that <span class="math inline">\boldsymbol{\theta}\in\Theta</span> indexes the class of distributions <span class="math inline">\mathcal{F}_{\boldsymbol{\theta}}=\{F_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}</span>.</p></li>
+<li><p>Bayes’ rule takes the well-known formulation: <span class="math display">
+\pi(\boldsymbol{\theta}\mid y_1,\ldots,y_n) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n f_{\boldsymbol{\theta}}(y_i),
+</span></p></li>
+</ul>
+<p>where <span class="math inline">\pi</span> and <span class="math inline">f_{\boldsymbol{\theta}}</span> denote the probability density functions associated with <span class="math inline">\Pi</span> and <span class="math inline">F_{\boldsymbol{\theta}}</span>, respectively.</p>
+<ul>
+<li>However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.</li>
+</ul>
+<ul>
+<li>Solution: <span class="orange">Generalized posterior distributions</span> (Gibbs-posterior).</li>
+</ul>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-de1937prevision" class="csl-entry" role="listitem">
+De Finetti, B. (1937), <span>“La pr<span>é</span>vision: Ses lois logiques, ses sources subjectives,”</span> in <em>Annales de l’institut henri poincar<span>é</span></em>, pp. 1–68.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -183,6 +299,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -581,4 +704,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

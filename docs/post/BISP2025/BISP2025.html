@@ -176,6 +176,15 @@ window.Quarto = {
   <li><a href="#hypothetical-approach" id="toc-hypothetical-approach" class="nav-link" data-scroll-target="#hypothetical-approach">Hypothetical approach</a></li>
   <li><a href="#generalizations-of-the-hypothetical-approach" id="toc-generalizations-of-the-hypothetical-approach" class="nav-link" data-scroll-target="#generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</a></li>
   <li><a href="#generalized-bayes-for-glms" id="toc-generalized-bayes-for-glms" class="nav-link" data-scroll-target="#generalized-bayes-for-glms">Generalized Bayes for GLMs</a></li>
+  <li><a href="#second-order-assumptions" id="toc-second-order-assumptions" class="nav-link" data-scroll-target="#second-order-assumptions">Second order assumptions</a></li>
+  <li><a href="#quasi-likelihood" id="toc-quasi-likelihood" class="nav-link" data-scroll-target="#quasi-likelihood">Quasi-likelihood</a></li>
+  <li><a href="#quasi-posteriors-i" id="toc-quasi-posteriors-i" class="nav-link" data-scroll-target="#quasi-posteriors-i">Quasi-posteriors I</a></li>
+  <li><a href="#quasi-posteriors-ii" id="toc-quasi-posteriors-ii" class="nav-link" data-scroll-target="#quasi-posteriors-ii">Quasi-posteriors II</a></li>
+  <li><a href="#calibration-of-the-dispersion-i" id="toc-calibration-of-the-dispersion-i" class="nav-link" data-scroll-target="#calibration-of-the-dispersion-i">Calibration of the dispersion I</a></li>
+  <li><a href="#calibration-of-the-dispersion-ii" id="toc-calibration-of-the-dispersion-ii" class="nav-link" data-scroll-target="#calibration-of-the-dispersion-ii">Calibration of the dispersion II</a></li>
+  <li><a href="#simulation-results-i" id="toc-simulation-results-i" class="nav-link" data-scroll-target="#simulation-results-i">Simulation results I</a></li>
+  <li><a href="#simulation-results-ii" id="toc-simulation-results-ii" class="nav-link" data-scroll-target="#simulation-results-ii">Simulation results II</a></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BISP2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -224,13 +233,34 @@ window.Quarto = {
 
 <section id="warm-thanks" class="level2">
 <h2 class="anchored" data-anchor-id="warm-thanks">Warm thanks</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><span class="orange">Davide Agnoletto</span> (Duke University)</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/davide.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<p><span class="orange">David Dunson</span> (Duke University)</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/david.png" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="foundations" class="level2">
 <h2 class="anchored" data-anchor-id="foundations">Foundations</h2>
-<p>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#ref-de1937prevision" role="doc-biblioref">De Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:</p>
+<ul>
+<li>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#ref-de1937prevision" role="doc-biblioref">De Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:
 <ul>
 <li>the <span class="orange">hypothetical</span> approach;</li>
 <li>the <span class="blue">predictive</span> approach.</li>
+</ul></li>
 </ul>
 <div class="callout callout-style-simple callout-warning no-icon callout-titled" title="De Finetti's representation theorem">
 <div class="callout-header d-flex align-content-center">
@@ -263,46 +293,399 @@ P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
 <li><p>However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.</p></li>
 </ul>
 <ul>
-<li>Solution: <span class="orange">generalized posterior distributions</span>, sometimes called <span class="blue">Gibbs-posteriors</span>.</li>
-<li>This is a <span class="blue">lively recent topic</span>, see for instance: <span class="citation" data-cites="chernozhukov2003mcmc">Chernozhukov and Hong (<a href="#ref-chernozhukov2003mcmc" role="doc-biblioref">2003</a>)</span>; <span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> <span class="citation" data-cites="heide2020safe">Heide et al. (<a href="#ref-heide2020safe" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="grunwald2020fast">Grünwald and Mehta (<a href="#ref-grunwald2020fast" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="knoblauch2022optimization">Knoblauch et al. (<a href="#ref-knoblauch2022optimization" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2022robust">Matsubara et al. (<a href="#ref-matsubara2022robust" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>; <span class="citation" data-cites="jewson_rossell_2022">Jewson and Rossell (<a href="#ref-jewson_rossell_2022" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="rigon2023generalized">Rigon et al. (<a href="#ref-rigon2023generalized" role="doc-biblioref">2023</a>)</span></li>
+<li><p>Solution: <span class="orange">generalized posterior distributions</span>, sometimes called <span class="blue">Gibbs-posteriors</span>.</p></li>
+<li><p>This is a <span class="blue">lively recent topic</span>, see for instance: <span class="citation" data-cites="chernozhukov2003mcmc">Chernozhukov and Hong (<a href="#ref-chernozhukov2003mcmc" role="doc-biblioref">2003</a>)</span>; <span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> <span class="citation" data-cites="heide2020safe">Heide et al. (<a href="#ref-heide2020safe" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="grunwald2020fast">Grünwald and Mehta (<a href="#ref-grunwald2020fast" role="doc-biblioref">2020</a>)</span>; <span class="citation" data-cites="knoblauch2022optimization">Knoblauch et al. (<a href="#ref-knoblauch2022optimization" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2022robust">Matsubara et al. (<a href="#ref-matsubara2022robust" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>; <span class="citation" data-cites="jewson_rossell_2022">Jewson and Rossell (<a href="#ref-jewson_rossell_2022" role="doc-biblioref">2022</a>)</span>; <span class="citation" data-cites="rigon2023generalized">Rigon et al. (<a href="#ref-rigon2023generalized" role="doc-biblioref">2023</a>)</span>.</p></li>
 </ul>
 </section>
 <section id="generalizations-of-the-hypothetical-approach" class="level2">
 <h2 class="anchored" data-anchor-id="generalizations-of-the-hypothetical-approach">Generalizations of the hypothetical approach</h2>
 <ul>
 <li><span class="citation" data-cites="bissiri2016general">Bissiri et al. (<a href="#ref-bissiri2016general" role="doc-biblioref">2016</a>)</span> showed that the <span class="blue">generalized posterior</span> <span class="math display">
-\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \textcolor{teal}{\omega} \sum_{i=1}^n \textcolor{purple}{\ell(\boldsymbol{\theta}; y_i)} \right\},
+\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \omega \sum_{i=1}^n \ell(\boldsymbol{\theta}; y_i) \right\},
 </span> is the only coherent update of the prior beliefs about <span class="math display">
 \boldsymbol{\theta}^* = \arg\min_{\boldsymbol{\theta}\in\Theta} \int_{\mathcal{Y}} \ell(\boldsymbol{\theta}; y)\, F_0(\mathrm{d}y),
 </span> where <span class="math inline">\ell(\boldsymbol{\theta}, y)</span> is a <span class="orange">loss function</span>, <span class="math inline">\omega</span> is the <span class="grey">loss-scale</span>, and <span class="math inline">F_0</span> is the unknown true sampling distribution.</li>
 </ul>
 <ul>
-<li><p><em>Learning the loss scale</em> <span class="math inline">\omega</span> from the data is a <em>delicate</em> task. Assuming a prior for <span class="math inline">\omega</span> can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.</p></li>
+<li><p>Learning the loss scale <span class="math inline">\omega</span> from the data is a <span class="orange">delicate</span> task. Assuming a prior for <span class="math inline">\omega</span> can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.</p></li>
 <li><p>However, there are several solutions for its calibration: <span class="citation" data-cites="holmes2017assigning">Holmes and Walker (<a href="#ref-holmes2017assigning" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#ref-lyddon2019general" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="syring2019calibrating">Syring and Martin (<a href="#ref-syring2019calibrating" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>.</p></li>
 </ul>
 <ul>
-<li><span class="orange">Our contribution</span>: Bayesian inference for generalized linear models via quasi-posteriors</li>
+<li><span class="orange">Our contribution</span>: Bayesian inference for generalized linear models via quasi-posteriors.</li>
 </ul>
 </section>
 <section id="generalized-bayes-for-glms" class="level2">
 <h2 class="anchored" data-anchor-id="generalized-bayes-for-glms">Generalized Bayes for GLMs</h2>
 <ul>
-<li><p><em>Generalized linear models</em> (GLMs) are routinely used to model a wide variety of data.</p></li>
-<li><p>However, they often incur misspecification, and this could compromise inferential conclusions.</p></li>
+<li><p><span class="blue">Generalized linear models</span> (GLMs) are routinely used to model a wide variety of data.</p></li>
+<li><p>The <span class="orange">Bayesian approach</span> for GLMs is also incredibly popular, e.g.&nbsp;because of the possibility of naturally incorporating <span class="blue">random effects</span>, complex penalizations, prior information, and more.</p></li>
+<li><p>However, they often incur <span class="orange">misspecification</span>, and this could compromise inferential conclusions.</p></li>
 </ul>
 <ul>
-<li><p>A common case is <strong>overdispersion</strong>, i.e., when proportion or count observations show larger variability than the one assumed by the model.<br>
-Traditional solutions have important drawbacks:</p>
+<li><p>A common case is <span class="orange">overdispersion</span>, i.e., when proportion or count observations show larger variability than the one assumed by the model.</p></li>
+<li><p>Traditional solutions have important drawbacks:</p>
 <ul>
-<li><strong>Model-based</strong> → may lead to computational bottlenecks and can result again in misspecification.<br>
-</li>
-<li><strong>Nonparametric</strong> → increased computational cost and loss of efficiency and interpretability.<br>
-<br></li>
+<li><span class="orange">Model-based</span>: may lead to computational bottlenecks and can result again in misspecification.</li>
+<li><span class="blue">Nonparametric</span>: increased computational cost and loss of efficiency and interpretability.</li>
 </ul></li>
 </ul>
 <ul>
-<li>We rely on a <em>semi-parametric</em> approach, making only assumptions on the mean and variance of the response while preserving computational tractability.</li>
+<li>We rely on a <span class="blue">semi-parametric</span> approach, making only assumptions on the <span class="grey">mean</span> and <span class="grey">variance</span> of the response while preserving computational tractability.</li>
 </ul>
+</section>
+<section id="second-order-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="second-order-assumptions">Second order assumptions</h2>
+<ul>
+<li><p>Let <span class="math inline">Y_i \in \mathcal{Y}</span> denote a response variable, <span class="math inline">\boldsymbol{x}_i \in \mathbb{R}^p</span> be a vector of covariates for <span class="math inline">i = 1, \ldots, n</span>, and <span class="math inline">\boldsymbol{\beta} \in \mathbb{R}^p</span> be the parameter of interest.</p></li>
+<li><p>Standard GLMs assume that observations <span class="math inline">y_i</span> are independent realizations of <span class="math inline">Y_i \mid \boldsymbol{x}_i</span>, whose distribution belongs to the <span class="orange">exponential dispersion family</span>.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>We assume the <span class="blue">second-order conditions</span>: <span class="math display">
+\mathbb{E}\{Y_i\} = \mu_i = g^{-1}(\boldsymbol{x}_i^\top \boldsymbol{\beta}), \quad
+\mathrm{var}\{Y_i\} = \psi\, V(\mu_i),
+</span> where <span class="math inline">g(\cdot)</span> is a link function, <span class="math inline">V(\cdot)&gt;0</span> is a <span class="orange">variance function</span>, and <strong><span class="math inline">\psi \in (0,\infty)</span></strong> is a <span class="blue">dispersion parameter</span>.</p>
+<p>We let <span class="math inline">(\boldsymbol{\beta}_0, \psi_0)</span> be the true values for the parameters <span class="math inline">(\boldsymbol{\beta}, \psi)</span> and we assume the <span class="orange">data are generated</span> under <span class="math inline">F_0(\mathrm{d}y \mid \boldsymbol{x}) = F(\mathrm{d}y \mid \boldsymbol{x}, \boldsymbol{\beta}_0, \psi_0)</span>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Although the mean and variance functions need to be carefully chosen to fit the data, the resulting inferences are <span class="orange">robust to misspecification</span> of <span class="blue">higher-order moments</span>.</li>
+</ul>
+</section>
+<section id="quasi-likelihood" class="level2">
+<h2 class="anchored" data-anchor-id="quasi-likelihood">Quasi-likelihood</h2>
+<ul>
+<li><p>Under the second-order assumptions, it is possible to specify the so-called log-<span class="blue">quasi-likelihood</span> function <span class="citation" data-cites="wedderburn1974quasi">(<a href="#ref-wedderburn1974quasi" role="doc-biblioref">Wedderburn 1974</a>)</span>: <span class="math display">
+\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) = \sum_{i=1}^n \ell_Q(\boldsymbol{\beta}; y_i, \boldsymbol{x}_i, \psi) = \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{\psi V(t)} \, \mathrm{d}t,
+</span> where <span class="math inline">a</span> is an arbitrary constant that does not depend on <span class="math inline">\boldsymbol{\beta}</span>.</p></li>
+<li><p>The above integral can be written in <span class="orange">closed form</span> for many choices of variance functions, including those associated with <span class="blue">exponential family</span> distributions.</p></li>
+</ul>
+<ul>
+<li>Quasi-likelihoods retain many properties of genuine likelihoods, such as <span class="blue">unbiased estimating equations</span> and the <span class="orange">information identity</span>: <span class="math display">
+\mathbb{E}\left\{ \nabla \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} = 0, \qquad
+\mathbb{E}\left\{ -\nabla^2 \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} =
+\mathbb{E}\left\{ \nabla \ell_Q \nabla \ell_Q^\top \right\},
+</span> where <span class="math inline">\nabla</span> denotes the gradient with respect to <span class="math inline">\boldsymbol{\beta}</span>.</li>
+</ul>
+<ul>
+<li>Under mild conditions, the <span class="blue">maximum quasi-likelihood</span> is <span class="orange">consistent</span> and has the <span class="orange">smallest asymptotic variance</span> among estimators derived from linear estimating equations <span class="citation" data-cites="mccullagh1983quasi">(<a href="#ref-mccullagh1983quasi" role="doc-biblioref">McCullagh 1983</a>)</span>.</li>
+</ul>
+</section>
+<section id="quasi-posteriors-i" class="level2">
+<h2 class="anchored" data-anchor-id="quasi-posteriors-i">Quasi-posteriors I</h2>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Let <span class="math inline">\exp\{\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi)\}</span> be the quasi-likelihood function and <span class="math inline">p(\boldsymbol{\beta})</span> be the prior distribution for <span class="math inline">\boldsymbol{\beta}</span>. We define the <span class="blue">quasi-posterior</span> distribution for <span class="math inline">\boldsymbol{\beta}</span> as: <span class="math display">
+p_Q(\boldsymbol{\beta} \mid \mathbf{y}, \mathbf{X}, \psi) \propto p(\boldsymbol{\beta}) \exp \left\{ \ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) \right\} =
+p(\boldsymbol{\beta}) \exp \left\{ \frac{1}{\psi} \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t \right\}
+</span></p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>The quasi-posterior is a rational update of a belief distribution within the generalized Bayesian framework, with loss function: <span class="math display">
+\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = - \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t.
+</span></p></li>
+<li><p>The dispersion parameter <span class="math inline">\psi</span> plays the role of a <span class="orange">loss-scale</span> parameter for the quasi-posterior.</p></li>
+</ul>
+</section>
+<section id="quasi-posteriors-ii" class="level2">
+<h2 class="anchored" data-anchor-id="quasi-posteriors-ii">Quasi-posteriors II</h2>
+<ul>
+<li><p>The quasi-posterior represents subjective uncertainty about the unknown parameter value: <span class="math display">
+\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} \ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) \, F_0(d\mathbf{y} \mid \mathbf{X}),
+</span> which is assumed to be unique <span class="citation" data-cites="bissiri2016general">(<a href="#ref-bissiri2016general" role="doc-biblioref">Bissiri et al. 2016</a>)</span>.</p></li>
+<li><p>The definition of <span class="math inline">\boldsymbol{\beta}^*</span> <span class="orange">does not</span> automatically <span class="orange">guarantee</span> that <span class="math inline">\boldsymbol{\beta}^* = \boldsymbol{\beta}_0</span>.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Theorem (Agnoletto, R., Dunson, 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assume the second-order conditions are well-specified, and suppose the target of inference <span class="math inline">\boldsymbol{\beta}^*</span> is unique. Then, for quasi-posteriors, <span class="math inline">\boldsymbol{\beta}^*</span> must <span class="blue">coincide</span> with the true value <span class="math inline">\boldsymbol{\beta}_0</span>: <span class="math display">
+\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}}
+\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{t - y_i}{V(t)} \, \mathrm{d}t \, F_0(d\mathbf{y} \mid \mathbf{X}) = \boldsymbol{\beta}_0.
+</span></p>
+</div>
+</div>
+</section>
+<section id="calibration-of-the-dispersion-i" class="level2">
+<h2 class="anchored" data-anchor-id="calibration-of-the-dispersion-i">Calibration of the dispersion I</h2>
+<ul>
+<li>Based on a comparison with the Bayesian bootstrap, <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#ref-lyddon2019general" role="doc-biblioref">2019</a>)</span> propose <span class="blue">calibrate</span> the <span class="blue">dispersion</span> <span class="math inline">\psi</span> setting it equal to: <span class="math display">
+\psi_{\text{LLB}} =
+\frac{\mathrm{tr}\{j(\boldsymbol{\beta}_0)\}}{\mathrm{tr}\{j(\boldsymbol{\beta}_0) h(\boldsymbol{\beta}_0)^{-1} j(\boldsymbol{\beta}_0)\}},
+</span> where we define <span class="math display">
+j(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla^2 \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})\right], \qquad  h(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}) \nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})^\top\right].
+</span></li>
+</ul>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proposition (Agnoletto, R., Dunson, 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Under the <span class="blue">second order</span> conditions, namely if <span class="math inline">\mathbb{E}(Y_i) = g^{-1}(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 V\{\mu_i(\boldsymbol{\beta}_0)\}</span>, then for quasi posteriors with loss <span class="math inline">\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = -\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \mathrm{d}t</span>, we have <span class="math display">
+\psi_{\text{LLB}} = \psi_0.
+</span></p>
+</div>
+</div>
+</section>
+<section id="calibration-of-the-dispersion-ii" class="level2">
+<h2 class="anchored" data-anchor-id="calibration-of-the-dispersion-ii">Calibration of the dispersion II</h2>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Theorem (Agnoletto, R., Dunson, 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Assume the second-order conditions are correctly specified. Let <span class="math inline">S_1, S_2, \ldots \subseteq \mathbb{R}^p</span> be a sequence of convex <span class="blue">credible sets</span> of level <span class="math inline">\rho \in (0,1)</span>. Then, under mild conditions and setting <span class="math inline">\psi = \psi_0</span>: <span class="math display">
+\mathbb{P}(\boldsymbol{\beta}_0 \in S_n \mid \mathbf{y}, \mathbf{X}, \psi_0) \to \rho \quad \text{as } n \to \infty.
+</span></p>
+</div>
+</div>
+<ul>
+<li>As <span class="math inline">\psi_0</span> is typically unknown, we can use the classical <span class="orange">method of moments</span> estimator: <span class="math display">
+\widehat{\psi} = \frac{1}{n - p} \sum_{i=1}^n \frac{(y_i - \widehat{\mu}_i)^2}{V(\widehat{\mu}_i)},
+</span> where <span class="math inline">\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})</span>, which is <span class="blue">fast</span> and <span class="blue">consistent</span> <span class="citation" data-cites="mccullagh1989generalized">(<a href="#ref-mccullagh1989generalized" role="doc-biblioref">McCullagh and Nelder 1989</a>)</span>.</li>
+</ul>
+</section>
+<section id="simulation-results-i" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-results-i">Simulation results I</h2>
+<ul>
+<li><span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5), \qquad \psi_0 = 3.5</span>, <span class="math inline">n = 100</span></li>
+</ul>
+<div style="font-size: 80%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th>POI</th>
+<th>NB</th>
+<th>DFD-Bayes</th>
+<th>QP</th>
+<th>QP-BT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_1</span></strong></td>
+<td>Mean</td>
+<td>3.50 (0.035)</td>
+<td>3.49 (0.047)</td>
+<td>57.46 (105.41)</td>
+<td>3.50 (0.035)</td>
+<td>3.50 (0.035)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.715</td>
+<td>0.920</td>
+<td>0.201</td>
+<td>0.945</td>
+<td>0.970</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_2</span></strong></td>
+<td>Mean</td>
+<td>1.50 (0.020)</td>
+<td>1.51 (0.040)</td>
+<td>5.26 (6.31)</td>
+<td>1.50 (0.020)</td>
+<td>1.50 (0.020)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.675</td>
+<td>0.960</td>
+<td>0.454</td>
+<td>0.945</td>
+<td>0.990</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_3</span></strong></td>
+<td>Mean</td>
+<td>-1.00 (0.020)</td>
+<td>-1.01 (0.034)</td>
+<td>-3.98 (6.53)</td>
+<td>-1.00 (0.020)</td>
+<td>-1.00 (0.020)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.715</td>
+<td>0.995</td>
+<td>0.479</td>
+<td>0.950</td>
+<td>0.965</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_4</span></strong></td>
+<td>Mean</td>
+<td>0.50 (0.018)</td>
+<td>0.50 (0.037)</td>
+<td>2.55 (7.37)</td>
+<td>0.50 (0.018)</td>
+<td>0.50 (0.018)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.655</td>
+<td>0.965</td>
+<td>0.526</td>
+<td>0.950</td>
+<td>0.970</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="simulation-results-ii" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-results-ii">Simulation results II</h2>
+<div style="font-size: 80%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th>POI</th>
+<th>NB</th>
+<th>DFD-Bayes</th>
+<th>QP</th>
+<th>QP-BT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_1</span></strong></td>
+<td>Mean</td>
+<td>3.50 (0.010)</td>
+<td>3.50 (0.015)</td>
+<td>4.64 (8.45)</td>
+<td>3.50 (0.010)</td>
+<td>3.50 (0.010)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.690</td>
+<td>0.835</td>
+<td>0.070</td>
+<td>0.945</td>
+<td>0.955</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_2</span></strong></td>
+<td>Mean</td>
+<td>1.50 (0.005)</td>
+<td>1.50 (0.012)</td>
+<td>1.87 (1.37)</td>
+<td>1.50 (0.005)</td>
+<td>1.50 (0.005)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.665</td>
+<td>0.910</td>
+<td>0.510</td>
+<td>0.950</td>
+<td>0.960</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_3</span></strong></td>
+<td>Mean</td>
+<td>-1.00 (0.005)</td>
+<td>-1.00 (0.010)</td>
+<td>-1.21 (0.81)</td>
+<td>-1.00 (0.005)</td>
+<td>-1.00 (0.005)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.680</td>
+<td>0.960</td>
+<td>0.690</td>
+<td>0.955</td>
+<td>0.950</td>
+</tr>
+<tr class="odd">
+<td><strong><span class="math inline">\beta_4</span></strong></td>
+<td>Mean</td>
+<td>0.50 (0.005)</td>
+<td>0.50 (0.009)</td>
+<td>0.54 (0.35)</td>
+<td>0.50 (0.005)</td>
+<td>0.50 (0.005)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Cover.</td>
+<td>0.715</td>
+<td>0.950</td>
+<td>0.810</td>
+<td>0.950</td>
+<td>0.940</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="thank-you" class="level2">
+<h2 class="anchored" data-anchor-id="thank-you">Thank you!</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/QR.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:3in"></p>
+</figure>
+</div>
+<p>The <span class="orange">main paper</span> is:</p>
+<p>Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. <em>Biometrika</em>, to appear.</p>
 </section>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
@@ -340,11 +723,20 @@ Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), <span>“Ro
 <div id="ref-matsubara2023generalized" class="csl-entry" role="listitem">
 Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), <span>“Generalized bayesian inference for discrete intractable likelihood,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 1–11.
 </div>
+<div id="ref-mccullagh1983quasi" class="csl-entry" role="listitem">
+McCullagh, P. (1983), <span>“Quasi-likelihood functions,”</span> <em><span>A</span>nnals of <span>S</span>tatistics</em>, Institute of Mathematical Statistics, 11, 59–67.
+</div>
+<div id="ref-mccullagh1989generalized" class="csl-entry" role="listitem">
+McCullagh, P., and Nelder, J. A. (1989), <em>Generalized linear models</em>, Chapman &amp; Hall.
+</div>
 <div id="ref-rigon2023generalized" class="csl-entry" role="listitem">
 Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <span>B</span>ayes framework for probabilistic clustering,”</span> <em>Biometrika</em>, Oxford University Press, 10, 559–578.
 </div>
 <div id="ref-syring2019calibrating" class="csl-entry" role="listitem">
 Syring, N., and Martin, R. (2019), <span>“Calibrating general posterior credible regions,”</span> <em>Biometrika</em>, Oxford University Press, 106, 479–486.
+</div>
+<div id="ref-wedderburn1974quasi" class="csl-entry" role="listitem">
+Wedderburn, R. W. (1974), <span>“Quasi-likelihood functions, generalized linear models, and the <span>G</span>auss-<span>N</span>ewton method,”</span> <em>Biometrika</em>, Oxford University Press, 61, 439–447.
 </div>
 </div>
 

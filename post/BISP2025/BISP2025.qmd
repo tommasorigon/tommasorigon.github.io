@@ -13,23 +13,43 @@ reference-location: margin
 execute:
   cache: false
 format:
-  html:
-    toc: true
   revealjs:
     output-file: BISP2025_slides.html
+  html:
+    toc: true
 format-links: true
 ---
 
 ## Warm thanks
 
+::: columns
 
+::: {.column width="45%"}
+
+[Davide Agnoletto]{.orange} (Duke University)
+
+![](img/davide.jpg){fig-align="left"}
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+[David Dunson]{.orange} (Duke University)
+
+![](img/david.png){fig-align="left"}
+
+
+:::
+
+
+:::
 
 ## Foundations
 
-De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
-
-- the [hypothetical]{.orange} approach; 
-- the [predictive]{.blue} approach.
+- De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
+  - the [hypothetical]{.orange} approach; 
+  - the [predictive]{.blue} approach.
 
 ::: {.callout-warning title="De Finetti's representation theorem"}
 Let $(Y_n)_{n\ge 1}$, $Y_n\in\mathcal{Y}$, be a sequence of exchangeable random variables with probability law $P$. Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$,
@@ -58,14 +78,15 @@ where $\pi$ and $f_{\boldsymbol{\theta}}$ denote the probability density functio
 . . .
 
 - Solution: [generalized posterior distributions]{.orange}, sometimes called [Gibbs-posteriors]{.blue}. 
-- This is a [lively recent topic]{.blue}, see for instance: @chernozhukov2003mcmc; @bissiri2016general @heide2020safe; @grunwald2020fast; @knoblauch2022optimization; @matsubara2022robust; @matsubara2023generalized; @jewson_rossell_2022; @rigon2023generalized
+
+- This is a [lively recent topic]{.blue}, see for instance: @chernozhukov2003mcmc; @bissiri2016general @heide2020safe; @grunwald2020fast; @knoblauch2022optimization; @matsubara2022robust; @matsubara2023generalized; @jewson_rossell_2022; @rigon2023generalized.
 
 
 ## Generalizations of the hypothetical approach
 
 - @bissiri2016general showed that the [generalized posterior]{.blue} 
 $$
-\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \textcolor{teal}{\omega} \sum_{i=1}^n \textcolor{purple}{\ell(\boldsymbol{\theta}; y_i)} \right\},
+\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \omega \sum_{i=1}^n \ell(\boldsymbol{\theta}; y_i) \right\},
 $$
 is the only coherent update of the prior beliefs about
 $$
@@ -75,23 +96,25 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 
 . . .
 
-- *Learning the loss scale* $\omega$ from the data is a *delicate* task. Assuming a prior for $\omega$ can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.  
+- Learning the loss scale $\omega$ from the data is a [delicate]{.orange} task. Assuming a prior for $\omega$ can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.  
 
 - However, there are several solutions for its calibration: @holmes2017assigning; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
 
 . . .
 
-- [Our contribution]{.orange}: Bayesian inference for generalized linear models via quasi-posteriors
+- [Our contribution]{.orange}: Bayesian inference for generalized linear models via quasi-posteriors.
 
 ## Generalized Bayes for GLMs
 
 - [Generalized linear models]{.blue} (GLMs) are routinely used to model a wide variety of data.
 
+- The [Bayesian approach]{.orange} for GLMs is also incredibly popular, e.g. because of the possibility of naturally incorporating [random effects]{.blue}, complex penalizations, prior information, and more. 
+
 - However, they often incur [misspecification]{.orange}, and this could compromise inferential conclusions.  
 
 . . .
 
-- A common case is **overdispersion**, i.e., when proportion or count observations show larger variability than the one assumed by the model.  
+- A common case is [overdispersion]{.orange}, i.e., when proportion or count observations show larger variability than the one assumed by the model.  
 
 - Traditional solutions have important drawbacks:
   - [Model-based]{.orange}: may lead to computational bottlenecks and can result again in misspecification. 
@@ -101,8 +124,176 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 
 - We rely on a [semi-parametric]{.blue} approach, making only assumptions on the [mean]{.grey} and [variance]{.grey} of the response while preserving computational tractability.
 
+## Second order assumptions
+
+- Let $Y_i \in \mathcal{Y}$ denote a response variable, $\boldsymbol{x}_i \in \mathbb{R}^p$ be a vector of covariates for $i = 1, \ldots, n$, and $\boldsymbol{\beta} \in \mathbb{R}^p$ be the parameter of interest.  
+
+- Standard GLMs assume that observations $y_i$ are independent realizations of $Y_i \mid \boldsymbol{x}_i$, whose distribution belongs to the [exponential dispersion family]{.orange}.  
+
+. . .
+
+:::{.callout-note}
+We assume the [second-order conditions]{.blue}:
+$$
+\mathbb{E}\{Y_i\} = \mu_i = g^{-1}(\boldsymbol{x}_i^\top \boldsymbol{\beta}), \quad
+\mathrm{var}\{Y_i\} = \psi\, V(\mu_i),
+$$
+where $g(\cdot)$ is a link function, $V(\cdot)>0$ is a [variance function]{.orange}, and **$\psi \in (0,\infty)$** is a [dispersion parameter]{.blue}. 
+
+We let $(\boldsymbol{\beta}_0, \psi_0)$ be the true values for the parameters $(\boldsymbol{\beta}, \psi)$ and we assume the [data are generated]{.orange} under $F_0(\mathrm{d}y \mid \boldsymbol{x}) = F(\mathrm{d}y \mid \boldsymbol{x}, \boldsymbol{\beta}_0, \psi_0)$.  
+
+:::
+
+. . .
+
+- Although the mean and variance functions need to be carefully chosen to fit the data, the resulting inferences are [robust to misspecification]{.orange} of [higher-order moments]{.blue}.
+
+## Quasi-likelihood
+
+- Under the second-order assumptions, it is possible to specify the so-called log-[quasi-likelihood]{.blue} function [@wedderburn1974quasi]:
+$$
+\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) = \sum_{i=1}^n \ell_Q(\boldsymbol{\beta}; y_i, \boldsymbol{x}_i, \psi) = \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{\psi V(t)} \, \mathrm{d}t,
+$$
+where $a$ is an arbitrary constant that does not depend on $\boldsymbol{\beta}$.  
+
+- The above integral can be written in [closed form]{.orange} for many choices of variance functions, including those associated with [exponential family]{.blue} distributions.  
+
+. . .
+
+- Quasi-likelihoods retain many properties of genuine likelihoods, such as [unbiased estimating equations]{.blue} and the [information identity]{.orange}: $$
+\mathbb{E}\left\{ \nabla \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} = 0, \qquad
+\mathbb{E}\left\{ -\nabla^2 \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} =
+\mathbb{E}\left\{ \nabla \ell_Q \nabla \ell_Q^\top \right\},
+$$
+where $\nabla$ denotes the gradient with respect to $\boldsymbol{\beta}$.  
+
+. . .
+
+- Under mild conditions, the [maximum quasi-likelihood]{.blue} is [consistent]{.orange} and has the [smallest asymptotic variance]{.orange} among estimators derived from linear estimating equations [@mccullagh1983quasi].
+
+## Quasi-posteriors I
+
+::: {.callout-note}
+Let $\exp\{\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi)\}$ be the quasi-likelihood function and $p(\boldsymbol{\beta})$ be the prior distribution for $\boldsymbol{\beta}$. We define the [quasi-posterior]{.blue} distribution for $\boldsymbol{\beta}$ as:
+$$
+p_Q(\boldsymbol{\beta} \mid \mathbf{y}, \mathbf{X}, \psi) \propto p(\boldsymbol{\beta}) \exp \left\{ \ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) \right\} =
+p(\boldsymbol{\beta}) \exp \left\{ \frac{1}{\psi} \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t \right\}
+$$
+:::
+
+- The quasi-posterior is a rational update of a belief distribution within the generalized Bayesian framework, with loss function: 
+$$
+\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = - \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t.
+$$
+
+- The dispersion parameter $\psi$ plays the role of a [loss-scale]{.orange} parameter for the quasi-posterior.
+
+## Quasi-posteriors II
+
+- The quasi-posterior represents subjective uncertainty about the unknown parameter value: 
+$$
+\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} \ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) \, F_0(d\mathbf{y} \mid \mathbf{X}),
+$$
+which is assumed to be unique [@bissiri2016general].
+
+- The definition of $\boldsymbol{\beta}^*$ [does not]{.orange} automatically [guarantee]{.orange} that $\boldsymbol{\beta}^* = \boldsymbol{\beta}_0$.
+
+. . .
+
+:::{.callout-warning}
+#### Theorem (Agnoletto, R., Dunson, 2025)
+
+Assume the second-order conditions are well-specified, and suppose the target of inference $\boldsymbol{\beta}^*$ is unique. Then, for quasi-posteriors, $\boldsymbol{\beta}^*$ must [coincide]{.blue} with the true value $\boldsymbol{\beta}_0$:
+$$
+\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} 
+\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{t - y_i}{V(t)} \, \mathrm{d}t \, F_0(d\mathbf{y} \mid \mathbf{X}) = \boldsymbol{\beta}_0.
+$$
+:::
+
+## Calibration of the dispersion I
+
+- Based on a comparison with the Bayesian bootstrap, @lyddon2019general propose [calibrate]{.blue} the [dispersion]{.blue} $\psi$ setting it equal to: 
+$$
+\psi_{\text{LLB}} = 
+\frac{\mathrm{tr}\{j(\boldsymbol{\beta}_0)\}}{\mathrm{tr}\{j(\boldsymbol{\beta}_0) h(\boldsymbol{\beta}_0)^{-1} j(\boldsymbol{\beta}_0)\}},
+$$
+where we define
+$$
+j(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla^2 \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})\right], \qquad  h(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}) \nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})^\top\right].
+$$
+
+:::{.callout-warning}
+#### Proposition (Agnoletto, R., Dunson, 2025)
+
+Under the [second order]{.blue} conditions, namely if $\mathbb{E}(Y_i) = g^{-1}(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 V\{\mu_i(\boldsymbol{\beta}_0)\}$, then for quasi posteriors with loss $\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = -\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \mathrm{d}t$, we have 
+$$
+\psi_{\text{LLB}} = \psi_0.
+$$
+:::
+
+## Calibration of the dispersion II
+
+:::{.callout-warning}
+#### Theorem (Agnoletto, R., Dunson, 2025)
+
+Assume the second-order conditions are correctly specified. Let $S_1, S_2, \ldots \subseteq \mathbb{R}^p$ be a sequence of convex [credible sets]{.blue} of level $\rho \in (0,1)$.  Then, under mild conditions and setting $\psi = \psi_0$:
+$$
+\mathbb{P}(\boldsymbol{\beta}_0 \in S_n \mid \mathbf{y}, \mathbf{X}, \psi_0) \to \rho \quad \text{as } n \to \infty.
+$$
+:::
+
+- As $\psi_0$ is typically unknown, we can use the classical [method of moments]{.orange} estimator:
+$$
+\widehat{\psi} = \frac{1}{n - p} \sum_{i=1}^n \frac{(y_i - \widehat{\mu}_i)^2}{V(\widehat{\mu}_i)},
+$$
+where $\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})$,  which is [fast]{.blue} and [consistent]{.blue} [@mccullagh1989generalized].
+
+## Simulation results I 
+
+- $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5), \qquad \psi_0 = 3.5$, $n = 100$
+
+::: {style="font-size: 80%;"}
+|                |         | POI           | NB            | DFD-Bayes       | QP            | QP-BT         |
+|----------------|---------|---------------|---------------|------------------|---------------|---------------|
+| **$\beta_1$**  | Mean    | 3.50 (0.035)   | 3.49 (0.047)   | 57.46 (105.41)   | 3.50 (0.035)   | 3.50 (0.035)   |
+|                | Cover.  | 0.715          | 0.920          | 0.201            | 0.945          | 0.970          |
+| **$\beta_2$**  | Mean    | 1.50 (0.020)   | 1.51 (0.040)   | 5.26 (6.31)      | 1.50 (0.020)   | 1.50 (0.020)   |
+|                | Cover.  | 0.675          | 0.960          | 0.454            | 0.945          | 0.990          |
+| **$\beta_3$**  | Mean    | -1.00 (0.020)  | -1.01 (0.034)  | -3.98 (6.53)     | -1.00 (0.020)  | -1.00 (0.020)  |
+|                | Cover.  | 0.715          | 0.995          | 0.479            | 0.950          | 0.965          |
+| **$\beta_4$**  | Mean    | 0.50 (0.018)   | 0.50 (0.037)   | 2.55 (7.37)      | 0.50 (0.018)   | 0.50 (0.018)   |
+|                | Cover.  | 0.655          | 0.965          | 0.526            | 0.950          | 0.970          |
+:::
+
+## Simulation results II
+
+
+::: {style="font-size: 80%;"}
+
+|                |         | POI           | NB            | DFD-Bayes       | QP            | QP-BT         |
+|----------------|---------|---------------|---------------|------------------|---------------|---------------|
+| **$\beta_1$**  | Mean    | 3.50 (0.010)   | 3.50 (0.015)   | 4.64 (8.45)      | 3.50 (0.010)   | 3.50 (0.010)   |
+|                | Cover.  | 0.690          | 0.835          | 0.070            | 0.945          | 0.955          |
+| **$\beta_2$**  | Mean    | 1.50 (0.005)   | 1.50 (0.012)   | 1.87 (1.37)      | 1.50 (0.005)   | 1.50 (0.005)   |
+|                | Cover.  | 0.665          | 0.910          | 0.510            | 0.950          | 0.960          |
+| **$\beta_3$**  | Mean    | -1.00 (0.005)  | -1.00 (0.010)  | -1.21 (0.81)     | -1.00 (0.005)  | -1.00 (0.005)  |
+|                | Cover.  | 0.680          | 0.960          | 0.690            | 0.955          | 0.950          |
+| **$\beta_4$**  | Mean    | 0.50 (0.005)   | 0.50 (0.009)   | 0.54 (0.35)      | 0.50 (0.005)   | 0.50 (0.005)   |
+|                | Cover.  | 0.715          | 0.950          | 0.810            | 0.950          | 0.940          |
+:::
+
+
+## Thank you!
+
+![](img/QR.png){width=3in fig-align="center"}
+
+The [main paper]{.orange} is: 
+
+Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear.
 
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
+
+

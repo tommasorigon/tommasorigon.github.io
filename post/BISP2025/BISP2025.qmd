@@ -13,10 +13,10 @@ reference-location: margin
 execute:
   cache: false
 format:
-  revealjs:
-    output-file: BISP2025_slides.html
   html:
     toc: true
+  revealjs:
+    output-file: BISP2025_slides.html
 format-links: true
 ---
 

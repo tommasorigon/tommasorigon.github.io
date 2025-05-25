@@ -475,33 +475,35 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <section id="simulation-results-i" class="level2">
 <h2 class="anchored" data-anchor-id="simulation-results-i">Simulation results I</h2>
 <ul>
-<li><span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5), \qquad \psi_0 = 3.5</span>, <span class="math inline">n = 100</span></li>
+<li><p>Data are generated from a distribution with <span class="math inline">\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)</span> —<span class="orange">not</span> a <span class="orange">Poisson</span>!— with parameters <span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)</span>, and <span class="math inline">\psi_0 = 3.5</span>.</p></li>
+<li><p>We computed posterior means and <span class="math inline">95\%</span> credible intervals.</p></li>
+<li><p>The <span class="blue">sample size</span> is <span class="math inline">n = 100</span>; estimates are averages over <span class="blue">multiple simulated</span> datasets.</p></li>
 </ul>
 <div style="font-size: 80%;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 8%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 1%">
+<col style="width: 10%">
 <col style="width: 17%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
 <th></th>
-<th>POI</th>
-<th>NB</th>
+<th>Poisson</th>
+<th>Negative Binomial</th>
 <th>DFD-Bayes</th>
-<th>QP</th>
-<th>QP-BT</th>
+<th><span class="orange">Quasi-posterior</span></th>
+<th><span class="orange">Quasi-posterior</span> + alternative <span class="math inline">\hat{\psi}</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_1</span></strong></td>
+<td><span class="math inline">\beta_1</span></td>
 <td>Mean</td>
 <td>3.50 (0.035)</td>
 <td>3.49 (0.047)</td>
@@ -519,7 +521,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.970</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_2</span></strong></td>
+<td><span class="math inline">\beta_2</span></td>
 <td>Mean</td>
 <td>1.50 (0.020)</td>
 <td>1.51 (0.040)</td>
@@ -537,7 +539,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.990</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_3</span></strong></td>
+<td><span class="math inline">\beta_3</span></td>
 <td>Mean</td>
 <td>-1.00 (0.020)</td>
 <td>-1.01 (0.034)</td>
@@ -555,7 +557,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.965</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_4</span></strong></td>
+<td><span class="math inline">\beta_4</span></td>
 <td>Mean</td>
 <td>0.50 (0.018)</td>
 <td>0.50 (0.037)</td>
@@ -578,31 +580,36 @@ Theorem (Agnoletto, R., Dunson, 2025)
 </section>
 <section id="simulation-results-ii" class="level2">
 <h2 class="anchored" data-anchor-id="simulation-results-ii">Simulation results II</h2>
+<ul>
+<li><p>Data are generated from a distribution with <span class="math inline">\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)</span> —<span class="orange">not</span> a <span class="orange">Poisson</span>!— with parameters <span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)</span>, and <span class="math inline">\psi_0 = 3.5</span>.</p></li>
+<li><p>We computed posterior means and <span class="math inline">95\%</span> credible intervals.</p></li>
+<li><p>The <span class="blue">sample size</span> is <span class="math inline">n = 1000</span>; estimates are averages over <span class="blue">multiple simulated</span> datasets.</p></li>
+</ul>
 <div style="font-size: 80%;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 8%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 1%">
+<col style="width: 10%">
 <col style="width: 17%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
 <th></th>
-<th>POI</th>
-<th>NB</th>
+<th>Poisson</th>
+<th>Negative Binomial</th>
 <th>DFD-Bayes</th>
-<th>QP</th>
-<th>QP-BT</th>
+<th><span class="orange">Quasi-posterior</span></th>
+<th><span class="orange">Quasi-posterior</span> + alternative <span class="math inline">\hat{\psi}</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_1</span></strong></td>
+<td><span class="math inline">\beta_1</span></td>
 <td>Mean</td>
 <td>3.50 (0.010)</td>
 <td>3.50 (0.015)</td>
@@ -620,7 +627,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.955</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_2</span></strong></td>
+<td><span class="math inline">\beta_2</span></td>
 <td>Mean</td>
 <td>1.50 (0.005)</td>
 <td>1.50 (0.012)</td>
@@ -638,7 +645,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.960</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_3</span></strong></td>
+<td><span class="math inline">\beta_3</span></td>
 <td>Mean</td>
 <td>-1.00 (0.005)</td>
 <td>-1.00 (0.010)</td>
@@ -656,7 +663,7 @@ Theorem (Agnoletto, R., Dunson, 2025)
 <td>0.950</td>
 </tr>
 <tr class="odd">
-<td><strong><span class="math inline">\beta_4</span></strong></td>
+<td><span class="math inline">\beta_4</span></td>
 <td>Mean</td>
 <td>0.50 (0.005)</td>
 <td>0.50 (0.009)</td>

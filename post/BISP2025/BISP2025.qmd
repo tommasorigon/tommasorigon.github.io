@@ -250,35 +250,46 @@ where $\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})$,  which is [fast]{
 
 ## Simulation results I 
 
-- $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5), \qquad \psi_0 = 3.5$, $n = 100$
+- Data are generated from a distribution with $\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)$ ---[not]{.orange} a [Poisson]{.orange}!--- with parameters $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)$, and $\psi_0 = 3.5$. 
+
+- We computed posterior means and $95\%$ credible intervals. 
+
+- The [sample size]{.blue} is $n = 100$; estimates are averages over [multiple simulated]{.blue} datasets.
 
 ::: {style="font-size: 80%;"}
-|                |         | POI           | NB            | DFD-Bayes       | QP            | QP-BT         |
-|----------------|---------|---------------|---------------|------------------|---------------|---------------|
-| **$\beta_1$**  | Mean    | 3.50 (0.035)   | 3.49 (0.047)   | 57.46 (105.41)   | 3.50 (0.035)   | 3.50 (0.035)   |
+|                |         | Poisson           | Negative Binomial            | DFD-Bayes       | [Quasi-posterior]{.orange}            | [Quasi-posterior]{.orange} + alternative $\hat{\psi}$         |
+|-|---------|---------------|---------------|------------------|---------------|---------------|
+| $\beta_1$  | Mean    | 3.50 (0.035)   | 3.49 (0.047)   | 57.46 (105.41)   | 3.50 (0.035)   | 3.50 (0.035)   |
 |                | Cover.  | 0.715          | 0.920          | 0.201            | 0.945          | 0.970          |
-| **$\beta_2$**  | Mean    | 1.50 (0.020)   | 1.51 (0.040)   | 5.26 (6.31)      | 1.50 (0.020)   | 1.50 (0.020)   |
+| $\beta_2$  | Mean    | 1.50 (0.020)   | 1.51 (0.040)   | 5.26 (6.31)      | 1.50 (0.020)   | 1.50 (0.020)   |
 |                | Cover.  | 0.675          | 0.960          | 0.454            | 0.945          | 0.990          |
-| **$\beta_3$**  | Mean    | -1.00 (0.020)  | -1.01 (0.034)  | -3.98 (6.53)     | -1.00 (0.020)  | -1.00 (0.020)  |
+| $\beta_3$  | Mean    | -1.00 (0.020)  | -1.01 (0.034)  | -3.98 (6.53)     | -1.00 (0.020)  | -1.00 (0.020)  |
 |                | Cover.  | 0.715          | 0.995          | 0.479            | 0.950          | 0.965          |
-| **$\beta_4$**  | Mean    | 0.50 (0.018)   | 0.50 (0.037)   | 2.55 (7.37)      | 0.50 (0.018)   | 0.50 (0.018)   |
+| $\beta_4$  | Mean    | 0.50 (0.018)   | 0.50 (0.037)   | 2.55 (7.37)      | 0.50 (0.018)   | 0.50 (0.018)   |
 |                | Cover.  | 0.655          | 0.965          | 0.526            | 0.950          | 0.970          |
 :::
 
 ## Simulation results II
 
+- Data are generated from a distribution with $\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)$ ---[not]{.orange} a [Poisson]{.orange}!--- with parameters $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)$, and $\psi_0 = 3.5$. 
+
+- We computed posterior means and $95\%$ credible intervals. 
+
+- The [sample size]{.blue} is $n = 1000$; estimates are averages over [multiple simulated]{.blue} datasets.
+
+
 
 ::: {style="font-size: 80%;"}
 
-|                |         | POI           | NB            | DFD-Bayes       | QP            | QP-BT         |
-|----------------|---------|---------------|---------------|------------------|---------------|---------------|
-| **$\beta_1$**  | Mean    | 3.50 (0.010)   | 3.50 (0.015)   | 4.64 (8.45)      | 3.50 (0.010)   | 3.50 (0.010)   |
+|                |         | Poisson           | Negative Binomial            | DFD-Bayes       | [Quasi-posterior]{.orange}            | [Quasi-posterior]{.orange} + alternative $\hat{\psi}$         |
+|-|---------|---------------|---------------|------------------|---------------|---------------|
+| $\beta_1$  | Mean    | 3.50 (0.010)   | 3.50 (0.015)   | 4.64 (8.45)      | 3.50 (0.010)   | 3.50 (0.010)   |
 |                | Cover.  | 0.690          | 0.835          | 0.070            | 0.945          | 0.955          |
-| **$\beta_2$**  | Mean    | 1.50 (0.005)   | 1.50 (0.012)   | 1.87 (1.37)      | 1.50 (0.005)   | 1.50 (0.005)   |
+| $\beta_2$  | Mean    | 1.50 (0.005)   | 1.50 (0.012)   | 1.87 (1.37)      | 1.50 (0.005)   | 1.50 (0.005)   |
 |                | Cover.  | 0.665          | 0.910          | 0.510            | 0.950          | 0.960          |
-| **$\beta_3$**  | Mean    | -1.00 (0.005)  | -1.00 (0.010)  | -1.21 (0.81)     | -1.00 (0.005)  | -1.00 (0.005)  |
+| $\beta_3$  | Mean    | -1.00 (0.005)  | -1.00 (0.010)  | -1.21 (0.81)     | -1.00 (0.005)  | -1.00 (0.005)  |
 |                | Cover.  | 0.680          | 0.960          | 0.690            | 0.955          | 0.950          |
-| **$\beta_4$**  | Mean    | 0.50 (0.005)   | 0.50 (0.009)   | 0.54 (0.35)      | 0.50 (0.005)   | 0.50 (0.005)   |
+| $\beta_4$  | Mean    | 0.50 (0.005)   | 0.50 (0.009)   | 0.54 (0.35)      | 0.50 (0.005)   | 0.50 (0.005)   |
 |                | Cover.  | 0.715          | 0.950          | 0.810            | 0.950          | 0.940          |
 :::
 

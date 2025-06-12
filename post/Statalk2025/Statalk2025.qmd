@@ -73,6 +73,8 @@ format-links: true
 
 - [What are the qualities of a good mentor?]{.blue} *In your view, what makes someone a [great supervisor]{.orange} or mentor?*
 
+- What advice do you have for [balancing]{.blue} [criticism]{.orange} and [support]{.grey} as a mentor? How do you cultivate a supporting but rigorous academic environment?
+
 . . . 
  
 - What are some methods for [establishing independence]{.blue} from your advisor(s) as your progress in your PhD?

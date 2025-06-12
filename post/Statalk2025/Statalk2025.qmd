@@ -31,7 +31,7 @@ format-links: true
 (PoliMi)
 :::
 
-::: {.column width="3%"}
+::: {.column width="4%"}
 :::
 
 
@@ -43,7 +43,7 @@ format-links: true
 (UniBg)
 :::
 
-::: {.column width="3%"}
+::: {.column width="4%"}
 :::
 
 ::: {.column width="30%"}
@@ -63,8 +63,7 @@ format-links: true
 
 2.  [When is it okay to abandon a project?]{.blue} *Not every idea is a brilliant one, and some projects slowly (or quickly) reveal themselves to be [dead ends]{.grey}. Sometimes we realize they are just not as exciting as we first thought, especially when other, more promising projects come along. How do you decide [when to pull the plug]{.orange}, both as a junior researcher and, hopefully one day, as a senior one?*
 
-## The academic job: vocation, profession, or survival Game?
-
+## The academic job: vocation, profession, or survival game?
 
 ## The mentor, the mentee, and their delicate dance
 
@@ -72,4 +71,4 @@ format-links: true
 
 ## Next generation challenges
 
-4. [In light of recent developments in AI and large language models (ChatGPT and friends), how should the teaching of Statistics--especially at the bachelor level--evolve?]{.blue} *Should we be rethinking what we teach, how we teach it, or both? What about theses and written projects?*
+4. [In light of recent developments in AI and large language models]{.blue} (ChatGPT and friends), [how should the teaching of Statistics, especially at the bachelor level, evolve?]{.blue} *Should we be rethinking what we teach, how we teach it, or both? What about [theses]{.orange} and [written projects]{.orange}?*

@@ -57,6 +57,8 @@ format-links: true
 
 ## PhD life
 
+- [How did you end up here]{.blue}? Was it a [grand plan]{.blue}, a [happy accident]{.orange}, or the result of saying "yes" one too many times? *We would love to hear any [anecdotes]{.orange} about what first sparked your interest in your current research area.*
+
 -  [How has academia changed]{.blue} at the [PhD]{.orange} and [postdoc levels]{.orange} compared to when you went through it? Are things better, worse, or just... different with more Zoom?
 
 . . .

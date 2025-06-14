@@ -59,6 +59,8 @@ format-links: true
 
 - [How did you end up here]{.blue}? Was it a [grand plan]{.blue}, a [happy accident]{.orange}, or the result of saying "yes" one too many times? *We would love to hear any [anecdotes]{.orange} about what first sparked your interest in your current research area.*
 
+. . .
+
 -  [How has academia changed]{.blue} at the [PhD]{.orange} and [postdoc levels]{.orange} compared to when you went through it? Are things better, worse, or just... different with more Zoom?
 
 . . .
@@ -68,8 +70,6 @@ format-links: true
 . . .
 
 -  [When is it okay to abandon a project?]{.blue} *Not every idea is a brilliant one, and some projects slowly (or quickly) reveal themselves to be [dead ends]{.grey}. How do you decide [when to pull the plug]{.orange}, both as a junior researcher and, hopefully one day, as a senior one?*
-
-## The academic job: vocation, profession, or survival game?
 
 ## The mentor, the mentee, and their delicate dance
 
@@ -83,9 +83,11 @@ format-links: true
 
 . . .
  
- 
 - What role has [community]{.blue} played in your career and in your professional successes? Any [anecdotes]{.orange} about relationships formed early in your career that you maintain today?
 
 ## Next generation challenges
+
+- What should statisticians do to avoid being replaced by "data
+scientists"?
 
 - In light of recent developments in AI and [large language models]{.blue} (ChatGPT and friends), how should the [teaching of Statistics]{.blue}, especially at the bachelor level, evolve? *Should we be rethinking what we teach, how we teach it, or both? What about [theses]{.orange} and [written projects]{.orange}?*

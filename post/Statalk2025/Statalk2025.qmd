@@ -65,7 +65,7 @@ format-links: true
 
 ## Seeking wisdom
 
-- What is your [advice]{.blue} for a [young investigator]{.blue}? Are there [common traps]{.orange} you have seen working with your students?
+- What is your [advice]{.blue} for a [young investigator]{.blue}? Are there [common traps]{.orange} you have seen in your work with students?
 
 . . .
 

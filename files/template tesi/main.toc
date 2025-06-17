@@ -6,8 +6,8 @@
 \contentsline {subsubsection}{Sotto-sotto-sezione}{1}{subsection.1.1.1}%
 \contentsline {chapter}{\numberline {2}Esempi}{3}{chapter.2}%
 \contentsline {subsubsection}{Esempio formula matematica}{3}{theorem.2.1}%
-\contentsline {subsubsection}{Esempio matrice}{3}{equation.2.0.1}%
-\contentsline {subsubsection}{Esempio citazione}{3}{equation.2.0.2}%
-\contentsline {subsubsection}{Esempio figura (con etichetta)}{3}{equation.2.0.2}%
+\contentsline {subsubsection}{Esempio matrice}{3}{equation.2.1}%
+\contentsline {subsubsection}{Esempio citazione}{3}{equation.2.2}%
+\contentsline {subsubsection}{Esempio figura (con etichetta)}{3}{equation.2.2}%
 \contentsline {subsubsection}{Esempio tabella (con etichetta)}{3}{figure.caption.2}%
 \contentsline {chapter}{Bibliografia}{5}{chapter*.4}%

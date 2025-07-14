@@ -37,7 +37,7 @@ format-links: true
 ::: {.column width="45%"}
 [David Dunson]{.orange} (Duke University)
 
-![](img/david.png){fig-align="left"}
+![](img/david.jpeg){fig-align="left"}
 
 
 :::

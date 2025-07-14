@@ -15,7 +15,7 @@
 
 [Articles in refereed journals]{.blue}
 
-1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear. [[ArXiv]](https://arxiv.org/abs/2311.00820) [[Slides]](post/BISP2025/BISP2025.qmd).
+1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear. [[Link]](https://doi.org/10.1093/biomet/asaf022) [[Slides]](post/BISP2025/BISP2025.qmd).
 
 1. **Rigon, T.**, Scarpa, B. and Petrone, S. (2025+). Enriched Pitman-Yor processes. *Scandinavian Journal of Statistics*, to appear. [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1111/sjos.12765).
 

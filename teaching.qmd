@@ -15,7 +15,7 @@
 
 [B.Sc. courses]{.blue} (*Laurea triennale*)
 
-  - [Statistics III (Generalized Linear Models))](https://tommasorigon.github.io/StatIII/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
+  - [Statistics III: Generalized Linear Models](https://tommasorigon.github.io/StatIII/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
 
   - [Statistics I (ITA)](https://tommasorigon.github.io/StatI/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
   

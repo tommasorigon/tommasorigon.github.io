@@ -1,26 +1,90 @@
 /*-- scss:defaults --*/
+//@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
-//@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-//margins
+//@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-boldoblique-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-boldoblique-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-bold-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-oblique-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-oblique-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-regular-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Latin Modern Mono';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-italic-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Latin Modern Mono';
+    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-regular-webfont.woff') format('woff'),
+         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // fonts
-$font-family-sans-serif: "Nunito", sans-serif !default; 
-
+$font-family-sans-serif: "Latin Modern Sans"; 
 $presentation-font-size-root: 24px;
 $presentation-font-smaller: 1;
-$code-block-font-size: 0.85em;
+$code-block-font-size: 1em;
+$code-inline-font-size: 1em;
 
-$presentation-heading-font: "Nunito", sans-serif !default; 
-// $font-family-monospace: "Nunito Sans", monospace !default;
+$presentation-heading-font: "Latin Modern Sans",  !default; 
+$font-family-monospace: "Latin Modern Mono", monospace !default;
 
 // colors
 $link-color: #DF0606; 
 $code-color: #DF0606;
 $code-bg: #fff !default;
+
+.styled-output .cell-output {
+  display: block;             /* ensure it behaves as a block container */
+}
+
+.styled-output .cell-output pre {
+  max-width: fit-content;
+  margin-left: 4ch;              /* indent relative to character width */
+  margin-right: 0;             /* no centering */
+  font-size: 0.75em;                /* slightly smaller text */
+}
+
+/*this can make tables smaller*/
+.small-table table {
+  font-size: 0.85em; /* shrink font size */
+}
 
 // headings
 $presentation-heading-line-height: 2.3;
@@ -41,10 +105,11 @@ ul li::before {
 }
 
 .math.inline {
-  font-size: 87%;
+  font-size: 84%;
 }
+
 .math.display {
-  font-size: 87%;
+  font-size: 84%;
 }
 
 .darkred{
@@ -52,12 +117,12 @@ ul li::before {
 }
 
 .orange{
-   color:#fc7d0b;
+   color:#D21312;//#fc7d0b;
    font-weight: bold;
 }
 
 .blue{
-   color: Darkblue;//#1170aa;
+   color:#3232AA;//#1170aa;
    font-weight: bold;
 }
 
@@ -65,6 +130,3 @@ ul li::before {
    color:#a3acb9;
    font-weight: bold;
 }
-
-
-

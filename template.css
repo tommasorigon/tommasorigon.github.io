@@ -10,47 +10,47 @@
 
 @font-face {
     font-family: 'Latin Modern Sans';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-boldoblique-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-boldoblique-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmsans-boldoblique-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmsans-boldoblique-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: oblique;
 }
 
 @font-face {
     font-family: 'Latin Modern Sans';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-bold-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-bold-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmsans-bold-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmsans-bold-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Latin Modern Sans';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-oblique-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-oblique-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmsans-oblique-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmsans-oblique-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: oblique;
 }
 
 @font-face {
     font-family: 'Latin Modern Sans';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-regular-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmsans-regular-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmsans-regular-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmsans-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Latin Modern Mono';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-italic-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-italic-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmmono-italic-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmmono-italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'Latin Modern Mono';
-    src: url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-regular-webfont.woff') format('woff'),
-         url('https://github.com/tommasorigon/tommasorigon.github.io/raw/refs/heads/master/fonts/lmmono-regular-webfont.ttf') format('truetype');
+    src: url('https://tommasorigon.github.io/fonts/lmmono-regular-webfont.woff') format('woff'),
+         url('https://tommasorigon.github.io/fonts/lmmono-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  14 JUL 2025 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.13)  18 AUG 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -307,10 +307,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 97.
-Package hyperref Info: Option `breaklinks' set `true' on input line 97.
+Package hyperref Info: Option `colorlinks' set `true' on input line 99.
+Package hyperref Info: Option `breaklinks' set `true' on input line 99.
 LaTeX Font Info:    Trying to load font information for OT1+qpl on input line 1
-83.
+85.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/tex-gyre/ot1qpl.fd
 File: ot1qpl.fd 2009/09/25 v1.2 font definition file for OT1/qpl
 )
@@ -322,24 +322,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 (./cv_Rigon.aux)
 \openout1 = `cv_Rigon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -363,18 +363,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 183.
-Package microtype Info: Applying patch `item' on input line 183.
-Package microtype Info: Applying patch `toc' on input line 183.
-Package microtype Info: Applying patch `eqnum' on input line 183.
-Package microtype Info: Applying patch `footnote' on input line 183.
+LaTeX Info: Redefining \microtypecontext on input line 185.
+Package microtype Info: Applying patch `item' on input line 185.
+Package microtype Info: Applying patch `toc' on input line 185.
+Package microtype Info: Applying patch `eqnum' on input line 185.
+Package microtype Info: Applying patch `footnote' on input line 185.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 183.
+LaTeX Info: Redefining \showhyphens on input line 185.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -418,8 +418,8 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 183.
-Package hyperref Info: Link coloring ON on input line 183.
+(lastpage)             ! on input line 185.
+Package hyperref Info: Link coloring ON on input line 185.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -432,9 +432,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count288
 )
-LaTeX Info: Redefining \ref on input line 183.
-LaTeX Info: Redefining \pageref on input line 183.
-LaTeX Info: Redefining \nameref on input line 183.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
  (./cv_Rigon.out) (./cv_Rigon.out)
 \@outlinefile=\write3
 \openout3 = `cv_Rigon.out'.
@@ -451,7 +451,7 @@ Package microtype Info: Character `013' is missing
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 188
+LaTeX Font Info:    Trying to load font information for U+msa on input line 190
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -460,7 +460,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 188
+LaTeX Font Info:    Trying to load font information for U+msb on input line 190
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -469,12 +469,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (18.0pt too wide) in paragraph at lines 187--199
+Overfull \hbox (18.0pt too wide) in paragraph at lines 189--201
 [][] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 2
-28.
+30.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 ) [1
@@ -484,11 +484,6 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/qpl/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
@@ -513,9 +508,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
 \c@publications=\count289
 [3]
-Overfull \hbox (1.39384pt too wide) in paragraph at lines 420--421
+Overfull \hbox (1.39384pt too wide) in paragraph at lines 422--423
 \OT1/qpl/m/n/10 (-20) for dis-crete data via Metropolis-adjusted Dirich-let se-
 quences. Sub-mit-ted, \OT1/qpl/m/it/10 (-20) ArXiv:2507.08629\OT1/qpl/m/n/10 (-
 20) . 
@@ -524,11 +524,11 @@ quences. Sub-mit-ted, \OT1/qpl/m/it/10 (-20) ArXiv:2507.08629\OT1/qpl/m/n/10 (-
 [4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 474.
+(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 476.
 
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 500
+(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 502
 .
 
 [5] [6] 
@@ -538,11 +538,11 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 12664 strings out of 478268
- 199412 string characters out of 5846347
+ 12662 strings out of 478268
+ 199394 string characters out of 5846347
  543817 words of memory out of 5000000
  30453 multiletter control sequences out of 15000+600000
- 523659 words of font info for 147 fonts, out of 8000000 for 9000
+ 523517 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,80p,1005b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/
@@ -553,7 +553,7 @@ texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2
 /texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2022/texmf
 -dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 250743 bytes).
+Output written on cv_Rigon.pdf (7 pages, 250810 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams

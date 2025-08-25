@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  25 AUG 2025 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  25 AUG 2025 09:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,9 +486,6 @@ LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 2
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 )
 
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 277.
-
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
@@ -499,9 +496,6 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/qpl/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 338.
 
 [2]
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
@@ -536,9 +530,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--368
 \c@publications=\count301
 
 
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 384.
-
 [3]
 Overfull \hbox (1.39384pt too wide) in paragraph at lines 425--426
 \OT1/qpl/m/n/10 (-20) for dis-crete data via Metropolis-adjusted Dirich-let se-
@@ -548,33 +539,21 @@ quences. Sub-mit-ted, \OT1/qpl/m/it/10 (-20) ArXiv:2507.08629\OT1/qpl/m/n/10 (-
 
 
 
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 440.
-
 [4]
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/sl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 477.
+(Font)              Font shape `OT1/qpl/m/it' tried instead on input line 479.
 
 
 LaTeX Font Warning: Font shape `OT1/qpl/m/scsl' in size <10> not available
-(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 503
+(Font)              Font shape `OT1/qpl/m/scit' tried instead on input line 505
 .
 
 
 
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 504.
-
 [5]
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 554.
-
 [6]
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 650.
 
 [7] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -583,30 +562,14 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `cv_Rigon.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv_Rigon.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  D30AB58ABA956512DA246417B9E03EBD;2107.
-
-Package lastpage Warning: Rerun to get the references right on input line 650.
-
+Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
+(rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 13116 strings out of 473190
- 205837 string characters out of 5715800
- 652588 words of memory out of 5000000
- 35954 multiletter control sequences out of 15000+600000
+ 13133 strings out of 473190
+ 206038 string characters out of 5715800
+ 652564 words of memory out of 5000000
+ 35971 multiletter control sequences out of 15000+600000
  612953 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,13n,80p,1005b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -615,10 +578,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 247246 bytes).
+Output written on cv_Rigon.pdf (7 pages, 248161 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
+ 242 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  58 named destinations out of 1000 (max. 500000)
- 34305 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 34433 words of extra memory for PDF output out of 35830 (max. 10000000)
 

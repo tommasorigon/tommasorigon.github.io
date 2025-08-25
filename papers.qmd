@@ -14,7 +14,7 @@
 
 [Articles in refereed journals]{.blue}
 
-1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society: Series B*, to appear. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
+1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society Series B: Methodological*, to appear. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
 
 1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
 
@@ -54,12 +54,11 @@
 
 1. Durante, D., Canale, A. and **Rigon, T.** (2019).  A nested expectation-maximization algorithm for latent class models with covariates. *Statistics and Probability Letters* **146**, 97--103. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715218303390)  [[GitHub Repository]](https://github.com/danieledurante/nEM).
 
-1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society, Series A* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub Repository]](https://github.com/tommasorigon/India-SequentiaLogit).
+1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society Series A: Statistics in Society* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub Repository]](https://github.com/tommasorigon/India-SequentiaLogit).
 
 [Publications in monographs, volumes, and discussions]{.blue}
 
 1. Agnoletto, D., **Rigon, T.** and Dunson, D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In *Methodological and Applied Statistics and Demography III* (Pollice, A. and Mariani, P., editors). Springer. [[Link]](https://doi.org/10.1007/978-3-031-64431-3_1)
-
 
 1. **Rigon, T.**, Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: "Centered partition processes: Informative priors for clustering" Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in *Bayesian Analysis* **16**(1) 301--370. [[Link]](https://projecteuclid.org/journals/bayesian-analysis/volume-16/issue-1/Centered-Partition-Processes-Informative-Priors-for-Clustering-with-Discussion/10.1214/20-BA1197.full).
 

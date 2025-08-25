@@ -14,7 +14,7 @@
 
 [Articles in refereed journals]{.blue}
 
-1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society Series B: Methodological*, to appear. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
+1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society Series B: Statistical Methodology*, to appear. [[ArXiv]](https://arxiv.org/abs/2408.15806) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
 
 1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  25 AUG 2025 09:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  25 AUG 2025 12:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -566,11 +566,11 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 13133 strings out of 473190
- 206038 string characters out of 5715800
+ 13137 strings out of 473190
+ 206076 string characters out of 5715800
  652564 words of memory out of 5000000
  35971 multiletter control sequences out of 15000+600000
- 612953 words of font info for 153 fonts, out of 8000000 for 9000
+ 613247 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,13n,80p,1005b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
@@ -578,7 +578,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 248161 bytes).
+Output written on cv_Rigon.pdf (7 pages, 248182 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams

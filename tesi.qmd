@@ -7,7 +7,7 @@ Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue
 
 Le tematiche di cui mi occupo sono: [applicazioni]{.orange} e [metodi]{.orange} di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
 
-Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più applicativo (ad es. progetti legati ad uno stage esterno), oppure di statistica metodologica classica (test d'ipotesi, metodi boostrap, etc.).
+Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più [applicativo]{.orange} (ad es. progetti legati ad uno stage esterno), oppure di [statistica metodologica classica]{.blue} (test d'ipotesi, metodi boostrap, etc.).
 
 Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [Martedì alle ore 17.30]{.blue}.
 

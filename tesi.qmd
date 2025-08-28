@@ -3,7 +3,7 @@ title: 'Informazioni per la tesi di laurea'
 lang: it
 ---
 
-Una popolare credenza è che un docente universitario si occupi degli stessi temi che insegna. Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. Proprio per questi motivi, non è possibile svolgere una tesi in "Statistica I" oppure in "Introduzione ad R", anche perché sono corsi introduttivi.
+Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue}, soprattutto quella "di base", [non riflette gli interessi di ricerca]{.blue} di un docente. 
 
 Le tematiche di cui mi occupo sono: [applicazioni]{.orange} e [metodi]{.orange} di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
 

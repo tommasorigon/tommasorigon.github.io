@@ -621,5 +621,950 @@
     "title": "StaTalk 2025",
     "section": "Next generation challenges",
     "text": "Next generation challenges\n\nWhat should statisticians do to avoid being replaced by “data scientists”?\n\n\n\nIn light of recent developments in AI and large language models (ChatGPT and friends), how should the teaching of Statistics, especially at the bachelor level, evolve? Should we be rethinking what we teach, how we teach it, or both? What about theses and written projects?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html",
+    "href": "post/SISBayes/SISBayes2025.html",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "Ching-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#warm-thanks",
+    "href": "post/SISBayes/SISBayes2025.html#warm-thanks",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "Ching-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#a-journey-into-statistical-biodiversity",
+    "href": "post/SISBayes/SISBayes2025.html#a-journey-into-statistical-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A journey into statistical biodiversity",
+    "text": "A journey into statistical biodiversity"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#approximately-80-years-ago-fisher_1943",
+    "href": "post/SISBayes/SISBayes2025.html#approximately-80-years-ago-fisher_1943",
+    "title": "SIS Bayes 2025",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-first-predictor-for-richness-good_1953-good_toulmin_1956",
+    "href": "post/SISBayes/SISBayes2025.html#the-first-predictor-for-richness-good_1953-good_toulmin_1956",
+    "title": "SIS Bayes 2025",
+    "section": "The first predictor for richness (Good 1953; Good and Toulmin 1956)",
+    "text": "The first predictor for richness (Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-ewens-sampling-formula-ewens72",
+    "href": "post/SISBayes/SISBayes2025.html#the-ewens-sampling-formula-ewens72",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Ewens sampling formula Ewens (1972)",
+    "text": "The Ewens sampling formula Ewens (1972)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#section",
+    "href": "post/SISBayes/SISBayes2025.html#section",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "%\n\\end{document}"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#references",
+    "href": "post/SISBayes/SISBayes2025.html#references",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "References",
+    "text": "References\n\n\n\nCamerlenghi, F., Lijoi, A., Orbanz, P., and Prünster, I. (2019), “Distribution theory for hierarchical processes,” Ann. Statist., 47, 67–92.\n\n\nConley, T. G. (1999), “GMM estimation with cross sectional dependence,” Journal of Econometrics, 92, 1–45.\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prunster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Trans. Pattern Anal. Mach. Intell., IEEE, 37, 212–229.\n\n\nEwens, W. (1972), “The sampling theory of selectively neutral alleles,” Theoretical Population Biology, 3, 87–112.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” Ann. Statist., 1, 209–230.\n\n\nFisher, R. A., Corbet, A. S., and Williams, C. B. (1943), “The relation between the number of species and the number of individuals in a random sample of an animal population,” J. Anim. Ecol., 12, 42–58.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society: Series B (Statistical Methodology).\n\n\nGnedin, A. (2010), “Species sampling model with finitely many types,” Electron. Comm. Prob., 15, 79–88.\n\n\nGnedin, A., and Pitman, J. (2005), “Exchangeable Gibbs partitions and Stirling triangles,” Zapiski Nauchnykh Seminarov, POMI, 325, 83–102.\n\n\nGood, I. J. (1953), “The population frequencies of species and the estimation of population parameters,” Biometrika, 40, 237–264.\n\n\nGood, I. J., and Toulmin, G. H. (1956), “The number of new species, and the increase in population coverage, when a sample is increased,” Biometrika, 43, 45–63.\n\n\nHubbell, S. P. (2001), The unified neutral theory of biodiversity and biogeography, Princeton University Press.\n\n\nHubbell, S. P., He, F., Condit, R., Borda-de-Água, L., Kellner, J., and Ter Steege, H. (2008), “How many tree species are there in the Amazon and how many of them will go extinct?” Proceedings of the National Academy of Sciences of the United States of America, 105, 11498–11504.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007a), “Bayesian nonparametric estimation of the probability of discovering new species,” Biometrika, Oxford University Press, 94, 769–786.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007b), “Controlling the reinforcement in Bayesian non-parametric mixture models,” J. R. Statist. Soc. B, Wiley Online Library, 69, 715–740.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modeling,” Biometrika, 107, 891–906.\n\n\nMcCullagh, P. (2016), “Two Early Contributions to the Ewens Saga,” Statist. Sci., 31, 23–26.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” in Statistics, probability and game theory, IMS lecture notes monogr. ser., Inst. Math. Statist., Hayward, CA, pp. 245–267.\n\n\nPitman, J. (2003), “Poisson-Kingman partitions,” Lecture Notes-Monograph Series, 40, 1–34.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” Ann. Probab., 25, 855–900.\n\n\nRigon, T., Hsu, C., and B., D. D. (2025a), “A Bayesian theory for estimation of biodiversity,” arXiv:2502.01333.\n\n\nRigon, T., Petrone, S., and Scarpa, B. (2025b), “Enriched Pitman-Yor processes,” Scand. J. Statist.\n\n\nZito, A., Rigon, T., and Dunson, D. B. (2023), “Inferring taxonomic placement from DNA barcoding allowing discovery of new taxa,” Meth. Ecol. Evol., 14, 529–542.\n\n\nZito, A., Rigon, T., and Dunson, D. B. (2024), “Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors,” Bayesian Analysis."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#warm-thanks",
+    "href": "post/SISBayes/SISBayes2025_slides.html#warm-thanks",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Warm thanks",
+    "text": "Warm thanks\n\n\n\n\n\n\n\nChing-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#a-journey-into-statistical-biodiversity",
+    "href": "post/SISBayes/SISBayes2025_slides.html#a-journey-into-statistical-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A journey into statistical biodiversity",
+    "text": "A journey into statistical biodiversity"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#approximately-80-years-ago-fisher_1943",
+    "href": "post/SISBayes/SISBayes2025_slides.html#approximately-80-years-ago-fisher_1943",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-first-predictor-for-richness-good_1953-good_toulmin_1956",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-first-predictor-for-richness-good_1953-good_toulmin_1956",
+    "title": "SIS Bayes 2025",
+    "section": "The first predictor for richness (Good 1953; Good and Toulmin 1956)",
+    "text": "The first predictor for richness (Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-ewens-sampling-formula-ewens72",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-ewens-sampling-formula-ewens72",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Ewens sampling formula Ewens (1972)",
+    "text": "The Ewens sampling formula Ewens (1972)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#section",
+    "href": "post/SISBayes/SISBayes2025_slides.html#section",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "\\end{document}"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#references",
+    "href": "post/SISBayes/SISBayes2025_slides.html#references",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "References",
+    "text": "References\n\n\n\nCamerlenghi, F., Lijoi, A., Orbanz, P., and Prünster, I. (2019), “Distribution theory for hierarchical processes,” Ann. Statist., 47, 67–92.\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prunster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Trans. Pattern Anal. Mach. Intell., IEEE, 37, 212–229.\n\n\nEwens, W. (1972), “The sampling theory of selectively neutral alleles,” Theoretical Population Biology, 3, 87–112.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” Ann. Statist., 1, 209–230.\n\n\nFisher, R. A., Corbet, A. S., and Williams, C. B. (1943), “The relation between the number of species and the number of individuals in a random sample of an animal population,” J. Anim. Ecol., 12, 42–58.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society: Series B (Statistical Methodology).\n\n\nGnedin, A. (2010), “Species sampling model with finitely many types,” Electron. Comm. Prob., 15, 79–88.\n\n\nGnedin, A., and Pitman, J. (2005), “Exchangeable Gibbs partitions and Stirling triangles,” Zapiski Nauchnykh Seminarov, POMI, 325, 83–102.\n\n\nHubbell, S. P. (2001), The unified neutral theory of biodiversity and biogeography, Princeton University Press.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007a), “Bayesian nonparametric estimation of the probability of discovering new species,” Biometrika, Oxford University Press, 94, 769–786.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007b), “Controlling the reinforcement in Bayesian non-parametric mixture models,” J. R. Statist. Soc. B, Wiley Online Library, 69, 715–740.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modeling,” Biometrika, 107, 891–906.\n\n\nMcCullagh, P. (2016), “Two Early Contributions to the Ewens Saga,” Statist. Sci., 31, 23–26.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” in Statistics, probability and game theory, IMS lecture notes monogr. ser., Inst. Math. Statist., Hayward, CA, pp. 245–267.\n\n\nPitman, J. (2003), “Poisson-Kingman partitions,” Lecture Notes-Monograph Series, 40, 1–34.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” Ann. Probab., 25, 855–900.\n\n\nRigon, T., Hsu, C., and B., D. D. (2025a), “A Bayesian theory for estimation of biodiversity,” arXiv:2502.01333.\n\n\nRigon, T., Petrone, S., and Scarpa, B. (2025b), “Enriched Pitman-Yor processes,” Scand. J. Statist.\n\n\nZito, A., Rigon, T., and Dunson, D. B. (2023), “Inferring taxonomic placement from DNA barcoding allowing discovery of new taxa,” Meth. Ecol. Evol., 14, 529–542."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-dirichlet-process-ferguson1973",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-dirichlet-process-ferguson1973",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Dirichlet process (Ferguson 1973)",
+    "text": "The Dirichlet process (Ferguson 1973)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#and-species-sampling-models-pitman1996",
+    "href": "post/SISBayes/SISBayes2025_slides.html#and-species-sampling-models-pitman1996",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "… and species sampling models (Pitman 1996)",
+    "text": "… and species sampling models (Pitman 1996)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "href": "post/SISBayes/SISBayes2025_slides.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Ewens formula governs the neutral theory! (Hubbell 2001)",
+    "text": "Ewens formula governs the neutral theory! (Hubbell 2001)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#all-ties-together-mccullagh_2016",
+    "href": "post/SISBayes/SISBayes2025_slides.html#all-ties-together-mccullagh_2016",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "All ties together (McCullagh 2016)",
+    "text": "All ties together (McCullagh 2016)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#section-1",
+    "href": "post/SISBayes/SISBayes2025_slides.html#section-1",
+    "title": "SIS Bayes 2025",
+    "section": "",
+    "text": "%\n\\end{document}"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-first-predictor-for-richness",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-first-predictor-for-richness",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The first predictor for richness",
+    "text": "The first predictor for richness\n\n(Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#early-ideas-good_1953-good_toulmin_1956",
+    "href": "post/SISBayes/SISBayes2025_slides.html#early-ideas-good_1953-good_toulmin_1956",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Early ideas (Good 1953; Good and Toulmin 1956)",
+    "text": "Early ideas (Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#species-sampling-models",
+    "href": "post/SISBayes/SISBayes2025_slides.html#species-sampling-models",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Species sampling models",
+    "text": "Species sampling models\n\nLet X_1,\\dots,X_n be some collection of species or taxa. Suppose X_n are conditionally iid samples from a species sampling model: \n(X_n \\mid \\tilde{p}) \\overset{\\text{iid}}{\\sim} \\tilde{p}, \\qquad\n\\tilde{p}(\\cdot) = \\sum_{h=1}^{\\infty}\\pi_h \\delta_{Z_h}(\\cdot),\n\\qquad n \\ge 1,\n where (\\pi_h)_{h \\ge 1} is a set of probabilities (species proportions) and Z_h represent distinct species.\nThe discreteness of \\tilde{p} identifies Y^{(n)}=y distinct taxa X_1^*, \\ldots, X_y^* with frequencies n_1, \\ldots, n_y, called abundances in ecology.\nGibbs-type priors have emerged as the most natural extension of the DP (De Blasi et al. 2015).\nThe predictive distribution of a Gibbs-type prior is given by: \n\\mathbb{P}(X_{n+1} \\in \\cdot \\mid X_1,\\dots,X_n)\n= \\frac{V_{n+1, y+1}}{V_{n,y}}P(\\cdot)\n+ \\frac{V_{n+1, y}}{V_{n,y}}\\sum_{j=1}^y(n_j - \\sigma)\\delta_{X^*_j}(\\cdot).\n where (a)_{n} denotes a rising factorial, and \\sigma &lt; 1 is the discount parameter. The V_{n,y}’s are non-negative weights satisfying a forward recursive equation."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#gibbs-type-priors",
+    "href": "post/SISBayes/SISBayes2025_slides.html#gibbs-type-priors",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Gibbs-type priors",
+    "text": "Gibbs-type priors\n\nHubbell’s theory generated considerable controversy. It could be incompatible with real data and it disregards important ecological mechanisms.\nGibbs-type priors have emerged as the most natural extension of the DP (De Blasi et al., 2015).\nA species sampling model \\tilde{p} is a Gibbs process if the law of the random partition it induces, called a Gibbs partition, is such that \n\\Pi_n\\left(n_{1},\\dots,n_{k}\\right)\n= \\mathds{P}\\!\\left(\\Psi_n = \\{C_1,\\dots,C_k\\}\\right)\n= V_{n,k}\\prod_{j=1}^{k}(1-\\sigma)_{n_j-1},\n where (a)_{n} denotes a rising factorial, and \\sigma &lt; 1 is the discount parameter. The V_{n,k}’s are non-negative weights satisfying a forward recursive equation.\nThe predictive distribution of a Gibbs-type prior is given by:\n\\mathbb{P}(X_{n+1} \\in \\cdot \\mid X_1,\\dots,X_n)\n= \\frac{V_{n+1, k+1}}{V_{n,k}}P(\\cdot)\n+ \\frac{V_{n+1, k}}{V_{n,k}}\\sum_{j=1}^k(n_j - \\sigma)\\delta_{X^*_j}(\\cdot)."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#three-notable-examples",
+    "href": "post/SISBayes/SISBayes2025_slides.html#three-notable-examples",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Three notable examples",
+    "text": "Three notable examples\n\nDirichlet multinomial (\\sigma &lt; 0). For \\sigma &lt; 0 and H \\in \\mathbb{N}, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\sigma, H) := \\frac{|\\sigma|^{y-1}\\prod_{j=1}^{y-1}(H - j)}{(H|\\sigma| +1)_{n-1}}\n\\mathbb{I}(y \\le H).\n\nDirichlet process (\\sigma = 0). For \\sigma = 0 and \\alpha &gt; 0, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\alpha) := \\frac{\\alpha^y}{(\\alpha)_n}.\n\n\\sigma-stable Poisson–Kingman process (0 &lt; \\sigma &lt; 1). For \\sigma \\in (0,1) and gamma \\gamma &gt; 0, a valid set of Gibbs coefficients is defined as: \nV_{n, y}(\\sigma, \\gamma) := \\frac{\\sigma^y\\gamma^y}{\\Gamma(n-y\\sigma)f_{\\sigma}\\left(\\gamma^{-1/\\sigma}\\right)}\n\\int_{0}^{1}s^{n-1-y\\sigma}f_{\\sigma}\\left(\\left(1-s\\right)\\gamma^{-1/\\sigma}\\right)\\, \\mathrm{d}s,\n where f_\\sigma(t) = (\\pi)^{-1} \\sum_{h=1}^\\infty (-1)^{h+1}\\sin(h \\pi \\sigma )\\Gamma(h\\sigma + 1) / t^{h\\sigma + 1}."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#a-characterization-theorem",
+    "href": "post/SISBayes/SISBayes2025_slides.html#a-characterization-theorem",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A characterization theorem",
+    "text": "A characterization theorem\n\n\n\nTheorem (Gnedin and Pitman 2005)\n\n\nThe Gibbs coefficients V_{n, y} satisfy the recursive equation in the following three cases:\n\nIf \\sigma &lt; 0, whenever V_{n, y} = \\sum_{h=1}^\\infty V_{n, y}(\\sigma, h) p(h), for some discrete random variable H \\in \\mathbb{N} with pdf p(h), where the V_{n, y}(\\sigma, h)’s are those of the Dirichlet multinomial.\nIf \\sigma = 0, whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\alpha) p(\\mathrm{d}\\alpha), for some positive random variable \\alpha with probability measure p(\\mathrm{d}\\alpha), where the V_{n, y}(\\alpha)’s are those of the Dirichlet process.\nIf \\sigma \\in (0,1), whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\sigma, \\gamma) p(\\mathrm{d}\\gamma), for some positive random variable \\gamma with probability measure p(\\mathrm{d}\\gamma), where the V_{n, y}(\\sigma, \\gamma)’s are those of the \\sigma-stable PK.\n\n\n\n\n\nThe Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK form the foundation of any Gibbs-type prior.\nIn fact, any Gibbs-type process can be represented hierarchically, involving a suitable prior distribution for the key parameters H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-quantification-of-biodiversity",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-quantification-of-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The quantification of biodiversity",
+    "text": "The quantification of biodiversity\n\nThe simplest measure of biodiversity is arguably the taxon richness Y^{(n)} = y.\nA priori, the distribution of Y^{(n)} induced by a Gibbs-type prior has a simple form: \n\\mathbb{P}(Y^{(n)} = y)=V_{n,y}\\frac{\\mathscr{C}(n,y;\\sigma)}{\\sigma^y},\n where \\mathscr{C}(n, y;\\sigma) denotes a generalized factorial coefficient.\nThe a priori expectations \\mathbb{E}(K_1),\\dots,\\mathbb{E}(K_n) define a model-based rarefaction curve.\nThe posterior distribution of the number of previously unobserved taxa Y_m^{(n)} is \n\\mathbb{P}(Y_m^{(n)}= j \\mid X_1,\\dots,X_n)=\\frac{V_{n + m, y + j}}{V_{n,k}}\\frac{\\mathscr{C}(m, j;\\sigma, -n + y\\sigma)}{\\sigma^j}, \\qquad j=0,\\dots,m,\n where \\mathscr{C}(m, j;\\sigma, -n + y\\sigma) is the noncentral generalized factorial coefficient.\nThe posterior expectations \\mathbb{E}(Y^{(n+1)} \\mid Y^{(n)} = y), \\dots, \\mathbb{E}(Y^{(n + m)} \\mid Y^{(n)} = y) represents a model-based extrapolation of the accumulation curve."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#rarefaction-and-extrapolation",
+    "href": "post/SISBayes/SISBayes2025_slides.html#rarefaction-and-extrapolation",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Rarefaction and extrapolation",
+    "text": "Rarefaction and extrapolation"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman-2003",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman-2003",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman, 2003)",
+    "text": "The \\sigma-diversity (Pitman, 2003)\n\nLet Y^{(n)} be the number of distinct values arising from a Gibbs-type prior:\n\nLet \\sigma &lt; 0 and V_{n, y}(\\sigma, H) be the weights of a Dirichlet multinomial, then Y^{(n)} \\rightarrow H a.s.\nLet \\sigma = 0 and V_{n, y}(\\alpha) be the weights of a Dirichlet process, then Y^{(n)} / \\log(n) \\rightarrow \\alpha a.s.\nLet \\sigma \\in (0,1) and V_{n, y}(\\sigma, \\gamma) be the weights of a \\sigma-stable PK, then Y^{(n)} / n^\\sigma \\rightarrow \\gamma a.s.\n\nMoreover, consider a generic set of weights V_{n,k} and let \nc_\\sigma(n) =\n\\begin{cases}\n1, & \\sigma &lt;0,\\\\[2mm]\n\\log(n), & \\sigma = 0,\\\\[1mm]\nn^{\\sigma}, & \\sigma \\in (0,1)\n\\end{cases}\n Then, as n \\rightarrow \\infty: \n\\frac{Y^{(n)}}{c_\\sigma(n)} \\overset{\\textup{a.s.}}{\\longrightarrow} S_{\\sigma}.\n\nThe r.v. S_{\\sigma} is the \\sigma-diversity and its distribution coincides with the prior for H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman2003",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman2003",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nLet Y^{(n)} be the number of distinct values arising from a Gibbs-type prior:\n\nLet \\sigma &lt; 0 and V_{n, y}(\\sigma, H) be the weights of a Dirichlet multinomial, then Y^{(n)} \\rightarrow H a.s.\nLet \\sigma = 0 and V_{n, y}(\\alpha) be the weights of a Dirichlet process, then Y^{(n)} / \\log(n) \\rightarrow \\alpha a.s.\nLet \\sigma \\in (0,1) and V_{n, y}(\\sigma, \\gamma) be the weights of a \\sigma-stable PK, then Y^{(n)} / n^\\sigma \\rightarrow \\gamma a.s.\n\nMoreover, consider a generic set of weights V_{n, y} and let \nc_\\sigma(n) =\n\\begin{cases}\n1, & \\sigma &lt;0,\\\\[2mm]\n\\log(n), & \\sigma = 0,\\\\[1mm]\nn^{\\sigma}, & \\sigma \\in (0,1)\n\\end{cases}\n Then, as n \\rightarrow \\infty: \n\\frac{Y^{(n)}}{c_\\sigma(n)} \\overset{\\textup{a.s.}}{\\longrightarrow} S_{\\sigma}.\n The r.v. S_{\\sigma} is the \\sigma-diversity and its distribution coincides with the prior for H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-quantification-of-biodiversity-lijoi2007",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-quantification-of-biodiversity-lijoi2007",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The quantification of biodiversity (Lijoi et al. 2007a)",
+    "text": "The quantification of biodiversity (Lijoi et al. 2007a)\n\nThe simplest measure of biodiversity is arguably the taxon richness Y^{(n)} = y.\nA priori, the distribution of Y^{(n)} induced by a Gibbs-type prior has a simple form: \n\\mathbb{P}(Y^{(n)} = y)=V_{n,y}\\frac{\\mathscr{C}(n,y;\\sigma)}{\\sigma^y},\n where \\mathscr{C}(n, y;\\sigma) denotes a generalized factorial coefficient.\nThe a priori expectations \\mathbb{E}(K_1),\\dots,\\mathbb{E}(K_n) define a model-based rarefaction curve.\nThe posterior distribution of the number of previously unobserved taxa Y_m^{(n)} is \n\\mathbb{P}(Y_m^{(n)}= j \\mid X_1,\\dots,X_n)=\\frac{V_{n + m, y + j}}{V_{n, y}}\\frac{\\mathscr{C}(m, j;\\sigma, -n + y\\sigma)}{\\sigma^j}, \\qquad j=0,\\dots,m,\n where \\mathscr{C}(m, j;\\sigma, -n + y\\sigma) is the noncentral generalized factorial coefficient.\nThe posterior expectations \\mathbb{E}(Y^{(n+1)} \\mid Y^{(n)} = y), \\dots, \\mathbb{E}(Y^{(n + m)} \\mid Y^{(n)} = y) represents a model-based extrapolation of the accumulation curve."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#approximately-80-years-ago-fisher1943",
+    "href": "post/SISBayes/SISBayes2025_slides.html#approximately-80-years-ago-fisher1943",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman2003-1",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-sigma-diversity-pitman2003-1",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nBroadly speaking, the \\sigma-diversity can be seen as a rescaled richness measure.\nThe \\sigma-diversity is deterministic and assumed to be known in the Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK.\nHowever, the \\sigma-diversities H, \\alpha, or \\gamma are typically unknown, and they can be estimated employing a prior distribution, leading to a Gibbs-type prior.\nThe posterior law of the \\sigma-diversity is a key quantity for measuring biodiversity. The posterior law of S_\\sigma has an elegant connection with accumulation curves.\n\n\n\n\nTheorem (Rigon et al. 2025b)\n\n\nLet X_1,\\dots,X_{n+m} be a sample from a Gibbs-type prior with Y^{(n+m)} distinct values. Then:\n\n\\left(\\frac{Y^{(n+m)}}{c_\\sigma(m)} \\mid X_1,\\dots,X_n \\right) \\overset{d}{\\longrightarrow} \\tilde{S}_{\\sigma}, \\qquad\n\\tilde{S}_\\sigma \\overset{d}{=} (S_\\sigma \\mid X_1,\\dots,X_n),\n as m \\rightarrow \\infty, where S_\\sigma is the \\sigma-diversity."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin",
+    "href": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Tree species in the Amazon Basin",
+    "text": "Tree species in the Amazon Basin\n\n\n\n\n\n\n\nHow to get a Bayesian estimator for the biodiversity? We can place a prior on \\alpha and the compute its posterior distribution\nRight panel: posterior distribution of the fundamental biodiversity number \\alpha, using the prior Zito et al. (2024). The dotted lines represent 95% credible intervals. The dashed line is the posterior mean.\n\n%\n\\end{document}"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin-hubbel2008",
+    "href": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin-hubbel2008",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Tree species in the Amazon Basin (Hubbel2008?)",
+    "text": "Tree species in the Amazon Basin (Hubbel2008?)\n\n\n\n\n\n\n\nHow to get a Bayesian estimator for the biodiversity? We can place a prior on \\alpha and the compute its posterior distribution\nRight panel: posterior distribution of the fundamental biodiversity number \\alpha, using the prior Zito et al. (2024). The dotted lines represent 95% credible intervals. The dashed line is the posterior mean.\n\n%\n\\end{document}"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "href": "post/SISBayes/SISBayes2025_slides.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Tree species in the Amazon Basin (Hubbell et al. 2008)",
+    "text": "Tree species in the Amazon Basin (Hubbell et al. 2008)\n\n\n\n\n\n\n\nHow to get a Bayesian estimator for the biodiversity? We can place a prior on \\alpha and the compute its posterior distribution using Bayes theorem.\nPosterior distribution of the \\sigma-diversity \\alpha, under a (conjugate) Stirling-gamma prior (Zito et al. 2024). The dotted lines represent 95% credible intervals. The dashed line is the posterior mean."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#historical-summary-and-extensions-and-question",
+    "href": "post/SISBayes/SISBayes2025_slides.html#historical-summary-and-extensions-and-question",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Historical summary and extensions and question",
+    "text": "Historical summary and extensions and question\n\nThe fundamental biodiversity number \\alpha is the growth-adjusted richness: \n\\frac{Y^{(n)}}{\\log n} \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} \\alpha, \\qquad n\\to \\infty\n\nThe \\alpha from the neutral theory, DP and Fisher log-series is the same for large n: \n\\underbrace{y = \\hat{\\alpha}^\\mathrm{Fisher}\\log\\Big(1 + \\frac{n}{\\hat{\\alpha}^\\mathrm{Fisher}}\\Big)}_{\\text{Solution from Fisher}} \\ \\stackrel{\\text{Under large } n}{\\approx} \\ \\underbrace{\\sum_{j = 1}^{n} \\frac{\\hat{\\alpha}^{\\text{DP}}}{\\hat{\\alpha}^{\\text{DP}} + j - 1} = y}_{\\text{MLE from Hubbell and DP}}\n\nExtensions:\n\nIn , species migrate from metacommunity to local communities w.p. m \\in [0, 1].\nIn BNP, \\sigma &lt; 1 allows for polynomial growth or finite asymptotic richness .\nHierarchies and multiple samples: hierarchical DP and multi-sample neutral theory ."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#historical-summary-and-extensions",
+    "href": "post/SISBayes/SISBayes2025_slides.html#historical-summary-and-extensions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Historical summary and extensions",
+    "text": "Historical summary and extensions\n\nThe fundamental biodiversity number \\alpha is a growth-adjusted richness: \n\\frac{Y^{(n)}}{\\log n} \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} \\alpha, \\qquad n\\to \\infty\n\nThe \\alpha from the neutral theory, DP and Fisher log-series is the same for large n: \n\\underbrace{y = \\hat{\\alpha}^\\mathrm{Fisher}\\log\\Big(1 + \\frac{n}{\\hat{\\alpha}^\\mathrm{Fisher}}\\Big)}_{\\text{Solution from Fisher}} \\ \\stackrel{\\text{Under large } n}{\\approx} \\ \\underbrace{\\sum_{j = 1}^{n} \\frac{\\hat{\\alpha}^{\\text{DP}}}{\\hat{\\alpha}^{\\text{DP}} + j - 1} = y}_{\\text{MLE from Hubbell and DP}}\n\nThere are a lot of possible extensions. This is a very biased list:\n\nThe choice \\sigma \\in (0, 1) allows for polynomial growth (Lijoi et al. 2007b; Pitman and Yor 1997) while \\sigma &lt; 0 leads to a finite richness (Gnedin 2010; Lijoi et al. 2020).\nMultiple samples, a.k.a. partial exchangeability (Camerlenghi et al. 2019; Franzolini et al. 2025)\nEnriched processes, taxonomical data (Rigon et al. 2025a; Rigon et al. 2025b; Zito et al. 2023).\nIncidence data and feature models (Ghilotti et al. 2025).\nWhat about covariates?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#approximately-80-years-ago-fisher1943",
+    "href": "post/SISBayes/SISBayes2025.html#approximately-80-years-ago-fisher1943",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#early-ideas-good_1953-good_toulmin_1956",
+    "href": "post/SISBayes/SISBayes2025.html#early-ideas-good_1953-good_toulmin_1956",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Early ideas (Good 1953; Good and Toulmin 1956)",
+    "text": "Early ideas (Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-dirichlet-process-ferguson1973",
+    "href": "post/SISBayes/SISBayes2025.html#the-dirichlet-process-ferguson1973",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Dirichlet process (Ferguson 1973)",
+    "text": "The Dirichlet process (Ferguson 1973)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#and-species-sampling-models-pitman1996",
+    "href": "post/SISBayes/SISBayes2025.html#and-species-sampling-models-pitman1996",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "… and species sampling models (Pitman 1996)",
+    "text": "… and species sampling models (Pitman 1996)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "href": "post/SISBayes/SISBayes2025.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Ewens formula governs the neutral theory! (Hubbell 2001)",
+    "text": "Ewens formula governs the neutral theory! (Hubbell 2001)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#all-ties-together-mccullagh_2016",
+    "href": "post/SISBayes/SISBayes2025.html#all-ties-together-mccullagh_2016",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "All ties together (McCullagh 2016)",
+    "text": "All ties together (McCullagh 2016)"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#species-sampling-models",
+    "href": "post/SISBayes/SISBayes2025.html#species-sampling-models",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Species sampling models",
+    "text": "Species sampling models\n\nLet X_1,\\dots,X_n be some collection of species or taxa. Suppose X_n are conditionally iid samples from a species sampling model: \n(X_n \\mid \\tilde{p}) \\overset{\\text{iid}}{\\sim} \\tilde{p}, \\qquad\n\\tilde{p}(\\cdot) = \\sum_{h=1}^{\\infty}\\pi_h \\delta_{Z_h}(\\cdot),\n\\qquad n \\ge 1,\n where (\\pi_h)_{h \\ge 1} is a set of probabilities (species proportions) and Z_h represent distinct species.\nThe discreteness of \\tilde{p} identifies Y^{(n)}=y distinct taxa X_1^*, \\ldots, X_y^* with frequencies n_1, \\ldots, n_y, called abundances in ecology.\nGibbs-type priors have emerged as the most natural extension of the DP (De Blasi et al. 2015).\nThe predictive distribution of a Gibbs-type prior is given by: \n\\mathbb{P}(X_{n+1} \\in \\cdot \\mid X_1,\\dots,X_n)\n= \\frac{V_{n+1, y+1}}{V_{n,y}}P(\\cdot)\n+ \\frac{V_{n+1, y}}{V_{n,y}}\\sum_{j=1}^y(n_j - \\sigma)\\delta_{X^*_j}(\\cdot).\n where (a)_{n} denotes a rising factorial, and \\sigma &lt; 1 is the discount parameter. The V_{n,y}’s are non-negative weights satisfying a forward recursive equation."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#three-notable-examples",
+    "href": "post/SISBayes/SISBayes2025.html#three-notable-examples",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Three notable examples",
+    "text": "Three notable examples\n\nDirichlet multinomial (\\sigma &lt; 0). For \\sigma &lt; 0 and H \\in \\mathbb{N}, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\sigma, H) := \\frac{|\\sigma|^{y-1}\\prod_{j=1}^{y-1}(H - j)}{(H|\\sigma| +1)_{n-1}}\n\\mathbb{I}(y \\le H).\n\nDirichlet process (\\sigma = 0). For \\sigma = 0 and \\alpha &gt; 0, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\alpha) := \\frac{\\alpha^y}{(\\alpha)_n}.\n\n\\sigma-stable Poisson–Kingman process (0 &lt; \\sigma &lt; 1). For \\sigma \\in (0,1) and gamma \\gamma &gt; 0, a valid set of Gibbs coefficients is defined as: \nV_{n, y}(\\sigma, \\gamma) := \\frac{\\sigma^y\\gamma^y}{\\Gamma(n-y\\sigma)f_{\\sigma}\\left(\\gamma^{-1/\\sigma}\\right)}\n\\int_{0}^{1}s^{n-1-y\\sigma}f_{\\sigma}\\left(\\left(1-s\\right)\\gamma^{-1/\\sigma}\\right)\\, \\mathrm{d}s,\n where f_\\sigma(t) = (\\pi)^{-1} \\sum_{h=1}^\\infty (-1)^{h+1}\\sin(h \\pi \\sigma )\\Gamma(h\\sigma + 1) / t^{h\\sigma + 1}."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#a-characterization-theorem",
+    "href": "post/SISBayes/SISBayes2025.html#a-characterization-theorem",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A characterization theorem",
+    "text": "A characterization theorem\n\n\n\n\n\n\nTheorem (Gnedin and Pitman 2005)\n\n\n\nThe Gibbs coefficients V_{n, y} satisfy the recursive equation in the following three cases:\n\nIf \\sigma &lt; 0, whenever V_{n, y} = \\sum_{h=1}^\\infty V_{n, y}(\\sigma, h) p(h), for some discrete random variable H \\in \\mathbb{N} with pdf p(h), where the V_{n, y}(\\sigma, h)’s are those of the Dirichlet multinomial.\nIf \\sigma = 0, whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\alpha) p(\\mathrm{d}\\alpha), for some positive random variable \\alpha with probability measure p(\\mathrm{d}\\alpha), where the V_{n, y}(\\alpha)’s are those of the Dirichlet process.\nIf \\sigma \\in (0,1), whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\sigma, \\gamma) p(\\mathrm{d}\\gamma), for some positive random variable \\gamma with probability measure p(\\mathrm{d}\\gamma), where the V_{n, y}(\\sigma, \\gamma)’s are those of the \\sigma-stable PK.\n\n\n\n\nThe Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK form the foundation of any Gibbs-type prior.\nIn fact, any Gibbs-type process can be represented hierarchically, involving a suitable prior distribution for the key parameters H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-quantification-of-biodiversity-lijoi2007",
+    "href": "post/SISBayes/SISBayes2025.html#the-quantification-of-biodiversity-lijoi2007",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The quantification of biodiversity (Lijoi et al. 2007a)",
+    "text": "The quantification of biodiversity (Lijoi et al. 2007a)\n\nThe simplest measure of biodiversity is arguably the taxon richness Y^{(n)} = y.\nA priori, the distribution of Y^{(n)} induced by a Gibbs-type prior has a simple form: \n\\mathbb{P}(Y^{(n)} = y)=V_{n,y}\\frac{\\mathscr{C}(n,y;\\sigma)}{\\sigma^y},\n where \\mathscr{C}(n, y;\\sigma) denotes a generalized factorial coefficient.\nThe a priori expectations \\mathbb{E}(K_1),\\dots,\\mathbb{E}(K_n) define a model-based rarefaction curve.\nThe posterior distribution of the number of previously unobserved taxa Y_m^{(n)} is \n\\mathbb{P}(Y_m^{(n)}= j \\mid X_1,\\dots,X_n)=\\frac{V_{n + m, y + j}}{V_{n, y}}\\frac{\\mathscr{C}(m, j;\\sigma, -n + y\\sigma)}{\\sigma^j}, \\qquad j=0,\\dots,m,\n where \\mathscr{C}(m, j;\\sigma, -n + y\\sigma) is the noncentral generalized factorial coefficient.\nThe posterior expectations \\mathbb{E}(Y^{(n+1)} \\mid Y^{(n)} = y), \\dots, \\mathbb{E}(Y^{(n + m)} \\mid Y^{(n)} = y) represents a model-based extrapolation of the accumulation curve."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#rarefaction-and-extrapolation",
+    "href": "post/SISBayes/SISBayes2025.html#rarefaction-and-extrapolation",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Rarefaction and extrapolation",
+    "text": "Rarefaction and extrapolation"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-sigma-diversity-pitman2003",
+    "href": "post/SISBayes/SISBayes2025.html#the-sigma-diversity-pitman2003",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nLet Y^{(n)} be the number of distinct values arising from a Gibbs-type prior:\n\nLet \\sigma &lt; 0 and V_{n, y}(\\sigma, H) be the weights of a Dirichlet multinomial, then Y^{(n)} \\rightarrow H a.s.\nLet \\sigma = 0 and V_{n, y}(\\alpha) be the weights of a Dirichlet process, then Y^{(n)} / \\log(n) \\rightarrow \\alpha a.s.\nLet \\sigma \\in (0,1) and V_{n, y}(\\sigma, \\gamma) be the weights of a \\sigma-stable PK, then Y^{(n)} / n^\\sigma \\rightarrow \\gamma a.s.\n\nMoreover, consider a generic set of weights V_{n, y} and let \nc_\\sigma(n) =\n\\begin{cases}\n1, & \\sigma &lt;0,\\\\[2mm]\n\\log(n), & \\sigma = 0,\\\\[1mm]\nn^{\\sigma}, & \\sigma \\in (0,1)\n\\end{cases}\n Then, as n \\rightarrow \\infty: \n\\frac{Y^{(n)}}{c_\\sigma(n)} \\overset{\\textup{a.s.}}{\\longrightarrow} S_{\\sigma}.\n The r.v. S_{\\sigma} is the \\sigma-diversity and its distribution coincides with the prior for H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-sigma-diversity-pitman2003-1",
+    "href": "post/SISBayes/SISBayes2025.html#the-sigma-diversity-pitman2003-1",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nBroadly speaking, the \\sigma-diversity can be seen as a rescaled richness measure.\nThe \\sigma-diversity is deterministic and assumed to be known in the Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK.\nHowever, the \\sigma-diversities H, \\alpha, or \\gamma are typically unknown, and they can be estimated employing a prior distribution, leading to a Gibbs-type prior.\nThe posterior law of the \\sigma-diversity is a key quantity for measuring biodiversity. The posterior law of S_\\sigma has an elegant connection with accumulation curves.\n\n\n\n\n\n\n\nTheorem (Rigon et al. 2025b)\n\n\n\nLet X_1,\\dots,X_{n+m} be a sample from a Gibbs-type prior with Y^{(n+m)} distinct values. Then:\n\n\\left(\\frac{Y^{(n+m)}}{c_\\sigma(m)} \\mid X_1,\\dots,X_n \\right) \\overset{d}{\\longrightarrow} \\tilde{S}_{\\sigma}, \\qquad\n\\tilde{S}_\\sigma \\overset{d}{=} (S_\\sigma \\mid X_1,\\dots,X_n),\n as m \\rightarrow \\infty, where S_\\sigma is the \\sigma-diversity."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "href": "post/SISBayes/SISBayes2025.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Tree species in the Amazon Basin (Hubbell et al. 2008)",
+    "text": "Tree species in the Amazon Basin (Hubbell et al. 2008)\n\n\n\n\n\n\n\n\nHow to get a Bayesian estimator for the biodiversity? We can place a prior on \\alpha and the compute its posterior distribution using Bayes theorem.\nPosterior distribution of the \\sigma-diversity \\alpha, under a (conjugate) Stirling-gamma prior (Zito et al. 2024). The dotted lines represent 95% credible intervals. The dashed line is the posterior mean."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#historical-summary-and-extensions",
+    "href": "post/SISBayes/SISBayes2025.html#historical-summary-and-extensions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Historical summary and extensions",
+    "text": "Historical summary and extensions\n\nThe fundamental biodiversity number \\alpha is a growth-adjusted richness: \n\\frac{Y^{(n)}}{\\log n} \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} \\alpha, \\qquad n\\to \\infty\n\nThe \\alpha from the neutral theory, DP and Fisher log-series is the same for large n: \n\\underbrace{y = \\hat{\\alpha}^\\mathrm{Fisher}\\log\\Big(1 + \\frac{n}{\\hat{\\alpha}^\\mathrm{Fisher}}\\Big)}_{\\text{Solution from Fisher}} \\ \\stackrel{\\text{Under large } n}{\\approx} \\ \\underbrace{\\sum_{j = 1}^{n} \\frac{\\hat{\\alpha}^{\\text{DP}}}{\\hat{\\alpha}^{\\text{DP}} + j - 1} = y}_{\\text{MLE from Hubbell and DP}}\n\nThere are a lot of possible extensions. This is a very biased list:\n\nThe choice \\sigma \\in (0, 1) allows for polynomial growth (Lijoi et al. 2007b; Pitman and Yor 1997) while \\sigma &lt; 0 leads to a finite richness (Gnedin 2010; Lijoi et al. 2020).\nMultiple samples, a.k.a. partial exchangeability (Camerlenghi et al. 2019; Franzolini et al. 2025)\nEnriched processes, taxonomical data (Rigon et al. 2025a; Rigon et al. 2025b; Zito et al. 2023).\nIncidence data and feature models (Ghilotti et al. 2025).\nWhat about covariates?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#specimens-and-bins-in-barcode-of-life",
+    "href": "post/SISBayes/SISBayes2025_slides.html#specimens-and-bins-in-barcode-of-life",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Specimens and BINs in Barcode of Life",
+    "text": "Specimens and BINs in Barcode of Life"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#how-can-we-link-covariates-with-biodiversity-glms",
+    "href": "post/SISBayes/SISBayes2025_slides.html#how-can-we-link-covariates-with-biodiversity-glms",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "How can we link covariates with biodiversity? GLMs",
+    "text": "How can we link covariates with biodiversity? GLMs\n\nFor outcome Y_i and covariates \\mathbf{x}_i = (x_{i1}, \\ldots, x_{ip}) \\in \\mathds{R}^p, i = 1, \\ldots, N, a generalized linear model (GLM) extends the linear model in non-Gaussian settings via three ingredients:\nThe exponential dispersion family directing Y_i: \nf_Y(y; \\theta, \\phi) = \\exp\\left\\{\\frac{y \\theta - b(\\theta)}{a(\\phi)} + c(y, \\phi)\\right\\},\n where \\theta \\in \\mathds{R} is the natural parameter, \\phi &gt;0 is the dispersion, and a,b,c are some functions.\nThe linear predictor \\eta_i = \\mathbf{x}_i^\\top \\bbeta, with \\bbeta \\in \\mathds{R}^p.\nA monotonic link function g that links \\eta_i with the mean of Y_i, namely \\mu(\\theta_i) = \\mu_i: \n\\mathds{E}(Y_i\\mid \\mathbf{x}_i) = \\mu_i = g^{-1}(\\eta_i).\n The link is canonical when g is such that \\theta_i = \\eta_i.\n\n\nIs there an exponential family that depends on \\alpha?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#how-can-we-link-covariates-with-biodiversity",
+    "href": "post/SISBayes/SISBayes2025_slides.html#how-can-we-link-covariates-with-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "How can we link covariates with biodiversity?",
+    "text": "How can we link covariates with biodiversity?\n\nFor outcome Y_i and covariates \\bm{x}_i = (x_{i1}, \\ldots, x_{ip}) \\in \\mathbb{R}^p, i = 1, \\ldots, N, a generalized linear model (GLM) extends the linear model in non-Gaussian settings via three ingredients:\nThe exponential dispersion family directing each Y_i: \nf(y_i; \\theta_i, \\phi) = \\exp\\left\\{\\frac{y_i \\theta_i - b(\\theta_i)}{a_i(\\phi)} + c(y_i, \\phi)\\right\\},\n where \\theta_i \\in \\Theta is the natural parameter, \\phi &gt; 0 is the dispersion, and a_i,b,c are given functions.\nThe linear predictor \\eta_i = \\bm{x}_i^\\top \\bm{\\beta}, with \\bm{\\beta} \\in \\mathbb{R}^p.\nA monotonic link function g that links \\eta_i with the mean of Y_i, namely \\mu(\\theta_i) = \\mu_i: \n\\mathbb{E}(Y_i \\mid \\bm{x}_i) = \\mu_i = g^{-1}(\\eta_i).\n The link is canonical when g is such that \\theta_i = \\eta_i.\nIs there an exponential family that is related to a sample-specific diversity \\alpha_i?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-hubbell-regression",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-hubbell-regression",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Hubbell regression",
+    "text": "The Hubbell regression\n\nThe number of distinct species from a DP is an exponential family! \n\\mathbb{P}(Y^{(n)} = y; \\alpha) = \\frac{\\alpha^y}{(\\alpha)_n}|s(n, y)|, \\qquad y \\in\\{ 1, \\ldots, n\\},\n where (\\alpha)_n = \\Gamma(\\alpha + n)/\\Gamma(\\alpha) and |s(n,y)| are signless Stirling numbers of the first kind.\n\n\n\n\nThe Hubbell regression is a GLM where:\n\nThe distinct species Y_i^{(n_i)} for i=1,\\dots,N are independent draws from the distribution \nf(y_i; \\theta_i) = \\exp \\left\\{y_i \\theta_i - \\log[\\Gamma(e^{\\theta_i} + n_i) - \\Gamma(e^{\\theta_i})] + \\log|s(n_i, y_i)|\\right\\},\n with \\alpha_i = e^{\\theta_i} whose mean and variance functions are \n\\mu_i = \\mu(\\theta_i, n_i) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}, \\qquad\nV(\\mu(\\theta_i, n_i)) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\left(1 - \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\right).\n\nThe link function g depends on \\eta_i and n_i and satisfies \\mathbb{E}(Y_i\\mid \\bm{x}_i, n_i) = \\mu_i = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i)."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-canonical-link",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-canonical-link",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The canonical link",
+    "text": "The canonical link\n\nUsing the canonical link, we have: \n\\log \\alpha_i = \\theta_i = \\bm{x}_i^\\top \\bm{\\beta} = \\eta_i, \\qquad\n\\mu_i = \\mu(\\bm{x}_i^\\top \\bm{\\beta}, n_i) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top \\bm{\\beta}}}{e^{\\bm{x}_i^\\top \\bm{\\beta}} + j} = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i).\n\nCoefficients \\bm{\\beta} have the classic interpretation of log-linear models in terms of \\alpha-diversity\n\n\nIf x_{ip} ↑ by 1 unit → \\alpha_i ↑ by 100(e^{\\beta_p} - 1)\\%\n\n\nThe saturated model corresponds to the case in which \\hat{\\alpha}_i \\approx \\hat{\\alpha}^{\\text{Fisher}}_i. The null model corresponds to the case \\hat{\\alpha}_i = \\hat{\\alpha} for all sites, i.e. there is no variation in biodiversity across sampling sites.\n\n\n\n\nTheorem (Poisson regression with log-log offset)\n\n\nCall \\gamma = 0.5772\\dots the Euler’s constant. Under large values of n, when each n_i \\to \\infty we have \nY^{(n)}_i \\;\\dot{\\sim}\\; 1 + \\mathrm{Poisson}\\left(\\exp\\left\\{\\bm{x}_i^\\top\\bm{\\beta} + \\log(\\gamma + \\log n_i)\\right\\}\\right).\n Informally, we will say that \\hat{\\bm{\\beta}}^{\\mathrm{Hubbell}} \\approx \\hat{\\bm{\\beta}}^{\\mathrm{Poisson}} ."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "href": "post/SISBayes/SISBayes2025_slides.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Beyond the logarithmic growth: non-canonical links",
+    "text": "Beyond the logarithmic growth: non-canonical links\n\nExtensions of the neutral theory of Hubbell (2001) proposes a power-law behavior with a dispersal limitation parameter \\omega \\ge 0 so that \n\\mathbb{E}\\left(Y_i^{(n)}\\right) = \\sum_{j = 0}^{n_i-1} j^{-\\omega} \\frac{\\alpha_i}{\\alpha_i + j}.\n\nOur proposal: a flexible growth depending on \\sigma &lt; 1 via non-canonical link \n\\mu_i = \\mu(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top\\bm{\\beta}}}{e^{\\bm{x}_i^\\top\\bm{\\beta}} + j^{1-\\sigma}} = g^{-1}(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma), \\qquad \\sigma &lt; 1.\n The parameter \\sigma plays the same role it has in Gibbs-type priors."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#regression-based-biodiversity-indexes",
+    "href": "post/SISBayes/SISBayes2025_slides.html#regression-based-biodiversity-indexes",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Regression-based biodiversity indexes",
+    "text": "Regression-based biodiversity indexes\n\n\n\nTheorem (Regression-based diversity)\n\n\nFor the mean function of the a Hubbell regression model with the aforementioned non-canonical link, it holds \n\\frac{\\mu(\\bm{x}_i^\\top \\bm{\\beta}; n, \\sigma)}{c_n(\\sigma)} \\longrightarrow S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}), \\qquad n \\to \\infty,\n Moreover:\n\nIf \\sigma = 0, then c_n(\\sigma) = \\log n (logarithmic growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}} = \\alpha_i;\nIf \\sigma \\in (0, 1), then c_n(\\sigma) = n^{\\sigma} (polynomial growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}}/\\sigma = \\alpha_i / \\sigma;\n\nif \\sigma &lt; 0, then c_n(\\sigma) = 1 (finite richness) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) \\approx C_\\sigma^{-1}e^{\\bm{x}_i^\\top\\bm{\\beta}/(1-\\sigma)} = C_\\sigma^{-1} \\alpha_i^{1/(1-\\sigma)}, with C_\\sigma a known constant.\n\n\n\n\n\n\nThis gives a novel notion of regression-based biodiversity."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#mle-algorithm-iteratively-reweighted-least-squares-irls",
+    "href": "post/SISBayes/SISBayes2025_slides.html#mle-algorithm-iteratively-reweighted-least-squares-irls",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "MLE algorithm: iteratively reweighted least squares (IRLS)",
+    "text": "MLE algorithm: iteratively reweighted least squares (IRLS)\n\nUpdate the mean: \n\\mu_i^{(t)} \\gets \\sum_{j = 0}^{n_i-1}\n\\frac{e^{\\eta_i^{(t)}}}{e^{\\eta_i^{(t)}} + j^{1-\\sigma}},\n\\qquad \\eta_i^{(t)} = \\bm{x}_i^\\top \\bm{\\beta}^{(t)}.\n\nRetrieve \\alpha_i and compute variances: \n\\alpha_i^{(t)} \\gets\n\\texttt{uniroot}\\!\\left(\\sum_{j=0}^{n_i-1}\\frac{x}{x+j}=\\mu_i^{(t)}\\right)\\texttt{\\$root}, \\qquad v_i^{(t)} \\gets \\sum_{j=0}^{n_i-1}\nj\\,\\frac{\\alpha_i^{(t)}}{(\\alpha_i^{(t)}+j)^2}.\n\nCompute working weights: \nw_i^{(t)} \\gets \\frac{1}{v_i^{(t)}}\n\\sum_{j=0}^{n_i-1}\nj\\frac{e^{\\eta_i^{(t)}}}\n     {(e^{\\eta_i^{(t)}}+j^{1-\\sigma})^2}.\n\nUpdate regression coefficients:\n\n\\bm{\\beta}^{(t+1)} \\gets\n(\\mathbf{X}^\\top \\mathbf{W}^{(t)} \\mathbf{X})^{-1}\n\\mathbf{X}^\\top \\mathbf{W}^{(t)} \\mathbf{z}^{(t)}, \\qquad\nz_i^{(t)} \\gets \\eta_i^{(t)} +\n\\frac{y_i - \\mu_i^{(t)}}{\\{w_i^{(t)}v_i^{(t)}\\}^{1/2}}."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#iteratively-reweighted-least-squares-irls",
+    "href": "post/SISBayes/SISBayes2025_slides.html#iteratively-reweighted-least-squares-irls",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Iteratively reweighted least squares (IRLS)",
+    "text": "Iteratively reweighted least squares (IRLS)\n\nUpdate the mean: \n\\mu_i^{(t)} \\gets \\sum_{j = 0}^{n_i-1}\n\\frac{e^{\\eta_i^{(t)}}}{e^{\\eta_i^{(t)}} + j^{1-\\sigma}},\n\\qquad \\eta_i^{(t)} = \\bm{x}_i^\\top \\bm{\\beta}^{(t)}.\n\nNumerically retrieve the diversity \\alpha_i and compute variances: \n\\alpha_i^{(t)} \\gets\n\\texttt{uniroot}\\!\\left(\\sum_{j=0}^{n_i-1}\\frac{x}{x+j}=\\mu_i^{(t)}\\right)\\texttt{\\$root}, \\qquad v_i^{(t)} \\gets \\sum_{j=0}^{n_i-1}\nj\\,\\frac{\\alpha_i^{(t)}}{(\\alpha_i^{(t)}+j)^2}.\n\nCompute working weights: \nw_i^{(t)} \\gets \\frac{1}{v_i^{(t)}}\n\\sum_{j=0}^{n_i-1}\nj\\frac{\\alpha_i^{(t)}}\n     {(\\alpha_i^{(t)}+j^{1-\\sigma})^2}.\n\nUpdate the regression coefficients:\n\n\\bm{\\beta}^{(t+1)} \\gets\n(\\bm{X}^\\top \\bm{W}^{(t)} \\bm{X})^{-1}\n\\bm{X}^\\top \\bm{W}^{(t)} \\bm{z}^{(t)}, \\qquad\nz_i^{(t)} \\gets \\eta_i^{(t)} +\n\\frac{y_i - \\mu_i^{(t)}}{(w_i^{(t)}v_i^{(t)})^{1/2}}."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#composite-marginal-likelihood-and-standard-errors",
+    "href": "post/SISBayes/SISBayes2025_slides.html#composite-marginal-likelihood-and-standard-errors",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Composite marginal likelihood and standard errors",
+    "text": "Composite marginal likelihood and standard errors\n\nThe assumption behind GLMs is that observations are independent. In our case, we might have seen the same species (or BIN) at two different locations!\nThis information is lost when calculating the number Y_i^{(n_i)}. However, we can interpret \nL(\\boldsymbol{\\beta}) \\propto\n\\prod_{i=1}^N\n\\frac{\\alpha_i^{y_i}}\n   {(\\alpha_i)_{n_i}},\n as a composite marginal likelihood. The estimating equation is still unbiased and estimates consistent.\nWe propose spatially heteroskedastic-consistent standard errors (Conley 1999) that use the Jaccard Index (or similar indices) between two samples:\n\\widehat{\\mathrm{se}}(\\hat{\\boldsymbol{\\beta}}) =\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1}\n\\textstyle\\sum_{ik}\n{\\color{#8B0000}{s_{ik}}}\\,\n{\\color{blue}{\\hat{\\bm{u}}_i\\hat{\\bm{u}}_k^\\top}}\\,\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1},\n\\qquad\n{\\color{blue}{\\hat{\\bm{u}}_i}} =\n\\frac{\\partial}{\\partial\\boldsymbol{\\beta}}\n\\log \\mathcal{L}(\\hat{\\boldsymbol{\\beta}}),\n where {\\color{#8B0000}{s_{ik}}} \\in [0,1] is the fraction of shared BINs between locations i and k."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#the-package-hubbellglm",
+    "href": "post/SISBayes/SISBayes2025_slides.html#the-package-hubbellglm",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The package HubbellGLM",
+    "text": "The package HubbellGLM"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap-project",
+    "href": "post/SISBayes/SISBayes2025_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap-project",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Determinants of biodiversity in the global malaise trap project",
+    "text": "Determinants of biodiversity in the global malaise trap project\n\nWe run the regression model\nWe estimate \\hat{\\sigma} = 0.53, which amounts to a square root growth.\n\np-values are corrected for shared species via the sandwich estimator.\n\n\n\n\n\n\n\n\n\n\n\nVariable\nEstimate\nStd. Error\nPr(&gt;\nz\n\n\n\n\n(Intercept)\n-0.019\n0.489\n0.969\n\n\n\nrealm: Australasia\n-0.486\n0.148\n0.001\n**\n\n\nrealm: Indomalayan\n0.089\n0.142\n0.529\n\n\n\nrealm: Nearctic\n-0.150\n0.469\n0.750\n\n\n\nrealm: Neotropic\n0.262\n0.420\n0.533\n\n\n\nrealm: Palearctic\n-0.005\n0.187\n0.977\n\n\n\nhabitat: Grassland\n-0.274\n0.053\n0.000\n***\n\n\nhabitat: Mixed\n0.044\n0.059\n0.463\n\n\n\nhabitat: Tundra\n-0.334\n0.177\n0.059\n.\n\n\nhabitat: Urban\n-0.374\n0.067\n0.000\n***\n\n\nhabitat: Wetland\n-0.087\n0.069\n0.210\n\n\n\ntemperature at 2m\n0.049\n0.005\n&lt; 2.2e-16\n***\n\n\ntotal precipitation\n-0.009\n0.003\n0.001\n**\n\n\nrelative humidity\n0.008\n0.002\n0.000\n***\n\n\nwind speed\n-0.049\n0.012\n0.000\n***"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "href": "post/SISBayes/SISBayes2025_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Determinants of biodiversity in the global malaise trap",
+    "text": "Determinants of biodiversity in the global malaise trap\n\nWe run the Hubbel regression model:\n\ncbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)\n\nWe estimate \\hat{\\sigma} = 0.53 via maximum likelihood, which amounts to a square root growth.\nP-values are corrected for shared species via the sandwich estimator.\n\n\n| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |\n|---------------------------------|---------:|-----------:|-------------:|---------|\n| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |\n| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |\n| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |\n| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |\n| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |\n| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |\n| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |\n| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |\n| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |\n| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |\n| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |\n| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |\n| total precipitation             | -0.009   | 0.003      | 0.001        | **      |\n| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |\n| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#results-latitude-has-a-major-effect",
+    "href": "post/SISBayes/SISBayes2025_slides.html#results-latitude-has-a-major-effect",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Results: latitude has a major effect!",
+    "text": "Results: latitude has a major effect!"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025_slides.html#summary-and-future-directions",
+    "href": "post/SISBayes/SISBayes2025_slides.html#summary-and-future-directions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Summary and future directions",
+    "text": "Summary and future directions\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\n\n\n\n\nHubbell can be extended to regression model to make it covariate-dependent.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs\nFinish the paper! :)\n\nThank you for your attention!"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#specimens-and-bins-in-barcode-of-life",
+    "href": "post/SISBayes/SISBayes2025.html#specimens-and-bins-in-barcode-of-life",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Specimens and BINs in Barcode of Life",
+    "text": "Specimens and BINs in Barcode of Life"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#how-can-we-link-covariates-with-biodiversity",
+    "href": "post/SISBayes/SISBayes2025.html#how-can-we-link-covariates-with-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "How can we link covariates with biodiversity?",
+    "text": "How can we link covariates with biodiversity?\n\nFor outcome Y_i and covariates \\bm{x}_i = (x_{i1}, \\ldots, x_{ip}) \\in \\mathbb{R}^p, i = 1, \\ldots, N, a generalized linear model (GLM) extends the linear model in non-Gaussian settings via three ingredients:\nThe exponential dispersion family directing each Y_i: \nf(y_i; \\theta_i, \\phi) = \\exp\\left\\{\\frac{y_i \\theta_i - b(\\theta_i)}{a_i(\\phi)} + c(y_i, \\phi)\\right\\},\n where \\theta_i \\in \\Theta is the natural parameter, \\phi &gt; 0 is the dispersion, and a_i,b,c are given functions.\nThe linear predictor \\eta_i = \\bm{x}_i^\\top \\bm{\\beta}, with \\bm{\\beta} \\in \\mathbb{R}^p.\nA monotonic link function g that links \\eta_i with the mean of Y_i, namely \\mu(\\theta_i) = \\mu_i: \n\\mathbb{E}(Y_i \\mid \\bm{x}_i) = \\mu_i = g^{-1}(\\eta_i).\n The link is canonical when g is such that \\theta_i = \\eta_i.\nIs there an exponential family that is related to a sample-specific diversity \\alpha_i?"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-hubbell-regression",
+    "href": "post/SISBayes/SISBayes2025.html#the-hubbell-regression",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Hubbell regression",
+    "text": "The Hubbell regression\n\nThe number of distinct species from a DP is an exponential family! \n\\mathbb{P}(Y^{(n)} = y; \\alpha) = \\frac{\\alpha^y}{(\\alpha)_n}|s(n, y)|, \\qquad y \\in\\{ 1, \\ldots, n\\},\n where (\\alpha)_n = \\Gamma(\\alpha + n)/\\Gamma(\\alpha) and |s(n,y)| are signless Stirling numbers of the first kind.\n\n\n\n\n\n\n\nThe Hubbell regression is a GLM where:\n\nThe distinct species Y_i^{(n_i)} for i=1,\\dots,N are independent draws from the distribution \nf(y_i; \\theta_i) = \\exp \\left\\{y_i \\theta_i - \\log[\\Gamma(e^{\\theta_i} + n_i) - \\Gamma(e^{\\theta_i})] + \\log|s(n_i, y_i)|\\right\\},\n with \\alpha_i = e^{\\theta_i} whose mean and variance functions are \n\\mu_i = \\mu(\\theta_i, n_i) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}, \\qquad\nV(\\mu(\\theta_i, n_i)) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\left(1 - \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\right).\n\nThe link function g depends on \\eta_i and n_i and satisfies \\mathbb{E}(Y_i\\mid \\bm{x}_i, n_i) = \\mu_i = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i)."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-canonical-link",
+    "href": "post/SISBayes/SISBayes2025.html#the-canonical-link",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The canonical link",
+    "text": "The canonical link\n\nUsing the canonical link, we have: \n\\log \\alpha_i = \\theta_i = \\bm{x}_i^\\top \\bm{\\beta} = \\eta_i, \\qquad\n\\mu_i = \\mu(\\bm{x}_i^\\top \\bm{\\beta}, n_i) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top \\bm{\\beta}}}{e^{\\bm{x}_i^\\top \\bm{\\beta}} + j} = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i).\n\nCoefficients \\bm{\\beta} have the classic interpretation of log-linear models in terms of \\alpha-diversity\n\n\nIf x_{ip} ↑ by 1 unit → \\alpha_i ↑ by 100(e^{\\beta_p} - 1)\\%\n\n\nThe saturated model corresponds to the case in which \\hat{\\alpha}_i \\approx \\hat{\\alpha}^{\\text{Fisher}}_i. The null model corresponds to the case \\hat{\\alpha}_i = \\hat{\\alpha} for all sites, i.e. there is no variation in biodiversity across sampling sites.\n\n\n\n\n\n\n\nTheorem (Poisson regression with log-log offset)\n\n\n\nCall \\gamma = 0.5772\\dots the Euler’s constant. Under large values of n, when each n_i \\to \\infty we have \nY^{(n)}_i \\;\\dot{\\sim}\\; 1 + \\mathrm{Poisson}\\left(\\exp\\left\\{\\bm{x}_i^\\top\\bm{\\beta} + \\log(\\gamma + \\log n_i)\\right\\}\\right).\n Informally, we will say that \\hat{\\bm{\\beta}}^{\\mathrm{Hubbell}} \\approx \\hat{\\bm{\\beta}}^{\\mathrm{Poisson}} ."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "href": "post/SISBayes/SISBayes2025.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Beyond the logarithmic growth: non-canonical links",
+    "text": "Beyond the logarithmic growth: non-canonical links\n\nExtensions of the neutral theory of Hubbell (2001) proposes a power-law behavior with a dispersal limitation parameter \\omega \\ge 0 so that \n\\mathbb{E}\\left(Y_i^{(n)}\\right) = \\sum_{j = 0}^{n_i-1} j^{-\\omega} \\frac{\\alpha_i}{\\alpha_i + j}.\n\nOur proposal: a flexible growth depending on \\sigma &lt; 1 via non-canonical link \n\\mu_i = \\mu(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top\\bm{\\beta}}}{e^{\\bm{x}_i^\\top\\bm{\\beta}} + j^{1-\\sigma}} = g^{-1}(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma), \\qquad \\sigma &lt; 1.\n The parameter \\sigma plays the same role it has in Gibbs-type priors."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#regression-based-biodiversity-indexes",
+    "href": "post/SISBayes/SISBayes2025.html#regression-based-biodiversity-indexes",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Regression-based biodiversity indexes",
+    "text": "Regression-based biodiversity indexes\n\n\n\n\n\n\nTheorem (Regression-based diversity)\n\n\n\nFor the mean function of the a Hubbell regression model with the aforementioned non-canonical link, it holds \n\\frac{\\mu(\\bm{x}_i^\\top \\bm{\\beta}; n, \\sigma)}{c_n(\\sigma)} \\longrightarrow S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}), \\qquad n \\to \\infty,\n Moreover:\n\nIf \\sigma = 0, then c_n(\\sigma) = \\log n (logarithmic growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}} = \\alpha_i;\nIf \\sigma \\in (0, 1), then c_n(\\sigma) = n^{\\sigma} (polynomial growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}}/\\sigma = \\alpha_i / \\sigma;\n\nif \\sigma &lt; 0, then c_n(\\sigma) = 1 (finite richness) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) \\approx C_\\sigma^{-1}e^{\\bm{x}_i^\\top\\bm{\\beta}/(1-\\sigma)} = C_\\sigma^{-1} \\alpha_i^{1/(1-\\sigma)}, with C_\\sigma a known constant.\n\n\n\n\n\nThis gives a novel notion of regression-based biodiversity."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#iteratively-reweighted-least-squares-irls",
+    "href": "post/SISBayes/SISBayes2025.html#iteratively-reweighted-least-squares-irls",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Iteratively reweighted least squares (IRLS)",
+    "text": "Iteratively reweighted least squares (IRLS)\n\nUpdate the mean: \n\\mu_i^{(t)} \\gets \\sum_{j = 0}^{n_i-1}\n\\frac{e^{\\eta_i^{(t)}}}{e^{\\eta_i^{(t)}} + j^{1-\\sigma}},\n\\qquad \\eta_i^{(t)} = \\bm{x}_i^\\top \\bm{\\beta}^{(t)}.\n\nNumerically retrieve the diversity \\alpha_i and compute variances: \n\\alpha_i^{(t)} \\gets\n\\texttt{uniroot}\\!\\left(\\sum_{j=0}^{n_i-1}\\frac{x}{x+j}=\\mu_i^{(t)}\\right)\\texttt{\\$root}, \\qquad v_i^{(t)} \\gets \\sum_{j=0}^{n_i-1}\nj\\,\\frac{\\alpha_i^{(t)}}{(\\alpha_i^{(t)}+j)^2}.\n\nCompute working weights: \nw_i^{(t)} \\gets \\frac{1}{v_i^{(t)}}\n\\sum_{j=0}^{n_i-1}\nj\\frac{\\alpha_i^{(t)}}\n     {(\\alpha_i^{(t)}+j^{1-\\sigma})^2}.\n\nUpdate the regression coefficients:\n\n\\bm{\\beta}^{(t+1)} \\gets\n(\\bm{X}^\\top \\bm{W}^{(t)} \\bm{X})^{-1}\n\\bm{X}^\\top \\bm{W}^{(t)} \\bm{z}^{(t)}, \\qquad\nz_i^{(t)} \\gets \\eta_i^{(t)} +\n\\frac{y_i - \\mu_i^{(t)}}{(w_i^{(t)}v_i^{(t)})^{1/2}}."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#composite-marginal-likelihood-and-standard-errors",
+    "href": "post/SISBayes/SISBayes2025.html#composite-marginal-likelihood-and-standard-errors",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Composite marginal likelihood and standard errors",
+    "text": "Composite marginal likelihood and standard errors\n\nThe assumption behind GLMs is that observations are independent. In our case, we might have seen the same species (or BIN) at two different locations!\nThis information is lost when calculating the number Y_i^{(n_i)}. However, we can interpret \nL(\\boldsymbol{\\beta}) \\propto\n\\prod_{i=1}^N\n\\frac{\\alpha_i^{y_i}}\n   {(\\alpha_i)_{n_i}},\n as a composite marginal likelihood. The estimating equation is still unbiased and estimates consistent.\nWe propose spatially heteroskedastic-consistent standard errors (Conley 1999) that use the Jaccard Index (or similar indices) between two samples:\n\\widehat{\\mathrm{se}}(\\hat{\\boldsymbol{\\beta}}) =\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1}\n\\textstyle\\sum_{ik}\n{\\color{#8B0000}{s_{ik}}}\\,\n{\\color{blue}{\\hat{\\bm{u}}_i\\hat{\\bm{u}}_k^\\top}}\\,\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1},\n\\qquad\n{\\color{blue}{\\hat{\\bm{u}}_i}} =\n\\frac{\\partial}{\\partial\\boldsymbol{\\beta}}\n\\log \\mathcal{L}(\\hat{\\boldsymbol{\\beta}}),\n where {\\color{#8B0000}{s_{ik}}} \\in [0,1] is the fraction of shared BINs between locations i and k."
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#the-package-hubbellglm",
+    "href": "post/SISBayes/SISBayes2025.html#the-package-hubbellglm",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The package HubbellGLM",
+    "text": "The package HubbellGLM"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "href": "post/SISBayes/SISBayes2025.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Determinants of biodiversity in the global malaise trap",
+    "text": "Determinants of biodiversity in the global malaise trap\n\nWe run the Hubbel regression model:\n\ncbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)\n\nWe estimate \\hat{\\sigma} = 0.53 via maximum likelihood, which amounts to a square root growth.\nP-values are corrected for shared species via the sandwich estimator.\n\n\n| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |\n|---------------------------------|---------:|-----------:|-------------:|---------|\n| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |\n| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |\n| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |\n| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |\n| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |\n| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |\n| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |\n| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |\n| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |\n| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |\n| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |\n| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |\n| total precipitation             | -0.009   | 0.003      | 0.001        | **      |\n| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |\n| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#results-latitude-has-a-major-effect",
+    "href": "post/SISBayes/SISBayes2025.html#results-latitude-has-a-major-effect",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Results: latitude has a major effect!",
+    "text": "Results: latitude has a major effect!"
+  },
+  {
+    "objectID": "post/SISBayes/SISBayes2025.html#summary-and-future-directions",
+    "href": "post/SISBayes/SISBayes2025.html#summary-and-future-directions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Summary and future directions",
+    "text": "Summary and future directions\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\n\n\n\n\nThe Hubbell regression extends the neutral theory in a covariate-dependent GLM framework.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs\nFinish the paper! :)\n\nThank you for your attention!"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html",
+    "href": "post/SISBayes/GRASPA.html",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "Ching-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#warm-thanks",
+    "href": "post/SISBayes/GRASPA.html#warm-thanks",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "",
+    "text": "Ching-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#a-journey-into-statistical-biodiversity",
+    "href": "post/SISBayes/GRASPA.html#a-journey-into-statistical-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A journey into statistical biodiversity",
+    "text": "A journey into statistical biodiversity"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#approximately-80-years-ago-fisher1943",
+    "href": "post/SISBayes/GRASPA.html#approximately-80-years-ago-fisher1943",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#early-ideas-good_1953-good_toulmin_1956",
+    "href": "post/SISBayes/GRASPA.html#early-ideas-good_1953-good_toulmin_1956",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Early ideas (Good 1953; Good and Toulmin 1956)",
+    "text": "Early ideas (Good 1953; Good and Toulmin 1956)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-ewens-sampling-formula-ewens72",
+    "href": "post/SISBayes/GRASPA.html#the-ewens-sampling-formula-ewens72",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Ewens sampling formula Ewens (1972)",
+    "text": "The Ewens sampling formula Ewens (1972)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-dirichlet-process-ferguson1973",
+    "href": "post/SISBayes/GRASPA.html#the-dirichlet-process-ferguson1973",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Dirichlet process (Ferguson 1973)",
+    "text": "The Dirichlet process (Ferguson 1973)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#and-species-sampling-models-pitman1996",
+    "href": "post/SISBayes/GRASPA.html#and-species-sampling-models-pitman1996",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "… and species sampling models (Pitman 1996)",
+    "text": "… and species sampling models (Pitman 1996)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "href": "post/SISBayes/GRASPA.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Ewens formula governs the neutral theory! (Hubbell 2001)",
+    "text": "Ewens formula governs the neutral theory! (Hubbell 2001)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#all-ties-together-mccullagh_2016",
+    "href": "post/SISBayes/GRASPA.html#all-ties-together-mccullagh_2016",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "All ties together (McCullagh 2016)",
+    "text": "All ties together (McCullagh 2016)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#species-sampling-models",
+    "href": "post/SISBayes/GRASPA.html#species-sampling-models",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Species sampling models",
+    "text": "Species sampling models\n\nLet X_1,\\dots,X_n be some collection of species or taxa. Suppose X_n are conditionally iid samples from a species sampling model: \n(X_n \\mid \\tilde{p}) \\overset{\\text{iid}}{\\sim} \\tilde{p}, \\qquad\n\\tilde{p}(\\cdot) = \\sum_{h=1}^{\\infty}\\pi_h \\delta_{Z_h}(\\cdot),\n\\qquad n \\ge 1,\n where (\\pi_h)_{h \\ge 1} is a set of probabilities (species proportions) and Z_h represent distinct species.\nThe discreteness of \\tilde{p} identifies Y^{(n)}=y distinct taxa X_1^*, \\ldots, X_y^* with frequencies n_1, \\ldots, n_y, called abundances in ecology.\nGibbs-type priors have emerged as the most natural extension of the DP (De Blasi et al. 2015).\nThe predictive distribution of a Gibbs-type prior is given by: \n\\mathbb{P}(X_{n+1} \\in \\cdot \\mid X_1,\\dots,X_n)\n= \\frac{V_{n+1, y+1}}{V_{n,y}}P(\\cdot)\n+ \\frac{V_{n+1, y}}{V_{n,y}}\\sum_{j=1}^y(n_j - \\sigma)\\delta_{X^*_j}(\\cdot).\n where (a)_{n} denotes a rising factorial, and \\sigma &lt; 1 is the discount parameter. The V_{n,y}’s are non-negative weights satisfying a forward recursive equation."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#three-notable-examples",
+    "href": "post/SISBayes/GRASPA.html#three-notable-examples",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Three notable examples",
+    "text": "Three notable examples\n\nDirichlet multinomial (\\sigma &lt; 0). For \\sigma &lt; 0 and H \\in \\mathbb{N}, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\sigma, H) := \\frac{|\\sigma|^{y-1}\\prod_{j=1}^{y-1}(H - j)}{(H|\\sigma| +1)_{n-1}}\n\\mathbb{I}(y \\le H).\n\nDirichlet process (\\sigma = 0). For \\sigma = 0 and \\alpha &gt; 0, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\alpha) := \\frac{\\alpha^y}{(\\alpha)_n}.\n\n\\sigma-stable Poisson–Kingman process (0 &lt; \\sigma &lt; 1). For \\sigma \\in (0,1) and gamma \\gamma &gt; 0, a valid set of Gibbs coefficients is defined as: \nV_{n, y}(\\sigma, \\gamma) := \\frac{\\sigma^y\\gamma^y}{\\Gamma(n-y\\sigma)f_{\\sigma}\\left(\\gamma^{-1/\\sigma}\\right)}\n\\int_{0}^{1}s^{n-1-y\\sigma}f_{\\sigma}\\left(\\left(1-s\\right)\\gamma^{-1/\\sigma}\\right)\\, \\mathrm{d}s,\n where f_\\sigma(t) = (\\pi)^{-1} \\sum_{h=1}^\\infty (-1)^{h+1}\\sin(h \\pi \\sigma )\\Gamma(h\\sigma + 1) / t^{h\\sigma + 1}."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#a-characterization-theorem",
+    "href": "post/SISBayes/GRASPA.html#a-characterization-theorem",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A characterization theorem",
+    "text": "A characterization theorem\n\n\n\n\n\n\nTheorem (Gnedin and Pitman 2005)\n\n\n\nThe Gibbs coefficients V_{n, y} satisfy the recursive equation in the following three cases:\n\nIf \\sigma &lt; 0, whenever V_{n, y} = \\sum_{h=1}^\\infty V_{n, y}(\\sigma, h) p(h), for some discrete random variable H \\in \\mathbb{N} with pdf p(h), where the V_{n, y}(\\sigma, h)’s are those of the Dirichlet multinomial.\nIf \\sigma = 0, whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\alpha) p(\\mathrm{d}\\alpha), for some positive random variable \\alpha with probability measure p(\\mathrm{d}\\alpha), where the V_{n, y}(\\alpha)’s are those of the Dirichlet process.\nIf \\sigma \\in (0,1), whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\sigma, \\gamma) p(\\mathrm{d}\\gamma), for some positive random variable \\gamma with probability measure p(\\mathrm{d}\\gamma), where the V_{n, y}(\\sigma, \\gamma)’s are those of the \\sigma-stable PK.\n\n\n\n\nThe Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK form the foundation of any Gibbs-type prior.\nIn fact, any Gibbs-type process can be represented hierarchically, involving a suitable prior distribution for the key parameters H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-quantification-of-biodiversity-lijoi2007",
+    "href": "post/SISBayes/GRASPA.html#the-quantification-of-biodiversity-lijoi2007",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The quantification of biodiversity (Lijoi et al. 2007a)",
+    "text": "The quantification of biodiversity (Lijoi et al. 2007a)\n\nThe simplest measure of biodiversity is arguably the taxon richness Y^{(n)} = y.\nA priori, the distribution of Y^{(n)} induced by a Gibbs-type prior has a simple form: \n\\mathbb{P}(Y^{(n)} = y)=V_{n,y}\\frac{\\mathscr{C}(n,y;\\sigma)}{\\sigma^y},\n where \\mathscr{C}(n, y;\\sigma) denotes a generalized factorial coefficient.\nThe a priori expectations \\mathbb{E}(K_1),\\dots,\\mathbb{E}(K_n) define a model-based rarefaction curve.\nThe posterior distribution of the number of previously unobserved taxa Y_m^{(n)} is \n\\mathbb{P}(Y_m^{(n)}= j \\mid X_1,\\dots,X_n)=\\frac{V_{n + m, y + j}}{V_{n, y}}\\frac{\\mathscr{C}(m, j;\\sigma, -n + y\\sigma)}{\\sigma^j}, \\qquad j=0,\\dots,m,\n where \\mathscr{C}(m, j;\\sigma, -n + y\\sigma) is the noncentral generalized factorial coefficient.\nThe posterior expectations \\mathbb{E}(Y^{(n+1)} \\mid Y^{(n)} = y), \\dots, \\mathbb{E}(Y^{(n + m)} \\mid Y^{(n)} = y) represents a model-based extrapolation of the accumulation curve."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#rarefaction-and-extrapolation",
+    "href": "post/SISBayes/GRASPA.html#rarefaction-and-extrapolation",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Rarefaction and extrapolation",
+    "text": "Rarefaction and extrapolation"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-sigma-diversity-pitman2003",
+    "href": "post/SISBayes/GRASPA.html#the-sigma-diversity-pitman2003",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nLet Y^{(n)} be the number of distinct values arising from a Gibbs-type prior:\n\nLet \\sigma &lt; 0 and V_{n, y}(\\sigma, H) be the weights of a Dirichlet multinomial, then Y^{(n)} \\rightarrow H a.s.\nLet \\sigma = 0 and V_{n, y}(\\alpha) be the weights of a Dirichlet process, then Y^{(n)} / \\log(n) \\rightarrow \\alpha a.s.\nLet \\sigma \\in (0,1) and V_{n, y}(\\sigma, \\gamma) be the weights of a \\sigma-stable PK, then Y^{(n)} / n^\\sigma \\rightarrow \\gamma a.s.\n\nMoreover, consider a generic set of weights V_{n, y} and let \nc_\\sigma(n) =\n\\begin{cases}\n1, & \\sigma &lt;0,\\\\[2mm]\n\\log(n), & \\sigma = 0,\\\\[1mm]\nn^{\\sigma}, & \\sigma \\in (0,1)\n\\end{cases}\n Then, as n \\rightarrow \\infty: \n\\frac{Y^{(n)}}{c_\\sigma(n)} \\overset{\\textup{a.s.}}{\\longrightarrow} S_{\\sigma}.\n The r.v. S_{\\sigma} is the \\sigma-diversity and its distribution coincides with the prior for H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-sigma-diversity-pitman2003-1",
+    "href": "post/SISBayes/GRASPA.html#the-sigma-diversity-pitman2003-1",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nBroadly speaking, the \\sigma-diversity can be seen as a rescaled richness measure.\nThe \\sigma-diversity is deterministic and assumed to be known in the Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK.\nHowever, the \\sigma-diversities H, \\alpha, or \\gamma are typically unknown, and they can be estimated employing a prior distribution, leading to a Gibbs-type prior.\nThe posterior law of the \\sigma-diversity is a key quantity for measuring biodiversity. The posterior law of S_\\sigma has an elegant connection with accumulation curves.\n\n\n\n\n\n\n\nTheorem (Rigon et al. 2025b)\n\n\n\nLet X_1,\\dots,X_{n+m} be a sample from a Gibbs-type prior with Y^{(n+m)} distinct values. Then:\n\n\\left(\\frac{Y^{(n+m)}}{c_\\sigma(m)} \\mid X_1,\\dots,X_n \\right) \\overset{d}{\\longrightarrow} \\tilde{S}_{\\sigma}, \\qquad\n\\tilde{S}_\\sigma \\overset{d}{=} (S_\\sigma \\mid X_1,\\dots,X_n),\n as m \\rightarrow \\infty, where S_\\sigma is the \\sigma-diversity."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "href": "post/SISBayes/GRASPA.html#tree-species-in-the-amazon-basin-hubbell2008",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Tree species in the Amazon Basin (Hubbell et al. 2008)",
+    "text": "Tree species in the Amazon Basin (Hubbell et al. 2008)\n\n\n\n\n\n\n\n\nHow to get a Bayesian estimator for the biodiversity? We can place a prior on \\alpha and the compute its posterior distribution using Bayes theorem.\nPosterior distribution of the \\sigma-diversity \\alpha, under a (conjugate) Stirling-gamma prior (Zito et al. 2024). The dotted lines represent 95% credible intervals. The dashed line is the posterior mean."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#historical-summary-and-extensions",
+    "href": "post/SISBayes/GRASPA.html#historical-summary-and-extensions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Historical summary and extensions",
+    "text": "Historical summary and extensions\n\nThe fundamental biodiversity number \\alpha is a growth-adjusted richness: \n\\frac{Y^{(n)}}{\\log n} \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} \\alpha, \\qquad n\\to \\infty\n\nThe \\alpha from the neutral theory, DP and Fisher log-series is the same for large n: \n\\underbrace{y = \\hat{\\alpha}^\\mathrm{Fisher}\\log\\Big(1 + \\frac{n}{\\hat{\\alpha}^\\mathrm{Fisher}}\\Big)}_{\\text{Solution from Fisher}} \\ \\stackrel{\\text{Under large } n}{\\approx} \\ \\underbrace{\\sum_{j = 1}^{n} \\frac{\\hat{\\alpha}^{\\text{DP}}}{\\hat{\\alpha}^{\\text{DP}} + j - 1} = y}_{\\text{MLE from Hubbell and DP}}\n\nThere are a lot of possible extensions. This is a very biased list:\n\nThe choice \\sigma \\in (0, 1) allows for polynomial growth (Lijoi et al. 2007b; Pitman and Yor 1997) while \\sigma &lt; 0 leads to a finite richness (Gnedin 2010; Lijoi et al. 2020).\nMultiple samples, a.k.a. partial exchangeability (Camerlenghi et al. 2019; Franzolini et al. 2025)\nEnriched processes, taxonomical data (Rigon et al. 2025a; Rigon et al. 2025b; Zito et al. 2023).\nIncidence data and feature models (Ghilotti et al. 2025).\nWhat about covariates?"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#specimens-and-bins-in-barcode-of-life",
+    "href": "post/SISBayes/GRASPA.html#specimens-and-bins-in-barcode-of-life",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Specimens and BINs in Barcode of Life",
+    "text": "Specimens and BINs in Barcode of Life"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#how-can-we-link-covariates-with-biodiversity",
+    "href": "post/SISBayes/GRASPA.html#how-can-we-link-covariates-with-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "How can we link covariates with biodiversity?",
+    "text": "How can we link covariates with biodiversity?\n\nFor outcome Y_i and covariates \\bm{x}_i = (x_{i1}, \\ldots, x_{ip}) \\in \\mathbb{R}^p, i = 1, \\ldots, N, a generalized linear model (GLM) extends the linear model in non-Gaussian settings via three ingredients:\nThe exponential dispersion family directing each Y_i: \nf(y_i; \\theta_i, \\phi) = \\exp\\left\\{\\frac{y_i \\theta_i - b(\\theta_i)}{a_i(\\phi)} + c(y_i, \\phi)\\right\\},\n where \\theta_i \\in \\Theta is the natural parameter, \\phi &gt; 0 is the dispersion, and a_i,b,c are given functions.\nThe linear predictor \\eta_i = \\bm{x}_i^\\top \\bm{\\beta}, with \\bm{\\beta} \\in \\mathbb{R}^p.\nA monotonic link function g that links \\eta_i with the mean of Y_i, namely \\mu(\\theta_i) = \\mu_i: \n\\mathbb{E}(Y_i \\mid \\bm{x}_i) = \\mu_i = g^{-1}(\\eta_i).\n The link is canonical when g is such that \\theta_i = \\eta_i.\nIs there an exponential family that is related to a sample-specific diversity \\alpha_i?"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-hubbell-regression",
+    "href": "post/SISBayes/GRASPA.html#the-hubbell-regression",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Hubbell regression",
+    "text": "The Hubbell regression\n\nThe number of distinct species from a DP is an exponential family! \n\\mathbb{P}(Y^{(n)} = y; \\alpha) = \\frac{\\alpha^y}{(\\alpha)_n}|s(n, y)|, \\qquad y \\in\\{ 1, \\ldots, n\\},\n where (\\alpha)_n = \\Gamma(\\alpha + n)/\\Gamma(\\alpha) and |s(n,y)| are signless Stirling numbers of the first kind.\n\n\n\n\n\n\n\nThe Hubbell regression is a GLM where:\n\nThe distinct species Y_i^{(n_i)} for i=1,\\dots,N are independent draws from the distribution \nf(y_i; \\theta_i) = \\exp \\left\\{y_i \\theta_i - \\log[\\Gamma(e^{\\theta_i} + n_i) - \\Gamma(e^{\\theta_i})] + \\log|s(n_i, y_i)|\\right\\},\n with \\alpha_i = e^{\\theta_i} whose mean and variance functions are \n\\mu_i = \\mu(\\theta_i, n_i) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}, \\qquad\nV(\\mu(\\theta_i, n_i)) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\left(1 - \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\right).\n\nThe link function g depends on \\eta_i and n_i and satisfies \\mathbb{E}(Y_i\\mid \\bm{x}_i, n_i) = \\mu_i = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i)."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-canonical-link",
+    "href": "post/SISBayes/GRASPA.html#the-canonical-link",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The canonical link",
+    "text": "The canonical link\n\nUsing the canonical link, we have: \n\\log \\alpha_i = \\theta_i = \\bm{x}_i^\\top \\bm{\\beta} = \\eta_i, \\qquad\n\\mu_i = \\mu(\\bm{x}_i^\\top \\bm{\\beta}, n_i) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top \\bm{\\beta}}}{e^{\\bm{x}_i^\\top \\bm{\\beta}} + j} = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i).\n\nCoefficients \\bm{\\beta} have the classic interpretation of log-linear models in terms of \\alpha-diversity\n\n\nIf x_{ip} ↑ by 1 unit → \\alpha_i ↑ by 100(e^{\\beta_p} - 1)\\%\n\n\nThe saturated model corresponds to the case in which \\hat{\\alpha}_i \\approx \\hat{\\alpha}^{\\text{Fisher}}_i. The null model corresponds to the case \\hat{\\alpha}_i = \\hat{\\alpha} for all sites, i.e. there is no variation in biodiversity across sampling sites.\n\n\n\n\n\n\n\nTheorem (Poisson regression with log-log offset)\n\n\n\nCall \\gamma = 0.5772\\dots the Euler’s constant. Under large values of n, when each n_i \\to \\infty we have \nY^{(n)}_i \\;\\dot{\\sim}\\; 1 + \\mathrm{Poisson}\\left(\\exp\\left\\{\\bm{x}_i^\\top\\bm{\\beta} + \\log(\\gamma + \\log n_i)\\right\\}\\right).\n Informally, we will say that \\hat{\\bm{\\beta}}^{\\mathrm{Hubbell}} \\approx \\hat{\\bm{\\beta}}^{\\mathrm{Poisson}} ."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "href": "post/SISBayes/GRASPA.html#beyond-the-logarithmic-growth-non-canonical-links",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Beyond the logarithmic growth: non-canonical links",
+    "text": "Beyond the logarithmic growth: non-canonical links\n\nExtensions of the neutral theory of Hubbell (2001) proposes a power-law behavior with a dispersal limitation parameter \\omega \\ge 0 so that \n\\mathbb{E}\\left(Y_i^{(n)}\\right) = \\sum_{j = 0}^{n_i-1} j^{-\\omega} \\frac{\\alpha_i}{\\alpha_i + j}.\n\nOur proposal: a flexible growth depending on \\sigma &lt; 1 via non-canonical link \n\\mu_i = \\mu(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top\\bm{\\beta}}}{e^{\\bm{x}_i^\\top\\bm{\\beta}} + j^{1-\\sigma}} = g^{-1}(\\bm{x}_i^\\top\\bm{\\beta}, n_i, \\sigma), \\qquad \\sigma &lt; 1.\n The parameter \\sigma plays the same role it has in Gibbs-type priors."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#regression-based-biodiversity-indexes",
+    "href": "post/SISBayes/GRASPA.html#regression-based-biodiversity-indexes",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Regression-based biodiversity indexes",
+    "text": "Regression-based biodiversity indexes\n\n\n\n\n\n\nTheorem (Regression-based diversity)\n\n\n\nFor the mean function of the a Hubbell regression model with the aforementioned non-canonical link, it holds \n\\frac{\\mu(\\bm{x}_i^\\top \\bm{\\beta}; n, \\sigma)}{c_n(\\sigma)} \\longrightarrow S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}), \\qquad n \\to \\infty,\n Moreover:\n\nIf \\sigma = 0, then c_n(\\sigma) = \\log n (logarithmic growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}} = \\alpha_i;\nIf \\sigma \\in (0, 1), then c_n(\\sigma) = n^{\\sigma} (polynomial growth) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) = e^{\\bm{x}_i^\\top\\bm{\\beta}}/\\sigma = \\alpha_i / \\sigma;\n\nif \\sigma &lt; 0, then c_n(\\sigma) = 1 (finite richness) and S_\\sigma(\\bm{x}_i^\\top\\bm{\\beta}) \\approx C_\\sigma^{-1}e^{\\bm{x}_i^\\top\\bm{\\beta}/(1-\\sigma)} = C_\\sigma^{-1} \\alpha_i^{1/(1-\\sigma)}, with C_\\sigma a known constant.\n\n\n\n\n\nThis gives a novel notion of regression-based biodiversity."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#iteratively-reweighted-least-squares-irls",
+    "href": "post/SISBayes/GRASPA.html#iteratively-reweighted-least-squares-irls",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Iteratively reweighted least squares (IRLS)",
+    "text": "Iteratively reweighted least squares (IRLS)\n\nUpdate the mean: \n\\mu_i^{(t)} \\gets \\sum_{j = 0}^{n_i-1}\n\\frac{e^{\\eta_i^{(t)}}}{e^{\\eta_i^{(t)}} + j^{1-\\sigma}},\n\\qquad \\eta_i^{(t)} = \\bm{x}_i^\\top \\bm{\\beta}^{(t)}.\n\nNumerically retrieve the diversity \\alpha_i and compute variances: \n\\alpha_i^{(t)} \\gets\n\\texttt{uniroot}\\!\\left(\\sum_{j=0}^{n_i-1}\\frac{x}{x+j}=\\mu_i^{(t)}\\right)\\texttt{\\$root}, \\qquad v_i^{(t)} \\gets \\sum_{j=0}^{n_i-1}\nj\\,\\frac{\\alpha_i^{(t)}}{(\\alpha_i^{(t)}+j)^2}.\n\nCompute working weights: \nw_i^{(t)} \\gets \\frac{1}{v_i^{(t)}}\n\\sum_{j=0}^{n_i-1}\nj\\frac{\\alpha_i^{(t)}}\n     {(\\alpha_i^{(t)}+j^{1-\\sigma})^2}.\n\nUpdate the regression coefficients:\n\n\\bm{\\beta}^{(t+1)} \\gets\n(\\bm{X}^\\top \\bm{W}^{(t)} \\bm{X})^{-1}\n\\bm{X}^\\top \\bm{W}^{(t)} \\bm{z}^{(t)}, \\qquad\nz_i^{(t)} \\gets \\eta_i^{(t)} +\n\\frac{y_i - \\mu_i^{(t)}}{(w_i^{(t)}v_i^{(t)})^{1/2}}."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#composite-marginal-likelihood-and-standard-errors",
+    "href": "post/SISBayes/GRASPA.html#composite-marginal-likelihood-and-standard-errors",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Composite marginal likelihood and standard errors",
+    "text": "Composite marginal likelihood and standard errors\n\nThe assumption behind GLMs is that observations are independent. In our case, we might have seen the same species (or BIN) at two different locations!\nThis information is lost when calculating the number Y_i^{(n_i)}. However, we can interpret \nL(\\boldsymbol{\\beta}) \\propto\n\\prod_{i=1}^N\n\\frac{\\alpha_i^{y_i}}\n   {(\\alpha_i)_{n_i}},\n as a composite marginal likelihood. The estimating equation is still unbiased and estimates consistent.\nWe propose spatially heteroskedastic-consistent standard errors (Conley 1999) that use the Jaccard Index (or similar indices) between two samples:\n\\widehat{\\mathrm{se}}(\\hat{\\boldsymbol{\\beta}}) =\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1}\n\\textstyle\\sum_{ik}\n{\\color{#8B0000}{s_{ik}}}\\,\n{\\color{blue}{\\hat{\\bm{u}}_i\\hat{\\bm{u}}_k^\\top}}\\,\n(\\bm{X}^\\top \\hat{\\bm{W}}\\bm{X})^{-1},\n\\qquad\n{\\color{blue}{\\hat{\\bm{u}}_i}} =\n\\frac{\\partial}{\\partial\\boldsymbol{\\beta}}\n\\log \\mathcal{L}(\\hat{\\boldsymbol{\\beta}}),\n where {\\color{#8B0000}{s_{ik}}} \\in [0,1] is the fraction of shared BINs between locations i and k."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#the-package-hubbellglm",
+    "href": "post/SISBayes/GRASPA.html#the-package-hubbellglm",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The package HubbellGLM",
+    "text": "The package HubbellGLM"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "href": "post/SISBayes/GRASPA.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Determinants of biodiversity in the global malaise trap",
+    "text": "Determinants of biodiversity in the global malaise trap\n\nWe run the Hubbel regression model:\n\ncbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)\n\nWe estimate \\hat{\\sigma} = 0.53 via maximum likelihood, which amounts to a square root growth.\nP-values are corrected for shared species via the sandwich estimator.\n\n\n| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |\n|---------------------------------|---------:|-----------:|-------------:|---------|\n| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |\n| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |\n| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |\n| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |\n| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |\n| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |\n| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |\n| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |\n| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |\n| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |\n| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |\n| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |\n| total precipitation             | -0.009   | 0.003      | 0.001        | **      |\n| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |\n| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#results-latitude-has-a-major-effect",
+    "href": "post/SISBayes/GRASPA.html#results-latitude-has-a-major-effect",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Results: latitude has a major effect!",
+    "text": "Results: latitude has a major effect!"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#summary-and-future-directions",
+    "href": "post/SISBayes/GRASPA.html#summary-and-future-directions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Summary and future directions",
+    "text": "Summary and future directions\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\n\n\n\n\nHubbell can be extended to regression model to make it covariate-dependent.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs\nFinish the paper! :)\n\nThank you for your attention!"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA.html#references",
+    "href": "post/SISBayes/GRASPA.html#references",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "References",
+    "text": "References\n\n\n\nCamerlenghi, F., Lijoi, A., Orbanz, P., and Prünster, I. (2019), “Distribution theory for hierarchical processes,” Ann. Statist., 47, 67–92.\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prunster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Trans. Pattern Anal. Mach. Intell., IEEE, 37, 212–229.\n\n\nEwens, W. (1972), “The sampling theory of selectively neutral alleles,” Theoretical Population Biology, 3, 87–112.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” Ann. Statist., 1, 209–230.\n\n\nFisher, R. A., Corbet, A. S., and Williams, C. B. (1943), “The relation between the number of species and the number of individuals in a random sample of an animal population,” J. Anim. Ecol., 12, 42–58.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society: Series B (Statistical Methodology).\n\n\nGnedin, A. (2010), “Species sampling model with finitely many types,” Electron. Comm. Prob., 15, 79–88.\n\n\nGnedin, A., and Pitman, J. (2005), “Exchangeable Gibbs partitions and Stirling triangles,” Zapiski Nauchnykh Seminarov, POMI, 325, 83–102.\n\n\nHubbell, S. P. (2001), The unified neutral theory of biodiversity and biogeography, Princeton University Press.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007a), “Bayesian nonparametric estimation of the probability of discovering new species,” Biometrika, Oxford University Press, 94, 769–786.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007b), “Controlling the reinforcement in Bayesian non-parametric mixture models,” J. R. Statist. Soc. B, Wiley Online Library, 69, 715–740.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modeling,” Biometrika, 107, 891–906.\n\n\nMcCullagh, P. (2016), “Two Early Contributions to the Ewens Saga,” Statist. Sci., 31, 23–26.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” in Statistics, probability and game theory, IMS lecture notes monogr. ser., Inst. Math. Statist., Hayward, CA, pp. 245–267.\n\n\nPitman, J. (2003), “Poisson-Kingman partitions,” Lecture Notes-Monograph Series, 40, 1–34.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” Ann. Probab., 25, 855–900.\n\n\nRigon, T., Hsu, C., and B., D. D. (2025a), “A Bayesian theory for estimation of biodiversity,” arXiv:2502.01333.\n\n\nRigon, T., Petrone, S., and Scarpa, B. (2025b), “Enriched Pitman-Yor processes,” Scand. J. Statist.\n\n\nZito, A., Rigon, T., and Dunson, D. B. (2023), “Inferring taxonomic placement from DNA barcoding allowing discovery of new taxa,” Meth. Ecol. Evol., 14, 529–542."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#warm-thanks",
+    "href": "post/SISBayes/GRASPA_slides.html#warm-thanks",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Warm thanks",
+    "text": "Warm thanks\n\n\n\n\n\n\n\nChing-Lung Hsu\n(Duke University)\n\n\n\n\n\n\n\n\nAlessandro Zito\n(Harvard School of Public Health)\n\n\n\n\n\n\n\n\nDavid Dunson\n(Duke University)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#a-journey-into-statistical-biodiversity",
+    "href": "post/SISBayes/GRASPA_slides.html#a-journey-into-statistical-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A journey into statistical biodiversity",
+    "text": "A journey into statistical biodiversity"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#approximately-80-years-ago-fisher1943",
+    "href": "post/SISBayes/GRASPA_slides.html#approximately-80-years-ago-fisher1943",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Approximately 80 years ago… Fisher et al. (1943)",
+    "text": "Approximately 80 years ago… Fisher et al. (1943)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-ewens-sampling-formula-ewens72",
+    "href": "post/SISBayes/GRASPA_slides.html#the-ewens-sampling-formula-ewens72",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Ewens sampling formula Ewens (1972)",
+    "text": "The Ewens sampling formula Ewens (1972)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-dirichlet-process-ferguson1973",
+    "href": "post/SISBayes/GRASPA_slides.html#the-dirichlet-process-ferguson1973",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Dirichlet process (Ferguson 1973)",
+    "text": "The Dirichlet process (Ferguson 1973)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#and-species-sampling-models-pitman1996",
+    "href": "post/SISBayes/GRASPA_slides.html#and-species-sampling-models-pitman1996",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "… and species sampling models (Pitman 1996)",
+    "text": "… and species sampling models (Pitman 1996)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "href": "post/SISBayes/GRASPA_slides.html#ewens-formula-governs-the-neutral-theory-hubbell_2001",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Ewens formula governs the neutral theory! (Hubbell 2001)",
+    "text": "Ewens formula governs the neutral theory! (Hubbell 2001)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#all-ties-together-mccullagh_2016",
+    "href": "post/SISBayes/GRASPA_slides.html#all-ties-together-mccullagh_2016",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "All ties together (McCullagh 2016)",
+    "text": "All ties together (McCullagh 2016)"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#species-sampling-models",
+    "href": "post/SISBayes/GRASPA_slides.html#species-sampling-models",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Species sampling models",
+    "text": "Species sampling models\n\nLet X_1,\\dots,X_n be some collection of species or taxa. Suppose X_n are conditionally iid samples from a species sampling model: \n(X_n \\mid \\tilde{p}) \\overset{\\text{iid}}{\\sim} \\tilde{p}, \\qquad\n\\tilde{p}(\\cdot) = \\sum_{h=1}^{\\infty}\\pi_h \\delta_{Z_h}(\\cdot),\n\\qquad n \\ge 1,\n where (\\pi_h)_{h \\ge 1} is a set of probabilities (species proportions) and Z_h represent distinct species.\nThe discreteness of \\tilde{p} identifies Y^{(n)}=y distinct taxa X_1^*, \\ldots, X_y^* with frequencies n_1, \\ldots, n_y, called abundances in ecology.\nGibbs-type priors have emerged as the most natural extension of the DP (De Blasi et al. 2015).\nThe predictive distribution of a Gibbs-type prior is given by: \n\\mathbb{P}(X_{n+1} \\in \\cdot \\mid X_1,\\dots,X_n)\n= \\frac{V_{n+1, y+1}}{V_{n,y}}P(\\cdot)\n+ \\frac{V_{n+1, y}}{V_{n,y}}\\sum_{j=1}^y(n_j - \\sigma)\\delta_{X^*_j}(\\cdot).\n where (a)_{n} denotes a rising factorial, and \\sigma &lt; 1 is the discount parameter. The V_{n,y}’s are non-negative weights satisfying a forward recursive equation."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#three-notable-examples",
+    "href": "post/SISBayes/GRASPA_slides.html#three-notable-examples",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Three notable examples",
+    "text": "Three notable examples\n\nDirichlet multinomial (\\sigma &lt; 0). For \\sigma &lt; 0 and H \\in \\mathbb{N}, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\sigma, H) := \\frac{|\\sigma|^{y-1}\\prod_{j=1}^{y-1}(H - j)}{(H|\\sigma| +1)_{n-1}}\n\\mathbb{I}(y \\le H).\n\nDirichlet process (\\sigma = 0). For \\sigma = 0 and \\alpha &gt; 0, a valid set of Gibbs coefficients is given by: \nV_{n, y}(\\alpha) := \\frac{\\alpha^y}{(\\alpha)_n}.\n\n\\sigma-stable Poisson–Kingman process (0 &lt; \\sigma &lt; 1). For \\sigma \\in (0,1) and gamma \\gamma &gt; 0, a valid set of Gibbs coefficients is defined as: \nV_{n, y}(\\sigma, \\gamma) := \\frac{\\sigma^y\\gamma^y}{\\Gamma(n-y\\sigma)f_{\\sigma}\\left(\\gamma^{-1/\\sigma}\\right)}\n\\int_{0}^{1}s^{n-1-y\\sigma}f_{\\sigma}\\left(\\left(1-s\\right)\\gamma^{-1/\\sigma}\\right)\\, \\mathrm{d}s,\n where f_\\sigma(t) = (\\pi)^{-1} \\sum_{h=1}^\\infty (-1)^{h+1}\\sin(h \\pi \\sigma )\\Gamma(h\\sigma + 1) / t^{h\\sigma + 1}."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#a-characterization-theorem",
+    "href": "post/SISBayes/GRASPA_slides.html#a-characterization-theorem",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "A characterization theorem",
+    "text": "A characterization theorem\n\n\n\nTheorem (Gnedin and Pitman 2005)\n\n\nThe Gibbs coefficients V_{n, y} satisfy the recursive equation in the following three cases:\n\nIf \\sigma &lt; 0, whenever V_{n, y} = \\sum_{h=1}^\\infty V_{n, y}(\\sigma, h) p(h), for some discrete random variable H \\in \\mathbb{N} with pdf p(h), where the V_{n, y}(\\sigma, h)’s are those of the Dirichlet multinomial.\nIf \\sigma = 0, whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\alpha) p(\\mathrm{d}\\alpha), for some positive random variable \\alpha with probability measure p(\\mathrm{d}\\alpha), where the V_{n, y}(\\alpha)’s are those of the Dirichlet process.\nIf \\sigma \\in (0,1), whenever V_{n, y} = \\int_{\\mathbb{R}^+} V_{n, y}(\\sigma, \\gamma) p(\\mathrm{d}\\gamma), for some positive random variable \\gamma with probability measure p(\\mathrm{d}\\gamma), where the V_{n, y}(\\sigma, \\gamma)’s are those of the \\sigma-stable PK.\n\n\n\n\n\nThe Dirichlet multinomial, Dirichlet process, and \\sigma-stable PK form the foundation of any Gibbs-type prior.\nIn fact, any Gibbs-type process can be represented hierarchically, involving a suitable prior distribution for the key parameters H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-quantification-of-biodiversity-lijoi2007",
+    "href": "post/SISBayes/GRASPA_slides.html#the-quantification-of-biodiversity-lijoi2007",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The quantification of biodiversity (Lijoi et al. 2007a)",
+    "text": "The quantification of biodiversity (Lijoi et al. 2007a)\n\nThe simplest measure of biodiversity is arguably the taxon richness Y^{(n)} = y.\nA priori, the distribution of Y^{(n)} induced by a Gibbs-type prior has a simple form: \n\\mathbb{P}(Y^{(n)} = y)=V_{n,y}\\frac{\\mathscr{C}(n,y;\\sigma)}{\\sigma^y},\n where \\mathscr{C}(n, y;\\sigma) denotes a generalized factorial coefficient.\nThe a priori expectations \\mathbb{E}(K_1),\\dots,\\mathbb{E}(K_n) define a model-based rarefaction curve.\nThe posterior distribution of the number of previously unobserved taxa Y_m^{(n)} is \n\\mathbb{P}(Y_m^{(n)}= j \\mid X_1,\\dots,X_n)=\\frac{V_{n + m, y + j}}{V_{n, y}}\\frac{\\mathscr{C}(m, j;\\sigma, -n + y\\sigma)}{\\sigma^j}, \\qquad j=0,\\dots,m,\n where \\mathscr{C}(m, j;\\sigma, -n + y\\sigma) is the noncentral generalized factorial coefficient.\nThe posterior expectations \\mathbb{E}(Y^{(n+1)} \\mid Y^{(n)} = y), \\dots, \\mathbb{E}(Y^{(n + m)} \\mid Y^{(n)} = y) represents a model-based extrapolation of the accumulation curve."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#rarefaction-and-extrapolation",
+    "href": "post/SISBayes/GRASPA_slides.html#rarefaction-and-extrapolation",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Rarefaction and extrapolation",
+    "text": "Rarefaction and extrapolation"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-sigma-diversity-pitman2003",
+    "href": "post/SISBayes/GRASPA_slides.html#the-sigma-diversity-pitman2003",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The \\sigma-diversity (Pitman 2003)",
+    "text": "The \\sigma-diversity (Pitman 2003)\n\nLet Y^{(n)} be the number of distinct values arising from a Gibbs-type prior:\n\nLet \\sigma &lt; 0 and V_{n, y}(\\sigma, H) be the weights of a Dirichlet multinomial, then Y^{(n)} \\rightarrow H a.s.\nLet \\sigma = 0 and V_{n, y}(\\alpha) be the weights of a Dirichlet process, then Y^{(n)} / \\log(n) \\rightarrow \\alpha a.s.\nLet \\sigma \\in (0,1) and V_{n, y}(\\sigma, \\gamma) be the weights of a \\sigma-stable PK, then Y^{(n)} / n^\\sigma \\rightarrow \\gamma a.s.\n\nMoreover, consider a generic set of weights V_{n, y} and let \nc_\\sigma(n) =\n\\begin{cases}\n1, & \\sigma &lt;0,\\\\[2mm]\n\\log(n), & \\sigma = 0,\\\\[1mm]\nn^{\\sigma}, & \\sigma \\in (0,1)\n\\end{cases}\n Then, as n \\rightarrow \\infty: \n\\frac{Y^{(n)}}{c_\\sigma(n)} \\overset{\\textup{a.s.}}{\\longrightarrow} S_{\\sigma}.\n The r.v. S_{\\sigma} is the \\sigma-diversity and its distribution coincides with the prior for H, \\alpha, and \\gamma."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#historical-summary-and-extensions",
+    "href": "post/SISBayes/GRASPA_slides.html#historical-summary-and-extensions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Historical summary and extensions",
+    "text": "Historical summary and extensions\n\nThe fundamental biodiversity number \\alpha is a growth-adjusted richness: \n\\frac{Y^{(n)}}{\\log n} \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} \\alpha, \\qquad n\\to \\infty\n\nThe \\alpha from the neutral theory, DP and Fisher log-series is the same for large n: \n\\underbrace{y = \\hat{\\alpha}^\\mathrm{Fisher}\\log\\Big(1 + \\frac{n}{\\hat{\\alpha}^\\mathrm{Fisher}}\\Big)}_{\\text{Solution from Fisher}} \\ \\stackrel{\\text{Under large } n}{\\approx} \\ \\underbrace{\\sum_{j = 1}^{n} \\frac{\\hat{\\alpha}^{\\text{DP}}}{\\hat{\\alpha}^{\\text{DP}} + j - 1} = y}_{\\text{MLE from Hubbell and DP}}\n\nThere are a lot of possible extensions. This is a very biased list:\n\nThe choice \\sigma \\in (0, 1) allows for polynomial growth (Lijoi et al. 2007b; Pitman and Yor 1997) while \\sigma &lt; 0 leads to a finite richness (Gnedin 2010; Lijoi et al. 2020).\nMultiple samples, a.k.a. partial exchangeability (Camerlenghi et al. 2019; Franzolini et al. 2025)\nEnriched processes, taxonomical data (Rigon et al. 2025a; Rigon et al. 2025b; Zito et al. 2023).\nIncidence data and feature models (Ghilotti et al. 2025).\nWhat about covariates?"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#specimens-and-bins-in-barcode-of-life",
+    "href": "post/SISBayes/GRASPA_slides.html#specimens-and-bins-in-barcode-of-life",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Specimens and BINs in Barcode of Life",
+    "text": "Specimens and BINs in Barcode of Life"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#how-can-we-link-covariates-with-biodiversity",
+    "href": "post/SISBayes/GRASPA_slides.html#how-can-we-link-covariates-with-biodiversity",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "How can we link covariates with biodiversity?",
+    "text": "How can we link covariates with biodiversity?\n\nFor outcome Y_i and covariates \\bm{x}_i = (x_{i1}, \\ldots, x_{ip}) \\in \\mathbb{R}^p, i = 1, \\ldots, N, a generalized linear model (GLM) extends the linear model in non-Gaussian settings via three ingredients:\nThe exponential dispersion family directing each Y_i: \nf(y_i; \\theta_i, \\phi) = \\exp\\left\\{\\frac{y_i \\theta_i - b(\\theta_i)}{a_i(\\phi)} + c(y_i, \\phi)\\right\\},\n where \\theta_i \\in \\Theta is the natural parameter, \\phi &gt; 0 is the dispersion, and a_i,b,c are given functions.\nThe linear predictor \\eta_i = \\bm{x}_i^\\top \\bm{\\beta}, with \\bm{\\beta} \\in \\mathbb{R}^p.\nA monotonic link function g that links \\eta_i with the mean of Y_i, namely \\mu(\\theta_i) = \\mu_i: \n\\mathbb{E}(Y_i \\mid \\bm{x}_i) = \\mu_i = g^{-1}(\\eta_i).\n The link is canonical when g is such that \\theta_i = \\eta_i.\nIs there an exponential family that is related to a sample-specific diversity \\alpha_i?"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-hubbell-regression",
+    "href": "post/SISBayes/GRASPA_slides.html#the-hubbell-regression",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The Hubbell regression",
+    "text": "The Hubbell regression\n\nThe number of distinct species from a DP is an exponential family! \n\\mathbb{P}(Y^{(n)} = y; \\alpha) = \\frac{\\alpha^y}{(\\alpha)_n}|s(n, y)|, \\qquad y \\in\\{ 1, \\ldots, n\\},\n where (\\alpha)_n = \\Gamma(\\alpha + n)/\\Gamma(\\alpha) and |s(n,y)| are signless Stirling numbers of the first kind.\n\n\n\n\nThe Hubbell regression is a GLM where:\n\nThe distinct species Y_i^{(n_i)} for i=1,\\dots,N are independent draws from the distribution \nf(y_i; \\theta_i) = \\exp \\left\\{y_i \\theta_i - \\log[\\Gamma(e^{\\theta_i} + n_i) - \\Gamma(e^{\\theta_i})] + \\log|s(n_i, y_i)|\\right\\},\n with \\alpha_i = e^{\\theta_i} whose mean and variance functions are \n\\mu_i = \\mu(\\theta_i, n_i) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}, \\qquad\nV(\\mu(\\theta_i, n_i)) = \\sum_{j=0}^{n_i-1} \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\left(1 - \\frac{e^{\\theta_i}}{e^{\\theta_i} + j}\\right).\n\nThe link function g depends on \\eta_i and n_i and satisfies \\mathbb{E}(Y_i\\mid \\bm{x}_i, n_i) = \\mu_i = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i)."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#the-canonical-link",
+    "href": "post/SISBayes/GRASPA_slides.html#the-canonical-link",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "The canonical link",
+    "text": "The canonical link\n\nUsing the canonical link, we have: \n\\log \\alpha_i = \\theta_i = \\bm{x}_i^\\top \\bm{\\beta} = \\eta_i, \\qquad\n\\mu_i = \\mu(\\bm{x}_i^\\top \\bm{\\beta}, n_i) = \\sum_{j = 0}^{n_i-1} \\frac{e^{\\bm{x}_i^\\top \\bm{\\beta}}}{e^{\\bm{x}_i^\\top \\bm{\\beta}} + j} = g^{-1}(\\bm{x}_i^\\top \\bm{\\beta}, n_i).\n\nCoefficients \\bm{\\beta} have the classic interpretation of log-linear models in terms of \\alpha-diversity\n\n\nIf x_{ip} ↑ by 1 unit → \\alpha_i ↑ by 100(e^{\\beta_p} - 1)\\%\n\n\nThe saturated model corresponds to the case in which \\hat{\\alpha}_i \\approx \\hat{\\alpha}^{\\text{Fisher}}_i. The null model corresponds to the case \\hat{\\alpha}_i = \\hat{\\alpha} for all sites, i.e. there is no variation in biodiversity across sampling sites.\n\n\n\n\nTheorem (Poisson regression with log-log offset)\n\n\nCall \\gamma = 0.5772\\dots the Euler’s constant. Under large values of n, when each n_i \\to \\infty we have \nY^{(n)}_i \\;\\dot{\\sim}\\; 1 + \\mathrm{Poisson}\\left(\\exp\\left\\{\\bm{x}_i^\\top\\bm{\\beta} + \\log(\\gamma + \\log n_i)\\right\\}\\right).\n Informally, we will say that \\hat{\\bm{\\beta}}^{\\mathrm{Hubbell}} \\approx \\hat{\\bm{\\beta}}^{\\mathrm{Poisson}} ."
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "href": "post/SISBayes/GRASPA_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Determinants of biodiversity in the global malaise trap",
+    "text": "Determinants of biodiversity in the global malaise trap\n\nWe run the Hubbel regression model:\n\ncbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)\n\nWe estimate \\hat{\\sigma} = 0.53 via maximum likelihood, which amounts to a square root growth.\nP-values are corrected for shared species via the sandwich estimator.\n\n\n| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |\n|---------------------------------|---------:|-----------:|-------------:|---------|\n| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |\n| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |\n| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |\n| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |\n| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |\n| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |\n| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |\n| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |\n| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |\n| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |\n| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |\n| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |\n| total precipitation             | -0.009   | 0.003      | 0.001        | **      |\n| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |\n| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#results-latitude-has-a-major-effect",
+    "href": "post/SISBayes/GRASPA_slides.html#results-latitude-has-a-major-effect",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Results: latitude has a major effect!",
+    "text": "Results: latitude has a major effect!"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#summary-and-future-directions",
+    "href": "post/SISBayes/GRASPA_slides.html#summary-and-future-directions",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "Summary and future directions",
+    "text": "Summary and future directions\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\n\n\n\n\nHubbell can be extended to regression model to make it covariate-dependent.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs\nFinish the paper! :)\n\nThank you for your attention!"
+  },
+  {
+    "objectID": "post/SISBayes/GRASPA_slides.html#references",
+    "href": "post/SISBayes/GRASPA_slides.html#references",
+    "title": "A Bayesian theory for estimation of biodiversity",
+    "section": "References",
+    "text": "References\n\n\n\nCamerlenghi, F., Lijoi, A., Orbanz, P., and Prünster, I. (2019), “Distribution theory for hierarchical processes,” Ann. Statist., 47, 67–92.\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prunster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Trans. Pattern Anal. Mach. Intell., IEEE, 37, 212–229.\n\n\nEwens, W. (1972), “The sampling theory of selectively neutral alleles,” Theoretical Population Biology, 3, 87–112.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” Ann. Statist., 1, 209–230.\n\n\nFisher, R. A., Corbet, A. S., and Williams, C. B. (1943), “The relation between the number of species and the number of individuals in a random sample of an animal population,” J. Anim. Ecol., 12, 42–58.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society: Series B (Statistical Methodology).\n\n\nGnedin, A. (2010), “Species sampling model with finitely many types,” Electron. Comm. Prob., 15, 79–88.\n\n\nGnedin, A., and Pitman, J. (2005), “Exchangeable Gibbs partitions and Stirling triangles,” Zapiski Nauchnykh Seminarov, POMI, 325, 83–102.\n\n\nHubbell, S. P. (2001), The unified neutral theory of biodiversity and biogeography, Princeton University Press.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007a), “Bayesian nonparametric estimation of the probability of discovering new species,” Biometrika, Oxford University Press, 94, 769–786.\n\n\nLijoi, A., Mena, R. H., and Prünster, I. (2007b), “Controlling the reinforcement in Bayesian non-parametric mixture models,” J. R. Statist. Soc. B, Wiley Online Library, 69, 715–740.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modeling,” Biometrika, 107, 891–906.\n\n\nMcCullagh, P. (2016), “Two Early Contributions to the Ewens Saga,” Statist. Sci., 31, 23–26.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” in Statistics, probability and game theory, IMS lecture notes monogr. ser., Inst. Math. Statist., Hayward, CA, pp. 245–267.\n\n\nPitman, J. (2003), “Poisson-Kingman partitions,” Lecture Notes-Monograph Series, 40, 1–34.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” Ann. Probab., 25, 855–900.\n\n\nRigon, T., Hsu, C., and B., D. D. (2025a), “A Bayesian theory for estimation of biodiversity,” arXiv:2502.01333.\n\n\nRigon, T., Petrone, S., and Scarpa, B. (2025b), “Enriched Pitman-Yor processes,” Scand. J. Statist.\n\n\nZito, A., Rigon, T., and Dunson, D. B. (2023), “Inferring taxonomic placement from DNA barcoding allowing discovery of new taxa,” Meth. Ecol. Evol., 14, 529–542."
   }
 ]

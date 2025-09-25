@@ -174,7 +174,7 @@ window.Quarto = {
   <ul>
   <li><a href="#short-bio" id="toc-short-bio" class="nav-link active" data-scroll-target="#short-bio">Short Bio</a></li>
   <li><a href="#hyperbolic-secant-regression" id="toc-hyperbolic-secant-regression" class="nav-link" data-scroll-target="#hyperbolic-secant-regression">Hyperbolic secant regression</a></li>
-  <li><a href="#expected-outcome-and-research-gap" id="toc-expected-outcome-and-research-gap" class="nav-link" data-scroll-target="#expected-outcome-and-research-gap">Expected outcome and research gap</a></li>
+  <li><a href="#objectives-and-expectations" id="toc-objectives-and-expectations" class="nav-link" data-scroll-target="#objectives-and-expectations">Objectives and expectations</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Polimi2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -274,12 +274,12 @@ f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\
 </div>
 </div>
 <ul>
-<li><p>This distribution can be employed build a novel generalized linear model (GLM), which automatically incorporates <span class="orange">heteroskedasticity</span> and with <span class="blue">heavier tails</span> that the Gaussian law.</p></li>
-<li><p>There are multiple application areas of such a regression technique, including (but not limited to) financial data.</p></li>
+<li><p>This distribution can be employed to build a novel generalized linear model (GLM), which automatically incorporates <span class="orange">heteroskedasticity</span> and exhibits <span class="blue">heavier tails</span> than the Gaussian law.</p></li>
+<li><p>There are multiple application areas for such a regression technique, including (but not limited to) financial data.</p></li>
 </ul>
 </section>
-<section id="expected-outcome-and-research-gap" class="level2">
-<h2 class="anchored" data-anchor-id="expected-outcome-and-research-gap">Expected outcome and research gap</h2>
+<section id="objectives-and-expectations" class="level2">
+<h2 class="anchored" data-anchor-id="objectives-and-expectations">Objectives and expectations</h2>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -291,14 +291,14 @@ Research gap
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>A systematic <span class="orange">Bayesian investigation</span> of such a GLM is entirely missing. In principle, this GLM framework can be combined with modern Bayesian tool for regression, such as:</p>
+<li><p>A systematic <span class="orange">Bayesian investigation</span> of such a GLM is entirely lacking. In principle, this GLM framework can be combined with modern Bayesian tools for regression, such as:</p>
 <ul>
-<li>Variable selection and regularization, e.g.&nbsp;using shrinkage priors or spike-and-slab priors</li>
-<li>Random effects (parametric and non-parametric).</li>
-<li>Generalized Additive Models (GAMs), e.g.&nbsp;using Gaussian Processes</li>
+<li>Variable selection and regularization, e.g., shrinkage priors or spike-and-slab priors.</li>
+<li>Random effects (parametric and nonparametric).</li>
+<li>Generalized Additive Models (GAMs), e.g., Gaussian Processes.</li>
 </ul></li>
 <li><p><span class="orange">Overdispersion</span> may require novel generalized Bayes techniques <span class="citation" data-cites="Agnoletto2025">(<a href="#ref-Agnoletto2025" role="doc-biblioref">Agnoletto et al. 2025</a>)</span>.</p></li>
-<li><p>It is possible that a <span class="blue">Polya-gamma</span> data augmentation scheme can be employed by adapting the results in <span class="citation" data-cites="Polson2013">Polson et al. (<a href="#ref-Polson2013" role="doc-biblioref">2013</a>)</span>. If not, Hamiltonian Monte Carlo (HMC) is certainly feasible.</p></li>
+<li><p>A <span class="blue">Polya-gamma</span> data augmentation scheme may be applicable by adapting the results in <span class="citation" data-cites="Polson2013">Polson et al. (<a href="#ref-Polson2013" role="doc-biblioref">2013</a>)</span>. If not, Hamiltonian Monte Carlo (HMC) remains a feasible option.</p></li>
 </ul>
 </div>
 </div>
@@ -312,8 +312,8 @@ Expected outcome
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The group is expected to implement and develop one or more of the above research gaps.</p>
-<p>I expect that the group is proficient in R programming (C++ programming is a big plus but probably not necessary). Most of the work relates to the practical implementation of the above ideas.</p>
+<p>The group is expected to implement and develop 2–3 of the research gaps outlined above.</p>
+<p>I expect the group to be proficient in R programming (knowledge of C++ is a strong asset, though probably not essential). Most of the work will focus on the practical implementation of these ideas.</p>
 </div>
 </div>
 </section>

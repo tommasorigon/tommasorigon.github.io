@@ -55,31 +55,31 @@ This distribution is discussed in @Morris1982 and is an instance of highly tract
 :::
 
 
-- This distribution can be employed build a novel generalized linear model (GLM), which automatically incorporates [heteroskedasticity]{.orange} and with [heavier tails]{.blue} that the Gaussian law.
+- This distribution can be employed to build a novel generalized linear model (GLM), which automatically incorporates [heteroskedasticity]{.orange} and exhibits [heavier tails]{.blue} than the Gaussian law.
 
-- There are multiple application areas of such a regression technique, including (but not limited to) financial data. 
+- There are multiple application areas for such a regression technique, including (but not limited to) financial data.
 
 ## Objectives and expectations
 
 :::callout-tip
 #### Research gap
-- A systematic [Bayesian investigation]{.orange} of such a GLM is entirely missing. In principle, this GLM framework can be combined with modern Bayesian tool for regression, such as:
-  - Variable selection and regularization, e.g. using shrinkage priors or spike-and-slab priors
-  - Random effects (parametric and non-parametric).
-  - Generalized Additive Models (GAMs), e.g. using Gaussian Processes.
+- A systematic [Bayesian investigation]{.orange} of such a GLM is entirely lacking. In principle, this GLM framework can be combined with modern Bayesian tools for regression, such as:
+  - Variable selection and regularization, e.g., shrinkage priors or spike-and-slab priors.
+  - Random effects (parametric and nonparametric).
+  - Generalized Additive Models (GAMs), e.g., Gaussian Processes.
 
 - [Overdispersion]{.orange} may require novel generalized Bayes techniques [@Agnoletto2025].
 
-- It is possible that a [Polya-gamma]{.blue} data augmentation scheme can be employed by adapting the results in @Polson2013. If not, Hamiltonian Monte Carlo (HMC) is certainly feasible.
+- A [Polya-gamma]{.blue} data augmentation scheme may be applicable by adapting the results in @Polson2013. If not, Hamiltonian Monte Carlo (HMC) remains a feasible option.
 
 :::
 
 :::callout-warning
 #### Expected outcome
 
-The group is expected to implement and develop 2-3 of the above research gaps. 
+The group is expected to implement and develop 2–3 of the research gaps outlined above.  
 
-I expect that the group is proficient in R programming (C++ programming is a big plus but probably not necessary). Most of the work relates to the practical implementation of the above ideas. 
+I expect the group to be proficient in R programming (knowledge of C++ is a strong asset, though probably not essential). Most of the work will focus on the practical implementation of these ideas.
 :::
 
 

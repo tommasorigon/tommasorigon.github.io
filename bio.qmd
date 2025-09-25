@@ -16,8 +16,8 @@
 ::: {#first-column}
 [University of Milano-Bicocca]{.blue}, Department of Economics, Management and Statistics (DEMS), Milan, Italy.
 
-- Assistant Professor (RTD-B), 2023 - Present
-- Assistant Professor (RTD-A), 2020 - 2023
+- Senior Assistant Professor (RTD-B), 2023 - Present
+- Junior Assistant Professor (RTD-A), 2020 - 2023
 
 <!-- [I am currently an [Assistant Professor](https://en.unimib.it/tommaso-rigon) (_RTD-B_) at [University of Milano-Bicocca](https://en.unimib.it). I have been a fixed-term Assistant Professor (_RTD-A_), at the same institution from 2020 to 2023.]{.small} -->
 :::

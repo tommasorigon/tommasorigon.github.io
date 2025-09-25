@@ -1,0 +1,86 @@
+---
+title: "Tutor: Tommaso Rigon"
+subtitle: "Politecnico di Milano - Mathematical Engineering - Bayesian Statistics"
+date: "2025-09-26"
+lang: en
+author: "[Tommaso Rigon]{.orange}"
+institute: "_Università degli Studi di Milano-Bicocca_"
+page-layout: full
+bibliography: biblio.bib
+citeproc: true
+csl: https://www.zotero.org/styles/journal-of-the-american-statistical-association
+reference-location: margin
+execute:
+  cache: false
+format:
+  html:
+    toc: true
+  revealjs:
+    output-file: Polimi2025_slides.html
+format-links: true
+---
+
+
+## Short Bio
+
+- My name is [Tommaso Rigon]{.blue} and I am a [Senior Assistant Professor]{.orange} (RTD-B).
+
+- [University of Milano-Bicocca]{.blue}, Department of Economics, Management and Statistics (DEMS), Milan, Italy.
+  - Senior Assistant Professor (RTD-B), 2023 - Present
+  - Junior Assistant Professor (RTD-A), 2020 - 2023
+
+- [Duke University]{.blue}, Department of Statistical Science, Durham (NC), U.S.A.
+  - Postdoctoral Associate, 2020 - 2020
+  - Research Associate, 2019 - 2020
+
+:::callout-note
+#### Education
+
+- [Ph.D. in Statistical Sciences]{.orange}, [Bocconi University](https://www.unibocconi.eu/), Milan, Italy.
+- [M.Sc. in Statistical Sciences]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
+- [B.Sc. in Statistics, Economics & Finance]{.grey}, [University of Padova](https://www.unipd.it), Padua, Italy.
+:::
+
+
+## Hyperbolic secant regression
+
+
+:::callout-tip
+#### Background
+- Let $Y_1,\dots,Y_n$ be independent random variable distributed according to a [hyperbolic secant distribution]{.orange}, whose [density]{.blue} is
+$$
+f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\pi y_i / 2)}, \qquad y_i \in \mathbb{R}, \; \theta_i \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right).
+$$
+This distribution is discussed in @Morris1982 and is an instance of highly tractable [exponential family]{.orange} having a [quadratic variance]{.blue} function. 
+:::
+
+
+- This distribution can be employed build a novel generalized linear model (GLM), which automatically incorporates [heteroskedasticity]{.orange} and with [heavier tails]{.blue} that the Gaussian law.
+
+- There are multiple application areas of such a regression technique, including (but not limited to) financial data. 
+
+## Expected outcome and research gap
+
+:::callout-tip
+#### Research gap
+- A systematic [Bayesian investigation]{.orange} of such a GLM is entirely missing. In principle, this GLM framework can be combined with modern Bayesian tool for regression, such as:
+  - Variable selection and regularization, e.g. using shrinkage priors or spike-and-slab priors
+  - Random effects (parametric and non-parametric).
+  - Generalized Additive Models (GAMs), e.g. using Gaussian Processes
+
+- [Overdispersion]{.orange} may require novel generalized Bayes techniques [@Agnoletto2025].
+
+- It is possible that a [Polya-gamma]{.blue} data augmentation scheme can be employed by adapting the results in @Polson2013. If not, Hamiltonian Monte Carlo (HMC) is certainly feasible.
+
+:::
+
+:::callout-warning
+#### Expected outcome
+
+The group is expected to implement and develop one or more of the above research gaps. 
+
+I expect that the group is proficient in R programming (C++ programming is a big plus but probably not necessary). Most of the work relates to the practical implementation of the above ideas. 
+:::
+
+
+## References

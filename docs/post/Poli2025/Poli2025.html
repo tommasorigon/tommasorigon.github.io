@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2025-09-26">
 
-<title>Blogpost – Tommaso Rigon</title>
+<title>Tutor: Tommaso Rigon – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,68 +22,57 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3111f4bc39e569af9b8dff312645f3ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3111f4bc39e569af9b8dff312645f3ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
-    "search-no-results-text": "Nessun risultato",
-    "search-matching-documents-text": "documenti trovati",
-    "search-copy-link-title": "Copiare il link nella ricerca",
-    "search-hide-matches-text": "Nascondere i risultati aggiuntivi",
-    "search-more-match-text": "ci sono altri risultati in questo documento",
-    "search-more-matches-text": "ulteriori risultati in questo documento",
-    "search-clear-button-title": "Pulire",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancellare",
-    "search-submit-button-title": "Inviare",
-    "search-label": "Ricerca"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-post .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-post'] = new List('listing-post', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
@@ -136,33 +127,33 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bio.html"> 
+    <a class="nav-link" href="../../bio.html"> 
 <span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tesi.html"> 
+    <a class="nav-link" href="../../tesi.html"> 
 <span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./post.html" aria-current="page"> 
+    <a class="nav-link" href="../../post.html"> 
 <span class="menu-text">Blogpost</span></a>
   </li>  
 </ul>
@@ -176,20 +167,51 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#short-bio" id="toc-short-bio" class="nav-link active" data-scroll-target="#short-bio">Short Bio</a></li>
+  <li><a href="#hyperbolic-secant-regression" id="toc-hyperbolic-secant-regression" class="nav-link" data-scroll-target="#hyperbolic-secant-regression">Hyperbolic secant regression</a></li>
+  <li><a href="#expected-outcome-and-research-gap" id="toc-expected-outcome-and-research-gap" class="nav-link" data-scroll-target="#expected-outcome-and-research-gap">Expected outcome and research gap</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Polimi2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blogpost</h1>
+<h1 class="title">Tutor: Tommaso Rigon</h1>
+<p class="subtitle lead">Politecnico di Milano - Mathematical Engineering - Bayesian Statistics</p>
 </div>
 
 
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><span class="orange">Tommaso Rigon</span> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <em>Università degli Studi di Milano-Bicocca</em>
+          </p>
+      </div>
+  </div>
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 26, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -199,191 +221,120 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-post" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1758837600000" data-listing-file-modified-sort="1758813041234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
-<div class="thumbnail"><a href="./post/Poli2025/Poli2025.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" style="height: 2in;">&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/Poli2025/Poli2025.html" class="no-external">Tutor: Tommaso Rigon</a>
-</h3>
-<div class="delink listing-description"><a href="./post/Poli2025/Poli2025.html" class="no-external">
-My name is <span class="blue">Tommaso Rigon</span> and I am a <span class="orange">Senior Assistant Professor</span> (RTD-B).
-</a></div>
+<section id="short-bio" class="level2">
+<h2 class="anchored" data-anchor-id="short-bio">Short Bio</h2>
+<ul>
+<li><p>My name is <span class="blue">Tommaso Rigon</span> and I am a <span class="orange">Senior Assistant Professor</span> (RTD-B).</p></li>
+<li><p><span class="blue">University of Milano-Bicocca</span>, Department of Economics, Management and Statistics (DEMS), Milan, Italy.</p>
+<ul>
+<li>Senior Assistant Professor (RTD-B), 2023 - Present</li>
+<li>Junior Assistant Professor (RTD-A), 2020 - 2023</li>
+</ul></li>
+<li><p><span class="blue">Duke University</span>, Department of Statistical Science, Durham (NC), U.S.A.</p>
+<ul>
+<li>Postdoctoral Associate, 2020 - 2020</li>
+<li>Research Associate, 2019 - 2020</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="metadata">
-<a href="./post/Poli2025/Poli2025.html" class="no-external">
-<div class="listing-date">
-26 set 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Education
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1748296800000" data-listing-file-modified-sort="1756107137540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2343">
-<div class="thumbnail"><a href="./post/BISP2025/BISP2025.html" class="no-external">
-
-<p class="card-img-top"><img src="post/BISP2025/img/davide.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/BISP2025/BISP2025.html" class="no-external">BISP14 workshop</a>
-</h3>
-<div class="delink listing-description"><a href="./post/BISP2025/BISP2025.html" class="no-external">
-<span class="orange">Davide Agnoletto</span> (Duke University)
-</a></div>
-</div>
-<div class="metadata">
-<a href="./post/BISP2025/BISP2025.html" class="no-external">
-<div class="listing-date">
-27 mag 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="orange">Ph.D.&nbsp;in Statistical Sciences</span>, <a href="https://www.unibocconi.eu/">Bocconi University</a>, Milan, Italy.</li>
+<li><span class="blue">M.Sc. in Statistical Sciences</span>, <a href="https://www.unipd.it">University of Padova</a>, Padua, Italy.</li>
+<li><span class="grey">B.Sc. in Statistics, Economics &amp; Finance</span>, <a href="https://www.unipd.it">University of Padova</a>, Padua, Italy.</li>
+</ul>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1741388400000" data-listing-file-modified-sort="1750177306235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1385">
-<div class="thumbnail"><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
-
-<p class="card-img-top"><img src="post/lotteria_AI/biglietti.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">La lotteria nazionale non è difettosa</a>
-</h3>
-<div class="delink listing-description"><a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
-Dopo la pubblicazione di un mio post di qualche giorno fa riguardante la lotteria nazionale, alcuni commentatori social (si, forse dovrei smettere di leggerli) hanno messo in discussione la validità delle ipotesi su cui si regge le lotteria, ed in…<span class="blue"></span>
-</a></div>
+</section>
+<section id="hyperbolic-secant-regression" class="level2">
+<h2 class="anchored" data-anchor-id="hyperbolic-secant-regression">Hyperbolic secant regression</h2>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="metadata">
-<a href="./post/lotteria_AI/lotteria_truccata.html" class="no-external">
-<div class="listing-date">
-8 mar 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Background
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1741215600000" data-listing-file-modified-sort="1750177306235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="930">
-<div class="thumbnail"><a href="./post/lotteria_AI/index.html" class="no-external">
-
-<p class="card-img-top"><img src="post/lotteria_AI/lotto.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/lotteria_AI/index.html" class="no-external">Come mai non è possibile prevedere i numeri del lotto</a>
-</h3>
-<div class="delink listing-description"><a href="./post/lotteria_AI/index.html" class="no-external">
-Il 5 marzo 2025, tre studenti dell’Università del Salento hanno vinto quasi 50.000 euro al lotto, dichiarando di aver usato un algoritmo di intelligenza artificiale per prevedere i numeri da giocare. La notizia è stata ripresa da molti quotidiani…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./post/lotteria_AI/index.html" class="no-external">
-<div class="listing-date">
-6 mar 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Let <span class="math inline">Y_1,\dots,Y_n</span> be independent random variable distributed according to a <span class="orange">hyperbolic secant distribution</span>, whose <span class="blue">density</span> is <span class="math display">
+f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\pi y_i / 2)}, \qquad y_i \in \mathbb{R}, \; \theta_i \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right).
+</span> This distribution is discussed in <span class="citation" data-cites="Morris1982">Morris (<a href="#ref-Morris1982" role="doc-biblioref">1982</a>)</span> and is an instance of highly tractable <span class="orange">exponential family</span> having a <span class="blue">quadratic variance</span> function.</li>
+</ul>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1738191600000" data-listing-file-modified-sort="1750177306192" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="860">
-<div class="thumbnail"><a href="./post/champions/champions2025_esiti.html" class="no-external">
-
-<p class="card-img-top"><img src="post/champions/referee.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">Previsioni Champions League: com’è andata?</a>
-</h3>
-<div class="delink listing-description"><a href="./post/champions/champions2025_esiti.html" class="no-external">
-<span class="orange">Ieri</span> ho diffuso in un post le previsioni per l’ultima giornata di Champions League, basandomi sulle quotazioni dei <em>bookmakers</em>. <span class="blue">Oggi</span> vogliamo controllare com’è andata. Ci sono state previsioni centrate (ad es. Inter - Monaco, Manchester City -…
-</a></div>
+<ul>
+<li><p>This distribution can be employed build a novel generalized linear model (GLM), which automatically incorporates <span class="orange">heteroskedasticity</span> and with <span class="blue">heavier tails</span> that the Gaussian law.</p></li>
+<li><p>There are multiple application areas of such a regression technique, including (but not limited to) financial data.</p></li>
+</ul>
+</section>
+<section id="expected-outcome-and-research-gap" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcome-and-research-gap">Expected outcome and research gap</h2>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="metadata">
-<a href="./post/champions/champions2025_esiti.html" class="no-external">
-<div class="listing-date">
-30 gen 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Research gap
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1738105200000" data-listing-file-modified-sort="1750177306180" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2096">
-<div class="thumbnail"><a href="./post/champions/champions2025.html" class="no-external">
-
-<p class="card-img-top"><img src="post/champions/calcio.jpg" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/champions/champions2025.html" class="no-external">Previsioni Champions League</a>
-</h3>
-<div class="delink listing-description"><a href="./post/champions/champions2025.html" class="no-external">
-Nella Champions League del 2025, <span class="blue">36 squadre</span> competono in una prima fase con un formato “all’italiana”, disputando un totale di 8 partite ciascuna. Ad oggi, 29 gennaio 2024, sono state giocate 7 delle 8 giornate previste. Siamo quindi interessati a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./post/champions/champions2025.html" class="no-external">
-<div class="listing-date">
-29 gen 2025
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>A systematic <span class="orange">Bayesian investigation</span> of such a GLM is entirely missing. In principle, this GLM framework can be combined with modern Bayesian tool for regression, such as:</p>
+<ul>
+<li>Variable selection and regularization, e.g.&nbsp;using shrinkage priors or spike-and-slab priors</li>
+<li>Random effects (parametric and non-parametric).</li>
+<li>Generalized Additive Models (GAMs), e.g.&nbsp;using Gaussian Processes</li>
+</ul></li>
+<li><p><span class="orange">Overdispersion</span> may require novel generalized Bayes techniques <span class="citation" data-cites="Agnoletto2025">(<a href="#ref-Agnoletto2025" role="doc-biblioref">Agnoletto et al. 2025</a>)</span>.</p></li>
+<li><p>It is possible that a <span class="blue">Polya-gamma</span> data augmentation scheme can be employed by adapting the results in <span class="citation" data-cites="Polson2013">Polson et al. (<a href="#ref-Polson2013" role="doc-biblioref">2013</a>)</span>. If not, Hamiltonian Monte Carlo (HMC) is certainly feasible.</p></li>
+</ul>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1750177306195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1802">
-<div class="thumbnail"><a href="./post/karmic_dice/karmic.html" class="no-external">
-
-<p class="card-img-top"><img src="post/karmic_dice/karmic_files/figure-html/unnamed-chunk-12-1.png" style="height: 2in;"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./post/karmic_dice/karmic.html" class="no-external">Karmic dice for Baldur’s Gate III</a>
-</h3>
-<div class="delink listing-description"><a href="./post/karmic_dice/karmic.html" class="no-external">
-I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned computer and I thought it was a great game. When Baldur’s Gate III was released a few weeks ago, it caught my attention.
-</a></div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="metadata">
-<a href="./post/karmic_dice/karmic.html" class="no-external">
-<div class="listing-date">
-20 ago 2023
-</div>
-<div class="listing-author">
-<span class="orange">Tommaso Rigon</span>
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Expected outcome
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>The group is expected to implement and develop one or more of the above research gaps.</p>
+<p>I expect that the group is proficient in R programming (C++ programming is a big plus but probably not necessary). Most of the work relates to the practical implementation of the above ideas.</p>
 </div>
-<div class="listing-no-matching d-none">Nessun risultato</div>
 </div>
+</section>
+<section id="references" class="level2">
 
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Agnoletto2025" class="csl-entry" role="listitem">
+Agnoletto, D., Rigon, T., and Dunson, D. B. (2025), <span>“Bayesian inference for generalized linear models via quasi-posteriors,”</span> <em>Biometrika</em>, 112.
+</div>
+<div id="ref-Morris1982" class="csl-entry" role="listitem">
+Morris, C. N. (1982), <span>“Natural exponential families with quadratic variance functions,”</span> <em>Annals of Statistics</em>, 10, 65–80.
+</div>
+<div id="ref-Polson2013" class="csl-entry" role="listitem">
+Polson, N. G., Scott, J. G., and Windle, J. (2013), <span>“Bayesian inference for logistic models using polya-gamma latent variables,”</span> <em>Journal of the American Statistical Association</em>, Taylor {&amp;} Francis, 108, 1–42.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -409,12 +360,12 @@ I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned co
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiato!");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiato!");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -788,5 +739,5 @@ I played the game “Baldur’s Gate” when I was a kid, on my old-fashioned co
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

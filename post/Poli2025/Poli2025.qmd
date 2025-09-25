@@ -59,14 +59,14 @@ This distribution is discussed in @Morris1982 and is an instance of highly tract
 
 - There are multiple application areas of such a regression technique, including (but not limited to) financial data. 
 
-## Expected outcome and research gap
+## Objectives and expectations
 
 :::callout-tip
 #### Research gap
 - A systematic [Bayesian investigation]{.orange} of such a GLM is entirely missing. In principle, this GLM framework can be combined with modern Bayesian tool for regression, such as:
   - Variable selection and regularization, e.g. using shrinkage priors or spike-and-slab priors
   - Random effects (parametric and non-parametric).
-  - Generalized Additive Models (GAMs), e.g. using Gaussian Processes
+  - Generalized Additive Models (GAMs), e.g. using Gaussian Processes.
 
 - [Overdispersion]{.orange} may require novel generalized Bayes techniques [@Agnoletto2025].
 
@@ -77,7 +77,7 @@ This distribution is discussed in @Morris1982 and is an instance of highly tract
 :::callout-warning
 #### Expected outcome
 
-The group is expected to implement and develop one or more of the above research gaps. 
+The group is expected to implement and develop 2-3 of the above research gaps. 
 
 I expect that the group is proficient in R programming (C++ programming is a big plus but probably not necessary). Most of the work relates to the practical implementation of the above ideas. 
 :::

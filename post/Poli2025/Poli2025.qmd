@@ -47,7 +47,8 @@ format-links: true
 
 :::callout-tip
 #### Background
-- Let $Y_1,\dots,Y_n$ be independent random variable distributed according to a [hyperbolic secant distribution]{.orange}, whose [density]{.blue} is
+
+Let $Y_1,\dots,Y_n$ be independent random variable distributed according to a [hyperbolic secant distribution]{.orange}, whose [density]{.blue} is
 $$
 f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\pi y_i / 2)}, \qquad y_i \in \mathbb{R}, \; \theta_i \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right).
 $$
@@ -55,7 +56,7 @@ This distribution is discussed in @Morris1982 and is an instance of highly tract
 :::
 
 
-- This distribution can be employed to build a novel generalized linear model (GLM), which automatically incorporates [heteroskedasticity]{.orange} and exhibits [heavier tails]{.blue} than the Gaussian law.
+- This distribution can be employed to build a novel [generalized linear model]{.blue} (GLM), which automatically incorporates [heteroskedasticity]{.orange} and exhibits [heavier tails]{.blue} than the Gaussian law.
 
 - There are multiple application areas for such a regression technique, including (but not limited to) financial data.
 

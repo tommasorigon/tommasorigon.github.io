@@ -23,7 +23,7 @@ Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). S
 
 ## Tesi passate (triennali, magistrali e dottorato) {.central}
 
-Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi.
+Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi. Non è una lista esaustiva. 
 
 | A.A. | Laurea | Candidata/o | Titolo |
 |:-------------:|:-------------:|:--------------|:----------------------------|
@@ -42,7 +42,7 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 | 2023/2024 | [Magistrale]{.orange} | Anna Petranzan | [The Gnedin model: recent developments and future perspectives](files/papers/Petranzan_magistrale_858541.pdf) |
 | 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Analisi della struttura interna de *La Lombardia*, attraverso l’utilizzo di modelli per blocchi stocastici estesi](files/papers/Cantaroni_magistrale.pdf) |
 | 2024/2025 | [Magistrale]{.orange} | Alessandro Colello | [Bayesian nonparametric clustering with variational inference and fusing of localized densities](files/papers/Colello_magistrale.pdf) |
-| 2025/2026 | [Magistrale]{.orange} | Maria Regina Mucilli | [Distribuzione secante iperbolica: caratterizzazione, generalizzazione e applicazioni in modelli lineari generalizzati](files/papers/Mucillli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) |
+| 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Distribuzione secante iperbolica: caratterizzazione, generalizzazione e applicazioni in modelli lineari generalizzati](files/papers/Mucillli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) |
 |  |  |  | **Dottorato di ricerca** |
 | 2023 | [**Ph.D.**]{.darkred} (Duke) | Alessandro Zito | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) |
 | 2024 | [**Ph.D.**]{.darkred} (Unipd) | Davide Agnoletto | [Statistical modeling within the generalized Bayesian paradigm](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) |

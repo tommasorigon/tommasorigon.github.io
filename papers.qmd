@@ -5,6 +5,8 @@
 
 [Preprints]{.blue}
 
+1. Ghilotti, L., Camerlenghi, F., **Rigon, T.**, and Guindani, M. (2025+). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. Submitted. [[ArXiv]](https://arxiv.org/abs/2510.24526)
+
 1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. Submitted. [[ArXiv]](https://arxiv.org/abs/2507.08629).
 
 1. **Rigon, T.**, Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).

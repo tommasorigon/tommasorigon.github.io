@@ -11,7 +11,7 @@
 
 1. **Rigon, T.**, Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).
 
-1. Anceschi, N., **Rigon, T.**, Zanella, G., and Durante D. (2025+).  Optimal lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
+1. Anceschi, N., Castiglione, C., **Rigon, T.**, Zanella, G., and Durante D. (2025+).  Optimal and computationally tractable lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
 
 
 [Articles in refereed journals]{.blue}

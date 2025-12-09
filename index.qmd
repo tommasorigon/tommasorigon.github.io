@@ -44,7 +44,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [[2024]{.blue}] [Blackwell and Rosenbluth Award 2024]{.blue}. *The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community*. Junior Section of International Society for Bayesian Analysis (j-ISBA). [[Award](https://j-isba.github.io/blackwell-rosenbluth.html)] [[News](https://stat.duke.edu/news/bu-rigon-win-blackwell-rosenbluth-awards)]
 
-[[2024]{.blue}] I am part of the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)]
+<!-- [[2024]{.blue}] I am part of the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)] -->
 
 [[2024]{.blue}] [Mitchell Prize 2023]{.blue} *for the paper "Extended Stochastic Block Models with Application to Criminal Networks"*. International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/mitchell-prize/)]
 
@@ -54,11 +54,11 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [[2024]{.blue}] [Daniele Durante](https://danieledurante.github.io/web/) was awarded an [ERC Starting Grant]{.blue} for the project [NEMESIS](https://danieledurante.github.io/web/nemesis.html), focusing on the sociogenesis of criminal networks. I am very happy to be involved in the research group!
 
-[[2022]{.blue}] [National Scientific Qualification for Associate Professor in Statistics (13/D1)]{.blue}. 
+<!-- [[2022]{.blue}] [National Scientific Qualification for Associate Professor in Statistics (13/D1)]{.blue}.  -->
 
-[[2021]{.blue}] [Young Talents Award 2021]{.blue}. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [[Award](https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf)]
+<!-- [[2021]{.blue}] [Young Talents Award 2021]{.blue}. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [[Award](https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf)] -->
 
-[[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. *The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis*. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)]
+<!-- [[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. *The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis*. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)] -->
 
 ----------------------------------------------------------------------
 

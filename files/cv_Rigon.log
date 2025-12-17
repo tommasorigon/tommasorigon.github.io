@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  6 NOV 2025 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  17 DEC 2025 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,21 +729,21 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includemp 
-* h-part:(L,W,R)=(48.36967pt, 500.76852pt, 48.36967pt)
-* v-part:(T,H,B)=(48.36967pt, 748.3075pt, 48.36967pt)
+* h-part:(L,W,R)=(51.21495pt, 495.07797pt, 51.21495pt)
+* v-part:(T,H,B)=(51.21495pt, 742.61694pt, 51.21495pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=411.14236pt
-* \textheight=748.3075pt
-* \oddsidemargin=65.72585pt
-* \evensidemargin=65.72585pt
-* \topmargin=-60.90031pt
+* \textwidth=426.79138pt
+* \textheight=742.61694pt
+* \oddsidemargin=47.23155pt
+* \evensidemargin=47.23155pt
+* \topmargin=-58.05504pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=85.35826pt
-* \marginparsep=4.2679pt
+* \marginparwidth=62.59605pt
+* \marginparsep=5.69054pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -908,15 +908,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
 (Font)              scaled to size 10.0pt on input line 483.
-
-
-[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
 08.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
 (Font)              scaled to size 10.0pt on input line 508.
 
+
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -934,18 +933,18 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 17432 strings out of 473190
- 267954 string characters out of 5715800
- 697230 words of memory out of 5000000
+ 17452 strings out of 473190
+ 268324 string characters out of 5715800
+ 697223 words of memory out of 5000000
  40194 multiletter control sequences out of 15000+600000
- 623757 words of font info for 161 fonts, out of 8000000 for 9000
+ 624586 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,1005b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,13n,93p,1005b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171880 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171641 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  219 compressed objects within 3 object streams

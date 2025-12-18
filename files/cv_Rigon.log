@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  17 DEC 2025 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 DEC 2025 09:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,56 +627,56 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 101.
 Package hyperref Info: Option `breaklinks' set `true' on input line 101.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 187.
+(Font)              scaled to size 10.0pt on input line 184.
  (./cv_Rigon.aux)
 \openout1 = `cv_Rigon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 187.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 184.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 187.
+ 184.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 184.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-187.
+184.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 184.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 187.
+ 184.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 184.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 187.
+e 184.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -700,20 +700,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 187.
-Package microtype Info: Applying patch `item' on input line 187.
-Package microtype Info: Applying patch `toc' on input line 187.
-Package microtype Info: Applying patch `eqnum' on input line 187.
-Package microtype Info: Applying patch `footnote' on input line 187.
-Package microtype Info: Applying patch `verbatim' on input line 187.
-LaTeX Info: Redefining \microtypesetup on input line 187.
+LaTeX Info: Redefining \microtypecontext on input line 184.
+Package microtype Info: Applying patch `item' on input line 184.
+Package microtype Info: Applying patch `toc' on input line 184.
+Package microtype Info: Applying patch `eqnum' on input line 184.
+Package microtype Info: Applying patch `footnote' on input line 184.
+Package microtype Info: Applying patch `verbatim' on input line 184.
+LaTeX Info: Redefining \microtypesetup on input line 184.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 187.
+LaTeX Info: Redefining \showhyphens on input line 184.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -729,21 +729,21 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includemp 
-* h-part:(L,W,R)=(45.5244pt, 506.45908pt, 45.5244pt)
-* v-part:(T,H,B)=(45.5244pt, 753.99805pt, 45.5244pt)
+* h-part:(L,W,R)=(34.1433pt, 529.22128pt, 34.1433pt)
+* v-part:(T,H,B)=(34.1433pt, 776.76025pt, 34.1433pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=432.48193pt
-* \textheight=753.99805pt
-* \oddsidemargin=47.23155pt
-* \evensidemargin=47.23155pt
-* \topmargin=-63.74559pt
+* \textwidth=468.04788pt
+* \textheight=776.76025pt
+* \oddsidemargin=23.0467pt
+* \evensidemargin=23.0467pt
+* \topmargin=-75.1267pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=68.2866pt
-* \marginparsep=5.69054pt
+* \marginparwidth=56.9055pt
+* \marginparsep=4.2679pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -757,45 +757,45 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 
 \c@mv@tabular=\count319
 \c@mv@boldtabular=\count320
-LaTeX Info: Command `\dddot' is already robust on input line 187.
-LaTeX Info: Command `\ddddot' is already robust on input line 187.
-Package hyperref Info: Link coloring ON on input line 187.
+LaTeX Info: Command `\dddot' is already robust on input line 184.
+LaTeX Info: Command `\ddddot' is already robust on input line 184.
+Package hyperref Info: Link coloring ON on input line 184.
 (./cv_Rigon.out) (./cv_Rigon.out)
 \@outlinefile=\write3
 \openout3 = `cv_Rigon.out'.
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 188.
+(Font)              scaled to size 12.0pt on input line 185.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 188.
+(Font)              scaled to size 12.0pt on input line 185.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 12.0pt on input line 188.
+(Font)              scaled to size 12.0pt on input line 185.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 191.
+(Font)              scaled to size 10.0pt on input line 188.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 \rcollength=\skip78
 LaTeX Font Info:    Trying to load font information for OT1+minzpl on input lin
-e 192.
+e 189.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/ot1minzpl.fd
 File: ot1minzpl.fd 2021/05/25 v1.0 font definition file for OT1/minzpl/TLF
 )
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 10.0pt on input line 192.
+(Font)              scaled to size 10.0pt on input line 189.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minzpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 7.3pt on input line 192.
+(Font)              scaled to size 7.3pt on input line 189.
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 5.5pt on input line 192.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 192
+(Font)              scaled to size 5.5pt on input line 189.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 189
 .
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -804,7 +804,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 192
+LaTeX Font Info:    Trying to load font information for U+msb on input line 189
 .
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -814,43 +814,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
-192.
+189.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
-192.
+189.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
-192.
+189.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 194.
+(Font)              scaled to size 10.0pt on input line 191.
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 191--203
+Overfull \hbox (18.0pt too wide) in paragraph at lines 188--200
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 213.
+(Font)              scaled to size 10.0pt on input line 210.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 213.
+(Font)              scaled to size 10.0pt on input line 210.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 232.
+(Font)              scaled to size 5.0pt on input line 229.
 LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input lin
-e 232.
+e 229.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 232.
+(Font)              scaled to size 5.0pt on input line 229.
 
 
 [1
@@ -860,43 +860,43 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/
 texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texliv
 e/2025/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 327.
+(Font)              scaled to size 10.0pt on input line 324.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 LaTeX Font Info:    Faking \texteuro for font family zpltlf
-(Font)              in TS1 encoding on input line 367.
+(Font)              in TS1 encoding on input line 364.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.99997pt on input line 367.
+(Font)              scaled to size 6.99997pt on input line 364.
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
@@ -907,19 +907,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 483.
+(Font)              scaled to size 10.0pt on input line 480.
+
+Overfull \hbox (4.36559pt too wide) in paragraph at lines 485--485
+[]\T1/zpltlf/m/sc/10 (-20) Presentations  
+ []
+
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
-08.
+05.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 508.
+(Font)              scaled to size 10.0pt on input line 505.
 
 
 [5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 662.
+(Font)              scaled to size 8.0pt on input line 659.
 
 
 [7] 
@@ -933,21 +938,21 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 17460 strings out of 473190
- 268502 string characters out of 5715800
- 698219 words of memory out of 5000000
- 40194 multiletter control sequences out of 15000+600000
- 625027 words of font info for 175 fonts, out of 8000000 for 9000
+ 17453 strings out of 473190
+ 268421 string characters out of 5715800
+ 698221 words of memory out of 5000000
+ 40191 multiletter control sequences out of 15000+600000
+ 624912 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,1005b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,13n,93p,1005b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171663 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171216 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
+ 246 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 500000)
  32385 words of extra memory for PDF output out of 35830 (max. 10000000)
 

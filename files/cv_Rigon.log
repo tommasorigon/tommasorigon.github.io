@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 DEC 2025 09:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 DEC 2025 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -733,17 +733,17 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * v-part:(T,H,B)=(34.1433pt, 776.76025pt, 34.1433pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=468.04788pt
+* \textwidth=463.77997pt
 * \textheight=776.76025pt
-* \oddsidemargin=23.0467pt
-* \evensidemargin=23.0467pt
+* \oddsidemargin=27.31462pt
+* \evensidemargin=27.31462pt
 * \topmargin=-75.1267pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=56.9055pt
-* \marginparsep=4.2679pt
+* \marginparwidth=59.75078pt
+* \marginparsep=5.69054pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -834,23 +834,23 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 191.
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 188--200
+Overfull \hbox (18.0pt too wide) in paragraph at lines 188--199
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 210.
+(Font)              scaled to size 10.0pt on input line 209.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 210.
+(Font)              scaled to size 10.0pt on input line 209.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 229.
+(Font)              scaled to size 5.0pt on input line 228.
 LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input lin
-e 229.
+e 228.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 229.
+(Font)              scaled to size 5.0pt on input line 228.
 
 
 [1
@@ -860,43 +860,43 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/
 texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texliv
 e/2025/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 324.
+(Font)              scaled to size 10.0pt on input line 323.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 LaTeX Font Info:    Faking \texteuro for font family zpltlf
-(Font)              in TS1 encoding on input line 364.
+(Font)              in TS1 encoding on input line 363.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.99997pt on input line 364.
+(Font)              scaled to size 6.99997pt on input line 363.
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
@@ -907,24 +907,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 480.
+(Font)              scaled to size 10.0pt on input line 479.
 
-Overfull \hbox (4.36559pt too wide) in paragraph at lines 485--485
+Overfull \hbox (1.52031pt too wide) in paragraph at lines 484--484
 []\T1/zpltlf/m/sc/10 (-20) Presentations  
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
-05.
+04.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 505.
+(Font)              scaled to size 10.0pt on input line 504.
 
 
 [5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 659.
+(Font)              scaled to size 8.0pt on input line 658.
 
 
 [7] 
@@ -938,18 +938,18 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 17453 strings out of 473190
- 268421 string characters out of 5715800
- 698221 words of memory out of 5000000
+ 17457 strings out of 473190
+ 268465 string characters out of 5715800
+ 698213 words of memory out of 5000000
  40191 multiletter control sequences out of 15000+600000
- 624912 words of font info for 173 fonts, out of 8000000 for 9000
+ 625046 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,13n,93p,1005b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171216 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171188 bytes).
 PDF statistics:
  246 PDF objects out of 1000 (max. 8388607)
  220 compressed objects within 3 object streams

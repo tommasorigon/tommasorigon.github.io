@@ -5,20 +5,20 @@
 
 [Preprints]{.blue}
 
-1. Ghilotti, L., Camerlenghi, F., **Rigon, T.**, and Guindani, M. (2025+). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. Submitted. [[ArXiv]](https://arxiv.org/abs/2510.24526)
+1. Ghilotti, L., Camerlenghi, F., **Rigon, T.**, and Guindani, M. (2026+). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. Submitted. [[ArXiv]](https://arxiv.org/abs/2510.24526)
 
-1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. Submitted. [[ArXiv]](https://arxiv.org/abs/2507.08629).
+1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2026+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. Submitted. [[ArXiv]](https://arxiv.org/abs/2507.08629).
 
-1. **Rigon, T.**, Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).
+1. **Rigon, T.**, Hsu, C., and Dunson D.B. (2026+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).
 
-1. Anceschi, N., Castiglione, C., **Rigon, T.**, Zanella, G., and Durante D. (2025+).  Optimal and computationally tractable lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
+1. Anceschi, N., Castiglione, C., **Rigon, T.**, Zanella, G., and Durante D. (2026+).  Optimal and computationally tractable lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
 
 
 [Articles in refereed journals]{.blue}
 
-1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2025+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society Series B: Statistical Methodology*, to appear. [[Link]](https://academic.oup.com/jrsssb/advance-article/doi/10.1093/jrsssb/qkaf058/8270759) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
+1. Ghilotti, L., Camerlenghi, F., and **Rigon, T.** (2026+). Bayesian analysis of product feature allocation models. *Journal of the Royal Statistical Society Series B: Statistical Methodology*, to appear. [[Link]](https://academic.oup.com/jrsssb/advance-article/doi/10.1093/jrsssb/qkaf058/8270759) [[Github repository]](https://github.com/LGhilotti/ProductFormFA).
 
-1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2025+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
+1. Zito, A., **Rigon, T.**, and Dunson, D. B. (2026+). Bayesian nonparametric modeling of latent partitions via Stirling-gamma priors. *Bayesian Analysis*, to appear.  [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Bayesian-Nonparametric-Modeling-of-Latent-Partitions-via-Stirling-Gamma-Priors/10.1214/24-BA1463.full).
 
 1. Agnoletto, D., **Rigon, T.**, and Dunson D.B. (2025). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, **112**(2). [[Link]](https://doi.org/10.1093/biomet/asaf022) [[Slides]](post/BISP2025/BISP2025.qmd).
 

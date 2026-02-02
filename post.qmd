@@ -6,7 +6,7 @@ listing:
   type: default
   image-height: 2in
   max-description-length: 250
-  fields: [date, title, author, image, description]
+  fields: [date, title, subtitle, description, image]
   contents: post
   sort:
     - "date desc"

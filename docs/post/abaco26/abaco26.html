@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tommaso Rigon">
-<meta name="dcterms.date" content="2025-05-27">
-<meta name="description" content="A joint work with Davide Agnoletto and David Dunson presented at BISP 14, the 14th workshop on Bayesian Inference for Stochastic processes, organized by CNR-IMATI">
+<meta name="dcterms.date" content="2026-02-06">
+<meta name="description" content="A joint work with Davide Agnoletto and David Dunson presented at the Workshop on Advances in BAyesian COmputation and modeling organized by Emanuele Aliverti at the University of Padova.">
 
-<title>BISP14 workshop – Tommaso Rigon</title>
+<title>ABACO26 – Tommaso Rigon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -189,20 +189,20 @@ window.Quarto = {
   <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BISP2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="abaco26_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">BISP14 workshop</h1>
-<p class="subtitle lead"><em>Bayesian inference for generalized linear models via quasi-posteriors</em></p>
+<h1 class="title">ABACO26</h1>
+<p class="subtitle lead"><em>Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences</em></p>
 </div>
 
 <div>
   <div class="description">
-    A joint work with <span class="blue">Davide Agnoletto</span> and <span class="orange">David Dunson</span> presented at <a href="https://bisp14.imati.cnr.it/home_page.php">BISP 14</a>, the <em>14th workshop on Bayesian Inference for Stochastic processes</em>, organized by CNR-IMATI
+    A joint work with <span class="orange">Davide Agnoletto</span> and <span class="blue">David Dunson</span> presented at the Workshop on <em>Advances in BAyesian COmputation and modeling organized</em> by Emanuele Aliverti at the University of Padova.
   </div>
 </div>
 
@@ -226,7 +226,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 27, 2025</p>
+      <p class="date">February 6, 2026</p>
     </div>
   </div>
   
@@ -316,9 +316,6 @@ P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
 <ul>
 <li><p>Learning the loss scale <span class="math inline">\omega</span> from the data is a <span class="orange">delicate</span> task. Assuming a prior for <span class="math inline">\omega</span> can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.</p></li>
 <li><p>However, there are several solutions for its calibration: <span class="citation" data-cites="holmes2017assigning">Holmes and Walker (<a href="#ref-holmes2017assigning" role="doc-biblioref">2017</a>)</span>; <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#ref-lyddon2019general" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="syring2019calibrating">Syring and Martin (<a href="#ref-syring2019calibrating" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="matsubara2023generalized">Matsubara et al. (<a href="#ref-matsubara2023generalized" role="doc-biblioref">2023</a>)</span>.</p></li>
-</ul>
-<ul>
-<li><span class="orange">Our contribution</span>: Bayesian inference for generalized linear models via quasi-posteriors.</li>
 </ul>
 </section>
 <section id="generalized-bayes-for-glms" class="level2">

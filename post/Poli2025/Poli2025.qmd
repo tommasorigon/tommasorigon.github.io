@@ -1,6 +1,7 @@
 ---
-title: "Tutor: Tommaso Rigon"
+title: "Project presentation"
 subtitle: "Politecnico di Milano - Mathematical Engineering - Bayesian Statistics"
+description: "Presentation of a project for the course Bayesian Statistics"
 date: "2025-09-26"
 lang: en
 author: "[Tommaso Rigon]{.orange}"

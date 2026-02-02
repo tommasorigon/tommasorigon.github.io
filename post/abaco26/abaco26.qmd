@@ -1,8 +1,8 @@
 ---
-title: "BISP14 workshop"
-subtitle: "*Bayesian inference for generalized linear models via quasi-posteriors*"
-description: "A joint work with [Davide Agnoletto]{.blue} and [David Dunson]{.orange} presented at [BISP 14](https://bisp14.imati.cnr.it/home_page.php), the *14th workshop on Bayesian Inference for Stochastic processes*, organized by CNR-IMATI"
-date: "2025-05-27"
+title: "ABACO26"
+subtitle: "*Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences*"
+date: "2026-02-06"
+description: "A joint work with [Davide Agnoletto]{.orange} and [David Dunson]{.blue} presented at the Workshop on *Advances in BAyesian COmputation and modeling organized* by Emanuele Aliverti at the University of Padova." 
 lang: en
 author: "[Tommaso Rigon]{.orange}"
 institute: "_Università degli Studi di Milano-Bicocca_"
@@ -17,7 +17,7 @@ format:
   html:
     toc: true
   revealjs:
-    output-file: BISP2025_slides.html
+    output-file: abaco26_slides.html
 format-links: true
 ---
 
@@ -101,9 +101,6 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 
 - However, there are several solutions for its calibration: @holmes2017assigning; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
 
-. . .
-
-- [Our contribution]{.orange}: Bayesian inference for generalized linear models via quasi-posteriors.
 
 ## Generalized Bayes for GLMs
 

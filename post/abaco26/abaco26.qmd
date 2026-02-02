@@ -102,195 +102,245 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 - However, there are several solutions for its calibration: @holmes2017assigning; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
 
 
-## Generalized Bayes for GLMs
+## Generalization of the predictive approach
 
-- [Generalized linear models]{.blue} (GLMs) are routinely used to model a wide variety of data.
+## Motivation
 
-- The [Bayesian approach]{.orange} for GLMs is also incredibly popular, e.g. because of the possibility of naturally incorporating [random effects]{.blue}, complex penalizations, prior information, and more. 
-
-- However, they often incur [misspecification]{.orange}, and this could compromise inferential conclusions.  
+- Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task.
 
 . . .
 
-- A common case is [overdispersion]{.orange}, i.e., when proportion or count observations show larger variability than the one assumed by the model.  
-
-- Traditional solutions have important drawbacks:
-  - [Model-based]{.orange}: may lead to computational bottlenecks and can result again in misspecification. 
-  - [Nonparametric]{.blue}: increased computational cost and loss of efficiency and interpretability.  
+- Estimating nonparametric mixtures of discrete kernels [@canale2011bayesian; @Canale2017] can be cumbersome in practice.
 
 . . .
 
-- We rely on a [semi-parametric]{.blue} approach, making only assumptions on the [mean]{.grey} and [variance]{.grey} of the response while preserving computational tractability.
-
-## Second order assumptions
-
-- Let $Y_i \in \mathcal{Y}$ denote a response variable, $\boldsymbol{x}_i \in \mathbb{R}^p$ be a vector of covariates for $i = 1, \ldots, n$, and $\boldsymbol{\beta} \in \mathbb{R}^p$ be the parameter of interest.  
-
-- Standard GLMs assume that observations $y_i$ are independent realizations of $Y_i \mid \boldsymbol{x}_i$, whose distribution belongs to the [exponential dispersion family]{.orange}.  
+- Alternatively, one can directly specify a [DP prior]{.orange} on the data generator as
+$$
+    Y_i\mid P \sim P,\quad P\sim\mathrm{DP}(\alpha,P_0),
+$$
+for $Y_i\in\mathcal{Y}=\{0,1,\ldots\}$, $i=1,\ldots,n$, where $\alpha$ is the precision parameter and $P_0$ a base parametric distribution, such as a Poisson.
 
 . . .
 
-:::{.callout-note}
-We assume the [second-order conditions]{.blue}:
-$$
-\mathbb{E}\{Y_i\} = \mu_i = g^{-1}(\boldsymbol{x}_i^\top \boldsymbol{\beta}), \quad
-\mathrm{var}\{Y_i\} = \psi\, V(\mu_i),
-$$
-where $g(\cdot)$ is a link function, $V(\cdot)>0$ is a [variance function]{.orange}, and **$\psi \in (0,\infty)$** is a [dispersion parameter]{.blue}. 
-
-We let $(\boldsymbol{\beta}_0, \psi_0)$ be the true values for the parameters $(\boldsymbol{\beta}, \psi)$ and we assume the [data are generated]{.orange} under $F_0(\mathrm{d}y \mid \boldsymbol{x}) = F(\mathrm{d}y \mid \boldsymbol{x}, \boldsymbol{\beta}_0, \psi_0)$.  
-
-:::
+- However, the corresponding posterior [lacks smoothing]{.orange}, leading to poor performance.
 
 . . .
 
-- Although the mean and variance functions need to be carefully chosen to fit the data, the resulting inferences are [robust to misspecification]{.orange} of [higher-order moments]{.blue}.
+- Within the hypothetical approach, it is not clear how to specify a nonparametric process having the same simplicity and flexibility as the DP prior while allowing smoothing.
 
-## Quasi-likelihood
+## Predictive approach
 
-- Under the second-order assumptions, it is possible to specify the so-called log-[quasi-likelihood]{.blue} function [@wedderburn1974quasi]:
-$$
-\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) = \sum_{i=1}^n \ell_Q(\boldsymbol{\beta}; y_i, \boldsymbol{x}_i, \psi) = \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{\psi V(t)} \, \mathrm{d}t,
-$$
-where $a$ is an arbitrary constant that does not depend on $\boldsymbol{\beta}$.  
-
-- The above integral can be written in [closed form]{.orange} for many choices of variance functions, including those associated with [exponential family]{.blue} distributions.  
+- Taking a [predictive approach]{.blue}, one can [characterize the prior by specifying the sequence of predictive distributions]{.blue}.
 
 . . .
 
-- Quasi-likelihoods retain many properties of genuine likelihoods, such as [unbiased estimating equations]{.blue} and the [information identity]{.orange}: $$
-\mathbb{E}\left\{ \nabla \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} = 0, \qquad
-\mathbb{E}\left\{ -\nabla^2 \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} =
-\mathbb{E}\left\{ \nabla \ell_Q \nabla \ell_Q^\top \right\},
-$$
-where $\nabla$ denotes the gradient with respect to $\boldsymbol{\beta}$.  
+- The possibility of specifying a sequence of one-step-ahead predictive distributions is appealing!
+  - $\rightarrow$ bypass direct elicitation of the prior
+  - $\rightarrow$ explicitly connects prediction and inference
 
 . . .
 
-- Under mild conditions, the [maximum quasi-likelihood]{.blue} is [consistent]{.orange} and has the [smallest asymptotic variance]{.orange} among estimators derived from linear estimating equations [@mccullagh1983quasi].
-
-## Quasi-posteriors I
-
-::: {.callout-note}
-Let $\exp\{\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi)\}$ be the quasi-likelihood function and $p(\boldsymbol{\beta})$ be the prior distribution for $\boldsymbol{\beta}$. We define the [quasi-posterior]{.blue} distribution for $\boldsymbol{\beta}$ as:
+- The predictive construction of the DP prior is a Pòlya-urn scheme for which $Y_1\sim P_0$ and $Y_{n+1}\mid y_{1:n}\sim P_n$ for $n\ge 1$, where
 $$
-p_Q(\boldsymbol{\beta} \mid \mathbf{y}, \mathbf{X}, \psi) \propto p(\boldsymbol{\beta}) \exp \left\{ \ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) \right\} =
-p(\boldsymbol{\beta}) \exp \left\{ \frac{1}{\psi} \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t \right\}
+P_n(A) = \mathbb{P}\{Y_{n+1}\in A\mid y_{1:n}\}
+= \frac{\alpha}{\alpha+n} P_0(A) + \frac{1}{\alpha+n}\sum_{i=1}^n\mathbb{1}(y_i\in A)
 $$
-:::
+for any measurable set $A$.
 
-- The quasi-posterior is a rational update of a belief distribution within the generalized Bayesian framework, with loss function: 
-$$
-\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = - \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t.
-$$
+- A better estimator for counts distributions would be obtained by [replacing $\mathbb{1}(\cdot)$ with a kernel]{.orange} that allows the borrowing of information between nearby values.
 
-- The dispersion parameter $\psi$ plays the role of a [loss-scale]{.orange} parameter for the quasi-posterior.
+## Generalizations of the predictive approach
 
-## Quasi-posteriors II
-
-- The quasi-posterior represents subjective uncertainty about the unknown parameter value: 
-$$
-\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} \ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) \, F_0(d\mathbf{y} \mid \mathbf{X}),
-$$
-which is assumed to be unique [@bissiri2016general].
-
-- The definition of $\boldsymbol{\beta}^*$ [does not]{.orange} automatically [guarantee]{.orange} that $\boldsymbol{\beta}^* = \boldsymbol{\beta}_0$.
+- However, for an arbitrary kernel, the sequence $(Y_n)_{n\ge1}$ generated by the sequence of predictive distributions is typically not exchangeable.
 
 . . .
 
-:::{.callout-warning}
-#### Theorem (Agnoletto, R., Dunson, 2025)
+- Solution: replace exchangeability with the weaker requirement that $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.orange}.
+The corresponding implied posterior distributions are known as [martingale posteriors]{.blue}.
 
-Assume the second-order conditions are well-specified, and suppose the target of inference $\boldsymbol{\beta}^*$ is unique. Then, for quasi-posteriors, $\boldsymbol{\beta}^*$ must [coincide]{.blue} with the true value $\boldsymbol{\beta}_0$:
+. . .
+
+- Very lively recent topic: @fortini_petrone_2020; @berti_pratelli_2021; @fortini2021predictive; @berti2023without; @berti2023kernel; @fong_holmes_2023; @fong2024asymptotics; @fong2024bayesian; @cui2024martingale; @fortini2024exchangeability and more...
+
+- Our contribution: [Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences]{.blue}.
+
+## Metropolis-adjusted Dirichlet (MAD) sequences
+
+- We assume that $Y_1\sim P_0$ and $Y_{n+1}\mid y_{1:n}\sim P_n$ for $n\ge 1$, with
 $$
-\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} 
-\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{t - y_i}{V(t)} \, \mathrm{d}t \, F_0(d\mathbf{y} \mid \mathbf{X}) = \boldsymbol{\beta}_0.
+    P_n(\cdot) = \mathbb{P}\{Y_{n+1}\in \cdot\mid y_{1:n}\} = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n),
+$$
+where $(w_n)_{n\ge1}$ is a sequence of decreasing weights such that $w_n\in(0,1)$ for every $n\ge1$, $\sum_{n\ge1}w_n = \infty$, and $\sum_{n\ge1}w_n^2<\infty$.
+
+. . .
+
+- [$K_{n}(\cdot\mid y_n)$]{.blue} denotes a [Metropolis-Hastings kernel]{.blue} centered in $y_n$ having pmf:
+$$
+    k_{n}(y\mid y_n) = \gamma_{n}(y,y_n) k_*(y\mid y_n) + \mathbb{1}(y=y_n)\Big[\sum_{z\in\mathcal{Y}}\big\{1-\gamma_{n}(z,y_n)\big\}k_*(z\mid y_n)\Big],
+$$
+where
+$$
+    \gamma_{n}(y,y_n) = \gamma(y, y_n, P_{n-1}) =
+    \min\left\{1,\frac{p_{n-1}(y) k_*(y_n\mid y)}{p_{n-1}(y_n) k_*(y\mid y_n)}\right\},
+$$
+$p_{n-1}$ is the probability mass functions associated to $P_{n-1}$ and [$k_*(\cdot\mid y_n)$]{.orange} is a [discrete base kernel]{.orange} centered in $y_n$.
+
+. . .
+
+- We refer to $P_n$ as the [Metropolis-adjusted Dirichlet]{.blue} (MAD) distribution with weights $(w_n)_{n\ge1}$, base kernel $k_*$ and initial distribution $P_0$.
+The corresponding sequence $(Y_n)_{n\ge1}$ is a MAD sequence.
+
+## MAD sequences are cid
+
+- If $w_n = (\alpha +n)^{-1}$, then the MAD distribution becomes
+$$
+    P_n(\cdot) = \frac{\alpha}{\alpha + n}P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
+$$
+
+. . .
+
+::: {.callout-warning title="Theorem"}
+Let $(Y_n)_{n\ge1}$ be a MAD sequence. Then, for every set of weights $(w_n)_{n \ge 1}$, discrete base kernel $k_*$, and initial distribution $P_0$, the sequence $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.blue}.
+:::
+
+- A sequence $(Y_n)_{n\ge1}$ is conditionally identically distributed (cid) if, $\mathbb{P}$-a.s.,
+$$
+    \mathbb{P}\{Y_{n+k}\in\cdot\mid y_{1:n}\} = \mathbb{P}\{Y_{n+1}\in\cdot\mid y_{1:n}\}=P_n(\cdot)
+    \qquad k\ge1.
+$$
+
+- This is equivalent to the martingale condition
+$$
+    \mathbb{E}\{P_{n+1}(\cdot)\mid y_{1:n}\} = P_{n}(\cdot).
+$$
+
+## Bayesian properties of cid sequences
+
+::: {.callout-note title="Corollary (Aldous 1985; Berti et al. 2004)"}
+Consider a MAD sequence $(Y_n)_{n\ge1}$. Then, $\mathbb{P}$-a.s.,
+
+$(a)$ The sequence is asymptotically exchangeable, that is 
+$$
+    (Y_{n+1}, Y_{n+2}, \ldots) \overset{\textup{d}}{\longrightarrow} (Z_1, Z_2, \ldots), \qquad n \rightarrow \infty,
+$$
+where $(Z_1,Z_2,\ldots)$ is an exchangeable sequence with directing random probability measure $P$;
+
+$(b)$ the corresponding sequences of MAD predictive distributions $(P_n)_{n\ge1}$ and empirical distributions $(\hat{P}_n)_{n\ge1}$, where $\hat{P}_n := n^{-1}\sum_{i=1}^n \delta_{Y_i}$, converge to $P$ weakly.
+:::
+
+- The ordering dependence will vanish asymptotically and, informally, $Y_i\mid P \overset{\mathrm{iid}}{\sim} P$ for large $n$.
+- $P$ exists and is defined as the limit of the sequence of MAD distributions.
+
+## Predictive inference
+
+- Thus, an asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on $P$.
+- The prior and posterior on $P$ [exists]{.orange} but are [not available explicitly]{.orange}.
+
+. . .
+
+::: {.callout-note title="Corollary"}
+Let [$\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)$]{.blue} and analogously [$\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)$]{.blue} be any functional of interest.
+Consider a MAD sequence $(Y_n)_{n\ge1}$. Then, $\mathbb{P}$-a.s., for every $n\ge1$ and every integrable function $f:\mathcal{Y}\rightarrow\mathbb{R}$, we have 
+$$
+\mathbb{E}(\theta \mid y_{1:n}) = \mathbb{E}\{P(f) \mid y_{1:n}\} = P_n(f) = \theta_n
 $$
 :::
 
-## Calibration of the dispersion I
+- Moreover, we also have that $\theta = \mathbb{E}\{P(f)\}=P_0(f) = \theta_0$ for every integrable function $f$, so that [$P_0$]{.blue} retains the role of a [base measure]{.blue} as for standard Dirichlet sequences, providing an initial guess at $P$.
 
-- Based on a comparison with the Bayesian bootstrap, @lyddon2019general propose [calibrate]{.blue} the [dispersion]{.blue} $\psi$ setting it equal to: 
+. . .
+
+- Uncertainty quantification for $\theta=P(f)$ is carried out by [predictive resampling]{.blue} [@fong_holmes_2023].
+
+## Illustrative example
+
+![](img/pl_ill_slide.pdf){fig-align="center" width="100%"}
+
+## On the choice of the base kernel
+
+- [Any discrete distribution can be chosen as base kernel $k_*$]{.orange}.
+
+. . .
+
+- To improve flexibility, we consider a [rounded Gaussian]{.blue} distribution centered in $y_n$, with pmf
 $$
-\psi_{\text{LLB}} = 
-\frac{\mathrm{tr}\{j(\boldsymbol{\beta}_0)\}}{\mathrm{tr}\{j(\boldsymbol{\beta}_0) h(\boldsymbol{\beta}_0)^{-1} j(\boldsymbol{\beta}_0)\}},
+    k_*(y\mid y_n, \sigma) = \frac{\int_{y-1/2}^{y+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t}{\sum_{z\in\mathcal{Y}} \int_{z-1/2}^{z+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t},
 $$
-where we define
+for $n\ge1$, where $\mathcal{N}(\cdot\mid y_n,\sigma^2)$ denotes a normal density function with mean $y_n$ and variance $\sigma^2$.
+
+. . .
+
+![](img/ker_plot_slide.pdf){fig-align="center" width="100%"}
+
+## Role of the weights in controlling posterior variability
+
+- The distribution of $P(A)\mid y_{1:n}$ is approximated by $\mathcal{N}(P_n(A), \Sigma_nr_n^{-1})$ for $n$ large, where
 $$
-j(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla^2 \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})\right], \qquad  h(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}) \nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})^\top\right].
+    \Sigma_n r_n^{-1} 
+    \overset{\cdot}{=} \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k>n+1}w_k^2.
 $$
 
-:::{.callout-warning}
-#### Proposition (Agnoletto, R., Dunson, 2025)
+. . .
 
-Under the [second order]{.blue} conditions, namely if $\mathbb{E}(Y_i) = g^{-1}(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 V\{\mu_i(\boldsymbol{\beta}_0)\}$, then for quasi posteriors with loss $\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = -\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \mathrm{d}t$, we have 
+- Weights that [decay to zero quickly]{.blue} induce [fast learning and convergence]{.blue} to the asymptotic exchangeable regime.
+- But [small values of $w_n$]{.orange} leads to [poor learning]{.orange} and [underestimation]{.orange} of the [posterior variability]{.orange}.
+
+. . .
+
+- Possible choices are $w_n=(\alpha+n)^{-1}$, $w_n=(\alpha+n)^{-2/3}$ [@martin2009asymptotic], and 
+$w_n=(2 - n^{-1})(n+1)^{-1}$ [@fong_holmes_2023].
+
+- We consider [adaptive weights]{.blue}
 $$
-\psi_{\text{LLB}} = \psi_0.
+    w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 $$
-:::
+with $\lambda\in(0.5,1]$, $N_*>0$.
 
-## Calibration of the dispersion II
+## Multivariate count and binary data
 
-:::{.callout-warning}
-#### Theorem (Agnoletto, R., Dunson, 2025)
-
-Assume the second-order conditions are correctly specified. Let $S_1, S_2, \ldots \subseteq \mathbb{R}^p$ be a sequence of convex [credible sets]{.blue} of level $\rho \in (0,1)$.  Then, under mild conditions and setting $\psi = \psi_0$:
+- Extending MAD sequences for [multivariate]{.blue} data is straightforward using a [factorized base kernel]{.blue}
 $$
-\mathbb{P}(\boldsymbol{\beta}_0 \in S_n \mid \mathbf{y}, \mathbf{X}, \psi_0) \to \rho \quad \text{as } n \to \infty.
+k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 $$
-:::
+with $\bm y=(y_1,\ldots,y_d)$ and $\bm y_n=(y_{n,1},\ldots,y_{n,d})$.
 
-- As $\psi_0$ is typically unknown, we can use the classical [method of moments]{.orange} estimator:
-$$
-\widehat{\psi} = \frac{1}{n - p} \sum_{i=1}^n \frac{(y_i - \widehat{\mu}_i)^2}{V(\widehat{\mu}_i)},
-$$
-where $\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})$,  which is [fast]{.blue} and [consistent]{.blue} [@mccullagh1989generalized].
+. . .
 
-## Simulation results I 
+- MAD sequences can be employed for modeling [multivariate binary data]{.orange} using an appropriate base kernel.
 
-- Data are generated from a distribution with $\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)$ ---[not]{.orange} a [Poisson]{.orange}!--- with parameters $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)$, and $\psi_0 = 3.5$. 
+. . .
 
-- We computed posterior means and $95\%$ credible intervals. 
+- A natural step further is to use MAD sequences for [nonparametric regression and classification]{.orange}.
 
-- The [sample size]{.blue} is $n = 100$; estimates are averages over [multiple simulated]{.blue} datasets.
+## Simulations I
 
-::: {style="font-size: 80%;"}
-|                |         | Poisson           | Negative Binomial            | DFD-Bayes       | [Quasi-posterior]{.orange}            | [Quasi-posterior]{.orange} + alternative $\hat{\psi}$         |
-|-|---------|---------------|---------------|------------------|---------------|---------------|
-| $\beta_1$  | Mean    | 3.50 (0.035)   | 3.49 (0.047)   | 57.46 (105.41)   | 3.50 (0.035)   | 3.50 (0.035)   |
-|                | Cover.  | 0.715          | 0.920          | 0.201            | 0.945          | 0.970          |
-| $\beta_2$  | Mean    | 1.50 (0.020)   | 1.51 (0.040)   | 5.26 (6.31)      | 1.50 (0.020)   | 1.50 (0.020)   |
-|                | Cover.  | 0.675          | 0.960          | 0.454            | 0.945          | 0.990          |
-| $\beta_3$  | Mean    | -1.00 (0.020)  | -1.01 (0.034)  | -3.98 (6.53)     | -1.00 (0.020)  | -1.00 (0.020)  |
-|                | Cover.  | 0.715          | 0.995          | 0.479            | 0.950          | 0.965          |
-| $\beta_4$  | Mean    | 0.50 (0.018)   | 0.50 (0.037)   | 2.55 (7.37)      | 0.50 (0.018)   | 0.50 (0.018)   |
-|                | Cover.  | 0.655          | 0.965          | 0.526            | 0.950          | 0.970          |
-:::
+Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.
 
-## Simulation results II
+| | Regression (MSE) | | | Classification (AUC) | |
+|---|---|---|---|---|---|
+| | **$n=40$** | **$n=80$** | | **$n=150$** | **$n=300$** |
+| GLM | 120.77 [51.51] | 94.93 [8.37] | | 0.796 [0.014] | 0.809 [0.007] |
+| BART | 101.17 [12.69] | 74.17 [10.00] | | 0.863 [0.026] | 0.932 [0.009] |
+| RF | 99.98 [7.45] | 87.75 [6.53] | | 0.882 [0.025] | 0.913 [0.015] |
+| DP | 1450.21 [5.53] | 1395.61 [8.72] | | 0.644 [0.011] | 0.724 [0.012] |
+| **MAD-1** | 91.07 [10.35] | 73.96 [7.60] | | 0.873 [0.014] | 0.899 [0.008] |
+| **MAD-2/3** | 88.83 [13.00] | 73.18 [9.58] | | 0.869 [0.015] | 0.899 [0.009] |
+| **MAD-dpm** | 87.41 [12.36] | 72.07 [9.48] | | 0.872 [0.014] | 0.901 [0.008] |
+| **MAD-ada** | **90.61 [10.28]** | **73.45 [7.69]** | | **0.874 [0.014]** | **0.900 [0.008]** |
 
-- Data are generated from a distribution with $\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)$ and $\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)$ ---[not]{.orange} a [Poisson]{.orange}!--- with parameters $\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)$, and $\psi_0 = 3.5$. 
+## Simulations II
 
-- We computed posterior means and $95\%$ credible intervals. 
+![](img/pl_cov_sim.pdf){fig-align="center" width="85%"}
 
-- The [sample size]{.blue} is $n = 1000$; estimates are averages over [multiple simulated]{.blue} datasets.
+## Application
 
+- We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.
 
+![](img/pl_appl_slide_1.pdf){fig-align="center" width="65%"}
 
-::: {style="font-size: 80%;"}
+## Application II
 
-|                |         | Poisson           | Negative Binomial            | DFD-Bayes       | [Quasi-posterior]{.orange}            | [Quasi-posterior]{.orange} + alternative $\hat{\psi}$         |
-|-|---------|---------------|---------------|------------------|---------------|---------------|
-| $\beta_1$  | Mean    | 3.50 (0.010)   | 3.50 (0.015)   | 4.64 (8.45)      | 3.50 (0.010)   | 3.50 (0.010)   |
-|                | Cover.  | 0.690          | 0.835          | 0.070            | 0.945          | 0.955          |
-| $\beta_2$  | Mean    | 1.50 (0.005)   | 1.50 (0.012)   | 1.87 (1.37)      | 1.50 (0.005)   | 1.50 (0.005)   |
-|                | Cover.  | 0.665          | 0.910          | 0.510            | 0.950          | 0.960          |
-| $\beta_3$  | Mean    | -1.00 (0.005)  | -1.00 (0.010)  | -1.21 (0.81)     | -1.00 (0.005)  | -1.00 (0.005)  |
-|                | Cover.  | 0.680          | 0.960          | 0.690            | 0.955          | 0.950          |
-| $\beta_4$  | Mean    | 0.50 (0.005)   | 0.50 (0.009)   | 0.54 (0.35)      | 0.50 (0.005)   | 0.50 (0.005)   |
-|                | Cover.  | 0.715          | 0.950          | 0.810            | 0.950          | 0.940          |
-:::
-
+![](img/pl_appl_slide_2.pdf){fig-align="center" width="85%"}
 
 ## Thank you!
 
@@ -303,6 +353,89 @@ Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for genera
 ## References {.unnumbered}
 
 ::: {#refs}
+:::
+
+
+## Appendix
+
+## Foundations
+
+- De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
+  - the [hypothetical]{.orange} approach;
+  - the [predictive]{.blue} approach.
+
+::: {.callout-warning title="De Finetti's representation theorem"}
+Let $(Y_n)_{n\ge 1}$, $Y_n\in\mathcal{Y}$, be a sequence of exchangeable random variables with probability law $P$.
+Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$,
+
+$$
+P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+$$
+Furthermore the sequence of the empirical distributions $(F_n)_n$ converges weakly to a random distribution function $\tilde{P}$ distributed according to $\Pi$.
+:::
+
+## Empirical consistency
+
+![Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.](img/emp_cons.pdf){fig-align="center" width="85%"}
+
+## Predictive resampling for MAD sequences
+
+**Algorithm:**
+
+1. Compute $P_n(A)$ from the observed data $y_{1:n}$
+2. Set $N\gg n$
+3. For $j = 1,\ldots,B$
+    - For $i=n+1,\ldots,N$
+        - Sample $Y_i\mid y_{1:i-1}\sim P_{i-1}$
+        - Update $P_i(A) = (1-w_i)P_{i-1}(A) + w_i K_{i-1}(A\mid y_i)$
+    - End For
+4. End For
+5. Return $\big\{P_N^{(1)}(A),\ldots,P_N^{(B)}(A)\big\}$, an i.i.d. sample from the distribution of $P_N(A)\mid y_{1:n}$
+
+## On the choice of the base kernel
+
+![](img/cor_var_plot.pdf){fig-align="center" width="85%"}
+
+$$
+\mathrm{var}\{P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{20,40,60,80\}
+$$
+$$
+\mathrm{cor}\{P_{n+1}(40),P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{10, 41, 80\}
+$$
+
+## Asymptotic posterior distributions I
+
+::: {.callout-warning title="Theorem"}
+Let $(Y_n)_{n\ge1}$ be a MAD sequence and let $(r_n)_{n\ge1}$ be a monotone sequence of positive numbers such that $r_n\overset{\cdot}{=}(\sum_{k>n}w_k^2)^{-1}$ as $n\rightarrow\infty$.
+Assume $\sqrt{r_n}\sup_{k\ge n}w_k\rightarrow 0$, $\sum_{k\ge1}r_k^2w_{k+1}^4<\infty$, and that, for every $H\ge1$ and all measurable sets $A_1,\ldots,A_H$, the random matrix $\bm\Sigma = \bm\Sigma(A_1,\ldots,A_H) = [\Sigma_{jt}]$ is positive definite.
+Then, for every $H\ge1$ and every $A_1,\ldots,A_H$, 
+$$
+    \sqrt{r_n}\left[\begin{array}{c}
+     P(A_1)-P_n(A_1)\\
+     \cdots\\
+     P(A_H)-P_n(A_H)
+    \end{array}\right] \Big|\;
+Y_{1:n}
+    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm\Sigma)
+$$
+$\mathbb{P}$-a.s. for $n\rightarrow\infty$.
+:::
+
+## Asymptotic posterior distributions II
+
+::: {.callout-warning title="Theorem"}
+For every $n\ge1$ and all measurable sets $A_1,\ldots,A_H$, let $\bm\Sigma_n=\bm\Sigma_n(A_1,\ldots,A_H) = [\Sigma_{n,jt}]$.
+Then, under the assumptions of previous Theorem, $\mathbb{P}$-a.s., $\bm\Sigma_n\rightarrow\bm\Sigma$ and
+$$
+    \sqrt{r_n}\bm\Sigma_n^{-1/2}\left[\begin{array}{c}
+     P(A_1)-P_n(A_1)\\
+     \cdots\\
+     P(A_H)-P_n(A_H)
+    \end{array}\right] \Big|\;
+y_{1:n}
+    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm I)
+$$
+for $n\rightarrow\infty$, where $\bm I$ denotes the identity matrix.
 :::
 
 

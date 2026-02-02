@@ -204,7 +204,7 @@
 <section id="foundations" class="slide level2 center">
 <h2>Foundations</h2>
 <ul>
-<li>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#/references" role="doc-biblioref" onclick="">De Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:
+<li>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#/references" role="doc-biblioref" onclick="">Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:
 <ul>
 <li>the <span class="orange">hypothetical</span> approach;</li>
 <li>the <span class="blue">predictive</span> approach.</li>
@@ -262,373 +262,378 @@ P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
 </ul>
 </div>
 </section>
-<section id="generalized-bayes-for-glms" class="slide level2 center">
-<h2>Generalized Bayes for GLMs</h2>
+<section id="generalization-of-the-predictive-approach" class="slide level2 center">
+<h2>Generalization of the predictive approach</h2>
+</section>
+<section id="motivation" class="slide level2 center">
+<h2>Motivation</h2>
 <ul>
-<li><p><span class="blue">Generalized linear models</span> (GLMs) are routinely used to model a wide variety of data.</p></li>
-<li><p>The <span class="orange">Bayesian approach</span> for GLMs is also incredibly popular, e.g.&nbsp;because of the possibility of naturally incorporating <span class="blue">random effects</span>, complex penalizations, prior information, and more.</p></li>
-<li><p>However, they often incur <span class="orange">misspecification</span>, and this could compromise inferential conclusions.</p></li>
+<li>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li><p>A common case is <span class="orange">overdispersion</span>, i.e., when proportion or count observations show larger variability than the one assumed by the model.</p></li>
-<li><p>Traditional solutions have important drawbacks:</p>
+<li>Estimating nonparametric mixtures of discrete kernels <span class="citation" data-cites="canale2011bayesian Canale2017">(<a href="#/references" role="doc-biblioref" onclick="">Canale and Dunson 2011</a>; <a href="#/references" role="doc-biblioref" onclick="">Canale and Prünster 2017</a>)</span> can be cumbersome in practice.</li>
+</ul>
+</div>
+<div class="fragment">
 <ul>
-<li><span class="orange">Model-based</span>: may lead to computational bottlenecks and can result again in misspecification.</li>
-<li><span class="blue">Nonparametric</span>: increased computational cost and loss of efficiency and interpretability.</li>
+<li>Alternatively, one can directly specify a <span class="orange">DP prior</span> on the data generator as <span class="math display">
+  Y_i\mid P \sim P,\quad P\sim\mathrm{DP}(\alpha,P_0),
+</span> for <span class="math inline">Y_i\in\mathcal{Y}=\{0,1,\ldots\}</span>, <span class="math inline">i=1,\ldots,n</span>, where <span class="math inline">\alpha</span> is the precision parameter and <span class="math inline">P_0</span> a base parametric distribution, such as a Poisson.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>However, the corresponding posterior <span class="orange">lacks smoothing</span>, leading to poor performance.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Within the hypothetical approach, it is not clear how to specify a nonparametric process having the same simplicity and flexibility as the DP prior while allowing smoothing.</li>
+</ul>
+</div>
+</section>
+<section id="predictive-approach" class="slide level2 center">
+<h2>Predictive approach</h2>
+<ul>
+<li>Taking a <span class="blue">predictive approach</span>, one can <span class="blue">characterize the prior by specifying the sequence of predictive distributions</span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>The possibility of specifying a sequence of one-step-ahead predictive distributions is appealing!
+<ul>
+<li><span class="math inline">\rightarrow</span> bypass direct elicitation of the prior</li>
+<li><span class="math inline">\rightarrow</span> explicitly connects prediction and inference</li>
 </ul></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>We rely on a <span class="blue">semi-parametric</span> approach, making only assumptions on the <span class="grey">mean</span> and <span class="grey">variance</span> of the response while preserving computational tractability.</li>
+<li><p>The predictive construction of the DP prior is a Pòlya-urn scheme for which <span class="math inline">Y_1\sim P_0</span> and <span class="math inline">Y_{n+1}\mid y_{1:n}\sim P_n</span> for <span class="math inline">n\ge 1</span>, where <span class="math display">
+P_n(A) = \mathbb{P}\{Y_{n+1}\in A\mid y_{1:n}\}
+= \frac{\alpha}{\alpha+n} P_0(A) + \frac{1}{\alpha+n}\sum_{i=1}^n\mathbb{1}(y_i\in A)
+</span> for any measurable set <span class="math inline">A</span>.</p></li>
+<li><p>A better estimator for counts distributions would be obtained by <span class="orange">replacing <span class="math inline">\mathbb{1}(\cdot)</span> with a kernel</span> that allows the borrowing of information between nearby values.</p></li>
 </ul>
 </div>
 </section>
-<section id="second-order-assumptions" class="slide level2 center">
-<h2>Second order assumptions</h2>
+<section id="generalizations-of-the-predictive-approach" class="slide level2 center">
+<h2>Generalizations of the predictive approach</h2>
 <ul>
-<li><p>Let <span class="math inline">Y_i \in \mathcal{Y}</span> denote a response variable, <span class="math inline">\boldsymbol{x}_i \in \mathbb{R}^p</span> be a vector of covariates for <span class="math inline">i = 1, \ldots, n</span>, and <span class="math inline">\boldsymbol{\beta} \in \mathbb{R}^p</span> be the parameter of interest.</p></li>
-<li><p>Standard GLMs assume that observations <span class="math inline">y_i</span> are independent realizations of <span class="math inline">Y_i \mid \boldsymbol{x}_i</span>, whose distribution belongs to the <span class="orange">exponential dispersion family</span>.</p></li>
-</ul>
-<div class="fragment">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>We assume the <span class="blue">second-order conditions</span>: <span class="math display">
-\mathbb{E}\{Y_i\} = \mu_i = g^{-1}(\boldsymbol{x}_i^\top \boldsymbol{\beta}), \quad
-\mathrm{var}\{Y_i\} = \psi\, V(\mu_i),
-</span> where <span class="math inline">g(\cdot)</span> is a link function, <span class="math inline">V(\cdot)&gt;0</span> is a <span class="orange">variance function</span>, and <strong><span class="math inline">\psi \in (0,\infty)</span></strong> is a <span class="blue">dispersion parameter</span>.</p>
-<p>We let <span class="math inline">(\boldsymbol{\beta}_0, \psi_0)</span> be the true values for the parameters <span class="math inline">(\boldsymbol{\beta}, \psi)</span> and we assume the <span class="orange">data are generated</span> under <span class="math inline">F_0(\mathrm{d}y \mid \boldsymbol{x}) = F(\mathrm{d}y \mid \boldsymbol{x}, \boldsymbol{\beta}_0, \psi_0)</span>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fragment">
-<ul>
-<li>Although the mean and variance functions need to be carefully chosen to fit the data, the resulting inferences are <span class="orange">robust to misspecification</span> of <span class="blue">higher-order moments</span>.</li>
-</ul>
-</div>
-</section>
-<section id="quasi-likelihood" class="slide level2 center">
-<h2>Quasi-likelihood</h2>
-<ul>
-<li><p>Under the second-order assumptions, it is possible to specify the so-called log-<span class="blue">quasi-likelihood</span> function <span class="citation" data-cites="wedderburn1974quasi">(<a href="#/references" role="doc-biblioref" onclick="">Wedderburn 1974</a>)</span>: <span class="math display">
-\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) = \sum_{i=1}^n \ell_Q(\boldsymbol{\beta}; y_i, \boldsymbol{x}_i, \psi) = \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{\psi V(t)} \, \mathrm{d}t,
-</span> where <span class="math inline">a</span> is an arbitrary constant that does not depend on <span class="math inline">\boldsymbol{\beta}</span>.</p></li>
-<li><p>The above integral can be written in <span class="orange">closed form</span> for many choices of variance functions, including those associated with <span class="blue">exponential family</span> distributions.</p></li>
+<li>However, for an arbitrary kernel, the sequence <span class="math inline">(Y_n)_{n\ge1}</span> generated by the sequence of predictive distributions is typically not exchangeable.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>Quasi-likelihoods retain many properties of genuine likelihoods, such as <span class="blue">unbiased estimating equations</span> and the <span class="orange">information identity</span>: <span class="math display">
-\mathbb{E}\left\{ \nabla \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} = 0, \qquad
-\mathbb{E}\left\{ -\nabla^2 \ell_Q(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}, \psi) \right\} =
-\mathbb{E}\left\{ \nabla \ell_Q \nabla \ell_Q^\top \right\},
-</span> where <span class="math inline">\nabla</span> denotes the gradient with respect to <span class="math inline">\boldsymbol{\beta}</span>.</li>
+<li>Solution: replace exchangeability with the weaker requirement that <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="orange">conditionally identically distributed</span>. The corresponding implied posterior distributions are known as <span class="blue">martingale posteriors</span>.</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>Under mild conditions, the <span class="blue">maximum quasi-likelihood</span> is <span class="orange">consistent</span> and has the <span class="orange">smallest asymptotic variance</span> among estimators derived from linear estimating equations <span class="citation" data-cites="mccullagh1983quasi">(<a href="#/references" role="doc-biblioref" onclick="">McCullagh 1983</a>)</span>.</li>
+<li><p>Very lively recent topic: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span> and more…</p></li>
+<li><p>Our contribution: <span class="blue">Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences</span>.</p></li>
 </ul>
 </div>
 </section>
-<section id="quasi-posteriors-i" class="slide level2 center">
-<h2>Quasi-posteriors I</h2>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Let <span class="math inline">\exp\{\ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi)\}</span> be the quasi-likelihood function and <span class="math inline">p(\boldsymbol{\beta})</span> be the prior distribution for <span class="math inline">\boldsymbol{\beta}</span>. We define the <span class="blue">quasi-posterior</span> distribution for <span class="math inline">\boldsymbol{\beta}</span> as: <span class="math display">
-p_Q(\boldsymbol{\beta} \mid \mathbf{y}, \mathbf{X}, \psi) \propto p(\boldsymbol{\beta}) \exp \left\{ \ell_Q(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}, \psi) \right\} =
-p(\boldsymbol{\beta}) \exp \left\{ \frac{1}{\psi} \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t \right\}
-</span></p>
-</div>
-</div>
-</div>
+<section id="metropolis-adjusted-dirichlet-mad-sequences" class="slide level2 center">
+<h2>Metropolis-adjusted Dirichlet (MAD) sequences</h2>
 <ul>
-<li><p>The quasi-posterior is a rational update of a belief distribution within the generalized Bayesian framework, with loss function: <span class="math display">
-\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = - \sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \, \mathrm{d}t.
-</span></p></li>
-<li><p>The dispersion parameter <span class="math inline">\psi</span> plays the role of a <span class="orange">loss-scale</span> parameter for the quasi-posterior.</p></li>
-</ul>
-</section>
-<section id="quasi-posteriors-ii" class="slide level2 center">
-<h2>Quasi-posteriors II</h2>
-<ul>
-<li><p>The quasi-posterior represents subjective uncertainty about the unknown parameter value: <span class="math display">
-\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}} \ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) \, F_0(d\mathbf{y} \mid \mathbf{X}),
-</span> which is assumed to be unique <span class="citation" data-cites="bissiri2016general">(<a href="#/references" role="doc-biblioref" onclick="">Bissiri et al. 2016</a>)</span>.</p></li>
-<li><p>The definition of <span class="math inline">\boldsymbol{\beta}^*</span> <span class="orange">does not</span> automatically <span class="orange">guarantee</span> that <span class="math inline">\boldsymbol{\beta}^* = \boldsymbol{\beta}_0</span>.</p></li>
+<li>We assume that <span class="math inline">Y_1\sim P_0</span> and <span class="math inline">Y_{n+1}\mid y_{1:n}\sim P_n</span> for <span class="math inline">n\ge 1</span>, with <span class="math display">
+  P_n(\cdot) = \mathbb{P}\{Y_{n+1}\in \cdot\mid y_{1:n}\} = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n),
+</span> where <span class="math inline">(w_n)_{n\ge1}</span> is a sequence of decreasing weights such that <span class="math inline">w_n\in(0,1)</span> for every <span class="math inline">n\ge1</span>, <span class="math inline">\sum_{n\ge1}w_n = \infty</span>, and <span class="math inline">\sum_{n\ge1}w_n^2&lt;\infty</span>.</li>
 </ul>
 <div class="fragment">
-<div class="callout callout-warning no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Theorem (Agnoletto, R., Dunson, 2025)</strong></p>
+<ul>
+<li><span class="blue"><span class="math inline">K_{n}(\cdot\mid y_n)</span></span> denotes a <span class="blue">Metropolis-Hastings kernel</span> centered in <span class="math inline">y_n</span> having pmf: <span class="math display">
+  k_{n}(y\mid y_n) = \gamma_{n}(y,y_n) k_*(y\mid y_n) + \mathbb{1}(y=y_n)\Big[\sum_{z\in\mathcal{Y}}\big\{1-\gamma_{n}(z,y_n)\big\}k_*(z\mid y_n)\Big],
+</span> where <span class="math display">
+  \gamma_{n}(y,y_n) = \gamma(y, y_n, P_{n-1}) =
+  \min\left\{1,\frac{p_{n-1}(y) k_*(y_n\mid y)}{p_{n-1}(y_n) k_*(y\mid y_n)}\right\},
+</span> <span class="math inline">p_{n-1}</span> is the probability mass functions associated to <span class="math inline">P_{n-1}</span> and <span class="orange"><span class="math inline">k_*(\cdot\mid y_n)</span></span> is a <span class="orange">discrete base kernel</span> centered in <span class="math inline">y_n</span>.</li>
+</ul>
 </div>
-<div class="callout-content">
-<p>Assume the second-order conditions are well-specified, and suppose the target of inference <span class="math inline">\boldsymbol{\beta}^*</span> is unique. Then, for quasi-posteriors, <span class="math inline">\boldsymbol{\beta}^*</span> must <span class="blue">coincide</span> with the true value <span class="math inline">\boldsymbol{\beta}_0</span>: <span class="math display">
-\boldsymbol{\beta}^* = \arg\min_{\boldsymbol{\beta}} \int_{\mathcal{Y}}
-\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{t - y_i}{V(t)} \, \mathrm{d}t \, F_0(d\mathbf{y} \mid \mathbf{X}) = \boldsymbol{\beta}_0.
-</span></p>
-</div>
-</div>
-</div>
+<div class="fragment">
+<ul>
+<li>We refer to <span class="math inline">P_n</span> as the <span class="blue">Metropolis-adjusted Dirichlet</span> (MAD) distribution with weights <span class="math inline">(w_n)_{n\ge1}</span>, base kernel <span class="math inline">k_*</span> and initial distribution <span class="math inline">P_0</span>. The corresponding sequence <span class="math inline">(Y_n)_{n\ge1}</span> is a MAD sequence.</li>
+</ul>
 </div>
 </section>
-<section id="calibration-of-the-dispersion-i" class="slide level2 center">
-<h2>Calibration of the dispersion I</h2>
+<section id="mad-sequences-are-cid" class="slide level2 center">
+<h2>MAD sequences are cid</h2>
 <ul>
-<li>Based on a comparison with the Bayesian bootstrap, <span class="citation" data-cites="lyddon2019general">Lyddon et al. (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span> propose <span class="blue">calibrate</span> the <span class="blue">dispersion</span> <span class="math inline">\psi</span> setting it equal to: <span class="math display">
-\psi_{\text{LLB}} =
-\frac{\mathrm{tr}\{j(\boldsymbol{\beta}_0)\}}{\mathrm{tr}\{j(\boldsymbol{\beta}_0) h(\boldsymbol{\beta}_0)^{-1} j(\boldsymbol{\beta}_0)\}},
-</span> where we define <span class="math display">
-j(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla^2 \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})\right], \qquad  h(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X}) \nabla \ell(\boldsymbol{\beta}; \mathbf{Y}, \mathbf{X})^\top\right].
+<li>If <span class="math inline">w_n = (\alpha +n)^{-1}</span>, then the MAD distribution becomes <span class="math display">
+  P_n(\cdot) = \frac{\alpha}{\alpha + n}P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
 </span></li>
 </ul>
+<div class="fragment">
+<div title="Theorem">
 <div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Proposition (Agnoletto, R., Dunson, 2025)</strong></p>
+<p><strong>Theorem</strong></p>
 </div>
 <div class="callout-content">
-<p>Under the <span class="blue">second order</span> conditions, namely if <span class="math inline">\mathbb{E}(Y_i) = g^{-1}(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 V\{\mu_i(\boldsymbol{\beta}_0)\}</span>, then for quasi posteriors with loss <span class="math inline">\ell(\boldsymbol{\beta}; \mathbf{y}, \mathbf{X}) = -\sum_{i=1}^n \int_a^{\mu_i(\boldsymbol{\beta})} \frac{y_i - t}{V(t)} \mathrm{d}t</span>, we have <span class="math display">
-\psi_{\text{LLB}} = \psi_0.
+<p>Let <span class="math inline">(Y_n)_{n\ge1}</span> be a MAD sequence. Then, for every set of weights <span class="math inline">(w_n)_{n \ge 1}</span>, discrete base kernel <span class="math inline">k_*</span>, and initial distribution <span class="math inline">P_0</span>, the sequence <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><p>A sequence <span class="math inline">(Y_n)_{n\ge1}</span> is conditionally identically distributed (cid) if, <span class="math inline">\mathbb{P}</span>-a.s., <span class="math display">
+  \mathbb{P}\{Y_{n+k}\in\cdot\mid y_{1:n}\} = \mathbb{P}\{Y_{n+1}\in\cdot\mid y_{1:n}\}=P_n(\cdot)
+  \qquad k\ge1.
+</span></p></li>
+<li><p>This is equivalent to the martingale condition <span class="math display">
+  \mathbb{E}\{P_{n+1}(\cdot)\mid y_{1:n}\} = P_{n}(\cdot).
+</span></p></li>
+</ul>
+</div>
+</section>
+<section id="bayesian-properties-of-cid-sequences" class="slide level2 center">
+<h2>Bayesian properties of cid sequences</h2>
+<div title="Corollary (Aldous 1985; Berti et al. 2004)">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Corollary (Aldous 1985; Berti et al.&nbsp;2004)</strong></p>
+</div>
+<div class="callout-content">
+<p>Consider a MAD sequence <span class="math inline">(Y_n)_{n\ge1}</span>. Then, <span class="math inline">\mathbb{P}</span>-a.s.,</p>
+<p><span class="math inline">(a)</span> The sequence is asymptotically exchangeable, that is <span class="math display">
+    (Y_{n+1}, Y_{n+2}, \ldots) \overset{\textup{d}}{\longrightarrow} (Z_1, Z_2, \ldots), \qquad n \rightarrow \infty,
+</span> where <span class="math inline">(Z_1,Z_2,\ldots)</span> is an exchangeable sequence with directing random probability measure <span class="math inline">P</span>;</p>
+<p><span class="math inline">(b)</span> the corresponding sequences of MAD predictive distributions <span class="math inline">(P_n)_{n\ge1}</span> and empirical distributions <span class="math inline">(\hat{P}_n)_{n\ge1}</span>, where <span class="math inline">\hat{P}_n := n^{-1}\sum_{i=1}^n \delta_{Y_i}</span>, converge to <span class="math inline">P</span> weakly.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>The ordering dependence will vanish asymptotically and, informally, <span class="math inline">Y_i\mid P \overset{\mathrm{iid}}{\sim} P</span> for large <span class="math inline">n</span>.</li>
+<li><span class="math inline">P</span> exists and is defined as the limit of the sequence of MAD distributions.</li>
+</ul>
+</section>
+<section id="predictive-inference" class="slide level2 center">
+<h2>Predictive inference</h2>
+<ul>
+<li>Thus, an asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on <span class="math inline">P</span>.</li>
+<li>The prior and posterior on <span class="math inline">P</span> <span class="orange">exists</span> but are <span class="orange">not available explicitly</span>.</li>
+</ul>
+<div class="fragment">
+<div title="Corollary">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Corollary</strong></p>
+</div>
+<div class="callout-content">
+<p>Let <span class="blue"><span class="math inline">\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)</span></span> and analogously <span class="blue"><span class="math inline">\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)</span></span> be any functional of interest. Consider a MAD sequence <span class="math inline">(Y_n)_{n\ge1}</span>. Then, <span class="math inline">\mathbb{P}</span>-a.s., for every <span class="math inline">n\ge1</span> and every integrable function <span class="math inline">f:\mathcal{Y}\rightarrow\mathbb{R}</span>, we have <span class="math display">
+\mathbb{E}(\theta \mid y_{1:n}) = \mathbb{E}\{P(f) \mid y_{1:n}\} = P_n(f) = \theta_n
 </span></p>
 </div>
 </div>
 </div>
-</section>
-<section id="calibration-of-the-dispersion-ii" class="slide level2 center">
-<h2>Calibration of the dispersion II</h2>
-<div class="callout callout-warning no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Theorem (Agnoletto, R., Dunson, 2025)</strong></p>
-</div>
-<div class="callout-content">
-<p>Assume the second-order conditions are correctly specified. Let <span class="math inline">S_1, S_2, \ldots \subseteq \mathbb{R}^p</span> be a sequence of convex <span class="blue">credible sets</span> of level <span class="math inline">\rho \in (0,1)</span>. Then, under mild conditions and setting <span class="math inline">\psi = \psi_0</span>: <span class="math display">
-\mathbb{P}(\boldsymbol{\beta}_0 \in S_n \mid \mathbf{y}, \mathbf{X}, \psi_0) \to \rho \quad \text{as } n \to \infty.
-</span></p>
-</div>
-</div>
 </div>
 <ul>
-<li>As <span class="math inline">\psi_0</span> is typically unknown, we can use the classical <span class="orange">method of moments</span> estimator: <span class="math display">
-\widehat{\psi} = \frac{1}{n - p} \sum_{i=1}^n \frac{(y_i - \widehat{\mu}_i)^2}{V(\widehat{\mu}_i)},
-</span> where <span class="math inline">\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})</span>, which is <span class="blue">fast</span> and <span class="blue">consistent</span> <span class="citation" data-cites="mccullagh1989generalized">(<a href="#/references" role="doc-biblioref" onclick="">McCullagh and Nelder 1989</a>)</span>.</li>
+<li>Moreover, we also have that <span class="math inline">\theta = \mathbb{E}\{P(f)\}=P_0(f) = \theta_0</span> for every integrable function <span class="math inline">f</span>, so that <span class="blue"><span class="math inline">P_0</span></span> retains the role of a <span class="blue">base measure</span> as for standard Dirichlet sequences, providing an initial guess at <span class="math inline">P</span>.</li>
 </ul>
-</section>
-<section id="simulation-results-i" class="slide level2 center">
-<h2>Simulation results I</h2>
+</div>
+<div class="fragment">
 <ul>
-<li><p>Data are generated from a distribution with <span class="math inline">\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)</span> —<span class="orange">not</span> a <span class="orange">Poisson</span>!— with parameters <span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)</span>, and <span class="math inline">\psi_0 = 3.5</span>.</p></li>
-<li><p>We computed posterior means and <span class="math inline">95\%</span> credible intervals.</p></li>
-<li><p>The <span class="blue">sample size</span> is <span class="math inline">n = 100</span>; estimates are averages over <span class="blue">multiple simulated</span> datasets.</p></li>
+<li>Uncertainty quantification for <span class="math inline">\theta=P(f)</span> is carried out by <span class="blue">predictive resampling</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</li>
 </ul>
-<div style="font-size: 80%;">
+</div>
+</section>
+<section id="illustrative-example" class="slide level2 center">
+<h2>Illustrative example</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/pl_ill_slide.pdf" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="on-the-choice-of-the-base-kernel" class="slide level2 center">
+<h2>On the choice of the base kernel</h2>
+<ul>
+<li><span class="orange">Any discrete distribution can be chosen as base kernel <span class="math inline">k_*</span></span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>To improve flexibility, we consider a <span class="blue">rounded Gaussian</span> distribution centered in <span class="math inline">y_n</span>, with pmf <span class="math display">
+  k_*(y\mid y_n, \sigma) = \frac{\int_{y-1/2}^{y+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t}{\sum_{z\in\mathcal{Y}} \int_{z-1/2}^{z+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t},
+</span> for <span class="math inline">n\ge1</span>, where <span class="math inline">\mathcal{N}(\cdot\mid y_n,\sigma^2)</span> denotes a normal density function with mean <span class="math inline">y_n</span> and variance <span class="math inline">\sigma^2</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/ker_plot_slide.pdf" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="role-of-the-weights-in-controlling-posterior-variability" class="slide level2 center">
+<h2>Role of the weights in controlling posterior variability</h2>
+<ul>
+<li>The distribution of <span class="math inline">P(A)\mid y_{1:n}</span> is approximated by <span class="math inline">\mathcal{N}(P_n(A), \Sigma_nr_n^{-1})</span> for <span class="math inline">n</span> large, where <span class="math display">
+  \Sigma_n r_n^{-1}
+  \overset{\cdot}{=} \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
+</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Weights that <span class="blue">decay to zero quickly</span> induce <span class="blue">fast learning and convergence</span> to the asymptotic exchangeable regime.</li>
+<li>But <span class="orange">small values of <span class="math inline">w_n</span></span> leads to <span class="orange">poor learning</span> and <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Possible choices are <span class="math inline">w_n=(\alpha+n)^{-1}</span>, <span class="math inline">w_n=(\alpha+n)^{-2/3}</span> <span class="citation" data-cites="martin2009asymptotic">(<a href="#/references" role="doc-biblioref" onclick="">Martin and Tokdar 2009</a>)</span>, and <span class="math inline">w_n=(2 - n^{-1})(n+1)^{-1}</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</p></li>
+<li><p>We consider <span class="blue">adaptive weights</span> <span class="math display">
+  w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
+</span> with <span class="math inline">\lambda\in(0.5,1]</span>, <span class="math inline">N_*&gt;0</span>.</p></li>
+</ul>
+</div>
+</section>
+<section id="multivariate-count-and-binary-data" class="slide level2 center">
+<h2>Multivariate count and binary data</h2>
+<ul>
+<li>Extending MAD sequences for <span class="blue">multivariate</span> data is straightforward using a <span class="blue">factorized base kernel</span> <span class="math display">
+k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
+</span> with <span class="math inline">\bm y=(y_1,\ldots,y_d)</span> and <span class="math inline">\bm y_n=(y_{n,1},\ldots,y_{n,d})</span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>MAD sequences can be employed for modeling <span class="orange">multivariate binary data</span> using an appropriate base kernel.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>A natural step further is to use MAD sequences for <span class="orange">nonparametric regression and classification</span>.</li>
+</ul>
+</div>
+</section>
+<section id="simulations-i" class="slide level2 center">
+<h2>Simulations I</h2>
+<p>Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.</p>
 <table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 1%">
-<col style="width: 10%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 20%">
-<col style="width: 17%">
-<col style="width: 17%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
+<th>Regression (MSE)</th>
 <th></th>
-<th>Poisson</th>
-<th>Negative Binomial</th>
-<th>DFD-Bayes</th>
-<th><span class="orange">Quasi-posterior</span></th>
-<th><span class="orange">Quasi-posterior</span> + alternative <span class="math inline">\hat{\psi}</span></th>
+<th></th>
+<th>Classification (AUC)</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\beta_1</span></td>
-<td>Mean</td>
-<td>3.50 (0.035)</td>
-<td>3.49 (0.047)</td>
-<td>57.46 (105.41)</td>
-<td>3.50 (0.035)</td>
-<td>3.50 (0.035)</td>
+<td></td>
+<td><strong><span class="math inline">n=40</span></strong></td>
+<td><strong><span class="math inline">n=80</span></strong></td>
+<td></td>
+<td><strong><span class="math inline">n=150</span></strong></td>
+<td><strong><span class="math inline">n=300</span></strong></td>
 </tr>
 <tr class="even">
+<td>GLM</td>
+<td>120.77 [51.51]</td>
+<td>94.93 [8.37]</td>
 <td></td>
-<td>Cover.</td>
-<td>0.715</td>
-<td>0.920</td>
-<td>0.201</td>
-<td>0.945</td>
-<td>0.970</td>
+<td>0.796 [0.014]</td>
+<td>0.809 [0.007]</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\beta_2</span></td>
-<td>Mean</td>
-<td>1.50 (0.020)</td>
-<td>1.51 (0.040)</td>
-<td>5.26 (6.31)</td>
-<td>1.50 (0.020)</td>
-<td>1.50 (0.020)</td>
+<td>BART</td>
+<td>101.17 [12.69]</td>
+<td>74.17 [10.00]</td>
+<td></td>
+<td>0.863 [0.026]</td>
+<td>0.932 [0.009]</td>
 </tr>
 <tr class="even">
+<td>RF</td>
+<td>99.98 [7.45]</td>
+<td>87.75 [6.53]</td>
 <td></td>
-<td>Cover.</td>
-<td>0.675</td>
-<td>0.960</td>
-<td>0.454</td>
-<td>0.945</td>
-<td>0.990</td>
+<td>0.882 [0.025]</td>
+<td>0.913 [0.015]</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\beta_3</span></td>
-<td>Mean</td>
-<td>-1.00 (0.020)</td>
-<td>-1.01 (0.034)</td>
-<td>-3.98 (6.53)</td>
-<td>-1.00 (0.020)</td>
-<td>-1.00 (0.020)</td>
+<td>DP</td>
+<td>1450.21 [5.53]</td>
+<td>1395.61 [8.72]</td>
+<td></td>
+<td>0.644 [0.011]</td>
+<td>0.724 [0.012]</td>
 </tr>
 <tr class="even">
+<td><strong>MAD-1</strong></td>
+<td>91.07 [10.35]</td>
+<td>73.96 [7.60]</td>
 <td></td>
-<td>Cover.</td>
-<td>0.715</td>
-<td>0.995</td>
-<td>0.479</td>
-<td>0.950</td>
-<td>0.965</td>
+<td>0.873 [0.014]</td>
+<td>0.899 [0.008]</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\beta_4</span></td>
-<td>Mean</td>
-<td>0.50 (0.018)</td>
-<td>0.50 (0.037)</td>
-<td>2.55 (7.37)</td>
-<td>0.50 (0.018)</td>
-<td>0.50 (0.018)</td>
+<td><strong>MAD-2/3</strong></td>
+<td>88.83 [13.00]</td>
+<td>73.18 [9.58]</td>
+<td></td>
+<td>0.869 [0.015]</td>
+<td>0.899 [0.009]</td>
 </tr>
 <tr class="even">
+<td><strong>MAD-dpm</strong></td>
+<td>87.41 [12.36]</td>
+<td>72.07 [9.48]</td>
 <td></td>
-<td>Cover.</td>
-<td>0.655</td>
-<td>0.965</td>
-<td>0.526</td>
-<td>0.950</td>
-<td>0.970</td>
+<td>0.872 [0.014]</td>
+<td>0.901 [0.008]</td>
+</tr>
+<tr class="odd">
+<td><strong>MAD-ada</strong></td>
+<td><strong>90.61 [10.28]</strong></td>
+<td><strong>73.45 [7.69]</strong></td>
+<td></td>
+<td><strong>0.874 [0.014]</strong></td>
+<td><strong>0.900 [0.008]</strong></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="simulations-ii" class="slide level2 center">
+<h2>Simulations II</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/pl_cov_sim.pdf" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
 </div>
 </section>
-<section id="simulation-results-ii" class="slide level2 center">
-<h2>Simulation results II</h2>
+<section id="application" class="slide level2 center">
+<h2>Application</h2>
 <ul>
-<li><p>Data are generated from a distribution with <span class="math inline">\mathbb{E}(Y_i) = \mu_i(\boldsymbol{\beta}_0)= \exp(\mathbf{x}_i^\top \boldsymbol{\beta}_0)</span> and <span class="math inline">\mathrm{var}(Y_i) = \psi_0 \mu_i(\boldsymbol{\beta}_0)</span> —<span class="orange">not</span> a <span class="orange">Poisson</span>!— with parameters <span class="math inline">\beta_0 = (3.5,\; 1.5,\; -1.0,\; 0.5)</span>, and <span class="math inline">\psi_0 = 3.5</span>.</p></li>
-<li><p>We computed posterior means and <span class="math inline">95\%</span> credible intervals.</p></li>
-<li><p>The <span class="blue">sample size</span> is <span class="math inline">n = 1000</span>; estimates are averages over <span class="blue">multiple simulated</span> datasets.</p></li>
+<li>We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.</li>
 </ul>
-<div style="font-size: 80%;">
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 1%">
-<col style="width: 10%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 20%">
-<col style="width: 17%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th></th>
-<th>Poisson</th>
-<th>Negative Binomial</th>
-<th>DFD-Bayes</th>
-<th><span class="orange">Quasi-posterior</span></th>
-<th><span class="orange">Quasi-posterior</span> + alternative <span class="math inline">\hat{\psi}</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\beta_1</span></td>
-<td>Mean</td>
-<td>3.50 (0.010)</td>
-<td>3.50 (0.015)</td>
-<td>4.64 (8.45)</td>
-<td>3.50 (0.010)</td>
-<td>3.50 (0.010)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Cover.</td>
-<td>0.690</td>
-<td>0.835</td>
-<td>0.070</td>
-<td>0.945</td>
-<td>0.955</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\beta_2</span></td>
-<td>Mean</td>
-<td>1.50 (0.005)</td>
-<td>1.50 (0.012)</td>
-<td>1.87 (1.37)</td>
-<td>1.50 (0.005)</td>
-<td>1.50 (0.005)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Cover.</td>
-<td>0.665</td>
-<td>0.910</td>
-<td>0.510</td>
-<td>0.950</td>
-<td>0.960</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\beta_3</span></td>
-<td>Mean</td>
-<td>-1.00 (0.005)</td>
-<td>-1.00 (0.010)</td>
-<td>-1.21 (0.81)</td>
-<td>-1.00 (0.005)</td>
-<td>-1.00 (0.005)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Cover.</td>
-<td>0.680</td>
-<td>0.960</td>
-<td>0.690</td>
-<td>0.955</td>
-<td>0.950</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\beta_4</span></td>
-<td>Mean</td>
-<td>0.50 (0.005)</td>
-<td>0.50 (0.009)</td>
-<td>0.54 (0.35)</td>
-<td>0.50 (0.005)</td>
-<td>0.50 (0.005)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Cover.</td>
-<td>0.715</td>
-<td>0.950</td>
-<td>0.810</td>
-<td>0.950</td>
-<td>0.940</td>
-</tr>
-</tbody>
-</table>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/pl_appl_slide_1.pdf" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
+</figure>
+</div>
+</section>
+<section id="application-ii" class="slide level2 center">
+<h2>Application II</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/pl_appl_slide_2.pdf" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
 </div>
 </section>
 <section id="thank-you" class="slide level2 center">
@@ -640,14 +645,50 @@ j(\boldsymbol{\beta}) := \lim_{n \to \infty} \frac{1}{n} \mathbb{E}\left[\nabla^
 <section id="references" class="slide level2 unnumbered smaller scrollable">
 <h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-berti2023without" class="csl-entry" role="listitem">
+Berti, P., Dreassi, E., Leisen, F., Pratelli, L., and Rigo, P. (2023a), <span>“Bayesian predictive inference without a prior,”</span> <em>Statistica Sinica</em>, Academia Sinica, Institute of Statistical Science, 34, 2405–2429.
+</div>
+<div id="ref-berti2023kernel" class="csl-entry" role="listitem">
+Berti, P., Dreassi, E., Leisen, F., Pratelli, L., and Rigo, P. (2023b), <span>“Kernel based <span>D</span>irichlet sequences,”</span> <em>Bernoulli</em>, Bernoulli Society for Mathematical Statistics; Probability, 29, 1321–1342.
+</div>
+<div id="ref-berti_pratelli_2021" class="csl-entry" role="listitem">
+Berti, P., Dreassi, E., Pratelli, L., and Rigo, P. (2021), <span>“A class of models for <span>B</span>ayesian predictive inference,”</span> <em>Bernoulli</em>, 27, 702–726.
+</div>
 <div id="ref-bissiri2016general" class="csl-entry" role="listitem">
 Bissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), <span>“A general framework for updating belief distributions,”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, Wiley Online Library, 78, 1103–1130.
+</div>
+<div id="ref-canale2011bayesian" class="csl-entry" role="listitem">
+Canale, A., and Dunson, D. B. (2011), <span>“Bayesian kernel mixtures for counts,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 106, 1528–1539.
+</div>
+<div id="ref-Canale2017" class="csl-entry" role="listitem">
+Canale, A., and Prünster, I. (2017), <span>“<span class="nocase">Robustifying Bayesian nonparametric mixtures for count data</span>,”</span> <em>Biometrics</em>, 73, 174–184.
 </div>
 <div id="ref-chernozhukov2003mcmc" class="csl-entry" role="listitem">
 Chernozhukov, V., and Hong, H. (2003), <span>“An <span>MCMC</span> approach to classical estimation,”</span> <em>Journal of econometrics</em>, Elsevier, 115, 293–346.
 </div>
+<div id="ref-cui2024martingale" class="csl-entry" role="listitem">
+Cui, F., and Walker, S. G. (2024), <span>“Martingale posterior distributions for log-concave density functions,”</span> <em>arXiv preprint arXiv:2401.14515</em>.
+</div>
 <div id="ref-de1937prevision" class="csl-entry" role="listitem">
-De Finetti, B. (1937), <span>“La pr<span>é</span>vision: Ses lois logiques, ses sources subjectives,”</span> in <em>Annales de l’institut henri poincar<span>é</span></em>, pp. 1–68.
+Finetti, B. de (1937), <span>“La pr<span>é</span>vision: Ses lois logiques, ses sources subjectives,”</span> in <em>Annales de l’institut henri poincar<span>é</span></em>, pp. 1–68.
+</div>
+<div id="ref-fong_holmes_2023" class="csl-entry" role="listitem">
+Fong, E., Holmes, C. C., and Walker, S. G. (2023), <span>“Martingale posterior distributions,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, 85, 1357–1391.
+</div>
+<div id="ref-fong2024bayesian" class="csl-entry" role="listitem">
+Fong, E., and Yiu, A. (2024b), <span>“Bayesian quantile estimation and regression with martingale posteriors,”</span> <em>arXiv preprint arXiv:2406.03358</em>.
+</div>
+<div id="ref-fong2024asymptotics" class="csl-entry" role="listitem">
+Fong, E., and Yiu, A. (2024a), <span>“Asymptotics for parametric martingale posteriors,”</span> <em>arXiv preprint arXiv:2410.17692</em>.
+</div>
+<div id="ref-fortini_petrone_2020" class="csl-entry" role="listitem">
+Fortini, S., and Petrone, S. (2020), <span>“Quasi-<span>B</span>ayes properties of a procedure for sequential learning in mixture models,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 82, 1087–1114.
+</div>
+<div id="ref-fortini2024exchangeability" class="csl-entry" role="listitem">
+Fortini, S., and Petrone, S. (2025), <span>“Exchangeability, prediction and predictive modeling in bayesian statistics,”</span> <em>Statistical Science</em>, Institute of Mathematical Statistics, 40, 40–67.
+</div>
+<div id="ref-fortini2021predictive" class="csl-entry" role="listitem">
+Fortini, S., Petrone, S., and Sariev, H. (2021), <span>“Predictive constructions based on measure-valued <span>P</span><span>ó</span>lya urn processes,”</span> <em>Mathematics</em>, MDPI, 9, 2845.
 </div>
 <div id="ref-grunwald2020fast" class="csl-entry" role="listitem">
 Grünwald, P. D., and Mehta, N. A. (2020), <span>“<span class="nocase">Fast rates for general unbounded loss functions: from ERM to generalized Bayes</span>,”</span> <em>The Journal of Machine Learning Research</em>, JMLRORG, 21, 2040–2119.
@@ -667,17 +708,14 @@ Knoblauch, J., Jewson, J., and Damoulas, T. (2022), <span>“An optimization-cen
 <div id="ref-lyddon2019general" class="csl-entry" role="listitem">
 Lyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), <span>“General <span>B</span>ayesian updating and the loss-likelihood bootstrap,”</span> <em>Biometrika</em>, Oxford University Press, 106, 465–478.
 </div>
+<div id="ref-martin2009asymptotic" class="csl-entry" role="listitem">
+Martin, R., and Tokdar, S. T. (2009), <span>“Asymptotic properties of predictive recursion: Robustness and rate of convergence,”</span> <em>Electornic Journal of Statistics</em>, 3, 1455–1472.
+</div>
 <div id="ref-matsubara2022robust" class="csl-entry" role="listitem">
 Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), <span>“Robust generalised bayesian inference for intractable likelihoods,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, Oxford University Press, 84, 997–1022.
 </div>
 <div id="ref-matsubara2023generalized" class="csl-entry" role="listitem">
 Matsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), <span>“Generalized bayesian inference for discrete intractable likelihood,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 1–11.
-</div>
-<div id="ref-mccullagh1983quasi" class="csl-entry" role="listitem">
-McCullagh, P. (1983), <span>“Quasi-likelihood functions,”</span> <em><span>A</span>nnals of <span>S</span>tatistics</em>, Institute of Mathematical Statistics, 11, 59–67.
-</div>
-<div id="ref-mccullagh1989generalized" class="csl-entry" role="listitem">
-McCullagh, P., and Nelder, J. A. (1989), <em>Generalized linear models</em>, Chapman &amp; Hall.
 </div>
 <div id="ref-rigon2023generalized" class="csl-entry" role="listitem">
 Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <span>B</span>ayes framework for probabilistic clustering,”</span> <em>Biometrika</em>, Oxford University Press, 10, 559–578.
@@ -685,8 +723,120 @@ Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <spa
 <div id="ref-syring2019calibrating" class="csl-entry" role="listitem">
 Syring, N., and Martin, R. (2019), <span>“Calibrating general posterior credible regions,”</span> <em>Biometrika</em>, Oxford University Press, 106, 479–486.
 </div>
-<div id="ref-wedderburn1974quasi" class="csl-entry" role="listitem">
-Wedderburn, R. W. (1974), <span>“Quasi-likelihood functions, generalized linear models, and the <span>G</span>auss-<span>N</span>ewton method,”</span> <em>Biometrika</em>, Oxford University Press, 61, 439–447.
+</div>
+</section>
+<section id="appendix" class="slide level2 center">
+<h2>Appendix</h2>
+</section>
+<section id="foundations-1" class="slide level2 center">
+<h2>Foundations</h2>
+<ul>
+<li>De Finetti’s representation Theorem <span class="citation" data-cites="de1937prevision">(<a href="#/references" role="doc-biblioref" onclick="">Finetti 1937</a>)</span> has a central role in Bayesian statistics because it provides the fundamental justification to the <span class="blue">two approaches</span> to <span class="orange">Bayesian statistics</span>:
+<ul>
+<li>the <span class="orange">hypothetical</span> approach;</li>
+<li>the <span class="blue">predictive</span> approach.</li>
+</ul></li>
+</ul>
+<div title="De Finetti's representation theorem">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>De Finetti’s representation theorem</strong></p>
+</div>
+<div class="callout-content">
+<p>Let <span class="math inline">(Y_n)_{n\ge 1}</span>, <span class="math inline">Y_n\in\mathcal{Y}</span>, be a sequence of exchangeable random variables with probability law <span class="math inline">P</span>. Then there exists a unique probability measure <span class="math inline">\Pi</span> such that, for any <span class="math inline">n\ge 1</span>,</p>
+<p><span class="math display">
+P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+</span> Furthermore the sequence of the empirical distributions <span class="math inline">(F_n)_n</span> converges weakly to a random distribution function <span class="math inline">\tilde{P}</span> distributed according to <span class="math inline">\Pi</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="empirical-consistency" class="slide level2 center">
+<h2>Empirical consistency</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/emp_cons.pdf" style="width:85.0%"></p>
+<figcaption>Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.</figcaption>
+</figure>
+</div>
+</section>
+<section id="predictive-resampling-for-mad-sequences" class="slide level2 center">
+<h2>Predictive resampling for MAD sequences</h2>
+<p><strong>Algorithm:</strong></p>
+<ol type="1">
+<li>Compute <span class="math inline">P_n(A)</span> from the observed data <span class="math inline">y_{1:n}</span></li>
+<li>Set <span class="math inline">N\gg n</span></li>
+<li>For <span class="math inline">j = 1,\ldots,B</span>
+<ul>
+<li>For <span class="math inline">i=n+1,\ldots,N</span>
+<ul>
+<li>Sample <span class="math inline">Y_i\mid y_{1:i-1}\sim P_{i-1}</span></li>
+<li>Update <span class="math inline">P_i(A) = (1-w_i)P_{i-1}(A) + w_i K_{i-1}(A\mid y_i)</span></li>
+</ul></li>
+<li>End For</li>
+</ul></li>
+<li>End For</li>
+<li>Return <span class="math inline">\big\{P_N^{(1)}(A),\ldots,P_N^{(B)}(A)\big\}</span>, an i.i.d. sample from the distribution of <span class="math inline">P_N(A)\mid y_{1:n}</span></li>
+</ol>
+</section>
+<section id="on-the-choice-of-the-base-kernel-1" class="slide level2 center">
+<h2>On the choice of the base kernel</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><embed data-src="img/cor_var_plot.pdf" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
+</div>
+<p><span class="math display">
+\mathrm{var}\{P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{20,40,60,80\}
+</span> <span class="math display">
+\mathrm{cor}\{P_{n+1}(40),P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{10, 41, 80\}
+</span></p>
+</section>
+<section id="asymptotic-posterior-distributions-i" class="slide level2 center">
+<h2>Asymptotic posterior distributions I</h2>
+<div title="Theorem">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem</strong></p>
+</div>
+<div class="callout-content">
+<p>Let <span class="math inline">(Y_n)_{n\ge1}</span> be a MAD sequence and let <span class="math inline">(r_n)_{n\ge1}</span> be a monotone sequence of positive numbers such that <span class="math inline">r_n\overset{\cdot}{=}(\sum_{k&gt;n}w_k^2)^{-1}</span> as <span class="math inline">n\rightarrow\infty</span>. Assume <span class="math inline">\sqrt{r_n}\sup_{k\ge n}w_k\rightarrow 0</span>, <span class="math inline">\sum_{k\ge1}r_k^2w_{k+1}^4&lt;\infty</span>, and that, for every <span class="math inline">H\ge1</span> and all measurable sets <span class="math inline">A_1,\ldots,A_H</span>, the random matrix <span class="math inline">\bm\Sigma = \bm\Sigma(A_1,\ldots,A_H) = [\Sigma_{jt}]</span> is positive definite. Then, for every <span class="math inline">H\ge1</span> and every <span class="math inline">A_1,\ldots,A_H</span>, <span class="math display">
+    \sqrt{r_n}\left[\begin{array}{c}
+     P(A_1)-P_n(A_1)\\
+     \cdots\\
+     P(A_H)-P_n(A_H)
+    \end{array}\right] \Big|\;
+Y_{1:n}
+    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm\Sigma)
+</span> <span class="math inline">\mathbb{P}</span>-a.s. for <span class="math inline">n\rightarrow\infty</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="asymptotic-posterior-distributions-ii" class="slide level2 center">
+<h2>Asymptotic posterior distributions II</h2>
+<div title="Theorem">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem</strong></p>
+</div>
+<div class="callout-content">
+<p>For every <span class="math inline">n\ge1</span> and all measurable sets <span class="math inline">A_1,\ldots,A_H</span>, let <span class="math inline">\bm\Sigma_n=\bm\Sigma_n(A_1,\ldots,A_H) = [\Sigma_{n,jt}]</span>. Then, under the assumptions of previous Theorem, <span class="math inline">\mathbb{P}</span>-a.s., <span class="math inline">\bm\Sigma_n\rightarrow\bm\Sigma</span> and <span class="math display">
+    \sqrt{r_n}\bm\Sigma_n^{-1/2}\left[\begin{array}{c}
+     P(A_1)-P_n(A_1)\\
+     \cdots\\
+     P(A_H)-P_n(A_H)
+    \end{array}\right] \Big|\;
+y_{1:n}
+    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm I)
+</span> for <span class="math inline">n\rightarrow\infty</span>, where <span class="math inline">\bm I</span> denotes the identity matrix.</p>
+</div>
+</div>
 </div>
 </div>
 

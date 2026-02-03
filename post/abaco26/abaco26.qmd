@@ -311,7 +311,7 @@ $$
 
 ## Illustrative example
 
-![](img/pl_ill_slide.pdf){fig-align="center" width="100%"}
+![](img/pl_ill_slide.jpg)
 
 ## On the choice of the base kernel
 
@@ -327,7 +327,7 @@ for $n\ge1$, where $\mathcal{N}(\cdot\mid y_n,\sigma^2)$ denotes a normal densit
 
 . . .
 
-![](img/ker_plot_slide.pdf){fig-align="center" width="100%"}
+![](img/ker_plot_slide.jpg){fig-align="center" width="100%"}
 
 ## Role of the weights in controlling posterior variability
 
@@ -387,17 +387,17 @@ Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regressi
 
 ## Simulations II
 
-![](img/pl_cov_sim.pdf){fig-align="center" width="85%"}
+![](img/pl_cov_sim.jpg){fig-align="center" width="85%"}
 
 ## Application
 
 - We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.
 
-![](img/pl_appl_slide_1.pdf){fig-align="center" width="65%"}
+![](img/pl_appl_slide_1.jpg){fig-align="center" width="65%"}
 
 ## Application II
 
-![](img/pl_appl_slide_2.pdf){fig-align="center" width="85%"}
+![](img/pl_appl_slide_2.jpg){fig-align="center" width="85%"}
 
 ## Thank you!
 
@@ -419,7 +419,7 @@ Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for genera
 
 ## Empirical consistency
 
-![Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.](img/emp_cons.pdf){fig-align="center" width="85%"}
+![Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.](img/emp_cons.jpg){fig-align="center" width="85%"}
 
 ## Predictive resampling for MAD sequences
 
@@ -437,7 +437,7 @@ Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for genera
 
 ## On the choice of the base kernel
 
-![](img/cor_var_plot.pdf){fig-align="center" width="85%"}
+![](img/cor_var_plot.jpg){fig-align="center" width="85%"}
 
 $$
 \mathrm{var}\{P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{20,40,60,80\}

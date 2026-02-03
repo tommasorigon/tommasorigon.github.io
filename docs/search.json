@@ -2139,7 +2139,7 @@
     "href": "post/abaco26/abaco26_slides.html#empirical-consistency",
     "title": "ABACO26",
     "section": "Empirical consistency",
-    "text": "Empirical consistency\n\n\n\nIllustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator."
+    "text": "Empirical consistency\n\nIllustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator."
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#predictive-resampling-for-mad-sequences",
@@ -2153,7 +2153,7 @@
     "href": "post/abaco26/abaco26_slides.html#on-the-choice-of-the-base-kernel-1",
     "title": "ABACO26",
     "section": "On the choice of the base kernel",
-    "text": "On the choice of the base kernel\n\n\n\n\n\n\n\\mathrm{var}\\{P_{n+1}(y)\\mid y_{1:n}\\}, \\text{ with } y\\in\\{20,40,60,80\\}\n \n\\mathrm{cor}\\{P_{n+1}(40),P_{n+1}(y)\\mid y_{1:n}\\}, \\text{ with } y\\in\\{10, 41, 80\\}"
+    "text": "On the choice of the base kernel\n\n\n\\mathrm{var}\\{P_{n+1}(y)\\mid y_{1:n}\\}, \\text{ with } y\\in\\{20,40,60,80\\}\n \n\\mathrm{cor}\\{P_{n+1}(40),P_{n+1}(y)\\mid y_{1:n}\\}, \\text{ with } y\\in\\{10, 41, 80\\}"
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#asymptotic-posterior-distributions-i",
@@ -2364,5 +2364,12 @@
     "title": "ABACO26",
     "section": "Connecting inference and prediction II",
     "text": "Connecting inference and prediction II\n\nIn other words, the sequence of predictive distributions P_n converges to a random probability measure P with prior distribution \\Pi. The source of randomness are the data \nY_1, Y_2, Y_3, \\dots\n This is intuitive: before observing the data, our predictions eventually reflect the prior.\n\n\nGiven y_{1:n}, the sequence P_{n+m} converges weakly (a.s. \\mathbb{P}) for m \\rightarrow \\infty to a random probability measure with posterior distribution \\Pi(\\cdot\\mid y_{1:n}). The source of randomness are future data \nY_{n+1}, Y_{n+2}, Y_{n+3}, \\dots.\nThis gives a nice alternative interpretation to the posterior distribution and a practical algorithm for sampling from it called predictive resampling.\nIntuitively, the posterior uncertainty comes from lack of knowledge of future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).\n\n\nThis reasoning is at the hearth of martingale posteriors (Fong et al. 2023)."
+  },
+  {
+    "objectID": "post/BISP2025/BISP2025_slides.html#section",
+    "href": "post/BISP2025/BISP2025_slides.html#section",
+    "title": "BISP14 workshop",
+    "section": "",
+    "text": "Bissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), “A general framework for updating belief distributions,” Journal of the Royal Statistical Society: Series B (Statistical Methodology), Wiley Online Library, 78, 1103–1130.\n\n\nChernozhukov, V., and Hong, H. (2003), “An MCMC approach to classical estimation,” Journal of econometrics, Elsevier, 115, 293–346.\n\n\nDe Finetti, B. (1937), “La prévision: Ses lois logiques, ses sources subjectives,” in Annales de l’institut henri poincaré, pp. 1–68.\n\n\nGrünwald, P. D., and Mehta, N. A. (2020), “Fast rates for general unbounded loss functions: from ERM to generalized Bayes,” The Journal of Machine Learning Research, JMLRORG, 21, 2040–2119.\n\n\nHeide, R. de, Kirichenko, A., Grunwald, P., and Mehta, N. (2020), “Safe-bayesian generalized linear regression,” in Proceedings of the twenty third international conference on artificial intelligence and statistics, PMLR, pp. 2623–2633.\n\n\nHolmes, C. C., and Walker, S. G. (2017), “Assigning a value to a power likelihood in a general Bayesian model,” Biometrika, Oxford University Press, 104, 497–503.\n\n\nJewson, J., and Rossell, D. (2022), “General bayesian loss function selection and the use of improper models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 1640–1665.\n\n\nKnoblauch, J., Jewson, J., and Damoulas, T. (2022), “An optimization-centric view on bayes’ rule: Reviewing and generalizing variational inference,” Journal of Machine Learning Research, 23, 1–109.\n\n\nLyddon, S. P., Holmes, C. C., and Walker, S. G. (2019), “General Bayesian updating and the loss-likelihood bootstrap,” Biometrika, Oxford University Press, 106, 465–478.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2022), “Robust generalised bayesian inference for intractable likelihoods,” Journal of the Royal Statistical Society Series B: Statistical Methodology, Oxford University Press, 84, 997–1022.\n\n\nMatsubara, T., Knoblauch, J., Briol, F.-X., and Oates, C. J. (2023), “Generalized bayesian inference for discrete intractable likelihood,” Journal of the American Statistical Association, Taylor & Francis, 1–11.\n\n\nMcCullagh, P. (1983), “Quasi-likelihood functions,” Annals of Statistics, Institute of Mathematical Statistics, 11, 59–67.\n\n\nMcCullagh, P., and Nelder, J. A. (1989), Generalized linear models, Chapman & Hall.\n\n\nRigon, T., Herring, A. H., and Dunson, D. B. (2023), “A generalized Bayes framework for probabilistic clustering,” Biometrika, Oxford University Press, 10, 559–578.\n\n\nSyring, N., and Martin, R. (2019), “Calibrating general posterior credible regions,” Biometrika, Oxford University Press, 106, 479–486.\n\n\nWedderburn, R. W. (1974), “Quasi-likelihood functions, generalized linear models, and the Gauss-Newton method,” Biometrika, Oxford University Press, 61, 439–447."
   }
 ]

@@ -48,46 +48,52 @@ format-links: true
 
 ## Foundations
 
-- De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
-  - the [hypothetical]{.orange} approach; 
-  - the [predictive]{.blue} approach.
+- De Finetti’s representation Theorem [@de1937prevision] it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}: the [hypothetical]{.orange} approach and the [predictive]{.blue} approach.
 
 ::: {.callout-warning title="De Finetti's representation theorem"}
-Let $(Y_n)_{n\ge 1}$, $Y_n\in\mathcal{Y}$, be a sequence of exchangeable random variables with probability law $P$. Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$,
-
+Let $(Y_n)_{n\ge 1}$, be a sequence of [exchangeable]{.blue} random variables. Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$ and $A_1,\dots,A_n$
 $$
-P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
+\mathbb{P}(Y_1 \in A_1,\ldots,Y_n \in A_n) = \int_{\mathcal{P}} \prod_{i=1}^n p(A_i)\,\Pi(\mathrm{d}p).
 $$
 :::
 
-- While representing opposite interpretations of the Theorem, the two approaches are intrinsically connected.
+- In a hierarchical formulation, we will say that $(Y_n)_{n \ge 1}$ is [exchangeable]{.bl} if and only if
+$$
+\begin{aligned}
+Y_i \mid P &\overset{\textup{iid}}{\sim} P, \qquad i \ge 1, \\
+P &\sim \Pi,
+\end{aligned}
+$$
+where $P$ is a [random probability measure]{.blue} and $\Pi$ is the [prior law]{.orange}. 
+
+
 
 ## Hypothetical approach
 
 - The hypothetical approach represents the the [most common]{.blue} way to operate within the Bayesian community.
 
-- In a [parametric]{.orange} setting, $\Pi$ has support on a class $\Theta\subseteq\mathbb{R}^p$, $p<\infty$, such that $\boldsymbol{\theta}\in\Theta$ indexes the class of distributions $\mathcal{F}_{\boldsymbol{\theta}}=\{F_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}$.
+- In a [parametric]{.orange} setting, $\Pi$ has support on a class $\Theta\subseteq\mathbb{R}^p$ with $p<\infty$, such that $\boldsymbol{\theta}\in\Theta$ indexes the class of distributions $\mathcal{P}_{\boldsymbol{\theta}}=\{P_{\boldsymbol{\theta}} : \boldsymbol{\theta} \in \Theta\subseteq\mathbb{R}^p\}$.
 
 - Bayes' rule takes the well-known formulation:
 $$
-\pi(\boldsymbol{\theta}\mid y_1,\ldots,y_n) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n f_{\boldsymbol{\theta}}(y_i),
+\pi(\boldsymbol{\theta}\mid y_{1:n}) \propto \pi(\boldsymbol{\theta}) \prod_{i=1}^n p_{\boldsymbol{\theta}}(y_i),
 $$
-where $\pi$ and $f_{\boldsymbol{\theta}}$ denote the probability density functions associated with $\Pi$ and $F_{\boldsymbol{\theta}}$, respectively.
+where $\pi$ and $p_{\boldsymbol{\theta}}$ denote the probability density functions associated with $\Pi$ and $P_{\boldsymbol{\theta}}$, respectively.
 
-- However, when the link between observations and parameter of interest cannot be expressed through a distribution function, the traditional hypothetical approach fails.
+- However, when the link between observations and parameter of interest cannot be easily expressed through a distribution function, the traditional hypothetical approach fails.
 
 . . .
 
 - Solution: [generalized posterior distributions]{.orange}, sometimes called [Gibbs-posteriors]{.blue}. 
 
-- This is a [lively recent topic]{.blue}, see for instance: @chernozhukov2003mcmc; @bissiri2016general @heide2020safe; @grunwald2020fast; @knoblauch2022optimization; @matsubara2022robust; @matsubara2023generalized; @jewson_rossell_2022; @rigon2023generalized.
+- This is a [lively recent topic]{.blue}, see for instance: @chernozhukov2003mcmc; @bissiri2016general @heide2020safe; @grunwald2020fast; @knoblauch2022optimization; @matsubara2022robust; @matsubara2023generalized; @jewson_rossell_2022; @rigon2023generalized; @Agnoletto2025.
 
 
 ## Generalizations of the hypothetical approach
 
 - @bissiri2016general showed that the [generalized posterior]{.blue} 
 $$
-\pi_\omega(\boldsymbol{\theta} \mid \mathbf{y}_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \omega \sum_{i=1}^n \ell(\boldsymbol{\theta}; y_i) \right\},
+\pi_\omega(\boldsymbol{\theta} \mid y_{1:n}) \propto \pi(\boldsymbol{\theta}) \exp\left\{ - \omega \sum_{i=1}^n \ell(\boldsymbol{\theta}; y_i) \right\},
 $$
 is the only coherent update of the prior beliefs about
 $$
@@ -101,10 +107,93 @@ where $\ell(\boldsymbol{\theta}, y)$ is a [loss function]{.orange}, $\omega$ is 
 
 - However, there are several solutions for its calibration: @holmes2017assigning; @lyddon2019general; @syring2019calibrating; @matsubara2023generalized.
 
+## Predictive approach
 
-## Generalization of the predictive approach
+- Taking a [predictive approach]{.blue}, one can implicitly [characterize the prior]{.orange} via de Finetti theorem by specifying the sequence of predictive distributions:
+$$
+P_n(A) := \mathbb{P}(Y_{n+1}\in A\mid y_{1:n}), \qquad n \ge 1.
+$$
+This leads to an exchangeable sequences iff the conditions in @fortini2000exchangeability are satisfied. 
+
+. . .
+
+- [Example]{.orange}: the predictive construction of a Dirichlet process prior is such that $Y_1\sim P_0$ and $Y_{n+1}\mid y_{1:n}\sim P_n$ for $n\ge 1$, where
+$$
+P_n(A) = \frac{\alpha}{\alpha+n} P_0(A) + \frac{1}{\alpha+n}\sum_{i=1}^n\mathbb{1}(y_i\in A),
+$$
+for any measurable set $A$.
+
+. . .
+
+- The possibility of specifying a sequence of one-step-ahead predictive distributions is appealing:
+  - $\rightarrow$ bypass direct elicitation of the prior;
+  - $\rightarrow$ explicitly connects prediction and inference (wait for the next slide);
+
+## Connecting inference and prediction I
+
+- The posterior $P \mid y_{1:n}$ is usually obtained through Bayes theorem, but this is not the only way. 
+
+- We can [characterize]{.blue} both [prior]{.blue} and [posterior]{.orange} of $P$ through the predictive distributions $P_n$, which indeed contains all the necessary information. 
+
+. . .
+
+- If $(Y_n)_{n \ge 1}$ is exchangeable, then the [prior]{.blue} and [posterior mean]{.blue} of $P$ coincide with the predictive:
+$$
+P_0(A) = \mathbb{P}(Y_1\in A) = \mathbb{E}\{P(A)\}, \qquad P_n(A) = \mathbb{P}(Y_{n+1}\in A\mid y_{1:n}) = \mathbb{E}(P(A) \mid y_{1:n}), \qquad n \ge 1.
+$$
+
+. . .
+
+
+- A deeper result holds, which is a corollary of Finetti theorem [@fortini2012predictive]. 
+
+::: {.callout-warning title="De Finetti's representation theorem (predictive form)"}
+Let $(Y_n)_{n \ge 1}$ be an exchangeable sequence with predictive distributions $(P_n)_{n \ge 1}$. Then $P_n$ converges weakly (a.s. $\mathbb{P}$) to a random probability measure $P$ distributed according to $\Pi$ as $n \to \infty$.
+:::
+
+
+## Connecting inference and prediction II
+
+- In other words, the sequence of predictive distributions $P_n$ converges to a random probability measure $P$ with [prior]{.orange} distribution $\Pi$. The [source of randomness]{.blue} are the data 
+$$
+Y_1, Y_2, Y_3, \dots
+$$ 
+This is intuitive: before observing the data, our predictions eventually reflect the prior. 
+
+. . .
+
+- Given $y_{1:n}$, the sequence $P_{n+m}$ converges weakly (a.s. $\mathbb{P}$) for $m \rightarrow \infty$ to a random probability measure with [posterior]{.orange} distribution $\Pi(\cdot\mid y_{1:n})$. The source of randomness are [future data]{.blue}
+$$
+Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots.$$ 
+
+- This gives a nice [alternative interpretation]{.blue} to the posterior distribution and a [practical algorithm]{.orange} for sampling from it called predictive resampling. 
+
+- Intuitively, the posterior uncertainty comes from [lack of knowledge]{.orange} of future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency). 
+
+. . .
+
+- This reasoning is at the hearth of [martingale posteriors]{.blue} [@fong_holmes_2023]. 
+
+## Generalizations of the predictive approach
+
+- However, for an arbitrary kernel, the sequence $(Y_n)_{n\ge1}$ generated by the sequence of predictive distributions is typically not exchangeable.
+
+. . .
+
+- Solution: replace exchangeability with the weaker requirement that $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.orange}.
+The corresponding implied posterior distributions are known as [martingale posteriors]{.blue}.
+
+. . .
+
+- Very lively recent topic: @fortini_petrone_2020; @berti_pratelli_2021; @fortini2021predictive; @berti2023without; @berti2023kernel; @fong_holmes_2023; @fong2024asymptotics; @fong2024bayesian; @cui2024martingale; @fortini2024exchangeability and more...
+
+- Our contribution: [Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences]{.blue}.
+
 
 ## Motivation
+
+- A better estimator for counts distributions would be obtained by [replacing $\mathbb{1}(\cdot)$ with a kernel]{.orange} that allows the borrowing of information between nearby values.
+
 
 - Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task.
 
@@ -128,41 +217,8 @@ for $Y_i\in\mathcal{Y}=\{0,1,\ldots\}$, $i=1,\ldots,n$, where $\alpha$ is the pr
 
 - Within the hypothetical approach, it is not clear how to specify a nonparametric process having the same simplicity and flexibility as the DP prior while allowing smoothing.
 
-## Predictive approach
 
-- Taking a [predictive approach]{.blue}, one can [characterize the prior by specifying the sequence of predictive distributions]{.blue}.
 
-. . .
-
-- The possibility of specifying a sequence of one-step-ahead predictive distributions is appealing!
-  - $\rightarrow$ bypass direct elicitation of the prior
-  - $\rightarrow$ explicitly connects prediction and inference
-
-. . .
-
-- The predictive construction of the DP prior is a Pòlya-urn scheme for which $Y_1\sim P_0$ and $Y_{n+1}\mid y_{1:n}\sim P_n$ for $n\ge 1$, where
-$$
-P_n(A) = \mathbb{P}\{Y_{n+1}\in A\mid y_{1:n}\}
-= \frac{\alpha}{\alpha+n} P_0(A) + \frac{1}{\alpha+n}\sum_{i=1}^n\mathbb{1}(y_i\in A)
-$$
-for any measurable set $A$.
-
-- A better estimator for counts distributions would be obtained by [replacing $\mathbb{1}(\cdot)$ with a kernel]{.orange} that allows the borrowing of information between nearby values.
-
-## Generalizations of the predictive approach
-
-- However, for an arbitrary kernel, the sequence $(Y_n)_{n\ge1}$ generated by the sequence of predictive distributions is typically not exchangeable.
-
-. . .
-
-- Solution: replace exchangeability with the weaker requirement that $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.orange}.
-The corresponding implied posterior distributions are known as [martingale posteriors]{.blue}.
-
-. . .
-
-- Very lively recent topic: @fortini_petrone_2020; @berti_pratelli_2021; @fortini2021predictive; @berti2023without; @berti2023kernel; @fong_holmes_2023; @fong2024asymptotics; @fong2024bayesian; @cui2024martingale; @fortini2024exchangeability and more...
-
-- Our contribution: [Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences]{.blue}.
 
 ## Metropolis-adjusted Dirichlet (MAD) sequences
 
@@ -234,6 +290,7 @@ $(b)$ the corresponding sequences of MAD predictive distributions $(P_n)_{n\ge1}
 ## Predictive inference
 
 - Thus, an asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on $P$.
+
 - The prior and posterior on $P$ [exists]{.orange} but are [not available explicitly]{.orange}.
 
 . . .
@@ -350,7 +407,7 @@ The [main paper]{.orange} is:
 
 Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear.
 
-## References {.unnumbered}
+## References {.unnumbered .smaller}
 
 ::: {#refs}
 :::
@@ -358,21 +415,7 @@ Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for genera
 
 ## Appendix
 
-## Foundations
 
-- De Finetti’s representation Theorem [@de1937prevision] has a central role in Bayesian statistics because it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}:
-  - the [hypothetical]{.orange} approach;
-  - the [predictive]{.blue} approach.
-
-::: {.callout-warning title="De Finetti's representation theorem"}
-Let $(Y_n)_{n\ge 1}$, $Y_n\in\mathcal{Y}$, be a sequence of exchangeable random variables with probability law $P$.
-Then there exists a unique probability measure $\Pi$ such that, for any $n\ge 1$,
-
-$$
-P(y_1,\ldots,y_n) = \int_{\mathcal{F}} \prod_{i=1}^n F(y_i)\,\Pi(\mathrm{d}F).
-$$
-Furthermore the sequence of the empirical distributions $(F_n)_n$ converges weakly to a random distribution function $\tilde{P}$ distributed according to $\Pi$.
-:::
 
 ## Empirical consistency
 

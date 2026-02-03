@@ -265,7 +265,7 @@ P &amp;\sim \Pi,
 <section id="predictive-approach" class="slide level2 center">
 <h2>Predictive approach</h2>
 <ul>
-<li>Taking a <span class="blue">predictive approach</span>, one can implicitly <span class="orange">characterize the prior</span> via de Finetti theorem by specifying the sequence of predictive distributions: <span class="math display">
+<li>Taking a <span class="blue">predictive approach</span>, one can implicitly <span class="orange">characterize the prior</span> via de Finetti theorem by specifying the sequence of predictive distributions of an exchangeable sequence: <span class="math display">
 P_n(A) := \mathbb{P}(Y_{n+1}\in A\mid y_{1:n}), \qquad n \ge 1.
 </span> This leads to an exchangeable sequences iff the conditions in <span class="citation" data-cites="fortini2000exchangeability">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2000</a>)</span> are satisfied.</li>
 </ul>
@@ -280,8 +280,8 @@ P_n(A) = \frac{\alpha}{\alpha+n} P_0(A) + \frac{1}{\alpha+n}\sum_{i=1}^n\mathbb{
 <ul>
 <li>The possibility of specifying a sequence of one-step-ahead predictive distributions is appealing:
 <ul>
-<li><span class="math inline">\rightarrow</span> bypass direct elicitation of the prior;</li>
-<li><span class="math inline">\rightarrow</span> explicitly connects prediction and inference (wait for the next slide);</li>
+<li>it bypasses direct elicitation of the prior;</li>
+<li>it explicitly connects prediction and inference (see the next slide);</li>
 </ul></li>
 </ul>
 </div>
@@ -320,43 +320,50 @@ P_0(A) = \mathbb{P}(Y_1\in A) = \mathbb{E}\{P(A)\}, \qquad P_n(A) = \mathbb{P}(Y
 <section id="connecting-inference-and-prediction-ii" class="slide level2 center">
 <h2>Connecting inference and prediction II</h2>
 <ul>
-<li>In other words, the sequence of predictive distributions <span class="math inline">P_n</span> converges to a random probability measure <span class="math inline">P</span> with <span class="orange">prior</span> distribution <span class="math inline">\Pi</span>. The <span class="blue">source of randomness</span> are the data <span class="math display">
+<li>In other words, the sequence of predictive distributions <span class="math inline">P_n</span> converges to a random probability measure <span class="math inline">P</span> with <span class="orange">prior</span> distribution <span class="math inline">\Pi</span>. The <span class="blue">source of randomness</span> is the data<br>
+<span class="math display">
 Y_1, Y_2, Y_3, \dots
-</span> This is intuitive: before observing the data, our predictions eventually reflect the prior.</li>
+</span> Intuitively, before observing the data, our predictions eventually reflect the prior.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li><p>Given <span class="math inline">y_{1:n}</span>, the sequence <span class="math inline">P_{n+m}</span> converges weakly (a.s. <span class="math inline">\mathbb{P}</span>) for <span class="math inline">m \rightarrow \infty</span> to a random probability measure with <span class="orange">posterior</span> distribution <span class="math inline">\Pi(\cdot\mid y_{1:n})</span>. The source of randomness are <span class="blue">future data</span> <span class="math display">
-Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots.</span></p></li>
-<li><p>This gives a nice <span class="blue">alternative interpretation</span> to the posterior distribution and a <span class="orange">practical algorithm</span> for sampling from it called predictive resampling.</p></li>
-<li><p>Intuitively, the posterior uncertainty comes from <span class="orange">lack of knowledge</span> of future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).</p></li>
+<li><p>Given <span class="math inline">y_{1:n}</span>, the sequence <span class="math inline">P_{n+m}</span> converges weakly (a.s. <span class="math inline">\mathbb{P}</span>) as <span class="math inline">m \to \infty</span> to a random probability measure with <span class="orange">posterior</span> distribution <span class="math inline">\Pi(\cdot \mid y_{1:n})</span>. The source of randomness is the <span class="blue">future data</span><br>
+<span class="math display">
+Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
+</span></p></li>
+<li><p>This provides a natural <span class="blue">alternative interpretation</span> of the posterior distribution <span class="math inline">P \mid y_{1:n}</span> and a <span class="orange">practical algorithm</span> for sampling from it, called <span class="grey">predictive resampling</span>.</p></li>
+<li><p>Intuitively, posterior uncertainty arises from <span class="orange">lack of knowledge</span> about future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).</p></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>This reasoning is at the hearth of <span class="blue">martingale posteriors</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</li>
+<li>This reasoning is at the heart of <span class="blue">martingale posteriors</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</li>
 </ul>
 </div>
 </section>
 <section id="generalizations-of-the-predictive-approach" class="slide level2 center">
 <h2>Generalizations of the predictive approach</h2>
 <ul>
-<li>However, for an arbitrary kernel, the sequence <span class="math inline">(Y_n)_{n\ge1}</span> generated by the sequence of predictive distributions is typically not exchangeable.</li>
+<li>Defining a sequence of predictive laws <span class="math inline">P_n</span> that guarantees exchangeability—i.e., satisfies the two-step-ahead conditions of <span class="citation" data-cites="fortini2000exchangeability">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2000</a>)</span>—is a <span class="orange">difficult</span> task in practice.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>Solution: replace exchangeability with the weaker requirement that <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="orange">conditionally identically distributed</span>. The corresponding implied posterior distributions are known as <span class="blue">martingale posteriors</span>.</li>
+<li><p>Solution: replace exchangeability with the weaker requirement that <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed</span> (CID), also known as <span class="orange">martingale posteriors</span>. The CID condition requires <span class="math display">
+\mathbb{P}(Y_{n+k} \in \cdot \mid y_{1:n}) = \mathbb{P}(Y_{n+1} \in \cdot \mid y_{1:n}) = P_n(\cdot), \qquad \text{for all }  k \ge 1, n \ge 1.
+</span> It is sufficient to verify this condition for <span class="math inline">k = 1</span> in order to ensure its validity for all <span class="math inline">k  \ge 1</span>.</p></li>
+<li><p>Equivalently, <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span> express the above condition in a way that emphasizes the <span class="orange">martingale property</span> of the predictive distributions <span class="math display">
+\mathbb{E}\{P_{n+1}(\cdot) \mid y_{1:n}\} = P_n(\cdot), \qquad n \ge 1.
+</span></p></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li><p>Very lively recent topic: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> and more…</p></li>
-<li><p>Our contribution: <span class="blue">Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences</span>.</p></li>
+<li>This is a very lively recent topic: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> and more…</li>
 </ul>
 </div>
 </section>
-<section id="motivation" class="slide level2 center">
-<h2>Motivation</h2>
+<section id="nonparametric-modelling-of-count-data" class="slide level2 center">
+<h2>Nonparametric modelling of count data</h2>
 <ul>
 <li><p>A better estimator for counts distributions would be obtained by <span class="orange">replacing <span class="math inline">\mathbb{1}(\cdot)</span> with a kernel</span> that allows the borrowing of information between nearby values.</p></li>
 <li><p>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task.</p></li>

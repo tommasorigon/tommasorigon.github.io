@@ -1,5 +1,5 @@
 ---
-title: "BISP14 workshop"
+title: "BISP14"
 subtitle: "*Bayesian inference for generalized linear models via quasi-posteriors*"
 description: "A joint work with [Davide Agnoletto]{.blue} and [David Dunson]{.orange} presented at [BISP 14](https://bisp14.imati.cnr.it/home_page.php), the *14th workshop on Bayesian Inference for Stochastic processes*, organized by CNR-IMATI"
 date: "2025-05-27"
@@ -19,6 +19,7 @@ format:
   revealjs:
     output-file: BISP2025_slides.html
 format-links: true
+categories: talk
 ---
 
 ## Warm thanks

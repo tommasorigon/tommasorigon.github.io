@@ -19,6 +19,7 @@ format:
   revealjs:
     output-file: abaco26_slides.html
 format-links: true
+categories: talk
 ---
 
 ## Warm thanks

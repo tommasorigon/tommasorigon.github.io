@@ -1,6 +1,6 @@
 ---
 title: 'Blogpost'
-lang: it
+lang: en
 listing:
   id: post
   type: default
@@ -8,6 +8,7 @@ listing:
   max-description-length: 250
   fields: [date, title, subtitle, description, image]
   contents: post
+  categories: true
   sort:
     - "date desc"
   max-items: 15

@@ -1,7 +1,7 @@
 ---
 title: "Project presentation"
 subtitle: "Politecnico di Milano - Mathematical Engineering - Bayesian Statistics"
-description: "Presentation of a project for the course Bayesian Statistics"
+description: "Presentation of a project for the course Bayesian Statistics at the Politecnico di Milano"
 date: "2025-09-26"
 lang: en
 author: "[Tommaso Rigon]{.orange}"

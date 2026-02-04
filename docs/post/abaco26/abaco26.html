@@ -189,11 +189,10 @@ window.Quarto = {
   <li><a href="#bayesian-properties-of-cid-sequences-ii" id="toc-bayesian-properties-of-cid-sequences-ii" class="nav-link" data-scroll-target="#bayesian-properties-of-cid-sequences-ii">Bayesian properties of CID sequences II</a></li>
   <li><a href="#predictive-resampling-for-mad-sequences" id="toc-predictive-resampling-for-mad-sequences" class="nav-link" data-scroll-target="#predictive-resampling-for-mad-sequences">Predictive resampling for MAD sequences</a></li>
   <li><a href="#on-the-choice-of-the-base-kernel" id="toc-on-the-choice-of-the-base-kernel" class="nav-link" data-scroll-target="#on-the-choice-of-the-base-kernel">On the choice of the base kernel</a></li>
-  <li><a href="#role-of-the-weights-in-controlling-posterior-variability" id="toc-role-of-the-weights-in-controlling-posterior-variability" class="nav-link" data-scroll-target="#role-of-the-weights-in-controlling-posterior-variability">Role of the weights in controlling posterior variability</a></li>
-  <li><a href="#illustrative-example-ii" id="toc-illustrative-example-ii" class="nav-link" data-scroll-target="#illustrative-example-ii">Illustrative example II</a></li>
+  <li><a href="#uncertainty-quantification-and-calibration" id="toc-uncertainty-quantification-and-calibration" class="nav-link" data-scroll-target="#uncertainty-quantification-and-calibration">Uncertainty quantification and calibration</a></li>
+  <li><a href="#illustrative-examples-ii" id="toc-illustrative-examples-ii" class="nav-link" data-scroll-target="#illustrative-examples-ii">Illustrative examples II</a></li>
   <li><a href="#multivariate-count-and-binary-data" id="toc-multivariate-count-and-binary-data" class="nav-link" data-scroll-target="#multivariate-count-and-binary-data">Multivariate count and binary data</a></li>
   <li><a href="#simulations-i" id="toc-simulations-i" class="nav-link" data-scroll-target="#simulations-i">Simulations I</a></li>
-  <li><a href="#simulations-ii" id="toc-simulations-ii" class="nav-link" data-scroll-target="#simulations-ii">Simulations II</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
   <li><a href="#application-ii" id="toc-application-ii" class="nav-link" data-scroll-target="#application-ii">Application II</a></li>
   <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
@@ -577,31 +576,30 @@ Corollary <span class="citation" data-cites="aldous1985exchangeability berti2004
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/ker_plot_slide.jpg" class="nostretch img-fluid quarto-figure quarto-figure-center figure-img" width="850"></p>
+<p><img src="img/ker_plot_slide.jpg" class="nostretch img-fluid quarto-figure quarto-figure-center figure-img" width="1500"></p>
 </figure>
 </div>
 </section>
-<section id="role-of-the-weights-in-controlling-posterior-variability" class="level2">
-<h2 class="anchored" data-anchor-id="role-of-the-weights-in-controlling-posterior-variability">Role of the weights in controlling posterior variability</h2>
+<section id="uncertainty-quantification-and-calibration" class="level2">
+<h2 class="anchored" data-anchor-id="uncertainty-quantification-and-calibration">Uncertainty quantification and calibration</h2>
 <ul>
-<li>It can be shown that the distribution of <span class="math inline">P(A)\mid y_{1:n}</span> is approximated by <span class="math inline">\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})</span> for <span class="math inline">n</span> large, where the variance is <span class="math display">
-  \Sigma_n r_n^{-1}
-  \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
+<li>It can be shown that the <span class="blue">asymptotic distribution</span> of <span class="math inline">P(A)\mid y_{1:n}</span> is <span class="math inline">\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})</span> for <span class="math inline">n</span> large, where the <span class="orange">variance</span> is <span class="math display">
+\Sigma_n r_n^{-1} \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
 </span></li>
 </ul>
 <ul>
-<li><p>Weights that <span class="blue">decay to zero quickly</span> induce <span class="blue">fast learning and convergence</span> to the asymptotic exchangeable regime.</p></li>
-<li><p>But <span class="orange">small values of <span class="math inline">w_n</span></span> leads to <span class="orange">poor learning</span> and <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</p></li>
+<li><p>Weights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.</p></li>
+<li><p>However, small values of <span class="math inline">w_n</span> leads to <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</p></li>
 </ul>
 <ul>
-<li><p>Possible choices are <span class="math inline">w_n=(\alpha+n)^{-1}</span>, <span class="math inline">w_n=(\alpha+n)^{-2/3}</span> <span class="citation" data-cites="martin2009asymptotic">(<a href="#ref-martin2009asymptotic" role="doc-biblioref">Martin and Tokdar 2009</a>)</span>, and <span class="math inline">w_n=(2 - n^{-1})(n+1)^{-1}</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#ref-fong_holmes_2023" role="doc-biblioref">Fong et al. 2023</a>)</span>.</p></li>
-<li><p>We consider <span class="blue">adaptive weights</span> <span class="math display">
+<li><p>In practice, possible choices are <span class="math inline">w_n=(\alpha+n)^{-1}</span> (i.e.&nbsp;DP-like sequence), <span class="math inline">w_n=(\alpha+n)^{-2/3}</span> <span class="citation" data-cites="martin2009asymptotic">(<a href="#ref-martin2009asymptotic" role="doc-biblioref">Martin and Tokdar 2009</a>)</span>, and <span class="math inline">w_n=(2 - n^{-1})(n+1)^{-1}</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#ref-fong_holmes_2023" role="doc-biblioref">Fong et al. 2023</a>)</span>.</p></li>
+<li><p>We consider <span class="blue">adaptive weights</span> that we found have good empirical properties: <span class="math display">
   w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 </span> with <span class="math inline">\lambda\in(0.5,1]</span>, <span class="math inline">N_*&gt;0</span>.</p></li>
 </ul>
 </section>
-<section id="illustrative-example-ii" class="level2">
-<h2 class="anchored" data-anchor-id="illustrative-example-ii">Illustrative example II</h2>
+<section id="illustrative-examples-ii" class="level2">
+<h2 class="anchored" data-anchor-id="illustrative-examples-ii">Illustrative examples II</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/example_complete.jpg" class="nostretch img-fluid quarto-figure quarto-figure-center figure-img" width="850"></p>
@@ -611,36 +609,42 @@ Corollary <span class="citation" data-cites="aldous1985exchangeability berti2004
 <section id="multivariate-count-and-binary-data" class="level2">
 <h2 class="anchored" data-anchor-id="multivariate-count-and-binary-data">Multivariate count and binary data</h2>
 <ul>
-<li>Extending MAD sequences for <span class="blue">multivariate</span> data is straightforward using a <span class="blue">factorized base kernel</span> <span class="math display">
+<li><p>Extending MAD sequences for <span class="blue">multivariate</span> data is straightforward using a <span class="blue">factorized</span> base kernel <span class="math display">
 k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
-</span> with <span class="math inline">\bm y=(y_1,\ldots,y_d)</span> and <span class="math inline">\bm y_n=(y_{n,1},\ldots,y_{n,d})</span>.</li>
+</span> with <span class="math inline">\bm y=(y_1,\ldots,y_d)</span> and <span class="math inline">\bm y_n=(y_{n,1},\ldots,y_{n,d})</span>.</p></li>
+<li><p>In particular, MAD sequences can be employed for modeling <span class="orange">multivariate binary data</span> using an appropriate base kernel.</p></li>
+<li><p>A natural step further is to use MAD sequences for <span class="blue">nonparametric regression</span> and <span class="orange">classification</span>.</p></li>
 </ul>
-<ul>
-<li>MAD sequences can be employed for modeling <span class="orange">multivariate binary data</span> using an appropriate base kernel.</li>
-</ul>
-<ul>
-<li>A natural step further is to use MAD sequences for <span class="orange">nonparametric regression and classification</span>.</li>
-</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Multivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="simulations-i" class="level2">
 <h2 class="anchored" data-anchor-id="simulations-i">Simulations I</h2>
-<p>Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.</p>
+<p>Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for <span class="blue">regression</span> and <span class="orange">classification</span>, respectively, in specific simulation studies.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 21%">
+<col style="width: 19%">
+<col style="width: 2%">
+<col style="width: 21%">
+<col style="width: 19%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
-<th>Regression (MSE)</th>
+<th>Regress. (MSE)</th>
 <th></th>
 <th></th>
-<th>Classification (AUC)</th>
+<th>Classific. (AUC)</th>
 <th></th>
 </tr>
 </thead>
@@ -664,17 +668,17 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <tr class="odd">
 <td>BART</td>
 <td>101.17 [12.69]</td>
-<td>74.17 [10.00]</td>
+<td><strong>74.17</strong> [10.00]</td>
 <td></td>
 <td>0.863 [0.026]</td>
-<td>0.932 [0.009]</td>
+<td><strong>0.932</strong> [0.009]</td>
 </tr>
 <tr class="even">
 <td>RF</td>
-<td>99.98 [7.45]</td>
+<td><strong>99.98</strong> [7.45]</td>
 <td>87.75 [6.53]</td>
 <td></td>
-<td>0.882 [0.025]</td>
+<td><strong>0.882</strong> [0.025]</td>
 <td>0.913 [0.015]</td>
 </tr>
 <tr class="odd">
@@ -686,7 +690,7 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.724 [0.012]</td>
 </tr>
 <tr class="even">
-<td><strong>MAD-1</strong></td>
+<td>MAD-1</td>
 <td>91.07 [10.35]</td>
 <td>73.96 [7.60]</td>
 <td></td>
@@ -694,7 +698,7 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.899 [0.008]</td>
 </tr>
 <tr class="odd">
-<td><strong>MAD-2/3</strong></td>
+<td>MAD-2/3</td>
 <td>88.83 [13.00]</td>
 <td>73.18 [9.58]</td>
 <td></td>
@@ -702,48 +706,40 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.899 [0.009]</td>
 </tr>
 <tr class="even">
-<td><strong>MAD-dpm</strong></td>
-<td>87.41 [12.36]</td>
-<td>72.07 [9.48]</td>
+<td>MAD-DPM</td>
+<td><strong>87.41</strong> [12.36]</td>
+<td><strong>72.07</strong> [9.48]</td>
 <td></td>
 <td>0.872 [0.014]</td>
-<td>0.901 [0.008]</td>
+<td><strong>0.901</strong> [0.008]</td>
 </tr>
 <tr class="odd">
-<td><strong>MAD-ada</strong></td>
-<td><strong>90.61 [10.28]</strong></td>
-<td><strong>73.45 [7.69]</strong></td>
+<td>MAD-ADA</td>
+<td>90.61 [10.28]</td>
+<td>73.45 [7.69]</td>
 <td></td>
-<td><strong>0.874 [0.014]</strong></td>
-<td><strong>0.900 [0.008]</strong></td>
+<td><strong>0.874</strong> [0.014]</td>
+<td>0.900 [0.008]</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="simulations-ii" class="level2">
-<h2 class="anchored" data-anchor-id="simulations-ii">Simulations II</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/pl_cov_sim.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
-</figure>
-</div>
-</section>
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
-<ul>
-<li>We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.</li>
-</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/pl_appl_slide_1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
+<p><img src="img/pl_appl_slide_1.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<ul>
+<li>We analyze the <span class="blue">occurrence</span> rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.</li>
+</ul>
 </section>
 <section id="application-ii" class="level2">
 <h2 class="anchored" data-anchor-id="application-ii">Application II</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/pl_appl_slide_2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="img/pl_appl_slide_2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>

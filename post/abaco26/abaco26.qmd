@@ -343,83 +343,81 @@ for $n\ge1$, where $\mathcal{N}(\cdot\mid y_n,\sigma^2)$ denotes a normal densit
 
 . . .
 
-![](img/ker_plot_slide.jpg){.nostretch fig-align="center" width="850px"}
+![](img/ker_plot_slide.jpg){.nostretch fig-align="center" width="1500px"}
 
-## Role of the weights in controlling posterior variability
+## Uncertainty quantification and calibration
 
-- It can be shown that the distribution of $P(A)\mid y_{1:n}$ is approximated by $\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})$ for $n$ large, where the variance is
+- It can be shown that the [asymptotic distribution]{.blue} of $P(A)\mid y_{1:n}$ is $\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})$ for $n$ large, where the [variance]{.orange} is
 $$
-    \Sigma_n r_n^{-1} 
-    \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k>n+1}w_k^2.
+\Sigma_n r_n^{-1} \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k>n+1}w_k^2.
 $$
 
 . . .
 
-- Weights that [decay to zero quickly]{.blue} induce [fast learning and convergence]{.blue} to the asymptotic exchangeable regime.
+- Weights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.
 
-- But [small values of $w_n$]{.orange} leads to [poor learning]{.orange} and [underestimation]{.orange} of the [posterior variability]{.orange}.
+- However, small values of $w_n$ leads to [underestimation]{.orange} of the [posterior variability]{.orange}.
 
 . . .
 
-- Possible choices are $w_n=(\alpha+n)^{-1}$, $w_n=(\alpha+n)^{-2/3}$ [@martin2009asymptotic], and 
+- In practice, possible choices are $w_n=(\alpha+n)^{-1}$ (i.e. DP-like sequence), $w_n=(\alpha+n)^{-2/3}$ [@martin2009asymptotic], and 
 $w_n=(2 - n^{-1})(n+1)^{-1}$ [@fong_holmes_2023].
 
-- We consider [adaptive weights]{.blue}
+- We consider [adaptive weights]{.blue} that we found have good empirical properties:
 $$
     w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 $$
 with $\lambda\in(0.5,1]$, $N_*>0$.
 
-## Illustrative example II
+## Illustrative examples II
 
 ![](img/example_complete.jpg){.nostretch fig-align="center" width="850px"}
 
 
 ## Multivariate count and binary data
 
-- Extending MAD sequences for [multivariate]{.blue} data is straightforward using a [factorized base kernel]{.blue}
+- Extending MAD sequences for [multivariate]{.blue} data is straightforward using a [factorized]{.blue} base kernel
 $$
 k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 $$
 with $\bm y=(y_1,\ldots,y_d)$ and $\bm y_n=(y_{n,1},\ldots,y_{n,d})$.
 
+- In particular, MAD sequences can be employed for modeling [multivariate binary data]{.orange} using an appropriate base kernel.
+
+- A natural step further is to use MAD sequences for [nonparametric regression]{.blue} and [classification]{.orange}.
+
 . . .
 
-- MAD sequences can be employed for modeling [multivariate binary data]{.orange} using an appropriate base kernel.
-
-. . .
-
-- A natural step further is to use MAD sequences for [nonparametric regression and classification]{.orange}.
+::: {.callout-note}
+Multivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors.
+:::
 
 ## Simulations I
 
-Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.
+Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for [regression]{.blue} and [classification]{.orange}, respectively, in specific simulation studies.
 
-| | Regression (MSE) | | | Classification (AUC) | |
-|---|---|---|---|---|---|
+| | Regress. (MSE) | | | Classific. (AUC) | |
+|------|---------|--------|-|---------|--------|
 | | **$n=40$** | **$n=80$** | | **$n=150$** | **$n=300$** |
 | GLM | 120.77 [51.51] | 94.93 [8.37] | | 0.796 [0.014] | 0.809 [0.007] |
-| BART | 101.17 [12.69] | 74.17 [10.00] | | 0.863 [0.026] | 0.932 [0.009] |
-| RF | 99.98 [7.45] | 87.75 [6.53] | | 0.882 [0.025] | 0.913 [0.015] |
+| BART | 101.17 [12.69] | **74.17** [10.00] | | 0.863 [0.026] | **0.932** [0.009] |
+| RF | **99.98** [7.45] | 87.75 [6.53] | | **0.882** [0.025] | 0.913 [0.015] |
 | DP | 1450.21 [5.53] | 1395.61 [8.72] | | 0.644 [0.011] | 0.724 [0.012] |
-| **MAD-1** | 91.07 [10.35] | 73.96 [7.60] | | 0.873 [0.014] | 0.899 [0.008] |
-| **MAD-2/3** | 88.83 [13.00] | 73.18 [9.58] | | 0.869 [0.015] | 0.899 [0.009] |
-| **MAD-dpm** | 87.41 [12.36] | 72.07 [9.48] | | 0.872 [0.014] | 0.901 [0.008] |
-| **MAD-ada** | **90.61 [10.28]** | **73.45 [7.69]** | | **0.874 [0.014]** | **0.900 [0.008]** |
+| MAD-1 | 91.07 [10.35] | 73.96 [7.60] | | 0.873 [0.014] | 0.899 [0.008] |
+| MAD-2/3 | 88.83 [13.00] | 73.18 [9.58] | | 0.869 [0.015] | 0.899 [0.009] |
+| MAD-DPM | **87.41** [12.36] | **72.07** [9.48] | | 0.872 [0.014] | **0.901** [0.008] |
+| MAD-ADA | 90.61 [10.28] | 73.45 [7.69] | | **0.874** [0.014] | 0.900 [0.008] |
 
-## Simulations II
-
-![](img/pl_cov_sim.jpg){fig-align="center" width="85%"}
 
 ## Application
 
-- We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.
+![](img/pl_appl_slide_1.jpg){fig-align="center"}
 
-![](img/pl_appl_slide_1.jpg){fig-align="center" width="65%"}
+- We analyze the [occurrence]{.blue} rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.
 
 ## Application II
 
-![](img/pl_appl_slide_2.jpg){fig-align="center" width="85%"}
+![](img/pl_appl_slide_2.jpg){fig-align="center"}
 
 ## Thank you!
 

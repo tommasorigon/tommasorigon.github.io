@@ -2062,21 +2062,21 @@
     "href": "post/abaco26/abaco26_slides.html#role-of-the-weights-in-controlling-posterior-variability",
     "title": "ABACO26",
     "section": "Role of the weights in controlling posterior variability",
-    "text": "Role of the weights in controlling posterior variability\n\nIt can be shown that the distribution of P(A)\\mid y_{1:n} is approximated by \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n  \\Sigma_n r_n^{-1}\n  \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nBut small values of w_n leads to poor learning and underestimation of the posterior variability.\n\n\n\n\nPossible choices are w_n=(\\alpha+n)^{-1}, w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+    "text": "Role of the weights in controlling posterior variability\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n  \\Sigma_n r_n^{-1}\n  \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nBut small values of w_n leads to poor learning and underestimation of the posterior variability.\n\n\n\n\nPossible choices are w_n=(\\alpha+n)^{-1}, w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#multivariate-count-and-binary-data",
     "href": "post/abaco26/abaco26_slides.html#multivariate-count-and-binary-data",
     "title": "ABACO26",
     "section": "Multivariate count and binary data",
-    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\n\n\n\nMAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\n\n\n\n\nA natural step further is to use MAD sequences for nonparametric regression and classification."
+    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\nIn particular, MAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\nA natural step further is to use MAD sequences for nonparametric regression and classification.\n\n\n\n\n\nMultivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors."
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#simulations-i",
     "href": "post/abaco26/abaco26_slides.html#simulations-i",
     "title": "ABACO26",
     "section": "Simulations I",
-    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.\n\n\n\n\n\n\n\n\n\n\n\n\nRegression (MSE)\n\n\nClassification (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-dpm\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ada\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
+    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively, in specific simulation studies.\n\n\n\n\n\n\n\n\n\n\n\n\nRegress. (MSE)\n\n\nClassific. (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-DPM\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ADA\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#simulations-ii",
@@ -2090,7 +2090,7 @@
     "href": "post/abaco26/abaco26_slides.html#application",
     "title": "ABACO26",
     "section": "Application",
-    "text": "Application\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
+    "text": "Application\n\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
   },
   {
     "objectID": "post/abaco26/abaco26_slides.html#application-ii",
@@ -2237,21 +2237,21 @@
     "href": "post/abaco26/abaco26.html#role-of-the-weights-in-controlling-posterior-variability",
     "title": "ABACO26",
     "section": "Role of the weights in controlling posterior variability",
-    "text": "Role of the weights in controlling posterior variability\n\nIt can be shown that the distribution of P(A)\\mid y_{1:n} is approximated by \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n  \\Sigma_n r_n^{-1}\n  \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nBut small values of w_n leads to poor learning and underestimation of the posterior variability.\n\n\nPossible choices are w_n=(\\alpha+n)^{-1}, w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+    "text": "Role of the weights in controlling posterior variability\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n  \\Sigma_n r_n^{-1}\n  \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nBut small values of w_n leads to poor learning and underestimation of the posterior variability.\n\n\nPossible choices are w_n=(\\alpha+n)^{-1}, w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
   },
   {
     "objectID": "post/abaco26/abaco26.html#multivariate-count-and-binary-data",
     "href": "post/abaco26/abaco26.html#multivariate-count-and-binary-data",
     "title": "ABACO26",
     "section": "Multivariate count and binary data",
-    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\n\n\nMAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\n\n\nA natural step further is to use MAD sequences for nonparametric regression and classification."
+    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\nIn particular, MAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\nA natural step further is to use MAD sequences for nonparametric regression and classification.\n\n\n\n\n\n\n\nMultivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors."
   },
   {
     "objectID": "post/abaco26/abaco26.html#simulations-i",
     "href": "post/abaco26/abaco26.html#simulations-i",
     "title": "ABACO26",
     "section": "Simulations I",
-    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.\n\n\n\n\n\n\n\n\n\n\n\n\nRegression (MSE)\n\n\nClassification (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-dpm\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ada\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
+    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively, in specific simulation studies.\n\n\n\n\n\n\n\n\n\n\n\n\nRegress. (MSE)\n\n\nClassific. (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-DPM\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ADA\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
   },
   {
     "objectID": "post/abaco26/abaco26.html#simulations-ii",
@@ -2265,7 +2265,7 @@
     "href": "post/abaco26/abaco26.html#application",
     "title": "ABACO26",
     "section": "Application",
-    "text": "Application\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
+    "text": "Application\n\n\n\n\n\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
   },
   {
     "objectID": "post/abaco26/abaco26.html#application-ii",
@@ -2455,5 +2455,33 @@
     "title": "ABACO26",
     "section": "Illustrative example II",
     "text": "Illustrative example II"
+  },
+  {
+    "objectID": "post/abaco26/abaco26_slides.html#uncertainty-quantification-and-calibration",
+    "href": "post/abaco26/abaco26_slides.html#uncertainty-quantification-and-calibration",
+    "title": "ABACO26",
+    "section": "Uncertainty quantification and calibration",
+    "text": "Uncertainty quantification and calibration\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n\\Sigma_n r_n^{-1} \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nHowever, small values of w_n leads to underestimation of the posterior variability.\n\n\n\n\nIn practice, possible choices are w_n=(\\alpha+n)^{-1} (i.e. DP-like sequence), w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights that we found have good empirical properties: \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+  },
+  {
+    "objectID": "post/abaco26/abaco26_slides.html#illustrative-examples-ii",
+    "href": "post/abaco26/abaco26_slides.html#illustrative-examples-ii",
+    "title": "ABACO26",
+    "section": "Illustrative examples II",
+    "text": "Illustrative examples II"
+  },
+  {
+    "objectID": "post/abaco26/abaco26.html#uncertainty-quantification-and-calibration",
+    "href": "post/abaco26/abaco26.html#uncertainty-quantification-and-calibration",
+    "title": "ABACO26",
+    "section": "Uncertainty quantification and calibration",
+    "text": "Uncertainty quantification and calibration\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n\\Sigma_n r_n^{-1} \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nHowever, small values of w_n leads to underestimation of the posterior variability.\n\n\nIn practice, possible choices are w_n=(\\alpha+n)^{-1} (i.e. DP-like sequence), w_n=(\\alpha+n)^{-2/3} (Martin and Tokdar 2009), and w_n=(2 - n^{-1})(n+1)^{-1} (Fong et al. 2023).\nWe consider adaptive weights that we found have good empirical properties: \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+  },
+  {
+    "objectID": "post/abaco26/abaco26.html#illustrative-examples-ii",
+    "href": "post/abaco26/abaco26.html#illustrative-examples-ii",
+    "title": "ABACO26",
+    "section": "Illustrative examples II",
+    "text": "Illustrative examples II"
   }
 ]

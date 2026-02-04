@@ -532,36 +532,35 @@ P_n(\cdot) = \frac{\alpha}{\alpha + n} P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/ker_plot_slide.jpg" class="quarto-figure quarto-figure-center" width="850"></p>
+<p><img data-src="img/ker_plot_slide.jpg" class="quarto-figure quarto-figure-center" width="1500"></p>
 </figure>
 </div>
 </div>
 </section>
-<section id="role-of-the-weights-in-controlling-posterior-variability" class="slide level2 center">
-<h2>Role of the weights in controlling posterior variability</h2>
+<section id="uncertainty-quantification-and-calibration" class="slide level2 center">
+<h2>Uncertainty quantification and calibration</h2>
 <ul>
-<li>It can be shown that the distribution of <span class="math inline">P(A)\mid y_{1:n}</span> is approximated by <span class="math inline">\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})</span> for <span class="math inline">n</span> large, where the variance is <span class="math display">
-  \Sigma_n r_n^{-1}
-  \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
+<li>It can be shown that the <span class="blue">asymptotic distribution</span> of <span class="math inline">P(A)\mid y_{1:n}</span> is <span class="math inline">\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})</span> for <span class="math inline">n</span> large, where the <span class="orange">variance</span> is <span class="math display">
+\Sigma_n r_n^{-1} \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
 </span></li>
 </ul>
 <div class="fragment">
 <ul>
-<li><p>Weights that <span class="blue">decay to zero quickly</span> induce <span class="blue">fast learning and convergence</span> to the asymptotic exchangeable regime.</p></li>
-<li><p>But <span class="orange">small values of <span class="math inline">w_n</span></span> leads to <span class="orange">poor learning</span> and <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</p></li>
+<li><p>Weights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.</p></li>
+<li><p>However, small values of <span class="math inline">w_n</span> leads to <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</p></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li><p>Possible choices are <span class="math inline">w_n=(\alpha+n)^{-1}</span>, <span class="math inline">w_n=(\alpha+n)^{-2/3}</span> <span class="citation" data-cites="martin2009asymptotic">(<a href="#/references" role="doc-biblioref" onclick="">Martin and Tokdar 2009</a>)</span>, and <span class="math inline">w_n=(2 - n^{-1})(n+1)^{-1}</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</p></li>
-<li><p>We consider <span class="blue">adaptive weights</span> <span class="math display">
+<li><p>In practice, possible choices are <span class="math inline">w_n=(\alpha+n)^{-1}</span> (i.e.&nbsp;DP-like sequence), <span class="math inline">w_n=(\alpha+n)^{-2/3}</span> <span class="citation" data-cites="martin2009asymptotic">(<a href="#/references" role="doc-biblioref" onclick="">Martin and Tokdar 2009</a>)</span>, and <span class="math inline">w_n=(2 - n^{-1})(n+1)^{-1}</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</p></li>
+<li><p>We consider <span class="blue">adaptive weights</span> that we found have good empirical properties: <span class="math display">
   w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 </span> with <span class="math inline">\lambda\in(0.5,1]</span>, <span class="math inline">N_*&gt;0</span>.</p></li>
 </ul>
 </div>
 </section>
-<section id="illustrative-example-ii" class="slide level2 center">
-<h2>Illustrative example II</h2>
+<section id="illustrative-examples-ii" class="slide level2 center">
+<h2>Illustrative examples II</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/example_complete.jpg" class="quarto-figure quarto-figure-center" width="850"></p>
@@ -571,40 +570,41 @@ P_n(\cdot) = \frac{\alpha}{\alpha + n} P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=
 <section id="multivariate-count-and-binary-data" class="slide level2 center">
 <h2>Multivariate count and binary data</h2>
 <ul>
-<li>Extending MAD sequences for <span class="blue">multivariate</span> data is straightforward using a <span class="blue">factorized base kernel</span> <span class="math display">
+<li><p>Extending MAD sequences for <span class="blue">multivariate</span> data is straightforward using a <span class="blue">factorized</span> base kernel <span class="math display">
 k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
-</span> with <span class="math inline">\bm y=(y_1,\ldots,y_d)</span> and <span class="math inline">\bm y_n=(y_{n,1},\ldots,y_{n,d})</span>.</li>
+</span> with <span class="math inline">\bm y=(y_1,\ldots,y_d)</span> and <span class="math inline">\bm y_n=(y_{n,1},\ldots,y_{n,d})</span>.</p></li>
+<li><p>In particular, MAD sequences can be employed for modeling <span class="orange">multivariate binary data</span> using an appropriate base kernel.</p></li>
+<li><p>A natural step further is to use MAD sequences for <span class="blue">nonparametric regression</span> and <span class="orange">classification</span>.</p></li>
 </ul>
 <div class="fragment">
-<ul>
-<li>MAD sequences can be employed for modeling <span class="orange">multivariate binary data</span> using an appropriate base kernel.</li>
-</ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Multivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors.</p>
 </div>
-<div class="fragment">
-<ul>
-<li>A natural step further is to use MAD sequences for <span class="orange">nonparametric regression and classification</span>.</li>
-</ul>
+</div>
+</div>
 </div>
 </section>
 <section id="simulations-i" class="slide level2 center">
 <h2>Simulations I</h2>
-<p>Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively.</p>
-<table class="caption-top" style="width:100%;">
+<p>Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for <span class="blue">regression</span> and <span class="orange">classification</span>, respectively, in specific simulation studies.</p>
+<table class="caption-top">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 21%">
+<col style="width: 19%">
+<col style="width: 2%">
+<col style="width: 21%">
+<col style="width: 19%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
-<th>Regression (MSE)</th>
+<th>Regress. (MSE)</th>
 <th></th>
 <th></th>
-<th>Classification (AUC)</th>
+<th>Classific. (AUC)</th>
 <th></th>
 </tr>
 </thead>
@@ -628,17 +628,17 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <tr class="odd">
 <td>BART</td>
 <td>101.17 [12.69]</td>
-<td>74.17 [10.00]</td>
+<td><strong>74.17</strong> [10.00]</td>
 <td></td>
 <td>0.863 [0.026]</td>
-<td>0.932 [0.009]</td>
+<td><strong>0.932</strong> [0.009]</td>
 </tr>
 <tr class="even">
 <td>RF</td>
-<td>99.98 [7.45]</td>
+<td><strong>99.98</strong> [7.45]</td>
 <td>87.75 [6.53]</td>
 <td></td>
-<td>0.882 [0.025]</td>
+<td><strong>0.882</strong> [0.025]</td>
 <td>0.913 [0.015]</td>
 </tr>
 <tr class="odd">
@@ -650,7 +650,7 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.724 [0.012]</td>
 </tr>
 <tr class="even">
-<td><strong>MAD-1</strong></td>
+<td>MAD-1</td>
 <td>91.07 [10.35]</td>
 <td>73.96 [7.60]</td>
 <td></td>
@@ -658,7 +658,7 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.899 [0.008]</td>
 </tr>
 <tr class="odd">
-<td><strong>MAD-2/3</strong></td>
+<td>MAD-2/3</td>
 <td>88.83 [13.00]</td>
 <td>73.18 [9.58]</td>
 <td></td>
@@ -666,39 +666,35 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <td>0.899 [0.009]</td>
 </tr>
 <tr class="even">
-<td><strong>MAD-dpm</strong></td>
-<td>87.41 [12.36]</td>
-<td>72.07 [9.48]</td>
+<td>MAD-DPM</td>
+<td><strong>87.41</strong> [12.36]</td>
+<td><strong>72.07</strong> [9.48]</td>
 <td></td>
 <td>0.872 [0.014]</td>
-<td>0.901 [0.008]</td>
+<td><strong>0.901</strong> [0.008]</td>
 </tr>
 <tr class="odd">
-<td><strong>MAD-ada</strong></td>
-<td><strong>90.61 [10.28]</strong></td>
-<td><strong>73.45 [7.69]</strong></td>
+<td>MAD-ADA</td>
+<td>90.61 [10.28]</td>
+<td>73.45 [7.69]</td>
 <td></td>
-<td><strong>0.874 [0.014]</strong></td>
-<td><strong>0.900 [0.008]</strong></td>
+<td><strong>0.874</strong> [0.014]</td>
+<td>0.900 [0.008]</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="simulations-ii" class="slide level2 center">
-<h2>Simulations II</h2>
-
-<img data-src="img/pl_cov_sim.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
 <section id="application" class="slide level2 center">
 <h2>Application</h2>
-<ul>
-<li>We analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.</li>
-</ul>
 
-<img data-src="img/pl_appl_slide_1.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"></section>
+<img data-src="img/pl_appl_slide_1.jpg" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li>We analyze the <span class="blue">occurrence</span> rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats.</li>
+</ul>
+</section>
 <section id="application-ii" class="slide level2 center">
 <h2>Application II</h2>
 
-<img data-src="img/pl_appl_slide_2.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
+<img data-src="img/pl_appl_slide_2.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="thank-you" class="slide level2 center">
 <h2>Thank you!</h2>
 

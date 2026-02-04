@@ -348,8 +348,9 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 </ul>
 <div class="fragment">
 <ul>
-<li><p>Solution: replace exchangeability with the weaker requirement that <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed</span> (CID), also known as <span class="orange">martingale posteriors</span>. The CID condition requires <span class="math display">
-\mathbb{P}(Y_{n+k} \in \cdot \mid y_{1:n}) = \mathbb{P}(Y_{n+1} \in \cdot \mid y_{1:n}) = P_n(\cdot), \qquad \text{for all }  k \ge 1, n \ge 1.
+<li><p>Solution: replace exchangeability with the weaker requirement that <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed</span> (CID), also known as <span class="orange">martingale posteriors</span>.</p></li>
+<li><p>The CID condition requires <span class="math display">
+\mathbb{P}(Y_{n+k} \in \cdot \mid y_{1:n}) = \mathbb{P}(Y_{n+1} \in \cdot \mid y_{1:n}) = P_n(\cdot), \qquad \text{for all} \quad  k \ge 1, \; n \ge 1.
 </span> It is sufficient to verify this condition for <span class="math inline">k = 1</span> in order to ensure its validity for all <span class="math inline">k  \ge 1</span>.</p></li>
 <li><p>Equivalently, <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span> express the above condition in a way that emphasizes the <span class="orange">martingale property</span> of the predictive distributions <span class="math display">
 \mathbb{E}\{P_{n+1}(\cdot) \mid y_{1:n}\} = P_n(\cdot), \qquad n \ge 1.
@@ -358,131 +359,129 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 </div>
 <div class="fragment">
 <ul>
-<li>This is a very lively recent topic: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> and more…</li>
+<li>This is another <span class="blue">lively recent topic</span>: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> and more…</li>
 </ul>
 </div>
 </section>
 <section id="nonparametric-modelling-of-count-data" class="slide level2 center">
 <h2>Nonparametric modelling of count data</h2>
 <ul>
-<li><p>A better estimator for counts distributions would be obtained by <span class="orange">replacing <span class="math inline">\mathbb{1}(\cdot)</span> with a kernel</span> that allows the borrowing of information between nearby values.</p></li>
-<li><p>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task.</p></li>
+<li>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task. Nonparametric mixtures of discrete kernels <span class="citation" data-cites="canale2011bayesian">(<a href="#/references" role="doc-biblioref" onclick="">Canale and Dunson 2011</a>)</span> can be cumbersome in practice.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>Estimating nonparametric mixtures of discrete kernels <span class="citation" data-cites="canale2011bayesian Canale2017">(<a href="#/references" role="doc-biblioref" onclick="">Canale and Dunson 2011</a>; <a href="#/references" role="doc-biblioref" onclick="">Canale and Prünster 2017</a>)</span> can be cumbersome in practice.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Alternatively, one can directly specify a <span class="orange">DP prior</span> on the data generator as <span class="math display">
-  Y_i\mid P \sim P,\quad P\sim\mathrm{DP}(\alpha,P_0),
+<li>Alternatively, one could directly specify a <span class="orange">DP prior</span> on the data generator as <span class="math display">
+  Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
 </span> for <span class="math inline">Y_i\in\mathcal{Y}=\{0,1,\ldots\}</span>, <span class="math inline">i=1,\ldots,n</span>, where <span class="math inline">\alpha</span> is the precision parameter and <span class="math inline">P_0</span> a base parametric distribution, such as a Poisson.</li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>However, the corresponding posterior <span class="orange">lacks smoothing</span>, leading to poor performance.</li>
+<li><p>The Dirichlet process is mathematically convenient. However, the corresponding posterior <span class="orange">lacks smoothing</span>, which can lead to poor performance.</p></li>
+<li><p>Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.</p></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>Within the hypothetical approach, it is not clear how to specify a nonparametric process having the same simplicity and flexibility as the DP prior while allowing smoothing.</li>
+<li><span class="blue">Our proposal</span>: a predictive sequence tailored to count data inspired by kernel density estimators.</li>
 </ul>
+</div>
+</section>
+<section id="illustrative-example-i" class="slide level2 center">
+<h2>Illustrative example I</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/example_plot.jpg" class="quarto-figure quarto-figure-center" width="700"></p>
+</figure>
+</div>
+<ul>
+<li><span class="orange">Left plot</span>: posterior mean of a DP. <span class="blue">Right plot</span>: posterior mean of the proposed MAD sequence.</li>
+</ul>
+</section>
+<section id="a-recursive-predictive-rule" class="slide level2 center">
+<h2>A recursive predictive rule</h2>
+<ul>
+<li>Intuitively, a better estimator would be obtained by replacing the indicator <span class="math inline">\mathbb{1}(\cdot)</span> of the DP predictive scheme with a <span class="orange">kernel</span> that allows the <span class="blue">borrowing of information</span> between nearby values.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Let <span class="math inline">Y_1\sim P_0</span> and <span class="math inline">Y_{n+1} \mid y_{1:n} \sim P_n</span> for <span class="math inline">n\ge 1</span>, and let <span class="math inline">K_n(\cdot \mid y_n)</span> be a sequence of transition kernels. We define the predictive distribution <span class="orange">recursively</span>: <span class="math display">
+  P_n(\cdot) = \mathbb{P}(Y_{n+1}\in \cdot\mid y_{1:n}) = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n), \qquad n \ge 1,
+</span> where <span class="math inline">(w_n)_{n\ge1}</span> are decreasing weights such that <span class="math inline">w_n\in(0,1)</span>, <span class="math inline">\sum_{n\ge1}w_n = \infty</span>, and <span class="math inline">\sum_{n\ge1}w_n^2&lt;\infty</span>.</p></li>
+<li><p>The choice of weights <span class="math inline">w_n = (\alpha +n)^{-1}</span> gives the following DP-like predictive rule <span class="math display">
+P_n(\cdot) = \frac{\alpha}{\alpha + n} P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
+</span> Hence, the predictive law of a DP is a special case whenever <span class="math inline">K_i(\cdot \mid y_i) = \delta_{y_i}(\cdot)</span>.</p></li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>The above sequence, beyond the DP special case, is <span class="orange">not exchangeable</span> and it will <span class="blue">depend on the order</span> of the data. Moreover, without further restrictions, is not necessarily CID!</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="metropolis-adjusted-dirichlet-mad-sequences" class="slide level2 center">
 <h2>Metropolis-adjusted Dirichlet (MAD) sequences</h2>
 <ul>
-<li>We assume that <span class="math inline">Y_1\sim P_0</span> and <span class="math inline">Y_{n+1}\mid y_{1:n}\sim P_n</span> for <span class="math inline">n\ge 1</span>, with <span class="math display">
-  P_n(\cdot) = \mathbb{P}\{Y_{n+1}\in \cdot\mid y_{1:n}\} = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n),
-</span> where <span class="math inline">(w_n)_{n\ge1}</span> is a sequence of decreasing weights such that <span class="math inline">w_n\in(0,1)</span> for every <span class="math inline">n\ge1</span>, <span class="math inline">\sum_{n\ge1}w_n = \infty</span>, and <span class="math inline">\sum_{n\ge1}w_n^2&lt;\infty</span>.</li>
-</ul>
-<div class="fragment">
-<ul>
-<li><span class="blue"><span class="math inline">K_{n}(\cdot\mid y_n)</span></span> denotes a <span class="blue">Metropolis-Hastings kernel</span> centered in <span class="math inline">y_n</span> having pmf: <span class="math display">
+<li><p>We assume that <span class="math inline">K_{n}(\cdot\mid y_n)</span> is a <span class="blue">Metropolis-Hastings kernel</span> centered in <span class="math inline">y_n</span> having pmf: <span class="math display">
   k_{n}(y\mid y_n) = \gamma_{n}(y,y_n) k_*(y\mid y_n) + \mathbb{1}(y=y_n)\Big[\sum_{z\in\mathcal{Y}}\big\{1-\gamma_{n}(z,y_n)\big\}k_*(z\mid y_n)\Big],
-</span> where <span class="math display">
+</span> with acceptance probability <span class="math display">
   \gamma_{n}(y,y_n) = \gamma(y, y_n, P_{n-1}) =
   \min\left\{1,\frac{p_{n-1}(y) k_*(y_n\mid y)}{p_{n-1}(y_n) k_*(y\mid y_n)}\right\},
-</span> <span class="math inline">p_{n-1}</span> is the probability mass functions associated to <span class="math inline">P_{n-1}</span> and <span class="orange"><span class="math inline">k_*(\cdot\mid y_n)</span></span> is a <span class="orange">discrete base kernel</span> centered in <span class="math inline">y_n</span>.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>We refer to <span class="math inline">P_n</span> as the <span class="blue">Metropolis-adjusted Dirichlet</span> (MAD) distribution with weights <span class="math inline">(w_n)_{n\ge1}</span>, base kernel <span class="math inline">k_*</span> and initial distribution <span class="math inline">P_0</span>. The corresponding sequence <span class="math inline">(Y_n)_{n\ge1}</span> is a MAD sequence.</li>
-</ul>
-</div>
-</section>
-<section id="mad-sequences-are-cid" class="slide level2 center">
-<h2>MAD sequences are cid</h2>
-<ul>
-<li>If <span class="math inline">w_n = (\alpha +n)^{-1}</span>, then the MAD distribution becomes <span class="math display">
-  P_n(\cdot) = \frac{\alpha}{\alpha + n}P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
-</span></li>
+</span> where <span class="math inline">p_{n-1}</span> is the probability mass functions associated to <span class="math inline">P_{n-1}</span> and <span class="math inline">k_*(\cdot\mid y_n)</span> is the pmf of a <span class="orange">discrete base kernel</span> centered at <span class="math inline">y_n</span>.</p></li>
+<li><p>We refer to <span class="math inline">P_n</span> above as the <span class="blue">Metropolis-adjusted Dirichlet</span> (MAD) distribution with weights <span class="math inline">(w_n)_{n\ge1}</span>, base kernel <span class="math inline">k_*</span> and initial distribution <span class="math inline">P_0</span>. We call <span class="math inline">(Y_n)_{n \ge 1}</span> a MAD sequence.</p></li>
 </ul>
 <div class="fragment">
-<div title="Theorem">
+<div title="Theorem (Agnoletto, R. and Dunson, 2025)">
 <div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Theorem</strong></p>
+<p><strong>Theorem (Agnoletto, R. and Dunson, 2025)</strong></p>
 </div>
 <div class="callout-content">
-<p>Let <span class="math inline">(Y_n)_{n\ge1}</span> be a MAD sequence. Then, for every set of weights <span class="math inline">(w_n)_{n \ge 1}</span>, discrete base kernel <span class="math inline">k_*</span>, and initial distribution <span class="math inline">P_0</span>, the sequence <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed</span>.</p>
+<p>Let <span class="math inline">(Y_n)_{n\ge1}</span> be a MAD sequence. Then, for every set of weights <span class="math inline">(w_n)_{n \ge 1}</span>, discrete base kernel <span class="math inline">k_*</span>, and initial distribution <span class="math inline">P_0</span>, the sequence <span class="math inline">(Y_n)_{n\ge1}</span> is <span class="blue">conditionally identically distributed (CID)</span>.</p>
 </div>
 </div>
 </div>
 </div>
-<ul>
-<li><p>A sequence <span class="math inline">(Y_n)_{n\ge1}</span> is conditionally identically distributed (cid) if, <span class="math inline">\mathbb{P}</span>-a.s., <span class="math display">
-  \mathbb{P}\{Y_{n+k}\in\cdot\mid y_{1:n}\} = \mathbb{P}\{Y_{n+1}\in\cdot\mid y_{1:n}\}=P_n(\cdot)
-  \qquad k\ge1.
-</span></p></li>
-<li><p>This is equivalent to the martingale condition <span class="math display">
-  \mathbb{E}\{P_{n+1}(\cdot)\mid y_{1:n}\} = P_{n}(\cdot).
-</span></p></li>
-</ul>
 </div>
 </section>
-<section id="bayesian-properties-of-cid-sequences" class="slide level2 center">
-<h2>Bayesian properties of cid sequences</h2>
-<div title="Corollary (Aldous 1985; Berti et al. 2004)">
-<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<section id="bayesian-properties-of-cid-sequences-i" class="slide level2 center">
+<h2>Bayesian properties of CID sequences I</h2>
+<div title="Corollary [@aldous1985exchangeability; @berti2004limit]">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Corollary (Aldous 1985; Berti et al.&nbsp;2004)</strong></p>
+<p><strong>Corollary <span class="citation" data-cites="aldous1985exchangeability berti2004limit">(<a href="#/references" role="doc-biblioref" onclick="">Aldous 1985</a>; <a href="#/references" role="doc-biblioref" onclick="">Berti et al. 2004</a>)</span></strong></p>
 </div>
 <div class="callout-content">
 <p>Consider a MAD sequence <span class="math inline">(Y_n)_{n\ge1}</span>. Then, <span class="math inline">\mathbb{P}</span>-a.s.,</p>
 <p><span class="math inline">(a)</span> The sequence is asymptotically exchangeable, that is <span class="math display">
     (Y_{n+1}, Y_{n+2}, \ldots) \overset{\textup{d}}{\longrightarrow} (Z_1, Z_2, \ldots), \qquad n \rightarrow \infty,
 </span> where <span class="math inline">(Z_1,Z_2,\ldots)</span> is an exchangeable sequence with directing random probability measure <span class="math inline">P</span>;</p>
-<p><span class="math inline">(b)</span> the corresponding sequences of MAD predictive distributions <span class="math inline">(P_n)_{n\ge1}</span> and empirical distributions <span class="math inline">(\hat{P}_n)_{n\ge1}</span>, where <span class="math inline">\hat{P}_n := n^{-1}\sum_{i=1}^n \delta_{Y_i}</span>, converge to <span class="math inline">P</span> weakly.</p>
+<p><span class="math inline">(b)</span> the corresponding sequence of predictive distributions <span class="math inline">(P_n)_{n\ge1}</span> weakly converge to a random probability measures <span class="math inline">P</span> (a.s. <span class="math inline">\mathbb{P}</span>).</p>
 </div>
 </div>
 </div>
 </div>
 <ul>
-<li>The ordering dependence will vanish asymptotically and, informally, <span class="math inline">Y_i\mid P \overset{\mathrm{iid}}{\sim} P</span> for large <span class="math inline">n</span>.</li>
-<li><span class="math inline">P</span> exists and is defined as the limit of the sequence of MAD distributions.</li>
+<li><p>An <span class="blue">asymptotic</span> equivalent of <span class="blue">de Finetti</span>’s theorem holds: each MAD sequence has a corresponding unique prior on <span class="math inline">P</span>.</p></li>
+<li><p>The ordering dependence will vanish asymptotically and, informally, <span class="math inline">Y_i \mid P \overset{\mathrm{iid}}{\sim} P</span> <span class="blue">for large <span class="math inline">n</span></span>.</p></li>
+<li><p>The random probability measure <span class="math inline">P</span> exists and is defined as the limit of the predictive distributions. However, it is <span class="orange">not available explicitly</span>.</p></li>
 </ul>
 </section>
-<section id="predictive-inference" class="slide level2 center">
-<h2>Predictive inference</h2>
-<ul>
-<li><p>Thus, an asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on <span class="math inline">P</span>.</p></li>
-<li><p>The prior and posterior on <span class="math inline">P</span> <span class="orange">exists</span> but are <span class="orange">not available explicitly</span>.</p></li>
-</ul>
-<div class="fragment">
-<div title="Corollary">
-<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<section id="bayesian-properties-of-cid-sequences-ii" class="slide level2 center">
+<h2>Bayesian properties of CID sequences II</h2>
+<div title="Corollary [@aldous1985exchangeability; @berti2004limit]">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Corollary</strong></p>
+<p><strong>Corollary <span class="citation" data-cites="aldous1985exchangeability berti2004limit">(<a href="#/references" role="doc-biblioref" onclick="">Aldous 1985</a>; <a href="#/references" role="doc-biblioref" onclick="">Berti et al. 2004</a>)</span></strong></p>
 </div>
 <div class="callout-content">
-<p>Let <span class="blue"><span class="math inline">\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)</span></span> and analogously <span class="blue"><span class="math inline">\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)</span></span> be any functional of interest. Consider a MAD sequence <span class="math inline">(Y_n)_{n\ge1}</span>. Then, <span class="math inline">\mathbb{P}</span>-a.s., for every <span class="math inline">n\ge1</span> and every integrable function <span class="math inline">f:\mathcal{Y}\rightarrow\mathbb{R}</span>, we have <span class="math display">
+<p>Let <span class="math inline">\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)</span> and analogously <span class="math inline">\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)</span> be any functional of interest. Consider a MAD sequence <span class="math inline">(Y_n)_{n\ge1}</span>.</p>
+<p>Then, <span class="math inline">\mathbb{P}</span>-a.s., for every <span class="math inline">n\ge1</span> and every integrable function <span class="math inline">f:\mathcal{Y}\rightarrow\mathbb{R}</span>, we have <span class="math display">
 \mathbb{E}(\theta \mid y_{1:n}) = \mathbb{E}\{P(f) \mid y_{1:n}\} = P_n(f) = \theta_n
 </span></p>
 </div>
@@ -490,27 +489,42 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 </div>
 </div>
 <ul>
-<li>Moreover, we also have that <span class="math inline">\theta = \mathbb{E}\{P(f)\}=P_0(f) = \theta_0</span> for every integrable function <span class="math inline">f</span>, so that <span class="blue"><span class="math inline">P_0</span></span> retains the role of a <span class="blue">base measure</span> as for standard Dirichlet sequences, providing an initial guess at <span class="math inline">P</span>.</li>
+<li><p>Broadly speaking, the posterior mean of any functional of interest of <span class="math inline">P</span> coincides with the functional of the predictive.</p></li>
+<li><p>Moreover, <span class="math inline">\mathbb{E}\{P(f)\}= P_0(f) = \theta_0</span> for every integrable function <span class="math inline">f</span>, so that <span class="math inline">P_0</span> retains the role of a <span class="blue">base measure</span> as for standard Dirichlet sequences, providing an initial guess at <span class="math inline">P</span>.</p></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li>Uncertainty quantification for <span class="math inline">\theta=P(f)</span> is carried out by <span class="blue">predictive resampling</span> <span class="citation" data-cites="fong_holmes_2023">(<a href="#/references" role="doc-biblioref" onclick="">Fong et al. 2023</a>)</span>.</li>
 </ul>
 </div>
 </section>
-<section id="illustrative-example" class="slide level2 center">
-<h2>Illustrative example</h2>
-
-<img data-src="img/pl_ill_slide.jpg" class="r-stretch"></section>
+<section id="predictive-resampling-for-mad-sequences" class="slide level2 center">
+<h2>Predictive resampling for MAD sequences</h2>
+<p><strong>Algorithm <span class="citation" data-cites="fortini_petrone_2020">(<a href="#/references" role="doc-biblioref" onclick="">Fortini and Petrone 2020</a>)</span>:</strong></p>
+<ol type="1">
+<li>Compute <span class="math inline">P_n(\cdot)</span> from the observed data <span class="math inline">y_{1:n}</span></li>
+<li>Set <span class="math inline">N\gg n</span></li>
+<li>For <span class="math inline">j = 1,\ldots,B</span>
+<ol type="a">
+<li>For <span class="math inline">i=n+1,\ldots,N</span>
+<ol type="i">
+<li>Sample <span class="math inline">Y_i\mid y_{1:i-1}\sim P_{i-1}</span></li>
+<li>Update <span class="math inline">P_i(\cdot) = (1-w_i)P_{i-1}(\cdot) + w_i K_{i-1}(\cdot\mid y_i)</span></li>
+</ol></li>
+<li>End For</li>
+</ol></li>
+<li>End For</li>
+<li>Return <span class="math inline">P_N^{(1)}(\cdot),\ldots,P_N^{(B)}(\cdot)</span>, an iid sample from the distribution of <span class="math inline">P_N(\cdot)\mid y_{1:n}</span></li>
+</ol>
+</section>
 <section id="on-the-choice-of-the-base-kernel" class="slide level2 center">
 <h2>On the choice of the base kernel</h2>
 <ul>
-<li><span class="orange">Any discrete distribution can be chosen as base kernel <span class="math inline">k_*</span></span>.</li>
+<li>In principle, any discrete distribution can be chosen as the base kernel <span class="math inline">k_*</span>. However, it is natural to consider choices that allow the kernel to be centered at <span class="math inline">y_n</span> while permitting control over the variance.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>To improve flexibility, we consider a <span class="blue">rounded Gaussian</span> distribution centered in <span class="math inline">y_n</span>, with pmf <span class="math display">
+<li>We consider a <span class="blue">rounded Gaussian</span> distribution centered in <span class="math inline">y_n</span>, with pmf <span class="math display">
   k_*(y\mid y_n, \sigma) = \frac{\int_{y-1/2}^{y+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t}{\sum_{z\in\mathcal{Y}} \int_{z-1/2}^{z+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t},
 </span> for <span class="math inline">n\ge1</span>, where <span class="math inline">\mathcal{N}(\cdot\mid y_n,\sigma^2)</span> denotes a normal density function with mean <span class="math inline">y_n</span> and variance <span class="math inline">\sigma^2</span>.</li>
 </ul>
@@ -518,7 +532,7 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/ker_plot_slide.jpg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+<p><img data-src="img/ker_plot_slide.jpg" class="quarto-figure quarto-figure-center" width="850"></p>
 </figure>
 </div>
 </div>
@@ -526,15 +540,15 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 <section id="role-of-the-weights-in-controlling-posterior-variability" class="slide level2 center">
 <h2>Role of the weights in controlling posterior variability</h2>
 <ul>
-<li>The distribution of <span class="math inline">P(A)\mid y_{1:n}</span> is approximated by <span class="math inline">\mathcal{N}(P_n(A), \Sigma_nr_n^{-1})</span> for <span class="math inline">n</span> large, where <span class="math display">
+<li>It can be shown that the distribution of <span class="math inline">P(A)\mid y_{1:n}</span> is approximated by <span class="math inline">\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})</span> for <span class="math inline">n</span> large, where the variance is <span class="math display">
   \Sigma_n r_n^{-1}
-  \overset{\cdot}{=} \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
+  \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k&gt;n+1}w_k^2.
 </span></li>
 </ul>
 <div class="fragment">
 <ul>
-<li>Weights that <span class="blue">decay to zero quickly</span> induce <span class="blue">fast learning and convergence</span> to the asymptotic exchangeable regime.</li>
-<li>But <span class="orange">small values of <span class="math inline">w_n</span></span> leads to <span class="orange">poor learning</span> and <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</li>
+<li><p>Weights that <span class="blue">decay to zero quickly</span> induce <span class="blue">fast learning and convergence</span> to the asymptotic exchangeable regime.</p></li>
+<li><p>But <span class="orange">small values of <span class="math inline">w_n</span></span> leads to <span class="orange">poor learning</span> and <span class="orange">underestimation</span> of the <span class="orange">posterior variability</span>.</p></li>
 </ul>
 </div>
 <div class="fragment">
@@ -544,6 +558,14 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
   w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 </span> with <span class="math inline">\lambda\in(0.5,1]</span>, <span class="math inline">N_*&gt;0</span>.</p></li>
 </ul>
+</div>
+</section>
+<section id="illustrative-example-ii" class="slide level2 center">
+<h2>Illustrative example II</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/example_complete.jpg" class="quarto-figure quarto-figure-center" width="850"></p>
+</figure>
 </div>
 </section>
 <section id="multivariate-count-and-binary-data" class="slide level2 center">
@@ -680,14 +702,17 @@ k_*(\bm y\mid\bm y_n) = \prod_{j=1}^d k_*(y_j\mid y_{n,j}),
 <section id="thank-you" class="slide level2 center">
 <h2>Thank you!</h2>
 
-<img data-src="img/QR.png" class="quarto-figure quarto-figure-center r-stretch" style="width:3in"><p>The <span class="orange">main paper</span> is:</p>
-<p>Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. <em>Biometrika</em>, to appear.</p>
+<img data-src="img/QR.png" class="quarto-figure quarto-figure-center r-stretch" style="width:2.5in"><p>The <span class="orange">main paper</span> is:</p>
+<p>Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. <em>arXiv:2507.08629</em></p>
 </section>
 <section id="references" class="slide level2 unnumbered smaller scrollable">
 <h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Agnoletto2025" class="csl-entry" role="listitem">
 Agnoletto, D., Rigon, T., and Dunson, D. B. (2025), <span>“Bayesian inference for generalized linear models via quasi-posteriors,”</span> <em>Biometrika</em>, 112.
+</div>
+<div id="ref-aldous1985exchangeability" class="csl-entry" role="listitem">
+Aldous, D. J. (1985), <span>“Exchangeability and related topics, ecole d’et<span>é</span> de saint-flour XIII, lectures notes n 1117,”</span> Springer Verlag.
 </div>
 <div id="ref-berti2023kernel" class="csl-entry" role="listitem">
 Berti, P., Dreassi, E., Leisen, F., Pratelli, L., and Rigo, P. (2023b), <span>“Kernel based dirichlet sequences,”</span> <em>Bernoulli</em>, Bernoulli Society for Mathematical Statistics; Probability, 29, 1321–1342.
@@ -698,14 +723,14 @@ Berti, P., Dreassi, E., Leisen, F., Pratelli, L., and Rigo, P. (2023a), <span>�
 <div id="ref-berti_pratelli_2021" class="csl-entry" role="listitem">
 Berti, P., Dreassi, E., Pratelli, L., and Rigo, P. (2021), <span>“A class of models for <span>B</span>ayesian predictive inference,”</span> <em>Bernoulli</em>, 27, 702–726.
 </div>
+<div id="ref-berti2004limit" class="csl-entry" role="listitem">
+Berti, P., Pratelli, L., and Rigo, P. (2004), <span>“Limit theorems for a class of identically distributed random variables,”</span> 32, 2029–2052.
+</div>
 <div id="ref-bissiri2016general" class="csl-entry" role="listitem">
 Bissiri, P. G., Holmes, C. C., and Walker, S. G. (2016), <span>“A general framework for updating belief distributions,”</span> <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, Wiley Online Library, 78, 1103–1130.
 </div>
 <div id="ref-canale2011bayesian" class="csl-entry" role="listitem">
 Canale, A., and Dunson, D. B. (2011), <span>“Bayesian kernel mixtures for counts,”</span> <em>Journal of the American Statistical Association</em>, Taylor &amp; Francis, 106, 1528–1539.
-</div>
-<div id="ref-Canale2017" class="csl-entry" role="listitem">
-Canale, A., and Prünster, I. (2017), <span>“<span class="nocase">Robustifying Bayesian nonparametric mixtures for count data</span>,”</span> <em>Biometrics</em>, 73, 174–184.
 </div>
 <div id="ref-chernozhukov2003mcmc" class="csl-entry" role="listitem">
 Chernozhukov, V., and Hong, H. (2003), <span>“An <span>MCMC</span> approach to classical estimation,”</span> <em>Journal of econometrics</em>, Elsevier, 115, 293–346.
@@ -772,87 +797,6 @@ Rigon, T., Herring, A. H., and Dunson, D. B. (2023), <span>“A generalized <spa
 </div>
 <div id="ref-syring2019calibrating" class="csl-entry" role="listitem">
 Syring, N., and Martin, R. (2019), <span>“Calibrating general posterior credible regions,”</span> <em>Biometrika</em>, Oxford University Press, 106, 479–486.
-</div>
-</div>
-</section>
-<section id="appendix" class="slide level2 center">
-<h2>Appendix</h2>
-</section>
-<section id="empirical-consistency" class="slide level2 center">
-<h2>Empirical consistency</h2>
-
-<img data-src="img/emp_cons.jpg" style="width:85.0%" class="r-stretch quarto-figure-center"><p class="caption">Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.</p></section>
-<section id="predictive-resampling-for-mad-sequences" class="slide level2 center">
-<h2>Predictive resampling for MAD sequences</h2>
-<p><strong>Algorithm:</strong></p>
-<ol type="1">
-<li>Compute <span class="math inline">P_n(A)</span> from the observed data <span class="math inline">y_{1:n}</span></li>
-<li>Set <span class="math inline">N\gg n</span></li>
-<li>For <span class="math inline">j = 1,\ldots,B</span>
-<ul>
-<li>For <span class="math inline">i=n+1,\ldots,N</span>
-<ul>
-<li>Sample <span class="math inline">Y_i\mid y_{1:i-1}\sim P_{i-1}</span></li>
-<li>Update <span class="math inline">P_i(A) = (1-w_i)P_{i-1}(A) + w_i K_{i-1}(A\mid y_i)</span></li>
-</ul></li>
-<li>End For</li>
-</ul></li>
-<li>End For</li>
-<li>Return <span class="math inline">\big\{P_N^{(1)}(A),\ldots,P_N^{(B)}(A)\big\}</span>, an i.i.d. sample from the distribution of <span class="math inline">P_N(A)\mid y_{1:n}</span></li>
-</ol>
-</section>
-<section id="on-the-choice-of-the-base-kernel-1" class="slide level2 center">
-<h2>On the choice of the base kernel</h2>
-
-<img data-src="img/cor_var_plot.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"><p><span class="math display">
-\mathrm{var}\{P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{20,40,60,80\}
-</span> <span class="math display">
-\mathrm{cor}\{P_{n+1}(40),P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{10, 41, 80\}
-</span></p>
-</section>
-<section id="asymptotic-posterior-distributions-i" class="slide level2 center">
-<h2>Asymptotic posterior distributions I</h2>
-<div title="Theorem">
-<div class="callout callout-warning no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Theorem</strong></p>
-</div>
-<div class="callout-content">
-<p>Let <span class="math inline">(Y_n)_{n\ge1}</span> be a MAD sequence and let <span class="math inline">(r_n)_{n\ge1}</span> be a monotone sequence of positive numbers such that <span class="math inline">r_n\overset{\cdot}{=}(\sum_{k&gt;n}w_k^2)^{-1}</span> as <span class="math inline">n\rightarrow\infty</span>. Assume <span class="math inline">\sqrt{r_n}\sup_{k\ge n}w_k\rightarrow 0</span>, <span class="math inline">\sum_{k\ge1}r_k^2w_{k+1}^4&lt;\infty</span>, and that, for every <span class="math inline">H\ge1</span> and all measurable sets <span class="math inline">A_1,\ldots,A_H</span>, the random matrix <span class="math inline">\bm\Sigma = \bm\Sigma(A_1,\ldots,A_H) = [\Sigma_{jt}]</span> is positive definite. Then, for every <span class="math inline">H\ge1</span> and every <span class="math inline">A_1,\ldots,A_H</span>, <span class="math display">
-    \sqrt{r_n}\left[\begin{array}{c}
-     P(A_1)-P_n(A_1)\\
-     \cdots\\
-     P(A_H)-P_n(A_H)
-    \end{array}\right] \Big|\;
-Y_{1:n}
-    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm\Sigma)
-</span> <span class="math inline">\mathbb{P}</span>-a.s. for <span class="math inline">n\rightarrow\infty</span>.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="asymptotic-posterior-distributions-ii" class="slide level2 center">
-<h2>Asymptotic posterior distributions II</h2>
-<div title="Theorem">
-<div class="callout callout-warning no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Theorem</strong></p>
-</div>
-<div class="callout-content">
-<p>For every <span class="math inline">n\ge1</span> and all measurable sets <span class="math inline">A_1,\ldots,A_H</span>, let <span class="math inline">\bm\Sigma_n=\bm\Sigma_n(A_1,\ldots,A_H) = [\Sigma_{n,jt}]</span>. Then, under the assumptions of previous Theorem, <span class="math inline">\mathbb{P}</span>-a.s., <span class="math inline">\bm\Sigma_n\rightarrow\bm\Sigma</span> and <span class="math display">
-    \sqrt{r_n}\bm\Sigma_n^{-1/2}\left[\begin{array}{c}
-     P(A_1)-P_n(A_1)\\
-     \cdots\\
-     P(A_H)-P_n(A_H)
-    \end{array}\right] \Big|\;
-y_{1:n}
-    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm I)
-</span> for <span class="math inline">n\rightarrow\infty</span>, where <span class="math inline">\bm I</span> denotes the identity matrix.</p>
-</div>
-</div>
 </div>
 </div>
 

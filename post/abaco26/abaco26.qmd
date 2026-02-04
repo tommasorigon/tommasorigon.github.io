@@ -183,9 +183,11 @@ $$
 
 . . .
 
-- Solution: replace exchangeability with the weaker requirement that $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.blue} (CID), also known as [martingale posteriors]{.orange}. The CID condition requires
+- Solution: replace exchangeability with the weaker requirement that $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.blue} (CID), also known as [martingale posteriors]{.orange}. 
+
+- The CID condition requires
 $$
-\mathbb{P}(Y_{n+k} \in \cdot \mid y_{1:n}) = \mathbb{P}(Y_{n+1} \in \cdot \mid y_{1:n}) = P_n(\cdot), \qquad \text{for all }  k \ge 1, n \ge 1.
+\mathbb{P}(Y_{n+k} \in \cdot \mid y_{1:n}) = \mathbb{P}(Y_{n+1} \in \cdot \mid y_{1:n}) = P_n(\cdot), \qquad \text{for all} \quad  k \ge 1, \; n \ge 1.
 $$
 It is sufficient to verify this condition for $k = 1$ in order to ensure its validity for all $k  \ge 1$. 
 
@@ -198,93 +200,84 @@ $$
 
 . . .
 
-- This is a very lively recent topic: @fortini_petrone_2020; @berti_pratelli_2021; @fortini2021predictive; @berti2023without; @berti2023kernel; @fong_holmes_2023; @fong2024asymptotics; @fong2024bayesian; @cui2024martingale; @fortini2024exchangeability and more...
+- This is another [lively recent topic]{.blue}: @fortini_petrone_2020; @berti_pratelli_2021; @fortini2021predictive; @berti2023without; @berti2023kernel; @fong_holmes_2023; @fong2024asymptotics; @fong2024bayesian; @cui2024martingale; @fortini2024exchangeability and more...
 
 
 
 ## Nonparametric modelling of count data
 
-- A better estimator for counts distributions would be obtained by [replacing $\mathbb{1}(\cdot)$ with a kernel]{.orange} that allows the borrowing of information between nearby values.
-
-
-- Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task.
+- Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task. Nonparametric mixtures of discrete kernels [@canale2011bayesian] can be cumbersome in practice.
 
 . . .
 
-- Estimating nonparametric mixtures of discrete kernels [@canale2011bayesian; @Canale2017] can be cumbersome in practice.
-
-. . .
-
-- Alternatively, one can directly specify a [DP prior]{.orange} on the data generator as
+- Alternatively, one could directly specify a [DP prior]{.orange} on the data generator as
 $$
-    Y_i\mid P \sim P,\quad P\sim\mathrm{DP}(\alpha,P_0),
+    Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
 $$
 for $Y_i\in\mathcal{Y}=\{0,1,\ldots\}$, $i=1,\ldots,n$, where $\alpha$ is the precision parameter and $P_0$ a base parametric distribution, such as a Poisson.
 
 . . .
 
-- However, the corresponding posterior [lacks smoothing]{.orange}, leading to poor performance.
+- The Dirichlet process is mathematically convenient. However, the corresponding posterior [lacks smoothing]{.orange}, which can lead to poor performance.
+
+- Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.
 
 . . .
 
-- Within the hypothetical approach, it is not clear how to specify a nonparametric process having the same simplicity and flexibility as the DP prior while allowing smoothing.
+- [Our proposal]{.blue}: a predictive sequence tailored to count data inspired by kernel density estimators.
 
+## Illustrative example I
 
+![](img/example_plot.jpg){.nostretch fig-align="center" width="700px"}
 
+- [Left plot]{.orange}: posterior mean of a DP. [Right plot]{.blue}: posterior mean of the proposed MAD sequence. 
+
+## A recursive predictive rule
+
+- Intuitively, a better estimator would be obtained by replacing the indicator $\mathbb{1}(\cdot)$ of the DP predictive scheme with a [kernel]{.orange} that allows the [borrowing of information]{.blue} between nearby values.
+
+. . .
+
+- Let $Y_1\sim P_0$ and $Y_{n+1} \mid y_{1:n} \sim P_n$ for $n\ge 1$, and let $K_n(\cdot \mid y_n)$ be a sequence of transition kernels. We define the predictive distribution [recursively]{.orange}:
+$$
+    P_n(\cdot) = \mathbb{P}(Y_{n+1}\in \cdot\mid y_{1:n}) = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n), \qquad n \ge 1,
+$$
+where $(w_n)_{n\ge1}$ are decreasing weights such that $w_n\in(0,1)$, $\sum_{n\ge1}w_n = \infty$, and $\sum_{n\ge1}w_n^2<\infty$.
+
+- The choice of weights $w_n = (\alpha +n)^{-1}$ gives the following DP-like predictive rule
+$$
+P_n(\cdot) = \frac{\alpha}{\alpha + n} P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
+$$
+Hence, the predictive law of a DP is a special case whenever $K_i(\cdot \mid y_i) = \delta_{y_i}(\cdot)$. 
+
+:::{.callout-tip}
+The above sequence, beyond the DP special case, is [not exchangeable]{.orange} and it will [depend on the order]{.blue} of the data. Moreover, without further restrictions, is not necessarily CID!
+:::
 
 ## Metropolis-adjusted Dirichlet (MAD) sequences
 
-- We assume that $Y_1\sim P_0$ and $Y_{n+1}\mid y_{1:n}\sim P_n$ for $n\ge 1$, with
-$$
-    P_n(\cdot) = \mathbb{P}\{Y_{n+1}\in \cdot\mid y_{1:n}\} = (1-w_n) P_{n-1}(\cdot) + w_n K_{n}(\cdot\mid y_n),
-$$
-where $(w_n)_{n\ge1}$ is a sequence of decreasing weights such that $w_n\in(0,1)$ for every $n\ge1$, $\sum_{n\ge1}w_n = \infty$, and $\sum_{n\ge1}w_n^2<\infty$.
-
-. . .
-
-- [$K_{n}(\cdot\mid y_n)$]{.blue} denotes a [Metropolis-Hastings kernel]{.blue} centered in $y_n$ having pmf:
+- We assume that $K_{n}(\cdot\mid y_n)$ is a [Metropolis-Hastings kernel]{.blue} centered in $y_n$ having pmf:
 $$
     k_{n}(y\mid y_n) = \gamma_{n}(y,y_n) k_*(y\mid y_n) + \mathbb{1}(y=y_n)\Big[\sum_{z\in\mathcal{Y}}\big\{1-\gamma_{n}(z,y_n)\big\}k_*(z\mid y_n)\Big],
 $$
-where
+with acceptance probability
 $$
     \gamma_{n}(y,y_n) = \gamma(y, y_n, P_{n-1}) =
     \min\left\{1,\frac{p_{n-1}(y) k_*(y_n\mid y)}{p_{n-1}(y_n) k_*(y\mid y_n)}\right\},
 $$
-$p_{n-1}$ is the probability mass functions associated to $P_{n-1}$ and [$k_*(\cdot\mid y_n)$]{.orange} is a [discrete base kernel]{.orange} centered in $y_n$.
+where $p_{n-1}$ is the probability mass functions associated to $P_{n-1}$ and $k_*(\cdot\mid y_n)$ is the pmf of a [discrete base kernel]{.orange} centered at $y_n$.
+
+- We refer to $P_n$ above as the [Metropolis-adjusted Dirichlet]{.blue} (MAD) distribution with weights $(w_n)_{n\ge1}$, base kernel $k_*$ and initial distribution $P_0$. We call $(Y_n)_{n \ge 1}$ a MAD sequence.
 
 . . .
 
-- We refer to $P_n$ as the [Metropolis-adjusted Dirichlet]{.blue} (MAD) distribution with weights $(w_n)_{n\ge1}$, base kernel $k_*$ and initial distribution $P_0$.
-The corresponding sequence $(Y_n)_{n\ge1}$ is a MAD sequence.
-
-## MAD sequences are cid
-
-- If $w_n = (\alpha +n)^{-1}$, then the MAD distribution becomes
-$$
-    P_n(\cdot) = \frac{\alpha}{\alpha + n}P_0(\cdot) + \frac{1}{\alpha + n}\sum_{i=1}^nK_i(\cdot\mid y_i).
-$$
-
-. . .
-
-::: {.callout-warning title="Theorem"}
-Let $(Y_n)_{n\ge1}$ be a MAD sequence. Then, for every set of weights $(w_n)_{n \ge 1}$, discrete base kernel $k_*$, and initial distribution $P_0$, the sequence $(Y_n)_{n\ge1}$ is [conditionally identically distributed]{.blue}.
+::: {.callout-warning title="Theorem (Agnoletto, R. and Dunson, 2025)"}
+Let $(Y_n)_{n\ge1}$ be a MAD sequence. Then, for every set of weights $(w_n)_{n \ge 1}$, discrete base kernel $k_*$, and initial distribution $P_0$, the sequence $(Y_n)_{n\ge1}$ is [conditionally identically distributed (CID)]{.blue}.
 :::
 
-- A sequence $(Y_n)_{n\ge1}$ is conditionally identically distributed (cid) if, $\mathbb{P}$-a.s.,
-$$
-    \mathbb{P}\{Y_{n+k}\in\cdot\mid y_{1:n}\} = \mathbb{P}\{Y_{n+1}\in\cdot\mid y_{1:n}\}=P_n(\cdot)
-    \qquad k\ge1.
-$$
+## Bayesian properties of CID sequences I
 
-- This is equivalent to the martingale condition
-$$
-    \mathbb{E}\{P_{n+1}(\cdot)\mid y_{1:n}\} = P_{n}(\cdot).
-$$
-
-## Bayesian properties of cid sequences
-
-::: {.callout-note title="Corollary (Aldous 1985; Berti et al. 2004)"}
+::: {.callout-warning title="Corollary [@aldous1985exchangeability; @berti2004limit]"}
 Consider a MAD sequence $(Y_n)_{n\ge1}$. Then, $\mathbb{P}$-a.s.,
 
 $(a)$ The sequence is asymptotically exchangeable, that is 
@@ -293,45 +286,56 @@ $$
 $$
 where $(Z_1,Z_2,\ldots)$ is an exchangeable sequence with directing random probability measure $P$;
 
-$(b)$ the corresponding sequences of MAD predictive distributions $(P_n)_{n\ge1}$ and empirical distributions $(\hat{P}_n)_{n\ge1}$, where $\hat{P}_n := n^{-1}\sum_{i=1}^n \delta_{Y_i}$, converge to $P$ weakly.
+$(b)$ the corresponding sequence of predictive distributions $(P_n)_{n\ge1}$ weakly converge to a random probability measures $P$ (a.s. $\mathbb{P}$).
 :::
 
-- The ordering dependence will vanish asymptotically and, informally, $Y_i\mid P \overset{\mathrm{iid}}{\sim} P$ for large $n$.
-- $P$ exists and is defined as the limit of the sequence of MAD distributions.
+- An [asymptotic]{.blue} equivalent of [de Finetti]{.blue}’s theorem holds: each MAD sequence has a corresponding unique prior on $P$.
 
-## Predictive inference
+- The ordering dependence will vanish asymptotically and, informally, $Y_i \mid P \overset{\mathrm{iid}}{\sim} P$ [for large $n$]{.blue}.
 
-- Thus, an asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on $P$.
+- The random probability measure $P$ exists and is defined as the limit of the predictive distributions. However, it is [not available explicitly]{.orange}.
 
-- The prior and posterior on $P$ [exists]{.orange} but are [not available explicitly]{.orange}.
+## Bayesian properties of CID sequences II
 
-. . .
+::: {.callout-warning title="Corollary [@aldous1985exchangeability; @berti2004limit]"}
+Let $\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)$ and analogously $\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)$ be any functional of interest. Consider a MAD sequence $(Y_n)_{n\ge1}$. 
 
-::: {.callout-note title="Corollary"}
-Let [$\theta = P(f) = \sum_{y \in \mathcal{Y}} f(y) p(y)$]{.blue} and analogously [$\theta_n = P_n(f) = \sum_{y \in \mathcal{Y}} f(y) p_n(y)$]{.blue} be any functional of interest.
-Consider a MAD sequence $(Y_n)_{n\ge1}$. Then, $\mathbb{P}$-a.s., for every $n\ge1$ and every integrable function $f:\mathcal{Y}\rightarrow\mathbb{R}$, we have 
+Then, $\mathbb{P}$-a.s., for every $n\ge1$ and every integrable function $f:\mathcal{Y}\rightarrow\mathbb{R}$, we have 
 $$
 \mathbb{E}(\theta \mid y_{1:n}) = \mathbb{E}\{P(f) \mid y_{1:n}\} = P_n(f) = \theta_n
 $$
 :::
 
-- Moreover, we also have that $\theta = \mathbb{E}\{P(f)\}=P_0(f) = \theta_0$ for every integrable function $f$, so that [$P_0$]{.blue} retains the role of a [base measure]{.blue} as for standard Dirichlet sequences, providing an initial guess at $P$.
+- Broadly speaking, the posterior mean of any functional of interest of $P$ coincides with the functional of the predictive. 
+
+- Moreover, $\mathbb{E}\{P(f)\}= P_0(f) = \theta_0$ for every integrable function $f$, so that $P_0$ retains the role of a [base measure]{.blue} as for standard Dirichlet sequences, providing an initial guess at $P$.
 
 . . .
 
 - Uncertainty quantification for $\theta=P(f)$ is carried out by [predictive resampling]{.blue} [@fong_holmes_2023].
 
-## Illustrative example
+## Predictive resampling for MAD sequences
 
-![](img/pl_ill_slide.jpg)
+**Algorithm [@fortini_petrone_2020]:**
+
+1. Compute $P_n(\cdot)$ from the observed data $y_{1:n}$
+2. Set $N\gg n$
+3. For $j = 1,\ldots,B$
+    a. For $i=n+1,\ldots,N$
+        i. Sample $Y_i\mid y_{1:i-1}\sim P_{i-1}$
+        ii. Update $P_i(\cdot) = (1-w_i)P_{i-1}(\cdot) + w_i K_{i-1}(\cdot\mid y_i)$
+    b. End For
+4. End For
+5. Return $P_N^{(1)}(\cdot),\ldots,P_N^{(B)}(\cdot)$, an iid sample from the distribution of $P_N(\cdot)\mid y_{1:n}$
+
 
 ## On the choice of the base kernel
 
-- [Any discrete distribution can be chosen as base kernel $k_*$]{.orange}.
+- In principle, any discrete distribution can be chosen as the base kernel $k_*$. However, it is natural to consider choices that allow the kernel to be centered at $y_n$ while permitting control over the variance.
 
 . . .
 
-- To improve flexibility, we consider a [rounded Gaussian]{.blue} distribution centered in $y_n$, with pmf
+- We consider a [rounded Gaussian]{.blue} distribution centered in $y_n$, with pmf
 $$
     k_*(y\mid y_n, \sigma) = \frac{\int_{y-1/2}^{y+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t}{\sum_{z\in\mathcal{Y}} \int_{z-1/2}^{z+1/2}\mathcal{N}(t\mid y_n, \sigma^2) \mathrm{d}t},
 $$
@@ -339,19 +343,20 @@ for $n\ge1$, where $\mathcal{N}(\cdot\mid y_n,\sigma^2)$ denotes a normal densit
 
 . . .
 
-![](img/ker_plot_slide.jpg){fig-align="center" width="100%"}
+![](img/ker_plot_slide.jpg){.nostretch fig-align="center" width="850px"}
 
 ## Role of the weights in controlling posterior variability
 
-- The distribution of $P(A)\mid y_{1:n}$ is approximated by $\mathcal{N}(P_n(A), \Sigma_nr_n^{-1})$ for $n$ large, where
+- It can be shown that the distribution of $P(A)\mid y_{1:n}$ is approximated by $\mathcal{N}(P_n(A), \Sigma_n r_n^{-1})$ for $n$ large, where the variance is
 $$
     \Sigma_n r_n^{-1} 
-    \overset{\cdot}{=} \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k>n+1}w_k^2.
+    \approx \mathbb{E}\{[P_{n+1}(A)-P_n(A)]^2\mid y_{1:n}\}\sum_{k>n+1}w_k^2.
 $$
 
 . . .
 
 - Weights that [decay to zero quickly]{.blue} induce [fast learning and convergence]{.blue} to the asymptotic exchangeable regime.
+
 - But [small values of $w_n$]{.orange} leads to [poor learning]{.orange} and [underestimation]{.orange} of the [posterior variability]{.orange}.
 
 . . .
@@ -364,6 +369,11 @@ $$
     w_n=(\alpha+n)^{-\lambda_n}, \qquad \lambda_n=\lambda+(1+\lambda)\exp\bigg\{-\frac{1}{N_*}n\bigg\},
 $$
 with $\lambda\in(0.5,1]$, $N_*>0$.
+
+## Illustrative example II
+
+![](img/example_complete.jpg){.nostretch fig-align="center" width="850px"}
+
 
 ## Multivariate count and binary data
 
@@ -413,84 +423,14 @@ Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for regressi
 
 ## Thank you!
 
-![](img/QR.png){width=3in fig-align="center"}
+![](img/QR.png){width=2.5in fig-align="center"}
 
 The [main paper]{.orange} is: 
 
-Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear.
+Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. *arXiv:2507.08629*
 
 ## References {.unnumbered .smaller}
 
 ::: {#refs}
 :::
-
-
-## Appendix
-
-
-
-## Empirical consistency
-
-![Illustrative example. Hellinger distance of MAD-ada (red), MAD-1 (blue), and DP (black) predictive distributions with respect to the density of the true data generator.](img/emp_cons.jpg){fig-align="center" width="85%"}
-
-## Predictive resampling for MAD sequences
-
-**Algorithm:**
-
-1. Compute $P_n(A)$ from the observed data $y_{1:n}$
-2. Set $N\gg n$
-3. For $j = 1,\ldots,B$
-    - For $i=n+1,\ldots,N$
-        - Sample $Y_i\mid y_{1:i-1}\sim P_{i-1}$
-        - Update $P_i(A) = (1-w_i)P_{i-1}(A) + w_i K_{i-1}(A\mid y_i)$
-    - End For
-4. End For
-5. Return $\big\{P_N^{(1)}(A),\ldots,P_N^{(B)}(A)\big\}$, an i.i.d. sample from the distribution of $P_N(A)\mid y_{1:n}$
-
-## On the choice of the base kernel
-
-![](img/cor_var_plot.jpg){fig-align="center" width="85%"}
-
-$$
-\mathrm{var}\{P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{20,40,60,80\}
-$$
-$$
-\mathrm{cor}\{P_{n+1}(40),P_{n+1}(y)\mid y_{1:n}\}, \text{ with } y\in\{10, 41, 80\}
-$$
-
-## Asymptotic posterior distributions I
-
-::: {.callout-warning title="Theorem"}
-Let $(Y_n)_{n\ge1}$ be a MAD sequence and let $(r_n)_{n\ge1}$ be a monotone sequence of positive numbers such that $r_n\overset{\cdot}{=}(\sum_{k>n}w_k^2)^{-1}$ as $n\rightarrow\infty$.
-Assume $\sqrt{r_n}\sup_{k\ge n}w_k\rightarrow 0$, $\sum_{k\ge1}r_k^2w_{k+1}^4<\infty$, and that, for every $H\ge1$ and all measurable sets $A_1,\ldots,A_H$, the random matrix $\bm\Sigma = \bm\Sigma(A_1,\ldots,A_H) = [\Sigma_{jt}]$ is positive definite.
-Then, for every $H\ge1$ and every $A_1,\ldots,A_H$, 
-$$
-    \sqrt{r_n}\left[\begin{array}{c}
-     P(A_1)-P_n(A_1)\\
-     \cdots\\
-     P(A_H)-P_n(A_H)
-    \end{array}\right] \Big|\;
-Y_{1:n}
-    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm\Sigma)
-$$
-$\mathbb{P}$-a.s. for $n\rightarrow\infty$.
-:::
-
-## Asymptotic posterior distributions II
-
-::: {.callout-warning title="Theorem"}
-For every $n\ge1$ and all measurable sets $A_1,\ldots,A_H$, let $\bm\Sigma_n=\bm\Sigma_n(A_1,\ldots,A_H) = [\Sigma_{n,jt}]$.
-Then, under the assumptions of previous Theorem, $\mathbb{P}$-a.s., $\bm\Sigma_n\rightarrow\bm\Sigma$ and
-$$
-    \sqrt{r_n}\bm\Sigma_n^{-1/2}\left[\begin{array}{c}
-     P(A_1)-P_n(A_1)\\
-     \cdots\\
-     P(A_H)-P_n(A_H)
-    \end{array}\right] \Big|\;
-y_{1:n}
-    \overset{d}{\longrightarrow} \mathcal{N}_H(\bm0,\bm I)
-$$
-for $n\rightarrow\infty$, where $\bm I$ denotes the identity matrix.
-:::
-
 

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.7.32" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
-<meta name="author" content="Tommaso Rigon" />
-<meta name="dcterms.date" content="2025-09-26" />
-<meta name="description" content="Presentation of a project for the course Bayesian Statistics at the Politecnico di Milano" />
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2025-09-26">
+<meta name="description" content="Presentation of a project for the course Bayesian Statistics at the Politecnico di Milano">
 
 <title>Project presentation – Tommaso Rigon</title>
 <style>
@@ -47,7 +45,20 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3111f4bc39e569af9b8dff312645f3ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -65,7 +76,7 @@ div.csl-indent {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
@@ -80,7 +91,7 @@ div.csl-indent {
    });
 }}});
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -111,41 +122,39 @@ window.Quarto = {
 
 </head>
 
-<body>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/papers.html"> 
+    <a class="nav-link" href="../../papers.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/bio.html"> 
+    <a class="nav-link" href="../../bio.html"> 
 <span class="menu-text">Short Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/teaching.html"> 
+    <a class="nav-link" href="../../teaching.html"> 
 <span class="menu-text">Teaching &amp; Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/tesi.html"> 
+    <a class="nav-link" href="../../tesi.html"> 
 <span class="menu-text">Thesis Information (ITA)</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/post.html"> 
+    <a class="nav-link" href="../../post.html"> 
 <span class="menu-text">Blogpost</span></a>
   </li>  
 </ul>
@@ -160,10 +169,19 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#short-bio" id="toc-short-bio" class="nav-link active" data-scroll-target="#short-bio">Short Bio</a></li>
+  <li><a href="#hyperbolic-secant-regression" id="toc-hyperbolic-secant-regression" class="nav-link" data-scroll-target="#hyperbolic-secant-regression">Hyperbolic secant regression</a></li>
+  <li><a href="#objectives-and-expectations" id="toc-objectives-and-expectations" class="nav-link" data-scroll-target="#objectives-and-expectations">Objectives and expectations</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Polimi2025_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -177,7 +195,7 @@ window.Quarto = {
   </div>
 </div>
 
-<div class="quarto-title-meta-author">
+<div class="quarto-title-meta-author column-page-left">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -191,7 +209,7 @@ window.Quarto = {
       </div>
   </div>
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
       
     <div>
@@ -208,18 +226,9 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#short-bio" id="toc-short-bio">Short Bio</a></li>
-  <li><a href="#hyperbolic-secant-regression" id="toc-hyperbolic-secant-regression">Hyperbolic secant regression</a></li>
-  <li><a href="#objectives-and-expectations" id="toc-objectives-and-expectations">Objectives and expectations</a></li>
-  <li><a href="#references" id="toc-references">References</a></li>
-  </ul>
-</nav>
+
 <section id="short-bio" class="level2">
-<h2>Short Bio</h2>
+<h2 class="anchored" data-anchor-id="short-bio">Short Bio</h2>
 <ul>
 <li><p>My name is <span class="blue">Tommaso Rigon</span> and I am a <span class="orange">Senior Assistant Professor</span> (RTD-B).</p></li>
 <li><p><span class="blue">University of Milano-Bicocca</span>, Department of Economics, Management and Statistics (DEMS), Milan, Italy.</p>
@@ -236,7 +245,7 @@ window.Quarto = {
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon no-icon'></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Education
@@ -244,7 +253,7 @@ Education
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><span class="orange">Ph.D. in Statistical Sciences</span>, <a href="https://www.unibocconi.eu/">Bocconi University</a>, Milan, Italy.</li>
+<li><span class="orange">Ph.D.&nbsp;in Statistical Sciences</span>, <a href="https://www.unibocconi.eu/">Bocconi University</a>, Milan, Italy.</li>
 <li><span class="blue">M.Sc. in Statistical Sciences</span>, <a href="https://www.unipd.it">University of Padova</a>, Padua, Italy.</li>
 <li><span class="grey">B.Sc. in Statistics, Economics &amp; Finance</span>, <a href="https://www.unipd.it">University of Padova</a>, Padua, Italy.</li>
 </ul>
@@ -252,11 +261,11 @@ Education
 </div>
 </section>
 <section id="hyperbolic-secant-regression" class="level2">
-<h2>Hyperbolic secant regression</h2>
+<h2 class="anchored" data-anchor-id="hyperbolic-secant-regression">Hyperbolic secant regression</h2>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon no-icon'></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Background
@@ -274,11 +283,11 @@ f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\
 </ul>
 </section>
 <section id="objectives-and-expectations" class="level2">
-<h2>Objectives and expectations</h2>
+<h2 class="anchored" data-anchor-id="objectives-and-expectations">Objectives and expectations</h2>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon no-icon'></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Research gap
@@ -300,7 +309,7 @@ Research gap
 <div class="callout callout-style-simple callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon no-icon'></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Expected outcome
@@ -313,14 +322,13 @@ Expected outcome
 </div>
 </section>
 <section id="references" class="level2">
-<h2>References</h2>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UGFwZXJz">Papers</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcGVycy5odG1s">/papers.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U2hvcnQgQmlv">Short Bio</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2Jpby5odG1s">/bio.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6VGVhY2hpbmcgJiBTbGlkZXM=">Teaching &amp; Slides</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3RlYWNoaW5nLmh0bWw=">/teaching.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6VGhlc2lzIEluZm9ybWF0aW9uIChJVEEp">Thesis Information (ITA)</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Rlc2kuaHRtbA==">/tesi.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QmxvZ3Bvc3Q=">Blogpost</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Bvc3QuaHRtbA==">/post.html</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Project presentation – Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Project presentation – Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Project presentation – Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Tommaso Rigon</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Presentation of a project for the course Bayesian Statistics at the Politecnico di Milano</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Presentation of a project for the course Bayesian Statistics at the Politecnico di Milano</span></p>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Agnoletto2025" class="csl-entry" role="listitem">
 Agnoletto, D., Rigon, T., and Dunson, D. B. (2025), <span>“Bayesian inference for generalized linear models via quasi-posteriors,”</span> <em>Biometrika</em>, 112.
 </div>
@@ -330,11 +338,8 @@ Morris, C. N. (1982), <span>“Natural exponential families with quadratic varia
 <div id="ref-Polson2013" class="csl-entry" role="listitem">
 Polson, N. G., Scott, J. G., and Windle, J. (2013), <span>“Bayesian inference for logistic models using polya-gamma latent variables,”</span> <em>Journal of the American Statistical Association</em>, Taylor {&amp;} Francis, 108, 1–42.
 </div>
-</div>
-</section>
-
-</main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -735,6 +740,8 @@ Polson, N. G., Scott, J. G., and Windle, J. (2013), <span>“Bayesian inference 
   </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

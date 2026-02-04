@@ -1696,7 +1696,7 @@
   {
     "objectID": "post/Poli2025/Polimi2025_slides.html#short-bio",
     "href": "post/Poli2025/Polimi2025_slides.html#short-bio",
-    "title": "Tutor: Tommaso Rigon",
+    "title": "Project presentation",
     "section": "Short Bio",
     "text": "Short Bio\n\nMy name is Tommaso Rigon and I am a Senior Assistant Professor (RTD-B).\nUniversity of Milano-Bicocca, Department of Economics, Management and Statistics (DEMS), Milan, Italy.\n\nSenior Assistant Professor (RTD-B), 2023 - Present\nJunior Assistant Professor (RTD-A), 2020 - 2023\n\nDuke University, Department of Statistical Science, Durham (NC), U.S.A.\n\nPostdoctoral Associate, 2020 - 2020\nResearch Associate, 2019 - 2020\n\n\n\n\n\nEducation\n\n\n\nPh.D. in Statistical Sciences, Bocconi University, Milan, Italy.\nM.Sc. in Statistical Sciences, University of Padova, Padua, Italy.\nB.Sc. in Statistics, Economics & Finance, University of Padova, Padua, Italy."
   },
@@ -1724,7 +1724,7 @@
   {
     "objectID": "post/Poli2025/Polimi2025_slides.html#hyperbolic-secant-regression",
     "href": "post/Poli2025/Polimi2025_slides.html#hyperbolic-secant-regression",
-    "title": "Tutor: Tommaso Rigon",
+    "title": "Project presentation",
     "section": "Hyperbolic secant regression",
     "text": "Hyperbolic secant regression\n\n\n\nBackground\n\n\nLet Y_1,\\dots,Y_n be independent random variable distributed according to a hyperbolic secant distribution, whose density is \nf(y_i; \\theta_i) = \\frac{\\exp\\{\\theta_i y_i - \\log{\\cos(\\theta_i)} \\}}{2 \\cosh(\\pi y_i / 2)}, \\qquad y_i \\in \\mathbb{R}, \\; \\theta_i \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right).\n This distribution is discussed in Morris (1982) and is an instance of highly tractable exponential family having a quadratic variance function.\n\n\n\n\nThis distribution can be employed to build a novel generalized linear model (GLM), which automatically incorporates heteroskedasticity and exhibits heavier tails than the Gaussian law.\nThere are multiple application areas for such a regression technique, including (but not limited to) financial data."
   },
@@ -1745,7 +1745,7 @@
   {
     "objectID": "post/Poli2025/Polimi2025_slides.html#references",
     "href": "post/Poli2025/Polimi2025_slides.html#references",
-    "title": "Tutor: Tommaso Rigon",
+    "title": "Project presentation",
     "section": "References",
     "text": "References\n\n\n\n\nAgnoletto, D., Rigon, T., and Dunson, D. B. (2025), “Bayesian inference for generalized linear models via quasi-posteriors,” Biometrika, 112.\n\n\nMorris, C. N. (1982), “Natural exponential families with quadratic variance functions,” Annals of Statistics, 10, 65–80.\n\n\nPolson, N. G., Scott, J. G., and Windle, J. (2013), “Bayesian inference for logistic models using polya-gamma latent variables,” Journal of the American Statistical Association, Taylor {&} Francis, 108, 1–42."
   },
@@ -1766,7 +1766,7 @@
   {
     "objectID": "post/Poli2025/Polimi2025_slides.html#objectives-and-expectations",
     "href": "post/Poli2025/Polimi2025_slides.html#objectives-and-expectations",
-    "title": "Tutor: Tommaso Rigon",
+    "title": "Project presentation",
     "section": "Objectives and expectations",
     "text": "Objectives and expectations\n\n\n\nResearch gap\n\n\n\nA systematic Bayesian investigation of such a GLM is entirely lacking. In principle, this GLM framework can be combined with modern Bayesian tools for regression, such as:\n\nVariable selection and regularization, e.g., shrinkage priors or spike-and-slab priors.\nRandom effects (parametric and nonparametric).\nGeneralized Additive Models (GAMs), e.g., Gaussian Processes.\n\nOverdispersion may require novel generalized Bayes techniques (Agnoletto et al. 2025).\nA Polya-gamma data augmentation scheme may be applicable by adapting the results in Polson et al. (2013). If not, Hamiltonian Monte Carlo (HMC) remains a feasible option.\n\n\n\n\n\n\n\nExpected outcome\n\n\nThe group is expected to implement and develop 2–3 of the research gaps outlined above.\nI expect the group to be proficient in R programming (knowledge of C++ is a strong asset, though probably not essential). Most of the work will focus on the practical implementation of these ideas."
   },

@@ -48,6 +48,35 @@ categories: talk
 
 :::
 
+## Nonparametric modelling of count data
+
+- Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task. Nonparametric mixtures of discrete kernels [@canale2011bayesian] can be cumbersome in practice.
+
+. . .
+
+- Alternatively, one could directly specify a [DP prior]{.orange} on the data generator as
+$$
+    Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
+$$
+for $Y_i\in\mathcal{Y}=\{0,1,\ldots\}$, $i=1,\ldots,n$, where $\alpha$ is the precision parameter and $P_0$ a base parametric distribution, such as a Poisson.
+
+. . .
+
+- The Dirichlet process is mathematically convenient. However, the corresponding posterior [lacks smoothing]{.orange}, which can lead to poor performance.
+
+- Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.
+
+. . .
+
+- [Our proposal]{.blue}: a predictive sequence tailored to count data inspired by kernel density estimators.
+
+## Illustrative example I
+
+![](img/example_plot.jpg){.nostretch fig-align="center" width="700px"}
+
+- [Left plot]{.orange}: posterior mean of a DP. [Right plot]{.blue}: posterior mean of the proposed MAD sequence. 
+
+
 ## Foundations
 
 - De Finetti’s representation Theorem [@de1937prevision] it provides the fundamental justification to the [two approaches]{.blue} to [Bayesian statistics]{.orange}: the [hypothetical]{.orange} approach and the [predictive]{.blue} approach.
@@ -204,33 +233,6 @@ $$
 
 
 
-## Nonparametric modelling of count data
-
-- Bayesian nonparametric modeling of [counts distributions]{.blue} is a challenging task. Nonparametric mixtures of discrete kernels [@canale2011bayesian] can be cumbersome in practice.
-
-. . .
-
-- Alternatively, one could directly specify a [DP prior]{.orange} on the data generator as
-$$
-    Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
-$$
-for $Y_i\in\mathcal{Y}=\{0,1,\ldots\}$, $i=1,\ldots,n$, where $\alpha$ is the precision parameter and $P_0$ a base parametric distribution, such as a Poisson.
-
-. . .
-
-- The Dirichlet process is mathematically convenient. However, the corresponding posterior [lacks smoothing]{.orange}, which can lead to poor performance.
-
-- Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.
-
-. . .
-
-- [Our proposal]{.blue}: a predictive sequence tailored to count data inspired by kernel density estimators.
-
-## Illustrative example I
-
-![](img/example_plot.jpg){.nostretch fig-align="center" width="700px"}
-
-- [Left plot]{.orange}: posterior mean of a DP. [Right plot]{.blue}: posterior mean of the proposed MAD sequence. 
 
 ## A recursive predictive rule
 

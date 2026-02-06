@@ -201,6 +201,41 @@
 </div>
 </div></div>
 </section>
+<section id="nonparametric-modelling-of-count-data" class="slide level2 center">
+<h2>Nonparametric modelling of count data</h2>
+<ul>
+<li>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task. Nonparametric mixtures of discrete kernels <span class="citation" data-cites="canale2011bayesian">(<a href="#/references" role="doc-biblioref" onclick="">Canale and Dunson 2011</a>)</span> can be cumbersome in practice.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Alternatively, one could directly specify a <span class="orange">DP prior</span> on the data generator as <span class="math display">
+  Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
+</span> for <span class="math inline">Y_i\in\mathcal{Y}=\{0,1,\ldots\}</span>, <span class="math inline">i=1,\ldots,n</span>, where <span class="math inline">\alpha</span> is the precision parameter and <span class="math inline">P_0</span> a base parametric distribution, such as a Poisson.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>The Dirichlet process is mathematically convenient. However, the corresponding posterior <span class="orange">lacks smoothing</span>, which can lead to poor performance.</p></li>
+<li><p>Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><span class="blue">Our proposal</span>: a predictive sequence tailored to count data inspired by kernel density estimators.</li>
+</ul>
+</div>
+</section>
+<section id="illustrative-example-i" class="slide level2 center">
+<h2>Illustrative example I</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/example_plot.jpg" class="quarto-figure quarto-figure-center" width="700"></p>
+</figure>
+</div>
+<ul>
+<li><span class="orange">Left plot</span>: posterior mean of a DP. <span class="blue">Right plot</span>: posterior mean of the proposed MAD sequence.</li>
+</ul>
+</section>
 <section id="foundations" class="slide level2 center">
 <h2>Foundations</h2>
 <ul>
@@ -362,41 +397,6 @@ Y_{n+1}, Y_{n+2}, Y_{n+3}, \dots .
 <li>This is another <span class="blue">lively recent topic</span>: <span class="citation" data-cites="fortini_petrone_2020">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="berti_pratelli_2021">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="fortini2021predictive">Fortini et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="berti2023without">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023a</a>)</span>; <span class="citation" data-cites="berti2023kernel">Berti et al. (<a href="#/references" role="doc-biblioref" onclick="">2023b</a>)</span>; <span class="citation" data-cites="fong_holmes_2023">Fong et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="fong2024asymptotics">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024a</a>)</span>; <span class="citation" data-cites="fong2024bayesian">Fong and Yiu (<a href="#/references" role="doc-biblioref" onclick="">2024b</a>)</span>; <span class="citation" data-cites="cui2024martingale">Cui and Walker (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="fortini2024exchangeability">Fortini and Petrone (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> and more…</li>
 </ul>
 </div>
-</section>
-<section id="nonparametric-modelling-of-count-data" class="slide level2 center">
-<h2>Nonparametric modelling of count data</h2>
-<ul>
-<li>Bayesian nonparametric modeling of <span class="blue">counts distributions</span> is a challenging task. Nonparametric mixtures of discrete kernels <span class="citation" data-cites="canale2011bayesian">(<a href="#/references" role="doc-biblioref" onclick="">Canale and Dunson 2011</a>)</span> can be cumbersome in practice.</li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Alternatively, one could directly specify a <span class="orange">DP prior</span> on the data generator as <span class="math display">
-  Y_i\mid P \overset{\textup{iid}}{\sim} P,\quad P\sim\mathrm{DP}(\alpha, P_0),
-</span> for <span class="math inline">Y_i\in\mathcal{Y}=\{0,1,\ldots\}</span>, <span class="math inline">i=1,\ldots,n</span>, where <span class="math inline">\alpha</span> is the precision parameter and <span class="math inline">P_0</span> a base parametric distribution, such as a Poisson.</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><p>The Dirichlet process is mathematically convenient. However, the corresponding posterior <span class="orange">lacks smoothing</span>, which can lead to poor performance.</p></li>
-<li><p>Within the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.</p></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><span class="blue">Our proposal</span>: a predictive sequence tailored to count data inspired by kernel density estimators.</li>
-</ul>
-</div>
-</section>
-<section id="illustrative-example-i" class="slide level2 center">
-<h2>Illustrative example I</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/example_plot.jpg" class="quarto-figure quarto-figure-center" width="700"></p>
-</figure>
-</div>
-<ul>
-<li><span class="orange">Left plot</span>: posterior mean of a DP. <span class="blue">Right plot</span>: posterior mean of the proposed MAD sequence.</li>
-</ul>
 </section>
 <section id="a-recursive-predictive-rule" class="slide level2 center">
 <h2>A recursive predictive rule</h2>

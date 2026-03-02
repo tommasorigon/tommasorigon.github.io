@@ -45,8 +45,8 @@ Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di
 | 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Distribuzione secante iperbolica: caratterizzazione, generalizzazione e applicazioni in modelli lineari generalizzati](files/papers/Mucillli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) | - |
 | 2024/2025 | [Magistrale]{.orange} | Tommaso Menghini | [Sondaggi elettorali: studio sull’affidabilità statistica degli istituti demoscopici e delle loro distorsioni sistematiche](files/papers/Menghini_magistrale.pdf) - [Slides](files/papers/Menghini_magistrale_slides.pdf) | - |
 |  |  |  | **Dottorato di ricerca** |
-| 2023 | [**Ph.D.**]{.darkred} (Duke) | Alessandro Zito | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard University) |
-| 2024 | [**Ph.D.**]{.darkred} (Unipd) | Davide Agnoletto | [Statistical modeling within the generalized Bayesian paradigm](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke University)
+| 2023 | [**Ph.D.**]{.darkred} (Duke) | Alessandro Zito | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard) |
+| 2024 | [**Ph.D.**]{.darkred} (Unipd) | Davide Agnoletto | [Statistical modeling within the generalized Bayesian paradigm](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke)
 
 
 : Thesis {tbl-colwidths="\[3, 10, 20, 75, 40\]"}

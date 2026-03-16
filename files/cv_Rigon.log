@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  9 MAR 2026 09:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  16 MAR 2026 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -860,18 +860,13 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/
 texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texliv
 e/2025/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 323.
+(Font)              scaled to size 10.0pt on input line 325.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpltlf/b/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
@@ -886,17 +881,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-LaTeX Font Info:    Faking \texteuro for font family zpltlf
-(Font)              in TS1 encoding on input line 363.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.99997pt on input line 363.
 
 Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
+LaTeX Font Info:    Faking \texteuro for font family zpltlf
+(Font)              in TS1 encoding on input line 365.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.99997pt on input line 365.
 
 Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
@@ -907,24 +907,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 478.
+(Font)              scaled to size 10.0pt on input line 480.
 
-Overfull \hbox (1.52031pt too wide) in paragraph at lines 483--483
+Overfull \hbox (1.52031pt too wide) in paragraph at lines 485--485
 []\T1/zpltlf/m/sc/10 (-20) Presentations  
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
-03.
+05.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 503.
+(Font)              scaled to size 10.0pt on input line 505.
 
 
 [5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 657.
+(Font)              scaled to size 8.0pt on input line 659.
 
 
 [7] 
@@ -938,21 +938,21 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 17457 strings out of 473190
- 268465 string characters out of 5715800
+ 17461 strings out of 473190
+ 268539 string characters out of 5715800
  698213 words of memory out of 5000000
  40191 multiletter control sequences out of 15000+600000
- 625046 words of font info for 175 fonts, out of 8000000 for 9000
+ 625237 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,1005b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,13n,93p,1005b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171216 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171344 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 500000)
  32385 words of extra memory for PDF output out of 35830 (max. 10000000)
 

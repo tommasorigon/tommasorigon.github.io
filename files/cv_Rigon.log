@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  16 MAR 2026 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  16 MAR 2026 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,7 +924,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 659.
+(Font)              scaled to size 8.0pt on input line 661.
 
 
 [7] 
@@ -944,12 +944,12 @@ Here is how much of TeX's memory you used:
  40191 multiletter control sequences out of 15000+600000
  625237 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,1005b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,13n,93p,1005b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171344 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171480 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams

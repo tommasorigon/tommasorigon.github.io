@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tommaso Rigon">
+<meta name="dcterms.date" content="2026-04-09">
+<meta name="description" content="A joint work with Lorenzo Ghilotti, Federico Camerlenghi and Michele Guindani presented at the Università di Roma la Sapienza.">
+
+<title>BNP modeling of multivariate count data with unknown traits – Tommaso Rigon</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3111f4bc39e569af9b8dff312645f3ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../papers.html"> 
+<span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../bio.html"> 
+<span class="menu-text">Short Bio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching &amp; Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tesi.html"> 
+<span class="menu-text">Thesis Information (ITA)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post.html"> 
+<span class="menu-text">Blogpost</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#exchangeable-trait-allocation-models" id="toc-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#exchangeable-trait-allocation-models">Exchangeable trait allocation models</a></li>
+  <li><a href="#data-from-an-exchangeable-trait-model" id="toc-data-from-an-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-an-exchangeable-trait-model">Data from an exchangeable trait model</a></li>
+  <li><a href="#model-specification" id="toc-model-specification" class="nav-link" data-scroll-target="#model-specification">Model specification</a></li>
+  <li><a href="#discrete-random-measure-representation" id="toc-discrete-random-measure-representation" class="nav-link" data-scroll-target="#discrete-random-measure-representation">Discrete random measure representation</a></li>
+  <li><a href="#partially-exchangeable-trait-allocation-models" id="toc-partially-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models<br>
+  </a></li>
+  <li><a href="#data-from-a-partially-exchangeable-trait-model" id="toc-data-from-a-partially-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-a-partially-exchangeable-trait-model">Data from a partially exchangeable trait model</a></li>
+  <li><a href="#model-specification-known-groups" id="toc-model-specification-known-groups" class="nav-link" data-scroll-target="#model-specification-known-groups">Model specification (known groups)</a></li>
+  <li><a href="#prior-specification-i" id="toc-prior-specification-i" class="nav-link" data-scroll-target="#prior-specification-i">Prior specification I</a></li>
+  <li><a href="#prior-specification-ii" id="toc-prior-specification-ii" class="nav-link" data-scroll-target="#prior-specification-ii">Prior specification II</a></li>
+  <li><a href="#distribution-theory" id="toc-distribution-theory" class="nav-link" data-scroll-target="#distribution-theory">Distribution theory</a>
+  <ul class="collapse">
+  <li><a href="#the-augmented-likelihood-function" id="toc-the-augmented-likelihood-function" class="nav-link" data-scroll-target="#the-augmented-likelihood-function">The augmented likelihood function</a></li>
+  <li><a href="#marginal-distribution" id="toc-marginal-distribution" class="nav-link" data-scroll-target="#marginal-distribution">Marginal distribution</a></li>
+  <li><a href="#example-binary-traits-i" id="toc-example-binary-traits-i" class="nav-link" data-scroll-target="#example-binary-traits-i">Example: binary traits I</a></li>
+  <li><a href="#posterior-distribution" id="toc-posterior-distribution" class="nav-link" data-scroll-target="#posterior-distribution">Posterior distribution</a></li>
+  <li><a href="#example-binary-traits-ii" id="toc-example-binary-traits-ii" class="nav-link" data-scroll-target="#example-binary-traits-ii">Example: binary traits II</a></li>
+  </ul></li>
+  <li><a href="#clustering-trait-allocation-models" id="toc-clustering-trait-allocation-models" class="nav-link" data-scroll-target="#clustering-trait-allocation-models">Clustering trait allocation models</a>
+  <ul class="collapse">
+  <li><a href="#latent-class-models-with-an-unknown-number-of-traits" id="toc-latent-class-models-with-an-unknown-number-of-traits" class="nav-link" data-scroll-target="#latent-class-models-with-an-unknown-number-of-traits">Latent class models with an unknown number of traits</a></li>
+  </ul></li>
+  <li><a href="#infinito-network" id="toc-infinito-network" class="nav-link" data-scroll-target="#infinito-network"><em>Infinito</em> network</a>
+  <ul class="collapse">
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="roma26_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BNP modeling of multivariate count data with unknown traits</h1>
+<p class="subtitle lead">Università di Roma la Sapienza</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">talk</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A joint work with <span class="orange">Lorenzo Ghilotti</span>, <span class="blue">Federico Camerlenghi</span> and Michele Guindani presented at the Università di Roma la Sapienza.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><span class="orange">Tommaso Rigon</span> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <em>Università degli Studi di Milano-Bicocca</em>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-page-left">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 9, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="warm-thanks" class="level2">
+<h2 class="anchored" data-anchor-id="warm-thanks">Warm thanks</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><span class="orange">Lorenzo Ghilotti</span> (Duke University)</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/Lorenzo.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<p><span class="orange">Federico Camerlenghi</span> (University of Milano-Bicocca)</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/federico.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<p><span class="orange">Michele Guindani</span> (University of California Los Angeles)</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/michele.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<ul>
+<li>This work proposes a model-based <span class="orange">Bayesian nonparametric</span> approach to <span class="blue">clustering count data</span> in the presence of missing information (i.e., unknown traits), following the roadmap below:</li>
+</ul>
+<ol type="1">
+<li>We introduce the main building block: <span class="blue">trait</span> (or feature) <span class="blue">allocation models</span>. Their properties and posterior distributions have been previously studied e.g.&nbsp;in <span class="citation" data-cites="Ghilotti2025">Ghilotti et al. (<a href="#ref-Ghilotti2025" role="doc-biblioref">2025</a>)</span>, <span class="citation" data-cites="beraha25">Beraha et al. (<a href="#ref-beraha25" role="doc-biblioref">2025</a>)</span>.</li>
+</ol>
+<ol start="2" type="1">
+<li>We extend these models to the case of <span class="blue">known groups</span>, deriving closed-form expressions for the posterior distribution.</li>
+</ol>
+<ol start="3" type="1">
+<li>We consider the case of <span class="orange">unknown groups</span> (clustering) by placing a Bayesian nonparametric prior on the latent partition. This is connected to <span class="blue">latent class analysis</span> with missing information.</li>
+</ol>
+<ol start="4" type="1">
+<li>We illustrate the practical relevance of this methodology through an application to the <span class="blue">criminal network</span> from the <em>Operazione Infinito</em> investigation.</li>
+</ol>
+</section>
+<section id="exchangeable-trait-allocation-models" class="level2">
+<h2 class="anchored" data-anchor-id="exchangeable-trait-allocation-models">Exchangeable trait allocation models</h2>
+<ul>
+<li>Exchangeable trait allocation models <span class="citation" data-cites="Jam17 Camp18">(<a href="#ref-Camp18" role="doc-biblioref">Campbell et al. 2018</a>; <a href="#ref-Jam17" role="doc-biblioref">James 2017</a>)</span> describe how traits are distributed across <span class="math inline">n</span> subjects, with presence reflecting trait abundance.</li>
+</ul>
+<ul>
+<li>We observe <span class="math inline">n</span> subjects and <span class="math inline">K_n = k</span> traits. The data are represented by an <span class="math inline">n \times k</span> matrix <span class="math inline">\bm{A}</span>, where <span class="math display">
+A_{i\ell} \in \{0,1,2,\ldots\}, \qquad i=1,\dots,n,\quad \ell=1,\dots,k,
+</span> denotes the <span class="blue">count of trait</span> <span class="math inline">\ell</span> for subject <span class="math inline">i</span>. We also assign a <span class="blue">label</span>, denoted <span class="math inline">X_\ell</span>, to each trait.</li>
+</ul>
+<ul>
+<li>The number of traits (columns) is random, because some traits may remain <span class="orange">unseen</span>.</li>
+</ul>
+<ul>
+<li><p>Let <span class="math inline">(\tilde{X}_j)_{j \geq 1}</span> denote the sequence of all possible trait labels and let <span class="math inline">\tilde{A}_{ij} \in \{0, 1, 2, \dots\}</span> represent the abundance of trait <span class="math inline">\tilde{X}_j</span> in subject <span class="math inline">i</span>. These are <span class="orange">latent variables</span>.</p></li>
+<li><p>The <span class="blue">observed traits</span> <span class="math inline">X_1, \dots, X_{K_n}</span> form a subsample of the <span class="orange">latent traits</span> <span class="math inline">(\tilde{X}_j)_{j \geq 1}</span>. A trait <span class="math inline">\tilde{X}_j</span> is observed only if <span class="math inline">\tilde{A}_{ij} &gt; 0</span> for at least one subject.</p></li>
+<li><p>Similarly, we say that trait <span class="math inline">\ell</span> is <span class="orange">absent</span> in subject <span class="math inline">i</span> if and only if <span class="math inline">A_{i\ell} = 0</span>. Each column of <span class="math inline">\bm{A}</span> must contain at least one non-zero entry, otherwise the trait would be <span class="orange">unseen</span>.</p></li>
+</ul>
+</section>
+<section id="data-from-an-exchangeable-trait-model" class="level2">
+<h2 class="anchored" data-anchor-id="data-from-an-exchangeable-trait-model">Data from an exchangeable trait model</h2>
+<p><img src="img/traits.png" class="img-fluid"></p>
+<ul>
+<li>Observed data from an <span class="blue">exchangeable trait model</span>: matrix of counts <span class="math inline">\bm{A}</span>, with <span class="math inline">n = 6</span> subjects and <span class="math inline">K_n = 18</span> observed traits. White cells indicate the <span class="orange">absence</span> of a trait for a given subject, while darker shades of blue represent higher values of the corresponding counts <span class="math inline">A_{i\ell} \in \{1, 2,\dots\}</span>.</li>
+</ul>
+</section>
+<section id="model-specification" class="level2">
+<h2 class="anchored" data-anchor-id="model-specification">Model specification</h2>
+<ul>
+<li><p>The <span class="orange">latent traits</span> <span class="math inline">\tilde{A}_{ij}</span>, given a sequence of <span class="blue">parameters</span> <span class="math inline">(\theta_j)_{j \geq 1}</span>, are conditionally iid across subjects for any fixed <span class="math inline">j</span>, that is <span class="math display">
+\tilde{A}_{ij} \mid \theta_j \overset{\textup{iid}}{\sim} P(\cdot\,; \theta_j), \qquad i \geq 1,
+</span> and they are also conditionally independent across traits (columns) for <span class="math inline">j \geq 1</span>.</p></li>
+<li><p>Here, <span class="math inline">P(\cdot\,; \theta)</span> denotes any <span class="orange">parametric distribution</span> supported on the non-negative integers, such as a Poisson distribution, depending on a positive parameter <span class="math inline">\theta &gt; 0</span>.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example: exchangeable binary traits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In our application, we track the attendance of ’Ndrangheta affiliates (subjects) at various meetings (traits), where observed traits correspond to meetings attended by at least one affiliate.</p>
+<p>In this case study, the count measurement <span class="math inline">\tilde{A}_{ij}</span> are binary. Thus, we let <span class="math display">
+\tilde{A}_{ij} \mid \theta_j \overset{\textup{iid}}{\sim}  \text{Bernoulli}(\theta_j)
+</span> for <span class="math inline">i \ge 1</span> and any fixed <span class="math inline">j</span> with success probabilities <span class="math inline">\theta_j \in (0, 1)</span>.</p>
+</div>
+</div>
+</section>
+<section id="discrete-random-measure-representation" class="level2">
+<h2 class="anchored" data-anchor-id="discrete-random-measure-representation">Discrete random measure representation</h2>
+<ul>
+<li><p>We organize the pairs <span class="math inline">(\tilde{A}_{ij}, \tilde{X}_j)</span> for <span class="math inline">j \ge 1</span> by means of subject-specific <span class="blue">counting measures</span> <span class="math inline">(Z_i)_{ i \ge 1}</span>: <span class="math display">
+  Z_i(\cdot) = \sum_{j\geq 1} \tilde{A}_{ij} \delta_{\tilde{X}_j}(\cdot),
+</span> where <span class="math inline">\delta_x</span> denotes the Dirac delta mass.</p></li>
+<li><p>Moreover, the parameters <span class="math inline">(\theta_j)_{j \ge 1}</span> can be organized in a <span class="orange">discrete measure</span> <span class="math inline">\tilde{\mu}</span> defined as <span class="math display">
+\tilde{\mu}(\cdot) = \sum_{j \geq 1} \theta_j \delta_{\tilde{X}_j}(\cdot).
+</span></p></li>
+<li><p>Summarizing, the <span class="blue">full Bayesian specification</span> is <span class="math display">
+\begin{aligned}
+Z_i\mid \tilde{\mu} &amp;\overset{\textup{iid}}{\sim} \textup{CP} (\tilde{\mu}), \qquad i \ge 1,\\
+\tilde{\mu} &amp;\sim \mathcal{Q},
+\end{aligned}
+</span> which means that <span class="math inline">Z_i</span> are iid from a <span class="blue">process of counts</span> (CP) with parameter <span class="math inline">\tilde{\mu}</span>. Here <span class="math inline">\mathcal{Q}</span> denotes the de Finetti measure, i.e., the <span class="orange">prior distribution</span> of the random measure <span class="math inline">\tilde{\mu}</span>.</p></li>
+</ul>
+</section>
+<section id="partially-exchangeable-trait-allocation-models" class="level2">
+<h2 class="anchored" data-anchor-id="partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models<br>
+</h2>
+<ul>
+<li><p>Let <span class="math inline">d</span> be the number of <span class="blue">subpopulations</span> (groups), and suppose we observe a sample of size <span class="math inline">n</span>, with <span class="math inline">n_q</span> subjects from group <span class="math inline">q</span>, for <span class="math inline">q = 1, \ldots, d</span>, so that <span class="math inline">\sum_{q=1}^d n_q = n</span>.</p></li>
+<li><p>Let <span class="math inline">K_n = k</span> denote the total number of traits observed across all subjects and groups. The <span class="orange">data</span> can be represented by a collection of matrices <span class="math inline">\bm{A}_q</span>, each of dimension <span class="math inline">n_q \times k</span>, with entries <span class="math display">
+A_{i\ell q} \in \{0, 1, 2, \ldots\}, \qquad i = 1,\dots, n, \quad \ell = 1,\dots,k, \quad q=1,\dots,d,
+</span> denotes the <span class="blue">count of trait</span> <span class="math inline">\ell</span> for the <span class="math inline">i</span>th subject in group <span class="math inline">q</span>.</p></li>
+</ul>
+<ul>
+<li><p>As before, let <span class="math inline">(\tilde{X}_j)_{j \geq 1}</span> denote the sequence of <span class="orange">latent traits</span> and let <span class="math inline">\tilde{A}_{ijq} \in \{0, 1, 2, \dots\}</span> be the abundance of trait <span class="math inline">\tilde{X}_j</span> for subject <span class="math inline">i</span> in group <span class="math inline">q</span>.</p></li>
+<li><p>In a sample of size <span class="math inline">n</span>, a trait <span class="math inline">\tilde{X}_j</span> is <span class="blue">observed</span> only if <span class="math inline">\tilde{A}_{ijq} &gt; 0</span> for at least one subject in any group.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example: known-groups binary traits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This known-group structure (partial exchangeability) is well suited to the ’Ndrangheta data, where affiliates are grouped by membership in specific <em>locali</em>.</p>
+</div>
+</div>
+</section>
+<section id="data-from-a-partially-exchangeable-trait-model" class="level2">
+<h2 class="anchored" data-anchor-id="data-from-a-partially-exchangeable-trait-model">Data from a partially exchangeable trait model</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/traits_partial.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ul>
+<li>Observed data from a <span class="blue">partially exchangeable trait model</span> (<span class="math inline">d = 2</span>): two matrices of counts <span class="math inline">\bm{A}_1</span> and <span class="math inline">\bm{A}_2</span>, each with <span class="math inline">n_1 = n_2= 5</span> subjects and <span class="math inline">K_n = 18</span> observed traits.</li>
+</ul>
+</section>
+<section id="model-specification-known-groups" class="level2">
+<h2 class="anchored" data-anchor-id="model-specification-known-groups">Model specification (known groups)</h2>
+<ul>
+<li><p>The <span class="orange">latent traits</span> <span class="math inline">\tilde{A}_{ijq}</span>, given the sequences of <span class="blue">parameters</span> <span class="math inline">(\theta_{j1})_{j \geq 1}, \dots, (\theta_{jd})_{j \geq 1}</span>, are conditionally iid across subjects belonging to the same group and for a given trait <span class="math inline">j</span> and group <span class="math inline">q</span>, that is <span class="math display">
+\tilde{A}_{ijq} \mid \theta_{jq} \overset{\textup{iid}}{\sim} P(\cdot\,; \theta_{jq}), \qquad i \geq 1,
+</span> and they are also conditionally independent across traits for <span class="math inline">j \geq 1</span> and subpopulations <span class="math inline">q = 1,\dots,d</span>.</p></li>
+<li><p>Thus, the main difference compared to the exchangeable case is that the random variables <span class="math inline">\tilde{A}_{ijq}</span> have <span class="blue">different parameters</span> when they refer to subjects belonging to <span class="orange">different subpopulations</span>.</p></li>
+</ul>
+<ul>
+<li><p>We organize these quantities into <span class="blue">counting measures</span> <span class="math inline">Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)</span> for each subject <span class="math inline">i</span> in subpopulation <span class="math inline">q</span>, with <span class="math inline">i \geq 1</span> and <span class="math inline">q = 1, \ldots, d</span>. Moreover, the parameters <span class="math inline">(\theta_{jq})_{j \ge 1}</span> can be organized in a group-specific discrete measure <span class="math inline">\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)</span> for <span class="math inline">q=1,\dots,d</span>.</p></li>
+<li><p>Summarising, the <span class="blue">full Bayesian specification</span> for partially exchangeable data is <span class="math display">
+\begin{aligned}
+  Z_{iq} \mid \tilde{\mu}_q &amp; \overset{\textup{ind}}{\sim} \textup{CP} (\tilde{\mu}_q), \qquad i\geq 1, \quad q=1,\ldots,d,\\
+  (\tilde{\mu}_1,\ldots,\tilde{\mu}_d) &amp;\sim \mathcal{Q}_d,
+\end{aligned}
+</span> where <span class="math inline">\mathcal{Q}_d</span> denotes the <span class="orange">prior</span> distribution.</p></li>
+</ul>
+</section>
+<section id="prior-specification-i" class="level2">
+<h2 class="anchored" data-anchor-id="prior-specification-i">Prior specification I</h2>
+<ul>
+<li><p>We assume the <span class="orange">total number of traits</span> in the population, denoted with <span class="math inline">N</span>, is <span class="blue">finite</span> and <span class="blue">random</span>. If <span class="math inline">K_n = k</span> traits are observed, the number of unseen traits equals <span class="math inline">N-k</span>.</p></li>
+<li><p>Hence, there will be a finite collection of latent traits <span class="math inline">\tilde{A}_{i1q}, \dots, \tilde{A}_{iNq}</span> for each subject and group, with associated parameters <span class="math inline">\theta_{1q},\dots,\theta_{Nq}</span> for <span class="math inline">q = 1,\dots,d</span>.</p></li>
+</ul>
+<ul>
+<li><p>Moreover, we assume <span class="math inline">N</span> is a Poisson random variable with parameter <span class="math inline">\lambda&gt;0</span>. In other terms, the group-specific measures <span class="math inline">\tilde{\mu}_q</span> take the form <span class="math display">
+  \tilde{\mu}_q(\cdot) = \sum_{j=1}^{ N} \theta_{jq} \delta_{\tilde{X}_j}(\cdot), \qquad N \sim \mathrm{Poisson}(\lambda),
+</span> as <span class="math inline">q=1,\ldots,d</span>.</p></li>
+<li><p>Moreover, we assume the parameters <span class="math inline">\theta_{jq}</span> are iid draws from a probability law <span class="math inline">H(\cdot\,;\psi)</span>, namely <span class="math display">
+\theta_{jq} \overset{\textup{iid}}{\sim} H(\cdot\,;\psi), \qquad j = 1,\dots,N, \quad q=1,\dots,d,
+</span> where <span class="math inline">\psi</span> is a common <span class="blue">hyperparameter</span> sometimes endowed with a hyperprior.</p></li>
+</ul>
+</section>
+<section id="prior-specification-ii" class="level2">
+<h2 class="anchored" data-anchor-id="prior-specification-ii">Prior specification II</h2>
+<ul>
+<li><p>We assign a prior to the atoms <span class="math inline">\tilde{X}_j</span>, which only label traits; it suffices that they are almost surely distinct, e.g., <span class="math inline">\tilde{X}_j \overset{\textup{iid}}{\sim} P_0</span> with <span class="math inline">P_0</span> non-atomic.</p></li>
+<li><p>This specification is linked with <span class="orange">infinite-dimensional trait</span> models <span class="citation" data-cites="Jam17 shen2025">(<a href="#ref-Jam17" role="doc-biblioref">James 2017</a>; <a href="#ref-shen2025" role="doc-biblioref">Shen et al. 2025</a>)</span>.</p></li>
+<li><p>Indeed, <span class="math inline">(\tilde{\mu}_1,\ldots,\tilde{\mu}_d)</span> is a <span class="blue">finite completely random vector</span> (FCRV), a special case of completely random vectors <span class="citation" data-cites="Cat21AoS">(<a href="#ref-Cat21AoS" role="doc-biblioref">Catalano et al. 2021</a>)</span>, crucially relying on the Poisson specification for <span class="math inline">N</span>.</p></li>
+<li><p>More precisely, <span class="math inline">\tilde{\bm{\mu}} = (\tilde{\mu}_1,\ldots,\tilde{\mu}_d)</span> can be interpreted as an FCRV with parameters <span class="math inline">H^{(d)} =  H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)</span>, <span class="math inline">\lambda</span>, and <span class="math inline">P_0</span>, and we write <span class="math display">
+\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0).
+</span></p></li>
+</ul>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This connection is relevant because as our results follow from a general CRV theory with Lévy intensities of the form <span class="math inline">\rho_d(\mathrm{d}\theta_1 \cdots \mathrm{d}\theta_d)\,\lambda P_0(\mathrm{d}x)</span>, where <span class="math inline">\rho_d</span> may be infinite.</p>
+<p>This framework covers both finite- and infinite-dimensional models; we focus on the finite case <span class="math inline">\rho_d = H^{(d)}</span> (a probability distribution), enabling estimation of the total number of traits, while <span class="citation" data-cites="shen2025">Shen et al. (<a href="#ref-shen2025" role="doc-biblioref">2025</a>)</span> consider the infinite-dimensional setting.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="distribution-theory" class="level1">
+<h1>Distribution theory</h1>
+<section id="the-augmented-likelihood-function" class="level2">
+<h2 class="anchored" data-anchor-id="the-augmented-likelihood-function">The augmented likelihood function</h2>
+<!-- We start by describing the marginal distribution of a sample from model \eqref{eq:partially_ex_traits}, and here we offer a simple and constructive proof. With \emph{marginal distribution of the sample}  $\bm{Z}=(Z_{iq}:  i= 1,\ldots,n_q; q=1,\ldots,d)$, we specifically mean determining the probabilities of the event $(\bm{A} = \bm{a}, K_n = k)$, having denoted by -->
+<!-- $\bm A = (A_{i \ell q} : i=1,\dots, n_q; \ell = 1,\dots,k; q = 1,\dots,d)$ the observed counts, where the $K_n=k$ observed traits in the sample are randomly ordered.  -->
+<ul>
+<li><p>If all traits were known (<span class="orange">no missing information</span>), the model would be <span class="orange">extremely simple</span>: a collection of independent random variables, with an easily computable <span class="blue">augmented likelihood</span>.</p></li>
+<li><p>Let <span class="math inline">\tilde{\bm{A}} = (\tilde{A}_{ijq} : i = 1, \dots, n_q; j = 1, \dots, N; q = 1, \dots , d)</span> denote the latent counts whose realization is <span class="math inline">\tilde{\bm{a}}</span> and let <span class="math inline">\mathcal{A} = \{j : \sum_{q=1}^d \sum_{i=1}^{n_q} \tilde{a}_{ijq} &gt; 0\}</span> denote the observed traits.</p></li>
+</ul>
+<ul>
+<li><p>The <span class="blue">augmented likelihood</span> function <span class="math inline">\mathscr{L}(\bm{\theta}, N; \tilde{\bm{a}})</span> given the parameters <span class="math inline">\bm{\theta} = (\theta_{jq} : j=1,\dots,N; q = 1,\dots,d)</span> and <span class="math inline">N</span>, for the event <span class="math inline">(\tilde{\bm{A}} = \tilde{\bm{a}}, K_n = k)</span> is <span class="math display">
+\mathscr{L}(\bm{\theta}, N; \tilde{\bm{a}})= \prod_{q=1}^d  \prod_{j=1}^N\prod_{i=1}^{n_q}P(\tilde{a}_{ijq};\theta_{j q})= \left[\prod_{q=1}^d\prod_{j \not\in \mathcal{A}} P(0;\theta_{j q})^{n_q}\right]\left[ \prod_{q=1}^d \prod_{j\in \mathcal{A}}\prod_{i=1}^{n_q}P(\tilde{a}_{ijq};\theta_{j q})\right].
+</span> In the last term, the first product accounts for <span class="orange">unobserved</span> traits, while the second corresponds to <span class="blue">observed</span> ones.</p></li>
+<li><p>The product <span class="math inline">\prod_{q=1}^d P(0; \theta_{jq})^{n_q}</span> is the probability that trait <span class="math inline">\tilde{X}_j</span> is not observed in any subject across all groups.</p></li>
+</ul>
+</section>
+<section id="marginal-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="marginal-distribution">Marginal distribution</h2>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Theorem (Marginal distribution; Ghilotti et al., 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\bm{Z}</span> be a sample from the partially exchangeable model, with <span class="math inline">\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span> with <span class="math inline">H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)</span>.</p>
+<p>The probability that <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits with counts <span class="math inline">\bm A = \bm{a}</span> is given by <span class="math display">
+\begin{split}
+        \pi_n (\bm{a}; \lambda, \psi) = \frac{\lambda^k}{k!} \exp \left\{ -\lambda \left( 1-\prod_{q=1}^d  \int P (0 ; \theta)^{n_q}
+        H (\mathrm{d}\theta; \psi) \right) \right\} \prod_{\ell=1}^k \prod_{q=1}^d  \int  \prod_{i=1}^{n_q} P (a_{i\ell q} ; \theta)  H(\mathrm{d} \theta; \psi),
+\end{split}
+</span> where <span class="math inline">n=\sum_{q=1}^d n_q</span> and <span class="math inline">\bm{n}=(n_1, \ldots , n_d)</span> are the sample sizes.</p>
+</div>
+</div>
+</section>
+<section id="example-binary-traits-i" class="level2">
+<h2 class="anchored" data-anchor-id="example-binary-traits-i">Example: binary traits I</h2>
+<ul>
+<li><p>Suppose the traits are <span class="orange">binary</span> and <span class="math inline">P(a;\theta) = \theta^a(1-\theta)^{1-a}</span>, for <span class="math inline">a \in \{0, 1\}</span>, meaning that <span class="math display">
+\tilde{A}_{ijq} \overset{\textup{ind}}{\sim} \text{Bernoulli}(\theta_{jq}), \qquad i \ge 1, \quad j=1,\dots,N, \quad q = 1,\dots,q.
+</span></p></li>
+<li><p>The marginal law of <span class="math inline">\bm{Z}</span> depends on the sufficient statistic given by the <span class="blue">feature frequencies</span>, where <span class="math inline">M_{\ell q} := \sum_{i=1}^{n_q} A_{i\ell q}</span> (with observed values <span class="math inline">m_{\ell q}</span>) are collected in matrices <span class="math inline">\bm{M}</span> and <span class="math inline">\bm{m}</span>.</p></li>
+<li><p>Suppose the prior <span class="math inline">H(\cdot;\psi)</span> is a <span class="blue">Beta distribution</span> with parameters <span class="math inline">\psi = (-\alpha, \alpha+\beta)</span>, i.e., <span class="math display">
+\theta_{jq} \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta), \qquad j=1,\dots,N, \quad q=1,\dots,d.
+</span></p></li>
+<li><p>Then, the probability that <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits with feature frequencies <span class="math inline">\bm M = \bm{m}</span> is <span class="math display">
+      \begin{split}
+      \pi_n (\bm{m}; \lambda, \psi) = \frac{\lambda^k}{k!} \exp \left\{ -\lambda \left[1- \prod_{q=1}^d \frac{(\alpha + \beta)_{n_q}}{(\beta)_{n_q}}  \right]\right\} \prod_{\ell=1}^k \prod_{q=1}^d  \frac{-\alpha}{(\beta)_{n_q}}(1-\alpha)_{m_{\ell q}-1}(\alpha + \beta)_{n_q - m_{\ell q}},
+      \end{split}
+</span> where <span class="math inline">(a)_n = a(a+1)\cdots(a+n-1)</span> is the ascending factorial with <span class="math inline">a &gt; 0</span>.</p></li>
+</ul>
+</section>
+<section id="posterior-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="posterior-distribution">Posterior distribution</h2>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Theorem (Posterior distribution; Ghilotti et al., 2025)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\bm{Z}</span> be a sample from the partially exchangeable model with prior <span class="math inline">\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span> and <span class="math inline">H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)</span>.</p>
+<p>If <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits labeled <span class="math inline">X_1, \ldots , X_k</span>, with associated counts <span class="math inline">\bm{a}</span>, then the <span class="blue">posterior distribution</span> of <span class="math inline">\tilde{\bm\mu}</span> satisfies the distributional equality <span class="math display">       
+(\tilde{\mu}_1, \ldots, \tilde{\mu}_d) \mid \bm{Z} \stackrel{d}{=}  (\mu_1^*, \ldots, \mu_d^*) +  (\mu_1', \ldots, \mu_d'),
+</span> where <span class="math inline">\bm{\mu}^*:= (\mu_1^*, \ldots, \mu_d^*)</span> and <span class="math inline">\bm{ \mu}':=(\mu_1', \ldots, \mu_d')</span> are independent random vectors such that</p>
+<ol type="i">
+<li><p>the components of the vector <span class="math inline">\bm{\mu}^*</span> are defined as <span class="math inline">\mu_q^*(\cdot) = \sum_{\ell=1}^k \theta_{\ell q}^* \delta_{X_\ell}(\cdot)</span>, for <span class="math inline">q=1, \ldots , d</span>, and the random variables <span class="math inline">\theta^*_{\ell q}</span> are independent with distribution <span class="math inline">H_{\ell q} (\mathrm{d}\theta;\psi) \propto  \prod_{i = 1}^{n_q} P(a_{i\ell q}; \theta)  H(\mathrm{d}\theta; \psi)</span>.</p></li>
+<li><p>the vector <span class="math inline">(\mu_1', \ldots, \mu_d')</span> is a <span class="math inline">\textup{FCRV} (H^{\prime(d)}, \lambda',  P_0)</span>, where <span class="math inline">H^{\prime(d)}(\cdot\,;\psi) = H_1^\prime(\cdot\,;\psi) \times \cdots \times H_d^\prime(\cdot\,;\psi)</span>, <span class="math display">
+       \lambda' = \lambda \prod_{q=1}^d \int P(0; \theta)^{n_q} H(\mathrm{d}\theta; \psi),
+       \quad
+       H'_q(\mathrm{d}\theta; \psi)  \propto  P(0;  \theta)^{n_q} H(\mathrm{d}\theta;\psi).
+       </span></p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="example-binary-traits-ii" class="level2">
+<h2 class="anchored" data-anchor-id="example-binary-traits-ii">Example: binary traits II</h2>
+</section>
+</section>
+<section id="clustering-trait-allocation-models" class="level1">
+<h1>Clustering trait allocation models</h1>
+<section id="latent-class-models-with-an-unknown-number-of-traits" class="level2">
+<h2 class="anchored" data-anchor-id="latent-class-models-with-an-unknown-number-of-traits">Latent class models with an unknown number of traits</h2>
+</section>
+</section>
+<section id="infinito-network" class="level1">
+<h1><em>Infinito</em> network</h1>
+<section id="thank-you" class="level2">
+<h2 class="anchored" data-anchor-id="thank-you">Thank you!</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/QR.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:2.5in"></p>
+</figure>
+</div>
+<p>The <span class="orange">main paper</span> is:</p>
+<p>Ghilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. <em>arXiv:2510.24526</em></p>
+</section>
+<section id="references" class="level2 unnumbered smaller">
+<h2 class="unnumbered smaller anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-beraha25" class="csl-entry" role="listitem">
+Beraha, M., Camerlenghi, F., and Ghilotti, L. (2025), <span>“Bayesian calculus and predictive characterizations of extended feature allocation models,”</span> <em>arXiv:2502.10257</em>.
+</div>
+<div id="ref-Camp18" class="csl-entry" role="listitem">
+Campbell, T., Cai, D., and Broderick, T. (2018), <span>“Exchangeable trait allocations,”</span> <em>Electronic Journal of Statistics</em>, 12, 2290–2322.
+</div>
+<div id="ref-Cat21AoS" class="csl-entry" role="listitem">
+Catalano, M., Lijoi, A., and Prünster, I. (2021), <span>“Measuring dependence in the <span>W</span>asserstein distance for <span>B</span>ayesian nonparametric models,”</span> <em>The Annals of Statistics</em>, 49, 2916–2947.
+</div>
+<div id="ref-Ghilotti2025" class="csl-entry" role="listitem">
+Ghilotti, L., Camerlenghi, F., and Rigon, T. (2025), <span>“Bayesian analysis of product feature allocation models,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, In press.
+</div>
+<div id="ref-Jam17" class="csl-entry" role="listitem">
+James, L. F. (2017), <span>“Bayesian <span>Poisson</span> calculus for latent feature modeling via generalized <span>Indian</span> buffet process priors,”</span> <em>The Annals of Statistics</em>, 45, 2016–2045.
+</div>
+<div id="ref-shen2025" class="csl-entry" role="listitem">
+Shen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), <span>“Double trouble: Predicting new variant counts across two heterogeneous populations,”</span> <em>Bayesian Analysis</em>, In press.
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

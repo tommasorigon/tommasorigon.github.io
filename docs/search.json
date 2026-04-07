@@ -438,7 +438,7 @@
     "href": "post.html",
     "title": "Blogpost",
     "section": "",
-    "text": "ABACO26\n\n\nNonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences\n\n\nA joint work with Davide Agnoletto and David Dunson presented at the Workshop on Advances in BAyesian COmputation and modeling organized by Emanuele Aliverti at the University of Padova.\n\n\n\n\n\nFeb 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject presentation\n\n\nPolitecnico di Milano - Mathematical Engineering - Bayesian Statistics\n\n\nPresentation of a project for the course Bayesian Statistics at the Politecnico di Milano\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBISP14\n\n\nBayesian inference for generalized linear models via quasi-posteriors\n\n\nA joint work with Davide Agnoletto and David Dunson presented at BISP 14, the 14th workshop on Bayesian Inference for Stochastic processes, organized by CNR-IMATI\n\n\n\n\n\nMay 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLa lotteria nazionale non è difettosa\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCome mai non è possibile prevedere i numeri del lotto\n\n\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League: com’è andata?\n\n\nUna valutazione degli errori\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League\n\n\n8a giornata\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKarmic dice for Baldur’s Gate III\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\n\n\n\nNo matching items"
+    "text": "BNP modeling of multivariate count data with unknown traits\n\n\nUniversità di Roma la Sapienza\n\n\nA joint work with Lorenzo Ghilotti, Federico Camerlenghi and Michele Guindani presented at the Università di Roma la Sapienza.\n\n\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nABACO26\n\n\nNonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences\n\n\nA joint work with Davide Agnoletto and David Dunson presented at the Workshop on Advances in BAyesian COmputation and modeling organized by Emanuele Aliverti at the University of Padova.\n\n\n\n\n\nFeb 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject presentation\n\n\nPolitecnico di Milano - Mathematical Engineering - Bayesian Statistics\n\n\nPresentation of a project for the course Bayesian Statistics at the Politecnico di Milano\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBISP14\n\n\nBayesian inference for generalized linear models via quasi-posteriors\n\n\nA joint work with Davide Agnoletto and David Dunson presented at BISP 14, the 14th workshop on Bayesian Inference for Stochastic processes, organized by CNR-IMATI\n\n\n\n\n\nMay 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLa lotteria nazionale non è difettosa\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCome mai non è possibile prevedere i numeri del lotto\n\n\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League: com’è andata?\n\n\nUna valutazione degli errori\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League\n\n\n8a giornata\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKarmic dice for Baldur’s Gate III\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "links.html",
@@ -2483,5 +2483,873 @@
     "title": "ABACO26",
     "section": "Illustrative examples II",
     "text": "Illustrative examples II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html",
+    "href": "post/Roma2026/roma26.html",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "",
+    "text": "Lorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (University of Milano-Bicocca)\n\n\n\n\n\n\n\n\nMichele Guindani (University of California Los Angeles)"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#warm-thanks",
+    "href": "post/Roma2026/roma26.html#warm-thanks",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "",
+    "text": "Lorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (University of Milano-Bicocca)\n\n\n\n\n\n\n\n\nMichele Guindani (University of California Los Angeles)"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#nonparametric-modelling-of-count-data",
+    "href": "post/Roma2026/roma26.html#nonparametric-modelling-of-count-data",
+    "title": "Tommaso Rigon",
+    "section": "Nonparametric modelling of count data",
+    "text": "Nonparametric modelling of count data\n\nBayesian nonparametric modeling of counts distributions is a challenging task. Nonparametric mixtures of discrete kernels (canale2011bayesian?) can be cumbersome in practice.\n\n\nAlternatively, one could directly specify a DP prior on the data generator as \n  Y_i\\mid P \\overset{\\textup{iid}}{\\sim} P,\\quad P\\sim\\mathrm{DP}(\\alpha, P_0),\n for Y_i\\in\\mathcal{Y}=\\{0,1,\\ldots\\}, i=1,\\ldots,n, where \\alpha is the precision parameter and P_0 a base parametric distribution, such as a Poisson.\n\n\nThe Dirichlet process is mathematically convenient. However, the corresponding posterior lacks smoothing, which can lead to poor performance.\nWithin the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.\n\n\nOur proposal: a predictive sequence tailored to count data inspired by kernel density estimators."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#illustrative-example-i",
+    "href": "post/Roma2026/roma26.html#illustrative-example-i",
+    "title": "Tommaso Rigon",
+    "section": "Illustrative example I",
+    "text": "Illustrative example I\n\n\n\n\n\n\nLeft plot: posterior mean of a DP. Right plot: posterior mean of the proposed MAD sequence."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#foundations",
+    "href": "post/Roma2026/roma26.html#foundations",
+    "title": "Tommaso Rigon",
+    "section": "Foundations",
+    "text": "Foundations\n\nDe Finetti’s representation Theorem (de1937prevision?) it provides the fundamental justification to the two approaches to Bayesian statistics: the hypothetical approach and the predictive approach.\n\n\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\n\nLet (Y_n)_{n\\ge 1}, be a sequence of exchangeable random variables. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1 and A_1,\\dots,A_n \n\\mathbb{P}(Y_1 \\in A_1,\\ldots,Y_n \\in A_n) = \\int_{\\mathcal{P}} \\prod_{i=1}^n p(A_i)\\,\\Pi(\\mathrm{d}p).\n\n\n\n\nIn a hierarchical formulation, we will say that (Y_n)_{n \\ge 1} is exchangeable if and only if \n\\begin{aligned}\nY_i \\mid P &\\overset{\\textup{iid}}{\\sim} P, \\qquad i \\ge 1, \\\\\nP &\\sim \\Pi,\n\\end{aligned}\n where P is a random probability measure and \\Pi is the prior law."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#hypothetical-approach",
+    "href": "post/Roma2026/roma26.html#hypothetical-approach",
+    "title": "Tommaso Rigon",
+    "section": "Hypothetical approach",
+    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p with p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{P}_{\\boldsymbol{\\theta}}=\\{P_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n p_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and p_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and P_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be easily expressed through a distribution function, the traditional hypothetical approach fails.\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: (chernozhukov2003mcmc?); (bissiri2016general?) (heide2020safe?); (grunwald2020fast?); (knoblauch2022optimization?); (matsubara2022robust?); (matsubara2023generalized?); (jewson_rossell_2022?); (rigon2023generalized?); (Agnoletto2025?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#generalizations-of-the-hypothetical-approach",
+    "href": "post/Roma2026/roma26.html#generalizations-of-the-hypothetical-approach",
+    "title": "Tommaso Rigon",
+    "section": "Generalizations of the hypothetical approach",
+    "text": "Generalizations of the hypothetical approach\n\n(bissiri2016general?) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\omega \\sum_{i=1}^n \\ell(\\boldsymbol{\\theta}; y_i) \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: (holmes2017assigning?); (lyddon2019general?); (syring2019calibrating?); (matsubara2023generalized?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#predictive-approach",
+    "href": "post/Roma2026/roma26.html#predictive-approach",
+    "title": "Tommaso Rigon",
+    "section": "Predictive approach",
+    "text": "Predictive approach\n\nTaking a predictive approach, one can implicitly characterize the prior via de Finetti theorem by specifying the sequence of predictive distributions of an exchangeable sequence: \nP_n(A) := \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}), \\qquad n \\ge 1.\n This leads to an exchangeable sequences iff the conditions in (fortini2000exchangeability?) are satisfied.\n\n\nExample: the predictive construction of a Dirichlet process prior is such that Y_1\\sim P_0 and Y_{n+1}\\mid y_{1:n}\\sim P_n for n\\ge 1, where \nP_n(A) = \\frac{\\alpha}{\\alpha+n} P_0(A) + \\frac{1}{\\alpha+n}\\sum_{i=1}^n\\mathbb{1}(y_i\\in A),\n for any measurable set A.\n\n\nThe possibility of specifying a sequence of one-step-ahead predictive distributions is appealing:\n\nit bypasses direct elicitation of the prior;\nit explicitly connects prediction and inference (see the next slide);"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#connecting-inference-and-prediction-i",
+    "href": "post/Roma2026/roma26.html#connecting-inference-and-prediction-i",
+    "title": "Tommaso Rigon",
+    "section": "Connecting inference and prediction I",
+    "text": "Connecting inference and prediction I\n\nThe posterior P \\mid y_{1:n} is usually obtained through Bayes theorem, but this is not the only way.\nWe can characterize both prior and posterior of P through the predictive distributions P_n, which indeed contains all the necessary information.\n\n\nIf (Y_n)_{n \\ge 1} is exchangeable, then the prior and posterior mean of P coincide with the predictive: \nP_0(A) = \\mathbb{P}(Y_1\\in A) = \\mathbb{E}\\{P(A)\\}, \\qquad P_n(A) = \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}) = \\mathbb{E}(P(A) \\mid y_{1:n}), \\qquad n \\ge 1.\n\n\n\nA deeper result holds, which is a corollary of Finetti theorem (fortini2012predictive?).\n\n\n\n\n\n\n\nDe Finetti’s representation theorem (predictive form)\n\n\n\nLet (Y_n)_{n \\ge 1} be an exchangeable sequence with predictive distributions (P_n)_{n \\ge 1}. Then P_n converges weakly (a.s. \\mathbb{P}) to a random probability measure P distributed according to \\Pi as n \\to \\infty."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#connecting-inference-and-prediction-ii",
+    "href": "post/Roma2026/roma26.html#connecting-inference-and-prediction-ii",
+    "title": "Tommaso Rigon",
+    "section": "Connecting inference and prediction II",
+    "text": "Connecting inference and prediction II\n\nIn other words, the sequence of predictive distributions P_n converges to a random probability measure P with prior distribution \\Pi. The source of randomness is the data\n\nY_1, Y_2, Y_3, \\dots\n Intuitively, before observing the data, our predictions eventually reflect the prior.\n\n\nGiven y_{1:n}, the sequence P_{n+m} converges weakly (a.s. \\mathbb{P}) as m \\to \\infty to a random probability measure with posterior distribution \\Pi(\\cdot \\mid y_{1:n}). The source of randomness is the future data\n\nY_{n+1}, Y_{n+2}, Y_{n+3}, \\dots .\n\nThis provides a natural alternative interpretation of the posterior distribution P \\mid y_{1:n} and a practical algorithm for sampling from it, called predictive resampling.\nIntuitively, posterior uncertainty arises from lack of knowledge about future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).\n\n\nThis reasoning is at the heart of martingale posteriors (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#generalizations-of-the-predictive-approach",
+    "href": "post/Roma2026/roma26.html#generalizations-of-the-predictive-approach",
+    "title": "Tommaso Rigon",
+    "section": "Generalizations of the predictive approach",
+    "text": "Generalizations of the predictive approach\n\nDefining a sequence of predictive laws P_n that guarantees exchangeability—i.e., satisfies the two-step-ahead conditions of (fortini2000exchangeability?)—is a difficult task in practice.\n\n\nSolution: replace exchangeability with the weaker requirement that (Y_n)_{n\\ge1} is conditionally identically distributed (CID), also known as martingale posteriors.\nThe CID condition requires \n\\mathbb{P}(Y_{n+k} \\in \\cdot \\mid y_{1:n}) = \\mathbb{P}(Y_{n+1} \\in \\cdot \\mid y_{1:n}) = P_n(\\cdot), \\qquad \\text{for all} \\quad  k \\ge 1, \\; n \\ge 1.\n It is sufficient to verify this condition for k = 1 in order to ensure its validity for all k  \\ge 1.\nEquivalently, (fong_holmes_2023?) express the above condition in a way that emphasizes the martingale property of the predictive distributions \n\\mathbb{E}\\{P_{n+1}(\\cdot) \\mid y_{1:n}\\} = P_n(\\cdot), \\qquad n \\ge 1.\n\n\n\nThis is another lively recent topic: (fortini_petrone_2020?); (berti_pratelli_2021?); (fortini2021predictive?); (berti2023without?); (berti2023kernel?); (fong_holmes_2023?); (fong2024asymptotics?); (fong2024bayesian?); (cui2024martingale?); (fortini2024exchangeability?) and more…"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#a-recursive-predictive-rule",
+    "href": "post/Roma2026/roma26.html#a-recursive-predictive-rule",
+    "title": "Tommaso Rigon",
+    "section": "A recursive predictive rule",
+    "text": "A recursive predictive rule\n\nIntuitively, a better estimator would be obtained by replacing the indicator \\mathbb{1}(\\cdot) of the DP predictive scheme with a kernel that allows the borrowing of information between nearby values.\n\n\nLet Y_1\\sim P_0 and Y_{n+1} \\mid y_{1:n} \\sim P_n for n\\ge 1, and let K_n(\\cdot \\mid y_n) be a sequence of transition kernels. We define the predictive distribution recursively: \n  P_n(\\cdot) = \\mathbb{P}(Y_{n+1}\\in \\cdot\\mid y_{1:n}) = (1-w_n) P_{n-1}(\\cdot) + w_n K_{n}(\\cdot\\mid y_n), \\qquad n \\ge 1,\n where (w_n)_{n\\ge1} are decreasing weights such that w_n\\in(0,1), \\sum_{n\\ge1}w_n = \\infty, and \\sum_{n\\ge1}w_n^2&lt;\\infty.\nThe choice of weights w_n = (\\alpha +n)^{-1} gives the following DP-like predictive rule \nP_n(\\cdot) = \\frac{\\alpha}{\\alpha + n} P_0(\\cdot) + \\frac{1}{\\alpha + n}\\sum_{i=1}^nK_i(\\cdot\\mid y_i).\n Hence, the predictive law of a DP is a special case whenever K_i(\\cdot \\mid y_i) = \\delta_{y_i}(\\cdot).\n\n\n\n\n\n\n\nThe above sequence, beyond the DP special case, is not exchangeable and it will depend on the order of the data. Moreover, without further restrictions, is not necessarily CID!"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "href": "post/Roma2026/roma26.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "title": "Tommaso Rigon",
+    "section": "Metropolis-adjusted Dirichlet (MAD) sequences",
+    "text": "Metropolis-adjusted Dirichlet (MAD) sequences\n\nWe assume that K_{n}(\\cdot\\mid y_n) is a Metropolis-Hastings kernel centered in y_n having pmf: \n  k_{n}(y\\mid y_n) = \\gamma_{n}(y,y_n) k_*(y\\mid y_n) + \\mathbb{1}(y=y_n)\\Big[\\sum_{z\\in\\mathcal{Y}}\\big\\{1-\\gamma_{n}(z,y_n)\\big\\}k_*(z\\mid y_n)\\Big],\n with acceptance probability \n  \\gamma_{n}(y,y_n) = \\gamma(y, y_n, P_{n-1}) =\n  \\min\\left\\{1,\\frac{p_{n-1}(y) k_*(y_n\\mid y)}{p_{n-1}(y_n) k_*(y\\mid y_n)}\\right\\},\n where p_{n-1} is the probability mass functions associated to P_{n-1} and k_*(\\cdot\\mid y_n) is the pmf of a discrete base kernel centered at y_n.\nWe refer to P_n above as the Metropolis-adjusted Dirichlet (MAD) distribution with weights (w_n)_{n\\ge1}, base kernel k_* and initial distribution P_0. We call (Y_n)_{n \\ge 1} a MAD sequence.\n\n\n\n\n\n\n\nTheorem (Agnoletto, R. and Dunson, 2025)\n\n\n\nLet (Y_n)_{n\\ge1} be a MAD sequence. Then, for every set of weights (w_n)_{n \\ge 1}, discrete base kernel k_*, and initial distribution P_0, the sequence (Y_n)_{n\\ge1} is conditionally identically distributed (CID)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#bayesian-properties-of-cid-sequences-i",
+    "href": "post/Roma2026/roma26.html#bayesian-properties-of-cid-sequences-i",
+    "title": "Tommaso Rigon",
+    "section": "Bayesian properties of CID sequences I",
+    "text": "Bayesian properties of CID sequences I\n\n\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\n\nConsider a MAD sequence (Y_n)_{n\\ge1}. Then, \\mathbb{P}-a.s.,\n(a) The sequence is asymptotically exchangeable, that is \n    (Y_{n+1}, Y_{n+2}, \\ldots) \\overset{\\textup{d}}{\\longrightarrow} (Z_1, Z_2, \\ldots), \\qquad n \\rightarrow \\infty,\n where (Z_1,Z_2,\\ldots) is an exchangeable sequence with directing random probability measure P;\n(b) the corresponding sequence of predictive distributions (P_n)_{n\\ge1} weakly converge to a random probability measures P (a.s. \\mathbb{P}).\n\n\n\nAn asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on P.\nThe ordering dependence will vanish asymptotically and, informally, Y_i \\mid P \\overset{\\mathrm{iid}}{\\sim} P for large n.\nThe random probability measure P exists and is defined as the limit of the predictive distributions. However, it is not available explicitly."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#bayesian-properties-of-cid-sequences-ii",
+    "href": "post/Roma2026/roma26.html#bayesian-properties-of-cid-sequences-ii",
+    "title": "Tommaso Rigon",
+    "section": "Bayesian properties of CID sequences II",
+    "text": "Bayesian properties of CID sequences II\n\n\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\n\nLet \\theta = P(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p(y) and analogously \\theta_n = P_n(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p_n(y) be any functional of interest. Consider a MAD sequence (Y_n)_{n\\ge1}.\nThen, \\mathbb{P}-a.s., for every n\\ge1 and every integrable function f:\\mathcal{Y}\\rightarrow\\mathbb{R}, we have \n\\mathbb{E}(\\theta \\mid y_{1:n}) = \\mathbb{E}\\{P(f) \\mid y_{1:n}\\} = P_n(f) = \\theta_n\n\n\n\n\nBroadly speaking, the posterior mean of any functional of interest of P coincides with the functional of the predictive.\nMoreover, \\mathbb{E}\\{P(f)\\}= P_0(f) = \\theta_0 for every integrable function f, so that P_0 retains the role of a base measure as for standard Dirichlet sequences, providing an initial guess at P.\n\n\nUncertainty quantification for \\theta=P(f) is carried out by predictive resampling (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#predictive-resampling-for-mad-sequences",
+    "href": "post/Roma2026/roma26.html#predictive-resampling-for-mad-sequences",
+    "title": "Tommaso Rigon",
+    "section": "Predictive resampling for MAD sequences",
+    "text": "Predictive resampling for MAD sequences\nAlgorithm (fortini_petrone_2020?):\n\nCompute P_n(\\cdot) from the observed data y_{1:n}\nSet N\\gg n\nFor j = 1,\\ldots,B\n\nFor i=n+1,\\ldots,N\n\nSample Y_i\\mid y_{1:i-1}\\sim P_{i-1}\nUpdate P_i(\\cdot) = (1-w_i)P_{i-1}(\\cdot) + w_i K_{i-1}(\\cdot\\mid y_i)\n\nEnd For\n\nEnd For\nReturn P_N^{(1)}(\\cdot),\\ldots,P_N^{(B)}(\\cdot), an iid sample from the distribution of P_N(\\cdot)\\mid y_{1:n}"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#on-the-choice-of-the-base-kernel",
+    "href": "post/Roma2026/roma26.html#on-the-choice-of-the-base-kernel",
+    "title": "Tommaso Rigon",
+    "section": "On the choice of the base kernel",
+    "text": "On the choice of the base kernel\n\nIn principle, any discrete distribution can be chosen as the base kernel k_*. However, it is natural to consider choices that allow the kernel to be centered at y_n while permitting control over the variance.\n\n\nWe consider a rounded Gaussian distribution centered in y_n, with pmf \n  k_*(y\\mid y_n, \\sigma) = \\frac{\\int_{y-1/2}^{y+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t}{\\sum_{z\\in\\mathcal{Y}} \\int_{z-1/2}^{z+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t},\n for n\\ge1, where \\mathcal{N}(\\cdot\\mid y_n,\\sigma^2) denotes a normal density function with mean y_n and variance \\sigma^2."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#uncertainty-quantification-and-calibration",
+    "href": "post/Roma2026/roma26.html#uncertainty-quantification-and-calibration",
+    "title": "Tommaso Rigon",
+    "section": "Uncertainty quantification and calibration",
+    "text": "Uncertainty quantification and calibration\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n\\Sigma_n r_n^{-1} \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nHowever, small values of w_n leads to underestimation of the posterior variability.\n\n\nIn practice, possible choices are w_n=(\\alpha+n)^{-1} (i.e. DP-like sequence), w_n=(\\alpha+n)^{-2/3} (martin2009asymptotic?), and w_n=(2 - n^{-1})(n+1)^{-1} (fong_holmes_2023?).\nWe consider adaptive weights that we found have good empirical properties: \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#illustrative-examples-ii",
+    "href": "post/Roma2026/roma26.html#illustrative-examples-ii",
+    "title": "Tommaso Rigon",
+    "section": "Illustrative examples II",
+    "text": "Illustrative examples II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#multivariate-count-and-binary-data",
+    "href": "post/Roma2026/roma26.html#multivariate-count-and-binary-data",
+    "title": "Tommaso Rigon",
+    "section": "Multivariate count and binary data",
+    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\nIn particular, MAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\nA natural step further is to use MAD sequences for nonparametric regression and classification.\n\n\n\n\n\n\n\nMultivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#simulations-i",
+    "href": "post/Roma2026/roma26.html#simulations-i",
+    "title": "Tommaso Rigon",
+    "section": "Simulations I",
+    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively, in specific simulation studies.\n\n\n\n\n\n\n\n\n\n\n\n\nRegress. (MSE)\n\n\nClassific. (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-DPM\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ADA\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#application",
+    "href": "post/Roma2026/roma26.html#application",
+    "title": "Tommaso Rigon",
+    "section": "Application",
+    "text": "Application\n\n\n\n\n\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#application-ii",
+    "href": "post/Roma2026/roma26.html#application-ii",
+    "title": "Tommaso Rigon",
+    "section": "Application II",
+    "text": "Application II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#thank-you",
+    "href": "post/Roma2026/roma26.html#thank-you",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Thank you!",
+    "text": "Thank you!\n\n\n\n\n\nThe main paper is:\nGhilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. arXiv:2510.24526"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#references",
+    "href": "post/Roma2026/roma26.html#references",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "References",
+    "text": "References\n\n\nBeraha, M., Camerlenghi, F., and Ghilotti, L. (2025), “Bayesian calculus and predictive characterizations of extended feature allocation models,” arXiv:2502.10257.\n\n\nCampbell, T., Cai, D., and Broderick, T. (2018), “Exchangeable trait allocations,” Electronic Journal of Statistics, 12, 2290–2322.\n\n\nCatalano, M., Lijoi, A., and Prünster, I. (2021), “Measuring dependence in the Wasserstein distance for Bayesian nonparametric models,” The Annals of Statistics, 49, 2916–2947.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, In press.\n\n\nJames, L. F. (2017), “Bayesian Poisson calculus for latent feature modeling via generalized Indian buffet process priors,” The Annals of Statistics, 45, 2016–2045.\n\n\nShen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), “Double trouble: Predicting new variant counts across two heterogeneous populations,” Bayesian Analysis, In press."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#warm-thanks",
+    "href": "post/Roma2026/abaco26_slides.html#warm-thanks",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Warm thanks",
+    "text": "Warm thanks\n\n\nLorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (Unimib)"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#nonparametric-modelling-of-count-data",
+    "href": "post/Roma2026/abaco26_slides.html#nonparametric-modelling-of-count-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Nonparametric modelling of count data",
+    "text": "Nonparametric modelling of count data\n\nBayesian nonparametric modeling of counts distributions is a challenging task. Nonparametric mixtures of discrete kernels (canale2011bayesian?) can be cumbersome in practice.\n\n\n\nAlternatively, one could directly specify a DP prior on the data generator as \n  Y_i\\mid P \\overset{\\textup{iid}}{\\sim} P,\\quad P\\sim\\mathrm{DP}(\\alpha, P_0),\n for Y_i\\in\\mathcal{Y}=\\{0,1,\\ldots\\}, i=1,\\ldots,n, where \\alpha is the precision parameter and P_0 a base parametric distribution, such as a Poisson.\n\n\n\n\nThe Dirichlet process is mathematically convenient. However, the corresponding posterior lacks smoothing, which can lead to poor performance.\nWithin the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.\n\n\n\n\nOur proposal: a predictive sequence tailored to count data inspired by kernel density estimators."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#illustrative-example-i",
+    "href": "post/Roma2026/abaco26_slides.html#illustrative-example-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Illustrative example I",
+    "text": "Illustrative example I\n\n\n\n\n\n\nLeft plot: posterior mean of a DP. Right plot: posterior mean of the proposed MAD sequence."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#foundations",
+    "href": "post/Roma2026/abaco26_slides.html#foundations",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Foundations",
+    "text": "Foundations\n\nDe Finetti’s representation Theorem (de1937prevision?) it provides the fundamental justification to the two approaches to Bayesian statistics: the hypothetical approach and the predictive approach.\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\nLet (Y_n)_{n\\ge 1}, be a sequence of exchangeable random variables. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1 and A_1,\\dots,A_n \n\\mathbb{P}(Y_1 \\in A_1,\\ldots,Y_n \\in A_n) = \\int_{\\mathcal{P}} \\prod_{i=1}^n p(A_i)\\,\\Pi(\\mathrm{d}p).\n\n\n\n\n\n\nIn a hierarchical formulation, we will say that (Y_n)_{n \\ge 1} is exchangeable if and only if \n\\begin{aligned}\nY_i \\mid P &\\overset{\\textup{iid}}{\\sim} P, \\qquad i \\ge 1, \\\\\nP &\\sim \\Pi,\n\\end{aligned}\n where P is a random probability measure and \\Pi is the prior law."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#hypothetical-approach",
+    "href": "post/Roma2026/abaco26_slides.html#hypothetical-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Hypothetical approach",
+    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p with p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{P}_{\\boldsymbol{\\theta}}=\\{P_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n p_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and p_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and P_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be easily expressed through a distribution function, the traditional hypothetical approach fails.\n\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: (chernozhukov2003mcmc?); (bissiri2016general?) (heide2020safe?); (grunwald2020fast?); (knoblauch2022optimization?); (matsubara2022robust?); (matsubara2023generalized?); (jewson_rossell_2022?); (rigon2023generalized?); (Agnoletto2025?)."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#generalizations-of-the-hypothetical-approach",
+    "href": "post/Roma2026/abaco26_slides.html#generalizations-of-the-hypothetical-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Generalizations of the hypothetical approach",
+    "text": "Generalizations of the hypothetical approach\n\n(bissiri2016general?) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\omega \\sum_{i=1}^n \\ell(\\boldsymbol{\\theta}; y_i) \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: (holmes2017assigning?); (lyddon2019general?); (syring2019calibrating?); (matsubara2023generalized?)."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#predictive-approach",
+    "href": "post/Roma2026/abaco26_slides.html#predictive-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Predictive approach",
+    "text": "Predictive approach\n\nTaking a predictive approach, one can implicitly characterize the prior via de Finetti theorem by specifying the sequence of predictive distributions of an exchangeable sequence: \nP_n(A) := \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}), \\qquad n \\ge 1.\n This leads to an exchangeable sequences iff the conditions in (fortini2000exchangeability?) are satisfied.\n\n\n\nExample: the predictive construction of a Dirichlet process prior is such that Y_1\\sim P_0 and Y_{n+1}\\mid y_{1:n}\\sim P_n for n\\ge 1, where \nP_n(A) = \\frac{\\alpha}{\\alpha+n} P_0(A) + \\frac{1}{\\alpha+n}\\sum_{i=1}^n\\mathbb{1}(y_i\\in A),\n for any measurable set A.\n\n\n\n\nThe possibility of specifying a sequence of one-step-ahead predictive distributions is appealing:\n\nit bypasses direct elicitation of the prior;\nit explicitly connects prediction and inference (see the next slide);"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#connecting-inference-and-prediction-i",
+    "href": "post/Roma2026/abaco26_slides.html#connecting-inference-and-prediction-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Connecting inference and prediction I",
+    "text": "Connecting inference and prediction I\n\nThe posterior P \\mid y_{1:n} is usually obtained through Bayes theorem, but this is not the only way.\nWe can characterize both prior and posterior of P through the predictive distributions P_n, which indeed contains all the necessary information.\n\n\n\nIf (Y_n)_{n \\ge 1} is exchangeable, then the prior and posterior mean of P coincide with the predictive: \nP_0(A) = \\mathbb{P}(Y_1\\in A) = \\mathbb{E}\\{P(A)\\}, \\qquad P_n(A) = \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}) = \\mathbb{E}(P(A) \\mid y_{1:n}), \\qquad n \\ge 1.\n\n\n\n\n\nA deeper result holds, which is a corollary of Finetti theorem (fortini2012predictive?).\n\n\n\n\n\nDe Finetti’s representation theorem (predictive form)\n\n\nLet (Y_n)_{n \\ge 1} be an exchangeable sequence with predictive distributions (P_n)_{n \\ge 1}. Then P_n converges weakly (a.s. \\mathbb{P}) to a random probability measure P distributed according to \\Pi as n \\to \\infty."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#connecting-inference-and-prediction-ii",
+    "href": "post/Roma2026/abaco26_slides.html#connecting-inference-and-prediction-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Connecting inference and prediction II",
+    "text": "Connecting inference and prediction II\n\nIn other words, the sequence of predictive distributions P_n converges to a random probability measure P with prior distribution \\Pi. The source of randomness is the data\n\nY_1, Y_2, Y_3, \\dots\n Intuitively, before observing the data, our predictions eventually reflect the prior.\n\n\n\nGiven y_{1:n}, the sequence P_{n+m} converges weakly (a.s. \\mathbb{P}) as m \\to \\infty to a random probability measure with posterior distribution \\Pi(\\cdot \\mid y_{1:n}). The source of randomness is the future data\n\nY_{n+1}, Y_{n+2}, Y_{n+3}, \\dots .\n\nThis provides a natural alternative interpretation of the posterior distribution P \\mid y_{1:n} and a practical algorithm for sampling from it, called predictive resampling.\nIntuitively, posterior uncertainty arises from lack of knowledge about future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).\n\n\n\n\nThis reasoning is at the heart of martingale posteriors (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#generalizations-of-the-predictive-approach",
+    "href": "post/Roma2026/abaco26_slides.html#generalizations-of-the-predictive-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Generalizations of the predictive approach",
+    "text": "Generalizations of the predictive approach\n\nDefining a sequence of predictive laws P_n that guarantees exchangeability—i.e., satisfies the two-step-ahead conditions of (fortini2000exchangeability?)—is a difficult task in practice.\n\n\n\nSolution: replace exchangeability with the weaker requirement that (Y_n)_{n\\ge1} is conditionally identically distributed (CID), also known as martingale posteriors.\nThe CID condition requires \n\\mathbb{P}(Y_{n+k} \\in \\cdot \\mid y_{1:n}) = \\mathbb{P}(Y_{n+1} \\in \\cdot \\mid y_{1:n}) = P_n(\\cdot), \\qquad \\text{for all} \\quad  k \\ge 1, \\; n \\ge 1.\n It is sufficient to verify this condition for k = 1 in order to ensure its validity for all k  \\ge 1.\nEquivalently, (fong_holmes_2023?) express the above condition in a way that emphasizes the martingale property of the predictive distributions \n\\mathbb{E}\\{P_{n+1}(\\cdot) \\mid y_{1:n}\\} = P_n(\\cdot), \\qquad n \\ge 1.\n\n\n\n\n\nThis is another lively recent topic: (fortini_petrone_2020?); (berti_pratelli_2021?); (fortini2021predictive?); (berti2023without?); (berti2023kernel?); (fong_holmes_2023?); (fong2024asymptotics?); (fong2024bayesian?); (cui2024martingale?); (fortini2024exchangeability?) and more…"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#a-recursive-predictive-rule",
+    "href": "post/Roma2026/abaco26_slides.html#a-recursive-predictive-rule",
+    "title": "BNP modeling of multivariate count data",
+    "section": "A recursive predictive rule",
+    "text": "A recursive predictive rule\n\nIntuitively, a better estimator would be obtained by replacing the indicator \\mathbb{1}(\\cdot) of the DP predictive scheme with a kernel that allows the borrowing of information between nearby values.\n\n\n\nLet Y_1\\sim P_0 and Y_{n+1} \\mid y_{1:n} \\sim P_n for n\\ge 1, and let K_n(\\cdot \\mid y_n) be a sequence of transition kernels. We define the predictive distribution recursively: \n  P_n(\\cdot) = \\mathbb{P}(Y_{n+1}\\in \\cdot\\mid y_{1:n}) = (1-w_n) P_{n-1}(\\cdot) + w_n K_{n}(\\cdot\\mid y_n), \\qquad n \\ge 1,\n where (w_n)_{n\\ge1} are decreasing weights such that w_n\\in(0,1), \\sum_{n\\ge1}w_n = \\infty, and \\sum_{n\\ge1}w_n^2&lt;\\infty.\nThe choice of weights w_n = (\\alpha +n)^{-1} gives the following DP-like predictive rule \nP_n(\\cdot) = \\frac{\\alpha}{\\alpha + n} P_0(\\cdot) + \\frac{1}{\\alpha + n}\\sum_{i=1}^nK_i(\\cdot\\mid y_i).\n Hence, the predictive law of a DP is a special case whenever K_i(\\cdot \\mid y_i) = \\delta_{y_i}(\\cdot).\n\n\n\n\nThe above sequence, beyond the DP special case, is not exchangeable and it will depend on the order of the data. Moreover, without further restrictions, is not necessarily CID!"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "href": "post/Roma2026/abaco26_slides.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Metropolis-adjusted Dirichlet (MAD) sequences",
+    "text": "Metropolis-adjusted Dirichlet (MAD) sequences\n\nWe assume that K_{n}(\\cdot\\mid y_n) is a Metropolis-Hastings kernel centered in y_n having pmf: \n  k_{n}(y\\mid y_n) = \\gamma_{n}(y,y_n) k_*(y\\mid y_n) + \\mathbb{1}(y=y_n)\\Big[\\sum_{z\\in\\mathcal{Y}}\\big\\{1-\\gamma_{n}(z,y_n)\\big\\}k_*(z\\mid y_n)\\Big],\n with acceptance probability \n  \\gamma_{n}(y,y_n) = \\gamma(y, y_n, P_{n-1}) =\n  \\min\\left\\{1,\\frac{p_{n-1}(y) k_*(y_n\\mid y)}{p_{n-1}(y_n) k_*(y\\mid y_n)}\\right\\},\n where p_{n-1} is the probability mass functions associated to P_{n-1} and k_*(\\cdot\\mid y_n) is the pmf of a discrete base kernel centered at y_n.\nWe refer to P_n above as the Metropolis-adjusted Dirichlet (MAD) distribution with weights (w_n)_{n\\ge1}, base kernel k_* and initial distribution P_0. We call (Y_n)_{n \\ge 1} a MAD sequence.\n\n\n\n\n\n\nTheorem (Agnoletto, R. and Dunson, 2025)\n\n\nLet (Y_n)_{n\\ge1} be a MAD sequence. Then, for every set of weights (w_n)_{n \\ge 1}, discrete base kernel k_*, and initial distribution P_0, the sequence (Y_n)_{n\\ge1} is conditionally identically distributed (CID)."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#bayesian-properties-of-cid-sequences-i",
+    "href": "post/Roma2026/abaco26_slides.html#bayesian-properties-of-cid-sequences-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Bayesian properties of CID sequences I",
+    "text": "Bayesian properties of CID sequences I\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\nConsider a MAD sequence (Y_n)_{n\\ge1}. Then, \\mathbb{P}-a.s.,\n(a) The sequence is asymptotically exchangeable, that is \n    (Y_{n+1}, Y_{n+2}, \\ldots) \\overset{\\textup{d}}{\\longrightarrow} (Z_1, Z_2, \\ldots), \\qquad n \\rightarrow \\infty,\n where (Z_1,Z_2,\\ldots) is an exchangeable sequence with directing random probability measure P;\n(b) the corresponding sequence of predictive distributions (P_n)_{n\\ge1} weakly converge to a random probability measures P (a.s. \\mathbb{P}).\n\n\n\n\n\nAn asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on P.\nThe ordering dependence will vanish asymptotically and, informally, Y_i \\mid P \\overset{\\mathrm{iid}}{\\sim} P for large n.\nThe random probability measure P exists and is defined as the limit of the predictive distributions. However, it is not available explicitly."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#bayesian-properties-of-cid-sequences-ii",
+    "href": "post/Roma2026/abaco26_slides.html#bayesian-properties-of-cid-sequences-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Bayesian properties of CID sequences II",
+    "text": "Bayesian properties of CID sequences II\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\nLet \\theta = P(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p(y) and analogously \\theta_n = P_n(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p_n(y) be any functional of interest. Consider a MAD sequence (Y_n)_{n\\ge1}.\nThen, \\mathbb{P}-a.s., for every n\\ge1 and every integrable function f:\\mathcal{Y}\\rightarrow\\mathbb{R}, we have \n\\mathbb{E}(\\theta \\mid y_{1:n}) = \\mathbb{E}\\{P(f) \\mid y_{1:n}\\} = P_n(f) = \\theta_n\n\n\n\n\n\n\nBroadly speaking, the posterior mean of any functional of interest of P coincides with the functional of the predictive.\nMoreover, \\mathbb{E}\\{P(f)\\}= P_0(f) = \\theta_0 for every integrable function f, so that P_0 retains the role of a base measure as for standard Dirichlet sequences, providing an initial guess at P.\n\n\n\nUncertainty quantification for \\theta=P(f) is carried out by predictive resampling (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#predictive-resampling-for-mad-sequences",
+    "href": "post/Roma2026/abaco26_slides.html#predictive-resampling-for-mad-sequences",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Predictive resampling for MAD sequences",
+    "text": "Predictive resampling for MAD sequences\nAlgorithm (fortini_petrone_2020?):\n\nCompute P_n(\\cdot) from the observed data y_{1:n}\nSet N\\gg n\nFor j = 1,\\ldots,B\n\nFor i=n+1,\\ldots,N\n\nSample Y_i\\mid y_{1:i-1}\\sim P_{i-1}\nUpdate P_i(\\cdot) = (1-w_i)P_{i-1}(\\cdot) + w_i K_{i-1}(\\cdot\\mid y_i)\n\nEnd For\n\nEnd For\nReturn P_N^{(1)}(\\cdot),\\ldots,P_N^{(B)}(\\cdot), an iid sample from the distribution of P_N(\\cdot)\\mid y_{1:n}"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#on-the-choice-of-the-base-kernel",
+    "href": "post/Roma2026/abaco26_slides.html#on-the-choice-of-the-base-kernel",
+    "title": "BNP modeling of multivariate count data",
+    "section": "On the choice of the base kernel",
+    "text": "On the choice of the base kernel\n\nIn principle, any discrete distribution can be chosen as the base kernel k_*. However, it is natural to consider choices that allow the kernel to be centered at y_n while permitting control over the variance.\n\n\n\nWe consider a rounded Gaussian distribution centered in y_n, with pmf \n  k_*(y\\mid y_n, \\sigma) = \\frac{\\int_{y-1/2}^{y+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t}{\\sum_{z\\in\\mathcal{Y}} \\int_{z-1/2}^{z+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t},\n for n\\ge1, where \\mathcal{N}(\\cdot\\mid y_n,\\sigma^2) denotes a normal density function with mean y_n and variance \\sigma^2."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#uncertainty-quantification-and-calibration",
+    "href": "post/Roma2026/abaco26_slides.html#uncertainty-quantification-and-calibration",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Uncertainty quantification and calibration",
+    "text": "Uncertainty quantification and calibration\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n\\Sigma_n r_n^{-1} \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nHowever, small values of w_n leads to underestimation of the posterior variability.\n\n\n\n\nIn practice, possible choices are w_n=(\\alpha+n)^{-1} (i.e. DP-like sequence), w_n=(\\alpha+n)^{-2/3} (martin2009asymptotic?), and w_n=(2 - n^{-1})(n+1)^{-1} (fong_holmes_2023?).\nWe consider adaptive weights that we found have good empirical properties: \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#illustrative-examples-ii",
+    "href": "post/Roma2026/abaco26_slides.html#illustrative-examples-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Illustrative examples II",
+    "text": "Illustrative examples II"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#multivariate-count-and-binary-data",
+    "href": "post/Roma2026/abaco26_slides.html#multivariate-count-and-binary-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Multivariate count and binary data",
+    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\nIn particular, MAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\nA natural step further is to use MAD sequences for nonparametric regression and classification.\n\n\n\n\n\nMultivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#simulations-i",
+    "href": "post/Roma2026/abaco26_slides.html#simulations-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Simulations I",
+    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively, in specific simulation studies.\n\n\n\n\n\n\n\n\n\n\n\n\nRegress. (MSE)\n\n\nClassific. (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-DPM\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ADA\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#application",
+    "href": "post/Roma2026/abaco26_slides.html#application",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Application",
+    "text": "Application\n\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#application-ii",
+    "href": "post/Roma2026/abaco26_slides.html#application-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Application II",
+    "text": "Application II"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#thank-you",
+    "href": "post/Roma2026/abaco26_slides.html#thank-you",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nThe main paper is:\nAgnoletto, D., Rigon, T., and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. arXiv:2507.08629"
+  },
+  {
+    "objectID": "post/Roma2026/abaco26_slides.html#references",
+    "href": "post/Roma2026/abaco26_slides.html#references",
+    "title": "BNP modeling of multivariate count data",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#warm-thanks",
+    "href": "post/Roma2026/roma26_slides.html#warm-thanks",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Warm thanks",
+    "text": "Warm thanks\n\n\nLorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (University of Milano-Bicocca)\n\n\n\n\n\n\n\n\nMichele Guindani (University of California Los Angeles)"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#nonparametric-modelling-of-count-data",
+    "href": "post/Roma2026/roma26_slides.html#nonparametric-modelling-of-count-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Nonparametric modelling of count data",
+    "text": "Nonparametric modelling of count data\n\nBayesian nonparametric modeling of counts distributions is a challenging task. Nonparametric mixtures of discrete kernels (canale2011bayesian?) can be cumbersome in practice.\n\n\n\nAlternatively, one could directly specify a DP prior on the data generator as \n  Y_i\\mid P \\overset{\\textup{iid}}{\\sim} P,\\quad P\\sim\\mathrm{DP}(\\alpha, P_0),\n for Y_i\\in\\mathcal{Y}=\\{0,1,\\ldots\\}, i=1,\\ldots,n, where \\alpha is the precision parameter and P_0 a base parametric distribution, such as a Poisson.\n\n\n\n\nThe Dirichlet process is mathematically convenient. However, the corresponding posterior lacks smoothing, which can lead to poor performance.\nWithin the hypothetical approach, it is unclear how to specify a nonparametric process with the same simplicity and flexibility as the DP prior while allowing for smoothing.\n\n\n\n\nOur proposal: a predictive sequence tailored to count data inspired by kernel density estimators."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#illustrative-example-i",
+    "href": "post/Roma2026/roma26_slides.html#illustrative-example-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Illustrative example I",
+    "text": "Illustrative example I\n\n\n\n\n\n\nLeft plot: posterior mean of a DP. Right plot: posterior mean of the proposed MAD sequence."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#foundations",
+    "href": "post/Roma2026/roma26_slides.html#foundations",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Foundations",
+    "text": "Foundations\n\nDe Finetti’s representation Theorem (de1937prevision?) it provides the fundamental justification to the two approaches to Bayesian statistics: the hypothetical approach and the predictive approach.\n\n\n\n\n\nDe Finetti’s representation theorem\n\n\nLet (Y_n)_{n\\ge 1}, be a sequence of exchangeable random variables. Then there exists a unique probability measure \\Pi such that, for any n\\ge 1 and A_1,\\dots,A_n \n\\mathbb{P}(Y_1 \\in A_1,\\ldots,Y_n \\in A_n) = \\int_{\\mathcal{P}} \\prod_{i=1}^n p(A_i)\\,\\Pi(\\mathrm{d}p).\n\n\n\n\n\n\nIn a hierarchical formulation, we will say that (Y_n)_{n \\ge 1} is exchangeable if and only if \n\\begin{aligned}\nY_i \\mid P &\\overset{\\textup{iid}}{\\sim} P, \\qquad i \\ge 1, \\\\\nP &\\sim \\Pi,\n\\end{aligned}\n where P is a random probability measure and \\Pi is the prior law."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#hypothetical-approach",
+    "href": "post/Roma2026/roma26_slides.html#hypothetical-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Hypothetical approach",
+    "text": "Hypothetical approach\n\nThe hypothetical approach represents the the most common way to operate within the Bayesian community.\nIn a parametric setting, \\Pi has support on a class \\Theta\\subseteq\\mathbb{R}^p with p&lt;\\infty, such that \\boldsymbol{\\theta}\\in\\Theta indexes the class of distributions \\mathcal{P}_{\\boldsymbol{\\theta}}=\\{P_{\\boldsymbol{\\theta}} : \\boldsymbol{\\theta} \\in \\Theta\\subseteq\\mathbb{R}^p\\}.\nBayes’ rule takes the well-known formulation: \n\\pi(\\boldsymbol{\\theta}\\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\prod_{i=1}^n p_{\\boldsymbol{\\theta}}(y_i),\n where \\pi and p_{\\boldsymbol{\\theta}} denote the probability density functions associated with \\Pi and P_{\\boldsymbol{\\theta}}, respectively.\nHowever, when the link between observations and parameter of interest cannot be easily expressed through a distribution function, the traditional hypothetical approach fails.\n\n\n\nSolution: generalized posterior distributions, sometimes called Gibbs-posteriors.\nThis is a lively recent topic, see for instance: (chernozhukov2003mcmc?); (bissiri2016general?) (heide2020safe?); (grunwald2020fast?); (knoblauch2022optimization?); (matsubara2022robust?); (matsubara2023generalized?); (jewson_rossell_2022?); (rigon2023generalized?); (Agnoletto2025?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#generalizations-of-the-hypothetical-approach",
+    "href": "post/Roma2026/roma26_slides.html#generalizations-of-the-hypothetical-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Generalizations of the hypothetical approach",
+    "text": "Generalizations of the hypothetical approach\n\n(bissiri2016general?) showed that the generalized posterior \n\\pi_\\omega(\\boldsymbol{\\theta} \\mid y_{1:n}) \\propto \\pi(\\boldsymbol{\\theta}) \\exp\\left\\{ - \\omega \\sum_{i=1}^n \\ell(\\boldsymbol{\\theta}; y_i) \\right\\},\n is the only coherent update of the prior beliefs about \n\\boldsymbol{\\theta}^* = \\arg\\min_{\\boldsymbol{\\theta}\\in\\Theta} \\int_{\\mathcal{Y}} \\ell(\\boldsymbol{\\theta}; y)\\, F_0(\\mathrm{d}y),\n where \\ell(\\boldsymbol{\\theta}, y) is a loss function, \\omega is the loss-scale, and F_0 is the unknown true sampling distribution.\n\n\n\nLearning the loss scale \\omega from the data is a delicate task. Assuming a prior for \\omega can lead to degenerate estimates if not accompanied by additional adjustments to the loss function.\nHowever, there are several solutions for its calibration: (holmes2017assigning?); (lyddon2019general?); (syring2019calibrating?); (matsubara2023generalized?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#predictive-approach",
+    "href": "post/Roma2026/roma26_slides.html#predictive-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Predictive approach",
+    "text": "Predictive approach\n\nTaking a predictive approach, one can implicitly characterize the prior via de Finetti theorem by specifying the sequence of predictive distributions of an exchangeable sequence: \nP_n(A) := \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}), \\qquad n \\ge 1.\n This leads to an exchangeable sequences iff the conditions in (fortini2000exchangeability?) are satisfied.\n\n\n\nExample: the predictive construction of a Dirichlet process prior is such that Y_1\\sim P_0 and Y_{n+1}\\mid y_{1:n}\\sim P_n for n\\ge 1, where \nP_n(A) = \\frac{\\alpha}{\\alpha+n} P_0(A) + \\frac{1}{\\alpha+n}\\sum_{i=1}^n\\mathbb{1}(y_i\\in A),\n for any measurable set A.\n\n\n\n\nThe possibility of specifying a sequence of one-step-ahead predictive distributions is appealing:\n\nit bypasses direct elicitation of the prior;\nit explicitly connects prediction and inference (see the next slide);"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#connecting-inference-and-prediction-i",
+    "href": "post/Roma2026/roma26_slides.html#connecting-inference-and-prediction-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Connecting inference and prediction I",
+    "text": "Connecting inference and prediction I\n\nThe posterior P \\mid y_{1:n} is usually obtained through Bayes theorem, but this is not the only way.\nWe can characterize both prior and posterior of P through the predictive distributions P_n, which indeed contains all the necessary information.\n\n\n\nIf (Y_n)_{n \\ge 1} is exchangeable, then the prior and posterior mean of P coincide with the predictive: \nP_0(A) = \\mathbb{P}(Y_1\\in A) = \\mathbb{E}\\{P(A)\\}, \\qquad P_n(A) = \\mathbb{P}(Y_{n+1}\\in A\\mid y_{1:n}) = \\mathbb{E}(P(A) \\mid y_{1:n}), \\qquad n \\ge 1.\n\n\n\n\n\nA deeper result holds, which is a corollary of Finetti theorem (fortini2012predictive?).\n\n\n\n\n\nDe Finetti’s representation theorem (predictive form)\n\n\nLet (Y_n)_{n \\ge 1} be an exchangeable sequence with predictive distributions (P_n)_{n \\ge 1}. Then P_n converges weakly (a.s. \\mathbb{P}) to a random probability measure P distributed according to \\Pi as n \\to \\infty."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#connecting-inference-and-prediction-ii",
+    "href": "post/Roma2026/roma26_slides.html#connecting-inference-and-prediction-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Connecting inference and prediction II",
+    "text": "Connecting inference and prediction II\n\nIn other words, the sequence of predictive distributions P_n converges to a random probability measure P with prior distribution \\Pi. The source of randomness is the data\n\nY_1, Y_2, Y_3, \\dots\n Intuitively, before observing the data, our predictions eventually reflect the prior.\n\n\n\nGiven y_{1:n}, the sequence P_{n+m} converges weakly (a.s. \\mathbb{P}) as m \\to \\infty to a random probability measure with posterior distribution \\Pi(\\cdot \\mid y_{1:n}). The source of randomness is the future data\n\nY_{n+1}, Y_{n+2}, Y_{n+3}, \\dots .\n\nThis provides a natural alternative interpretation of the posterior distribution P \\mid y_{1:n} and a practical algorithm for sampling from it, called predictive resampling.\nIntuitively, posterior uncertainty arises from lack of knowledge about future observations. If we knew them, the posterior would collapse to a point mass (Bayesian consistency).\n\n\n\n\nThis reasoning is at the heart of martingale posteriors (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#generalizations-of-the-predictive-approach",
+    "href": "post/Roma2026/roma26_slides.html#generalizations-of-the-predictive-approach",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Generalizations of the predictive approach",
+    "text": "Generalizations of the predictive approach\n\nDefining a sequence of predictive laws P_n that guarantees exchangeability—i.e., satisfies the two-step-ahead conditions of (fortini2000exchangeability?)—is a difficult task in practice.\n\n\n\nSolution: replace exchangeability with the weaker requirement that (Y_n)_{n\\ge1} is conditionally identically distributed (CID), also known as martingale posteriors.\nThe CID condition requires \n\\mathbb{P}(Y_{n+k} \\in \\cdot \\mid y_{1:n}) = \\mathbb{P}(Y_{n+1} \\in \\cdot \\mid y_{1:n}) = P_n(\\cdot), \\qquad \\text{for all} \\quad  k \\ge 1, \\; n \\ge 1.\n It is sufficient to verify this condition for k = 1 in order to ensure its validity for all k  \\ge 1.\nEquivalently, (fong_holmes_2023?) express the above condition in a way that emphasizes the martingale property of the predictive distributions \n\\mathbb{E}\\{P_{n+1}(\\cdot) \\mid y_{1:n}\\} = P_n(\\cdot), \\qquad n \\ge 1.\n\n\n\n\n\nThis is another lively recent topic: (fortini_petrone_2020?); (berti_pratelli_2021?); (fortini2021predictive?); (berti2023without?); (berti2023kernel?); (fong_holmes_2023?); (fong2024asymptotics?); (fong2024bayesian?); (cui2024martingale?); (fortini2024exchangeability?) and more…"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#a-recursive-predictive-rule",
+    "href": "post/Roma2026/roma26_slides.html#a-recursive-predictive-rule",
+    "title": "BNP modeling of multivariate count data",
+    "section": "A recursive predictive rule",
+    "text": "A recursive predictive rule\n\nIntuitively, a better estimator would be obtained by replacing the indicator \\mathbb{1}(\\cdot) of the DP predictive scheme with a kernel that allows the borrowing of information between nearby values.\n\n\n\nLet Y_1\\sim P_0 and Y_{n+1} \\mid y_{1:n} \\sim P_n for n\\ge 1, and let K_n(\\cdot \\mid y_n) be a sequence of transition kernels. We define the predictive distribution recursively: \n  P_n(\\cdot) = \\mathbb{P}(Y_{n+1}\\in \\cdot\\mid y_{1:n}) = (1-w_n) P_{n-1}(\\cdot) + w_n K_{n}(\\cdot\\mid y_n), \\qquad n \\ge 1,\n where (w_n)_{n\\ge1} are decreasing weights such that w_n\\in(0,1), \\sum_{n\\ge1}w_n = \\infty, and \\sum_{n\\ge1}w_n^2&lt;\\infty.\nThe choice of weights w_n = (\\alpha +n)^{-1} gives the following DP-like predictive rule \nP_n(\\cdot) = \\frac{\\alpha}{\\alpha + n} P_0(\\cdot) + \\frac{1}{\\alpha + n}\\sum_{i=1}^nK_i(\\cdot\\mid y_i).\n Hence, the predictive law of a DP is a special case whenever K_i(\\cdot \\mid y_i) = \\delta_{y_i}(\\cdot).\n\n\n\n\nThe above sequence, beyond the DP special case, is not exchangeable and it will depend on the order of the data. Moreover, without further restrictions, is not necessarily CID!"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "href": "post/Roma2026/roma26_slides.html#metropolis-adjusted-dirichlet-mad-sequences",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Metropolis-adjusted Dirichlet (MAD) sequences",
+    "text": "Metropolis-adjusted Dirichlet (MAD) sequences\n\nWe assume that K_{n}(\\cdot\\mid y_n) is a Metropolis-Hastings kernel centered in y_n having pmf: \n  k_{n}(y\\mid y_n) = \\gamma_{n}(y,y_n) k_*(y\\mid y_n) + \\mathbb{1}(y=y_n)\\Big[\\sum_{z\\in\\mathcal{Y}}\\big\\{1-\\gamma_{n}(z,y_n)\\big\\}k_*(z\\mid y_n)\\Big],\n with acceptance probability \n  \\gamma_{n}(y,y_n) = \\gamma(y, y_n, P_{n-1}) =\n  \\min\\left\\{1,\\frac{p_{n-1}(y) k_*(y_n\\mid y)}{p_{n-1}(y_n) k_*(y\\mid y_n)}\\right\\},\n where p_{n-1} is the probability mass functions associated to P_{n-1} and k_*(\\cdot\\mid y_n) is the pmf of a discrete base kernel centered at y_n.\nWe refer to P_n above as the Metropolis-adjusted Dirichlet (MAD) distribution with weights (w_n)_{n\\ge1}, base kernel k_* and initial distribution P_0. We call (Y_n)_{n \\ge 1} a MAD sequence.\n\n\n\n\n\n\nTheorem (Agnoletto, R. and Dunson, 2025)\n\n\nLet (Y_n)_{n\\ge1} be a MAD sequence. Then, for every set of weights (w_n)_{n \\ge 1}, discrete base kernel k_*, and initial distribution P_0, the sequence (Y_n)_{n\\ge1} is conditionally identically distributed (CID)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#bayesian-properties-of-cid-sequences-i",
+    "href": "post/Roma2026/roma26_slides.html#bayesian-properties-of-cid-sequences-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Bayesian properties of CID sequences I",
+    "text": "Bayesian properties of CID sequences I\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\nConsider a MAD sequence (Y_n)_{n\\ge1}. Then, \\mathbb{P}-a.s.,\n(a) The sequence is asymptotically exchangeable, that is \n    (Y_{n+1}, Y_{n+2}, \\ldots) \\overset{\\textup{d}}{\\longrightarrow} (Z_1, Z_2, \\ldots), \\qquad n \\rightarrow \\infty,\n where (Z_1,Z_2,\\ldots) is an exchangeable sequence with directing random probability measure P;\n(b) the corresponding sequence of predictive distributions (P_n)_{n\\ge1} weakly converge to a random probability measures P (a.s. \\mathbb{P}).\n\n\n\n\n\nAn asymptotic equivalent of de Finetti’s theorem holds: each MAD sequence has a corresponding unique prior on P.\nThe ordering dependence will vanish asymptotically and, informally, Y_i \\mid P \\overset{\\mathrm{iid}}{\\sim} P for large n.\nThe random probability measure P exists and is defined as the limit of the predictive distributions. However, it is not available explicitly."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#bayesian-properties-of-cid-sequences-ii",
+    "href": "post/Roma2026/roma26_slides.html#bayesian-properties-of-cid-sequences-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Bayesian properties of CID sequences II",
+    "text": "Bayesian properties of CID sequences II\n\n\n\n\nCorollary (aldous1985exchangeability?; berti2004limit?)\n\n\nLet \\theta = P(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p(y) and analogously \\theta_n = P_n(f) = \\sum_{y \\in \\mathcal{Y}} f(y) p_n(y) be any functional of interest. Consider a MAD sequence (Y_n)_{n\\ge1}.\nThen, \\mathbb{P}-a.s., for every n\\ge1 and every integrable function f:\\mathcal{Y}\\rightarrow\\mathbb{R}, we have \n\\mathbb{E}(\\theta \\mid y_{1:n}) = \\mathbb{E}\\{P(f) \\mid y_{1:n}\\} = P_n(f) = \\theta_n\n\n\n\n\n\n\nBroadly speaking, the posterior mean of any functional of interest of P coincides with the functional of the predictive.\nMoreover, \\mathbb{E}\\{P(f)\\}= P_0(f) = \\theta_0 for every integrable function f, so that P_0 retains the role of a base measure as for standard Dirichlet sequences, providing an initial guess at P.\n\n\n\nUncertainty quantification for \\theta=P(f) is carried out by predictive resampling (fong_holmes_2023?)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#predictive-resampling-for-mad-sequences",
+    "href": "post/Roma2026/roma26_slides.html#predictive-resampling-for-mad-sequences",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Predictive resampling for MAD sequences",
+    "text": "Predictive resampling for MAD sequences\nAlgorithm (fortini_petrone_2020?):\n\nCompute P_n(\\cdot) from the observed data y_{1:n}\nSet N\\gg n\nFor j = 1,\\ldots,B\n\nFor i=n+1,\\ldots,N\n\nSample Y_i\\mid y_{1:i-1}\\sim P_{i-1}\nUpdate P_i(\\cdot) = (1-w_i)P_{i-1}(\\cdot) + w_i K_{i-1}(\\cdot\\mid y_i)\n\nEnd For\n\nEnd For\nReturn P_N^{(1)}(\\cdot),\\ldots,P_N^{(B)}(\\cdot), an iid sample from the distribution of P_N(\\cdot)\\mid y_{1:n}"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#on-the-choice-of-the-base-kernel",
+    "href": "post/Roma2026/roma26_slides.html#on-the-choice-of-the-base-kernel",
+    "title": "BNP modeling of multivariate count data",
+    "section": "On the choice of the base kernel",
+    "text": "On the choice of the base kernel\n\nIn principle, any discrete distribution can be chosen as the base kernel k_*. However, it is natural to consider choices that allow the kernel to be centered at y_n while permitting control over the variance.\n\n\n\nWe consider a rounded Gaussian distribution centered in y_n, with pmf \n  k_*(y\\mid y_n, \\sigma) = \\frac{\\int_{y-1/2}^{y+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t}{\\sum_{z\\in\\mathcal{Y}} \\int_{z-1/2}^{z+1/2}\\mathcal{N}(t\\mid y_n, \\sigma^2) \\mathrm{d}t},\n for n\\ge1, where \\mathcal{N}(\\cdot\\mid y_n,\\sigma^2) denotes a normal density function with mean y_n and variance \\sigma^2."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#uncertainty-quantification-and-calibration",
+    "href": "post/Roma2026/roma26_slides.html#uncertainty-quantification-and-calibration",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Uncertainty quantification and calibration",
+    "text": "Uncertainty quantification and calibration\n\nIt can be shown that the asymptotic distribution of P(A)\\mid y_{1:n} is \\mathcal{N}(P_n(A), \\Sigma_n r_n^{-1}) for n large, where the variance is \n\\Sigma_n r_n^{-1} \\approx \\mathbb{E}\\{[P_{n+1}(A)-P_n(A)]^2\\mid y_{1:n}\\}\\sum_{k&gt;n+1}w_k^2.\n\n\n\n\nWeights that decay to zero quickly induce fast learning and convergence to the asymptotic exchangeable regime.\nHowever, small values of w_n leads to underestimation of the posterior variability.\n\n\n\n\nIn practice, possible choices are w_n=(\\alpha+n)^{-1} (i.e. DP-like sequence), w_n=(\\alpha+n)^{-2/3} (martin2009asymptotic?), and w_n=(2 - n^{-1})(n+1)^{-1} (fong_holmes_2023?).\nWe consider adaptive weights that we found have good empirical properties: \n  w_n=(\\alpha+n)^{-\\lambda_n}, \\qquad \\lambda_n=\\lambda+(1+\\lambda)\\exp\\bigg\\{-\\frac{1}{N_*}n\\bigg\\},\n with \\lambda\\in(0.5,1], N_*&gt;0."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#illustrative-examples-ii",
+    "href": "post/Roma2026/roma26_slides.html#illustrative-examples-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Illustrative examples II",
+    "text": "Illustrative examples II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#multivariate-count-and-binary-data",
+    "href": "post/Roma2026/roma26_slides.html#multivariate-count-and-binary-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Multivariate count and binary data",
+    "text": "Multivariate count and binary data\n\nExtending MAD sequences for multivariate data is straightforward using a factorized base kernel \nk_*(\\bm y\\mid\\bm y_n) = \\prod_{j=1}^d k_*(y_j\\mid y_{n,j}),\n with \\bm y=(y_1,\\ldots,y_d) and \\bm y_n=(y_{n,1},\\ldots,y_{n,d}).\nIn particular, MAD sequences can be employed for modeling multivariate binary data using an appropriate base kernel.\nA natural step further is to use MAD sequences for nonparametric regression and classification.\n\n\n\n\n\nMultivariate MAD sequences do not depend on the ordering of the variables, unlike most other martingale posteriors."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#simulations-i",
+    "href": "post/Roma2026/roma26_slides.html#simulations-i",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Simulations I",
+    "text": "Simulations I\nOut-of-sample prediction accuracy evaluated in terms of MSE and AUC for regression and classification, respectively, in specific simulation studies.\n\n\n\n\n\n\n\n\n\n\n\n\nRegress. (MSE)\n\n\nClassific. (AUC)\n\n\n\n\n\n\nn=40\nn=80\n\nn=150\nn=300\n\n\nGLM\n120.77 [51.51]\n94.93 [8.37]\n\n0.796 [0.014]\n0.809 [0.007]\n\n\nBART\n101.17 [12.69]\n74.17 [10.00]\n\n0.863 [0.026]\n0.932 [0.009]\n\n\nRF\n99.98 [7.45]\n87.75 [6.53]\n\n0.882 [0.025]\n0.913 [0.015]\n\n\nDP\n1450.21 [5.53]\n1395.61 [8.72]\n\n0.644 [0.011]\n0.724 [0.012]\n\n\nMAD-1\n91.07 [10.35]\n73.96 [7.60]\n\n0.873 [0.014]\n0.899 [0.008]\n\n\nMAD-2/3\n88.83 [13.00]\n73.18 [9.58]\n\n0.869 [0.015]\n0.899 [0.009]\n\n\nMAD-DPM\n87.41 [12.36]\n72.07 [9.48]\n\n0.872 [0.014]\n0.901 [0.008]\n\n\nMAD-ADA\n90.61 [10.28]\n73.45 [7.69]\n\n0.874 [0.014]\n0.900 [0.008]"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#application",
+    "href": "post/Roma2026/roma26_slides.html#application",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Application",
+    "text": "Application\n\n\nWe analyze the occurrence rates of 4 species corvids in Finland in year 2009 across different temperatures and habitats."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#application-ii",
+    "href": "post/Roma2026/roma26_slides.html#application-ii",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Application II",
+    "text": "Application II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#thank-you",
+    "href": "post/Roma2026/roma26_slides.html#thank-you",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nThe main paper is:\nGhilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. arXiv:2510.24526"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#references",
+    "href": "post/Roma2026/roma26_slides.html#references",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "References",
+    "text": "References\n\n\nBeraha, M., Camerlenghi, F., and Ghilotti, L. (2025), “Bayesian calculus and predictive characterizations of extended feature allocation models,” arXiv:2502.10257.\n\n\nCampbell, T., Cai, D., and Broderick, T. (2018), “Exchangeable trait allocations,” Electronic Journal of Statistics, 12, 2290–2322.\n\n\nCatalano, M., Lijoi, A., and Prünster, I. (2021), “Measuring dependence in the Wasserstein distance for Bayesian nonparametric models,” The Annals of Statistics, 49, 2916–2947.\n\n\nGhilotti, L., Camerlenghi, F., and Rigon, T. (2025), “Bayesian analysis of product feature allocation models,” Journal of the Royal Statistical Society Series B: Statistical Methodology, In press.\n\n\nJames, L. F. (2017), “Bayesian Poisson calculus for latent feature modeling via generalized Indian buffet process priors,” The Annals of Statistics, 45, 2016–2045.\n\n\nShen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), “Double trouble: Predicting new variant counts across two heterogeneous populations,” Bayesian Analysis, In press."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#introduction",
+    "href": "post/Roma2026/roma26_slides.html#introduction",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#exchangeable-data",
+    "href": "post/Roma2026/roma26_slides.html#exchangeable-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Exchangeable data",
+    "text": "Exchangeable data\n\n\nObserved data from an exchangeable trait model: matrix of counts \\bm{A}, with n = 6 subjects and K_n = 18 observed traits. Rows and columns are arranged in no particular order. White cells, such as A_{13} = 0, indicate the absence of a trait for a given subject, while darker shades of blue represent higher values of the corresponding counts A_{i\\ell} \\in \\{1, 2,\\dots\\}"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#partially-exchangeable-data",
+    "href": "post/Roma2026/roma26_slides.html#partially-exchangeable-data",
+    "title": "BNP modeling of multivariate count data",
+    "section": "Partially exchangeable data",
+    "text": "Partially exchangeable data"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#data-from-an-exchangeable-trait-model",
+    "href": "post/Roma2026/roma26_slides.html#data-from-an-exchangeable-trait-model",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Data from an exchangeable trait model",
+    "text": "Data from an exchangeable trait model\n\n\nObserved data from an exchangeable trait model: matrix of counts \\bm{A}, with n = 6 subjects and K_n = 18 observed traits. White cells indicate the absence of a trait for a given subject, while darker shades of blue represent higher values of the corresponding counts A_{i\\ell} \\in \\{1, 2,\\dots\\}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#data-from-a-partially-exchangeable-trait-model",
+    "href": "post/Roma2026/roma26_slides.html#data-from-a-partially-exchangeable-trait-model",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Data from a partially exchangeable trait model",
+    "text": "Data from a partially exchangeable trait model\n\n\nObserved data from a partially exchangeable trait model (d = 2): two matrices of counts \\bm{A}_1 and \\bm{A}_2, each with n_1 = n_2= 5 subjects and K_n = 18 observed traits."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#overview",
+    "href": "post/Roma2026/roma26_slides.html#overview",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Overview",
+    "text": "Overview\n\nThis work proposes a model-based Bayesian nonparametric approach to clustering count data in the presence of missing information (i.e., unknown traits), following the roadmap below:\n\n\n\nWe introduce the main building block: trait (or feature) allocation models. Their properties and posterior distributions have been previously studied e.g. in Ghilotti et al. (2025), Beraha et al. (2025).\n\n\n\n\nWe extend these models to the case of known groups, deriving closed-form expressions for the posterior distribution.\n\n\n\n\nWe consider the case of unknown groups (clustering) by placing a Bayesian nonparametric prior on the latent partition. This is connected to latent class analysis with missing information.\n\n\n\n\nWe illustrate the practical relevance of this methodology through an application to the criminal network from the Operazione Infinito investigation."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#background-of-exchangeable-traits",
+    "href": "post/Roma2026/roma26_slides.html#background-of-exchangeable-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Background of exchangeable traits",
+    "text": "Background of exchangeable traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#posterior-characterizations",
+    "href": "post/Roma2026/roma26_slides.html#posterior-characterizations",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior characterizations",
+    "text": "Posterior characterizations"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#latent-class-models-with-an-unknown-number-of-traits",
+    "href": "post/Roma2026/roma26_slides.html#latent-class-models-with-an-unknown-number-of-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Latent class models with an unknown number of traits",
+    "text": "Latent class models with an unknown number of traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#overview",
+    "href": "post/Roma2026/roma26.html#overview",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Overview",
+    "text": "Overview\n\nThis work proposes a model-based Bayesian nonparametric approach to clustering count data in the presence of missing information (i.e., unknown traits), following the roadmap below:\n\n\nWe introduce the main building block: trait (or feature) allocation models. Their properties and posterior distributions have been previously studied e.g. in Ghilotti et al. (2025), Beraha et al. (2025).\n\n\nWe extend these models to the case of known groups, deriving closed-form expressions for the posterior distribution.\n\n\nWe consider the case of unknown groups (clustering) by placing a Bayesian nonparametric prior on the latent partition. This is connected to latent class analysis with missing information.\n\n\nWe illustrate the practical relevance of this methodology through an application to the criminal network from the Operazione Infinito investigation."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#background-of-exchangeable-traits",
+    "href": "post/Roma2026/roma26.html#background-of-exchangeable-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Background of exchangeable traits",
+    "text": "Background of exchangeable traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#data-from-an-exchangeable-trait-model",
+    "href": "post/Roma2026/roma26.html#data-from-an-exchangeable-trait-model",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Data from an exchangeable trait model",
+    "text": "Data from an exchangeable trait model\n\n\nObserved data from an exchangeable trait model: matrix of counts \\bm{A}, with n = 6 subjects and K_n = 18 observed traits. White cells indicate the absence of a trait for a given subject, while darker shades of blue represent higher values of the corresponding counts A_{i\\ell} \\in \\{1, 2,\\dots\\}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#data-from-a-partially-exchangeable-trait-model",
+    "href": "post/Roma2026/roma26.html#data-from-a-partially-exchangeable-trait-model",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Data from a partially exchangeable trait model",
+    "text": "Data from a partially exchangeable trait model\n\n\n\n\n\n\nObserved data from a partially exchangeable trait model (d = 2): two matrices of counts \\bm{A}_1 and \\bm{A}_2, each with n_1 = n_2= 5 subjects and K_n = 18 observed traits."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#posterior-characterizations",
+    "href": "post/Roma2026/roma26.html#posterior-characterizations",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior characterizations",
+    "text": "Posterior characterizations"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#latent-class-models-with-an-unknown-number-of-traits",
+    "href": "post/Roma2026/roma26.html#latent-class-models-with-an-unknown-number-of-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Latent class models with an unknown number of traits",
+    "text": "Latent class models with an unknown number of traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#exchangeable-trait-allocation-models",
+    "href": "post/Roma2026/roma26_slides.html#exchangeable-trait-allocation-models",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Exchangeable trait allocation models",
+    "text": "Exchangeable trait allocation models\n\nExchangeable trait allocation models (Campbell et al. 2018; James 2017) describe how traits are distributed across n subjects, with presence reflecting trait abundance.\n\n\n\nWe observe n subjects and K_n = k traits. The data are represented by an n \\times k matrix \\bm{A}, where \nA_{i\\ell} \\in \\{0,1,2,\\ldots\\}, \\qquad i=1,\\dots,n,\\quad \\ell=1,\\dots,k,\n denotes the count of trait \\ell for subject i. We also assign a label, denoted X_\\ell, to each trait.\n\n\n\n\nThe number of traits (columns) is random, because some traits may remain unseen.\n\n\n\n\nLet (\\tilde{X}_j)_{j \\geq 1} denote the sequence of all possible trait labels and let \\tilde{A}_{ij} \\in \\{0, 1, 2, \\dots\\} represent the abundance of trait \\tilde{X}_j in subject i. These are latent variables.\nThe observed traits X_1, \\dots, X_{K_n} form a subsample of the latent traits (\\tilde{X}_j)_{j \\geq 1}. A trait \\tilde{X}_j is observed only if \\tilde{A}_{ij} &gt; 0 for at least one subject.\nSimilarly, we say that trait \\ell is absent in subject i if and only if A_{i\\ell} = 0. Each column of \\bm{A} must contain at least one non-zero entry, otherwise the trait would be unseen."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#prior-specification-and-count-processes",
+    "href": "post/Roma2026/roma26_slides.html#prior-specification-and-count-processes",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification and count processes",
+    "text": "Prior specification and count processes\n\nThe latent traits \\tilde{A}_{ij}, given a sequence of parameters (\\theta_j)_{j \\geq 1}, are conditionally iid across subjects (rows) for any fixed j, that is \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_j), \\qquad i \\geq 1,\n and they are also conditionally independent across traits (columns) for j \\geq 1.\nHere, P(\\cdot\\,; \\theta) denotes any parametric distribution supported on the non-negative integers, such as a Poisson distribution, depending on a positive parameter \\theta &gt; 0.\n\n\n\n\n\nExample: exchangeable binary traits\n\n\n\nIn our application, we track the attendance of `Ndrangheta affiliates (subjects) at various meetings (traits), where observed traits correspond to meetings attended by at least one affiliate.\nIn this case study, the count measurement \\tilde{A}_{ij} are binary. Thus, we let \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim}  \\text{Bernoulli}(\\theta_j)\n for i \\ge 1 and any fixed j with success probabilities \\theta_j \\in (0, 1)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#example-exchangeable-binary-traits",
+    "href": "post/Roma2026/roma26_slides.html#example-exchangeable-binary-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: exchangeable binary traits",
+    "text": "Example: exchangeable binary traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#count-processes",
+    "href": "post/Roma2026/roma26_slides.html#count-processes",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Count processes",
+    "text": "Count processes\nFor mathematical convenience, we can organize the pairs ((\\tilde{A}_{ij}, \\tilde{X}_j))_{j \\ge 1} by means of subject-specific counting measures (Z_i)_{ i \\ge 1} on \\X, namely \\begin{equation}\n    \\label{eq:Zi}\n    Z_i(\\cdot) = \\sum_{j\\geq 1} \\tilde{A}_{ij} \\delta_{\\tilde{X}_j}(\\cdot),\n\\end{equation} where \\delta_x denotes the Dirac delta mass at the point x \\in \\X. Common assumption in trait allocation models requires that each subject may exhibit only a finite number of traits, ensuring that the total number of distinct traits K_n is almost surely finite in any given sample.\n\nThe parameters (\\theta_j)_{j \\ge 1} can be organized in a discrete measure \\tilde{\\mu} on \\X, defined as \\begin{equation}\n\\label{eq:mui_def}\n  \\tilde{\\mu}(\\cdot) = \\sum_{j \\geq 1} \\theta_j \\delta_{\\tilde{X}_j}(\\cdot).\n\\end{equation} Note that the atoms of the discrete measure \\tilde{\\mu}, i.e., the trait labels \\tilde{X}_j, are common across all subjects, so that the same traits are allowed to be observed in multiple subjects. Summarizing, the full Bayesian specification is \\begin{equation*}\n\\begin{aligned}\nZ_i\\mid \\tilde{\\mu} &\\iid \\CP (\\tilde{\\mu}), \\qquad i \\ge 1,\\\\\n\\tilde{\\mu} &\\sim \\mathcal{Q},\n\\end{aligned}\n\\end{equation*} which means that Z_i in are iid from a () with parameter \\tilde{\\mu} defined by -.\nHere \\mathcal{Q} denotes the de Finetti measure, i.e., the prior distribution of the random measure \\tilde{\\mu}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#example-exchangeable-binary-traits-1",
+    "href": "post/Roma2026/roma26_slides.html#example-exchangeable-binary-traits-1",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: exchangeable binary traits",
+    "text": "Example: exchangeable binary traits"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#model-specification",
+    "href": "post/Roma2026/roma26_slides.html#model-specification",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification",
+    "text": "Model specification\n\nThe latent traits \\tilde{A}_{ij}, given a sequence of parameters (\\theta_j)_{j \\geq 1}, are conditionally iid across subjects for any fixed j, that is \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_j), \\qquad i \\geq 1,\n and they are also conditionally independent across traits (columns) for j \\geq 1.\nHere, P(\\cdot\\,; \\theta) denotes any parametric distribution supported on the non-negative integers, such as a Poisson distribution, depending on a positive parameter \\theta &gt; 0.\n\n\n\n\nExample: exchangeable binary traits\n\n\nIn our application, we track the attendance of ’Ndrangheta affiliates (subjects) at various meetings (traits), where observed traits correspond to meetings attended by at least one affiliate.\nIn this case study, the count measurement \\tilde{A}_{ij} are binary. Thus, we let \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim}  \\text{Bernoulli}(\\theta_j)\n for i \\ge 1 and any fixed j with success probabilities \\theta_j \\in (0, 1)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#count-processes-and-discrete-random-measures",
+    "href": "post/Roma2026/roma26_slides.html#count-processes-and-discrete-random-measures",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Count processes and discrete random measures",
+    "text": "Count processes and discrete random measures\n\nWe organize the pairs (\\tilde{A}_{ij}, \\tilde{X}_j) for j \\ge 1 by means of subject-specific counting measures (Z_i)_{ i \\ge 1}: \n  Z_i(\\cdot) = \\sum_{j\\geq 1} \\tilde{A}_{ij} \\delta_{\\tilde{X}_j}(\\cdot),\n where \\delta_x denotes the Dirac delta mass.\nMoreover, the parameters (\\theta_j)_{j \\ge 1} can be organized in a discrete measure \\tilde{\\mu} defined as \n\\tilde{\\mu}(\\cdot) = \\sum_{j \\geq 1} \\theta_j \\delta_{\\tilde{X}_j}(\\cdot).\n\nSummarizing, the full Bayesian specification is \n\\begin{aligned}\nZ_i\\mid \\tilde{\\mu} &\\overset{\\textup{iid}}{\\sim} \\textup{CP} (\\tilde{\\mu}), \\qquad i \\ge 1,\\\\\n\\tilde{\\mu} &\\sim \\mathcal{Q},\n\\end{aligned}\n which means that Z_i are iid from a process of counts (CP) with parameter \\tilde{\\mu}. Here \\mathcal{Q} denotes the de Finetti measure, i.e., the prior distribution of the random measure \\tilde{\\mu}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#known-groups",
+    "href": "post/Roma2026/roma26_slides.html#known-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Known groups",
+    "text": "Known groups"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#discrete-random-measure-representation",
+    "href": "post/Roma2026/roma26_slides.html#discrete-random-measure-representation",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Discrete random measure representation",
+    "text": "Discrete random measure representation\n\nWe organize the pairs (\\tilde{A}_{ij}, \\tilde{X}_j) for j \\ge 1 by means of subject-specific counting measures (Z_i)_{ i \\ge 1}: \n  Z_i(\\cdot) = \\sum_{j\\geq 1} \\tilde{A}_{ij} \\delta_{\\tilde{X}_j}(\\cdot),\n where \\delta_x denotes the Dirac delta mass.\nMoreover, the parameters (\\theta_j)_{j \\ge 1} can be organized in a discrete measure \\tilde{\\mu} defined as \n\\tilde{\\mu}(\\cdot) = \\sum_{j \\geq 1} \\theta_j \\delta_{\\tilde{X}_j}(\\cdot).\n\nSummarizing, the full Bayesian specification is \n\\begin{aligned}\nZ_i\\mid \\tilde{\\mu} &\\overset{\\textup{iid}}{\\sim} \\textup{CP} (\\tilde{\\mu}), \\qquad i \\ge 1,\\\\\n\\tilde{\\mu} &\\sim \\mathcal{Q},\n\\end{aligned}\n which means that Z_i are iid from a process of counts (CP) with parameter \\tilde{\\mu}. Here \\mathcal{Q} denotes the de Finetti measure, i.e., the prior distribution of the random measure \\tilde{\\mu}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#partially-exchangeable-trait-allocation-models-known-groups",
+    "href": "post/Roma2026/roma26_slides.html#partially-exchangeable-trait-allocation-models-known-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Partially exchangeable trait allocation models (known groups)",
+    "text": "Partially exchangeable trait allocation models (known groups)"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#partially-exchangeable-trait-allocation-models",
+    "href": "post/Roma2026/roma26_slides.html#partially-exchangeable-trait-allocation-models",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Partially exchangeable trait allocation models\n",
+    "text": "Partially exchangeable trait allocation models\n\n\nLet d be the number of subpopulations (groups), and suppose we observe a sample of size n, with n_q subjects from group q, for q = 1, \\ldots, d, so that \\sum_{q=1}^d n_q = n.\nLet K_n = k denote the total number of traits observed across all subjects and groups. The data can be represented by a collection of matrices \\bm{A}_q, each of dimension n_q \\times k, with entries \nA_{i\\ell q} \\in \\{0, 1, 2, \\ldots\\}, \\qquad i = 1,\\dots, n, \\quad \\ell = 1,\\dots,k, \\quad q=1,\\dots,d,\n denotes the count of trait \\ell for the ith subject in group q.\n\n\n\nAs before, let (\\tilde{X}_j)_{j \\geq 1} denote the sequence of latent traits and let \\tilde{A}_{ijq} \\in \\{0, 1, 2, \\dots\\} be the abundance of trait \\tilde{X}_j for subject i in group q.\nIn a sample of size n, a trait \\tilde{X}_j is observed only if \\tilde{A}_{ijq} &gt; 0 for at least one subject in any group.\n\n\n\n\nExample: known-groups binary traits\n\n\nThis known-group structure (partial exchangeability) is well suited to the ’Ndrangheta data, where affiliates are grouped by membership in specific locali."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#model-specification-1",
+    "href": "post/Roma2026/roma26_slides.html#model-specification-1",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification",
+    "text": "Model specification\n\nIn the partially exchangeable case, the latent traits \\tilde{A}_{ijq}, given the sequences of parameters (\\theta_{j1})_{j \\geq 1}, \\dots, (\\theta_{jd})_{j \\geq 1}, are conditionally iid across subjects belonging to the same group and for a given trait j and group q, that is \n\\tilde{A}_{ijq} \\mid \\theta_{jq} \\overset{\\textup{iid}} P(\\cdot\\,; \\theta_{jq}), \\qquad i \\geq 1,\n and they are also conditionally independent across traits for j \\geq 1 and subpopulations q = 1,\\dots,d.\nThus, the main difference compared to the exchangeable case is that the random variables \\tilde{A}_{ijq} have different parameters when they refer to subjects belonging to different subpopulations.\nWe organize these quantities into counting measures Z_{iq}(\\cdot) = \\sum_{j \\ge 1} \\tilde{A}_{ijq} \\, \\delta_{\\tilde{X}_j}(\\cdot) for each subject i in subpopulation q, with i \\geq 1 and q = 1, \\ldots, d.\nMoreover, the parameters (\\theta_{jq})_{j \\ge 1} can be organized in a group-specific discrete measure \\tilde{\\mu}_q(\\cdot) = \\sum_{j \\geq 1} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot) for q=1,\\dots,d. Summarising, the full Bayesian specification for partially exchangeable data is \\begin{equation}    \\label{eq:partially_ex_traits}\n\\begin{aligned}\n  Z_{iq} \\mid \\tilde{\\mu}_q &\\ind \\CP (\\tilde{\\mu}_q), \\qquad i\\geq 1, \\quad q=1,\\ldots,d,\\\\\n  (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) &\\sim \\mathcal{Q}_d,\n\\end{aligned}\n\\end{equation} where \\mathcal{Q}_d denotes the de Finetti measure of the vector of random measures \\tilde{\\bm{\\mu}} = (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d), that is, the distribution. As a clarification, note that for any fixed group q the measures Z_{iq} are conditionally iid draws for i\\geq 1. Moreover, the exchangeable case discussed in Section~ is recovered when d = 1."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#prior-specification",
+    "href": "post/Roma2026/roma26_slides.html#prior-specification",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification",
+    "text": "Prior specification"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#posterior-distribution",
+    "href": "post/Roma2026/roma26_slides.html#posterior-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior distribution",
+    "text": "Posterior distribution\n\n\n\nTheorem (Posterior distribution; Ghilotti et al., 2025)\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model with prior \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nIf \\bm{Z} displays K_n = k distinct traits labeled X_1, \\ldots , X_k, with associated counts \\bm{a}, then the posterior distribution of \\tilde{\\bm\\mu} satisfies the distributional equality        \n(\\tilde{\\mu}_1, \\ldots, \\tilde{\\mu}_d) \\mid \\bm{Z} \\stackrel{d}{=}  (\\mu_1^*, \\ldots, \\mu_d^*) +  (\\mu_1', \\ldots, \\mu_d'),\n where \\bm{\\mu}^*:= (\\mu_1^*, \\ldots, \\mu_d^*) and \\bm{ \\mu}':=(\\mu_1', \\ldots, \\mu_d') are independent random vectors such that\n\nthe components of the vector \\bm{\\mu}^* are defined as \\mu_q^*(\\cdot) = \\sum_{\\ell=1}^k \\theta_{\\ell q}^* \\delta_{X_\\ell}(\\cdot), for q=1, \\ldots , d, and the random variables \\theta^*_{\\ell q} are independent with distribution H_{\\ell q} (\\mathrm{d}\\theta;\\psi) \\propto  \\prod_{i = 1}^{n_q} P(a_{i\\ell q}; \\theta)  H(\\mathrm{d}\\theta; \\psi).\nthe vector (\\mu_1', \\ldots, \\mu_d') is a \\textup{FCRV} (H^{\\prime(d)}, \\lambda',  P_0), where H^{\\prime(d)}(\\cdot\\,;\\psi) = H_1^\\prime(\\cdot\\,;\\psi) \\times \\cdots \\times H_d^\\prime(\\cdot\\,;\\psi), \n       \\lambda' = \\lambda \\prod_{q=1}^d \\int P(0; \\theta)^{n_q} H(\\mathrm{d}\\theta; \\psi),\n       \\quad\n       H'_q(\\mathrm{d}\\theta; \\psi)  \\propto  P(0;  \\theta)^{n_q} H(\\mathrm{d}\\theta;\\psi)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#marginal-distribution",
+    "href": "post/Roma2026/roma26_slides.html#marginal-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Marginal distribution",
+    "text": "Marginal distribution\n\n\n\nTheorem (Marginal distribution; Ghilotti et al., 2025)\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model, with \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) with H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nThe probability that \\bm{Z} displays K_n = k distinct traits with counts \\bm A = \\bm{a} is given by \n\\begin{split}\n        \\pi_n (\\bm{a}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left( 1-\\prod_{q=1}^d  \\int P (0 ; \\theta)^{n_q}\n        H (\\mathrm{d}\\theta; \\psi) \\right) \\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\int  \\prod_{i=1}^{n_q} P (a_{i\\ell q} ; \\theta)  H(\\mathrm{d} \\theta; \\psi),\n\\end{split}\n where n=\\sum_{q=1}^d n_q and \\bm{n}=(n_1, \\ldots , n_d) are the sample sizes."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#example-binary-traits-i",
+    "href": "post/Roma2026/roma26_slides.html#example-binary-traits-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits I",
+    "text": "Example: binary traits I\n\nSuppose the traits are binary and P(a;\\theta) = \\theta^a(1-\\theta)^{1-a}, for a \\in \\{0, 1\\}, meaning that \n\\tilde{A}_{ijq} \\overset{\\textup{ind}}{\\sim} \\text{Bernoulli}(\\theta_{jq}), \\qquad i \\ge 1, \\quad j=1,\\dots,N, \\quad q = 1,\\dots,q.\n\nThe marginal law of \\bm{Z} depends on the sufficient statistic given by the feature frequencies, where M_{\\ell q} := \\sum_{i=1}^{n_q} A_{i\\ell q} (with observed values m_{\\ell q}) are collected in matrices \\bm{M} and \\bm{m}.\nSuppose the prior H(\\cdot;\\psi) is a Beta distribution with parameters \\psi = (-\\alpha, \\alpha+\\beta), i.e., \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta), \\qquad j=1,\\dots,N, \\quad q=1,\\dots,d.\n\nThen, the probability that \\bm{Z} displays K_n = k distinct traits with feature frequencies \\bm M = \\bm{m} is \n      \\begin{split}\n      \\pi_n (\\bm{m}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left[1- \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}}  \\right]\\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\frac{-\\alpha}{(\\beta)_{n_q}}(1-\\alpha)_{m_{\\ell q}-1}(\\alpha + \\beta)_{n_q - m_{\\ell q}},\n      \\end{split}\n where (a)_n = a(a+1)\\cdots(a+n-1) is the ascending factorial with a &gt; 0."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#example-binary-traits-ii",
+    "href": "post/Roma2026/roma26_slides.html#example-binary-traits-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits II",
+    "text": "Example: binary traits II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#model-specification-known-groups",
+    "href": "post/Roma2026/roma26_slides.html#model-specification-known-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification (known groups)",
+    "text": "Model specification (known groups)\n\nThe latent traits \\tilde{A}_{ijq}, given the sequences of parameters (\\theta_{j1})_{j \\geq 1}, \\dots, (\\theta_{jd})_{j \\geq 1}, are conditionally iid across subjects belonging to the same group and for a given trait j and group q, that is \n\\tilde{A}_{ijq} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_{jq}), \\qquad i \\geq 1,\n and they are also conditionally independent across traits for j \\geq 1 and subpopulations q = 1,\\dots,d.\nThus, the main difference compared to the exchangeable case is that the random variables \\tilde{A}_{ijq} have different parameters when they refer to subjects belonging to different subpopulations.\n\n\n\nWe organize these quantities into counting measures Z_{iq}(\\cdot) = \\sum_{j \\ge 1} \\tilde{A}_{ijq} \\, \\delta_{\\tilde{X}_j}(\\cdot) for each subject i in subpopulation q, with i \\geq 1 and q = 1, \\ldots, d. Moreover, the parameters (\\theta_{jq})_{j \\ge 1} can be organized in a group-specific discrete measure \\tilde{\\mu}_q(\\cdot) = \\sum_{j \\geq 1} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot) for q=1,\\dots,d.\nSummarising, the full Bayesian specification for partially exchangeable data is \n\\begin{aligned}\n  Z_{iq} \\mid \\tilde{\\mu}_q & \\overset{\\textup{ind}}{\\sim} \\textup{CP} (\\tilde{\\mu}_q), \\qquad i\\geq 1, \\quad q=1,\\ldots,d,\\\\\n  (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) &\\sim \\mathcal{Q}_d,\n\\end{aligned}\n where \\mathcal{Q}_d denotes the prior distribution."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#exchangeable-trait-allocation-models",
+    "href": "post/Roma2026/roma26.html#exchangeable-trait-allocation-models",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Exchangeable trait allocation models",
+    "text": "Exchangeable trait allocation models\n\nExchangeable trait allocation models (Campbell et al. 2018; James 2017) describe how traits are distributed across n subjects, with presence reflecting trait abundance.\n\n\nWe observe n subjects and K_n = k traits. The data are represented by an n \\times k matrix \\bm{A}, where \nA_{i\\ell} \\in \\{0,1,2,\\ldots\\}, \\qquad i=1,\\dots,n,\\quad \\ell=1,\\dots,k,\n denotes the count of trait \\ell for subject i. We also assign a label, denoted X_\\ell, to each trait.\n\n\nThe number of traits (columns) is random, because some traits may remain unseen.\n\n\nLet (\\tilde{X}_j)_{j \\geq 1} denote the sequence of all possible trait labels and let \\tilde{A}_{ij} \\in \\{0, 1, 2, \\dots\\} represent the abundance of trait \\tilde{X}_j in subject i. These are latent variables.\nThe observed traits X_1, \\dots, X_{K_n} form a subsample of the latent traits (\\tilde{X}_j)_{j \\geq 1}. A trait \\tilde{X}_j is observed only if \\tilde{A}_{ij} &gt; 0 for at least one subject.\nSimilarly, we say that trait \\ell is absent in subject i if and only if A_{i\\ell} = 0. Each column of \\bm{A} must contain at least one non-zero entry, otherwise the trait would be unseen."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#model-specification",
+    "href": "post/Roma2026/roma26.html#model-specification",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification",
+    "text": "Model specification\n\nThe latent traits \\tilde{A}_{ij}, given a sequence of parameters (\\theta_j)_{j \\geq 1}, are conditionally iid across subjects for any fixed j, that is \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_j), \\qquad i \\geq 1,\n and they are also conditionally independent across traits (columns) for j \\geq 1.\nHere, P(\\cdot\\,; \\theta) denotes any parametric distribution supported on the non-negative integers, such as a Poisson distribution, depending on a positive parameter \\theta &gt; 0.\n\n\n\n\n\n\n\nExample: exchangeable binary traits\n\n\n\nIn our application, we track the attendance of ’Ndrangheta affiliates (subjects) at various meetings (traits), where observed traits correspond to meetings attended by at least one affiliate.\nIn this case study, the count measurement \\tilde{A}_{ij} are binary. Thus, we let \n\\tilde{A}_{ij} \\mid \\theta_j \\overset{\\textup{iid}}{\\sim}  \\text{Bernoulli}(\\theta_j)\n for i \\ge 1 and any fixed j with success probabilities \\theta_j \\in (0, 1)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#discrete-random-measure-representation",
+    "href": "post/Roma2026/roma26.html#discrete-random-measure-representation",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Discrete random measure representation",
+    "text": "Discrete random measure representation\n\nWe organize the pairs (\\tilde{A}_{ij}, \\tilde{X}_j) for j \\ge 1 by means of subject-specific counting measures (Z_i)_{ i \\ge 1}: \n  Z_i(\\cdot) = \\sum_{j\\geq 1} \\tilde{A}_{ij} \\delta_{\\tilde{X}_j}(\\cdot),\n where \\delta_x denotes the Dirac delta mass.\nMoreover, the parameters (\\theta_j)_{j \\ge 1} can be organized in a discrete measure \\tilde{\\mu} defined as \n\\tilde{\\mu}(\\cdot) = \\sum_{j \\geq 1} \\theta_j \\delta_{\\tilde{X}_j}(\\cdot).\n\nSummarizing, the full Bayesian specification is \n\\begin{aligned}\nZ_i\\mid \\tilde{\\mu} &\\overset{\\textup{iid}}{\\sim} \\textup{CP} (\\tilde{\\mu}), \\qquad i \\ge 1,\\\\\n\\tilde{\\mu} &\\sim \\mathcal{Q},\n\\end{aligned}\n which means that Z_i are iid from a process of counts (CP) with parameter \\tilde{\\mu}. Here \\mathcal{Q} denotes the de Finetti measure, i.e., the prior distribution of the random measure \\tilde{\\mu}."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#partially-exchangeable-trait-allocation-models",
+    "href": "post/Roma2026/roma26.html#partially-exchangeable-trait-allocation-models",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Partially exchangeable trait allocation models\n",
+    "text": "Partially exchangeable trait allocation models\n\n\nLet d be the number of subpopulations (groups), and suppose we observe a sample of size n, with n_q subjects from group q, for q = 1, \\ldots, d, so that \\sum_{q=1}^d n_q = n.\nLet K_n = k denote the total number of traits observed across all subjects and groups. The data can be represented by a collection of matrices \\bm{A}_q, each of dimension n_q \\times k, with entries \nA_{i\\ell q} \\in \\{0, 1, 2, \\ldots\\}, \\qquad i = 1,\\dots, n, \\quad \\ell = 1,\\dots,k, \\quad q=1,\\dots,d,\n denotes the count of trait \\ell for the ith subject in group q.\n\n\nAs before, let (\\tilde{X}_j)_{j \\geq 1} denote the sequence of latent traits and let \\tilde{A}_{ijq} \\in \\{0, 1, 2, \\dots\\} be the abundance of trait \\tilde{X}_j for subject i in group q.\nIn a sample of size n, a trait \\tilde{X}_j is observed only if \\tilde{A}_{ijq} &gt; 0 for at least one subject in any group.\n\n\n\n\n\n\n\nExample: known-groups binary traits\n\n\n\nThis known-group structure (partial exchangeability) is well suited to the ’Ndrangheta data, where affiliates are grouped by membership in specific locali."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#model-specification-known-groups",
+    "href": "post/Roma2026/roma26.html#model-specification-known-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification (known groups)",
+    "text": "Model specification (known groups)\n\nThe latent traits \\tilde{A}_{ijq}, given the sequences of parameters (\\theta_{j1})_{j \\geq 1}, \\dots, (\\theta_{jd})_{j \\geq 1}, are conditionally iid across subjects belonging to the same group and for a given trait j and group q, that is \n\\tilde{A}_{ijq} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_{jq}), \\qquad i \\geq 1,\n and they are also conditionally independent across traits for j \\geq 1 and subpopulations q = 1,\\dots,d.\nThus, the main difference compared to the exchangeable case is that the random variables \\tilde{A}_{ijq} have different parameters when they refer to subjects belonging to different subpopulations.\n\n\nWe organize these quantities into counting measures Z_{iq}(\\cdot) = \\sum_{j \\ge 1} \\tilde{A}_{ijq} \\, \\delta_{\\tilde{X}_j}(\\cdot) for each subject i in subpopulation q, with i \\geq 1 and q = 1, \\ldots, d. Moreover, the parameters (\\theta_{jq})_{j \\ge 1} can be organized in a group-specific discrete measure \\tilde{\\mu}_q(\\cdot) = \\sum_{j \\geq 1} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot) for q=1,\\dots,d.\nSummarising, the full Bayesian specification for partially exchangeable data is \n\\begin{aligned}\n  Z_{iq} \\mid \\tilde{\\mu}_q & \\overset{\\textup{ind}}{\\sim} \\textup{CP} (\\tilde{\\mu}_q), \\qquad i\\geq 1, \\quad q=1,\\ldots,d,\\\\\n  (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) &\\sim \\mathcal{Q}_d,\n\\end{aligned}\n where \\mathcal{Q}_d denotes the prior distribution."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#prior-specification",
+    "href": "post/Roma2026/roma26.html#prior-specification",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification",
+    "text": "Prior specification"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#the-likelihood-function",
+    "href": "post/Roma2026/roma26.html#the-likelihood-function",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "The likelihood function",
+    "text": "The likelihood function"
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#marginal-distribution",
+    "href": "post/Roma2026/roma26.html#marginal-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Marginal distribution",
+    "text": "Marginal distribution\n\n\n\n\n\n\nTheorem (Marginal distribution; Ghilotti et al., 2025)\n\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model, with \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) with H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nThe probability that \\bm{Z} displays K_n = k distinct traits with counts \\bm A = \\bm{a} is given by \n\\begin{split}\n        \\pi_n (\\bm{a}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left( 1-\\prod_{q=1}^d  \\int P (0 ; \\theta)^{n_q}\n        H (\\mathrm{d}\\theta; \\psi) \\right) \\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\int  \\prod_{i=1}^{n_q} P (a_{i\\ell q} ; \\theta)  H(\\mathrm{d} \\theta; \\psi),\n\\end{split}\n where n=\\sum_{q=1}^d n_q and \\bm{n}=(n_1, \\ldots , n_d) are the sample sizes."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#example-binary-traits-i",
+    "href": "post/Roma2026/roma26.html#example-binary-traits-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits I",
+    "text": "Example: binary traits I\n\nSuppose the traits are binary and P(a;\\theta) = \\theta^a(1-\\theta)^{1-a}, for a \\in \\{0, 1\\}, meaning that \n\\tilde{A}_{ijq} \\overset{\\textup{ind}}{\\sim} \\text{Bernoulli}(\\theta_{jq}), \\qquad i \\ge 1, \\quad j=1,\\dots,N, \\quad q = 1,\\dots,q.\n\nThe marginal law of \\bm{Z} depends on the sufficient statistic given by the feature frequencies, where M_{\\ell q} := \\sum_{i=1}^{n_q} A_{i\\ell q} (with observed values m_{\\ell q}) are collected in matrices \\bm{M} and \\bm{m}.\nSuppose the prior H(\\cdot;\\psi) is a Beta distribution with parameters \\psi = (-\\alpha, \\alpha+\\beta), i.e., \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta), \\qquad j=1,\\dots,N, \\quad q=1,\\dots,d.\n\nThen, the probability that \\bm{Z} displays K_n = k distinct traits with feature frequencies \\bm M = \\bm{m} is \n      \\begin{split}\n      \\pi_n (\\bm{m}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left[1- \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}}  \\right]\\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\frac{-\\alpha}{(\\beta)_{n_q}}(1-\\alpha)_{m_{\\ell q}-1}(\\alpha + \\beta)_{n_q - m_{\\ell q}},\n      \\end{split}\n where (a)_n = a(a+1)\\cdots(a+n-1) is the ascending factorial with a &gt; 0."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#posterior-distribution",
+    "href": "post/Roma2026/roma26.html#posterior-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior distribution",
+    "text": "Posterior distribution\n\n\n\n\n\n\nTheorem (Posterior distribution; Ghilotti et al., 2025)\n\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model with prior \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nIf \\bm{Z} displays K_n = k distinct traits labeled X_1, \\ldots , X_k, with associated counts \\bm{a}, then the posterior distribution of \\tilde{\\bm\\mu} satisfies the distributional equality        \n(\\tilde{\\mu}_1, \\ldots, \\tilde{\\mu}_d) \\mid \\bm{Z} \\stackrel{d}{=}  (\\mu_1^*, \\ldots, \\mu_d^*) +  (\\mu_1', \\ldots, \\mu_d'),\n where \\bm{\\mu}^*:= (\\mu_1^*, \\ldots, \\mu_d^*) and \\bm{ \\mu}':=(\\mu_1', \\ldots, \\mu_d') are independent random vectors such that\n\nthe components of the vector \\bm{\\mu}^* are defined as \\mu_q^*(\\cdot) = \\sum_{\\ell=1}^k \\theta_{\\ell q}^* \\delta_{X_\\ell}(\\cdot), for q=1, \\ldots , d, and the random variables \\theta^*_{\\ell q} are independent with distribution H_{\\ell q} (\\mathrm{d}\\theta;\\psi) \\propto  \\prod_{i = 1}^{n_q} P(a_{i\\ell q}; \\theta)  H(\\mathrm{d}\\theta; \\psi).\nthe vector (\\mu_1', \\ldots, \\mu_d') is a \\textup{FCRV} (H^{\\prime(d)}, \\lambda',  P_0), where H^{\\prime(d)}(\\cdot\\,;\\psi) = H_1^\\prime(\\cdot\\,;\\psi) \\times \\cdots \\times H_d^\\prime(\\cdot\\,;\\psi), \n       \\lambda' = \\lambda \\prod_{q=1}^d \\int P(0; \\theta)^{n_q} H(\\mathrm{d}\\theta; \\psi),\n       \\quad\n       H'_q(\\mathrm{d}\\theta; \\psi)  \\propto  P(0;  \\theta)^{n_q} H(\\mathrm{d}\\theta;\\psi)."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#example-binary-traits-ii",
+    "href": "post/Roma2026/roma26.html#example-binary-traits-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits II",
+    "text": "Example: binary traits II"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#the-likelihood-function",
+    "href": "post/Roma2026/roma26_slides.html#the-likelihood-function",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "The likelihood function",
+    "text": "The likelihood function"
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#prior-specification-i",
+    "href": "post/Roma2026/roma26_slides.html#prior-specification-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification I",
+    "text": "Prior specification I\n\nWe assume the total number of traits in the population, denoted with N, is finite and random. If K_n = k traits are observed, the number of unseen traits equals N-k.\nHence, there will be a finite collection of latent traits \\tilde{A}_{i1q}, \\dots, \\tilde{A}_{iNq} for each subject and group, with associated parameters \\theta_{1q},\\dots,\\theta_{Nq} for q = 1,\\dots,d.\n\n\n\nMoreover, we assume N is a Poisson random variable with parameter \\lambda&gt;0. In other terms, the group-specific measures \\tilde{\\mu}_q take the form \n  \\tilde{\\mu}_q(\\cdot) = \\sum_{j=1}^{ N} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot), \\qquad N \\sim \\mathrm{Poisson}(\\lambda),\n as q=1,\\ldots,d.\nMoreover, we assume the parameters \\theta_{jq} are iid draws from a probability law H(\\cdot\\,;\\psi), namely \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,\n where \\psi is a common hyperparameter sometimes endowed with a hyperprior."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#prior-specification-ii",
+    "href": "post/Roma2026/roma26_slides.html#prior-specification-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification II",
+    "text": "Prior specification II\n\nWe assign a prior to the atoms \\tilde{X}_j, which only label traits; it suffices that they are almost surely distinct, e.g., \\tilde{X}_j \\overset{\\textup{iid}}{\\sim} P_0 with P_0 non-atomic.\nThis specification is linked with infinite-dimensional trait models (James 2017; Shen et al. 2025).\nIndeed, (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) is a finite completely random vector (FCRV), a special case of completely random vectors (Catalano et al. 2021), crucially relying on the Poisson specification for N.\nMore precisely, \\tilde{\\bm{\\mu}} = (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) can be interpreted as an FCRV with parameters H^{(d)} =  H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi), \\lambda, and P_0, and we write \n\\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0).\n\n\n\n\n\nThis connection is relevant because as our results follow from a general CRV theory with Lévy intensities of the form \\rho_d(\\mathrm{d}\\theta_1 \\cdots \\mathrm{d}\\theta_d)\\,\\lambda P_0(\\mathrm{d}x), where \\rho_d may be infinite.\nThis framework covers both finite- and infinite-dimensional models; we focus on the finite case \\rho_d = H^{(d)} (a probability distribution), enabling estimation of the total number of traits, while Shen et al. (2025) consider the infinite-dimensional setting."
+  },
+  {
+    "objectID": "post/Roma2026/roma26_slides.html#the-augmented-likelihood-function",
+    "href": "post/Roma2026/roma26_slides.html#the-augmented-likelihood-function",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "The augmented likelihood function",
+    "text": "The augmented likelihood function\n\n\n\nIf all traits were known (no missing information), the model would be extremely simple: a collection of independent random variables, with an easily computable augmented likelihood.\nLet \\tilde{\\bm{A}} = (\\tilde{A}_{ijq} : i = 1, \\dots, n_q; j = 1, \\dots, N; q = 1, \\dots , d) denote the latent counts whose realization is \\tilde{\\bm{a}} and let \\mathcal{A} = \\{j : \\sum_{q=1}^d \\sum_{i=1}^{n_q} \\tilde{a}_{ijq} &gt; 0\\} denote the observed traits.\n\n\n\nThe augmented likelihood function \\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}}) given the parameters \\bm{\\theta} = (\\theta_{jq} : j=1,\\dots,N; q = 1,\\dots,d) and N, for the event (\\tilde{\\bm{A}} = \\tilde{\\bm{a}}, K_n = k) is \n\\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}})= \\prod_{q=1}^d  \\prod_{j=1}^N\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})= \\left[\\prod_{q=1}^d\\prod_{j \\not\\in \\mathcal{A}} P(0;\\theta_{j q})^{n_q}\\right]\\left[ \\prod_{q=1}^d \\prod_{j\\in \\mathcal{A}}\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})\\right].\n In the last term, the first product accounts for unobserved traits, while the second corresponds to observed ones.\nThe product \\prod_{q=1}^d P(0; \\theta_{jq})^{n_q} is the probability that trait \\tilde{X}_j is not observed in any subject across all groups."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#prior-specification-i",
+    "href": "post/Roma2026/roma26.html#prior-specification-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification I",
+    "text": "Prior specification I\n\nWe assume the total number of traits in the population, denoted with N, is finite and random. If K_n = k traits are observed, the number of unseen traits equals N-k.\nHence, there will be a finite collection of latent traits \\tilde{A}_{i1q}, \\dots, \\tilde{A}_{iNq} for each subject and group, with associated parameters \\theta_{1q},\\dots,\\theta_{Nq} for q = 1,\\dots,d.\n\n\nMoreover, we assume N is a Poisson random variable with parameter \\lambda&gt;0. In other terms, the group-specific measures \\tilde{\\mu}_q take the form \n  \\tilde{\\mu}_q(\\cdot) = \\sum_{j=1}^{ N} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot), \\qquad N \\sim \\mathrm{Poisson}(\\lambda),\n as q=1,\\ldots,d.\nMoreover, we assume the parameters \\theta_{jq} are iid draws from a probability law H(\\cdot\\,;\\psi), namely \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,\n where \\psi is a common hyperparameter sometimes endowed with a hyperprior."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#prior-specification-ii",
+    "href": "post/Roma2026/roma26.html#prior-specification-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification II",
+    "text": "Prior specification II\n\nWe assign a prior to the atoms \\tilde{X}_j, which only label traits; it suffices that they are almost surely distinct, e.g., \\tilde{X}_j \\overset{\\textup{iid}}{\\sim} P_0 with P_0 non-atomic.\nThis specification is linked with infinite-dimensional trait models (James 2017; Shen et al. 2025).\nIndeed, (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) is a finite completely random vector (FCRV), a special case of completely random vectors (Catalano et al. 2021), crucially relying on the Poisson specification for N.\nMore precisely, \\tilde{\\bm{\\mu}} = (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) can be interpreted as an FCRV with parameters H^{(d)} =  H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi), \\lambda, and P_0, and we write \n\\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0).\n\n\n\n\n\n\n\n\nThis connection is relevant because as our results follow from a general CRV theory with Lévy intensities of the form \\rho_d(\\mathrm{d}\\theta_1 \\cdots \\mathrm{d}\\theta_d)\\,\\lambda P_0(\\mathrm{d}x), where \\rho_d may be infinite.\nThis framework covers both finite- and infinite-dimensional models; we focus on the finite case \\rho_d = H^{(d)} (a probability distribution), enabling estimation of the total number of traits, while Shen et al. (2025) consider the infinite-dimensional setting."
+  },
+  {
+    "objectID": "post/Roma2026/roma26.html#the-augmented-likelihood-function",
+    "href": "post/Roma2026/roma26.html#the-augmented-likelihood-function",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "The augmented likelihood function",
+    "text": "The augmented likelihood function\n\n\n\nIf all traits were known (no missing information), the model would be extremely simple: a collection of independent random variables, with an easily computable augmented likelihood.\nLet \\tilde{\\bm{A}} = (\\tilde{A}_{ijq} : i = 1, \\dots, n_q; j = 1, \\dots, N; q = 1, \\dots , d) denote the latent counts whose realization is \\tilde{\\bm{a}} and let \\mathcal{A} = \\{j : \\sum_{q=1}^d \\sum_{i=1}^{n_q} \\tilde{a}_{ijq} &gt; 0\\} denote the observed traits.\n\n\nThe augmented likelihood function \\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}}) given the parameters \\bm{\\theta} = (\\theta_{jq} : j=1,\\dots,N; q = 1,\\dots,d) and N, for the event (\\tilde{\\bm{A}} = \\tilde{\\bm{a}}, K_n = k) is \n\\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}})= \\prod_{q=1}^d  \\prod_{j=1}^N\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})= \\left[\\prod_{q=1}^d\\prod_{j \\not\\in \\mathcal{A}} P(0;\\theta_{j q})^{n_q}\\right]\\left[ \\prod_{q=1}^d \\prod_{j\\in \\mathcal{A}}\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})\\right].\n In the last term, the first product accounts for unobserved traits, while the second corresponds to observed ones.\nThe product \\prod_{q=1}^d P(0; \\theta_{jq})^{n_q} is the probability that trait \\tilde{X}_j is not observed in any subject across all groups."
   }
 ]

@@ -683,6 +683,29 @@ N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} 
 </section>
 <section id="latent-class-models-with-an-unknown-number-of-traits" class="level2">
 <h2 class="anchored" data-anchor-id="latent-class-models-with-an-unknown-number-of-traits">Latent class models with an unknown number of traits</h2>
+<p>-The proposed Bayesian model defined is related to a classical statistical approach for modeling multivariate discrete data, known as <span class="blue">latent class analysis</span> <span class="citation" data-cites="Lazarsfeld1968 Goodman1974 Hagenaars2002">(<a href="#ref-Goodman1974" role="doc-biblioref">Goodman 1974</a>; <a href="#ref-Hagenaars2002" role="doc-biblioref">Hagenaars and McCutcheon 2002</a>; <a href="#ref-Lazarsfeld1968" role="doc-biblioref">Lazarsfeld and Henry 1968</a>)</span>.</p>
+<ul>
+<li><p>However, all these approaches assume that <span class="math inline">N</span> is a known constant, meaning that all traits are known in advance, including those equal to zero for all subjects. Ignoring unseen traits can skew the analysis and directly affect clustering.</p></li>
+<li><p>We compare the predictive allocation probabilities for a generic subject <span class="math inline">i</span> under our, and a na"ive model in which it is assumed that there are no unseen traits, i.e.&nbsp;we suppose <span class="math inline">N = k</span>. Specifically, let <span class="math display">
+p_{iq} = \mathds{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_{i,\text{new}} = \mathds{P}(\mu_i = \text{``new''} \mid \bm{Z}, \bm{\mu}_{-i}), \qquad i=1,\dots,n,
+</span> where <span class="math inline">\bm{\mu}_{-i} = (\mu_1,\dots\mu_{i-1},\mu_{i+1},\dots,\mu_n)</span> with <span class="math inline">d_{-i}</span> distinct values <span class="math inline">\tilde{\mu}_1,\dots,\tilde{\mu}_{d_{-i}}</span>, for <span class="math inline">q = 1,\dots,d_{-i}</span>. Thus each <span class="math inline">p_{iq}</span> denotes the predictive probability that subject <span class="math inline">i</span> belongs to the <span class="math inline">q</span>th cluster formed by the remaining subjects, and <span class="math inline">p_{i,\text{new}}</span> is the predictive probability for subject <span class="math inline">i</span> to form their own cluster.</p></li>
+<li><p>We similarly define <span class="math inline">p_{iq}^*</span> and <span class="math inline">p_{i,\text{new}}^*</span> for the na"ive model in which it is wrongly assumed that all traits are observed with <span class="math inline">N = k</span>. %The following result holds.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The predictive allocation probabilities for a generic subject <span class="math inline">i</span> under the proposed and a na"ive model in which it is assumed that there are no unseen traits, with <span class="math inline">N = k</span>, satisfy the inequality: <span class="math display">
+\frac{p_{i,\textup{new}}}{p_{iq}} &lt;  \frac{p_{i,\textup{new}}^*}{p_{iq}^*}, \qquad q=1,\dots,d_{-i}, \quad i=1,\dots,n.
+</span></p>
+</div>
+</div>
+</div>
+<!-- Refer to Section \ref{proof:cluster_comparison} of the Supplementary Material for the proof. -->
+<!-- The inequality in Proposition \ref{prop:cluster_comparison} shows that, once potentially unseen traits are taken into account, the probability of allocating new clusters decreases compared to the naïve model. The practical implications are substantial. In the naïve model, which ignores unseen traits, the likelihood of assigning new subjects to their own clusters is systematically overestimated, leading to a fragmented view of the data and less interpretable clusters. By contrast, our proposed model incorporates the role of unseen traits, which tends to stabilize cluster allocation probabilities. This adjustment reflects a more cautious and principled approach to inference, acknowledging that the possibility of unseen traits carries essential information.  -->
+<!-- We emphasize that Proposition~\ref{prop:cluster_comparison} is not limited to the Pitman–Yor specification; rather, it applies to any prior on the set of weights $(\xi_h)_{h \ge 1}$ of the discrete random probability measure $\tilde{p}$ in model \eqref{eq:mixture_model}. In Section \ref{sec:sim_k_fixed} of the Supplementary Material, we numerically illustrate a simple scenario where the discrepancy highlighted in Proposition \ref{prop:cluster_comparison} has a substantial impact on the inference process, demonstrating the importance of accounting for unseen traits in practical applications. -->
 </section>
 <section id="markov-chain-monte-carlo-algorithm" class="level2">
 <h2 class="anchored" data-anchor-id="markov-chain-monte-carlo-algorithm">Markov Chain Monte Carlo algorithm</h2>
@@ -733,8 +756,17 @@ Ghilotti, L., Camerlenghi, F., and Rigon, T. (2025a), <span>“Bayesian analysis
 <div id="ref-Ghilotti2025b" class="csl-entry" role="listitem">
 Ghilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025b), <span>“Bayesian nonparametric modeling of multivariate count data with an unknown number of traits,”</span> <em>arXiv:2510.24526</em>.
 </div>
+<div id="ref-Goodman1974" class="csl-entry" role="listitem">
+Goodman, L. A. (1974), <span>“Exploratory latent structure analysis using both identifiable and unidentifiable models,”</span> <em>Biometrika</em>, 61, 215–231.
+</div>
+<div id="ref-Hagenaars2002" class="csl-entry" role="listitem">
+Hagenaars, J. A., and McCutcheon, A. L. (2002), <em><span>Applied Latent Class Analysis</span></em>, Cambridge University Press.
+</div>
 <div id="ref-Jam17" class="csl-entry" role="listitem">
 James, L. F. (2017), <span>“Bayesian <span>Poisson</span> calculus for latent feature modeling via generalized <span>Indian</span> buffet process priors,”</span> <em>The Annals of Statistics</em>, 45, 2016–2045.
+</div>
+<div id="ref-Lazarsfeld1968" class="csl-entry" role="listitem">
+Lazarsfeld, P. F., and Henry, N. W. (1968), <em>Latent structure analysis</em>, Boston: Houghton Mifflin.
 </div>
 <div id="ref-Lijoi2020" class="csl-entry" role="listitem">
 Lijoi, A., Prünster, I., and Rigon, T. (2020), <span>“<span class="nocase">The Pitman–Yor multinomial process for mixture modelling</span>,”</span> <em>Biometrika</em>, 107, 891–906.

@@ -571,7 +571,7 @@ N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} 
 </span> where <span class="math inline">\gamma &gt; -\sigma</span>, <span class="math inline">\sigma \in [0, 1)</span>.</p></li>
 <li><p>Note that the <span class="blue">number of groups</span> <span class="math inline">1 \le d \le n</span> is itself a <span class="orange">random variable</span> and there is no upper bound other than the sample size.</p></li>
 <li><p>The above expression is referred to as <span class="blue">exchangeable partition probability function</span> <span class="citation" data-cites="Pitman1996">Pitman (<a href="#/references" role="doc-biblioref" onclick="">1996</a>)</span>.</p></li>
-<li><p>When <span class="math inline">\sigma = 0</span>, the Pitman–Yor process reduces to the partition law of a <span class="orange">Dirichlet process</span> <span class="citation" data-cites="Ferguson1973">(<a href="#/references" role="doc-biblioref" onclick="">Ferguson 1973</a>)</span>.</p></li>
+<li><p>When <span class="math inline">\sigma = 0</span>, the Pitman–Yor process reduces to a <span class="orange">Dirichlet process</span> <span class="citation" data-cites="Ferguson1973">(<a href="#/references" role="doc-biblioref" onclick="">Ferguson 1973</a>)</span>.</p></li>
 </ul>
 <div class="fragment">
 <ul>
@@ -609,13 +609,49 @@ N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} 
 <li><p>This model is far <span class="orange">more flexible</span> than the known-group, where <span class="math inline">Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})</span>. Indeed, we have that <span class="math inline">Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)</span> and <span class="math display">
 \mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1,
 </span> where the random vectors <span class="math inline">(\tilde{A}_{i1},\dots, \tilde{A}_{iN})</span> for <span class="math inline">i \ge 1</span> are conditionally iid from the above law.</p></li>
+<li><p>The proposed Bayesian model defined is related to <span class="blue">latent class analysis</span> (LCA).</p></li>
 </ul>
 </section>
-<section id="latent-class-models-with-an-unknown-number-of-traits" class="slide level2 center">
-<h2>Latent class models with an unknown number of traits</h2>
+<section id="ignoring-the-unseen-traits" class="slide level2 center">
+<h2>Ignoring the unseen traits</h2>
+<ul>
+<li><p>However, LCA assume that <span class="math inline">N</span> is a known constant, meaning that all traits are known in advance, including those equal to zero for all subjects. <span class="orange">Ignoring unseen traits</span> can <span class="orange">skew</span> the analysis.</p></li>
+<li><p>Consider the following <span class="blue">predictive allocation probabilities</span>: <span class="math display">
+p_{iq} = \mathbb{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_{i,\text{new}} = \mathbb{P}(\mu_i = \text{``new''} \mid \bm{Z}, \bm{\mu}_{-i}), \qquad i=1,\dots,n,
+</span> where <span class="math inline">\bm{\mu}_{-i} = (\mu_1,\dots\mu_{i-1},\mu_{i+1},\dots,\mu_n)</span> with <span class="math inline">d_{-i}</span> distinct values <span class="math inline">\tilde{\mu}_1,\dots,\tilde{\mu}_{d_{-i}}</span>, for <span class="math inline">q = 1,\dots,d_{-i}</span>.</p></li>
+<li><p>We similarly define <span class="math inline">p_{iq}^*</span> and <span class="math inline">p_{i,\text{new}}^*</span> for the naïve model in which it is wrongly assumed that all traits are observed with <span class="math inline">N = k</span>.</p></li>
+</ul>
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Proposition <span class="citation" data-cites="Ghilotti2025b">(<a href="#/references" role="doc-biblioref" onclick="">Ghilotti et al. 2025b</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<p>The predictive allocation probabilities for a generic subject <span class="math inline">i</span> under the proposed and a na"ive model in which it is assumed that there are no unseen traits, with <span class="math inline">N = k</span>, satisfy the inequality: <span class="math display">
+\frac{p_{i,\textup{new}}}{p_{iq}} &lt;  \frac{p_{i,\textup{new}}^*}{p_{iq}^*}, \qquad q=1,\dots,d_{-i}, \quad i=1,\dots,n.
+</span></p>
+</div>
+</div>
+</div>
 </section>
 <section id="markov-chain-monte-carlo-algorithm" class="slide level2 center">
 <h2>Markov Chain Monte Carlo algorithm</h2>
+<ul>
+<li>Posterior inference for the partition <span class="math inline">\bm{C}</span> rely on a simple <span class="blue">Gibbs sampling</span> algorithm.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>We iteratively sample the labels of <span class="math inline">\mu_i \mid \bm Z, \bm{\mu}_{-i}</span> for <span class="math inline">i=1,\dots,n</span> according to the <span class="orange">full conditional probabilities</span> <span class="math inline">p_{iq}</span> and <span class="math inline">p_{i,\text{new}}</span>, which are proportional to <span class="math display">
+p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lambda, \psi), \qquad p_{i,\textup{new}} \propto \frac{\gamma + d_{-i}\sigma}{n+\gamma-1}\,\pi_n(\bm{a}_{i,\textup{new}}; \lambda, \psi),
+</span> where <span class="math inline">\bm{a}_{iq}</span> denotes the observed trait values organized according to the partition <span class="math inline">\bm{C}_{-i}</span>, with subject <span class="math inline">i</span> allocated to cluster <span class="math inline">q</span>. Similarly, <span class="math inline">\bm{a}_{i,\textup{new}}</span> corresponds to the trait values organized according to the partition <span class="math inline">\bm{C}_{-i}</span> when subject <span class="math inline">i</span> is assigned to a new cluster.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>This updating scheme is particularly straightforward thanks to the closed-form expression of <span class="math inline">\pi_n(\bm a; \lambda, \psi)</span>.</p></li>
+<li><p>When hyperpriors are placed on the parameters <span class="math inline">\lambda</span> and <span class="math inline">\psi</span>, the MCMC scheme described above is coupled with updates of <span class="math inline">\lambda</span> and <span class="math inline">\psi</span> from their respective <span class="blue">full conditional</span> distributions.</p></li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="infinito-network" class="title-slide slide level1 center">

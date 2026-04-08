@@ -425,7 +425,7 @@ where $\gamma > -\sigma$, $\sigma \in [0, 1)$.
 
 - The above expression is referred to as [exchangeable partition probability function]{.blue} @Pitman1996. 
 
-- When $\sigma = 0$, the Pitman–Yor process reduces to the partition law of a [Dirichlet process]{.orange} [@Ferguson1973]. 
+- When $\sigma = 0$, the Pitman–Yor process reduces to a [Dirichlet process]{.orange} [@Ferguson1973]. 
 
 . . .
 
@@ -474,10 +474,48 @@ $$
 $$
 where the random vectors $(\tilde{A}_{i1},\dots, \tilde{A}_{iN})$ for $i \ge 1$ are conditionally iid from the above law. 
 
+- The proposed Bayesian model defined is related to [latent class analysis]{.blue} (LCA). 
 
-## Latent class models with an unknown number of traits
+## Ignoring the unseen traits
+
+- However, LCA assume that $N$ is a known constant, meaning that all traits are known in advance, including those equal to zero for all subjects. [Ignoring unseen traits]{.orange} can [skew]{.orange} the analysis.
+
+- Consider the following [predictive allocation probabilities]{.blue}:
+$$
+p_{iq} = \mathbb{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_{i,\text{new}} = \mathbb{P}(\mu_i = \text{``new''} \mid \bm{Z}, \bm{\mu}_{-i}), \qquad i=1,\dots,n,
+$$
+where $\bm{\mu}_{-i} = (\mu_1,\dots\mu_{i-1},\mu_{i+1},\dots,\mu_n)$ with $d_{-i}$ distinct values $\tilde{\mu}_1,\dots,\tilde{\mu}_{d_{-i}}$, for $q = 1,\dots,d_{-i}$. 
+
+- We similarly define $p_{iq}^*$ and $p_{i,\text{new}}^*$ for the naïve model in which it is wrongly assumed that all traits are observed with $N = k$. 
+
+:::callout-warning
+#### Proposition [@Ghilotti2025b]
+
+The predictive allocation probabilities for a generic subject $i$ under the proposed and a na\"ive model in which it is assumed that there are no unseen traits, with $N = k$, satisfy the inequality:
+$$
+ \frac{p_{i,\textup{new}}}{p_{iq}} <  \frac{p_{i,\textup{new}}^*}{p_{iq}^*}, \qquad q=1,\dots,d_{-i}, \quad i=1,\dots,n.
+$$
+:::
+
+
 
 ## Markov Chain Monte Carlo algorithm
+
+- Posterior inference for the partition $\bm{C}$ rely on a simple [Gibbs sampling]{.blue} algorithm. 
+
+. . .
+
+- We iteratively sample the labels of $\mu_i \mid \bm Z, \bm{\mu}_{-i}$ for $i=1,\dots,n$ according to the [full conditional probabilities]{.orange} $p_{iq}$ and $p_{i,\text{new}}$, which are proportional to
+$$
+p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lambda, \psi), \qquad p_{i,\textup{new}} \propto \frac{\gamma + d_{-i}\sigma}{n+\gamma-1}\,\pi_n(\bm{a}_{i,\textup{new}}; \lambda, \psi),
+$$
+where $\bm{a}_{iq}$ denotes the observed trait values organized according to the partition $\bm{C}_{-i}$, with subject $i$ allocated to cluster $q$. Similarly, $\bm{a}_{i,\textup{new}}$ corresponds to the trait values organized according to the partition $\bm{C}_{-i}$ when subject $i$ is assigned to a new cluster. 
+
+. . .
+
+- This updating scheme is particularly straightforward thanks to the closed-form expression of $\pi_n(\bm a; \lambda, \psi)$.
+
+- When hyperpriors are placed on the parameters $\lambda$ and $\psi$, the MCMC scheme described above is coupled with updates of $\lambda$ and $\psi$ from their respective [full conditional]{.blue} distributions. 
 
 # *Infinito* network
 

@@ -208,11 +208,11 @@ window.Quarto = {
   <li><a href="#infinito-network" id="toc-infinito-network" class="nav-link" data-scroll-target="#infinito-network"><em>Infinito</em> network</a>
   <ul class="collapse">
   <li><a href="#operazione-infinito-dataset" id="toc-operazione-infinito-dataset" class="nav-link" data-scroll-target="#operazione-infinito-dataset"><em>Operazione Infinito</em> dataset</a></li>
-  <li><a href="#hyperparameter-settings-and-practicalities" id="toc-hyperparameter-settings-and-practicalities" class="nav-link" data-scroll-target="#hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</a></li>
   <li><a href="#adjacency-matrix-of-the-infinito-network" id="toc-adjacency-matrix-of-the-infinito-network" class="nav-link" data-scroll-target="#adjacency-matrix-of-the-infinito-network">Adjacency matrix of the <em>Infinito</em> network</a></li>
+  <li><a href="#hyperparameter-settings-and-practicalities" id="toc-hyperparameter-settings-and-practicalities" class="nav-link" data-scroll-target="#hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</a></li>
   <li><a href="#estimated-posterior-probabilities-of-co-occurrence" id="toc-estimated-posterior-probabilities-of-co-occurrence" class="nav-link" data-scroll-target="#estimated-posterior-probabilities-of-co-occurrence">Estimated posterior probabilities of co-occurrence</a></li>
   <li><a href="#posterior-number-of-clusters" id="toc-posterior-number-of-clusters" class="nav-link" data-scroll-target="#posterior-number-of-clusters">Posterior number of clusters</a></li>
-  <li><a href="#posterior-distribution-of-the-unsees-meetings" id="toc-posterior-distribution-of-the-unsees-meetings" class="nav-link" data-scroll-target="#posterior-distribution-of-the-unsees-meetings">Posterior distribution of the unsees meetings</a></li>
+  <li><a href="#posterior-distribution-of-the-unseen-meetings" id="toc-posterior-distribution-of-the-unseen-meetings" class="nav-link" data-scroll-target="#posterior-distribution-of-the-unseen-meetings">Posterior distribution of the unseen meetings</a></li>
   <li><a href="#final-considerations" id="toc-final-considerations" class="nav-link" data-scroll-target="#final-considerations">Final considerations</a></li>
   <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -750,20 +750,6 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <li><p>Affiliates’ <em>locale</em> membership defines a natural five-group partition, which we compare with the groups inferred from the mixture model.</p></li>
 </ul>
 </section>
-<section id="hyperparameter-settings-and-practicalities" class="level2">
-<h2 class="anchored" data-anchor-id="hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</h2>
-<ul>
-<li><p>We consider models for binary traits, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>
-<li><p>Prior distributions for the model parameters <span class="math inline">\lambda</span>, <span class="math inline">-\alpha</span>, and <span class="math inline">\alpha + \beta</span> are specified as follows:</p>
-<ol type="i">
-<li>The parameter <span class="math inline">\lambda</span>, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span>.</li>
-<li>The hyperparameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span> are chosen so that the prior expected value of <span class="math inline">N</span> equals <span class="math inline">\hat{N} = 1.5k</span>, where <span class="math inline">k = 44</span> denotes the observed number of meetings in the dataset, and the prior variance of <span class="math inline">N</span> is set to <span class="math inline">10\hat{N}</span>.</li>
-<li>For the parameters <span class="math inline">(a, b) = (-\alpha, \alpha + \beta)</span> of the beta distribution <span class="math inline">H</span>, independent gamma priors are assumed with hyperparameters <span class="math inline">(\alpha_a, \beta_a)</span> and <span class="math inline">(\alpha_b, \beta_b)</span>, respectively. Specifically, <span class="math inline">(\alpha_a, \beta_a)</span> are set to induce a prior mean of <span class="math inline">0.2</span> for <span class="math inline">a</span> with a large variance, while <span class="math inline">(\alpha_b, \beta_b)</span> are chosen so that the prior mean of <span class="math inline">b</span> is <span class="math inline">10</span>, also with high variance.</li>
-</ol></li>
-<li><p>In the mixture model, we additionally set <span class="math inline">\sigma = 0</span>, corresponding to a Dirichlet process, and <span class="math inline">\gamma = 1</span>.</p></li>
-<li><p>For both models, posterior inference relies on <span class="math inline">10,000</span> MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2.</p></li>
-</ul>
-</section>
 <section id="adjacency-matrix-of-the-infinito-network" class="level2">
 <h2 class="anchored" data-anchor-id="adjacency-matrix-of-the-infinito-network">Adjacency matrix of the <em>Infinito</em> network</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -773,6 +759,20 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 </div>
 <ul>
 <li><span class="blue">Observed adjacency matrix</span>, partitioned according to the VI clustering <span class="citation" data-cites="Wad18">(<a href="#ref-Wad18" role="doc-biblioref">Wade and Ghahramani 2018</a>)</span>. Side colors correspond to the <em>locali</em>, with darker/lighter shades denoting bosses/affiliates.</li>
+</ul>
+</section>
+<section id="hyperparameter-settings-and-practicalities" class="level2">
+<h2 class="anchored" data-anchor-id="hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</h2>
+<ul>
+<li><p>We consider models for <span class="orange">binary traits</span>, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>
+<li><p>Prior distributions for the model hyperparameters <span class="math inline">\lambda</span>, <span class="math inline">-\alpha</span>, and <span class="math inline">\alpha + \beta</span> are specified as follows:</p>
+<ol type="i">
+<li>The parameter <span class="math inline">\lambda</span>, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span>.</li>
+<li>The hyperparameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span> are chosen so that the prior expected value of <span class="math inline">N</span> equals <span class="math inline">\hat{N} = 1.5k</span>, where <span class="math inline">k = 44</span> denotes the observed number of meetings in the dataset, and the prior variance of <span class="math inline">N</span> is set to <span class="math inline">10\hat{N}</span>.</li>
+<li>For the parameters <span class="math inline">(a, b) = (-\alpha, \alpha + \beta)</span> of the beta distribution <span class="math inline">H</span>, independent gamma priors are assumed with hyperparameters <span class="math inline">(\alpha_a, \beta_a)</span> and <span class="math inline">(\alpha_b, \beta_b)</span>, respectively. Specifically, <span class="math inline">(\alpha_a, \beta_a)</span> are set to induce a prior mean of <span class="math inline">0.2</span> for <span class="math inline">a</span> with a large variance, while <span class="math inline">(\alpha_b, \beta_b)</span> are chosen so that the prior mean of <span class="math inline">b</span> is <span class="math inline">10</span>, also with high variance.</li>
+</ol></li>
+<li><p>In the <span class="blue">mixture model</span>, we additionally set <span class="math inline">\sigma = 0</span>, corresponding to a Dirichlet process, and <span class="math inline">\gamma = 1</span>.</p></li>
+<li><p>For both models, posterior inference relies on <span class="math inline">10,000</span> MCMC iterations, with the first 1,000 samples discarded as <span class="orange">burn-in</span> and a thinning interval of <span class="math inline">2</span>.</p></li>
 </ul>
 </section>
 <section id="estimated-posterior-probabilities-of-co-occurrence" class="level2">
@@ -799,12 +799,40 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <p><img src="img/post_number_clusters_ndrangheta.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
+<ul>
+<li><p>Posterior distribution of the number of clusters <span class="math inline">d</span> in the <span class="blue">mixture model</span>.</p></li>
+<li><p>In particular, such a distribution is strictly greater than <span class="math inline">5</span> (i.e.&nbsp;the number of <em>locali</em>), consolidating the idea that <em>locali</em> do not fully capture the network structure.</p></li>
+</ul>
 </section>
-<section id="posterior-distribution-of-the-unsees-meetings" class="level2">
-<h2 class="anchored" data-anchor-id="posterior-distribution-of-the-unsees-meetings">Posterior distribution of the unsees meetings</h2>
+<section id="posterior-distribution-of-the-unseen-meetings" class="level2">
+<h2 class="anchored" data-anchor-id="posterior-distribution-of-the-unseen-meetings">Posterior distribution of the unseen meetings</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img src="img/post_unseen_meetings_ndrangheta_locali_clust.png" class="img-fluid quarto-figure quarto-figure-center"> Posterior distribution of <span class="math inline">N'</span> under a <span class="blue">known-groups</span> specification with partition induced by <em>locali</em> membership.</p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/post_unseen_meetings_ndrangheta.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Posterior distribution of <span class="math inline">N'</span> under an <span class="orange">unknown-groups</span> model with groups <span class="math inline">\bm{C}</span> learned from the data.</p>
+</div>
+</div>
 </section>
 <section id="final-considerations" class="level2">
 <h2 class="anchored" data-anchor-id="final-considerations">Final considerations</h2>
+<ul>
+<li><p>Consistent with <span class="citation" data-cites="esbm_rigon">Legramanti et al. (<a href="#ref-esbm_rigon" role="doc-biblioref">2022</a>)</span> and <span class="citation" data-cites="Lu2025">Lu et al. (<a href="#ref-Lu2025" role="doc-biblioref">2025</a>)</span>, the inferred group structure reveals intricate organizational dynamics (more in the <span class="orange">paper</span>!).</p></li>
+<li><p>Notably, there is a clear tendency for clusters to form within individual <em>locali</em>, though the mechanisms governing group formation vary between affiliates and bosses.</p></li>
+<li><p>This suggests a design aimed at <span class="orange">resilience</span>: lower-ranked affiliates can form peripheral groups more easily, whereas core groups (including all bosses) are more constrained and typically smaller.</p></li>
+</ul>
+<ul>
+<li><p>Our unknown-groups model also suggests the likely presence of a few number of <span class="blue">undetected meetings</span>, which aligns with expectations and confirms the need of accounting for unseen traits.</p></li>
+<li><p>Nevertheless, some <span class="orange">caution</span> is warranted. Estimating the number of unseen meetings is an extrapolation task, making accuracy hard to assess. Simulation studies support the model under correct specification, but <span class="orange">some misspecification</span> is inevitable in practice.</p></li>
+<li><p>Thus, estimates should be viewed as rough indications, and interpreted conservatively.</p></li>
+</ul>
 </section>
 <section id="thank-you" class="level2">
 <h2 class="anchored" data-anchor-id="thank-you">Thank you!</h2>
@@ -852,11 +880,17 @@ Ghilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025b), <span>“Bay
 <div id="ref-Jam17" class="csl-entry" role="listitem">
 James, L. F. (2017), <span>“Bayesian <span>Poisson</span> calculus for latent feature modeling via generalized <span>Indian</span> buffet process priors,”</span> <em>The Annals of Statistics</em>, 45, 2016–2045.
 </div>
+<div id="ref-esbm_rigon" class="csl-entry" role="listitem">
+Legramanti, S., Rigon, T., Durante, D., and Dunson, D. B. (2022), <span>“<span class="nocase">Extended stochastic block models with application to criminal networks</span>,”</span> <em>The Annals of Applied Statistics</em>, 16, 2369–2395.
+</div>
 <div id="ref-Lijoi2020" class="csl-entry" role="listitem">
 Lijoi, A., Prünster, I., and Rigon, T. (2020), <span>“<span class="nocase">The Pitman–Yor multinomial process for mixture modelling</span>,”</span> <em>Biometrika</em>, 107, 891–906.
 </div>
 <div id="ref-Lijoi2024" class="csl-entry" role="listitem">
 Lijoi, A., Prünster, I., and Rigon, T. (2024), <span>“<span class="nocase">Finite-dimensional discrete random structures and Bayesian clustering</span>,”</span> <em>Journal of the American Statistical Association</em>, 119, 929–941.
+</div>
+<div id="ref-Lu2025" class="csl-entry" role="listitem">
+Lu, C., Durante, D., and Friel, N. (2025), <span>“Zero-inflated stochastic block modeling of efficiency-security trade-offs in weighted criminal networks,”</span> <em>Journal of the Royal Statistical Society Series A: Statistics in Society</em>, (In Press).
 </div>
 <div id="ref-Per92" class="csl-entry" role="listitem">
 Perman, M., Pitman, J., and Yor, M. (1992), <span>“Size-biased sampling of <span>P</span>oisson point processes and excursions,”</span> <em>Probability Theory and Related Fields</em>, 92, 21–39.

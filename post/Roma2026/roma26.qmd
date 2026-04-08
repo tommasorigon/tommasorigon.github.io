@@ -269,7 +269,7 @@ In the last term, the first product accounts for [unobserved]{.orange} traits, w
 ## Marginal distribution
 
 :::callout-warning
-#### Theorem (Marginal distribution; Ghilotti et al., 2025)
+#### Theorem (Marginal distribution; @Ghilotti2025b)
 
 Let $\bm{Z}$ be a sample from the partially exchangeable model, with $\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$ with $H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)$. 
 
@@ -308,7 +308,7 @@ where $(a)_n = a(a+1)\cdots(a+n-1)$ is the ascending factorial with $a > 0$.
 ## Posterior distribution
 
 :::callout-warning
-#### Theorem (Posterior distribution; Ghilotti et al., 2025)
+#### Theorem (Posterior distribution; @Ghilotti2025b)
 
 Let $\bm{Z}$ be a sample from the partially exchangeable model with prior $\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$ and $H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)$. 
 

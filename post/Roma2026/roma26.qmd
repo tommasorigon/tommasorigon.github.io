@@ -491,7 +491,7 @@ where $\bm{\mu}_{-i} = (\mu_1,\dots\mu_{i-1},\mu_{i+1},\dots,\mu_n)$ with $d_{-i
 :::callout-warning
 #### Proposition [@Ghilotti2025b]
 
-The predictive allocation probabilities for a generic subject $i$ under the proposed and a na\"ive model in which it is assumed that there are no unseen traits, with $N = k$, satisfy the inequality:
+The predictive allocation probabilities for a generic subject $i$ under the proposed and a naïve model in which it is assumed that there are no unseen traits, with $N = k$, satisfy the inequality:
 $$
  \frac{p_{i,\textup{new}}}{p_{iq}} <  \frac{p_{i,\textup{new}}^*}{p_{iq}^*}, \qquad q=1,\dots,d_{-i}, \quad i=1,\dots,n.
 $$
@@ -505,7 +505,7 @@ $$
 
 . . .
 
-- We iteratively sample the labels of $\mu_i \mid \bm Z, \bm{\mu}_{-i}$ for $i=1,\dots,n$ according to the [full conditional probabilities]{.orange} $p_{iq}$ and $p_{i,\text{new}}$, which are proportional to
+- We [iteratively sample]{.blue} the labels of $\mu_i \mid \bm Z, \bm{\mu}_{-i}$ for $i=1,\dots,n$ according to the [full conditional probabilities]{.orange} $p_{iq}$ and $p_{i,\text{new}}$, which are proportional to
 $$
 p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lambda, \psi), \qquad p_{i,\textup{new}} \propto \frac{\gamma + d_{-i}\sigma}{n+\gamma-1}\,\pi_n(\bm{a}_{i,\textup{new}}; \lambda, \psi),
 $$
@@ -517,9 +517,82 @@ where $\bm{a}_{iq}$ denotes the observed trait values organized according to the
 
 - When hyperpriors are placed on the parameters $\lambda$ and $\psi$, the MCMC scheme described above is coupled with updates of $\lambda$ and $\psi$ from their respective [full conditional]{.blue} distributions. 
 
+. . .
+
+- Any other quantity of interest, such as $N$ or $\theta_{jq}$, can be easily sampled as a [post-processing step]{.orange} exploiting the posterior representation.
+
 # *Infinito* network
 
+## *Operazione Infinito* dataset
+
+- The data stem from *Operazione Infinito* [@Calderoni17], a six-year-long, large-scale [law enforcement operation]{.blue} aimed at monitoring and dismantling the core structure of *La Lombardia*, the highly pervasive branch of the 'Ndrangheta Mafia operating in the Milan area.  
+
+. . .
+ 
+- The attendance of the $n$ affiliates at $k$ distinct [meetings]{.blue} can be represented by the $n \times k$ binary matrix $\bm{A}$, where each entry $A_{i\ell} \in \{0, 1\}$ indicates whether [individual]{.blue} $i$ [attended meeting]{.orange} $\ell$. 
+
+- We are also interested in understanding the implications on the [adjacency matrix]{.blue} 
+$$
+\bm{W} = \bm{A}\bm{A}^T,
+$$
+whose generic entry $W_{ii'}$ represents the number of [meetings jointly attended]{.blue} by affiliates $i$ and $i'$.
+
+. . .
+
+- We focus on the $d = 5$ [most populated *locali*]{.orange}, with sizes $n_1 = 16,n_2 = 14, n_3 = 23, n_4 = 15, n_5 = 16$, of the *Infinito* dataset, for a total of $n = 84$ affiliates and $k = 44$ recorded meetings among them. 
+
+- Affiliates’ *locale* membership defines a natural five-group partition, which we compare with the groups inferred from the mixture model.
+
+## Hyperparameter settings and practicalities
+
+- We consider models for binary traits, where $H(\cdot;\psi)$ is the beta distribution with parameters $(-\alpha, \alpha + \beta)$, with $\psi = (\alpha, \beta)$. 
+
+- Prior distributions for the model parameters $\lambda$, $-\alpha$, and $\alpha + \beta$ are specified as follows:
+  i. The parameter $\lambda$, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters $(\alpha_\lambda, \beta_\lambda)$. 
+  ii. The hyperparameters $(\alpha_\lambda, \beta_\lambda)$ are chosen so that the prior expected value of $N$ equals $\hat{N} = 1.5k$, where $k = 44$ denotes the observed number of meetings in the dataset, and the prior variance of $N$ is set to $10\hat{N}$. 
+  iii. For the parameters $(a, b) = (-\alpha, \alpha + \beta)$ of the beta distribution $H$, independent gamma priors are assumed with hyperparameters $(\alpha_a, \beta_a)$ and $(\alpha_b, \beta_b)$, respectively. Specifically, $(\alpha_a, \beta_a)$ are set to induce a prior mean of $0.2$ for $a$ with a large variance, while $(\alpha_b, \beta_b)$ are chosen so that the prior mean of $b$ is $10$, also with high variance. 
+
+- In the mixture model, we additionally set $\sigma = 0$, corresponding to a Dirichlet process, and $\gamma = 1$. 
+
+- For both models, posterior inference relies on $10,000$ MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2.
+
+
 ## Adjacency matrix of the *Infinito* network
+
+![](img/adj_matrix_vi_ndrangheta.png){width=80% fig-align="center"}
+
+- [Observed adjacency matrix]{.blue}, partitioned according to the VI clustering [@Wad18].  Side colors correspond to the *locali*, with darker/lighter shades denoting bosses/affiliates.
+
+## Estimated posterior probabilities of co-occurrence
+
+::: columns
+
+::: {.column width="45%"}
+
+![](img/post_expected_adj_matrix_ndrangheta_locali_clust_vi_order.png){fig-align="center"}
+Posterior expectation under a [known-groups]{.blue} specification with partition induced by *locali* membership.
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+
+![](img/post_expected_adj_matrix_ndrangheta.png){fig-align="center"}
+
+Posterior expectation under an [unknown-groups]{.orange} model with groups $\bm{C}$ learned from the data.
+:::
+:::
+
+
+
+## Posterior number of clusters
+
+![](img/post_number_clusters_ndrangheta.png){width=70% fig-align="center"}
+
+## Posterior distribution of the unsees meetings
+
+## Final considerations
 
 ## Thank you!
 

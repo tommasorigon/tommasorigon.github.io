@@ -627,7 +627,7 @@ p_{iq} = \mathbb{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_
 <p><strong>Proposition <span class="citation" data-cites="Ghilotti2025b">(<a href="#/references" role="doc-biblioref" onclick="">Ghilotti et al. 2025b</a>)</span></strong></p>
 </div>
 <div class="callout-content">
-<p>The predictive allocation probabilities for a generic subject <span class="math inline">i</span> under the proposed and a na"ive model in which it is assumed that there are no unseen traits, with <span class="math inline">N = k</span>, satisfy the inequality: <span class="math display">
+<p>The predictive allocation probabilities for a generic subject <span class="math inline">i</span> under the proposed and a naïve model in which it is assumed that there are no unseen traits, with <span class="math inline">N = k</span>, satisfy the inequality: <span class="math display">
 \frac{p_{i,\textup{new}}}{p_{iq}} &lt;  \frac{p_{i,\textup{new}}^*}{p_{iq}^*}, \qquad q=1,\dots,d_{-i}, \quad i=1,\dots,n.
 </span></p>
 </div>
@@ -641,7 +641,7 @@ p_{iq} = \mathbb{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_
 </ul>
 <div class="fragment">
 <ul>
-<li>We iteratively sample the labels of <span class="math inline">\mu_i \mid \bm Z, \bm{\mu}_{-i}</span> for <span class="math inline">i=1,\dots,n</span> according to the <span class="orange">full conditional probabilities</span> <span class="math inline">p_{iq}</span> and <span class="math inline">p_{i,\text{new}}</span>, which are proportional to <span class="math display">
+<li>We <span class="blue">iteratively sample</span> the labels of <span class="math inline">\mu_i \mid \bm Z, \bm{\mu}_{-i}</span> for <span class="math inline">i=1,\dots,n</span> according to the <span class="orange">full conditional probabilities</span> <span class="math inline">p_{iq}</span> and <span class="math inline">p_{i,\text{new}}</span>, which are proportional to <span class="math display">
 p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lambda, \psi), \qquad p_{i,\textup{new}} \propto \frac{\gamma + d_{-i}\sigma}{n+\gamma-1}\,\pi_n(\bm{a}_{i,\textup{new}}; \lambda, \psi),
 </span> where <span class="math inline">\bm{a}_{iq}</span> denotes the observed trait values organized according to the partition <span class="math inline">\bm{C}_{-i}</span>, with subject <span class="math inline">i</span> allocated to cluster <span class="math inline">q</span>. Similarly, <span class="math inline">\bm{a}_{i,\textup{new}}</span> corresponds to the trait values organized according to the partition <span class="math inline">\bm{C}_{-i}</span> when subject <span class="math inline">i</span> is assigned to a new cluster.</li>
 </ul>
@@ -652,14 +652,83 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <li><p>When hyperpriors are placed on the parameters <span class="math inline">\lambda</span> and <span class="math inline">\psi</span>, the MCMC scheme described above is coupled with updates of <span class="math inline">\lambda</span> and <span class="math inline">\psi</span> from their respective <span class="blue">full conditional</span> distributions.</p></li>
 </ul>
 </div>
+<div class="fragment">
+<ul>
+<li>Any other quantity of interest, such as <span class="math inline">N</span> or <span class="math inline">\theta_{jq}</span>, can be easily sampled as a <span class="orange">post-processing step</span> exploiting the posterior representation.</li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="infinito-network" class="title-slide slide level1 center">
 <h1><em>Infinito</em> network</h1>
 
 </section>
+<section id="operazione-infinito-dataset" class="slide level2 center">
+<h2><em>Operazione Infinito</em> dataset</h2>
+<ul>
+<li>The data stem from <em>Operazione Infinito</em> <span class="citation" data-cites="Calderoni17">(<a href="#/references" role="doc-biblioref" onclick="">Calderoni et al. 2017</a>)</span>, a six-year-long, large-scale <span class="blue">law enforcement operation</span> aimed at monitoring and dismantling the core structure of <em>La Lombardia</em>, the highly pervasive branch of the ’Ndrangheta Mafia operating in the Milan area.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>The attendance of the <span class="math inline">n</span> affiliates at <span class="math inline">k</span> distinct <span class="blue">meetings</span> can be represented by the <span class="math inline">n \times k</span> binary matrix <span class="math inline">\bm{A}</span>, where each entry <span class="math inline">A_{i\ell} \in \{0, 1\}</span> indicates whether <span class="blue">individual</span> <span class="math inline">i</span> <span class="orange">attended meeting</span> <span class="math inline">\ell</span>.</p></li>
+<li><p>We are also interested in understanding the implications on the <span class="blue">adjacency matrix</span> <span class="math display">
+\bm{W} = \bm{A}\bm{A}^T,
+</span> whose generic entry <span class="math inline">W_{ii'}</span> represents the number of <span class="blue">meetings jointly attended</span> by affiliates <span class="math inline">i</span> and <span class="math inline">i'</span>.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>We focus on the <span class="math inline">d = 5</span> <span class="orange">most populated <em>locali</em></span>, with sizes <span class="math inline">n_1 = 16,n_2 = 14, n_3 = 23, n_4 = 15, n_5 = 16</span>, of the <em>Infinito</em> dataset, for a total of <span class="math inline">n = 84</span> affiliates and <span class="math inline">k = 44</span> recorded meetings among them.</p></li>
+<li><p>Affiliates’ <em>locale</em> membership defines a natural five-group partition, which we compare with the groups inferred from the mixture model.</p></li>
+</ul>
+</div>
+</section>
+<section id="hyperparameter-settings-and-practicalities" class="slide level2 center">
+<h2>Hyperparameter settings and practicalities</h2>
+<ul>
+<li><p>We consider models for binary traits, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>
+<li><p>Prior distributions for the model parameters <span class="math inline">\lambda</span>, <span class="math inline">-\alpha</span>, and <span class="math inline">\alpha + \beta</span> are specified as follows:</p>
+<ol type="i">
+<li>The parameter <span class="math inline">\lambda</span>, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span>.</li>
+<li>The hyperparameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span> are chosen so that the prior expected value of <span class="math inline">N</span> equals <span class="math inline">\hat{N} = 1.5k</span>, where <span class="math inline">k = 44</span> denotes the observed number of meetings in the dataset, and the prior variance of <span class="math inline">N</span> is set to <span class="math inline">10\hat{N}</span>.</li>
+<li>For the parameters <span class="math inline">(a, b) = (-\alpha, \alpha + \beta)</span> of the beta distribution <span class="math inline">H</span>, independent gamma priors are assumed with hyperparameters <span class="math inline">(\alpha_a, \beta_a)</span> and <span class="math inline">(\alpha_b, \beta_b)</span>, respectively. Specifically, <span class="math inline">(\alpha_a, \beta_a)</span> are set to induce a prior mean of <span class="math inline">0.2</span> for <span class="math inline">a</span> with a large variance, while <span class="math inline">(\alpha_b, \beta_b)</span> are chosen so that the prior mean of <span class="math inline">b</span> is <span class="math inline">10</span>, also with high variance.</li>
+</ol></li>
+<li><p>In the mixture model, we additionally set <span class="math inline">\sigma = 0</span>, corresponding to a Dirichlet process, and <span class="math inline">\gamma = 1</span>.</p></li>
+<li><p>For both models, posterior inference relies on <span class="math inline">10,000</span> MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2.</p></li>
+</ul>
+</section>
 <section id="adjacency-matrix-of-the-infinito-network" class="slide level2 center">
 <h2>Adjacency matrix of the <em>Infinito</em> network</h2>
+
+<img data-src="img/adj_matrix_vi_ndrangheta.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li><span class="blue">Observed adjacency matrix</span>, partitioned according to the VI clustering <span class="citation" data-cites="Wad18">(<a href="#/references" role="doc-biblioref" onclick="">Wade and Ghahramani 2018</a>)</span>. Side colors correspond to the <em>locali</em>, with darker/lighter shades denoting bosses/affiliates.</li>
+</ul>
+</section>
+<section id="estimated-posterior-probabilities-of-co-occurrence" class="slide level2 center">
+<h2>Estimated posterior probabilities of co-occurrence</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="img/post_expected_adj_matrix_ndrangheta_locali_clust_vi_order.png" class="quarto-figure quarto-figure-center"> Posterior expectation under a <span class="blue">known-groups</span> specification with partition induced by <em>locali</em> membership.</p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/post_expected_adj_matrix_ndrangheta.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<p>Posterior expectation under an <span class="orange">unknown-groups</span> model with groups <span class="math inline">\bm{C}</span> learned from the data.</p>
+</div></div>
+</section>
+<section id="posterior-number-of-clusters" class="slide level2 center">
+<h2>Posterior number of clusters</h2>
+
+<img data-src="img/post_number_clusters_ndrangheta.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="posterior-distribution-of-the-unsees-meetings" class="slide level2 center">
+<h2>Posterior distribution of the unsees meetings</h2>
+</section>
+<section id="final-considerations" class="slide level2 center">
+<h2>Final considerations</h2>
 </section>
 <section id="thank-you" class="slide level2 center">
 <h2>Thank you!</h2>
@@ -672,6 +741,9 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-beraha25" class="csl-entry" role="listitem">
 Beraha, M., Camerlenghi, F., and Ghilotti, L. (2025), <span>“Bayesian calculus and predictive characterizations of extended feature allocation models,”</span> <em>arXiv:2502.10257</em>.
+</div>
+<div id="ref-Calderoni17" class="csl-entry" role="listitem">
+Calderoni, F., Brunetto, D., and Piccardi, C. (2017), <span>“Communities in criminal networks: A case study,”</span> <em>Social Networks</em>, 48, 116–125.
 </div>
 <div id="ref-Camp18" class="csl-entry" role="listitem">
 Campbell, T., Cai, D., and Broderick, T. (2018), <span>“Exchangeable trait allocations,”</span> <em>Electronic Journal of Statistics</em>, 12, 2290–2322.
@@ -717,6 +789,9 @@ Pitman, J., and Yor, M. (1997), <span>“The two-parameter <span>P</span>oisson-
 </div>
 <div id="ref-shen2025" class="csl-entry" role="listitem">
 Shen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), <span>“Double trouble: Predicting new variant counts across two heterogeneous populations,”</span> <em>Bayesian Analysis</em>, In press.
+</div>
+<div id="ref-Wad18" class="csl-entry" role="listitem">
+Wade, S., and Ghahramani, Z. (2018), <span>“<span class="nocase">Bayesian cluster analysis: point estimation and credible balls (with discussion)</span>,”</span> <em>Bayesian Analysis</em>, International Society for Bayesian Analysis, 13, 559–626. <a href="https://doi.org/10.1214/17-BA1073">https://doi.org/10.1214/17-BA1073</a>.
 </div>
 </div>
 

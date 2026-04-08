@@ -65,7 +65,7 @@ categories: talk
 
 . . .
 
-1. We introduce the main building block: [trait]{.blue} (or feature) [allocation models]{.blue}. Their properties and posterior distributions have been previously studied e.g. in @Ghilotti2025, @beraha25.
+1. We introduce the main building block: [trait]{.blue} (or feature) [allocation models]{.blue}. Their properties have been previously studied e.g. in @Ghilotti2025, @beraha25.
 
 . . .
 
@@ -78,6 +78,8 @@ categories: talk
 . . .
 
 4. We illustrate the practical relevance of this methodology through an application to the [criminal network]{.blue} from the *Operazione Infinito* investigation.
+
+# Trait allocation models
 
 ## Exchangeable trait allocation models
 
@@ -194,9 +196,9 @@ and they are also conditionally independent across traits for $j \geq 1$ and sub
 
 . . .
 
-- We organize these quantities into [counting measures]{.blue}  $Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)$ for each subject $i$ in subpopulation $q$, with $i \geq 1$ and $q = 1, \ldots, d$. Moreover,  the parameters $(\theta_{jq})_{j \ge 1}$ can be organized in a group-specific discrete measure $\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)$ for $q=1,\dots,d$. 
+- As before, we organize these quantities into [counting measures]{.blue}  $Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)$ for each subject $i$ in subpopulation $q$, with $i \geq 1$ and $q = 1, \ldots, d$. Moreover,  the parameters $(\theta_{jq})_{j \ge 1}$ can be organized in a group-specific discrete measure $\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)$ for $q=1,\dots,d$. 
 
-- Summarising, the [full Bayesian specification]{.blue} for partially exchangeable data is
+- The [full Bayesian specification]{.blue} for partially exchangeable data (known groups) is
 $$
 \begin{aligned}
     Z_{iq} \mid \tilde{\mu}_q & \overset{\textup{ind}}{\sim} \textup{CP} (\tilde{\mu}_q), \qquad i\geq 1, \quad q=1,\ldots,d,\\
@@ -224,6 +226,7 @@ $$
 \theta_{jq} \overset{\textup{iid}}{\sim} H(\cdot\,;\psi), \qquad j = 1,\dots,N, \quad q=1,\dots,d,
 $$
 where $\psi$ is a common [hyperparameter]{.blue} sometimes endowed with a hyperprior.
+
 
 ## Prior specification II
 
@@ -254,7 +257,7 @@ This framework covers both finite- and infinite-dimensional models; we focus on 
 
 - If all traits were known ([no missing information]{.orange}), the model would be [extremely simple]{.orange}: a collection of independent random variables, with an easily computable [augmented likelihood]{.blue}.
 
-- Let $\tilde{\bm{A}} = (\tilde{A}_{ijq} : i = 1, \dots, n_q; j = 1, \dots, N; q = 1, \dots , d)$ denote the latent counts whose realization is $\tilde{\bm{a}}$ and let $\mathcal{A} = \{j : \sum_{q=1}^d \sum_{i=1}^{n_q} \tilde{a}_{ijq} > 0\}$ denote the observed traits.
+- Let $\tilde{\bm{A}} = (\tilde{A}_{ijq} : i = 1, \dots, n_q; j = 1, \dots, N; q = 1, \dots , d)$ denote the latent counts whose realization is $\tilde{\bm{a}}$ and let $\mathcal{A} = \{j : \sum_{q=1}^d \sum_{i=1}^{n_q} \tilde{a}_{ijq} > 0\}$ denote the indices of observed traits.
 
 . . .
 
@@ -264,14 +267,16 @@ $$
 $$
 In the last term, the first product accounts for [unobserved]{.orange} traits, while the second corresponds to [observed]{.blue} ones.
 
-- The product $\prod_{q=1}^d P(0; \theta_{jq})^{n_q}$ is the probability that trait $\tilde{X}_j$ is not observed in any subject across all groups.
+<!-- - [Remark]{.orange}. The product $\prod_{q=1}^d P(0; \theta_{jq})^{n_q}$ is the probability that trait $\tilde{X}_j$ is not observed in any subject across all groups. -->
+
+- [Remark]{.orange}. Combining the augmented likelihood with the iid priors $H(\mathrm{d}\theta;\psi)$, integrating over $\bm{\theta}$ and $N \sim \text{Poisson}(\lambda)$, and summing over all $\mathcal{A}$, we obtain the [marginal]{.blue} probability of $(\bm{A} = \bm{a}, K_n = k)$.
 
 ## Marginal distribution
 
 :::callout-warning
 #### Theorem (Marginal distribution; @Ghilotti2025b)
 
-Let $\bm{Z}$ be a sample from the partially exchangeable model, with $\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$ with $H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)$. 
+Let $\bm{Z}$ be a sample from the partially exchangeable model, with $\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$ and $H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)$. 
 
 The probability that $\bm{Z}$ displays $K_n = k$ distinct traits with counts $\bm A = \bm{a}$ is given by
 $$
@@ -284,6 +289,13 @@ where $n=\sum_{q=1}^d n_q$ and $\bm{n}=(n_1, \ldots , n_d)$ are the sample sizes
 
 :::
 
+- The quantity $\pi_n (\bm{a}; \lambda, \psi)$ is the [marginal likelihood]{.blue} of $(\lambda, \psi)$ based on the observed data.
+
+- Informally, it can be regarded as the "[normalizing constant]{.orange}" of the posterior of $\tilde{\bm{\mu}}$. 
+
+- This is related to the partially Exchangeable Partition Probability Function (pEPPF) discussed in @franzolini2025 for partially exchangeable species sampling models. 
+
+
 ## Example: binary traits I
 
 - Suppose the traits are [binary]{.orange} and $P(a;\theta) = \theta^a(1-\theta)^{1-a}$, for $a \in \{0, 1\}$, meaning that
@@ -293,11 +305,16 @@ $$
 
 - The marginal law of $\bm{Z}$ depends on the sufficient statistic given by the [feature frequencies]{.blue}, where $M_{\ell q} := \sum_{i=1}^{n_q} A_{i\ell q}$ (with observed values $m_{\ell q}$) are collected in matrices $\bm{M}$ and $\bm{m}$.
 
+. . .
+
 - Suppose the prior $H(\cdot;\psi)$ is a [Beta distribution]{.blue} with parameters $\psi = (-\alpha, \alpha+\beta)$, i.e.,
 $$
 \theta_{jq} \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta), \qquad j=1,\dots,N, \quad q=1,\dots,d.
 $$
-- Then, the probability that $\bm{Z}$ displays $K_n = k$ distinct traits with feature frequencies $\bm M = \bm{m}$ is
+
+. . .
+
+- Then, the [marginal probability]{.blue} that $\bm{Z}$ displays $K_n = k$ distinct traits with feature frequencies $\bm M = \bm{m}$ is
 $$
         \begin{split}
         \pi_n (\bm{m}; \lambda, \psi) = \frac{\lambda^k}{k!} \exp \left\{ -\lambda \left[1- \prod_{q=1}^d \frac{(\alpha + \beta)_{n_q}}{(\beta)_{n_q}}  \right]\right\} \prod_{\ell=1}^k \prod_{q=1}^d  \frac{-\alpha}{(\beta)_{n_q}}(1-\alpha)_{m_{\ell q}-1}(\alpha + \beta)_{n_q - m_{\ell q}},
@@ -330,11 +347,32 @@ ii. the vector $(\mu_1', \ldots, \mu_d')$ is a $\textup{FCRV} (H^{\prime(d)}, \l
 
 ## Example: binary traits II
 
+- Suppose the traits are [binary]{.orange} and assuming a beta prior law $H(\cdot;\psi)$ with parameters $(-\alpha, \alpha + \beta)$.
+
+- The posterior distribution of $\tilde{\bm{\mu}}$ given $\bm{Z}$ decomposes as the sum of $\bm{\mu}^*$ and $\bm{\mu}'$, as in the general case. 
+
+  i. The probabilities $\theta^*_{\ell q}$ of re-observing an old feature $X_\ell$ are distributed as 
+  $$
+  \theta^*_{\ell q} \overset{\textup{ind}}{\sim} \text{Beta}(m_{\ell q} - \alpha, \alpha + \beta + n_q - m_{\ell q}),
+  $$ 
+  for $\ell=1,\dots,k$, $q=1,\dots,d$.
+  ii. Each $\mu_q^\prime =  \sum_{j=1}^{N^\prime} \theta_{j q}^\prime \delta_{\tilde{X}_j^\prime}(\cdot)$, which governs unobserved traits in subpopulation $q$, have a tractable form. In particular, the distribution of the number of [unseen features]{.orange} $N^\prime = N - k$ is
+$$
+N^\prime \sim \text{Poisson}(\lambda^\prime), \qquad \lambda^\prime =  \lambda \prod_{q=1}^d \frac{(\alpha + \beta)_{n_q}}{(\beta)_{n_q}},
+$$
+whereas the probabilities of observing these traits are distributed as $\theta_{jq}^\prime \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta + n_q)$.
+
+## Hyperprior elicitation
+
+
+
 # Clustering trait allocation models
 
 ## Latent class models with an unknown number of traits
 
 # *Infinito* network
+
+## Adjacency matrix of the *Infinito* network
 
 ## Thank you!
 

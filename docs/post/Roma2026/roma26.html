@@ -175,6 +175,8 @@ window.Quarto = {
   <ul>
   <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#trait-allocation-models" id="toc-trait-allocation-models" class="nav-link" data-scroll-target="#trait-allocation-models">Trait allocation models</a>
+  <ul class="collapse">
   <li><a href="#exchangeable-trait-allocation-models" id="toc-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#exchangeable-trait-allocation-models">Exchangeable trait allocation models</a></li>
   <li><a href="#data-from-an-exchangeable-trait-model" id="toc-data-from-an-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-an-exchangeable-trait-model">Data from an exchangeable trait model</a></li>
   <li><a href="#model-specification" id="toc-model-specification" class="nav-link" data-scroll-target="#model-specification">Model specification</a></li>
@@ -185,6 +187,7 @@ window.Quarto = {
   <li><a href="#model-specification-known-groups" id="toc-model-specification-known-groups" class="nav-link" data-scroll-target="#model-specification-known-groups">Model specification (known groups)</a></li>
   <li><a href="#prior-specification-i" id="toc-prior-specification-i" class="nav-link" data-scroll-target="#prior-specification-i">Prior specification I</a></li>
   <li><a href="#prior-specification-ii" id="toc-prior-specification-ii" class="nav-link" data-scroll-target="#prior-specification-ii">Prior specification II</a></li>
+  </ul></li>
   <li><a href="#distribution-theory" id="toc-distribution-theory" class="nav-link" data-scroll-target="#distribution-theory">Distribution theory</a>
   <ul class="collapse">
   <li><a href="#the-augmented-likelihood-function" id="toc-the-augmented-likelihood-function" class="nav-link" data-scroll-target="#the-augmented-likelihood-function">The augmented likelihood function</a></li>
@@ -192,6 +195,7 @@ window.Quarto = {
   <li><a href="#example-binary-traits-i" id="toc-example-binary-traits-i" class="nav-link" data-scroll-target="#example-binary-traits-i">Example: binary traits I</a></li>
   <li><a href="#posterior-distribution" id="toc-posterior-distribution" class="nav-link" data-scroll-target="#posterior-distribution">Posterior distribution</a></li>
   <li><a href="#example-binary-traits-ii" id="toc-example-binary-traits-ii" class="nav-link" data-scroll-target="#example-binary-traits-ii">Example: binary traits II</a></li>
+  <li><a href="#hyperprior-elicitation" id="toc-hyperprior-elicitation" class="nav-link" data-scroll-target="#hyperprior-elicitation">Hyperprior elicitation</a></li>
   </ul></li>
   <li><a href="#clustering-trait-allocation-models" id="toc-clustering-trait-allocation-models" class="nav-link" data-scroll-target="#clustering-trait-allocation-models">Clustering trait allocation models</a>
   <ul class="collapse">
@@ -199,6 +203,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#infinito-network" id="toc-infinito-network" class="nav-link" data-scroll-target="#infinito-network"><em>Infinito</em> network</a>
   <ul class="collapse">
+  <li><a href="#adjacency-matrix-of-the-infinito-network" id="toc-adjacency-matrix-of-the-infinito-network" class="nav-link" data-scroll-target="#adjacency-matrix-of-the-infinito-network">Adjacency matrix of the <em>Infinito</em> network</a></li>
   <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
@@ -292,7 +297,7 @@ window.Quarto = {
 <li>This work proposes a model-based <span class="orange">Bayesian nonparametric</span> approach to <span class="blue">clustering count data</span> in the presence of missing information (i.e., unknown traits), following the roadmap below:</li>
 </ul>
 <ol type="1">
-<li>We introduce the main building block: <span class="blue">trait</span> (or feature) <span class="blue">allocation models</span>. Their properties and posterior distributions have been previously studied e.g.&nbsp;in <span class="citation" data-cites="Ghilotti2025">Ghilotti et al. (<a href="#ref-Ghilotti2025" role="doc-biblioref">2025a</a>)</span>, <span class="citation" data-cites="beraha25">Beraha et al. (<a href="#ref-beraha25" role="doc-biblioref">2025</a>)</span>.</li>
+<li>We introduce the main building block: <span class="blue">trait</span> (or feature) <span class="blue">allocation models</span>. Their properties have been previously studied e.g.&nbsp;in <span class="citation" data-cites="Ghilotti2025">Ghilotti et al. (<a href="#ref-Ghilotti2025" role="doc-biblioref">2025a</a>)</span>, <span class="citation" data-cites="beraha25">Beraha et al. (<a href="#ref-beraha25" role="doc-biblioref">2025</a>)</span>.</li>
 </ol>
 <ol start="2" type="1">
 <li>We extend these models to the case of <span class="blue">known groups</span>, deriving closed-form expressions for the posterior distribution.</li>
@@ -304,6 +309,8 @@ window.Quarto = {
 <li>We illustrate the practical relevance of this methodology through an application to the <span class="blue">criminal network</span> from the <em>Operazione Infinito</em> investigation.</li>
 </ol>
 </section>
+<section id="trait-allocation-models" class="level1">
+<h1>Trait allocation models</h1>
 <section id="exchangeable-trait-allocation-models" class="level2">
 <h2 class="anchored" data-anchor-id="exchangeable-trait-allocation-models">Exchangeable trait allocation models</h2>
 <ul>
@@ -419,8 +426,8 @@ Example: known-groups binary traits
 <li><p>Thus, the main difference compared to the exchangeable case is that the random variables <span class="math inline">\tilde{A}_{ijq}</span> have <span class="blue">different parameters</span> when they refer to subjects belonging to <span class="orange">different subpopulations</span>.</p></li>
 </ul>
 <ul>
-<li><p>We organize these quantities into <span class="blue">counting measures</span> <span class="math inline">Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)</span> for each subject <span class="math inline">i</span> in subpopulation <span class="math inline">q</span>, with <span class="math inline">i \geq 1</span> and <span class="math inline">q = 1, \ldots, d</span>. Moreover, the parameters <span class="math inline">(\theta_{jq})_{j \ge 1}</span> can be organized in a group-specific discrete measure <span class="math inline">\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)</span> for <span class="math inline">q=1,\dots,d</span>.</p></li>
-<li><p>Summarising, the <span class="blue">full Bayesian specification</span> for partially exchangeable data is <span class="math display">
+<li><p>As before, we organize these quantities into <span class="blue">counting measures</span> <span class="math inline">Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)</span> for each subject <span class="math inline">i</span> in subpopulation <span class="math inline">q</span>, with <span class="math inline">i \geq 1</span> and <span class="math inline">q = 1, \ldots, d</span>. Moreover, the parameters <span class="math inline">(\theta_{jq})_{j \ge 1}</span> can be organized in a group-specific discrete measure <span class="math inline">\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)</span> for <span class="math inline">q=1,\dots,d</span>.</p></li>
+<li><p>The <span class="blue">full Bayesian specification</span> for partially exchangeable data (known groups) is <span class="math display">
 \begin{aligned}
   Z_{iq} \mid \tilde{\mu}_q &amp; \overset{\textup{ind}}{\sim} \textup{CP} (\tilde{\mu}_q), \qquad i\geq 1, \quad q=1,\ldots,d,\\
   (\tilde{\mu}_1,\ldots,\tilde{\mu}_d) &amp;\sim \mathcal{Q}_d,
@@ -465,6 +472,7 @@ Example: known-groups binary traits
 </div>
 </div>
 </section>
+</section>
 <section id="distribution-theory" class="level1">
 <h1>Distribution theory</h1>
 <section id="the-augmented-likelihood-function" class="level2">
@@ -473,13 +481,16 @@ Example: known-groups binary traits
 <!-- $\bm A = (A_{i \ell q} : i=1,\dots, n_q; \ell = 1,\dots,k; q = 1,\dots,d)$ the observed counts, where the $K_n=k$ observed traits in the sample are randomly ordered.  -->
 <ul>
 <li><p>If all traits were known (<span class="orange">no missing information</span>), the model would be <span class="orange">extremely simple</span>: a collection of independent random variables, with an easily computable <span class="blue">augmented likelihood</span>.</p></li>
-<li><p>Let <span class="math inline">\tilde{\bm{A}} = (\tilde{A}_{ijq} : i = 1, \dots, n_q; j = 1, \dots, N; q = 1, \dots , d)</span> denote the latent counts whose realization is <span class="math inline">\tilde{\bm{a}}</span> and let <span class="math inline">\mathcal{A} = \{j : \sum_{q=1}^d \sum_{i=1}^{n_q} \tilde{a}_{ijq} &gt; 0\}</span> denote the observed traits.</p></li>
+<li><p>Let <span class="math inline">\tilde{\bm{A}} = (\tilde{A}_{ijq} : i = 1, \dots, n_q; j = 1, \dots, N; q = 1, \dots , d)</span> denote the latent counts whose realization is <span class="math inline">\tilde{\bm{a}}</span> and let <span class="math inline">\mathcal{A} = \{j : \sum_{q=1}^d \sum_{i=1}^{n_q} \tilde{a}_{ijq} &gt; 0\}</span> denote the indices of observed traits.</p></li>
 </ul>
 <ul>
-<li><p>The <span class="blue">augmented likelihood</span> function <span class="math inline">\mathscr{L}(\bm{\theta}, N; \tilde{\bm{a}})</span> given the parameters <span class="math inline">\bm{\theta} = (\theta_{jq} : j=1,\dots,N; q = 1,\dots,d)</span> and <span class="math inline">N</span>, for the event <span class="math inline">(\tilde{\bm{A}} = \tilde{\bm{a}}, K_n = k)</span> is <span class="math display">
+<li>The <span class="blue">augmented likelihood</span> function <span class="math inline">\mathscr{L}(\bm{\theta}, N; \tilde{\bm{a}})</span> given the parameters <span class="math inline">\bm{\theta} = (\theta_{jq} : j=1,\dots,N; q = 1,\dots,d)</span> and <span class="math inline">N</span>, for the event <span class="math inline">(\tilde{\bm{A}} = \tilde{\bm{a}}, K_n = k)</span> is <span class="math display">
 \mathscr{L}(\bm{\theta}, N; \tilde{\bm{a}})= \prod_{q=1}^d  \prod_{j=1}^N\prod_{i=1}^{n_q}P(\tilde{a}_{ijq};\theta_{j q})= \left[\prod_{q=1}^d\prod_{j \not\in \mathcal{A}} P(0;\theta_{j q})^{n_q}\right]\left[ \prod_{q=1}^d \prod_{j\in \mathcal{A}}\prod_{i=1}^{n_q}P(\tilde{a}_{ijq};\theta_{j q})\right].
-</span> In the last term, the first product accounts for <span class="orange">unobserved</span> traits, while the second corresponds to <span class="blue">observed</span> ones.</p></li>
-<li><p>The product <span class="math inline">\prod_{q=1}^d P(0; \theta_{jq})^{n_q}</span> is the probability that trait <span class="math inline">\tilde{X}_j</span> is not observed in any subject across all groups.</p></li>
+</span> In the last term, the first product accounts for <span class="orange">unobserved</span> traits, while the second corresponds to <span class="blue">observed</span> ones.</li>
+</ul>
+<!-- - [Remark]{.orange}. The product $\prod_{q=1}^d P(0; \theta_{jq})^{n_q}$ is the probability that trait $\tilde{X}_j$ is not observed in any subject across all groups. -->
+<ul>
+<li><span class="orange">Remark</span>. Combining the augmented likelihood with the iid priors <span class="math inline">H(\mathrm{d}\theta;\psi)</span>, integrating over <span class="math inline">\bm{\theta}</span> and <span class="math inline">N \sim \text{Poisson}(\lambda)</span>, and summing over all <span class="math inline">\mathcal{A}</span>, we obtain the <span class="blue">marginal</span> probability of <span class="math inline">(\bm{A} = \bm{a}, K_n = k)</span>.</li>
 </ul>
 </section>
 <section id="marginal-distribution" class="level2">
@@ -494,7 +505,7 @@ Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Let <span class="math inline">\bm{Z}</span> be a sample from the partially exchangeable model, with <span class="math inline">\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span> with <span class="math inline">H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)</span>.</p>
+<p>Let <span class="math inline">\bm{Z}</span> be a sample from the partially exchangeable model, with <span class="math inline">\tilde{\bm{\mu}} \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span> and <span class="math inline">H^{(d)}(\cdot\,;\psi) = H(\cdot\,;\psi) \times \cdots \times H(\cdot\,; \psi)</span>.</p>
 <p>The probability that <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits with counts <span class="math inline">\bm A = \bm{a}</span> is given by <span class="math display">
 \begin{split}
         \pi_n (\bm{a}; \lambda, \psi) = \frac{\lambda^k}{k!} \exp \left\{ -\lambda \left( 1-\prod_{q=1}^d  \int P (0 ; \theta)^{n_q}
@@ -503,6 +514,11 @@ Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b
 </span> where <span class="math inline">n=\sum_{q=1}^d n_q</span> and <span class="math inline">\bm{n}=(n_1, \ldots , n_d)</span> are the sample sizes.</p>
 </div>
 </div>
+<ul>
+<li><p>The quantity <span class="math inline">\pi_n (\bm{a}; \lambda, \psi)</span> is the <span class="blue">marginal likelihood</span> of <span class="math inline">(\lambda, \psi)</span> based on the observed data.</p></li>
+<li><p>Informally, it can be regarded as the “<span class="orange">normalizing constant</span>” of the posterior of <span class="math inline">\tilde{\bm{\mu}}</span>.</p></li>
+<li><p>This is related to the partially Exchangeable Partition Probability Function (pEPPF) discussed in <span class="citation" data-cites="franzolini2025">Franzolini et al. (<a href="#ref-franzolini2025" role="doc-biblioref">2025</a>)</span> for partially exchangeable species sampling models.</p></li>
+</ul>
 </section>
 <section id="example-binary-traits-i" class="level2">
 <h2 class="anchored" data-anchor-id="example-binary-traits-i">Example: binary traits I</h2>
@@ -511,14 +527,18 @@ Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b
 \tilde{A}_{ijq} \overset{\textup{ind}}{\sim} \text{Bernoulli}(\theta_{jq}), \qquad i \ge 1, \quad j=1,\dots,N, \quad q = 1,\dots,q.
 </span></p></li>
 <li><p>The marginal law of <span class="math inline">\bm{Z}</span> depends on the sufficient statistic given by the <span class="blue">feature frequencies</span>, where <span class="math inline">M_{\ell q} := \sum_{i=1}^{n_q} A_{i\ell q}</span> (with observed values <span class="math inline">m_{\ell q}</span>) are collected in matrices <span class="math inline">\bm{M}</span> and <span class="math inline">\bm{m}</span>.</p></li>
-<li><p>Suppose the prior <span class="math inline">H(\cdot;\psi)</span> is a <span class="blue">Beta distribution</span> with parameters <span class="math inline">\psi = (-\alpha, \alpha+\beta)</span>, i.e., <span class="math display">
+</ul>
+<ul>
+<li>Suppose the prior <span class="math inline">H(\cdot;\psi)</span> is a <span class="blue">Beta distribution</span> with parameters <span class="math inline">\psi = (-\alpha, \alpha+\beta)</span>, i.e., <span class="math display">
 \theta_{jq} \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta), \qquad j=1,\dots,N, \quad q=1,\dots,d.
-</span></p></li>
-<li><p>Then, the probability that <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits with feature frequencies <span class="math inline">\bm M = \bm{m}</span> is <span class="math display">
+</span></li>
+</ul>
+<ul>
+<li>Then, the <span class="blue">marginal probability</span> that <span class="math inline">\bm{Z}</span> displays <span class="math inline">K_n = k</span> distinct traits with feature frequencies <span class="math inline">\bm M = \bm{m}</span> is <span class="math display">
       \begin{split}
       \pi_n (\bm{m}; \lambda, \psi) = \frac{\lambda^k}{k!} \exp \left\{ -\lambda \left[1- \prod_{q=1}^d \frac{(\alpha + \beta)_{n_q}}{(\beta)_{n_q}}  \right]\right\} \prod_{\ell=1}^k \prod_{q=1}^d  \frac{-\alpha}{(\beta)_{n_q}}(1-\alpha)_{m_{\ell q}-1}(\alpha + \beta)_{n_q - m_{\ell q}},
       \end{split}
-</span> where <span class="math inline">(a)_n = a(a+1)\cdots(a+n-1)</span> is the ascending factorial with <span class="math inline">a &gt; 0</span>.</p></li>
+</span> where <span class="math inline">(a)_n = a(a+1)\cdots(a+n-1)</span> is the ascending factorial with <span class="math inline">a &gt; 0</span>.</li>
 </ul>
 </section>
 <section id="posterior-distribution" class="level2">
@@ -550,6 +570,21 @@ Theorem (Posterior distribution; <span class="citation" data-cites="Ghilotti2025
 </section>
 <section id="example-binary-traits-ii" class="level2">
 <h2 class="anchored" data-anchor-id="example-binary-traits-ii">Example: binary traits II</h2>
+<ul>
+<li><p>Suppose the traits are <span class="orange">binary</span> and assuming a beta prior law <span class="math inline">H(\cdot;\psi)</span> with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>.</p></li>
+<li><p>The posterior distribution of <span class="math inline">\tilde{\bm{\mu}}</span> given <span class="math inline">\bm{Z}</span> decomposes as the sum of <span class="math inline">\bm{\mu}^*</span> and <span class="math inline">\bm{\mu}'</span>, as in the general case.</p>
+<ol type="i">
+<li>The probabilities <span class="math inline">\theta^*_{\ell q}</span> of re-observing an old feature <span class="math inline">X_\ell</span> are distributed as <span class="math display">
+\theta^*_{\ell q} \overset{\textup{ind}}{\sim} \text{Beta}(m_{\ell q} - \alpha, \alpha + \beta + n_q - m_{\ell q}),
+</span> for <span class="math inline">\ell=1,\dots,k</span>, <span class="math inline">q=1,\dots,d</span>.</li>
+<li>Each <span class="math inline">\mu_q^\prime =  \sum_{j=1}^{N^\prime} \theta_{j q}^\prime \delta_{\tilde{X}_j^\prime}(\cdot)</span>, which governs unobserved traits in subpopulation <span class="math inline">q</span>, have a tractable form. In particular, the distribution of the number of <span class="orange">unseen features</span> <span class="math inline">N^\prime = N - k</span> is <span class="math display">
+N^\prime \sim \text{Poisson}(\lambda^\prime), \qquad \lambda^\prime =  \lambda \prod_{q=1}^d \frac{(\alpha + \beta)_{n_q}}{(\beta)_{n_q}},
+</span> whereas the probabilities of observing these traits are distributed as <span class="math inline">\theta_{jq}^\prime \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta + n_q)</span>.</li>
+</ol></li>
+</ul>
+</section>
+<section id="hyperprior-elicitation" class="level2">
+<h2 class="anchored" data-anchor-id="hyperprior-elicitation">Hyperprior elicitation</h2>
 </section>
 </section>
 <section id="clustering-trait-allocation-models" class="level1">
@@ -560,6 +595,9 @@ Theorem (Posterior distribution; <span class="citation" data-cites="Ghilotti2025
 </section>
 <section id="infinito-network" class="level1">
 <h1><em>Infinito</em> network</h1>
+<section id="adjacency-matrix-of-the-infinito-network" class="level2">
+<h2 class="anchored" data-anchor-id="adjacency-matrix-of-the-infinito-network">Adjacency matrix of the <em>Infinito</em> network</h2>
+</section>
 <section id="thank-you" class="level2">
 <h2 class="anchored" data-anchor-id="thank-you">Thank you!</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -581,6 +619,9 @@ Campbell, T., Cai, D., and Broderick, T. (2018), <span>“Exchangeable trait all
 </div>
 <div id="ref-Cat21AoS" class="csl-entry" role="listitem">
 Catalano, M., Lijoi, A., and Prünster, I. (2021), <span>“Measuring dependence in the <span>W</span>asserstein distance for <span>B</span>ayesian nonparametric models,”</span> <em>The Annals of Statistics</em>, 49, 2916–2947.
+</div>
+<div id="ref-franzolini2025" class="csl-entry" role="listitem">
+Franzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), <span>“Multivariate species sampling models,”</span> <em>arXiv:2503.24004</em>.
 </div>
 <div id="ref-Ghilotti2025" class="csl-entry" role="listitem">
 Ghilotti, L., Camerlenghi, F., and Rigon, T. (2025a), <span>“Bayesian analysis of product feature allocation models,”</span> <em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, In press.

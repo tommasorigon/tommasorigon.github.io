@@ -153,8 +153,7 @@ Z_i\mid \tilde{\mu} &\overset{\textup{iid}}{\sim} \textup{CP} (\tilde{\mu}), \qq
 $$
 which means that $Z_i$  are iid from a [process of counts]{.blue} (CP) with parameter $\tilde{\mu}$. Here $\mathcal{Q}$ denotes the de Finetti measure, i.e., the [prior distribution]{.orange} of the random measure $\tilde{\mu}$. 
 
-## Partially exchangeable trait allocation models\
-
+## Partially exchangeable trait allocation models
 
 - Let $d$ be the number of [subpopulations]{.blue} (groups), and suppose we observe a sample of size $n$, with $n_q$ subjects from group $q$, for $q = 1, \ldots, d$, so that $\sum_{q=1}^d n_q = n$. 
 
@@ -184,7 +183,6 @@ This known-group structure (partial exchangeability) is well suited to the ‘Nd
 - Observed data from a [partially exchangeable trait model]{.blue} ($d = 2$): two matrices of counts $\bm{A}_1$ and $\bm{A}_2$, each with $n_1 = n_2= 5$ subjects and $K_n = 18$ observed traits. 
 
 ## Model specification (known groups)
-
 
 - The [latent traits]{.orange} $\tilde{A}_{ijq}$, given the sequences of [parameters]{.blue} $(\theta_{j1})_{j \geq 1}, \dots, (\theta_{jd})_{j \geq 1}$, are conditionally iid across subjects belonging to the same group and for a given trait $j$ and group $q$, that is
 $$
@@ -362,13 +360,124 @@ N^\prime \sim \text{Poisson}(\lambda^\prime), \qquad \lambda^\prime =  \lambda \
 $$
 whereas the probabilities of observing these traits are distributed as $\theta_{jq}^\prime \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta + n_q)$.
 
-## Hyperprior elicitation
+<!-- ## Hyperprior elicitation -->
 
+<!-- - When prior information on the hyperparameters $\psi$ and $\lambda$ is lacking, a common Bayesian approach is to introduce a [hyperprior]{.blue}. -->
+
+<!-- - In the binary case, the posterior of $\psi = (\alpha, \beta)$ has [no closed form]{.blue}, so one must rely on [Markov Chain Monte Carlo]{.orange} sampling (MCMC). -->
+
+<!-- - A closed-form, tractable expression for the [marginal likelihood]{.blue} $\pi_n (\bm{m}; \lambda, \psi)$ is crucial, as it enables practical Metropolis–Hastings updates. -->
+
+<!-- . . . -->
+
+<!-- - On the other hand, assume $\lambda \sim \text{Gamma}(\alpha_\lambda, \beta_\lambda)$, which induces a [negative binomial]{.blue} distribution for $N$. This hyperprior is [conjugate]{.orange} to the model: -->
+<!-- $$ -->
+<!-- \lambda \mid \bm{Z} \sim \text{Gamma}\left(\alpha_\lambda + k, \beta_\lambda + 1 - \prod_{q=1}^d \int P(0; \theta)^{n_q} H(\mathrm{d}\theta; \psi)\right). -->
+<!-- $$ -->
 
 
 # Clustering trait allocation models
 
+## From known-groups to unknown groups
+
+- The partially exchangeable framework accommodates group-structured data by assuming homogeneity within [predefined subpopulations]{.orange}.
+
+- In practice, however, either no grouping is known or the given partition may be inadequate. In such cases, one can instead [learn the group structure]{.blue} from the data.
+  
+:::callout-note
+In the 'Ndrangheta application, affiliates can be grouped by their membership in *locali*.
+
+However, it is worth assessing whether this external partition reflects the structure of meeting attendance. Discrepancies between inferred clusters and *locali* may reveal unrecognized collaborations or new cross-group dynamics.
+:::
+
+- We consider an unknown-groups setting by embedding the partially exchangeable model in a [Bayesian clustering]{.blue} framework, enabling cluster detection while accounting for unseen traits.
+
+- Our goal is to [infer a partition]{.orange} of the subjects $Z_1, \ldots, Z_n$, rather than relying on predefined groups.
+
+## Model specification (unknown groups)
+
+- Let $\bm{C} = {C_1,\dots,C_d}$ be a [partition]{.orange} of $\{1,\dots,n\}$, where $i,i’ \in C_q$ iff subjects $i$ and $i’$ belong to the same group.
+
+- Let $n_q = |C_q|$ be the size of cluster $q$, with $\sum_{q=1}^d n_q = n$. If $\bm{C}$ is known, we recover the known-groups setting. 
+
+. . . 
+
+- When $\bm{C}$ is [unknown]{.orange}, we place a prior on it, so both the [cluster memberships]{.blue} and the [number of groups]{.orange} $d$ are [random]{.blue} and learned from the data.
+
+- Conditionally on $\bm{C} = {C_1,\dots,C_d}$, for a fixed trait $j$ and group $q$, we assume, as in the known-groups case, that
+$$
+\tilde{A}_{ij} \mid \theta_{jq} \overset{\textup{iid}}{\sim} P(\cdot; \theta_{jq}),\qquad i \in C_q.
+$$
+Moreover, as in the known-group case, we let
+$$
+N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} H(\cdot\,;\psi), \qquad j = 1,\dots,N, \quad q=1,\dots,d,
+$$
+
+## Random partitions
+
+- Among the various prior for $\bm{C}$, we consider the prior induced by a [Pitman–Yor process]{.blue} [@Per92; @Pit97], which stands for its analytical tractability and whose density is
+$$
+\mathbb{P}(\bm{C} = \{C_1,\dots,C_d\}) =\frac{\prod_{q=1}^{d-1}(\gamma + q\sigma)}{(\gamma + 1)_{n-1}}\prod_{q=1}^d(1 - \sigma)_{n_q-1},
+$$
+where $\gamma > -\sigma$, $\sigma \in [0, 1)$. 
+
+- Note that the [number of groups]{.blue} $1 \le d \le n$ is itself a [random variable]{.orange} and there is no upper bound other than the sample size.
+
+- The above expression is referred to as [exchangeable partition probability function]{.blue} @Pitman1996. 
+
+- When $\sigma = 0$, the Pitman–Yor process reduces to the partition law of a [Dirichlet process]{.orange} [@Ferguson1973]. 
+
+. . .
+
+- For a general characterization of exchangeable [Gibbs-type random partitions]{.blue}, including the Pitman–Yor as a special case, see @DeBlasi2015. 
+
+- Recent developments on random partitions with finitely many clusters are discussed in @Lijoi2020, @Lijoi2024, @Colombi2025. 
+
+## Hierarchical representation and mixture models
+
+- We can equivalently express this model in a [hierarchical]{.orange} form
+$$
+\begin{aligned}
+        Z_i \mid \mu_i & \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\
+         \tilde{p} &\sim \mathcal{P},
+\end{aligned}
+$$
+where $\tilde{p}$ is a [discrete random probability measure]{.blue}, and $\mathcal{P}$ denotes its prior distribution. More precisely, we assume that
+$$
+    \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot),
+$$
+where $(\xi_h)_{h \geq 1}$ are probability weights, and $(\eta_h)_{h \geq 1}$ are random measures $\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}$. 
+
+- The weights $\xi_h$ represent prior clustering probabilities, with $\xi_h$ giving the probability that $\mu_i$ is drawn from the $h$th component of $\tilde{p}$, i.e., $\mu_i = \eta_h$. 
+
+- They follow the [stick-breaking]{.orange} representation of the Pitman–Yor process: $\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)$, where $V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)$ and $\xi_1 = V_1$.
+
+- We assume that any $d$-dimensional subset of $(\eta_h)_{h \geq 1}$ follows $(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$. 
+
+
+## Hierarchical representation and mixture models
+
+- [Remark]{.orange}. The discreteness of $\tilde{p}$ implies that there is a positive probability that $\mu_i$ and $\mu_{i'}$ are be identical, inducing [clustering]{.blue} among the observations $Z_1,\dots,Z_n$. 
+
+- By employing an exchangeable prior for $\bm{C}$, we are implicitly returning to an exchangeable framework
+$$
+\begin{aligned}
+        Z_i \mid \tilde{p} &\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\
+         \tilde{p} &\sim \mathcal{P},
+\end{aligned}
+$$
+where the subjects $Z_i$ are conditionally iid draws from a process of counts [mixture]{.blue}. 
+
+- This model is far [more flexible]{.orange} than the known-group, where $Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})$. Indeed, we have that $Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)$ and
+$$
+\mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1,
+$$
+where the random vectors $(\tilde{A}_{i1},\dots, \tilde{A}_{iN})$ for $i \ge 1$ are conditionally iid from the above law. 
+
+
 ## Latent class models with an unknown number of traits
+
+## Markov Chain Monte Carlo algorithm
 
 # *Infinito* network
 

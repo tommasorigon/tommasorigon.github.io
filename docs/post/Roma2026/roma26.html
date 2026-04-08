@@ -181,8 +181,7 @@ window.Quarto = {
   <li><a href="#data-from-an-exchangeable-trait-model" id="toc-data-from-an-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-an-exchangeable-trait-model">Data from an exchangeable trait model</a></li>
   <li><a href="#model-specification" id="toc-model-specification" class="nav-link" data-scroll-target="#model-specification">Model specification</a></li>
   <li><a href="#discrete-random-measure-representation" id="toc-discrete-random-measure-representation" class="nav-link" data-scroll-target="#discrete-random-measure-representation">Discrete random measure representation</a></li>
-  <li><a href="#partially-exchangeable-trait-allocation-models" id="toc-partially-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models<br>
-  </a></li>
+  <li><a href="#partially-exchangeable-trait-allocation-models" id="toc-partially-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models</a></li>
   <li><a href="#data-from-a-partially-exchangeable-trait-model" id="toc-data-from-a-partially-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-a-partially-exchangeable-trait-model">Data from a partially exchangeable trait model</a></li>
   <li><a href="#model-specification-known-groups" id="toc-model-specification-known-groups" class="nav-link" data-scroll-target="#model-specification-known-groups">Model specification (known groups)</a></li>
   <li><a href="#prior-specification-i" id="toc-prior-specification-i" class="nav-link" data-scroll-target="#prior-specification-i">Prior specification I</a></li>
@@ -195,11 +194,16 @@ window.Quarto = {
   <li><a href="#example-binary-traits-i" id="toc-example-binary-traits-i" class="nav-link" data-scroll-target="#example-binary-traits-i">Example: binary traits I</a></li>
   <li><a href="#posterior-distribution" id="toc-posterior-distribution" class="nav-link" data-scroll-target="#posterior-distribution">Posterior distribution</a></li>
   <li><a href="#example-binary-traits-ii" id="toc-example-binary-traits-ii" class="nav-link" data-scroll-target="#example-binary-traits-ii">Example: binary traits II</a></li>
-  <li><a href="#hyperprior-elicitation" id="toc-hyperprior-elicitation" class="nav-link" data-scroll-target="#hyperprior-elicitation">Hyperprior elicitation</a></li>
   </ul></li>
   <li><a href="#clustering-trait-allocation-models" id="toc-clustering-trait-allocation-models" class="nav-link" data-scroll-target="#clustering-trait-allocation-models">Clustering trait allocation models</a>
   <ul class="collapse">
+  <li><a href="#from-known-groups-to-unknown-groups" id="toc-from-known-groups-to-unknown-groups" class="nav-link" data-scroll-target="#from-known-groups-to-unknown-groups">From known-groups to unknown groups</a></li>
+  <li><a href="#model-specification-unknown-groups" id="toc-model-specification-unknown-groups" class="nav-link" data-scroll-target="#model-specification-unknown-groups">Model specification (unknown groups)</a></li>
+  <li><a href="#random-partitions" id="toc-random-partitions" class="nav-link" data-scroll-target="#random-partitions">Random partitions</a></li>
+  <li><a href="#hierarchical-representation-and-mixture-models" id="toc-hierarchical-representation-and-mixture-models" class="nav-link" data-scroll-target="#hierarchical-representation-and-mixture-models">Hierarchical representation and mixture models</a></li>
+  <li><a href="#hierarchical-representation-and-mixture-models-1" id="toc-hierarchical-representation-and-mixture-models-1" class="nav-link" data-scroll-target="#hierarchical-representation-and-mixture-models-1">Hierarchical representation and mixture models</a></li>
   <li><a href="#latent-class-models-with-an-unknown-number-of-traits" id="toc-latent-class-models-with-an-unknown-number-of-traits" class="nav-link" data-scroll-target="#latent-class-models-with-an-unknown-number-of-traits">Latent class models with an unknown number of traits</a></li>
+  <li><a href="#markov-chain-monte-carlo-algorithm" id="toc-markov-chain-monte-carlo-algorithm" class="nav-link" data-scroll-target="#markov-chain-monte-carlo-algorithm">Markov Chain Monte Carlo algorithm</a></li>
   </ul></li>
   <li><a href="#infinito-network" id="toc-infinito-network" class="nav-link" data-scroll-target="#infinito-network"><em>Infinito</em> network</a>
   <ul class="collapse">
@@ -380,8 +384,7 @@ Z_i\mid \tilde{\mu} &amp;\overset{\textup{iid}}{\sim} \textup{CP} (\tilde{\mu}),
 </ul>
 </section>
 <section id="partially-exchangeable-trait-allocation-models" class="level2">
-<h2 class="anchored" data-anchor-id="partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models<br>
-</h2>
+<h2 class="anchored" data-anchor-id="partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models</h2>
 <ul>
 <li><p>Let <span class="math inline">d</span> be the number of <span class="blue">subpopulations</span> (groups), and suppose we observe a sample of size <span class="math inline">n</span>, with <span class="math inline">n_q</span> subjects from group <span class="math inline">q</span>, for <span class="math inline">q = 1, \ldots, d</span>, so that <span class="math inline">\sum_{q=1}^d n_q = n</span>.</p></li>
 <li><p>Let <span class="math inline">K_n = k</span> denote the total number of traits observed across all subjects and groups. The <span class="orange">data</span> can be represented by a collection of matrices <span class="math inline">\bm{A}_q</span>, each of dimension <span class="math inline">n_q \times k</span>, with entries <span class="math display">
@@ -582,15 +585,107 @@ N^\prime \sim \text{Poisson}(\lambda^\prime), \qquad \lambda^\prime =  \lambda \
 </span> whereas the probabilities of observing these traits are distributed as <span class="math inline">\theta_{jq}^\prime \overset{\textup{iid}}{\sim} \text{Beta}(-\alpha, \alpha + \beta + n_q)</span>.</li>
 </ol></li>
 </ul>
-</section>
-<section id="hyperprior-elicitation" class="level2">
-<h2 class="anchored" data-anchor-id="hyperprior-elicitation">Hyperprior elicitation</h2>
+<!-- ## Hyperprior elicitation -->
+<!-- - When prior information on the hyperparameters $\psi$ and $\lambda$ is lacking, a common Bayesian approach is to introduce a [hyperprior]{.blue}. -->
+<!-- - In the binary case, the posterior of $\psi = (\alpha, \beta)$ has [no closed form]{.blue}, so one must rely on [Markov Chain Monte Carlo]{.orange} sampling (MCMC). -->
+<!-- - A closed-form, tractable expression for the [marginal likelihood]{.blue} $\pi_n (\bm{m}; \lambda, \psi)$ is crucial, as it enables practical Metropolis–Hastings updates. -->
+<!-- . . . -->
+<!-- - On the other hand, assume $\lambda \sim \text{Gamma}(\alpha_\lambda, \beta_\lambda)$, which induces a [negative binomial]{.blue} distribution for $N$. This hyperprior is [conjugate]{.orange} to the model: -->
+<!-- $$ -->
+<!-- \lambda \mid \bm{Z} \sim \text{Gamma}\left(\alpha_\lambda + k, \beta_\lambda + 1 - \prod_{q=1}^d \int P(0; \theta)^{n_q} H(\mathrm{d}\theta; \psi)\right). -->
+<!-- $$ -->
 </section>
 </section>
 <section id="clustering-trait-allocation-models" class="level1">
 <h1>Clustering trait allocation models</h1>
+<section id="from-known-groups-to-unknown-groups" class="level2">
+<h2 class="anchored" data-anchor-id="from-known-groups-to-unknown-groups">From known-groups to unknown groups</h2>
+<ul>
+<li><p>The partially exchangeable framework accommodates group-structured data by assuming homogeneity within <span class="orange">predefined subpopulations</span>.</p></li>
+<li><p>In practice, however, either no grouping is known or the given partition may be inadequate. In such cases, one can instead <span class="blue">learn the group structure</span> from the data.</p></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>In the ’Ndrangheta application, affiliates can be grouped by their membership in <em>locali</em>.</p>
+<p>However, it is worth assessing whether this external partition reflects the structure of meeting attendance. Discrepancies between inferred clusters and <em>locali</em> may reveal unrecognized collaborations or new cross-group dynamics.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>We consider an unknown-groups setting by embedding the partially exchangeable model in a <span class="blue">Bayesian clustering</span> framework, enabling cluster detection while accounting for unseen traits.</p></li>
+<li><p>Our goal is to <span class="orange">infer a partition</span> of the subjects <span class="math inline">Z_1, \ldots, Z_n</span>, rather than relying on predefined groups.</p></li>
+</ul>
+</section>
+<section id="model-specification-unknown-groups" class="level2">
+<h2 class="anchored" data-anchor-id="model-specification-unknown-groups">Model specification (unknown groups)</h2>
+<ul>
+<li><p>Let <span class="math inline">\bm{C} = {C_1,\dots,C_d}</span> be a <span class="orange">partition</span> of <span class="math inline">\{1,\dots,n\}</span>, where <span class="math inline">i,i’ \in C_q</span> iff subjects <span class="math inline">i</span> and <span class="math inline">i’</span> belong to the same group.</p></li>
+<li><p>Let <span class="math inline">n_q = |C_q|</span> be the size of cluster <span class="math inline">q</span>, with <span class="math inline">\sum_{q=1}^d n_q = n</span>. If <span class="math inline">\bm{C}</span> is known, we recover the known-groups setting.</p></li>
+</ul>
+<ul>
+<li><p>When <span class="math inline">\bm{C}</span> is <span class="orange">unknown</span>, we place a prior on it, so both the <span class="blue">cluster memberships</span> and the <span class="orange">number of groups</span> <span class="math inline">d</span> are <span class="blue">random</span> and learned from the data.</p></li>
+<li><p>Conditionally on <span class="math inline">\bm{C} = {C_1,\dots,C_d}</span>, for a fixed trait <span class="math inline">j</span> and group <span class="math inline">q</span>, we assume, as in the known-groups case, that <span class="math display">
+\tilde{A}_{ij} \mid \theta_{jq} \overset{\textup{iid}}{\sim} P(\cdot; \theta_{jq}),\qquad i \in C_q.
+</span> Moreover, as in the known-group case, we let <span class="math display">
+N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} H(\cdot\,;\psi), \qquad j = 1,\dots,N, \quad q=1,\dots,d,
+</span></p></li>
+</ul>
+</section>
+<section id="random-partitions" class="level2">
+<h2 class="anchored" data-anchor-id="random-partitions">Random partitions</h2>
+<ul>
+<li><p>Among the various prior for <span class="math inline">\bm{C}</span>, we consider the prior induced by a <span class="blue">Pitman–Yor process</span> <span class="citation" data-cites="Per92 Pit97">(<a href="#ref-Per92" role="doc-biblioref">Perman et al. 1992</a>; <a href="#ref-Pit97" role="doc-biblioref">Pitman and Yor 1997</a>)</span>, which stands for its analytical tractability and whose density is <span class="math display">
+\mathbb{P}(\bm{C} = \{C_1,\dots,C_d\}) =\frac{\prod_{q=1}^{d-1}(\gamma + q\sigma)}{(\gamma + 1)_{n-1}}\prod_{q=1}^d(1 - \sigma)_{n_q-1},
+</span> where <span class="math inline">\gamma &gt; -\sigma</span>, <span class="math inline">\sigma \in [0, 1)</span>.</p></li>
+<li><p>Note that the <span class="blue">number of groups</span> <span class="math inline">1 \le d \le n</span> is itself a <span class="orange">random variable</span> and there is no upper bound other than the sample size.</p></li>
+<li><p>The above expression is referred to as <span class="blue">exchangeable partition probability function</span> <span class="citation" data-cites="Pitman1996">Pitman (<a href="#ref-Pitman1996" role="doc-biblioref">1996</a>)</span>.</p></li>
+<li><p>When <span class="math inline">\sigma = 0</span>, the Pitman–Yor process reduces to the partition law of a <span class="orange">Dirichlet process</span> <span class="citation" data-cites="Ferguson1973">(<a href="#ref-Ferguson1973" role="doc-biblioref">Ferguson 1973</a>)</span>.</p></li>
+</ul>
+<ul>
+<li><p>For a general characterization of exchangeable <span class="blue">Gibbs-type random partitions</span>, including the Pitman–Yor as a special case, see <span class="citation" data-cites="DeBlasi2015">De Blasi et al. (<a href="#ref-DeBlasi2015" role="doc-biblioref">2015</a>)</span>.</p></li>
+<li><p>Recent developments on random partitions with finitely many clusters are discussed in <span class="citation" data-cites="Lijoi2020">Lijoi et al. (<a href="#ref-Lijoi2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Lijoi2024">Lijoi et al. (<a href="#ref-Lijoi2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="Colombi2025">Colombi et al. (<a href="#ref-Colombi2025" role="doc-biblioref">2025</a>)</span>.</p></li>
+</ul>
+</section>
+<section id="hierarchical-representation-and-mixture-models" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-representation-and-mixture-models">Hierarchical representation and mixture models</h2>
+<ul>
+<li><p>We can equivalently express this model in a <span class="orange">hierarchical</span> form <span class="math display">
+\begin{aligned}
+      Z_i \mid \mu_i &amp; \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\
+       \tilde{p} &amp;\sim \mathcal{P},
+\end{aligned}
+</span> where <span class="math inline">\tilde{p}</span> is a <span class="blue">discrete random probability measure</span>, and <span class="math inline">\mathcal{P}</span> denotes its prior distribution. More precisely, we assume that <span class="math display">
+  \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot),
+</span> where <span class="math inline">(\xi_h)_{h \geq 1}</span> are probability weights, and <span class="math inline">(\eta_h)_{h \geq 1}</span> are random measures <span class="math inline">\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}</span>.</p></li>
+<li><p>The weights <span class="math inline">\xi_h</span> represent prior clustering probabilities, with <span class="math inline">\xi_h</span> giving the probability that <span class="math inline">\mu_i</span> is drawn from the <span class="math inline">h</span>th component of <span class="math inline">\tilde{p}</span>, i.e., <span class="math inline">\mu_i = \eta_h</span>.</p></li>
+<li><p>They follow the <span class="orange">stick-breaking</span> representation of the Pitman–Yor process: <span class="math inline">\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)</span>, where <span class="math inline">V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)</span> and <span class="math inline">\xi_1 = V_1</span>.</p></li>
+<li><p>We assume that any <span class="math inline">d</span>-dimensional subset of <span class="math inline">(\eta_h)_{h \geq 1}</span> follows <span class="math inline">(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span>.</p></li>
+</ul>
+</section>
+<section id="hierarchical-representation-and-mixture-models-1" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-representation-and-mixture-models-1">Hierarchical representation and mixture models</h2>
+<ul>
+<li><p><span class="orange">Remark</span>. The discreteness of <span class="math inline">\tilde{p}</span> implies that there is a positive probability that <span class="math inline">\mu_i</span> and <span class="math inline">\mu_{i'}</span> are be identical, inducing <span class="blue">clustering</span> among the observations <span class="math inline">Z_1,\dots,Z_n</span>.</p></li>
+<li><p>By employing an exchangeable prior for <span class="math inline">\bm{C}</span>, we are implicitly returning to an exchangeable framework <span class="math display">
+\begin{aligned}
+      Z_i \mid \tilde{p} &amp;\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\
+       \tilde{p} &amp;\sim \mathcal{P},
+\end{aligned}
+</span> where the subjects <span class="math inline">Z_i</span> are conditionally iid draws from a process of counts <span class="blue">mixture</span>.</p></li>
+<li><p>This model is far <span class="orange">more flexible</span> than the known-group, where <span class="math inline">Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})</span>. Indeed, we have that <span class="math inline">Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)</span> and <span class="math display">
+\mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1,
+</span> where the random vectors <span class="math inline">(\tilde{A}_{i1},\dots, \tilde{A}_{iN})</span> for <span class="math inline">i \ge 1</span> are conditionally iid from the above law.</p></li>
+</ul>
+</section>
 <section id="latent-class-models-with-an-unknown-number-of-traits" class="level2">
 <h2 class="anchored" data-anchor-id="latent-class-models-with-an-unknown-number-of-traits">Latent class models with an unknown number of traits</h2>
+</section>
+<section id="markov-chain-monte-carlo-algorithm" class="level2">
+<h2 class="anchored" data-anchor-id="markov-chain-monte-carlo-algorithm">Markov Chain Monte Carlo algorithm</h2>
 </section>
 </section>
 <section id="infinito-network" class="level1">
@@ -620,6 +715,15 @@ Campbell, T., Cai, D., and Broderick, T. (2018), <span>“Exchangeable trait all
 <div id="ref-Cat21AoS" class="csl-entry" role="listitem">
 Catalano, M., Lijoi, A., and Prünster, I. (2021), <span>“Measuring dependence in the <span>W</span>asserstein distance for <span>B</span>ayesian nonparametric models,”</span> <em>The Annals of Statistics</em>, 49, 2916–2947.
 </div>
+<div id="ref-Colombi2025" class="csl-entry" role="listitem">
+Colombi, A., Argiento, R., Camerlenghi, F., and Paci, L. (2025), <span>“Hierarchical mixture of finite mixtures,”</span> <em>Bayesian Analysis</em>, (In press).
+</div>
+<div id="ref-DeBlasi2015" class="csl-entry" role="listitem">
+De Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prünster, I., and Ruggiero, M. (2015), <span>“<span class="nocase">Are Gibbs-type priors the most natural generalization of the Dirichlet process?</span>”</span> <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 37, 212–229.
+</div>
+<div id="ref-Ferguson1973" class="csl-entry" role="listitem">
+Ferguson, T. S. (1973), <span>“<span class="nocase">A Bayesian analysis of some nonparametric problems</span>,”</span> <em>The Annals of Statistics</em>, 1, 209–230.
+</div>
 <div id="ref-franzolini2025" class="csl-entry" role="listitem">
 Franzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), <span>“Multivariate species sampling models,”</span> <em>arXiv:2503.24004</em>.
 </div>
@@ -631,6 +735,21 @@ Ghilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025b), <span>“Bay
 </div>
 <div id="ref-Jam17" class="csl-entry" role="listitem">
 James, L. F. (2017), <span>“Bayesian <span>Poisson</span> calculus for latent feature modeling via generalized <span>Indian</span> buffet process priors,”</span> <em>The Annals of Statistics</em>, 45, 2016–2045.
+</div>
+<div id="ref-Lijoi2020" class="csl-entry" role="listitem">
+Lijoi, A., Prünster, I., and Rigon, T. (2020), <span>“<span class="nocase">The Pitman–Yor multinomial process for mixture modelling</span>,”</span> <em>Biometrika</em>, 107, 891–906.
+</div>
+<div id="ref-Lijoi2024" class="csl-entry" role="listitem">
+Lijoi, A., Prünster, I., and Rigon, T. (2024), <span>“<span class="nocase">Finite-dimensional discrete random structures and Bayesian clustering</span>,”</span> <em>Journal of the American Statistical Association</em>, 119, 929–941.
+</div>
+<div id="ref-Per92" class="csl-entry" role="listitem">
+Perman, M., Pitman, J., and Yor, M. (1992), <span>“Size-biased sampling of <span>P</span>oisson point processes and excursions,”</span> <em>Probability Theory and Related Fields</em>, 92, 21–39.
+</div>
+<div id="ref-Pitman1996" class="csl-entry" role="listitem">
+Pitman, J. (1996), <span>“<span class="nocase">Some developments of the Blackwell-MacQueen urn scheme</span>,”</span> <em>Statistics, Probability and Game Theory</em>, 30, 245–267.
+</div>
+<div id="ref-Pit97" class="csl-entry" role="listitem">
+Pitman, J., and Yor, M. (1997), <span>“The two-parameter <span>P</span>oisson-<span>D</span>irichlet distribution derived from a stable subordinator,”</span> <em>The Annals of Probability</em>, 25, 855–900.
 </div>
 <div id="ref-shen2025" class="csl-entry" role="listitem">
 Shen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), <span>“Double trouble: Predicting new variant counts across two heterogeneous populations,”</span> <em>Bayesian Analysis</em>, In press.

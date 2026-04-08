@@ -513,7 +513,7 @@ where $\bm{a}_{iq}$ denotes the observed trait values organized according to the
 
 . . .
 
-- This updating scheme is particularly straightforward thanks to the closed-form expression of $\pi_n(\bm a; \lambda, \psi)$.
+- This  scheme is straightforward thanks to the closed-form expression of $\pi_n(\bm a; \lambda, \psi)$.
 
 - When hyperpriors are placed on the parameters $\lambda$ and $\psi$, the MCMC scheme described above is coupled with updates of $\lambda$ and $\psi$ from their respective [full conditional]{.blue} distributions. 
 

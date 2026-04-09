@@ -23,6 +23,12 @@
 
 ## Slides of talks and seminars {.central}
 
+- [Notebook](https://tommasorigon.github.io/post/Roma2026/roma26.html) - [Slides](https://tommasorigon.github.io/post/Roma2026/roma26_slides.html). *Bayesian nonparametric modeling of multivariate count data with unknown traits*, Università di Roma, La Sapienza, 2026.
+
+- [Notebook](https://tommasorigon.github.io/post/abaco26/abaco26.html) - [Slides](https://tommasorigon.github.io/post/abaco26/abaco26_slides.html). *Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences*, ABACO26, 2026.
+
+- [Notebook](https://tommasorigon.github.io/post/BISP2025/BISP2025.html) - [Slides](https://tommasorigon.github.io/post/BISP2025/BISP2025_slides.html). *Bayesian inference for generalized linear models via quasi-posteriors*, BISP14, 2025.
+
 - [Slides](files/slides/Rigon_UCLA.pdf). *Bayesian nonparametric prediction of the taxonomic affiliation of DNA sequences*, UCLA, 2023.
 
 - [Slides](files/slides/Rigon_Duke.pdf). *Finite-dimensional discrete random structures and Bayesian clustering*, Duke University, 2023.

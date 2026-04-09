@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  9 APR 2026 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  9 APR 2026 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -867,11 +867,6 @@ Package microtype Info: Character `029' is missing
 
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
@@ -886,17 +881,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
-LaTeX Font Info:    Faking \texteuro for font family zpltlf
-(Font)              in TS1 encoding on input line 365.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.99997pt on input line 365.
 
 Underfull \hbox (badness 10000) in paragraph at lines 365--366
 
  []
 
+LaTeX Font Info:    Faking \texteuro for font family zpltlf
+(Font)              in TS1 encoding on input line 367.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.99997pt on input line 367.
 
 Underfull \hbox (badness 10000) in paragraph at lines 367--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
@@ -907,17 +907,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 481.
+(Font)              scaled to size 10.0pt on input line 483.
 
-Overfull \hbox (1.52031pt too wide) in paragraph at lines 486--486
+Overfull \hbox (1.52031pt too wide) in paragraph at lines 488--488
 []\T1/zpltlf/m/sc/10 (-20) Presentations  
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
-07.
+09.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 507.
+(Font)              scaled to size 10.0pt on input line 509.
 
 
 [5
@@ -926,7 +926,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 663.
+(Font)              scaled to size 8.0pt on input line 665.
 
 
 [7] 
@@ -951,7 +951,7 @@ Here is how much of TeX's memory you used:
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171706 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171880 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams

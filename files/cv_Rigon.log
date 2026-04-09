@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  23 MAR 2026 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  9 APR 2026 09:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -907,24 +907,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
 [4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sl' will be
-(Font)              scaled to size 10.0pt on input line 480.
+(Font)              scaled to size 10.0pt on input line 481.
 
-Overfull \hbox (1.52031pt too wide) in paragraph at lines 485--485
+Overfull \hbox (1.52031pt too wide) in paragraph at lines 486--486
 []\T1/zpltlf/m/sc/10 (-20) Presentations  
  []
 
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scsl' in size <10> not available
 (Font)              Font shape `T1/zpltlf/m/scit' tried instead on input line 5
-05.
+06.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 505.
+(Font)              scaled to size 10.0pt on input line 506.
 
 
-[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
+[5
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}]
 
 [6]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 661.
+(Font)              scaled to size 8.0pt on input line 662.
 
 
 [7] 
@@ -938,18 +940,18 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: D30AB58ABA956512DA246417B9E03EBD;2107.
  ) 
 Here is how much of TeX's memory you used:
- 17461 strings out of 473190
- 268539 string characters out of 5715800
+ 17465 strings out of 473190
+ 268621 string characters out of 5715800
  698213 words of memory out of 5000000
  40191 multiletter control sequences out of 15000+600000
- 625237 words of font info for 177 fonts, out of 8000000 for 9000
+ 625470 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,13n,93p,1005b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,13n,93p,1005b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on cv_Rigon.pdf (7 pages, 171480 bytes).
+Output written on cv_Rigon.pdf (7 pages, 171648 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams

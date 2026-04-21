@@ -74,11 +74,15 @@
 
 % Micro-tipografia (letterspacing, protrusione)
 \usepackage{microtype}
-\microtypesetup{protrusion=true,expansion=true}
+\microtypesetup{
+  protrusion=true,      % Sporgenza caratteri ai margini per allineamento ottico
+  expansion=true,       % Variazione sottile della larghezza caratteri
+  tracking=true,        % Spaziatura lettere regolata
+  letterspace=50        % Spaziatura in SMALL CAPS (più professionali)
+}
 
 % Interlinea: 1.5 (onehalfspacing) con moltiplicatore linespread
 \usepackage{setspace}
-\onehalfspacing
 \linespread{1.4}
 
 % Elimina le "vedove" (righe isolate in fondo/inizio pagina)

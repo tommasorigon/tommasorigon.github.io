@@ -17,7 +17,7 @@ L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura d
 
 LaTeX può essere scaricato gratuitamente da internet. In alternativa, è possibile usare [Overleaf](https://www.overleaf.com). Per una [guida in italiano]{.blue} all'uso di LaTeX si consiglia [LaTeX per l'impaziente](http://www.lorenzopantieri.net/LaTeX_files/LaTeXimpaziente.pdf) oppure [l'Arte di scrivere con LaTeX](http://www.lorenzopantieri.net/LaTeX_files/ArteLaTeX.pdf).
 
-Viene inoltre reso disponibile un [template LaTeX](files/template%20tesi.zip). Se compilato, il risultato finale dovrebbe coincidere con [questo file](files/template_tesi.pdf), in formato .pdf.
+Viene inoltre reso disponibile un [template LaTeX](files/template_tesi.zip). Se compilato, il risultato finale dovrebbe coincidere con [questo file](files/tesi.pdf), in formato .pdf.
 
 <!-- Si suggeriscono inoltre le seguenti [linee guida per la scrittura di testi matematici](http://www-math.mit.edu/~poonen/papers/writing.pdf). -->
 

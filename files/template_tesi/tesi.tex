@@ -1,0 +1,560 @@
+%================================================================================
+% TESI DI LAUREA - TEMPLATE UNIFICATO
+% Università degli Studi di Milano-Bicocca
+% Scuola di Economia e Statistica
+%================================================================================
+% Questo file contiene TUTTA la configurazione della tesi in un'unica posizione
+% Modificare i parametri nelle sezioni indicate per personalizzare il documento
+%================================================================================
+
+% --- CLASSE DOCUMENTO ---
+% Opzioni:
+%   - 12pt: Dimensione font base
+%   - a4paper: Formato foglio A4
+%   - twoside: Impaginazione a due facciate (pagine pari e dispari uguali)
+%   - openright: Ogni capitolo inizia su pagina dispari (destra)
+\documentclass[12pt, a4paper, oneside, openright]{book}
+
+%================================================================================
+% PACCHETTI GENERALI - Encoding e Lingua
+%================================================================================
+
+% Impostazione margini: top, bottom, left, right
+\usepackage[top=3cm, bottom=3cm, left=2.7cm, right=2.7cm]{geometry}
+
+% Supporto lingua italiana e localizazione
+\usepackage[italian]{babel}
+
+% Codifica font T1 (accenti e caratteri speciali corretti)
+\usepackage[T1]{fontenc}
+
+% Supporto input UTF-8 (lettere accentate, ù, é, etc.)
+\usepackage[utf8x]{inputenc}
+
+%================================================================================
+% PACCHETTI MATEMATICA
+%================================================================================
+
+% Strumenti avanzati per equazioni (valore assoluto, norma, etc.)
+\usepackage{mathtools}
+
+% Pacchetti AMS per simboli e ambienti matematici
+\usepackage{amsthm,amsmath,amssymb,mathrsfs,dsfont}
+
+% Simboli grassetti per vettori: \bm{v} -> v grassetto
+\usepackage{bm}
+
+%================================================================================
+% PACCHETTI FIGURE, TABELLE E CONTENUTI
+%================================================================================
+
+% Inserimento e gestione immagini (comando \includegraphics)
+\usepackage{graphicx}
+
+% Tabelle professionali con linee orizzontali migliori (\toprule, \midrule, \bottomrule)
+\usepackage{booktabs}
+
+% Sottofigure (più immagini in una sola figura)
+\usepackage{subcaption}
+
+% Didascalie personalizzate per figure e tabelle
+\usepackage{caption}
+\captionsetup{labelfont={bf},font=small}
+\captionsetup[sub]{font=small,labelfont={bf}}
+
+% Supporto algoritmi formattati
+\usepackage[ruled,norelsize,vlined]{algorithm2e}
+
+% Ambiente per citazioni stilizzato (testo in corsivo)
+\usepackage[font=itshape,noorphans]{quoting}
+
+%================================================================================
+% PACCHETTI TIPOGRAFIA
+%================================================================================
+
+% URL formattati correttamente
+\usepackage{url}
+
+% Micro-tipografia (letterspacing, protrusione)
+\usepackage{microtype}
+\microtypesetup{protrusion=true,expansion=true}
+
+% Interlinea: 1.5 (onehalfspacing) con moltiplicatore linespread
+\usepackage{setspace}
+\onehalfspacing
+\linespread{1.3}
+
+% Elimina le "vedove" (righe isolate in fondo/inizio pagina)
+\usepackage[all]{nowidow}
+
+% Font per codice monospazio (alternativa a cmtt)
+\usepackage[scaled=0.85]{beramono}
+
+% Titlesection: controllo dimensione titoli
+\usepackage[small]{titlesec}
+
+% Tolleranza spaziatura aggressiva per evitare vedove
+\pretolerance=0
+\tolerance=2000 \hyphenpenalty=300 \exhyphenpenalty=300
+\doublehyphendemerits=100000
+\finalhyphendemerits=\doublehyphendemerits
+
+%================================================================================
+% PACCHETTI COLORI E GRAFICA
+%================================================================================
+
+% Colori standard per link, testo, etc.
+\usepackage[dvipsnames]{xcolor}
+
+% Definizione colori personalizzati
+\definecolor{webgreen}{rgb}{0,0.5,0}
+\definecolor{webbrown}{rgb}{0.6,0,0}
+\definecolor{structural}{RGB}{0,0,130}
+
+%================================================================================
+% PACCHETTI INTESTAZIONI E NAVIGAZIONE
+%================================================================================
+
+% Header e footer personalizzati
+\usepackage{fancyhdr}
+
+% Link ipertestuali (riferimenti incrociati, URL, citazioni cliccabili)
+\usepackage{hyperref}
+
+% Indice con riferimenti alle pagine nei link (si sceglie numero o titolo)
+\usepackage[nottoc]{tocbibind}
+
+% Estensioni KOMA-Script (funzioni ausiliarie)
+\usepackage{scrextend}
+
+%================================================================================
+% PACCHETTO RIFERIMENTI BIBLIOGRAFICI
+%================================================================================
+
+% Citazioni in stile autore-anno (natbib è lo standard scientifico italiano)
+% Opzione [round] = parentesi tonde; [square] = quadre
+\usepackage[round]{natbib}
+
+% Traduzione etichetta "References" -> "Bibliografia" (italiano)
+\addto\captionsitalian{\renewcommand{\bibname}{Bibliografia}}
+
+%================================================================================
+% CONFIGURAZIONE FONT SIMBOLI MATEMATICI
+%================================================================================
+
+% Ridefinisce alcuni simboli greci per varietà di forma
+\DeclareSymbolFont{greekletters}{OML}{cmr}{m}{it}
+\DeclareMathSymbol{\varrho}{\mathalpha}{greekletters}{"25}
+\DeclareMathSymbol{\varsigma}{\mathalpha}{greekletters}{"26}
+
+%================================================================================
+% CONFIGURAZIONE HYPERREF (Link e PDF)
+%================================================================================
+
+\hypersetup{%
+    % Link colorati: utile per lettura digitale
+    colorlinks=true,
+    % Collega la pagina del TOC al numero di pagina
+    linktocpage=true,
+    % PDF inizia dalla pagina 1
+    pdfstartpage=1,
+    % Permette rotture di riga nei link lunghi
+    breaklinks=true,
+    % Non mostra contorno rettangolare intorno ai link
+    pdfpagemode=UseNone,
+    % Ancoraggio pagine per navigazione
+    pageanchor=true,
+    % Numerazione e bookmark nel file PDF
+    plainpages=false,
+    bookmarksnumbered,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    hypertexnames=true,
+    pdfhighlight=/O,
+    % Colori dei link: URL marrone, link interni bordeaux, citazioni blu strutturale
+    urlcolor=webbrown,
+    linkcolor=Maroon,
+    citecolor=structural,
+}
+
+% Nota: Per stampa B/N, decommentare sotto e commentare riga sopra:
+% colorlinks=false, linktocpage=false, pdfborder={0 0 0}
+
+%================================================================================
+% CONFIGURAZIONE INTESTAZIONI (FANCY HEADER)
+%================================================================================
+
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+
+% Impedisce l'autoconversione a maiuscoli di capitoli/sezioni
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% Rimuove header e footer predefiniti
+\fancyhf{}
+
+% Header personalizzato:
+%   - LE (Left Even), RO (Right Odd): numero pagina
+%   - LO (Left Odd): "Capitolo N. Titolo"
+%   - RE (Right Even): stesso
+\fancyhead[LE,RO]{\thepage \sffamily}
+\fancyhead[LO]{Capitolo \thechapter. \textit{\leftmark}}
+\fancyhead[RE]{Capitolo \thechapter. \textit{\leftmark}}
+
+% Linea separatrice header/testo
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%================================================================================
+% DEFINIZIONE AMBIENTI TEOREMI, DEFINIZIONI, ETC.
+%================================================================================
+
+% Numerazione DEFINIZIONI per capitolo (1.1, 1.2, 2.1, etc.)
+\theoremstyle{definition}
+\newtheorem{definition}{Definizione}
+\numberwithin{definition}{chapter}
+
+% Numerazione ASSUNZIONI per capitolo
+\theoremstyle{definition}
+\newtheorem{assumption}{Assunzione}
+\numberwithin{assumption}{chapter}
+
+% Numerazione ESEMPI per capitolo (ambiente remark = stile diverso da definition)
+\theoremstyle{remark}
+\newtheorem{example}{Esempio}
+\numberwithin{example}{chapter}
+
+% Numerazione NOTE per capitolo
+\theoremstyle{remark}
+\newtheorem{remark}{Nota}
+\numberwithin{remark}{chapter}
+
+% Numerazione TEOREMI per capitolo (plain style = maiuscole, testo corsivo)
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}
+\numberwithin{theorem}{chapter}
+
+% Numerazione COROLLARI per capitolo
+\newtheorem{corollary}{Corollario}
+\numberwithin{corollary}{chapter}
+
+% Numerazione LEMMI per capitolo
+\newtheorem{lemma}{Lemma}
+\numberwithin{lemma}{chapter}
+
+% Numerazione PROPOSIZIONI per capitolo
+\newtheorem{proposition}{Proposizione}
+\numberwithin{proposition}{chapter}
+
+%================================================================================
+% AMBIENTE PERSONALIZZATO: RINGRAZIAMENTI
+%================================================================================
+
+\newenvironment{acknowledgements}%
+    {\cleardoublepage\null\vfill\begin{center}\bfseries Ringraziamenti\end{center}}%
+    {\vfill\null}
+
+%================================================================================
+% PERCORSI FILE
+%================================================================================
+
+% Cartella contenente le immagini (assicurati di avere una cartella "img")
+\graphicspath{{img/}}
+
+%================================================================================
+% INIZIO DOCUMENTO
+%================================================================================
+
+\begin{document}
+
+%================================================================================
+% FRONTMATTER: Pagina di copertina, indice, ringraziamenti
+%================================================================================
+
+\frontmatter
+\pagestyle{empty}
+
+% --- PAGINA DI COPERTINA ---
+\begin{titlepage}
+    \begin{center}
+        \large
+        \hfill
+        \vfill
+        
+        % Intestazione università
+        {\Large \textsc{Università degli studi di Milano--Bicocca}}\\
+        {\textsc{Scuola di Economia e Statistica}}\\
+        \vfill
+        {\textsc{Corso di Laurea in}}\\
+        {\textsc{Scienze Statistiche ed Economiche}}\\
+        \vfill
+        
+        % Logo (assicurati di avere "front.png" in cartella img/)
+        \includegraphics[width=4cm]{front}
+        \vfill
+        
+        % TITOLO DELLA TESI - MODIFICA QUI
+        {\Huge\color{Maroon}\textsc{Titolo della Tesi}}\\
+        
+    \end{center}
+    
+    \vfill
+    {
+        \large
+        
+        % RELATORE - MODIFICA QUI
+        \begin{flushleft}
+            \textsc{Relatore}: Prof. Tommaso Rigon\\
+        \end{flushleft}
+        
+        \vfill
+        
+        % DATI STUDENTE - MODIFICA QUI
+        \begin{flushright}
+            \textsc{Tesi di laurea di}:\\
+            Nome Cognome\\
+            \textsc{Matricola N. 123456}
+        \end{flushright}
+        
+        \vfill
+        
+        % ANNO ACCADEMICO - MODIFICA QUI
+        \begin{center}
+            \textsc{Anno Accademico 20XX/20YY}
+        \end{center}
+    }
+\end{titlepage}
+
+% --- INDICE GENERALE ---
+\tableofcontents
+
+% --- RINGRAZIAMENTI (opzionale) ---
+% Decommentare le 3 righe sotto e inserire i ringraziamenti
+ \begin{acknowledgements}
+ Inserire qui i ringraziamenti...
+ \end{acknowledgements}
+
+\cleardoublepage
+
+%================================================================================
+% MAINMATTER: Capitoli principali
+%================================================================================
+
+\mainmatter
+\pagestyle{fancy}
+
+%================================================================================
+% CAPITOLO 1: Lorem Ipsum
+%================================================================================
+
+\chapter{Lorem Ipsum}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue.
+
+\section{Prima sezione}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue.
+
+\subsection{Prima sottosezione}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue.
+
+\subsubsection{Sotto-sotto-sezione}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula rhoncus venenatis. Sed eu mauris ut risus tempor faucibus. Donec tincidunt congue faucibus. Quisque cursus egestas eleifend. Vivamus at mi vel erat suscipit ullamcorper. Proin mauris sem, rutrum sit amet sollicitudin nec, varius id tellus. Vestibulum porttitor ultricies congue.
+
+%================================================================================
+% CAPITOLO 2: Esempi
+%================================================================================
+
+\chapter{Esempi}
+
+% --- ESEMPIO TEOREMA ---
+\begin{theorem}[Teorema di Pitagora]
+Dato un triangolo rettangolo di lati $a, b$ e $c$, dove $c$ è l'ipotenusa e $a$ e $b$ sono i cateti, allora
+$$
+    a^2 + b^2 = c^2.
+$$
+\end{theorem}
+
+% --- ESEMPIO FORMULA MATEMATICA ---
+\subsubsection{Esempio formula matematica}
+
+Una semplice equazione numerata:
+\begin{equation}
+    3^2 + 4^2 = 5^2
+\end{equation}
+Per formule NON numerate, usare \texttt{\$\$ ... \$\$} o \texttt{equation*}:
+$$
+    e = mc^2
+$$
+
+% --- ESEMPIO MATRICE ---
+\subsubsection{Esempio matrice}
+
+Una matrice Jacobiana con notazione matriciale:
+\begin{equation}
+    j(\tau,\zeta) = \begin{bmatrix}
+        j_{\zeta \zeta}(\tau,\zeta) & j_{\zeta \tau}(\tau,\zeta) \\
+        j_{\tau \zeta}(\tau,\zeta) & j_{\tau \tau}(\tau,\zeta)
+    \end{bmatrix}
+\end{equation}
+
+% --- ESEMPIO CITAZIONE ---
+\subsubsection{Esempio citazione}
+
+Per una citazione completa: \citet{pacesalvan}. Per una citazione tra parentesi: \citep{pacesalvan}. 
+
+
+% Nota: Assicurati che le chiavi (pacesalvan, etc.) esistano nel file biblio.bib
+
+% --- ESEMPIO FIGURA ---
+\subsubsection{Esempio figura con etichetta}
+
+Si veda la \figurename~\ref{logo}.
+
+\begin{figure}[htbp]
+    \begin{center}
+        % Assicurati di avere l'immagine "front.png" in cartella img/
+        \includegraphics[width=0.30\textwidth]{front}
+        \caption{Il logo Unimib \label{logo}}
+    \end{center}
+\end{figure}
+
+%Parametri \texttt{[htbp]}: 
+%\begin{itemize}
+%    \item \textbf{h} = qui (here) se possibile
+%    \item \textbf{t} = in cima alla pagina
+%    \item \textbf{b} = in fondo alla pagina
+%    \item \textbf{p} = su una pagina dedicata a figure
+%\end{itemize}
+
+% --- ESEMPIO TABELLA ---
+\subsubsection{Esempio tabella con etichetta}
+
+Si veda la \tablename~\ref{tab:esempio}.
+
+\begin{table}[htbp]
+    \caption{Sommario di un modello statistico \label{tab:esempio}}
+    \centering
+    \begin{tabular}{lcccr}
+        \toprule
+        & Estimate & Std. Error & t value & Pr($>$|t|) \\
+        \midrule
+        (Intercept) & 1.2771 & 0.4844 & 2.64 & 0.0113 \\
+        speed & 0.3224 & 0.0298 & 10.83 & 0.0000 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+%Comando \texttt{tabular\{lcccr\}}: 
+%\begin{itemize}
+%    \item \textbf{l} = colonna allineata a sinistra (left)
+%    \item \textbf{c} = colonna centrata (center)
+%    \item \textbf{r} = colonna allineata a destra (right)
+%\end{itemize}
+%
+%Comandi per righe:
+%\begin{itemize}
+%    \item \texttt{\textbackslash toprule} = linea superiore spessa
+%    \item \texttt{\textbackslash midrule} = linea centrale media
+%    \item \texttt{\textbackslash bottomrule} = linea inferiore spessa
+%\end{itemize}
+
+%================================================================================
+% BACKMATTER: Bibliografia
+%================================================================================
+
+\cleardoublepage
+
+% Modifica intestazione per sezione Bibliografia
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage \sffamily}
+\fancyhead[LO,RE]{\textit{Bibliografia}}
+
+% --- BIBLIOGRAFIA ---
+% Assicurati di avere un file "biblio.bib" nella stessa cartella
+% Oppure modifica il nome sotto
+
+% Stile bibliografico: plain, unsrt, abbrv, plainnat, etc.
+% plainnat è consigliato per citazioni autore-anno
+\bibliographystyle{biblio_style}
+
+% File contenente i riferimenti bibliografici
+% Esempio voce in biblio.bib:
+% @article{pacesalvan,
+%   author = {Pace, L. and Salvan, A.},
+%   title = {Titolo articolo},
+%   journal = {Nome Rivista},
+%   year = {2020}
+% }
+\bibliography{biblio}
+
+% Nota finale: Se il file biblio.bib non esiste, genera uno vuoto
+% o usa i file .bst disponibili nella tua distribuzione LaTeX
+
+%================================================================================
+% FINE DOCUMENTO
+%================================================================================
+
+\end{document}
+
+% ==============================================================================
+% GUIDA RAPIDA ALL'USO
+% ==============================================================================
+%
+% 1. MODIFICA DATI COPERTINA:
+%    Cerca "MODIFICA QUI" nel testo (righe ~170-195)
+%    - Titolo tesi
+%    - Nome relatore
+%    - Nome e matricola studente
+%    - Anno accademico
+%
+% 2. COMPILAZIONE:
+%    Con TeXstudio, overleaf, o command line:
+%    $ pdflatex tesi_unificata.tex
+%    $ bibtex tesi_unificata        (se usi citazioni)
+%    $ pdflatex tesi_unificata.tex  (2-3 volte per risolvere riferimenti)
+%
+% 3. IMMAGINI:
+%    Crea una cartella "img/" e metti le immagini lì
+%    Usa: \includegraphics[width=0.5\textwidth]{nome_file}
+%
+% 4. BIBLIOGRAFIA:
+%    Crea file "biblio.bib" nello stesso percorso
+%    Aggiungi voci BibTeX, esempio:
+%    @article{chiave2020,
+%      author = {Autore, A.},
+%      title = {Titolo},
+%      journal = {Journal Name},
+%      year = {2020}
+%    }
+%    Nel testo: \citet{chiave2020} o \citep{chiave2020}
+%
+% 5. NUOVI CAPITOLI:
+%    Aggiungi prima della bibliografia:
+%    \chapter{Titolo Capitolo}
+%    Tuo contenuto qui...
+%
+% 6. AMBIENTI DISPONIBILI:
+%    - \begin{theorem} ... \end{theorem}
+%    - \begin{definition} ... \end{definition}
+%    - \begin{lemma} ... \end{lemma}
+%    - \begin{corollary} ... \end{corollary}
+%    - \begin{proposition} ... \end{proposition}
+%    - \begin{example} ... \end{example}
+%    - \begin{remark} ... \end{remark}
+%    - \begin{assumption} ... \end{assumption}
+%
+% 7. COLORI LINK (personalizzabili):
+%    Modifica sezione HYPERREF (linee ~230-245)
+%    - urlcolor: colore URL (attualmente webbrown)
+%    - linkcolor: colore link interni (attualmente Maroon)
+%    - citecolor: colore citazioni (attualmente structural)
+%
+% 8. TROUBLESHOOTING:
+%    - Se immagini non compaiono: controlla percorso e estensione
+%    - Se citazioni non appaiono: esegui "bibtex" e ricompila
+%    - Se header non corretto: controlla \chaptermark e \sectionmark
+%    - Se numerazione capitoli sbagliata: verifica \numberwithin{...}{chapter}
+%
+%================================================================================

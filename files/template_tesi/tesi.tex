@@ -11,7 +11,7 @@
 % Opzioni:
 %   - 12pt: Dimensione font base
 %   - a4paper: Formato foglio A4
-%   - twoside: Impaginazione a due facciate (pagine pari e dispari uguali)
+%   - oneside: Impaginazione a una facciata (pagine pari e dispari uguali tra loro, migliore per la lettura su PDF)
 %   - openright: Ogni capitolo inizia su pagina dispari (destra)
 \documentclass[12pt, a4paper, oneside, openright]{book}
 
@@ -20,7 +20,7 @@
 %================================================================================
 
 % Impostazione margini: top, bottom, left, right
-\usepackage[top=3cm, bottom=3cm, left=2.7cm, right=2.7cm]{geometry}
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 
 % Supporto lingua italiana e localizazione
 \usepackage[italian]{babel}
@@ -65,9 +65,6 @@
 % Supporto algoritmi formattati
 \usepackage[ruled,norelsize,vlined]{algorithm2e}
 
-% Ambiente per citazioni stilizzato (testo in corsivo)
-\usepackage[font=itshape,noorphans]{quoting}
-
 %================================================================================
 % PACCHETTI TIPOGRAFIA
 %================================================================================
@@ -82,7 +79,7 @@
 % Interlinea: 1.5 (onehalfspacing) con moltiplicatore linespread
 \usepackage{setspace}
 \onehalfspacing
-\linespread{1.3}
+\linespread{1.4}
 
 % Elimina le "vedove" (righe isolate in fondo/inizio pagina)
 \usepackage[all]{nowidow}
@@ -92,12 +89,6 @@
 
 % Titlesection: controllo dimensione titoli
 \usepackage[small]{titlesec}
-
-% Tolleranza spaziatura aggressiva per evitare vedove
-\pretolerance=0
-\tolerance=2000 \hyphenpenalty=300 \exhyphenpenalty=300
-\doublehyphendemerits=100000
-\finalhyphendemerits=\doublehyphendemerits
 
 %================================================================================
 % PACCHETTI COLORI E GRAFICA
@@ -124,9 +115,6 @@
 % Indice con riferimenti alle pagine nei link (si sceglie numero o titolo)
 \usepackage[nottoc]{tocbibind}
 
-% Estensioni KOMA-Script (funzioni ausiliarie)
-\usepackage{scrextend}
-
 %================================================================================
 % PACCHETTO RIFERIMENTI BIBLIOGRAFICI
 %================================================================================
@@ -137,15 +125,6 @@
 
 % Traduzione etichetta "References" -> "Bibliografia" (italiano)
 \addto\captionsitalian{\renewcommand{\bibname}{Bibliografia}}
-
-%================================================================================
-% CONFIGURAZIONE FONT SIMBOLI MATEMATICI
-%================================================================================
-
-% Ridefinisce alcuni simboli greci per varietà di forma
-\DeclareSymbolFont{greekletters}{OML}{cmr}{m}{it}
-\DeclareMathSymbol{\varrho}{\mathalpha}{greekletters}{"25}
-\DeclareMathSymbol{\varsigma}{\mathalpha}{greekletters}{"26}
 
 %================================================================================
 % CONFIGURAZIONE HYPERREF (Link e PDF)
@@ -420,14 +399,6 @@ Si veda la \figurename~\ref{logo}.
     \end{center}
 \end{figure}
 
-%Parametri \texttt{[htbp]}: 
-%\begin{itemize}
-%    \item \textbf{h} = qui (here) se possibile
-%    \item \textbf{t} = in cima alla pagina
-%    \item \textbf{b} = in fondo alla pagina
-%    \item \textbf{p} = su una pagina dedicata a figure
-%\end{itemize}
-
 % --- ESEMPIO TABELLA ---
 \subsubsection{Esempio tabella con etichetta}
 
@@ -446,19 +417,6 @@ Si veda la \tablename~\ref{tab:esempio}.
     \end{tabular}
 \end{table}
 
-%Comando \texttt{tabular\{lcccr\}}: 
-%\begin{itemize}
-%    \item \textbf{l} = colonna allineata a sinistra (left)
-%    \item \textbf{c} = colonna centrata (center)
-%    \item \textbf{r} = colonna allineata a destra (right)
-%\end{itemize}
-%
-%Comandi per righe:
-%\begin{itemize}
-%    \item \texttt{\textbackslash toprule} = linea superiore spessa
-%    \item \texttt{\textbackslash midrule} = linea centrale media
-%    \item \texttt{\textbackslash bottomrule} = linea inferiore spessa
-%\end{itemize}
 
 %================================================================================
 % BACKMATTER: Bibliografia
@@ -475,8 +433,8 @@ Si veda la \tablename~\ref{tab:esempio}.
 % Assicurati di avere un file "biblio.bib" nella stessa cartella
 % Oppure modifica il nome sotto
 
-% Stile bibliografico: plain, unsrt, abbrv, plainnat, etc.
-% plainnat è consigliato per citazioni autore-anno
+% Stile bibliografico personalizzato.
+% Assicurati di avere il file biblio_style.bst nella stessa cartella
 \bibliographystyle{biblio_style}
 
 % File contenente i riferimenti bibliografici
@@ -488,9 +446,6 @@ Si veda la \tablename~\ref{tab:esempio}.
 %   year = {2020}
 % }
 \bibliography{biblio}
-
-% Nota finale: Se il file biblio.bib non esiste, genera uno vuoto
-% o usa i file .bst disponibili nella tua distribuzione LaTeX
 
 %================================================================================
 % FINE DOCUMENTO
@@ -511,9 +466,9 @@ Si veda la \tablename~\ref{tab:esempio}.
 %
 % 2. COMPILAZIONE:
 %    Con TeXstudio, overleaf, o command line:
-%    $ pdflatex tesi_unificata.tex
-%    $ bibtex tesi_unificata        (se usi citazioni)
-%    $ pdflatex tesi_unificata.tex  (2-3 volte per risolvere riferimenti)
+%    $ pdflatex tesi.tex
+%    $ bibtex tesi        (se usi citazioni)
+%    $ pdflatex tesi.tex  (2-3 volte per risolvere riferimenti)
 %
 % 3. IMMAGINI:
 %    Crea una cartella "img/" e metti le immagini lì

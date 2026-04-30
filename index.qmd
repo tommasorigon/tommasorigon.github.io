@@ -26,7 +26,7 @@ about:
 
 ## About me {.central}
 
-I am an Associate Professor of Statistical Science (STAT/01) at the [department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
+I am an Associate Professor of Statistical Science (STAT-01/A) at the [department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
 
 I am a member of the [BayesLab](https://bayeslab.unibocconi.eu) at the Bocconi Institute for Data Science and Analytics (BIDSA), and the [MIDAS Complex Data Modeling Research Network](https://midas.mat.uc.cl/network/).
 

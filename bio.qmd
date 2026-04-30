@@ -5,8 +5,9 @@
 
 [University of Milano-Bicocca]{.blue}, Department of Economics, Management and Statistics (DEMS), Milan, Italy.
 
-- Senior Assistant Professor (RTD-B), 2023 - Present
-- Junior Assistant Professor (RTD-A), 2020 - 2023
+- Associate Professor (*Professore Associato*), 2026 - Present
+- Senior Assistant Professor (*RTD-B*), 2023 - 2026
+- Junior Assistant Professor (*RTD-A*), 2020 - 2023
 
 <!-- [I am currently an [Assistant Professor](https://en.unimib.it/tommaso-rigon) (_RTD-B_) at [University of Milano-Bicocca](https://en.unimib.it). I have been a fixed-term Assistant Professor (_RTD-A_), at the same institution from 2020 to 2023.]{.small} -->
 
@@ -40,7 +41,7 @@ Period 2015--2020. Ph.D. awarded with honors.
 
 - Advisor: [Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa/).
 
-Period 2013 - 2015. Final mark: 110/110 with laude.
+Period 2013 - 2015. Final mark: 110/110 cum laude.
 
 [B.Sc. in Statistics, Economics & Finance]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
 
@@ -48,4 +49,4 @@ Period 2013 - 2015. Final mark: 110/110 with laude.
 
 - Advisor: [Nicola Sartori](https://homes.stat.unipd.it/nicolasartori/en/content/home).
 
-Period 2010--2013. Final mark: 110/110 with laude.
+Period 2010--2013. Final mark: 110/110 cum laude.

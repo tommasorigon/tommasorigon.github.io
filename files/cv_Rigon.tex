@@ -1,4 +1,6 @@
 \documentclass[10pt]{article}
+\usepackage{scrextend}
+\changefontsizes{10.5pt}
 
 % Packages
 \usepackage{calc}
@@ -8,8 +10,8 @@
 \usepackage{microtype}
 \usepackage{paralist}
 \usepackage{marvosym}
-\usepackage{newpxtext}
-\usepackage{newpxmath}
+\usepackage{libertinus}
+\usepackage{libertinust1math}
 \usepackage{fancyhdr,lastpage}
 \usepackage{color,hyperref}
 
@@ -18,9 +20,9 @@
 
 % A4 page layout
 \usepackage[paper=a4paper,
-            marginparwidth=21mm,
-            marginparsep=2mm,
-            margin=12mm,
+            marginparwidth=27mm,
+            marginparsep=3mm,
+            margin=16mm,
             includemp]{geometry}
 
 \setlength{\parindent}{0in}
@@ -40,12 +42,12 @@
 \lfoot{\hspace{\footpageshift}%
        \parbox{4in}{\, \hfill \arabic{page} of \protect\pageref*{LastPage} \hfill \,}}
 
-% Name heading with horizontal rule
+% Name heading with horizontal rule and update date
 \newcommand{\makeheading}[1]%
         {\hspace*{-\marginparsep minus \marginparwidth}%
          \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
-                {\large \bfseries #1}\\[-0.15\baselineskip]%
-                 \rule{\columnwidth}{1pt}%
+                {\Large \scshape #1}\hfill{\small\normalfont\color{darkblue} Updated \today}\\[-0.15\baselineskip]%
+                 {\color{darkblue}\rule{\columnwidth}{1.2pt}}%
          \end{minipage}}
 
 % Centered footer block
@@ -77,19 +79,18 @@
 \newcommand{\blankline}{\quad\pagebreak[2]}
 
 \begin{document}
-\makeheading{\textsc{Tommaso Rigon}}
+\makeheading{Tommaso Rigon}
 
 \section{Contact Information}
-\newlength{\rcollength}\setlength{\rcollength}{2.5in}%
+\newlength{\rcollength}\setlength{\rcollength}{0.45\textwidth}%
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
 \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} &
-\textit{Email:} \href{mailto:tommaso.rigon@unimib.it}{tommaso.rigon@unimib.it}
+Email: \href{mailto:tommaso.rigon@unimib.it}{tommaso.rigon@unimib.it}
 \\
 \href{https://en.unimib.it}{University of Milano-Bicocca} & 
-\textit{Website:}
-\href{https://tommasorigon.github.io}{https://tommasorigon.github.io}
+Website: \href{https://tommasorigon.github.io}{tommasorigon.github.io}
 \\
-Via Bicocca degli Arcimboldi, 8, 20126, Milan, Italy     & \textit{Orcid:} \href{https://orcid.org/0000-0002-9224-543X}{orcid.org/0000-0002-9224-543X}\\
+Via Bicocca degli Arcimboldi, 8, 20126, Milan, Italy & Orcid ID: \href{https://orcid.org/0000-0002-9224-543X}{orcid.org/0000-0002-9224-543X}\\
 \end{tabular}
 
 
@@ -101,17 +102,30 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 
 \section{Current position} 
-\textbf{Senior Assistant Professor} (\textit{Ricercatore \textsc{secs-s/01}, Legge 240/10 tipo B})\\
-\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 05/2023 to present)
-
+\textbf{Associate Professor} (\textit{Professore Associato, \textsc{stat/01}})\\
+\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 05/2026 to present)
 
 \section{Past academic positions}
-\textbf{Junior Assistant Professor} (\textit{Ricercatore \textsc{secs-s/01}, Legge 240/10 tipo A})\\
-\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 10/2020 to 04/2023) \vspace{5pt} \\ 
+\textbf{Senior Assistant Professor} (\textit{Ricercatore, \textsc{secs-s/01}, Legge 240/10 tipo B})\\
+\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 05/2023 to 04/2026)
+
+\blankline
+
+\textbf{Junior Assistant Professor} (\textit{Ricercatore, \textsc{secs-s/01}, Legge 240/10 tipo A})\\
+\href{https://en.unimib.it}{University of Milano-Bicocca}, \href{https://www.dems.unimib.it/en}{Department of Economics, Management \& Statistics} (\textsc{dems}), Milan, Italy  (from 10/2020 to 04/2023)
+
+\blankline
+
 \textbf{Postdoctoral Associate} \\
-\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 02/2020 to 09/2020) \vspace{5pt} \\ 
+\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 02/2020 to 09/2020) 
+
+\blankline
+
 \textbf{Research Associate} \\
-\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 10/2019 to 02/2020) \vspace{5pt} \\ 
+\href{https://duke.edu}{Duke University}, \href{https://stat.duke.edu}{Department of Statistical Sciences}, Durham, USA  (from 10/2019 to 02/2020) 
+
+\blankline
+
 \textbf{Research Affiliate} \\
 \href{http://www.carloalberto.org/research/statistics-initiative/}{de Castro Statistics Initiative}, \href{http://www.carloalberto.org/}{Collegio Carlo Alberto}, Turin, Italy (from 09/2017 to 09/2020)
 
@@ -160,7 +174,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \item[\textbf{[2024]}] \emph{Mitchell Prize 2023}. American Statistical Association (\textsc{asa}) \& International Society for Bayesian Analysis (\textsc{isba})
 
-\item[\textbf{[2022]}] \emph{National Scientific Qualification for Associate Professor in Statistics} (\textsc{13/d1})
+\item[\textbf{[2022]}] \emph{National Scientific Qualification (\textsc{asn}) for Associate Professor in Statistics} (\textsc{13/d1}). Awarded by the Italian Ministry of University and Research
 \item[\textbf{[2021]}] \emph{Young Talents Award}. University of Milano-Bicocca \& Accademia Nazionale dei Lincei
 \item[\textbf{[2021]}] \emph{Savage Award 2020 (Theory and Methods)}. American Statistical Association (\textsc{asa}) \& International Society for Bayesian Analysis (\textsc{isba})
 \item[\textbf{[2017]}] \emph{Best Ph.D. student in Statistics}. Bocconi University
@@ -187,7 +201,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 \section{Service to profession}
 \textbf{Editorial activity}
 \begin{outerlist}
-\item[\textbf{[2022 / Present]}] Associate Editor of Bayesian Analysis
+\item[\textbf{[2022/present]}] Associate Editor of Bayesian Analysis
 \end{outerlist}
 \blankline
 
@@ -286,7 +300,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \item \textbf{Rigon, T.} (2023). An enriched mixture model for functional clustering. \emph{Applied Stochastic Models in Business and Industry}, \textbf{39}(2), 232--250
 
-\item \textbf{Rigon, T.} and Aliverti, E. (2023) Conjugate priors and bias reduction for logistic regression models. \textit{Statistics \& Probability Letters}, \textbf{202}, 109901
+\item \textbf{Rigon, T.} and Aliverti, E. (2023). Conjugate priors and bias reduction for logistic regression models. \textit{Statistics \& Probability Letters}, \textbf{202}, 109901
 
 \item \textbf{Rigon, T.}, Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. \textit{Biometrika}, \textbf{110}(3), 559--578
 
@@ -296,7 +310,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \item Legramanti, S., \textbf{Rigon, T.} and Durante, D. (2022). Bayesian testing for exogenous partition structures in stochastic block models. \textit{Sankhya A: The Indian Journal of Statistics}, \textbf{84}, 108--126
 
-\item Legramanti, S., \textbf{Rigon, T.}, Durante, D. and Dunson, D. B. (2022). Extended stochastic block models with application to criminal networks. \textit{Annals of Applied Statistics}, \textbf{16}(4), 2369-2395
+\item Legramanti, S., \textbf{Rigon, T.}, Durante, D. and Dunson, D. B. (2022). Extended stochastic block models with application to criminal networks. \textit{Annals of Applied Statistics}, \textbf{16}(4), 2369--2395
 
 \item Reverberi, C., \textbf{Rigon, T.}, Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. \textit{Scientific Reports}, \textbf{12}(14952)
 
@@ -310,7 +324,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \item Durante, D. and \textbf{Rigon, T.} (2019). Conditionally conjugate mean-field variational Bayes for logistic models. \textit{Statistical Science}, \textbf{34}(3), 472--485
 
-\item \textbf{Rigon, T.}, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. \textit{Journal of the Royal Statistical Society Series A: Statistics in Society}, \textbf{182}(1) 225--247
+\item \textbf{Rigon, T.}, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. \textit{Journal of the Royal Statistical Society Series A: Statistics in Society}, \textbf{182}(1), 225--247
 
 \item Durante, D., Canale, A. and \textbf{Rigon, T.} (2019). A nested expectation-maximization algorithm for latent class regression models. \textit{Statistics \& Probability Letters}, \textbf{146}, 97--103
 \setcounter{publications}{\value{enumi}}
@@ -329,7 +343,6 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 \setcounter{publications}{\value{enumi}}
 \end{enumerate}
 
-\clearpage
 \textbf{Publications in monographs, volumes, and discussions}
 
 \begin{enumerate}
@@ -358,7 +371,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \item Presicce, L., \textbf{Rigon, T.} and Aliverti, E. (2023). Bias-reduction methods for Poisson regression models. In \emph{Book of Short Papers of the Italian Statistical Society} (Chelli, F. M., Ciommi, M., Ingrassia, S., Mariani, F., Recchioni, M.C.) 2023. ISBN: 9788891935618.
 
-\item Legramanti S., \textbf{Rigon, T.} and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In \emph{Book of Short Papers of the Italian Statistical Society} (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN:~9788891932310. % 
+\item Legramanti S., \textbf{Rigon, T.} and Durante, D. (2022). Bayesian clustering of brain regions via extended stochastic block models. In \emph{Book of Short Papers of the Italian Statistical Society} (Balzanella, A., Bini, M., Cavicchia, C., Verde, R.) 2022. ISBN:~9788891932310. 
 
 \item Zito, A., \textbf{Rigon, T.} and Dunson, D. B. (2021). Modelling of accumulation curves through Weibull survival functions. In \emph{Book of Short Papers of the Italian Statistical Society 2021} (Perna, C., Salvati, N. and Schirripa Spagnolo, F.). ISBN:~9788891927361
 
@@ -366,9 +379,9 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 
 \end{enumerate}
 
-%\subsection{\emph{\textbf{Refereed conference proceedings, publications in monographs}}}
 
-\section{Visiting periods} \textbf{Universities and research centers}
+\section{Visiting periods}
+\textbf{Universities and research centers}
 \begin{outerlist}
 \item[\textbf{[2023]}] \textsl{Duke University}, North Carolina, USA (April 12th, 2023 - May 9th, 2023) 
 \item[\textbf{[2022]}] \textsl{Inria centre at the University Grenoble Alpes}, France (April 3rd, 2022 - April 10th, 2022) 
@@ -469,7 +482,7 @@ Member of \href{https://bayeslab.unibocconi.eu}{BayesLab} at the Bocconi Institu
 \item \href{https://tommasorigon.github.io/CompStat/}{Bayesian Computations} (Ph.D.) A.Y. 2020/21, 2021/22 - 12h - 2022/23, 2023/24, 2024/25 - 15h
 \item \href{https://tommasorigon.github.io/datamining/}{Data Mining} (M.Sc.) - A.Y. 2023/24 - 42h - A.Y. 2024/25 - 47h
 \item \href{https://tommasorigon.github.io/StatIII/}{Statistics III} (B.Sc.) - A.Y. 2025/26 - 40h
-\item \href{https://tommasorigon.github.io/StatI/}{Statistics I} (B.Sc.) - A.Y. 2020/21, 2021/22, 2022/23  - 42h - 2023/24, 2024/2025 - 48h
+\item \href{https://tommasorigon.github.io/StatI/}{Statistics I} (B.Sc.) - A.Y. 2020/21, 2021/22, 2022/23  - 42h - 2023/24, 2024/25 - 48h
 \item \href{https://tommasorigon.github.io/introR/}{R for the multivariate statistical analysis} (B.Sc.) - A.Y. 2020/21, 2021/22, 2022/23 - 21h
 \end{innerlist}
 \end{outerlist}
@@ -535,16 +548,20 @@ Bravofly Rumbo Group, Chiasso, Switzerland (from 10/2013 to 07/2014)  \vspace{5p
 \textbf{Intern} \\
 Bravofly Rumbo Group, Chiasso, Switzerland (from 05/2013 to 10/2013)
 
+%\section{Summer schools and workshops}
+%\begin{outerlist}
+%\item \textsl{StartUp Research}, Certosa di Pontignano, Italy (06/2017)
+%\item \textsl{Bocconi Summer School in Advanced Statistics and Probability}, Como, Italy (07/2017)
+%\item \textsl{J. T. Schwartz International School for Scientific Research}, Lipari, Italy (07/2013) 
+%\end{outerlist}
 
 \vfill
 
 \bottomcenter{
-\begin{footnotesize}
-Le dichiarazioni rese nel presente curriculum sono da ritenersi rilasciate ai sensi degli artt. 46 e 47 del D.P.R. 445/2000. \\
-\medskip 
-Autorizzo la pubblicazione ai sensi del D.Lgs. n. 33/2013 “Riordino della disciplina riguardante gli obblighi di pubblicità, trasparenza e diffusione di informazioni da parte delle pubbliche amministrazioni” e acconsento all’utilizzo delle informazioni ivi contenute ai sensi del D.L. n. 196/2003 “Codice in materia di protezione dei dati personali”. \\
-\end{footnotesize}
-\medskip
-Updated \today}
+{\color{darkblue}\rule{0.6\textwidth}{0.4pt}}\\[4pt]
+\begin{tiny}
+Le dichiarazioni rese nel presente curriculum sono da ritenersi rilasciate ai sensi degli artt. 46 e 47 del D.P.R. 445/2000.
+Autorizzo la pubblicazione ai sensi del D.Lgs. n. 33/2013 e acconsento all'utilizzo delle informazioni ivi contenute ai sensi del D.L. n. 196/2003.
+\end{tiny}}
 
 \end{document}

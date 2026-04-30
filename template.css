@@ -1,11 +1,10 @@
 /*-- scss:defaults --*/
-//@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
-
-//@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-//@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Font alternatives (unused)
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*/
 
 
 @font-face {
@@ -62,7 +61,7 @@ $presentation-font-smaller: 1;
 $code-block-font-size: 1em;
 $code-inline-font-size: 1em;
 
-$presentation-heading-font: "Latin Modern Sans",  !default; 
+$presentation-heading-font: "Latin Modern Sans" !default; 
 $font-family-monospace: "Latin Modern Mono", monospace !default;
 
 // colors
@@ -88,19 +87,14 @@ $code-bg: #fff !default;
 
 // headings
 $presentation-heading-line-height: 2.3;
-$presentation-heading-color: Darkblue !default;
+$presentation-heading-color: darkblue !default;
 
 /*-- scss:rules --*/
 ul {
   list-style-type: square;
 }
 
-ul li::before {
-  color: red; /* Change the color */
-}
-
 .reveal ul {
-  
   list-style-type: square;
 }
 
@@ -117,12 +111,12 @@ ul li::before {
 }
 
 .orange{
-   color:#FF8C00;//#fc7d0b;
+   color:#FF8C00; /* #fc7d0b */
    font-weight: bold;
 }
 
 .blue{
-   color:#3232AA;//#1170aa;
+   color:#3232AA; /* #1170aa */
    font-weight: bold;
 }
 

@@ -41,7 +41,7 @@
 
 - [Slides](files/slides/Rigon_CCA.pdf). *A generalized Bayes framework for probabilistic clustering*, Collegio Carlo Alberto, 2020. 
 
-## Open Day, Science Statistiche ed Economiche (SSE) {.central}
+## Open Day, Scienze Statistiche ed Economiche (SSE) {.central}
 
 :::: {layout="[30, 80, 30]"}
 
@@ -57,5 +57,5 @@
 
 ::::
 
-- [Slides](files/slides/SSE_OpenDay.pdf). *Open Day, Science Statistiche ed Economiche (SSE)*, Università Milano-Bicocca, Dicembre 2022. 
+- [Slides](files/slides/SSE_OpenDay.pdf). *Open Day, Scienze Statistiche ed Economiche (SSE)*, Università Milano-Bicocca, Dicembre 2022. 
 

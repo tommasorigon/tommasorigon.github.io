@@ -30,7 +30,7 @@
 
 1. **Rigon, T.** (2023). An enriched mixture model for functional clustering. *Applied Stochastic Models in Business and Industry*, **39**, 232--250  [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/asmb.2736).
 
-1. **Rigon, T.** and Aliverti E. (2023) Conjugate priors and bias reduction for logistic regression models. *Statistics and Probability Letters*, **202**, 109901. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715223001256) [[Github repository]](https://github.com/tommasorigon/logistic-bias-reduction).
+1. **Rigon, T.** and Aliverti, E. (2023). Conjugate priors and bias reduction for logistic regression models. *Statistics and Probability Letters*, **202**, 109901. [[Link]](https://www.sciencedirect.com/science/article/pii/S0167715223001256) [[Github repository]](https://github.com/tommasorigon/logistic-bias-reduction).
     
 1. **Rigon, T.**, Herring, A. H. and Dunson, D. B. (2023). A generalized Bayes framework for probabilistic clustering. *Biometrika*, **110**(3), 559--578. [[Link]](https://doi.org/10.1093/biomet/asad004) [[Github repository]](https://github.com/tommasorigon/GBClust).
 
@@ -42,11 +42,11 @@
 
 1. Reverberi, C., **Rigon, T.**, Solari, A., Hassan, C., Cherubini, P., GI Genius CADx Study Group and A. Cherubini (2022). Experimental evidence of effective human-AI collaboration in medical decision‐making. *Scientific Reports*, **12**(14952) [[Link]](https://www.nature.com/articles/s41598-022-18751-2).
 
+1. Legramanti, S., **Rigon, T.** and Durante, D. (2022).  Bayesian testing for exogenous partition structures in stochastic block models. *Sankhya A: The Indian Journal of Statistics*, **84**, 108--126. [[Link]](https://link.springer.com/article/10.1007%2Fs13171-020-00231-2) [[GitHub repository]](https://github.com/danieledurante/TESTsbm).
+
 1. Favaro, S., Panero, F. and **Rigon, T.** (2021). Bayesian nonparametric disclosure risk assessment. *Electronic Journal of Statistics* **15**(2), 5626--5651. [[Link]](https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/Bayesian-nonparametric-disclosure-risk-assessment/10.1214/21-EJS1933.full).
 
-1. **Rigon, T.** and Durante, D., (2021), Tractable Bayesian density regression via logit stick-breaking priors. *Journal of Statistical Planning and inference* **211**, 131--142. [[Link]](https://www.sciencedirect.com/science/article/pii/S0378375818300697?dgcid=author) [[GitHub Repository]](https://github.com/tommasorigon/LSBP).
-    
-1. Legramanti, S., **Rigon, T.** and Durante, D. (2020).  Bayesian testing for exogenous partition structures in stochastic block models. *Sankhya A: The Indian Journal of Statistics*, **84**, 108--126. [[Link]](https://link.springer.com/article/10.1007%2Fs13171-020-00231-2) [[GitHub repository]](https://github.com/danieledurante/TESTsbm).
+1. **Rigon, T.** and Durante, D. (2021). Tractable Bayesian density regression via logit stick-breaking priors. *Journal of Statistical Planning and inference* **211**, 131--142. [[Link]](https://www.sciencedirect.com/science/article/pii/S0378375818300697?dgcid=author) [[GitHub Repository]](https://github.com/tommasorigon/LSBP).
     
 1. Lijoi, A., Prünster, I. and **Rigon, T.** (2020). Sampling hierarchies of discrete random structures. *Statistics and Computing* **30**, 1591--1607. [[Link]](https://link.springer.com/article/10.1007/s11222-020-09961-7).
     

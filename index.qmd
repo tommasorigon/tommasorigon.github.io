@@ -5,7 +5,7 @@ page-layout: full
 about:
   template: solana
   image-width: 8em
-  image: images/profile.jpg
+  image: images/profile-bubble.jpg
   image-shape: round
   links:
     - icon: journal-text

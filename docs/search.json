@@ -3624,5 +3624,47 @@
     "title": "Tommaso Rigon",
     "section": "Open Day, Scienze Statistiche ed Economiche (SSE)",
     "text": "Open Day, Scienze Statistiche ed Economiche (SSE)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSlides. Open Day, Scienze Statistiche ed Economiche (SSE), Università Milano-Bicocca, Dicembre 2022."
+  },
+  {
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nPersonal academic website for Tommaso Rigon (Associate Professor, Università di Milano-Bicocca), built with Quarto and hosted on GitHub Pages from the docs/ output directory.\n\n\n\n# Full project render (preferred — always coherent)\nquarto render\n\n# Preview with live reload\nquarto preview\n\n# Single file (use sparingly — can fail if freeze cache is stale)\nquarto render index.qmd\n# If that fails: rm -rf .quarto/_freeze/index && quarto render index.qmd\nThe output directory is docs/. Never delete it manually; doing so breaks the rename step in incremental builds.\n\n\n\nSource pages (root .qmd files → compiled to docs/): - index.qmd — home, bio, news/awards - papers.qmd — full publication list - bio.qmd — academic positions and education - teaching.qmd — courses and seminar slides - tesi.qmd — thesis info and past students (Italian) - post.qmd — auto-listing of blog posts (reads post/ directory)\nBlog posts (post/&lt;name&gt;/): each subdirectory is a self-contained post. Seminar/talk posts use a dual-format pattern: one .qmd produces both an HTML notebook and a RevealJS slide deck via:\nformat:\n  html:\n    ...\n  revealjs:\n    output-file: &lt;name&gt;_slides.html\nThese posts also include biblio.bib and an img/ folder.\nStatic assets: - files/cv_Rigon.pdf + files/cv_Rigon.tex — CV (LaTeX source included) - files/papers/ — thesis PDFs of past students - files/slides/ — older seminar slide PDFs - files/template_tesi.zip + files/template_tesi/ — LaTeX thesis template for students - fonts/ — Latin Modern web fonts (LM Roman, LM Mono, LM Sans) - images/ — profile photo and logos\n\n\n\n_quarto.yml defines: - Output dir: docs/ - execute: freeze: auto — R code only re-runs when the source .qmd changes; results cached in .quarto/_freeze/ (this directory should be committed to git) - HTML theme: simplex + template.css (custom CSS with .blue, .orange, .darkred span classes used throughout) - RevealJS slides: logo images/logoB.png, footer linking to homepage - Lua filter remove-pause.lua applied globally (strips {.pause} from slides) - Math: KaTeX\n\n\n\n\nAuthor name styling: [Name]{.blue} or [Name]{.orange} for collaborators\nCitations in papers.qmd: ordered lists under category headers ([Preprints]{.blue}, [Articles in refereed journals]{.blue}, etc.)\nDunson’s name is always formatted as Dunson D. B. (with space between initials)\nSection headings use {.central} class: ## Section title {.central}\nComments in .qmd files use standard HTML &lt;!-- --&gt; to hide outdated content rather than deleting it"
+  },
+  {
+    "objectID": "CLAUDE.html#what-this-is",
+    "href": "CLAUDE.html#what-this-is",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Personal academic website for Tommaso Rigon (Associate Professor, Università di Milano-Bicocca), built with Quarto and hosted on GitHub Pages from the docs/ output directory."
+  },
+  {
+    "objectID": "CLAUDE.html#build-commands",
+    "href": "CLAUDE.html#build-commands",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "# Full project render (preferred — always coherent)\nquarto render\n\n# Preview with live reload\nquarto preview\n\n# Single file (use sparingly — can fail if freeze cache is stale)\nquarto render index.qmd\n# If that fails: rm -rf .quarto/_freeze/index && quarto render index.qmd\nThe output directory is docs/. Never delete it manually; doing so breaks the rename step in incremental builds."
+  },
+  {
+    "objectID": "CLAUDE.html#project-structure",
+    "href": "CLAUDE.html#project-structure",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Source pages (root .qmd files → compiled to docs/): - index.qmd — home, bio, news/awards - papers.qmd — full publication list - bio.qmd — academic positions and education - teaching.qmd — courses and seminar slides - tesi.qmd — thesis info and past students (Italian) - post.qmd — auto-listing of blog posts (reads post/ directory)\nBlog posts (post/&lt;name&gt;/): each subdirectory is a self-contained post. Seminar/talk posts use a dual-format pattern: one .qmd produces both an HTML notebook and a RevealJS slide deck via:\nformat:\n  html:\n    ...\n  revealjs:\n    output-file: &lt;name&gt;_slides.html\nThese posts also include biblio.bib and an img/ folder.\nStatic assets: - files/cv_Rigon.pdf + files/cv_Rigon.tex — CV (LaTeX source included) - files/papers/ — thesis PDFs of past students - files/slides/ — older seminar slide PDFs - files/template_tesi.zip + files/template_tesi/ — LaTeX thesis template for students - fonts/ — Latin Modern web fonts (LM Roman, LM Mono, LM Sans) - images/ — profile photo and logos"
+  },
+  {
+    "objectID": "CLAUDE.html#configuration",
+    "href": "CLAUDE.html#configuration",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "_quarto.yml defines: - Output dir: docs/ - execute: freeze: auto — R code only re-runs when the source .qmd changes; results cached in .quarto/_freeze/ (this directory should be committed to git) - HTML theme: simplex + template.css (custom CSS with .blue, .orange, .darkred span classes used throughout) - RevealJS slides: logo images/logoB.png, footer linking to homepage - Lua filter remove-pause.lua applied globally (strips {.pause} from slides) - Math: KaTeX"
+  },
+  {
+    "objectID": "CLAUDE.html#formatting-conventions",
+    "href": "CLAUDE.html#formatting-conventions",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "Author name styling: [Name]{.blue} or [Name]{.orange} for collaborators\nCitations in papers.qmd: ordered lists under category headers ([Preprints]{.blue}, [Articles in refereed journals]{.blue}, etc.)\nDunson’s name is always formatted as Dunson D. B. (with space between initials)\nSection headings use {.central} class: ## Section title {.central}\nComments in .qmd files use standard HTML &lt;!-- --&gt; to hide outdated content rather than deleting it"
   }
 ]

@@ -7,6 +7,7 @@ lang: en
 author: "[Tommaso Rigon]{.orange}"
 institute: "_Università degli Studi di Milano-Bicocca_"
 page-layout: full
+image: img/DATA.png
 bibliography: References.bib
 citeproc: true
 csl: https://www.zotero.org/styles/journal-of-the-american-statistical-association
@@ -60,9 +61,50 @@ format-links: true
 :::
 
 
+
+## Warm thanks (ecological team, and more...)
+
+::: columns
+
+::: {.column width="30%"}
+![](img/otso.jpg){fig-align="left"}
+
+[Otso Ovaskainen]{.blue} 
+
+(*University of Jyväskylä*)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}
+
+![](img/tomas.jpeg){fig-align="left"}
+
+[Tomas Roslin]{.blue} 
+
+(*University of Helsinki*)
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}
+![](img/ibol.png){fig-align="left"}
+
+[International BARCODE OF LIFE]{.blue} 
+
+:::
+
+:::
+
+- ...and Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., and the entire [iBOL Consortium]{.orange}!,
+
 ## A journey into statistical biodiversity
 
 ![](img/Timeline.jpg){.nostretch fig-align="center" width=85%}
+
 
 ## Approximately 80 years ago... @Fisher1943
 
@@ -267,7 +309,12 @@ $$
 
 ## Specimens and BINs in Barcode of Life
 
-![](img/GMTP.jpg){.nostretch fig-align="center" width=85%}
+![](img/DATA.png){.nostretch fig-align="center" width=100%}
+
+- Our data: global Malaise Trap project.
+
+- We have a total of $1,781,340$ [arthropods]{.orange} split across $154,688$ BINs and  $N = 2415$ [sampling sites]{.blue}.
+
 
 ## How can we link covariates with biodiversity? 
 
@@ -441,9 +488,6 @@ as a [composite marginal likelihood]{.blue}. The estimating equation is still un
 $$
 where ${\color{#8B0000}{s_{ik}}} \in [0,1]$ is the [fraction of shared BINs]{.orange} between locations $i$ and $k$.
 
-## The package `HubbellGLM`
-
-![](img/HubbellOut2.png){.nostretch fig-align="center" width=55%}
 
 ## Determinants of biodiversity in the global malaise trap
 
@@ -489,7 +533,14 @@ cbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + rela
 - Fisher's $\alpha$ is the same quantity described by Hubbell's unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process. 
 
 :::callout-tip
-Rigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of biodiversity. *arXiv:2502.01333*
+
+<div style="font-size: 80%;">
+
+Rigon, T., Hsu, C., and Dunson D.B. (2025). A Bayesian theory for estimation of biodiversity. *arXiv:2502.01333*
+
+Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026). Predicting global biodiversity via Hubbell regression. *bioRxiv*
+</div>
+
 :::
 
 - The Hubbell regression extends the neutral theory in a covariate-dependent [GLM]{.blue} framework.
@@ -499,9 +550,25 @@ Rigon, T., Hsu, C., and Dunson D.B. (2025+). A Bayesian theory for estimation of
 - From here to infinity: next steps
   1. Extend to mixed models, allowing for random effects;
   2. More on nonparametrics: GAMs
-  3. Finish the paper! :)
 
-- [Thank you for your attention!]{.orange}
+## Software: the R package `HubbellGLM`
+
+
+::: columns
+
+::: {.column width="55%"}
+![](img/HubbellOut2.png){.nostretch fig-align="center" width=100%}
+:::
+
+::: {.column width="45%"}
+![](img/QR_software.png){width="100%"}
+:::
+
+:::
+
+
+
+## Paper
 
 ## References {.unnumbered}
 

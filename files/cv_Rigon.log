@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  1 MAY 2026 00:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  4 JUN 2026 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,18 +889,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/sl' in size <10.5> no
 t available
 (Font)              Font shape `OT1/LibertinusSerif-TLF/m/it' tried instead on 
-input line 386.
+input line 390.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.5pt on input line 386.
+(Font)              scaled to size 10.5pt on input line 390.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/scsl' in size <10.5> 
 not available
 (Font)              Font shape `OT1/LibertinusSerif-TLF/m/scit' tried instead o
-n input line 412.
+n input line 416.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/scit' will be
-(Font)              scaled to size 10.5pt on input line 412.
+(Font)              scaled to size 10.5pt on input line 416.
 
 
-[6]
+[6
+
+]
 
 [7]
 
@@ -920,22 +922,22 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: B77F679191450B44ACD67ED7BEDEAC63;1912.
  ) 
 Here is how much of TeX's memory you used:
- 16178 strings out of 473190
- 265307 string characters out of 5715800
+ 16181 strings out of 473190
+ 265382 string characters out of 5715800
  714459 words of memory out of 5000000
  38864 multiletter control sequences out of 15000+600000
- 607039 words of font info for 226 fonts, out of 8000000 for 9000
+ 607186 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,13n,107p,1005b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,13n,107p,1005b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertinus-type1/Liber
 tinusSerif-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libe
 rtinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2025/texmf-dist/fon
 ts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb>
-Output written on cv_Rigon.pdf (8 pages, 525603 bytes).
+Output written on cv_Rigon.pdf (8 pages, 525715 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  45177 words of extra memory for PDF output out of 51595 (max. 10000000)
 

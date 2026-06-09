@@ -5,6 +5,8 @@
 
 [Preprints]{.blue}
 
+1. Zito, A., **Rigon, T.**, Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026+). Predicting global biodiversity via Hubbell regression. Submitted. [[bioRxiv]](https://doi.org/10.64898/2026.05.29.728852) [[Github repository]](https://github.com/alessandrozito/HubbellGLM)
+
 1. Ghilotti, L., Camerlenghi, F., **Rigon, T.**, and Guindani, M. (2026+). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. Submitted. [[ArXiv]](https://arxiv.org/abs/2510.24526)
 
 1. **Rigon, T.**, Hsu, C., and Dunson D. B. (2026+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).

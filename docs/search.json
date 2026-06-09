@@ -438,7 +438,7 @@
     "href": "post.html",
     "title": "Blogpost",
     "section": "",
-    "text": "A Bayesian theory for the estimation of biodiversity\n\n\nUniversità of Milano-Bicocca\n\n\nA joint work with Alessandro Zito et al. presented at the University of Milano-Bicocca.\n\n\n\n\n\nJun 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBNP modeling of multivariate count data with unknown traits\n\n\nUniversità di Roma la Sapienza\n\n\nA joint work with Lorenzo Ghilotti, Federico Camerlenghi and Michele Guindani presented at the Università di Roma la Sapienza.\n\n\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nABACO26\n\n\nNonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences\n\n\nA joint work with Davide Agnoletto and David Dunson presented at the Workshop on Advances in BAyesian COmputation and modeling organized by Emanuele Aliverti at the University of Padova.\n\n\n\n\n\nFeb 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject presentation\n\n\nPolitecnico di Milano - Mathematical Engineering - Bayesian Statistics\n\n\nPresentation of a project for the course Bayesian Statistics at the Politecnico di Milano\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBISP14\n\n\nBayesian inference for generalized linear models via quasi-posteriors\n\n\nA joint work with Davide Agnoletto and David Dunson presented at BISP 14, the 14th workshop on Bayesian Inference for Stochastic processes, organized by CNR-IMATI\n\n\n\n\n\nMay 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLa lotteria nazionale non è difettosa\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCome mai non è possibile prevedere i numeri del lotto\n\n\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League: com’è andata?\n\n\nUna valutazione degli errori\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League\n\n\n8a giornata\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKarmic dice for Baldur’s Gate III\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\n\n\n\nNo matching items"
+    "text": "A Bayesian theory for the estimation of biodiversity\n\n\nUniversità of Milano-Bicocca\n\n\nA joint work with Alessandro Zito, Ching-Lung Hsu et al. presented at the University of Milano-Bicocca.\n\n\n\n\n\nJun 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBNP modeling of multivariate count data with unknown traits\n\n\nUniversità di Roma la Sapienza\n\n\nA joint work with Lorenzo Ghilotti, Federico Camerlenghi and Michele Guindani presented at the Università di Roma la Sapienza.\n\n\n\n\n\nApr 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nABACO26\n\n\nNonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences\n\n\nA joint work with Davide Agnoletto and David Dunson presented at the Workshop on Advances in BAyesian COmputation and modeling organized by Emanuele Aliverti at the University of Padova.\n\n\n\n\n\nFeb 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nProject presentation\n\n\nPolitecnico di Milano - Mathematical Engineering - Bayesian Statistics\n\n\nPresentation of a project for the course Bayesian Statistics at the Politecnico di Milano\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBISP14\n\n\nBayesian inference for generalized linear models via quasi-posteriors\n\n\nA joint work with Davide Agnoletto and David Dunson presented at BISP 14, the 14th workshop on Bayesian Inference for Stochastic processes, organized by CNR-IMATI\n\n\n\n\n\nMay 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLa lotteria nazionale non è difettosa\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nCome mai non è possibile prevedere i numeri del lotto\n\n\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League: com’è andata?\n\n\nUna valutazione degli errori\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPrevisioni Champions League\n\n\n8a giornata\n\n\n\n\n\n\n\n\nJan 29, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKarmic dice for Baldur’s Gate III\n\n\nA simple algorithm that accounts for karma\n\n\n\n\n\n\n\n\nAug 20, 2023\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "links.html",
@@ -4085,7 +4085,7 @@
     "href": "post/hubbel/hubbel_slides.html#determinants-of-biodiversity-in-the-global-malaise-trap",
     "title": "A Bayesian theory for the estimation of biodiversity",
     "section": "Determinants of biodiversity in the global malaise trap",
-    "text": "Determinants of biodiversity in the global malaise trap\n\nWe run the Hubbel regression model:\n\ncbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)\n\nWe estimate \\hat{\\sigma} = 0.53 via maximum likelihood, which amounts to a square root growth.\nP-values are corrected for shared species via the sandwich estimator.\n\n\n| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |\n|---------------------------------|---------:|-----------:|-------------:|---------|\n| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |\n| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |\n| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |\n| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |\n| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |\n| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |\n| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |\n| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |\n| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |\n| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |\n| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |\n| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |\n| total precipitation             | -0.009   | 0.003      | 0.001        | **      |\n| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |\n| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |"
+    "text": "Determinants of biodiversity in the global malaise trap\n-Goal: test the joint effect of evapotranspiration and human footprint\nHubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)\n\nM0: no covarites\nM1: AET\nM2: + fixed effect for realm\nM3: + time (julian week, shifter by 6 months if below equator, 1 degree Fourier transform\nM4: + spatial gradient (ns(Latitude, 6))\nM5: + zone and hfp and interaction\nM6: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)\nM7: + anomalies for weather (temperature, humidity, precipitation, wind speed)"
   },
   {
     "objectID": "post/hubbel/hubbel_slides.html#results-latitude-has-a-major-effect",
@@ -4163,5 +4163,152 @@
     "title": "A Bayesian theory for the estimation of biodiversity",
     "section": "Paper",
     "text": "Paper"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#paper-available-on-biorxiv",
+    "href": "post/hubbel/hubbel_slides.html#paper-available-on-biorxiv",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Paper available on biorXiv",
+    "text": "Paper available on biorXiv"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#hubbell-regression-paper-available-on-biorxiv",
+    "href": "post/hubbel/hubbel_slides.html#hubbell-regression-paper-available-on-biorxiv",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Hubbell regression paper available on biorXiv",
+    "text": "Hubbell regression paper available on biorXiv"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#our-scientific-questions",
+    "href": "post/hubbel/hubbel_slides.html#our-scientific-questions",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Our scientific questions",
+    "text": "Our scientific questions\n\n\n\n\n\n\nIs (actual) evapotranspiration the main driver of diversity?\nHow does anthropogenic impact affect diversity?"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#modelling-approach",
+    "href": "post/hubbel/hubbel_slides.html#modelling-approach",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Modelling approach",
+    "text": "Modelling approach\n\nGoal: test the joint effect of evapotranspiration and human footprint\n\nHubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)\n\n\n\nModel considered (in order of complexity)\n\n\n\nM0: no covariates\nM1: AET\nM2: + fixed effect for realm\nM3: + time (julian week, shifter by 6 months if below equator, 1 degree Fourier transform\nM4: + spatial gradient (ns(Latitude, 6))\nM5: + zone and hfp and interaction\nM6: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)\nM7: + anomalies for weather (temperature, humidity, precipitation, wind speed)"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#hubbell-achieves-the-best-predictive-performance",
+    "href": "post/hubbel/hubbel_slides.html#hubbell-achieves-the-best-predictive-performance",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Hubbell achieves the best predictive performance",
+    "text": "Hubbell achieves the best predictive performance\n\n\n\n\n\n\nWe run a 10-fold cross-validation experiment. Our benchmarks are other GLMs (matching the growth rate with n).\nFor each nested specification, we split the data into 10 folds, train all models in 90% of the data and predict the remaining 10% (cycle through)."
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#our-scientific-questions",
+    "href": "post/hubbel/hubbel.html#our-scientific-questions",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Our scientific questions",
+    "text": "Our scientific questions\n\n\n\n\n\n\nIs (actual) evapotranspiration the main driver of diversity?\nHow does anthropogenic impact affect diversity?"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#modelling-approach",
+    "href": "post/hubbel/hubbel.html#modelling-approach",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Modelling approach",
+    "text": "Modelling approach\n\nGoal: test the joint effect of evapotranspiration and human footprint\n\nHubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)\n\n\n\n\n\n\nModel considered (in order of complexity)\n\n\n\n\nM0: no covariates\nM1: AET\nM2: + fixed effect for realm\nM3: + time (julian week, shifter by 6 months if below equator, 1 degree Fourier transform\nM4: + spatial gradient (ns(Latitude, 6))\nM5: + zone and hfp and interaction\nM6: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)\nM7: + anomalies for weather (temperature, humidity, precipitation, wind speed)"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#hubbell-achieves-the-best-predictive-performance",
+    "href": "post/hubbel/hubbel.html#hubbell-achieves-the-best-predictive-performance",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Hubbell achieves the best predictive performance",
+    "text": "Hubbell achieves the best predictive performance\n\n\n\n\n\n\nWe run a 10-fold cross-validation experiment. Our benchmarks are other GLMs (matching the growth rate with n).\nFor each nested specification, we split the data into 10 folds, train all models in 90% of the data and predict the remaining 10% (cycle through)."
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#hubbell-regression-paper-available-on-biorxiv",
+    "href": "post/hubbel/hubbel.html#hubbell-regression-paper-available-on-biorxiv",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Hubbell regression paper available on biorXiv",
+    "text": "Hubbell regression paper available on biorXiv"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#key-results",
+    "href": "post/hubbel/hubbel.html#key-results",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Key results",
+    "text": "Key results\n\n\n\nModel M0: \\sigma is estimated as 0.562. Square root!\nModel M1: AET explains nearly 30% of the total variation in species richness\nModel M7:\n\nA 10 mm/year increase in AET leads to a 12.4\\% increase in diversity on average (\\beta = 0.012; P &lt; 0.0001).\nA 5 units on the HFP scale is associated with a 6.1\\% reduction in diversity in tropical areas (\\beta = −0.013; P &lt; 0.0001), and a 7.5\\% reduction in dry zones (\\beta = −0.016; P &lt; 0.004)\nPolar areas show an interesting increase of 8.2\\% (\\beta = 0.016; P &lt; 0.038)\nNo detected effect in continental areas"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#key-results",
+    "href": "post/hubbel/hubbel_slides.html#key-results",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Key results",
+    "text": "Key results\n\n\n\nModel M0: \\sigma is estimated as 0.562. Square root!\nModel M1: AET explains nearly 30% of the total variation in species richness\nModel M7:\n\nA 10 mm/year increase in AET leads to a 12.4\\% increase in diversity on average (\\beta = 0.012; P &lt; 0.0001).\nA 5 units on the HFP scale is associated with a 6.1\\% reduction in diversity in tropical areas (\\beta = −0.013; P &lt; 0.0001), and a 7.5\\% reduction in dry zones (\\beta = −0.016; P &lt; 0.004)\nPolar areas show an interesting increase of 8.2\\% (\\beta = 0.016; P &lt; 0.038)\nNo detected effect in continental areas"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#effects-for-all-diversity-indices-variations",
+    "href": "post/hubbel/hubbel_slides.html#effects-for-all-diversity-indices-variations",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Effects for all diversity indices: variations",
+    "text": "Effects for all diversity indices: variations"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#effects-for-all-diversity-indices-variations",
+    "href": "post/hubbel/hubbel.html#effects-for-all-diversity-indices-variations",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Effects for all diversity indices: variations",
+    "text": "Effects for all diversity indices: variations"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#scientific-summary",
+    "href": "post/hubbel/hubbel.html#scientific-summary",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Scientific summary",
+    "text": "Scientific summary\n\n\n\n\n\n\nKey Advantages Over Previous Studies\n\n\n\nStandardized Sampling: Uses systematic techniques, avoiding the noise and bias of mixed-source data (e.g. Newbold 2015)\nDNA-Based Identification: Removes taxonomic bias; essential for handling massive amounts of undescribed species.\nSpecies Accumulation Rates: Relies on actual discovery trends rather than uncertain estimates, which is much more reliable for communities with many rare species.\n\n\n\n\n\n\n\n\nLimitations\n\n\n\nThe growth rate of the parameter is the same for all the sample. It can be helpful to model sigma as well"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#summary-and-future-directions-ii",
+    "href": "post/hubbel/hubbel.html#summary-and-future-directions-ii",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Summary and future directions II",
+    "text": "Summary and future directions II\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\nZito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026). Predicting global biodiversity via Hubbell regression. bioRxiv\n\n\n\n\n\nThe Hubbell regression extends the neutral theory in a covariate-dependent GLM framework.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#scientific-summary",
+    "href": "post/hubbel/hubbel_slides.html#scientific-summary",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Scientific summary",
+    "text": "Scientific summary\n\n\n\nKey Advantages Over Previous Studies\n\n\nStandardized Sampling: Uses systematic techniques, avoiding the noise and bias of mixed-source data (e.g. Newbold 2015)\nDNA-Based Identification: Removes taxonomic bias; essential for handling massive amounts of undescribed species.\nSpecies Accumulation Rates: Relies on actual discovery trends rather than uncertain estimates, which is much more reliable for communities with many rare species.\n\n\n\n\n\n\nLimitations\n\n\nThe growth rate of the parameter is the same for all the sample. It can be helpful to model sigma as well"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#summary-and-future-directions-ii",
+    "href": "post/hubbel/hubbel_slides.html#summary-and-future-directions-ii",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Summary and future directions II",
+    "text": "Summary and future directions II\n\nFisher’s \\alpha is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.\n\n\n\n\n\nRigon, T., Hsu, C., and Dunson D.B. (2025). A Bayesian theory for estimation of biodiversity. arXiv:2502.01333\nZito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026). Predicting global biodiversity via Hubbell regression. bioRxiv\n\n\n\n\n\nThe Hubbell regression extends the neutral theory in a covariate-dependent GLM framework.\nDifferent growth rates are captured via \\sigma &lt; 0, \\sigma = 0, and \\sigma \\in (0,1).\nFrom here to infinity: next steps\n\nExtend to mixed models, allowing for random effects;\nMore on nonparametrics: GAMs"
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#scenario-evaluation",
+    "href": "post/hubbel/hubbel_slides.html#scenario-evaluation",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Scenario evaluation",
+    "text": "Scenario evaluation\n\n\n\n\n\n\nTropical sites with high human activity (HFP &gt; 30) miss a median of 197 species (21.3\\% of potential richness).\nDry sites miss 202 species (29.2\\%).\nTemperate sites miss 26 species (4.3\\%)\nContinental sites miss 70 species (9.23\\%)\n\n\n\n\n\nA 5‑unit intensification of human presence globally leads to up to an 8\\% reduction in potential richness\nA 10\\% increase in AET is associated with an average 3.81\\% increase in potential richness."
+  },
+  {
+    "objectID": "post/hubbel/hubbel_slides.html#effects-for-all-diversity-indices-global-scales",
+    "href": "post/hubbel/hubbel_slides.html#effects-for-all-diversity-indices-global-scales",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Effects for all diversity indices: global scales",
+    "text": "Effects for all diversity indices: global scales"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#effects-for-all-diversity-indices-global-scales",
+    "href": "post/hubbel/hubbel.html#effects-for-all-diversity-indices-global-scales",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Effects for all diversity indices: global scales",
+    "text": "Effects for all diversity indices: global scales"
+  },
+  {
+    "objectID": "post/hubbel/hubbel.html#scenario-evaluation",
+    "href": "post/hubbel/hubbel.html#scenario-evaluation",
+    "title": "A Bayesian theory for the estimation of biodiversity",
+    "section": "Scenario evaluation",
+    "text": "Scenario evaluation\n\n\n\n\n\n\n\n\n\nTropical sites with high human activity (HFP &gt; 30) miss a median of 197 species (21.3\\% of potential richness).\nDry sites miss 202 species (29.2\\%).\nTemperate sites miss 26 species (4.3\\%)\nContinental sites miss 70 species (9.23\\%)\n\n\n\n\n\nA 5‑unit intensification of human presence globally leads to up to an 8\\% reduction in potential richness\nA 10\\% increase in AET is associated with an average 3.81\\% increase in potential richness."
   }
 ]

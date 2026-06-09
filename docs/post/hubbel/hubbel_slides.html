@@ -637,46 +637,125 @@ L(\boldsymbol{\beta}) \propto
 </span> where <span class="math inline">{\color{#8B0000}{s_{ik}}} \in [0,1]</span> is the <span class="orange">fraction of shared BINs</span> between locations <span class="math inline">i</span> and <span class="math inline">k</span>.</p></li>
 </ul>
 </section>
-<section id="determinants-of-biodiversity-in-the-global-malaise-trap" class="slide level2 center">
-<h2>Determinants of biodiversity in the global malaise trap</h2>
-<ul>
-<li>We run the Hubbel regression model:</li>
-</ul>
-<pre><code>cbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)</code></pre>
-<ul>
-<li><p>We estimate <span class="math inline">\hat{\sigma} = 0.53</span> via maximum likelihood, which amounts to a <span class="orange">square root growth</span>.</p></li>
-<li><p>P-values are corrected for shared species via the <span class="blue">sandwich estimator</span>.</p></li>
-</ul>
-<div style="text-align:center; font-size:50%;">
-<pre><code>| Variable                        | Estimate | Std. Error | Pr(&gt;|z|)     | Signif. |
-|---------------------------------|---------:|-----------:|-------------:|---------|
-| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |
-| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |
-| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |
-| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |
-| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |
-| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |
-| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |
-| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |
-| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |
-| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |
-| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |
-| temperature at 2m               | 0.049    | 0.005      | &lt; 2.2e-16    | ***     |
-| total precipitation             | -0.009   | 0.003      | 0.001        | **      |
-| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |
-| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |</code></pre>
-</div>
-</section>
-<section id="results-latitude-has-a-major-effect" class="slide level2 center">
-<h2>Results: latitude has a major effect!</h2>
+<section id="our-scientific-questions" class="slide level2 center">
+<h2>Our scientific questions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/Results.jpg" class="quarto-figure quarto-figure-center" style="width:75.0%"></p>
+<p><img data-src="img/questions.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+<ul>
+<li><p>Is (actual) <span class="blue">evapotranspiration</span> the main driver of diversity?</p></li>
+<li><p>How does <span class="orange">anthropogenic</span> impact affect diversity?</p></li>
+</ul>
+</section>
+<section id="modelling-approach" class="slide level2 center">
+<h2>Modelling approach</h2>
+<ul>
+<li>Goal: test the joint effect of <span class="blue">evapotranspiration</span> and <span class="orange">human footprint</span></li>
+</ul>
+<pre><code>HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)</code></pre>
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Model considered (in order of complexity)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>M0</strong>: no covariates</li>
+<li><strong>M1</strong>: <code>AET</code></li>
+<li><strong>M2</strong>: + fixed effect for <code>realm</code></li>
+<li><strong>M3</strong>: + <code>time</code> (julian week, shifter by 6 months if below equator, 1 degree Fourier transform</li>
+<li><strong>M4</strong>: + spatial gradient (<code>ns(Latitude, 6)</code>)</li>
+<li><strong>M5</strong>: + <code>zone</code> and <code>hfp</code> and interaction</li>
+<li><strong>M6</strong>: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)</li>
+<li><strong>M7</strong>: + anomalies for weather (temperature, humidity, precipitation, wind speed)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="hubbell-achieves-the-best-predictive-performance" class="slide level2 center">
+<h2>Hubbell achieves the best predictive performance</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/cv_10fold.jpg" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
+<ul>
+<li><p>We run a 10-fold <span class="blue">cross-validation</span> experiment. Our benchmarks are other GLMs (matching the growth rate with <span class="math inline">n</span>).</p></li>
+<li><p>For each nested specification, we split the data into 10 folds, train all models in 90% of the data and predict the remaining 10% (cycle through).</p></li>
+</ul>
+</section>
+<section id="key-results" class="slide level2 center">
+<h2>Key results</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li><p><strong>Model M0</strong>: <span class="math inline">\sigma</span> is estimated as <span class="math inline">0.562</span>. <span class="orange">Square root</span>!</p></li>
+<li><p><strong>Model M1</strong>: <code>AET</code> explains nearly 30% of the total variation in species richness</p></li>
+<li><p><strong>Model M7</strong>:</p>
+<ul>
+<li>A 10 mm/year increase in <code>AET</code> leads to a <span class="math inline">12.4\%</span> increase in <span class="blue">diversity</span> on average (<span class="math inline">\beta = 0.012</span>; P <span class="math inline">&lt; 0.0001</span>).</li>
+<li>A 5 units on the <code>HFP</code> scale is associated with a <span class="math inline">6.1\%</span> reduction in diversity in <span class="orange">tropical areas</span> (<span class="math inline">\beta = −0.013</span>; P <span class="math inline">&lt; 0.0001</span>), and a <span class="math inline">7.5\%</span> reduction in <span class="orange">dry zones</span> (<span class="math inline">\beta = −0.016</span>; P <span class="math inline">&lt; 0.004</span>)</li>
+<li><span class="blue">Polar</span> areas show an interesting increase of <span class="math inline">8.2\%</span> (<span class="math inline">\beta = 0.016</span>; P <span class="math inline">&lt; 0.038</span>)</li>
+<li>No detected effect in continental areas</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/gaston.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="effects-for-all-diversity-indices-variations" class="slide level2 center">
+<h2>Effects for all diversity indices: variations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/hfp_indices.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
 </figure>
 </div>
 </section>
-<section id="summary-and-future-directions" class="slide level2 center">
-<h2>Summary and future directions</h2>
+<section id="effects-for-all-diversity-indices-global-scales" class="slide level2 center">
+<h2>Effects for all diversity indices: global scales</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/richness_diversity.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="scenario-evaluation" class="slide level2 center">
+<h2>Scenario evaluation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<ul>
+<li>Tropical sites with high human activity (<code>HFP &gt; 30</code>) miss a median of <span class="math inline">197</span> species (<span class="math inline">21.3\%</span> of potential richness).</li>
+<li>Dry sites miss <span class="math inline">202</span> species (<span class="math inline">29.2\%</span>).</li>
+<li>Temperate sites miss <span class="math inline">26</span> species (<span class="math inline">4.3\%</span>)</li>
+<li>Continental sites miss <span class="math inline">70</span> species (<span class="math inline">9.23\%</span>)</li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li><p>A 5‑unit intensification of human presence globally leads to up to an <span class="math inline">8\%</span> reduction in potential richness</p></li>
+<li><p>A <span class="math inline">10\%</span> increase in <code>AET</code> is associated with an average <span class="math inline">3.81\%</span> increase in potential richness.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/richness_map.jpg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="summary-and-future-directions-ii" class="slide level2 center">
+<h2>Summary and future directions II</h2>
 <ul>
 <li>Fisher’s <span class="math inline">\alpha</span> is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.</li>
 </ul>
@@ -713,8 +792,18 @@ L(\boldsymbol{\beta}) \propto
 <p><img data-src="img/QR_software.png" style="width:100.0%"></p>
 </div></div>
 </section>
-<section id="paper" class="slide level2 center">
-<h2>Paper</h2>
+<section id="hubbell-regression-paper-available-on-biorxiv" class="slide level2 center">
+<h2>Hubbell regression paper available on <em>biorXiv</em></h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/paper.png" class="nostretch quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/QR_paper.png" style="width:100.0%"></p>
+</div></div>
 </section>
 <section id="references" class="slide level2 unnumbered smaller scrollable">
 <h2>References</h2>

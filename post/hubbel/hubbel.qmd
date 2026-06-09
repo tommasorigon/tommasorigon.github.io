@@ -2,7 +2,7 @@
 title: "A Bayesian theory for the estimation of biodiversity"
 subtitle: "Università of Milano-Bicocca"
 date: "2026-06-09"
-description: "A joint work with [Alessandro Zito]{.orange} et al. presented at the University of Milano-Bicocca." 
+description: "A joint work with [Alessandro Zito]{.orange}, [Ching-Lung Hsu]{.blue}  et al. presented at the University of Milano-Bicocca." 
 lang: en
 author: "[Tommaso Rigon]{.orange}"
 institute: "_Università degli Studi di Milano-Bicocca_"
@@ -489,46 +489,107 @@ $$
 where ${\color{#8B0000}{s_{ik}}} \in [0,1]$ is the [fraction of shared BINs]{.orange} between locations $i$ and $k$.
 
 
-## Determinants of biodiversity in the global malaise trap
+## Our scientific questions
 
-- We run the Hubbel regression model:
+![](img/questions.png){.nostretch fig-align="center" width=100%}
+
+
+- Is (actual) [evapotranspiration]{.blue} the main driver of diversity? 
+
+- How does [anthropogenic]{.orange} impact affect diversity?
+
+
+## Modelling approach
+
+- Goal: test the joint effect of [evapotranspiration]{.blue} and [human footprint]{.orange}
+
 ```
-cbind(n, y) ~ realm + habitat_type + temperature_2m + total_precipitation + relative_humidity + windspeed + month + year + ns(elev, df = 10) + ns(Latitude, df = 10) + ns(Longitude, df = 10)
-```
-
-- We estimate $\hat{\sigma} = 0.53$ via maximum likelihood, which amounts to a [square root growth]{.orange}.  
-
-- P-values are corrected for shared species via the [sandwich estimator]{.blue}.  
-
-<div style="text-align:center; font-size:50%;">
-
-```
-| Variable                        | Estimate | Std. Error | Pr(>|z|)     | Signif. |
-|---------------------------------|---------:|-----------:|-------------:|---------|
-| (Intercept)                     | -0.019   | 0.489      | 0.969        |         |
-| realm: Australasia              | -0.486   | 0.148      | 0.001        | **      |
-| realm: Indomalayan              | 0.089    | 0.142      | 0.529        |         |
-| realm: Nearctic                 | -0.150   | 0.469      | 0.750        |         |
-| realm: Neotropic                | 0.262    | 0.420      | 0.533        |         |
-| realm: Palearctic               | -0.005   | 0.187      | 0.977        |         |
-| habitat: Grassland              | -0.274   | 0.053      | 0.000        | ***     |
-| habitat: Mixed                  | 0.044    | 0.059      | 0.463        |         |
-| habitat: Tundra                 | -0.334   | 0.177      | 0.059        | .       |
-| habitat: Urban                  | -0.374   | 0.067      | 0.000        | ***     |
-| habitat: Wetland                | -0.087   | 0.069      | 0.210        |         |
-| temperature at 2m               | 0.049    | 0.005      | < 2.2e-16    | ***     |
-| total precipitation             | -0.009   | 0.003      | 0.001        | **      |
-| relative humidity               | 0.008    | 0.002      | 0.000        | ***     |
-| wind speed                      | -0.049   | 0.012      | 0.000        | ***     |
+HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)
 ```
 
-</div>
+:::callout-note
+#### Model considered (in order of complexity)
 
-## Results: latitude has a major effect!
+- **M0**: no covariates
+- **M1**: `AET`
+- **M2**: + fixed effect for `realm`
+- **M3**: + `time` (julian week, shifter by 6 months if below equator, 1 degree Fourier transform
+- **M4**: + spatial gradient (`ns(Latitude, 6)`) 
+- **M5**: + `zone` and `hfp` and interaction
+- **M6**: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)
+- **M7**: + anomalies for weather (temperature, humidity, precipitation, wind speed)
+:::
 
-![](img/Results.jpg){.nostretch fig-align="center" width=75%}
+## Hubbell achieves the best predictive performance 
 
-## Summary and future directions
+![](img/cv_10fold.jpg){.nostretch fig-align="center" width=50%}
+
+
+- We run a 10-fold [cross-validation]{.blue} experiment. Our benchmarks are other GLMs (matching the growth rate with $n$).
+
+- For each nested specification, we split the data into 10 folds, train all models in 90% of the data and predict the remaining 10% (cycle through).
+
+## Key results
+
+::: columns
+
+::: {.column width="58%"}
+
+- **Model M0**: $\sigma$ is estimated as $0.562$. [Square root]{.orange}!
+
+- **Model M1**: `AET` explains nearly 30% of the total variation in species richness
+
+- **Model M7**:
+  - A 10 mm/year increase in `AET` leads to a $12.4\%$ increase in [diversity]{.blue} on average ($\beta = 0.012$; P $< 0.0001$).
+  - A 5 units on the `HFP` scale is associated with a $6.1\%$ reduction in diversity in [tropical areas]{.orange} ($\beta = −0.013$; P $< 0.0001$), and a $7.5\%$ reduction in [dry zones]{.orange} ($\beta = −0.016$; P $< 0.004$)
+  - [Polar]{.blue} areas show an interesting increase of $8.2\%$ ($\beta = 0.016$; P $< 0.038$)
+  - No detected effect in continental areas
+:::
+
+::: {.column width="42%"}
+![](img/gaston.png){.nostretch fig-align="center" width=100%}
+:::
+
+:::
+
+## Effects for all diversity indices: variations
+
+![](img/hfp_indices.jpg){.nostretch fig-align="center" width=90%}
+
+
+## Effects for all diversity indices: global scales
+
+![](img/richness_diversity.png){.nostretch fig-align="center" width=100%}
+
+
+
+## Scenario evaluation
+
+::: columns
+
+::: {.column width="50%"}
+
+:::callout-note
+- Tropical sites with high human activity (`HFP > 30`) miss a median of $197$ species ($21.3\%$ of potential richness).
+- Dry sites miss $202$ species ($29.2\%$).
+- Temperate sites miss $26$ species ($4.3\%$)
+- Continental sites miss $70$ species ($9.23\%$)
+::::
+
+- A 5‑unit intensification of human presence globally leads to up to an $8\%$ reduction in potential richness
+
+- A $10\%$ increase in `AET` is associated with an average $3.81\%$ increase in potential richness.
+
+:::
+
+::: {.column width="50%"}
+![](img/richness_map.jpg){.nostretch fig-align="center" width=100%}
+:::
+
+:::
+
+
+## Summary and future directions II
 
 - Fisher's $\alpha$ is the same quantity described by Hubbell's unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process. 
 
@@ -568,7 +629,22 @@ Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., 
 
 
 
-## Paper
+## Hubbell regression paper available on *biorXiv*
+
+
+::: columns
+
+::: {.column width="55%"}
+![](img/paper.png){.nostretch fig-align="center" width=100%}
+:::
+
+::: {.column width="45%"}
+![](img/QR_paper.png){width="100%"}
+:::
+
+:::
+
+
 
 ## References {.unnumbered}
 

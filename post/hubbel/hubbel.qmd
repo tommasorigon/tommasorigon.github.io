@@ -589,10 +589,18 @@ HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)
 :::
 
 
-## Summary and future directions II
+## Summary and future directions
 
 - Fisher's $\alpha$ is the same quantity described by Hubbell's unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process. 
 
+- The Hubbell regression extends the neutral theory in a covariate-dependent [GLM]{.blue} framework.
+
+- Different growth rates are captured via $\sigma < 0$, $\sigma = 0$, and $\sigma \in (0,1)$.
+
+- From here to infinity: next steps
+  1. Extend to mixed models, allowing for random effects;
+  2. More on nonparametrics: GAMs
+  
 :::callout-tip
 
 <div style="font-size: 80%;">
@@ -604,13 +612,6 @@ Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., 
 
 :::
 
-- The Hubbell regression extends the neutral theory in a covariate-dependent [GLM]{.blue} framework.
-
-- Different growth rates are captured via $\sigma < 0$, $\sigma = 0$, and $\sigma \in (0,1)$.
-
-- From here to infinity: next steps
-  1. Extend to mixed models, allowing for random effects;
-  2. More on nonparametrics: GAMs
 
 ## Software: the R package `HubbellGLM`
 

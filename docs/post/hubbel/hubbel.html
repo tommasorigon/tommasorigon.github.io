@@ -207,7 +207,7 @@ window.Quarto = {
   <li><a href="#effects-for-all-diversity-indices-variations" id="toc-effects-for-all-diversity-indices-variations" class="nav-link" data-scroll-target="#effects-for-all-diversity-indices-variations">Effects for all diversity indices: variations</a></li>
   <li><a href="#effects-for-all-diversity-indices-global-scales" id="toc-effects-for-all-diversity-indices-global-scales" class="nav-link" data-scroll-target="#effects-for-all-diversity-indices-global-scales">Effects for all diversity indices: global scales</a></li>
   <li><a href="#scenario-evaluation" id="toc-scenario-evaluation" class="nav-link" data-scroll-target="#scenario-evaluation">Scenario evaluation</a></li>
-  <li><a href="#summary-and-future-directions-ii" id="toc-summary-and-future-directions-ii" class="nav-link" data-scroll-target="#summary-and-future-directions-ii">Summary and future directions II</a></li>
+  <li><a href="#summary-and-future-directions" id="toc-summary-and-future-directions" class="nav-link" data-scroll-target="#summary-and-future-directions">Summary and future directions</a></li>
   <li><a href="#software-the-r-package-hubbellglm" id="toc-software-the-r-package-hubbellglm" class="nav-link" data-scroll-target="#software-the-r-package-hubbellglm">Software: the R package <code>HubbellGLM</code></a></li>
   <li><a href="#hubbell-regression-paper-available-on-biorxiv" id="toc-hubbell-regression-paper-available-on-biorxiv" class="nav-link" data-scroll-target="#hubbell-regression-paper-available-on-biorxiv">Hubbell regression paper available on <em>biorXiv</em></a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -861,10 +861,17 @@ Model considered (in order of complexity)
 </div>
 </div>
 </section>
-<section id="summary-and-future-directions-ii" class="level2">
-<h2 class="anchored" data-anchor-id="summary-and-future-directions-ii">Summary and future directions II</h2>
+<section id="summary-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="summary-and-future-directions">Summary and future directions</h2>
 <ul>
-<li>Fisher’s <span class="math inline">\alpha</span> is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.</li>
+<li><p>Fisher’s <span class="math inline">\alpha</span> is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.</p></li>
+<li><p>The Hubbell regression extends the neutral theory in a covariate-dependent <span class="blue">GLM</span> framework.</p></li>
+<li><p>Different growth rates are captured via <span class="math inline">\sigma &lt; 0</span>, <span class="math inline">\sigma = 0</span>, and <span class="math inline">\sigma \in (0,1)</span>.</p></li>
+<li><p>From here to infinity: next steps</p>
+<ol type="1">
+<li>Extend to mixed models, allowing for random effects;</li>
+<li>More on nonparametrics: GAMs</li>
+</ol></li>
 </ul>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
@@ -879,15 +886,6 @@ Model considered (in order of complexity)
 </div>
 </div>
 </div>
-<ul>
-<li><p>The Hubbell regression extends the neutral theory in a covariate-dependent <span class="blue">GLM</span> framework.</p></li>
-<li><p>Different growth rates are captured via <span class="math inline">\sigma &lt; 0</span>, <span class="math inline">\sigma = 0</span>, and <span class="math inline">\sigma \in (0,1)</span>.</p></li>
-<li><p>From here to infinity: next steps</p>
-<ol type="1">
-<li>Extend to mixed models, allowing for random effects;</li>
-<li>More on nonparametrics: GAMs</li>
-</ol></li>
-</ul>
 </section>
 <section id="software-the-r-package-hubbellglm" class="level2">
 <h2 class="anchored" data-anchor-id="software-the-r-package-hubbellglm">Software: the R package <code>HubbellGLM</code></h2>

@@ -11,10 +11,9 @@
 
 1. **Rigon, T.**, Hsu, C., and Dunson D. B. (2026+). A Bayesian theory for estimation of biodiversity. Submitted. [[ArXiv]](https://arxiv.org/abs/2502.01333).
 
-1. Anceschi, N., Castiglione, C., **Rigon, T.**, Zanella, G., and Durante D. (2026+).  Optimal and computationally tractable lower bounds for logistic log-likelihoods. Submitted.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
-
-
 [Articles in refereed journals]{.blue}
+
+1. Anceschi, N., Castiglione, C., **Rigon, T.**, Zanella, G., and Durante D. (2026+).  Optimal and computationally tractable lower bounds for logistic log-likelihoods. *Biometrika*, to appear.  [[ArXiv]](https://arxiv.org/abs/2410.10309).
 
 1. Agnoletto, D., **Rigon, T.**, and Dunson D. B. (2026+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. *Journal of the American Statistical Association (T&M)*, to appear. [[ArXiv]](https://arxiv.org/abs/2507.08629).
 

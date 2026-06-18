@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 JUN 2026 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 JUN 2026 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -839,44 +839,44 @@ icuj.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertinus-type1/l
 bn1_oaaihm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertinus-t
 ype1/lbn1_rlktsf.enc}]
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.5pt on input line 196.
+(Font)              scaled to size 10.5pt on input line 199.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/b/sc' will be
-(Font)              scaled to size 10.5pt on input line 234.
+(Font)              scaled to size 10.5pt on input line 237.
 
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertinus-type1/lbn1_3ki
 rmv.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/libertinust1math/li
 busMR.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 10.5pt on input line 276.
+(Font)              scaled to size 10.5pt on input line 279.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
@@ -889,15 +889,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--279
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/sl' in size <10.5> no
 t available
 (Font)              Font shape `OT1/LibertinusSerif-TLF/m/it' tried instead on 
-input line 390.
+input line 393.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/it' will be
-(Font)              scaled to size 10.5pt on input line 390.
+(Font)              scaled to size 10.5pt on input line 393.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/scsl' in size <10.5> 
 not available
 (Font)              Font shape `OT1/LibertinusSerif-TLF/m/scit' tried instead o
-n input line 416.
+n input line 419.
 LaTeX Font Info:    Font shape `OT1/LibertinusSerif-TLF/m/scit' will be
-(Font)              scaled to size 10.5pt on input line 416.
+(Font)              scaled to size 10.5pt on input line 419.
 
 
 [6
@@ -922,11 +922,11 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: B77F679191450B44ACD67ED7BEDEAC63;1912.
  ) 
 Here is how much of TeX's memory you used:
- 16179 strings out of 473190
- 265320 string characters out of 5715800
+ 16189 strings out of 473190
+ 265675 string characters out of 5715800
  714459 words of memory out of 5000000
  38864 multiletter control sequences out of 15000+600000
- 607041 words of font info for 226 fonts, out of 8000000 for 9000
+ 607954 words of font info for 232 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,107p,1005b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertinus-type1/Liber
@@ -934,7 +934,7 @@ tinusSerif-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libe
 rtinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2025/texmf-dist/fon
 ts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb>
-Output written on cv_Rigon.pdf (8 pages, 525684 bytes).
+Output written on cv_Rigon.pdf (8 pages, 525798 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams

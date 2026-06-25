@@ -1,8 +1,8 @@
 ---
 title: "A Bayesian theory for the estimation of biodiversity"
-subtitle: "Università of Milano-Bicocca"
+subtitle: "ISBA 2026, Nagoya"
 date: "2026-06-30"
-description: "A joint work with [Alessandro Zito]{.orange}, [Ching-Lung Hsu]{.blue}  et al. presented at the University of Milano-Bicocca." 
+description: "A joint work with [Alessandro Zito]{.orange}, [Ching-Lung Hsu]{.blue}  et al. presented at ISBA 2026." 
 lang: en
 draft: true
 author: "[Tommaso Rigon]{.orange}"

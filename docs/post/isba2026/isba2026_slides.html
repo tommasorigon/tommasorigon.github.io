@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
+
+  <meta name="author" content="Tommaso Rigon">
+  <meta name="dcterms.date" content="2026-06-30">
+  <title>Tommaso Rigon – A Bayesian theory for the estimation of biodiversity</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-b09abbc1de315c713e3bd0ae469223e3.css">
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">A Bayesian theory for the estimation of biodiversity</h1>
+  <p class="subtitle">Università of Milano-Bicocca</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<span class="orange">Tommaso Rigon</span> 
+</div>
+        <p class="quarto-title-affiliation">
+            <em>Università degli Studi di Milano-Bicocca</em>
+          </p>
+    </div>
+</div>
+
+  <p class="date">2026-06-30</p>
+</section>
+<section id="warm-thanks-statistical-team" class="slide level2 center">
+<h2>Warm thanks (statistical team)</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/hsu.jpg" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">Ching-Lung Hsu</span></p>
+<p>(<em>Duke University</em>)</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/Ale.jpg" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">Alessandro Zito</span></p>
+<p>(<em>Harvard School of Public Health</em>)</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/david.jpg" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">David Dunson</span></p>
+<p>(<em>Duke University</em>)</p>
+</div></div>
+</section>
+<section id="warm-thanks-ecological-team-and-more" class="slide level2 center">
+<h2>Warm thanks (ecological team, and more…)</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/otso.jpg" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">Otso Ovaskainen</span></p>
+<p>(<em>University of Jyväskylä</em>)</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/tomas.jpeg" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">Tomas Roslin</span></p>
+<p>(<em>University of Helsinki</em>)</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/ibol.png" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+<p><span class="blue">International BARCODE OF LIFE</span></p>
+</div></div>
+<ul>
+<li>…and Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., and the entire <span class="orange">iBOL Consortium</span>!,</li>
+</ul>
+</section>
+<section id="species-sampling-models" class="slide level2 center">
+<h2>Species sampling models</h2>
+<ul>
+<li><p>Let <span class="math inline">X_1,\dots,X_n</span> be some collection of <span class="blue">species</span> or <span class="orange">taxa</span>. Suppose <span class="math inline">X_n</span> are conditionally iid samples from a <span class="orange">species sampling model</span>: <span class="math display">
+(X_n \mid \tilde{p}) \overset{\text{iid}}{\sim} \tilde{p}, \qquad
+\tilde{p}(\cdot) = \sum_{h=1}^{\infty}\pi_h \delta_{Z_h}(\cdot),
+\qquad n \ge 1,
+</span> where <span class="math inline">(\pi_h)_{h \ge 1}</span> is a set of probabilities (<span class="blue">species proportions</span>) and <span class="math inline">Z_h</span> represent distinct species.</p></li>
+<li><p>The discreteness of <span class="math inline">\tilde{p}</span> identifies <span class="math inline">Y^{(n)}=y</span> distinct taxa <span class="math inline">X_1^*, \ldots, X_y^*</span> with frequencies <span class="math inline">n_1, \ldots, n_y</span>, called <span class="orange">abundances</span> in ecology.</p></li>
+<li><p><span class="blue">Gibbs-type priors</span> have emerged as the <span class="orange">most natural extension</span> of the DP <span class="citation" data-cites="DeBlasi2015">(<a href="#/references" role="doc-biblioref" onclick="">De Blasi et al. 2015</a>)</span>.</p></li>
+<li><p>The <span class="blue">predictive distribution</span> of a Gibbs-type prior is given by: <span class="math display">
+\mathbb{P}(X_{n+1} \in \cdot \mid X_1,\dots,X_n)
+= \frac{V_{n+1, y+1}}{V_{n,y}}P(\cdot)
++ \frac{V_{n+1, y}}{V_{n,y}}\sum_{j=1}^y(n_j - \sigma)\delta_{X^*_j}(\cdot).
+</span> where <span class="math inline">(a)_{n}</span> denotes a rising factorial, and <span class="math inline">\sigma &lt; 1</span> is the discount parameter. The <span class="math inline">V_{n,y}</span>’s are non-negative weights satisfying a forward recursive equation.</p></li>
+</ul>
+</section>
+<section id="three-notable-examples" class="slide level2 center">
+<h2>Three notable examples</h2>
+<ul>
+<li><p><span class="orange">Dirichlet multinomial</span> (<span class="math inline">\sigma &lt; 0</span>). For <span class="math inline">\sigma &lt; 0</span> and <span class="math inline">H \in \mathbb{N}</span>, a valid set of Gibbs coefficients is given by: <span class="math display">
+V_{n, y}(\sigma, H) := \frac{|\sigma|^{y-1}\prod_{j=1}^{y-1}(H - j)}{(H|\sigma| +1)_{n-1}}
+\mathbb{I}(y \le H).
+</span></p></li>
+<li><p><span class="blue">Dirichlet process</span> (<span class="math inline">\sigma = 0</span>). For <span class="math inline">\sigma = 0</span> and <span class="math inline">\alpha &gt; 0</span>, a valid set of Gibbs coefficients is given by: <span class="math display">
+V_{n, y}(\alpha) := \frac{\alpha^y}{(\alpha)_n}.
+</span></p></li>
+<li><p><span class="grey"><span class="math inline">\sigma</span>-stable Poisson–Kingman process</span> (<span class="math inline">0 &lt; \sigma &lt; 1</span>). For <span class="math inline">\sigma \in (0,1)</span> and gamma <span class="math inline">\gamma &gt; 0</span>, a valid set of Gibbs coefficients is defined as: <span class="math display">
+V_{n, y}(\sigma, \gamma) := \frac{\sigma^y\gamma^y}{\Gamma(n-y\sigma)f_{\sigma}\left(\gamma^{-1/\sigma}\right)}
+\int_{0}^{1}s^{n-1-y\sigma}f_{\sigma}\left(\left(1-s\right)\gamma^{-1/\sigma}\right)\, \mathrm{d}s,
+</span> where <span class="math inline">f_\sigma(t) = (\pi)^{-1} \sum_{h=1}^\infty (-1)^{h+1}\sin(h \pi \sigma )\Gamma(h\sigma + 1) / t^{h\sigma + 1}.</span></p></li>
+</ul>
+</section>
+<section id="a-characterization-theorem" class="slide level2 center">
+<h2>A characterization theorem</h2>
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem <span class="citation" data-cites="Gnedin2005">(<a href="#/references" role="doc-biblioref" onclick="">Gnedin and Pitman 2005</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<p>The Gibbs coefficients <span class="math inline">V_{n, y}</span> satisfy the recursive equation in the following three cases:</p>
+<ul>
+<li><p>If <span class="math inline">\sigma &lt; 0</span>, whenever <span class="math inline">V_{n, y} = \sum_{h=1}^\infty V_{n, y}(\sigma, h) p(h)</span>, for some discrete random variable <span class="math inline">H \in \mathbb{N}</span> with pdf <span class="math inline">p(h)</span>, where the <span class="math inline">V_{n, y}(\sigma, h)</span>’s are those of the <span class="orange">Dirichlet multinomial</span>.</p></li>
+<li><p>If <span class="math inline">\sigma = 0</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\alpha) p(\mathrm{d}\alpha)</span>, for some positive random variable <span class="math inline">\alpha</span> with probability measure <span class="math inline">p(\mathrm{d}\alpha)</span>, where the <span class="math inline">V_{n, y}(\alpha)</span>’s are those of the <span class="blue">Dirichlet process</span>.</p></li>
+<li><p>If <span class="math inline">\sigma \in (0,1)</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\sigma, \gamma) p(\mathrm{d}\gamma),</span> for some positive random variable <span class="math inline">\gamma</span> with probability measure <span class="math inline">p(\mathrm{d}\gamma)</span>, where the <span class="math inline">V_{n, y}(\sigma, \gamma)</span>’s are those of the <span class="grey"><span class="math inline">\sigma</span>-stable PK</span>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li><p>The <span class="orange">Dirichlet multinomial</span>, <span class="blue">Dirichlet process</span>, and <span class="grey"><span class="math inline">\sigma</span>-stable PK</span> form the foundation of any Gibbs-type prior.</p></li>
+<li><p>In fact, any Gibbs-type process can be represented <span class="blue">hierarchically</span>, involving a suitable <span class="orange">prior distribution</span> for the key parameters <span class="math inline">H</span>, <span class="math inline">\alpha</span>, and <span class="math inline">\gamma</span>.</p></li>
+</ul>
+</section>
+<section id="the-quantification-of-biodiversity-lijoi2007" class="slide level2 center">
+<h2>The quantification of biodiversity <span class="citation" data-cites="Lijoi2007">(<a href="#/references" role="doc-biblioref" onclick="">Lijoi et al. 2007</a>)</span></h2>
+<ul>
+<li><p>The simplest measure of biodiversity is arguably the taxon <span class="orange">richness</span> <span class="math inline">Y^{(n)} = y</span>.</p></li>
+<li><p>A priori, the distribution of <span class="math inline">Y^{(n)}</span> induced by a Gibbs-type prior has a simple form: <span class="math display">
+\mathbb{P}(Y^{(n)} = y)=V_{n,y}\frac{\mathscr{C}(n,y;\sigma)}{\sigma^y},
+</span> where <span class="math inline">\mathscr{C}(n, y;\sigma)</span> denotes a generalized factorial coefficient.</p></li>
+<li><p>The a priori expectations <span class="math inline">\mathbb{E}(K_1),\dots,\mathbb{E}(K_n)</span> define a model-based <span class="blue">rarefaction</span> curve.</p></li>
+<li><p>The <span class="blue">posterior distribution</span> of the number of previously unobserved taxa <span class="math inline">Y_m^{(n)}</span> is <span class="math display">
+\mathbb{P}(Y_m^{(n)}= j \mid X_1,\dots,X_n)=\frac{V_{n + m, y + j}}{V_{n, y}}\frac{\mathscr{C}(m, j;\sigma, -n + y\sigma)}{\sigma^j}, \qquad j=0,\dots,m,
+</span> where <span class="math inline">\mathscr{C}(m, j;\sigma, -n + y\sigma)</span> is the noncentral generalized factorial coefficient.</p></li>
+<li><p>The posterior expectations <span class="math inline">\mathbb{E}(Y^{(n+1)} \mid Y^{(n)} = y), \dots, \mathbb{E}(Y^{(n + m)} \mid Y^{(n)} = y)</span> represents a model-based <span class="orange">extrapolation</span> of the accumulation curve.</p></li>
+</ul>
+</section>
+<section id="rarefaction-and-extrapolation" class="slide level2 center">
+<h2>Rarefaction and extrapolation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/DP_species.jpg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
+</div>
+</section>
+<section id="the-sigma-diversity-pitman2003" class="slide level2 center">
+<h2>The <span class="math inline">\sigma</span>-diversity <span class="citation" data-cites="Pitman2003">(<a href="#/references" role="doc-biblioref" onclick="">Pitman 2003</a>)</span></h2>
+<ul>
+<li>Let <span class="math inline">Y^{(n)}</span> be the number of distinct values arising from a Gibbs-type prior:
+<ol type="i">
+<li>Let <span class="math inline">\sigma &lt; 0</span> and <span class="math inline">V_{n, y}(\sigma, H)</span> be the weights of a <span class="orange">Dirichlet multinomial</span>, then <span class="math inline">Y^{(n)} \rightarrow H</span> a.s.</li>
+<li>Let <span class="math inline">\sigma = 0</span> and <span class="math inline">V_{n, y}(\alpha)</span> be the weights of a <span class="blue">Dirichlet process</span>, then <span class="math inline">Y^{(n)} / \log(n) \rightarrow \alpha</span> a.s.</li>
+<li>Let <span class="math inline">\sigma \in (0,1)</span> and <span class="math inline">V_{n, y}(\sigma, \gamma)</span> be the weights of a <span class="grey"><span class="math inline">\sigma</span>-stable PK</span>, then <span class="math inline">Y^{(n)} / n^\sigma \rightarrow \gamma</span> a.s.</li>
+</ol></li>
+<li>Moreover, consider a generic set of weights <span class="math inline">V_{n, y}</span> and let <span class="math display">
+c_\sigma(n) =
+\begin{cases}
+1, &amp; \sigma &lt;0,\\[2mm]
+\log(n), &amp; \sigma = 0,\\[1mm]
+n^{\sigma}, &amp; \sigma \in (0,1)
+\end{cases}
+</span> Then, as <span class="math inline">n \rightarrow \infty</span>: <span class="math display">
+\frac{Y^{(n)}}{c_\sigma(n)} \overset{\textup{a.s.}}{\longrightarrow} S_{\sigma}.
+</span> The r.v. <span class="math inline">S_{\sigma}</span> is the <span class="blue"><span class="math inline">\sigma</span>-diversity</span> and its distribution coincides with the prior for <span class="math inline">H</span>, <span class="math inline">\alpha</span>, and <span class="math inline">\gamma</span>.</li>
+</ul>
+</section>
+<section id="specimens-and-bins-in-barcode-of-life" class="slide level2 center">
+<h2>Specimens and BINs in Barcode of Life</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/DATA.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+<ul>
+<li><p>Our data: global Malaise Trap project.</p></li>
+<li><p>We have a total of <span class="math inline">1,781,340</span> <span class="orange">arthropods</span> split across <span class="math inline">154,688</span> BINs and <span class="math inline">N = 2415</span> <span class="blue">sampling sites</span>.</p></li>
+</ul>
+</section>
+<section id="how-can-we-link-covariates-with-biodiversity" class="slide level2 center">
+<h2>How can we link covariates with biodiversity?</h2>
+<ul>
+<li><p>For outcome <span class="math inline">Y_i</span> and covariates <span class="math inline">\bm{x}_i = (x_{i1}, \ldots, x_{ip}) \in \mathbb{R}^p</span>, <span class="math inline">i = 1, \ldots, N</span>, a generalized linear model (<span class="blue">GLM</span>) extends the linear model in non-Gaussian settings via three ingredients:</p></li>
+<li><p>The <span class="blue">exponential dispersion family</span> directing each <span class="math inline">Y_i</span>: <span class="math display">
+f(y_i; \theta_i, \phi) = \exp\left\{\frac{y_i \theta_i - b(\theta_i)}{a_i(\phi)} + c(y_i, \phi)\right\},
+</span> where <span class="math inline">\theta_i \in \Theta</span> is the <span class="blue">natural parameter</span>, <span class="math inline">\phi &gt; 0</span> is the <span class="orange">dispersion</span>, and <span class="math inline">a_i,b,c</span> are given functions.</p></li>
+<li><p>The <span class="orange">linear predictor</span> <span class="math inline">\eta_i = \bm{x}_i^\top \bm{\beta}</span>, with <span class="math inline">\bm{\beta} \in \mathbb{R}^p</span>.</p></li>
+<li><p>A monotonic <span class="grey">link function</span> <span class="math inline">g</span> that links <span class="math inline">\eta_i</span> with the mean of <span class="math inline">Y_i</span>, namely <span class="math inline">\mu(\theta_i) = \mu_i</span>: <span class="math display">
+\mathbb{E}(Y_i \mid \bm{x}_i) = \mu_i = g^{-1}(\eta_i).
+</span> The link is <span class="orange">canonical</span> when <span class="math inline">g</span> is such that <span class="math inline">\theta_i = \eta_i</span>.</p></li>
+<li><p>Is there an exponential family that is related to a sample-specific diversity <span class="math inline">\alpha_i</span>?</p></li>
+</ul>
+</section>
+<section id="the-hubbell-regression" class="slide level2 center">
+<h2>The Hubbell regression</h2>
+<ul>
+<li>The number of distinct species from a DP is <span class="blue">an exponential family!</span> <span class="math display">
+\mathbb{P}(Y^{(n)} = y; \alpha) = \frac{\alpha^y}{(\alpha)_n}|s(n, y)|, \qquad y \in\{ 1, \ldots, n\},
+</span> where <span class="math inline">(\alpha)_n = \Gamma(\alpha + n)/\Gamma(\alpha)</span> and <span class="math inline">|s(n,y)|</span> are signless Stirling numbers of the first kind.</li>
+</ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>The <span class="orange">Hubbell regression</span> is a <span class="blue">GLM</span> where:</p>
+<ul>
+<li><p>The distinct species <span class="math inline">Y_i^{(n_i)}</span> for <span class="math inline">i=1,\dots,N</span> are independent draws from the distribution <span class="math display">
+f(y_i; \theta_i) = \exp \left\{y_i \theta_i - \log[\Gamma(e^{\theta_i} + n_i) - \Gamma(e^{\theta_i})] + \log|s(n_i, y_i)|\right\},
+</span> with <span class="math inline">\alpha_i = e^{\theta_i}</span> whose mean and variance functions are <span class="math display">
+\mu_i = \mu(\theta_i, n_i) = \sum_{j=0}^{n_i-1} \frac{e^{\theta_i}}{e^{\theta_i} + j}, \qquad
+V(\mu(\theta_i, n_i)) = \sum_{j=0}^{n_i-1} \frac{e^{\theta_i}}{e^{\theta_i} + j}\left(1 - \frac{e^{\theta_i}}{e^{\theta_i} + j}\right).
+</span></p></li>
+<li><p>The link function <span class="math inline">g</span> depends on <span class="math inline">\eta_i</span> and <span class="math inline">n_i</span> and satisfies <span class="math inline">\mathbb{E}(Y_i\mid \bm{x}_i, n_i) = \mu_i = g^{-1}(\bm{x}_i^\top \bm{\beta}, n_i)</span>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="the-canonical-link" class="slide level2 center">
+<h2>The canonical link</h2>
+<ul>
+<li><p>Using the <span class="orange">canonical link</span>, we have: <span class="math display">
+\log \alpha_i = \theta_i = \bm{x}_i^\top \bm{\beta} = \eta_i, \qquad
+\mu_i = \mu(\bm{x}_i^\top \bm{\beta}, n_i) = \sum_{j = 0}^{n_i-1} \frac{e^{\bm{x}_i^\top \bm{\beta}}}{e^{\bm{x}_i^\top \bm{\beta}} + j} = g^{-1}(\bm{x}_i^\top \bm{\beta}, n_i).
+</span></p></li>
+<li><p>Coefficients <span class="math inline">\bm{\beta}</span> have the classic interpretation of log-linear models <span class="red">in terms of <span class="math inline">\alpha</span>-diversity</span></p></li>
+</ul>
+<center>
+If <span class="math inline">x_{ip}</span> <span class="orange">↑</span> by <strong>1 unit</strong> → <span class="orange"><span class="math inline">\alpha_i</span> ↑</span> by <span class="math inline">100(e^{\beta_p} - 1)\%</span>
+</center>
+<ul>
+<li>The <span class="blue">saturated model</span> corresponds to the case in which <span class="math inline">\hat{\alpha}_i \approx \hat{\alpha}^{\text{Fisher}}_i</span>. The <span class="grey">null model</span> corresponds to the case <span class="math inline">\hat{\alpha}_i = \hat{\alpha}</span> for all sites, i.e.&nbsp;there is no variation in biodiversity across sampling sites.</li>
+</ul>
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem (Poisson regression with log-log offset)</strong></p>
+</div>
+<div class="callout-content">
+<p>Call <span class="math inline">\gamma = 0.5772\dots</span> the Euler’s constant. Under large values of <span class="math inline">n</span>, when each <span class="math inline">n_i \to \infty</span> we have <span class="math display">
+Y^{(n)}_i \;\dot{\sim}\; 1 + \mathrm{Poisson}\left(\exp\left\{\bm{x}_i^\top\bm{\beta} + \log(\gamma + \log n_i)\right\}\right).
+</span> Informally, we will say that <span class="math inline">\hat{\bm{\beta}}^{\mathrm{Hubbell}} \approx \hat{\bm{\beta}}^{\mathrm{Poisson}}</span> .</p>
+</div>
+</div>
+</div>
+</section>
+<section id="beyond-the-logarithmic-growth-non-canonical-links" class="slide level2 center">
+<h2>Beyond the logarithmic growth: non-canonical links</h2>
+<ul>
+<li><p>Extensions of the neutral theory of <span class="citation" data-cites="Hubbell_2001">Hubbell (<a href="#/references" role="doc-biblioref" onclick="">2001</a>)</span> proposes a <span class="blue">power-law behavior</span> with a <span class="orange">dispersal limitation parameter</span> <span class="math inline">\omega \ge 0</span> so that <span class="math display">
+\mathbb{E}\left(Y_i^{(n)}\right) = \sum_{j = 0}^{n_i-1} j^{-\omega} \frac{\alpha_i}{\alpha_i + j}.
+</span></p></li>
+<li><p>Our proposal: a <span class="blue">flexible growth</span> depending on <span class="math inline">\sigma &lt; 1</span> via non-canonical link <span class="math display">
+\mu_i = \mu(\bm{x}_i^\top\bm{\beta}, n_i, \sigma) = \sum_{j = 0}^{n_i-1} \frac{e^{\bm{x}_i^\top\bm{\beta}}}{e^{\bm{x}_i^\top\bm{\beta}} + j^{1-\sigma}} = g^{-1}(\bm{x}_i^\top\bm{\beta}, n_i, \sigma), \qquad \sigma &lt; 1.
+</span> The parameter <span class="math inline">\sigma</span> plays the same role it has in <span class="blue">Gibbs-type</span> priors.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/AccumCurves.jpg" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+</section>
+<section id="regression-based-biodiversity-indexes" class="slide level2 center">
+<h2>Regression-based biodiversity indexes</h2>
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem (Regression-based diversity)</strong></p>
+</div>
+<div class="callout-content">
+<p>For the mean function of the a Hubbell regression model with the aforementioned non-canonical link, it holds <span class="math display">
+\frac{\mu(\bm{x}_i^\top \bm{\beta}; n, \sigma)}{c_n(\sigma)} \longrightarrow S_\sigma(\bm{x}_i^\top\bm{\beta}), \qquad n \to \infty,
+</span> Moreover:</p>
+<ul>
+<li>If <span class="math inline">\sigma = 0</span>, then <span class="math inline">c_n(\sigma) = \log n</span> (<span class="blue">logarithmic growth</span>) and <span class="math inline">S_\sigma(\bm{x}_i^\top\bm{\beta}) = e^{\bm{x}_i^\top\bm{\beta}} = \alpha_i</span>;</li>
+<li>If <span class="math inline">\sigma \in (0, 1)</span>, then <span class="math inline">c_n(\sigma) = n^{\sigma}</span> (<span class="grey">polynomial growth</span>) and <span class="math inline">S_\sigma(\bm{x}_i^\top\bm{\beta}) = e^{\bm{x}_i^\top\bm{\beta}}/\sigma = \alpha_i / \sigma</span>;<br>
+</li>
+<li>if <span class="math inline">\sigma &lt; 0</span>, then <span class="math inline">c_n(\sigma) = 1</span> (<span class="orange">finite richness</span>) and <span class="math inline">S_\sigma(\bm{x}_i^\top\bm{\beta}) \approx C_\sigma^{-1}e^{\bm{x}_i^\top\bm{\beta}/(1-\sigma)} = C_\sigma^{-1} \alpha_i^{1/(1-\sigma)}</span>, with <span class="math inline">C_\sigma</span> a known constant.<br>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li>This gives a novel notion of regression-based biodiversity.</li>
+</ul>
+</section>
+<section id="composite-marginal-likelihood-and-standard-errors" class="slide level2 center">
+<h2>Composite marginal likelihood and standard errors</h2>
+<ul>
+<li><p>The assumption behind GLMs is that observations are <span class="orange">independent</span>. In our case, we might have seen the same species (or BIN) at two different locations!</p></li>
+<li><p>This information is <span class="orange">lost</span> when calculating the number <span class="math inline">Y_i^{(n_i)}</span>. However, we can interpret <span class="math display">
+L(\boldsymbol{\beta}) \propto
+\prod_{i=1}^N
+\frac{\alpha_i^{y_i}}
+   {(\alpha_i)_{n_i}},
+</span> as a <span class="blue">composite marginal likelihood</span>. The estimating equation is still unbiased and estimates consistent.</p></li>
+<li><p>We propose <span class="blue">spatially heteroskedastic-consistent</span> standard errors <span class="citation" data-cites="CONLEY19991">(<a href="#/references" role="doc-biblioref" onclick="">Conley 1999</a>)</span> that use the <span class="orange">Jaccard Index</span> (or similar indices) between two samples:<span class="math display">
+\widehat{\mathrm{se}}(\hat{\boldsymbol{\beta}}) =
+(\bm{X}^\top \hat{\bm{W}}\bm{X})^{-1}
+\textstyle\sum_{ik}
+{\color{#8B0000}{s_{ik}}}\,
+{\color{blue}{\hat{\bm{u}}_i\hat{\bm{u}}_k^\top}}\,
+(\bm{X}^\top \hat{\bm{W}}\bm{X})^{-1},
+\qquad
+{\color{blue}{\hat{\bm{u}}_i}} =
+\frac{\partial}{\partial\boldsymbol{\beta}}
+\log \mathcal{L}(\hat{\boldsymbol{\beta}}),
+</span> where <span class="math inline">{\color{#8B0000}{s_{ik}}} \in [0,1]</span> is the <span class="orange">fraction of shared BINs</span> between locations <span class="math inline">i</span> and <span class="math inline">k</span>.</p></li>
+</ul>
+</section>
+<section id="our-scientific-questions" class="slide level2 center">
+<h2>Our scientific questions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/questions.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+<ul>
+<li><p>Is (actual) <span class="blue">evapotranspiration</span> the main driver of diversity?</p></li>
+<li><p>How does <span class="orange">anthropogenic</span> impact affect diversity?</p></li>
+</ul>
+</section>
+<section id="modelling-approach" class="slide level2 center">
+<h2>Modelling approach</h2>
+<ul>
+<li>Goal: test the joint effect of <span class="blue">evapotranspiration</span> and <span class="orange">human footprint</span></li>
+</ul>
+<pre><code>HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)</code></pre>
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Model considered (in order of complexity)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>M0</strong>: no covariates</li>
+<li><strong>M1</strong>: <code>AET</code></li>
+<li><strong>M2</strong>: + fixed effect for <code>realm</code></li>
+<li><strong>M3</strong>: + <code>time</code> (julian week, shifter by 6 months if below equator, 1 degree Fourier transform</li>
+<li><strong>M4</strong>: + spatial gradient (<code>ns(Latitude, 6)</code>)</li>
+<li><strong>M5</strong>: + <code>zone</code> and <code>hfp</code> and interaction</li>
+<li><strong>M6</strong>: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)</li>
+<li><strong>M7</strong>: + anomalies for weather (temperature, humidity, precipitation, wind speed)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="hubbell-achieves-the-best-predictive-performance" class="slide level2 center">
+<h2>Hubbell achieves the best predictive performance</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/cv_10fold.jpg" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
+<ul>
+<li><p>We run a 10-fold <span class="blue">cross-validation</span> experiment. Our benchmarks are other GLMs (matching the growth rate with <span class="math inline">n</span>).</p></li>
+<li><p>For each nested specification, we split the data into 10 folds, train all models in 90% of the data and predict the remaining 10% (cycle through).</p></li>
+</ul>
+</section>
+<section id="key-results" class="slide level2 center">
+<h2>Key results</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li><p><strong>Model M0</strong>: <span class="math inline">\sigma</span> is estimated as <span class="math inline">0.562</span>. <span class="orange">Square root</span>!</p></li>
+<li><p><strong>Model M1</strong>: <code>AET</code> explains nearly 30% of the total variation in species richness</p></li>
+<li><p><strong>Model M7</strong>:</p>
+<ul>
+<li>A 10 mm/year increase in <code>AET</code> leads to a <span class="math inline">12.4\%</span> increase in <span class="blue">diversity</span> on average (<span class="math inline">\beta = 0.012</span>; P <span class="math inline">&lt; 0.0001</span>).</li>
+<li>A 5 units on the <code>HFP</code> scale is associated with a <span class="math inline">6.1\%</span> reduction in diversity in <span class="orange">tropical areas</span> (<span class="math inline">\beta = −0.013</span>; P <span class="math inline">&lt; 0.0001</span>), and a <span class="math inline">7.5\%</span> reduction in <span class="orange">dry zones</span> (<span class="math inline">\beta = −0.016</span>; P <span class="math inline">&lt; 0.004</span>)</li>
+<li><span class="blue">Polar</span> areas show an interesting increase of <span class="math inline">8.2\%</span> (<span class="math inline">\beta = 0.016</span>; P <span class="math inline">&lt; 0.038</span>)</li>
+<li>No detected effect in continental areas</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:42%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/gaston.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="effects-for-all-diversity-indices-variations" class="slide level2 center">
+<h2>Effects for all diversity indices: variations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/hfp_indices.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+</figure>
+</div>
+</section>
+<section id="effects-for-all-diversity-indices-global-scales" class="slide level2 center">
+<h2>Effects for all diversity indices: global scales</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/richness_diversity.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="scenario-evaluation" class="slide level2 center">
+<h2>Scenario evaluation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<ul>
+<li>Tropical sites with high human activity (<code>HFP &gt; 30</code>) miss a median of <span class="math inline">197</span> species (<span class="math inline">21.3\%</span> of potential richness).</li>
+<li>Dry sites miss <span class="math inline">202</span> species (<span class="math inline">29.2\%</span>).</li>
+<li>Temperate sites miss <span class="math inline">26</span> species (<span class="math inline">4.3\%</span>)</li>
+<li>Continental sites miss <span class="math inline">70</span> species (<span class="math inline">9.23\%</span>)</li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li><p>A 5‑unit intensification of human presence globally leads to up to an <span class="math inline">8\%</span> reduction in potential richness</p></li>
+<li><p>A <span class="math inline">10\%</span> increase in <code>AET</code> is associated with an average <span class="math inline">3.81\%</span> increase in potential richness.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/richness_map.jpg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="summary-and-future-directions" class="slide level2 center">
+<h2>Summary and future directions</h2>
+<ul>
+<li><p>Fisher’s <span class="math inline">\alpha</span> is the same quantity described by Hubbell’s unified neutral theory of biodiversity, and it has deep connections with the Dirichlet process.</p></li>
+<li><p>The Hubbell regression extends the neutral theory in a covariate-dependent <span class="blue">GLM</span> framework.</p></li>
+<li><p>Different growth rates are captured via <span class="math inline">\sigma &lt; 0</span>, <span class="math inline">\sigma = 0</span>, and <span class="math inline">\sigma \in (0,1)</span>.</p></li>
+<li><p>From here to infinity: next steps</p>
+<ol type="1">
+<li>Extend to mixed models, allowing for random effects;</li>
+<li>More on nonparametrics: GAMs</li>
+</ol></li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<div style="font-size: 80%;">
+<p>Rigon, T., Hsu, C., and Dunson D.B. (2025). A Bayesian theory for estimation of biodiversity. <em>arXiv:2502.01333</em></p>
+<p>Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026). Predicting global biodiversity via Hubbell regression. <em>bioRxiv</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="software-the-r-package-hubbellglm" class="slide level2 center">
+<h2>Software: the R package <code>HubbellGLM</code></h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/HubbellOut2.png" class="nostretch quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/QR_software.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="hubbell-regression-paper-available-on-biorxiv" class="slide level2 center">
+<h2>Hubbell regression paper available on <em>biorXiv</em></h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/paper.png" class="nostretch quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="img/QR_paper.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="references" class="slide level2 unnumbered smaller scrollable">
+<h2>References</h2>
+<div style="font-size: 50%;">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-CONLEY19991" class="csl-entry" role="listitem">
+Conley, T. G. (1999), <span>“GMM estimation with cross sectional dependence,”</span> <em>Journal of Econometrics</em>, 92, 1–45.
+</div>
+<div id="ref-DeBlasi2015" class="csl-entry" role="listitem">
+De Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prunster, I., and Ruggiero, M. (2015), <span>“Are <span>G</span>ibbs-type priors the most natural generalization of the <span>D</span>irichlet process?”</span> <em>IEEE Trans. Pattern Anal. Mach. Intell.</em>, IEEE, 37, 212–229.
+</div>
+<div id="ref-Gnedin2005" class="csl-entry" role="listitem">
+Gnedin, A., and Pitman, J. (2005), <span>“<span class="nocase">Exchangeable Gibbs partitions and Stirling triangles</span>,”</span> <em>Zapiski Nauchnykh Seminarov, POMI</em>, 325, 83–102.
+</div>
+<div id="ref-Hubbell_2001" class="csl-entry" role="listitem">
+Hubbell, S. P. (2001), <em>The unified neutral theory of biodiversity and biogeography</em>, Princeton University Press.
+</div>
+<div id="ref-Lijoi2007" class="csl-entry" role="listitem">
+Lijoi, A., Mena, R. H., and Prünster, I. (2007), <span>“Bayesian nonparametric estimation of the probability of discovering new species,”</span> <em>Biometrika</em>, Oxford University Press, 94, 769–786.
+</div>
+<div id="ref-Pitman2003" class="csl-entry" role="listitem">
+Pitman, J. (2003), <span>“<span class="nocase">Poisson-Kingman partitions</span>,”</span> <em>Lecture Notes-Monograph Series</em>, 40, 1–34.
+</div>
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../../images/logoB.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="https://tommasorigon.github.io/">Home page</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

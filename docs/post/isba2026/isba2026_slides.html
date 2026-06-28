@@ -281,28 +281,6 @@ V_{n, y}(\sigma, \gamma) := \frac{\sigma^y\gamma^y}{\Gamma(n-y\sigma)f_{\sigma}\
 </span> where <span class="math inline">f_\sigma(t) = (\pi)^{-1} \sum_{h=1}^\infty (-1)^{h+1}\sin(h \pi \sigma )\Gamma(h\sigma + 1) / t^{h\sigma + 1}.</span></p></li>
 </ul>
 </section>
-<section id="a-characterization-theorem" class="slide level2 center">
-<h2>A characterization theorem</h2>
-<div class="callout callout-warning no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Theorem <span class="citation" data-cites="Gnedin2005">(<a href="#/references" role="doc-biblioref" onclick="">Gnedin and Pitman 2005</a>)</span></strong></p>
-</div>
-<div class="callout-content">
-<p>The Gibbs coefficients <span class="math inline">V_{n, y}</span> satisfy the recursive equation in the following three cases:</p>
-<ul>
-<li><p>If <span class="math inline">\sigma &lt; 0</span>, whenever <span class="math inline">V_{n, y} = \sum_{h=1}^\infty V_{n, y}(\sigma, h) p(h)</span>, for some discrete random variable <span class="math inline">H \in \mathbb{N}</span> with pdf <span class="math inline">p(h)</span>, where the <span class="math inline">V_{n, y}(\sigma, h)</span>’s are those of the <span class="orange">Dirichlet multinomial</span>.</p></li>
-<li><p>If <span class="math inline">\sigma = 0</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\alpha) p(\mathrm{d}\alpha)</span>, for some positive random variable <span class="math inline">\alpha</span> with probability measure <span class="math inline">p(\mathrm{d}\alpha)</span>, where the <span class="math inline">V_{n, y}(\alpha)</span>’s are those of the <span class="blue">Dirichlet process</span>.</p></li>
-<li><p>If <span class="math inline">\sigma \in (0,1)</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\sigma, \gamma) p(\mathrm{d}\gamma),</span> for some positive random variable <span class="math inline">\gamma</span> with probability measure <span class="math inline">p(\mathrm{d}\gamma)</span>, where the <span class="math inline">V_{n, y}(\sigma, \gamma)</span>’s are those of the <span class="grey"><span class="math inline">\sigma</span>-stable PK</span>.</p></li>
-</ul>
-</div>
-</div>
-</div>
-<ul>
-<li><p>The <span class="orange">Dirichlet multinomial</span>, <span class="blue">Dirichlet process</span>, and <span class="grey"><span class="math inline">\sigma</span>-stable PK</span> form the foundation of any Gibbs-type prior.</p></li>
-<li><p>In fact, any Gibbs-type process can be represented <span class="blue">hierarchically</span>, involving a suitable <span class="orange">prior distribution</span> for the key parameters <span class="math inline">H</span>, <span class="math inline">\alpha</span>, and <span class="math inline">\gamma</span>.</p></li>
-</ul>
-</section>
 <section id="the-quantification-of-biodiversity-lijoi2007" class="slide level2 center">
 <h2>The quantification of biodiversity <span class="citation" data-cites="Lijoi2007">(<a href="#/references" role="doc-biblioref" onclick="">Lijoi et al. 2007</a>)</span></h2>
 <ul>
@@ -324,6 +302,28 @@ V_{n, y}(\sigma, \gamma) := \frac{\sigma^y\gamma^y}{\Gamma(n-y\sigma)f_{\sigma}\
 <p><img data-src="img/DP_species.jpg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
 </figure>
 </div>
+</section>
+<section id="a-characterization-theorem" class="slide level2 center">
+<h2>A characterization theorem</h2>
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Theorem <span class="citation" data-cites="Gnedin2005">(<a href="#/references" role="doc-biblioref" onclick="">Gnedin and Pitman 2005</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<p>The Gibbs coefficients <span class="math inline">V_{n, y}</span> satisfy the recursive equation in the following three cases:</p>
+<ul>
+<li><p>If <span class="math inline">\sigma &lt; 0</span>, whenever <span class="math inline">V_{n, y} = \sum_{h=1}^\infty V_{n, y}(\sigma, h) p(h)</span>, for some discrete random variable <span class="math inline">H \in \mathbb{N}</span> with pdf <span class="math inline">p(h)</span>, where the <span class="math inline">V_{n, y}(\sigma, h)</span>’s are those of the <span class="orange">Dirichlet multinomial</span>.</p></li>
+<li><p>If <span class="math inline">\sigma = 0</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\alpha) p(\mathrm{d}\alpha)</span>, for some positive random variable <span class="math inline">\alpha</span> with probability measure <span class="math inline">p(\mathrm{d}\alpha)</span>, where the <span class="math inline">V_{n, y}(\alpha)</span>’s are those of the <span class="blue">Dirichlet process</span>.</p></li>
+<li><p>If <span class="math inline">\sigma \in (0,1)</span>, whenever <span class="math inline">V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\sigma, \gamma) p(\mathrm{d}\gamma),</span> for some positive random variable <span class="math inline">\gamma</span> with probability measure <span class="math inline">p(\mathrm{d}\gamma)</span>, where the <span class="math inline">V_{n, y}(\sigma, \gamma)</span>’s are those of the <span class="grey"><span class="math inline">\sigma</span>-stable PK</span>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<ul>
+<li><p>The <span class="orange">Dirichlet multinomial</span>, <span class="blue">Dirichlet process</span>, and <span class="grey"><span class="math inline">\sigma</span>-stable PK</span> form the foundation of any Gibbs-type prior.</p></li>
+<li><p>In fact, any Gibbs-type process can be represented <span class="blue">hierarchically</span>, involving a suitable <span class="orange">prior distribution</span> for the key parameters <span class="math inline">H</span>, <span class="math inline">\alpha</span>, and <span class="math inline">\gamma</span>.</p></li>
+</ul>
 </section>
 <section id="the-sigma-diversity-pitman2003" class="slide level2 center">
 <h2>The <span class="math inline">\sigma</span>-diversity <span class="citation" data-cites="Pitman2003">(<a href="#/references" role="doc-biblioref" onclick="">Pitman 2003</a>)</span></h2>

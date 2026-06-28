@@ -145,27 +145,6 @@ where $f_\sigma(t) = (\pi)^{-1} \sum_{h=1}^\infty (-1)^{h+1}\sin(h \pi \sigma )\
 
 
 
-## A characterization theorem
-
-:::callout-warning
-#### Theorem [@Gnedin2005]
-
-The Gibbs coefficients $V_{n, y}$ satisfy the recursive equation in the following three cases:
-
-- If $\sigma < 0$, whenever $V_{n, y} = \sum_{h=1}^\infty V_{n, y}(\sigma, h) p(h)$, for some discrete random variable $H \in \mathbb{N}$ with pdf $p(h)$, where the $V_{n, y}(\sigma, h)$'s are those of the [Dirichlet multinomial]{.orange}.
-
-- If $\sigma = 0$, whenever $V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\alpha) p(\mathrm{d}\alpha)$, for some positive random variable $\alpha$ with probability measure $p(\mathrm{d}\alpha)$, where the $V_{n, y}(\alpha)$'s are those of the [Dirichlet process]{.blue}.
-
-- If $\sigma \in (0,1)$, whenever $V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\sigma, \gamma) p(\mathrm{d}\gamma),$ 
-for some positive random variable $\gamma$ with probability measure $p(\mathrm{d}\gamma)$, where the $V_{n, y}(\sigma, \gamma)$'s are those of the [$\sigma$-stable PK]{.grey}.
-
-:::
-
-
-- The [Dirichlet multinomial]{.orange}, [Dirichlet process]{.blue}, and [$\sigma$-stable PK]{.grey} form the foundation of any Gibbs-type prior.  
-
-- In fact, any Gibbs-type process can be represented [hierarchically]{.blue}, involving a suitable [prior distribution]{.orange} for the key parameters $H$, $\alpha$, and $\gamma$.
-
 ## The quantification of biodiversity [@Lijoi2007]
 
 - The simplest measure of biodiversity is arguably the taxon [richness]{.orange} $Y^{(n)} = y$.
@@ -189,6 +168,28 @@ where $\mathscr{C}(m, j;\sigma, -n + y\sigma)$ is the noncentral generalized fac
 ## Rarefaction and extrapolation
 
 ![](img/DP_species.jpg){.nostretch fig-align="center" width=85%}
+
+## A characterization theorem
+
+:::callout-warning
+#### Theorem [@Gnedin2005]
+
+The Gibbs coefficients $V_{n, y}$ satisfy the recursive equation in the following three cases:
+
+- If $\sigma < 0$, whenever $V_{n, y} = \sum_{h=1}^\infty V_{n, y}(\sigma, h) p(h)$, for some discrete random variable $H \in \mathbb{N}$ with pdf $p(h)$, where the $V_{n, y}(\sigma, h)$'s are those of the [Dirichlet multinomial]{.orange}.
+
+- If $\sigma = 0$, whenever $V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\alpha) p(\mathrm{d}\alpha)$, for some positive random variable $\alpha$ with probability measure $p(\mathrm{d}\alpha)$, where the $V_{n, y}(\alpha)$'s are those of the [Dirichlet process]{.blue}.
+
+- If $\sigma \in (0,1)$, whenever $V_{n, y} = \int_{\mathbb{R}^+} V_{n, y}(\sigma, \gamma) p(\mathrm{d}\gamma),$ 
+for some positive random variable $\gamma$ with probability measure $p(\mathrm{d}\gamma)$, where the $V_{n, y}(\sigma, \gamma)$'s are those of the [$\sigma$-stable PK]{.grey}.
+
+:::
+
+
+- The [Dirichlet multinomial]{.orange}, [Dirichlet process]{.blue}, and [$\sigma$-stable PK]{.grey} form the foundation of any Gibbs-type prior.  
+
+- In fact, any Gibbs-type process can be represented [hierarchically]{.blue}, involving a suitable [prior distribution]{.orange} for the key parameters $H$, $\alpha$, and $\gamma$.
+
 
 ## The $\sigma$-diversity [@Pitman2003]
 

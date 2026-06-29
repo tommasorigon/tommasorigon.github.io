@@ -461,9 +461,6 @@ Y^{(n)}_i \;\dot{\sim}\; 1 + \mathrm{Poisson}\left(\exp\left\{\bm{x}_i^\top\bm{\
 </div>
 </div>
 </div>
-<ul>
-<li>This gives a novel notion of regression-based biodiversity.</li>
-</ul>
 </section>
 <section id="composite-marginal-likelihood-and-standard-errors" class="slide level2 center">
 <h2>Composite marginal likelihood and standard errors</h2>
@@ -517,7 +514,7 @@ L(\boldsymbol{\beta}) \propto
 <li><strong>M0</strong>: no covariates</li>
 <li><strong>M1</strong>: <code>AET</code></li>
 <li><strong>M2</strong>: + fixed effect for <code>realm</code></li>
-<li><strong>M3</strong>: + <code>time</code> (julian week, shifter by 6 months if below equator, 1 degree Fourier transform</li>
+<li><strong>M3</strong>: + <code>time</code> (julian week, shifter by 6 months if below equator, 1 degree Fourier transform)</li>
 <li><strong>M4</strong>: + spatial gradient (<code>ns(Latitude, 6)</code>)</li>
 <li><strong>M5</strong>: + <code>zone</code> and <code>hfp</code> and interaction</li>
 <li><strong>M6</strong>: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)</li>
@@ -616,6 +613,7 @@ L(\boldsymbol{\beta}) \propto
 <ol type="1">
 <li>Extend to mixed models, allowing for random effects;</li>
 <li>More on nonparametrics: GAMs</li>
+<li>Modelling dependence and shared species</li>
 </ol></li>
 </ul>
 <div class="callout callout-tip no-icon callout-style-simple">

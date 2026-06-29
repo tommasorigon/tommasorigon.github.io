@@ -331,7 +331,6 @@ Moreover:
 - if $\sigma < 0$, then $c_n(\sigma) = 1$ ([finite richness]{.orange}) and $S_\sigma(\bm{x}_i^\top\bm{\beta}) \approx C_\sigma^{-1}e^{\bm{x}_i^\top\bm{\beta}/(1-\sigma)} = C_\sigma^{-1} \alpha_i^{1/(1-\sigma)}$, with $C_\sigma$ a known constant.  
 :::
 
-- This gives a novel notion of regression-based biodiversity.
 
 
 
@@ -387,7 +386,7 @@ HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)
 - **M0**: no covariates
 - **M1**: `AET`
 - **M2**: + fixed effect for `realm`
-- **M3**: + `time` (julian week, shifter by 6 months if below equator, 1 degree Fourier transform
+- **M3**: + `time` (julian week, shifter by 6 months if below equator, 1 degree Fourier transform)
 - **M4**: + spatial gradient (`ns(Latitude, 6)`) 
 - **M5**: + `zone` and `hfp` and interaction
 - **M6**: + controls (wetlands, wind speed, collection days, residuals of regression of temperature with latitude)
@@ -474,6 +473,7 @@ HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)
 - From here to infinity: next steps
   1. Extend to mixed models, allowing for random effects;
   2. More on nonparametrics: GAMs
+  3. Modelling dependence and shared species
   
 :::callout-tip
 

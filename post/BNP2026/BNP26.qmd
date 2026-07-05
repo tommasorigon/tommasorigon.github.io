@@ -1,11 +1,16 @@
 ---
 title: "BNP modeling of multivariate count data with unknown traits"
-subtitle: "BNP 2026 Networking Workshop"
+subtitle: "**_BNP 2026 Networking Workshop_**"
 description: "A joint work with [Lorenzo Ghilotti]{.orange}, [Federico Camerlenghi]{.blue} and Michele Guindani presented at BNP networking workshop 2026." 
 lang: en
 draft: true
 author: "[Tommaso Rigon]{.orange}"
-institute: "_Università degli Studi di Milano-Bicocca_"
+institute: |
+  _Università degli Studi di Milano-Bicocca_
+  
+  ![](img/logo_ERC.png){height=200px style="vertical-align:middle"} [Funded by the European Union (ERC, NEMESIS, project number: 101116718).]{style="vertical-align:middle; font-size:0.8em"}
+  
+  [Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.]{style="vertical-align:middle; font-size:0.4em"}
 page-layout: full
 bibliography: biblio.bib
 citeproc: true
@@ -59,8 +64,6 @@ categories: talk
 
 :::
 
-
-# Trait allocation models
 
 <!-- ## Exchangeable trait allocation models -->
 
@@ -146,16 +149,16 @@ $$ denotes the [count of trait]{.blue} $\ell$ for the $i$th subject in group $q$
 
 . . .
 
-- As before, let $(\tilde{X}_j)_{j \geq 1}$ denote the sequence of [latent traits]{.orange} and let $\tilde{A}_{ijq} \in \{0, 1, 2, \dots\}$ be the abundance of trait $\tilde{X}_j$ for subject $i$ in group $q$. 
+- Let $(\tilde{X}_j)_{j \geq 1}$ denote the sequence of [latent traits]{.orange} and let $\tilde{A}_{ijq} \in \{0, 1, 2, \dots\}$ be the abundance of trait $\tilde{X}_j$ for subject $i$ in group $q$. 
 
 - In a sample of size $n$, a trait $\tilde{X}_j$ is [observed]{.blue} only if $\tilde{A}_{ijq} > 0$ for at least one subject in any group. 
 
-:::{.callout-note}
-#### Example: known-groups binary traits
+<!-- :::{.callout-note} -->
+<!-- #### Example: known-groups binary traits -->
 
-This known-group structure (partial exchangeability) is well suited to the ‘Ndrangheta data, where affiliates are grouped by membership in specific *locali*.
+<!-- This known-group structure (partial exchangeability) is well suited to the ‘Ndrangheta data, where affiliates are grouped by membership in specific *locali*. -->
 
-:::
+<!-- ::: -->
 
 ## Data from a partially exchangeable trait model
 
@@ -171,11 +174,11 @@ $$
 $$
 and they are also conditionally independent across traits for $j \geq 1$ and subpopulations $q = 1,\dots,d$. 
 
-- Thus, the main difference compared to the exchangeable case is that the random variables $\tilde{A}_{ijq}$ have [different parameters]{.blue} when they refer to subjects belonging to [different subpopulations]{.orange}. 
+<!-- - Thus, the main difference compared to the exchangeable case is that the random variables $\tilde{A}_{ijq}$ have [different parameters]{.blue} when they refer to subjects belonging to [different subpopulations]{.orange}.  -->
 
 . . .
 
-- As before, we organize these quantities into [counting measures]{.blue}  $Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)$ for each subject $i$ in subpopulation $q$, with $i \geq 1$ and $q = 1, \ldots, d$. Moreover,  the parameters $(\theta_{jq})_{j \ge 1}$ can be organized in a group-specific discrete measure $\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)$ for $q=1,\dots,d$. 
+- We organize these quantities into [counting measures]{.blue}  $Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)$ for each subject $i$ in subpopulation $q$, with $i \geq 1$ and $q = 1, \ldots, d$. Moreover,  the parameters $(\theta_{jq})_{j \ge 1}$ can be organized in a group-specific discrete measure $\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)$ for $q=1,\dots,d$. 
 
 - The [full Bayesian specification]{.blue} for partially exchangeable data (known groups) is
 $$
@@ -225,8 +228,6 @@ This connection is relevant because as our results follow from a general CRV the
 
 This framework covers both finite- and infinite-dimensional models; we focus on the finite case $\rho_d = H^{(d)}$ (a probability distribution), enabling estimation of the total number of traits, while @shen2025 consider the infinite-dimensional setting.
 :::
-
-# Distribution theory
 
 ## The augmented likelihood function
 
@@ -355,9 +356,6 @@ whereas the probabilities of observing these traits are distributed as $\theta_{
 <!-- $$ -->
 <!-- \lambda \mid \bm{Z} \sim \text{Gamma}\left(\alpha_\lambda + k, \beta_\lambda + 1 - \prod_{q=1}^d \int P(0; \theta)^{n_q} H(\mathrm{d}\theta; \psi)\right). -->
 <!-- $$ -->
-
-
-# Clustering trait allocation models
 
 ## From known-groups to unknown groups
 
@@ -502,8 +500,6 @@ where $\bm{a}_{iq}$ denotes the observed trait values organized according to the
 
 - Any other quantity of interest, such as $N$ or $\theta_{jq}$, can be easily sampled as a [post-processing step]{.orange} exploiting the posterior representation.
 
-# *Infinito* network
-
 ## *Operazione Infinito* dataset
 
 - The data stem from *Operazione Infinito* [@Calderoni17], a six-year-long, large-scale [law enforcement operation]{.blue} aimed at monitoring and dismantling the core structure of *La Lombardia*, the highly pervasive branch of the 'Ndrangheta Mafia operating in the Milan area.  
@@ -531,18 +527,6 @@ whose generic entry $W_{ii'}$ represents the number of [meetings jointly attende
 
 - [Observed adjacency matrix]{.blue}, partitioned according to the VI clustering [@Wad18].  Side colors correspond to the *locali*, with darker/lighter shades denoting bosses/affiliates.
 
-## Hyperparameter settings and practicalities
-
-- We consider models for [binary traits]{.orange}, where $H(\cdot;\psi)$ is the beta distribution with parameters $(-\alpha, \alpha + \beta)$, with $\psi = (\alpha, \beta)$. 
-
-- Prior distributions for the model hyperparameters $\lambda$, $-\alpha$, and $\alpha + \beta$ are specified as follows:
-  i. The parameter $\lambda$, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters $(\alpha_\lambda, \beta_\lambda)$. 
-  ii. The hyperparameters $(\alpha_\lambda, \beta_\lambda)$ are chosen so that the prior expected value of $N$ equals $\hat{N} = 1.5k$, where $k = 44$ denotes the observed number of meetings in the dataset, and the prior variance of $N$ is set to $10\hat{N}$. 
-  iii. For the parameters $(a, b) = (-\alpha, \alpha + \beta)$ of the beta distribution $H$, independent gamma priors are assumed with hyperparameters $(\alpha_a, \beta_a)$ and $(\alpha_b, \beta_b)$, respectively. Specifically, $(\alpha_a, \beta_a)$ are set to induce a prior mean of $0.2$ for $a$ with a large variance, while $(\alpha_b, \beta_b)$ are chosen so that the prior mean of $b$ is $10$, also with high variance. 
-
-- In the [mixture model]{.blue}, we additionally set $\sigma = 0$, corresponding to a Dirichlet process, and $\gamma = 1$. 
-
-- For both models, posterior inference relies on $10,000$ MCMC iterations, with the first 1,000 samples discarded as [burn-in]{.orange} and a thinning interval of $2$.
 
 
 
@@ -598,23 +582,23 @@ Posterior distribution of $N'$  under an [unknown-groups]{.orange} model with gr
 :::
 :::
 
-## Final considerations
+<!-- ## Final considerations -->
 
-- Consistent with @esbm_rigon and @Lu2025, the inferred group structure reveals intricate organizational dynamics (more in the [paper]{.orange}!).
+<!-- - Consistent with @esbm_rigon and @Lu2025, the inferred group structure reveals intricate organizational dynamics (more in the [paper]{.orange}!). -->
 
-- Notably, there is a clear tendency for clusters to form within individual *locali*, though the mechanisms governing group formation vary between affiliates and bosses. 
+<!-- - Notably, there is a clear tendency for clusters to form within individual *locali*, though the mechanisms governing group formation vary between affiliates and bosses.  -->
 
-- This suggests a design aimed at [resilience]{.orange}: lower-ranked affiliates can form peripheral groups more easily, whereas core groups (including all bosses) are more constrained and typically smaller.
-
-
-. . .
+<!-- - This suggests a design aimed at [resilience]{.orange}: lower-ranked affiliates can form peripheral groups more easily, whereas core groups (including all bosses) are more constrained and typically smaller. -->
 
 
-- Our unknown-groups model also suggests the likely presence of a few number of [undetected meetings]{.blue}, which aligns with expectations and confirms the need of accounting for unseen traits.
+<!-- . . . -->
 
-- Nevertheless, some [caution]{.orange} is warranted. Estimating the number of unseen meetings is an extrapolation task, making accuracy hard to assess. Simulation studies support the model under correct specification, but [some misspecification]{.orange} is inevitable in practice. 
 
-- Thus, estimates should be viewed as rough indications, and interpreted conservatively.
+<!-- - Our unknown-groups model also suggests the likely presence of a few number of [undetected meetings]{.blue}, which aligns with expectations and confirms the need of accounting for unseen traits. -->
+
+<!-- - Nevertheless, some [caution]{.orange} is warranted. Estimating the number of unseen meetings is an extrapolation task, making accuracy hard to assess. Simulation studies support the model under correct specification, but [some misspecification]{.orange} is inevitable in practice.  -->
+
+<!-- - Thus, estimates should be viewed as rough indications, and interpreted conservatively. -->
 
 
 ## Thank you!
@@ -634,3 +618,15 @@ Ghilotti, L., Rigon, T.,  Camerlenghi F., and Guindani M. (2025). Bayesian nonpa
 
 </div>
 
+## Hyperparameter settings and practicalities
+
+- We consider models for [binary traits]{.orange}, where $H(\cdot;\psi)$ is the beta distribution with parameters $(-\alpha, \alpha + \beta)$, with $\psi = (\alpha, \beta)$. 
+
+- Prior distributions for the model hyperparameters $\lambda$, $-\alpha$, and $\alpha + \beta$ are specified as follows:
+  i. The parameter $\lambda$, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters $(\alpha_\lambda, \beta_\lambda)$. 
+  ii. The hyperparameters $(\alpha_\lambda, \beta_\lambda)$ are chosen so that the prior expected value of $N$ equals $\hat{N} = 1.5k$, where $k = 44$ denotes the observed number of meetings in the dataset, and the prior variance of $N$ is set to $10\hat{N}$. 
+  iii. For the parameters $(a, b) = (-\alpha, \alpha + \beta)$ of the beta distribution $H$, independent gamma priors are assumed with hyperparameters $(\alpha_a, \beta_a)$ and $(\alpha_b, \beta_b)$, respectively. Specifically, $(\alpha_a, \beta_a)$ are set to induce a prior mean of $0.2$ for $a$ with a large variance, while $(\alpha_b, \beta_b)$ are chosen so that the prior mean of $b$ is $10$, also with high variance. 
+
+- In the [mixture model]{.blue}, we additionally set $\sigma = 0$, corresponding to a Dirichlet process, and $\gamma = 1$. 
+
+- For both models, posterior inference relies on $10,000$ MCMC iterations, with the first 1,000 samples discarded as [burn-in]{.orange} and a thinning interval of $2$.

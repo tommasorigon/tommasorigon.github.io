@@ -69,6 +69,26 @@ $link-color: #DF0606;
 $code-color: #DF0606;
 $code-bg: #fff !default;
 
+
+/* --- Title slide only: make it more compact --- */
+#title-slide .title {
+  font-size: 2.1em;
+  line-height: 1.9;      /* overrides your global heading line-height of 2.3 */
+  margin-bottom: 0.5em;
+}
+
+#title-slide .subtitle {
+  font-size: 1.4em;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+#title-slide .author,
+#title-slide .institute {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
 .styled-output .cell-output {
   display: block;             /* ensure it behaves as a block container */
 }

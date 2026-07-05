@@ -57,7 +57,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7f7e25c113256bb0c1dc15ed1967a253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8f314ba4a6e958398f2ed4c6b94ac2a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -174,24 +174,16 @@ window.Quarto = {
    
   <ul>
   <li><a href="#warm-thanks" id="toc-warm-thanks" class="nav-link active" data-scroll-target="#warm-thanks">Warm thanks</a></li>
-  <li><a href="#trait-allocation-models" id="toc-trait-allocation-models" class="nav-link" data-scroll-target="#trait-allocation-models">Trait allocation models</a>
-  <ul class="collapse">
   <li><a href="#partially-exchangeable-trait-allocation-models" id="toc-partially-exchangeable-trait-allocation-models" class="nav-link" data-scroll-target="#partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models</a></li>
   <li><a href="#data-from-a-partially-exchangeable-trait-model" id="toc-data-from-a-partially-exchangeable-trait-model" class="nav-link" data-scroll-target="#data-from-a-partially-exchangeable-trait-model">Data from a partially exchangeable trait model</a></li>
   <li><a href="#model-specification-known-groups" id="toc-model-specification-known-groups" class="nav-link" data-scroll-target="#model-specification-known-groups">Model specification (known groups)</a></li>
   <li><a href="#prior-specification-i" id="toc-prior-specification-i" class="nav-link" data-scroll-target="#prior-specification-i">Prior specification I</a></li>
   <li><a href="#prior-specification-ii" id="toc-prior-specification-ii" class="nav-link" data-scroll-target="#prior-specification-ii">Prior specification II</a></li>
-  </ul></li>
-  <li><a href="#distribution-theory" id="toc-distribution-theory" class="nav-link" data-scroll-target="#distribution-theory">Distribution theory</a>
-  <ul class="collapse">
   <li><a href="#the-augmented-likelihood-function" id="toc-the-augmented-likelihood-function" class="nav-link" data-scroll-target="#the-augmented-likelihood-function">The augmented likelihood function</a></li>
   <li><a href="#marginal-distribution" id="toc-marginal-distribution" class="nav-link" data-scroll-target="#marginal-distribution">Marginal distribution</a></li>
   <li><a href="#example-binary-traits-i" id="toc-example-binary-traits-i" class="nav-link" data-scroll-target="#example-binary-traits-i">Example: binary traits I</a></li>
   <li><a href="#posterior-distribution" id="toc-posterior-distribution" class="nav-link" data-scroll-target="#posterior-distribution">Posterior distribution</a></li>
   <li><a href="#example-binary-traits-ii" id="toc-example-binary-traits-ii" class="nav-link" data-scroll-target="#example-binary-traits-ii">Example: binary traits II</a></li>
-  </ul></li>
-  <li><a href="#clustering-trait-allocation-models" id="toc-clustering-trait-allocation-models" class="nav-link" data-scroll-target="#clustering-trait-allocation-models">Clustering trait allocation models</a>
-  <ul class="collapse">
   <li><a href="#from-known-groups-to-unknown-groups" id="toc-from-known-groups-to-unknown-groups" class="nav-link" data-scroll-target="#from-known-groups-to-unknown-groups">From known-groups to unknown groups</a></li>
   <li><a href="#model-specification-unknown-groups" id="toc-model-specification-unknown-groups" class="nav-link" data-scroll-target="#model-specification-unknown-groups">Model specification (unknown groups)</a></li>
   <li><a href="#random-partitions" id="toc-random-partitions" class="nav-link" data-scroll-target="#random-partitions">Random partitions</a></li>
@@ -199,19 +191,14 @@ window.Quarto = {
   <li><a href="#hierarchical-representation-and-mixture-models-1" id="toc-hierarchical-representation-and-mixture-models-1" class="nav-link" data-scroll-target="#hierarchical-representation-and-mixture-models-1">Hierarchical representation and mixture models</a></li>
   <li><a href="#ignoring-the-unseen-traits" id="toc-ignoring-the-unseen-traits" class="nav-link" data-scroll-target="#ignoring-the-unseen-traits">Ignoring the unseen traits</a></li>
   <li><a href="#markov-chain-monte-carlo-algorithm" id="toc-markov-chain-monte-carlo-algorithm" class="nav-link" data-scroll-target="#markov-chain-monte-carlo-algorithm">Markov Chain Monte Carlo algorithm</a></li>
-  </ul></li>
-  <li><a href="#infinito-network" id="toc-infinito-network" class="nav-link" data-scroll-target="#infinito-network"><em>Infinito</em> network</a>
-  <ul class="collapse">
   <li><a href="#operazione-infinito-dataset" id="toc-operazione-infinito-dataset" class="nav-link" data-scroll-target="#operazione-infinito-dataset"><em>Operazione Infinito</em> dataset</a></li>
   <li><a href="#adjacency-matrix-of-the-infinito-network" id="toc-adjacency-matrix-of-the-infinito-network" class="nav-link" data-scroll-target="#adjacency-matrix-of-the-infinito-network">Adjacency matrix of the <em>Infinito</em> network</a></li>
-  <li><a href="#hyperparameter-settings-and-practicalities" id="toc-hyperparameter-settings-and-practicalities" class="nav-link" data-scroll-target="#hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</a></li>
   <li><a href="#estimated-posterior-probabilities-of-co-occurrence" id="toc-estimated-posterior-probabilities-of-co-occurrence" class="nav-link" data-scroll-target="#estimated-posterior-probabilities-of-co-occurrence">Estimated posterior probabilities of co-occurrence</a></li>
   <li><a href="#posterior-number-of-clusters" id="toc-posterior-number-of-clusters" class="nav-link" data-scroll-target="#posterior-number-of-clusters">Posterior number of clusters</a></li>
   <li><a href="#posterior-distribution-of-the-unseen-meetings" id="toc-posterior-distribution-of-the-unseen-meetings" class="nav-link" data-scroll-target="#posterior-distribution-of-the-unseen-meetings">Posterior distribution of the unseen meetings</a></li>
-  <li><a href="#final-considerations" id="toc-final-considerations" class="nav-link" data-scroll-target="#final-considerations">Final considerations</a></li>
   <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
+  <li><a href="#hyperparameter-settings-and-practicalities" id="toc-hyperparameter-settings-and-practicalities" class="nav-link" data-scroll-target="#hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="BNP26_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
@@ -221,7 +208,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">BNP modeling of multivariate count data with unknown traits</h1>
-<p class="subtitle lead">BNP 2026 Networking Workshop</p>
+<p class="subtitle lead"><strong><em>BNP 2026 Networking Workshop</em></strong></p>
   <div class="quarto-categories">
     <div class="quarto-category">talk</div>
   </div>
@@ -242,8 +229,10 @@ window.Quarto = {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <em>Università degli Studi di Milano-Bicocca</em>
-          </p>
+            </p><p><em>Università degli Studi di Milano-Bicocca</em></p>
+            <p><img src="img/logo_ERC.png" style="vertical-align:middle" height="200"> <span style="vertical-align:middle; font-size:0.8em">Funded by the European Union (ERC, NEMESIS, project number: 101116718).</span></p>
+            <p><span style="vertical-align:middle; font-size:0.4em">Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.</span></p>
+          <p></p>
       </div>
   </div>
 
@@ -289,9 +278,6 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</section>
-<section id="trait-allocation-models" class="level1">
-<h1>Trait allocation models</h1>
 <!-- ## Exchangeable trait allocation models -->
 <!-- - Exchangeable trait allocation models [@Jam17; @Camp18] describe how traits are distributed across $n$ subjects, with presence reflecting trait abundance. -->
 <!-- . . . -->
@@ -342,6 +328,7 @@ window.Quarto = {
 <!-- \end{aligned} -->
 <!-- $$ -->
 <!-- which means that $Z_i$  are iid from a [process of counts]{.blue} (CP) with parameter $\tilde{\mu}$. Here $\mathcal{Q}$ denotes the de Finetti measure, i.e., the [prior distribution]{.orange} of the random measure $\tilde{\mu}$.  -->
+</section>
 <section id="partially-exchangeable-trait-allocation-models" class="level2">
 <h2 class="anchored" data-anchor-id="partially-exchangeable-trait-allocation-models">Partially exchangeable trait allocation models</h2>
 <ul>
@@ -351,22 +338,13 @@ A_{i\ell q} \in \{0, 1, 2, \ldots\}, \qquad i = 1,\dots, n, \quad \ell = 1,\dots
 </span> denotes the <span class="blue">count of trait</span> <span class="math inline">\ell</span> for the <span class="math inline">i</span>th subject in group <span class="math inline">q</span>.</p></li>
 </ul>
 <ul>
-<li><p>As before, let <span class="math inline">(\tilde{X}_j)_{j \geq 1}</span> denote the sequence of <span class="orange">latent traits</span> and let <span class="math inline">\tilde{A}_{ijq} \in \{0, 1, 2, \dots\}</span> be the abundance of trait <span class="math inline">\tilde{X}_j</span> for subject <span class="math inline">i</span> in group <span class="math inline">q</span>.</p></li>
+<li><p>Let <span class="math inline">(\tilde{X}_j)_{j \geq 1}</span> denote the sequence of <span class="orange">latent traits</span> and let <span class="math inline">\tilde{A}_{ijq} \in \{0, 1, 2, \dots\}</span> be the abundance of trait <span class="math inline">\tilde{X}_j</span> for subject <span class="math inline">i</span> in group <span class="math inline">q</span>.</p></li>
 <li><p>In a sample of size <span class="math inline">n</span>, a trait <span class="math inline">\tilde{X}_j</span> is <span class="blue">observed</span> only if <span class="math inline">\tilde{A}_{ijq} &gt; 0</span> for at least one subject in any group.</p></li>
 </ul>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Example: known-groups binary traits
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This known-group structure (partial exchangeability) is well suited to the ’Ndrangheta data, where affiliates are grouped by membership in specific <em>locali</em>.</p>
-</div>
-</div>
+<!-- :::{.callout-note} -->
+<!-- #### Example: known-groups binary traits -->
+<!-- This known-group structure (partial exchangeability) is well suited to the ‘Ndrangheta data, where affiliates are grouped by membership in specific *locali*. -->
+<!-- ::: -->
 </section>
 <section id="data-from-a-partially-exchangeable-trait-model" class="level2">
 <h2 class="anchored" data-anchor-id="data-from-a-partially-exchangeable-trait-model">Data from a partially exchangeable trait model</h2>
@@ -382,13 +360,13 @@ Example: known-groups binary traits
 <section id="model-specification-known-groups" class="level2">
 <h2 class="anchored" data-anchor-id="model-specification-known-groups">Model specification (known groups)</h2>
 <ul>
-<li><p>The <span class="orange">latent traits</span> <span class="math inline">\tilde{A}_{ijq}</span>, given the sequences of <span class="blue">parameters</span> <span class="math inline">(\theta_{j1})_{j \geq 1}, \dots, (\theta_{jd})_{j \geq 1}</span>, are conditionally iid across subjects belonging to the same group and for a given trait <span class="math inline">j</span> and group <span class="math inline">q</span>, that is <span class="math display">
+<li>The <span class="orange">latent traits</span> <span class="math inline">\tilde{A}_{ijq}</span>, given the sequences of <span class="blue">parameters</span> <span class="math inline">(\theta_{j1})_{j \geq 1}, \dots, (\theta_{jd})_{j \geq 1}</span>, are conditionally iid across subjects belonging to the same group and for a given trait <span class="math inline">j</span> and group <span class="math inline">q</span>, that is <span class="math display">
 \tilde{A}_{ijq} \mid \theta_{jq} \overset{\textup{iid}}{\sim} P(\cdot\,; \theta_{jq}), \qquad i \geq 1,
-</span> and they are also conditionally independent across traits for <span class="math inline">j \geq 1</span> and subpopulations <span class="math inline">q = 1,\dots,d</span>.</p></li>
-<li><p>Thus, the main difference compared to the exchangeable case is that the random variables <span class="math inline">\tilde{A}_{ijq}</span> have <span class="blue">different parameters</span> when they refer to subjects belonging to <span class="orange">different subpopulations</span>.</p></li>
+</span> and they are also conditionally independent across traits for <span class="math inline">j \geq 1</span> and subpopulations <span class="math inline">q = 1,\dots,d</span>.</li>
 </ul>
+<!-- - Thus, the main difference compared to the exchangeable case is that the random variables $\tilde{A}_{ijq}$ have [different parameters]{.blue} when they refer to subjects belonging to [different subpopulations]{.orange}.  -->
 <ul>
-<li><p>As before, we organize these quantities into <span class="blue">counting measures</span> <span class="math inline">Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)</span> for each subject <span class="math inline">i</span> in subpopulation <span class="math inline">q</span>, with <span class="math inline">i \geq 1</span> and <span class="math inline">q = 1, \ldots, d</span>. Moreover, the parameters <span class="math inline">(\theta_{jq})_{j \ge 1}</span> can be organized in a group-specific discrete measure <span class="math inline">\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)</span> for <span class="math inline">q=1,\dots,d</span>.</p></li>
+<li><p>We organize these quantities into <span class="blue">counting measures</span> <span class="math inline">Z_{iq}(\cdot) = \sum_{j \ge 1} \tilde{A}_{ijq} \, \delta_{\tilde{X}_j}(\cdot)</span> for each subject <span class="math inline">i</span> in subpopulation <span class="math inline">q</span>, with <span class="math inline">i \geq 1</span> and <span class="math inline">q = 1, \ldots, d</span>. Moreover, the parameters <span class="math inline">(\theta_{jq})_{j \ge 1}</span> can be organized in a group-specific discrete measure <span class="math inline">\tilde{\mu}_q(\cdot) = \sum_{j \geq 1} \theta_{jq} \delta_{\tilde{X}_j}(\cdot)</span> for <span class="math inline">q=1,\dots,d</span>.</p></li>
 <li><p>The <span class="blue">full Bayesian specification</span> for partially exchangeable data (known groups) is <span class="math display">
 \begin{aligned}
   Z_{iq} \mid \tilde{\mu}_q &amp; \overset{\textup{ind}}{\sim} \textup{CP} (\tilde{\mu}_q), \qquad i\geq 1, \quad q=1,\ldots,d,\\
@@ -434,9 +412,6 @@ Example: known-groups binary traits
 </div>
 </div>
 </section>
-</section>
-<section id="distribution-theory" class="level1">
-<h1>Distribution theory</h1>
 <section id="the-augmented-likelihood-function" class="level2">
 <h2 class="anchored" data-anchor-id="the-augmented-likelihood-function">The augmented likelihood function</h2>
 <!-- We start by describing the marginal distribution of a sample from model \eqref{eq:partially_ex_traits}, and here we offer a simple and constructive proof. With \emph{marginal distribution of the sample}  $\bm{Z}=(Z_{iq}:  i= 1,\ldots,n_q; q=1,\ldots,d)$, we specifically mean determining the probabilities of the event $(\bm{A} = \bm{a}, K_n = k)$, having denoted by -->
@@ -554,9 +529,6 @@ N^\prime \sim \text{Poisson}(\lambda^\prime), \qquad \lambda^\prime =  \lambda \
 <!-- \lambda \mid \bm{Z} \sim \text{Gamma}\left(\alpha_\lambda + k, \beta_\lambda + 1 - \prod_{q=1}^d \int P(0; \theta)^{n_q} H(\mathrm{d}\theta; \psi)\right). -->
 <!-- $$ -->
 </section>
-</section>
-<section id="clustering-trait-allocation-models" class="level1">
-<h1>Clustering trait allocation models</h1>
 <section id="from-known-groups-to-unknown-groups" class="level2">
 <h2 class="anchored" data-anchor-id="from-known-groups-to-unknown-groups">From known-groups to unknown groups</h2>
 <ul>
@@ -684,9 +656,6 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <li>Any other quantity of interest, such as <span class="math inline">N</span> or <span class="math inline">\theta_{jq}</span>, can be easily sampled as a <span class="orange">post-processing step</span> exploiting the posterior representation.</li>
 </ul>
 </section>
-</section>
-<section id="infinito-network" class="level1">
-<h1><em>Infinito</em> network</h1>
 <section id="operazione-infinito-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="operazione-infinito-dataset"><em>Operazione Infinito</em> dataset</h2>
 <ul>
@@ -712,20 +681,6 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 </div>
 <ul>
 <li><span class="blue">Observed adjacency matrix</span>, partitioned according to the VI clustering <span class="citation" data-cites="Wad18">(<a href="#ref-Wad18" role="doc-biblioref">Wade and Ghahramani 2018</a>)</span>. Side colors correspond to the <em>locali</em>, with darker/lighter shades denoting bosses/affiliates.</li>
-</ul>
-</section>
-<section id="hyperparameter-settings-and-practicalities" class="level2">
-<h2 class="anchored" data-anchor-id="hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</h2>
-<ul>
-<li><p>We consider models for <span class="orange">binary traits</span>, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>
-<li><p>Prior distributions for the model hyperparameters <span class="math inline">\lambda</span>, <span class="math inline">-\alpha</span>, and <span class="math inline">\alpha + \beta</span> are specified as follows:</p>
-<ol type="i">
-<li>The parameter <span class="math inline">\lambda</span>, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span>.</li>
-<li>The hyperparameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span> are chosen so that the prior expected value of <span class="math inline">N</span> equals <span class="math inline">\hat{N} = 1.5k</span>, where <span class="math inline">k = 44</span> denotes the observed number of meetings in the dataset, and the prior variance of <span class="math inline">N</span> is set to <span class="math inline">10\hat{N}</span>.</li>
-<li>For the parameters <span class="math inline">(a, b) = (-\alpha, \alpha + \beta)</span> of the beta distribution <span class="math inline">H</span>, independent gamma priors are assumed with hyperparameters <span class="math inline">(\alpha_a, \beta_a)</span> and <span class="math inline">(\alpha_b, \beta_b)</span>, respectively. Specifically, <span class="math inline">(\alpha_a, \beta_a)</span> are set to induce a prior mean of <span class="math inline">0.2</span> for <span class="math inline">a</span> with a large variance, while <span class="math inline">(\alpha_b, \beta_b)</span> are chosen so that the prior mean of <span class="math inline">b</span> is <span class="math inline">10</span>, also with high variance.</li>
-</ol></li>
-<li><p>In the <span class="blue">mixture model</span>, we additionally set <span class="math inline">\sigma = 0</span>, corresponding to a Dirichlet process, and <span class="math inline">\gamma = 1</span>.</p></li>
-<li><p>For both models, posterior inference relies on <span class="math inline">10,000</span> MCMC iterations, with the first 1,000 samples discarded as <span class="orange">burn-in</span> and a thinning interval of <span class="math inline">2</span>.</p></li>
 </ul>
 </section>
 <section id="estimated-posterior-probabilities-of-co-occurrence" class="level2">
@@ -773,19 +728,14 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <p>Posterior distribution of <span class="math inline">N'</span> under an <span class="orange">unknown-groups</span> model with groups <span class="math inline">\bm{C}</span> learned from the data.</p>
 </div>
 </div>
-</section>
-<section id="final-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="final-considerations">Final considerations</h2>
-<ul>
-<li><p>Consistent with <span class="citation" data-cites="esbm_rigon">Legramanti et al. (<a href="#ref-esbm_rigon" role="doc-biblioref">2022</a>)</span> and <span class="citation" data-cites="Lu2025">Lu et al. (<a href="#ref-Lu2025" role="doc-biblioref">2025</a>)</span>, the inferred group structure reveals intricate organizational dynamics (more in the <span class="orange">paper</span>!).</p></li>
-<li><p>Notably, there is a clear tendency for clusters to form within individual <em>locali</em>, though the mechanisms governing group formation vary between affiliates and bosses.</p></li>
-<li><p>This suggests a design aimed at <span class="orange">resilience</span>: lower-ranked affiliates can form peripheral groups more easily, whereas core groups (including all bosses) are more constrained and typically smaller.</p></li>
-</ul>
-<ul>
-<li><p>Our unknown-groups model also suggests the likely presence of a few number of <span class="blue">undetected meetings</span>, which aligns with expectations and confirms the need of accounting for unseen traits.</p></li>
-<li><p>Nevertheless, some <span class="orange">caution</span> is warranted. Estimating the number of unseen meetings is an extrapolation task, making accuracy hard to assess. Simulation studies support the model under correct specification, but <span class="orange">some misspecification</span> is inevitable in practice.</p></li>
-<li><p>Thus, estimates should be viewed as rough indications, and interpreted conservatively.</p></li>
-</ul>
+<!-- ## Final considerations -->
+<!-- - Consistent with @esbm_rigon and @Lu2025, the inferred group structure reveals intricate organizational dynamics (more in the [paper]{.orange}!). -->
+<!-- - Notably, there is a clear tendency for clusters to form within individual *locali*, though the mechanisms governing group formation vary between affiliates and bosses.  -->
+<!-- - This suggests a design aimed at [resilience]{.orange}: lower-ranked affiliates can form peripheral groups more easily, whereas core groups (including all bosses) are more constrained and typically smaller. -->
+<!-- . . . -->
+<!-- - Our unknown-groups model also suggests the likely presence of a few number of [undetected meetings]{.blue}, which aligns with expectations and confirms the need of accounting for unseen traits. -->
+<!-- - Nevertheless, some [caution]{.orange} is warranted. Estimating the number of unseen meetings is an extrapolation task, making accuracy hard to assess. Simulation studies support the model under correct specification, but [some misspecification]{.orange} is inevitable in practice.  -->
+<!-- - Thus, estimates should be viewed as rough indications, and interpreted conservatively. -->
 </section>
 <section id="thank-you" class="level2">
 <h2 class="anchored" data-anchor-id="thank-you">Thank you!</h2>
@@ -825,17 +775,11 @@ Ghilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025), <span>“Baye
 <div id="ref-Jam17" class="csl-entry" role="listitem">
 James, L. F. (2017), <span>“Bayesian <span>Poisson</span> calculus for latent feature modeling via generalized <span>Indian</span> buffet process priors,”</span> <em>The Annals of Statistics</em>, 45, 2016–2045.
 </div>
-<div id="ref-esbm_rigon" class="csl-entry" role="listitem">
-Legramanti, S., Rigon, T., Durante, D., and Dunson, D. B. (2022), <span>“<span class="nocase">Extended stochastic block models with application to criminal networks</span>,”</span> <em>The Annals of Applied Statistics</em>, 16, 2369–2395.
-</div>
 <div id="ref-Lijoi2020" class="csl-entry" role="listitem">
 Lijoi, A., Prünster, I., and Rigon, T. (2020), <span>“<span class="nocase">The Pitman–Yor multinomial process for mixture modelling</span>,”</span> <em>Biometrika</em>, 107, 891–906.
 </div>
 <div id="ref-Lijoi2024" class="csl-entry" role="listitem">
 Lijoi, A., Prünster, I., and Rigon, T. (2024), <span>“<span class="nocase">Finite-dimensional discrete random structures and Bayesian clustering</span>,”</span> <em>Journal of the American Statistical Association</em>, 119, 929–941.
-</div>
-<div id="ref-Lu2025" class="csl-entry" role="listitem">
-Lu, C., Durante, D., and Friel, N. (2025), <span>“Zero-inflated stochastic block modeling of efficiency-security trade-offs in weighted criminal networks,”</span> <em>Journal of the Royal Statistical Society Series A: Statistics in Society</em>, (In Press).
 </div>
 <div id="ref-Per92" class="csl-entry" role="listitem">
 Perman, M., Pitman, J., and Yor, M. (1992), <span>“Size-biased sampling of <span>P</span>oisson point processes and excursions,”</span> <em>Probability Theory and Related Fields</em>, 92, 21–39.
@@ -854,9 +798,22 @@ Wade, S., and Ghahramani, Z. (2018), <span>“<span class="nocase">Bayesian clus
 </div>
 </div>
 </div>
-
-
 </section>
+<section id="hyperparameter-settings-and-practicalities" class="level2">
+<h2 class="anchored" data-anchor-id="hyperparameter-settings-and-practicalities">Hyperparameter settings and practicalities</h2>
+<ul>
+<li><p>We consider models for <span class="orange">binary traits</span>, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>
+<li><p>Prior distributions for the model hyperparameters <span class="math inline">\lambda</span>, <span class="math inline">-\alpha</span>, and <span class="math inline">\alpha + \beta</span> are specified as follows:</p>
+<ol type="i">
+<li>The parameter <span class="math inline">\lambda</span>, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span>.</li>
+<li>The hyperparameters <span class="math inline">(\alpha_\lambda, \beta_\lambda)</span> are chosen so that the prior expected value of <span class="math inline">N</span> equals <span class="math inline">\hat{N} = 1.5k</span>, where <span class="math inline">k = 44</span> denotes the observed number of meetings in the dataset, and the prior variance of <span class="math inline">N</span> is set to <span class="math inline">10\hat{N}</span>.</li>
+<li>For the parameters <span class="math inline">(a, b) = (-\alpha, \alpha + \beta)</span> of the beta distribution <span class="math inline">H</span>, independent gamma priors are assumed with hyperparameters <span class="math inline">(\alpha_a, \beta_a)</span> and <span class="math inline">(\alpha_b, \beta_b)</span>, respectively. Specifically, <span class="math inline">(\alpha_a, \beta_a)</span> are set to induce a prior mean of <span class="math inline">0.2</span> for <span class="math inline">a</span> with a large variance, while <span class="math inline">(\alpha_b, \beta_b)</span> are chosen so that the prior mean of <span class="math inline">b</span> is <span class="math inline">10</span>, also with high variance.</li>
+</ol></li>
+<li><p>In the <span class="blue">mixture model</span>, we additionally set <span class="math inline">\sigma = 0</span>, corresponding to a Dirichlet process, and <span class="math inline">\gamma = 1</span>.</p></li>
+<li><p>For both models, posterior inference relies on <span class="math inline">10,000</span> MCMC iterations, with the first 1,000 samples discarded as <span class="orange">burn-in</span> and a thinning interval of <span class="math inline">2</span>.</p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->

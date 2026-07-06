@@ -4312,6 +4312,174 @@
     "text": "Scenario evaluation\n\n\n\n\n\n\n\n\n\nTropical sites with high human activity (HFP &gt; 30) miss a median of 197 species (21.3\\% of potential richness).\nDry sites miss 202 species (29.2\\%).\nTemperate sites miss 26 species (4.3\\%)\nContinental sites miss 70 species (9.23\\%)\n\n\n\n\n\nA 5‑unit intensification of human presence globally leads to up to an 8\\% reduction in potential richness\nA 10\\% increase in AET is associated with an average 3.81\\% increase in potential richness."
   },
   {
+    "objectID": "post/BNP2026/BNP26_slides.html#warm-thanks",
+    "href": "post/BNP2026/BNP26_slides.html#warm-thanks",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Warm thanks",
+    "text": "Warm thanks\n\n\nLorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (University of Milano-Bicocca)\n\n\n\n\n\n\n\n\nMichele Guindani (University of California Los Angeles)"
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#partially-exchangeable-trait-allocation-models",
+    "href": "post/BNP2026/BNP26_slides.html#partially-exchangeable-trait-allocation-models",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Partially exchangeable trait allocation models",
+    "text": "Partially exchangeable trait allocation models\n\nLet d be the number of subpopulations (groups), and suppose we observe a sample of size n, with n_q subjects from group q, for q = 1, \\ldots, d, so that \\sum_{q=1}^d n_q = n.\nLet K_n = k denote the total number of traits observed across all subjects and groups. The data can be represented by a collection of matrices \\bm{A}_q, each of dimension n_q \\times k, with entries \nA_{i\\ell q} \\in \\{0, 1, 2, \\ldots\\}, \\qquad i = 1,\\dots, n, \\quad \\ell = 1,\\dots,k, \\quad q=1,\\dots,d,\n denotes the count of trait \\ell for the ith subject in group q.\n\n\n\nLet (\\tilde{X}_j)_{j \\geq 1} denote the sequence of latent traits and let \\tilde{A}_{ijq} \\in \\{0, 1, 2, \\dots\\} be the abundance of trait \\tilde{X}_j for subject i in group q.\nIn a sample of size n, a trait \\tilde{X}_j is observed only if \\tilde{A}_{ijq} &gt; 0 for at least one subject in any group."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#data-from-a-partially-exchangeable-trait-model",
+    "href": "post/BNP2026/BNP26_slides.html#data-from-a-partially-exchangeable-trait-model",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Data from a partially exchangeable trait model",
+    "text": "Data from a partially exchangeable trait model\n\n\nObserved data from a partially exchangeable trait model (d = 2): two matrices of counts \\bm{A}_1 and \\bm{A}_2, each with n_1 = n_2= 5 subjects and K_n = 18 observed traits."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#model-specification-known-groups",
+    "href": "post/BNP2026/BNP26_slides.html#model-specification-known-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification (known groups)",
+    "text": "Model specification (known groups)\n\nThe latent traits \\tilde{A}_{ijq}, given the sequences of parameters (\\theta_{j1})_{j \\geq 1}, \\dots, (\\theta_{jd})_{j \\geq 1}, are conditionally iid across subjects belonging to the same group and for a given trait j and group q, that is \n\\tilde{A}_{ijq} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_{jq}), \\qquad i \\geq 1,\n and they are also conditionally independent across traits for j \\geq 1 and subpopulations q = 1,\\dots,d.\n\n\n\n\nWe organize these quantities into counting measures Z_{iq}(\\cdot) = \\sum_{j \\ge 1} \\tilde{A}_{ijq} \\, \\delta_{\\tilde{X}_j}(\\cdot) for each subject i in subpopulation q, with i \\geq 1 and q = 1, \\ldots, d. Moreover, the parameters (\\theta_{jq})_{j \\ge 1} can be organized in a group-specific discrete measure \\tilde{\\mu}_q(\\cdot) = \\sum_{j \\geq 1} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot) for q=1,\\dots,d.\nThe full Bayesian specification for partially exchangeable data (known groups) is \n\\begin{aligned}\n  Z_{iq} \\mid \\tilde{\\mu}_q & \\overset{\\textup{ind}}{\\sim} \\textup{CP} (\\tilde{\\mu}_q), \\qquad i\\geq 1, \\quad q=1,\\ldots,d,\\\\\n  (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) &\\sim \\mathcal{Q}_d,\n\\end{aligned}\n where \\mathcal{Q}_d denotes the prior distribution."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#prior-specification-i",
+    "href": "post/BNP2026/BNP26_slides.html#prior-specification-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification I",
+    "text": "Prior specification I\n\nWe assume the total number of traits in the population, denoted with N, is finite and random. If K_n = k traits are observed, the number of unseen traits equals N-k.\nHence, there will be a finite collection of latent traits \\tilde{A}_{i1q}, \\dots, \\tilde{A}_{iNq} for each subject and group, with associated parameters \\theta_{1q},\\dots,\\theta_{Nq} for q = 1,\\dots,d.\n\n\n\nMoreover, we assume N is a Poisson random variable with parameter \\lambda&gt;0. In other terms, the group-specific measures \\tilde{\\mu}_q take the form \n  \\tilde{\\mu}_q(\\cdot) = \\sum_{j=1}^{ N} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot), \\qquad N \\sim \\mathrm{Poisson}(\\lambda),\n as q=1,\\ldots,d.\nMoreover, we assume the parameters \\theta_{jq} are iid draws from a probability law H(\\cdot\\,;\\psi), namely \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,\n where \\psi is a common hyperparameter sometimes endowed with a hyperprior."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#prior-specification-ii",
+    "href": "post/BNP2026/BNP26_slides.html#prior-specification-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Prior specification II",
+    "text": "Prior specification II\n\nWe assign a prior to the atoms \\tilde{X}_j, which only label traits; it suffices that they are almost surely distinct, e.g., \\tilde{X}_j \\overset{\\textup{iid}}{\\sim} P_0 with P_0 non-atomic.\nThis specification is linked with infinite-dimensional trait models (James 2017; Shen et al. 2025).\nIndeed, (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) is a finite completely random vector (FCRV), a special case of completely random vectors (Catalano et al. 2021), crucially relying on the Poisson specification for N.\nMore precisely, \\tilde{\\bm{\\mu}} = (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) can be interpreted as an FCRV with parameters H^{(d)} =  H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi), \\lambda, and P_0, and we write \n\\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0).\n\n\n\n\n\nThis connection is relevant because as our results follow from a general CRV theory with Lévy intensities of the form \\rho_d(\\mathrm{d}\\theta_1 \\cdots \\mathrm{d}\\theta_d)\\,\\lambda P_0(\\mathrm{d}x), where \\rho_d may be infinite.\nThis framework covers both finite- and infinite-dimensional models; we focus on the finite case \\rho_d = H^{(d)} (a probability distribution), enabling estimation of the total number of traits, while Shen et al. (2025) consider the infinite-dimensional setting."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#the-augmented-likelihood-function",
+    "href": "post/BNP2026/BNP26_slides.html#the-augmented-likelihood-function",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "The augmented likelihood function",
+    "text": "The augmented likelihood function\n\n\n\nIf all traits were known (no missing information), the model would be extremely simple: a collection of independent random variables, with an easily computable augmented likelihood.\nLet \\tilde{\\bm{A}} = (\\tilde{A}_{ijq} : i = 1, \\dots, n_q; j = 1, \\dots, N; q = 1, \\dots , d) denote the latent counts whose realization is \\tilde{\\bm{a}} and let \\mathcal{A} = \\{j : \\sum_{q=1}^d \\sum_{i=1}^{n_q} \\tilde{a}_{ijq} &gt; 0\\} denote the indices of observed traits.\n\n\n\nThe augmented likelihood function \\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}}) given the parameters \\bm{\\theta} = (\\theta_{jq} : j=1,\\dots,N; q = 1,\\dots,d) and N, for the event (\\tilde{\\bm{A}} = \\tilde{\\bm{a}}, K_n = k) is \n\\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}})= \\prod_{q=1}^d  \\prod_{j=1}^N\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})= \\left[\\prod_{q=1}^d\\prod_{j \\not\\in \\mathcal{A}} P(0;\\theta_{j q})^{n_q}\\right]\\left[ \\prod_{q=1}^d \\prod_{j\\in \\mathcal{A}}\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})\\right].\n In the last term, the first product accounts for unobserved traits, while the second corresponds to observed ones.\n\n\n\nRemark. Combining the augmented likelihood with the iid priors H(\\mathrm{d}\\theta;\\psi), integrating over \\bm{\\theta} and N \\sim \\text{Poisson}(\\lambda), and summing over all \\mathcal{A}, we obtain the marginal probability of (\\bm{A} = \\bm{a}, K_n = k)."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#marginal-distribution",
+    "href": "post/BNP2026/BNP26_slides.html#marginal-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Marginal distribution",
+    "text": "Marginal distribution\n\n\n\nTheorem (Marginal distribution; Ghilotti et al. (2025))\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model, with \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nThe probability that \\bm{Z} displays K_n = k distinct traits with counts \\bm A = \\bm{a} is given by \n\\begin{split}\n        \\pi_n (\\bm{a}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left( 1-\\prod_{q=1}^d  \\int P (0 ; \\theta)^{n_q}\n        H (\\mathrm{d}\\theta; \\psi) \\right) \\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\int  \\prod_{i=1}^{n_q} P (a_{i\\ell q} ; \\theta)  H(\\mathrm{d} \\theta; \\psi),\n\\end{split}\n where n=\\sum_{q=1}^d n_q and \\bm{n}=(n_1, \\ldots , n_d) are the sample sizes.\n\n\n\n\nThe quantity \\pi_n (\\bm{a}; \\lambda, \\psi) is the marginal likelihood of (\\lambda, \\psi) based on the observed data.\nInformally, it can be regarded as the “normalizing constant” of the posterior of \\tilde{\\bm{\\mu}}.\nThis is related to the partially Exchangeable Partition Probability Function (pEPPF) discussed in Franzolini et al. (2025) for partially exchangeable species sampling models."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#example-binary-traits-i",
+    "href": "post/BNP2026/BNP26_slides.html#example-binary-traits-i",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits I",
+    "text": "Example: binary traits I\n\nSuppose the traits are binary and P(a;\\theta) = \\theta^a(1-\\theta)^{1-a}, for a \\in \\{0, 1\\}, meaning that \n\\tilde{A}_{ijq} \\overset{\\textup{ind}}{\\sim} \\text{Bernoulli}(\\theta_{jq}), \\qquad i \\ge 1, \\quad j=1,\\dots,N, \\quad q = 1,\\dots,q.\n\nThe marginal law of \\bm{Z} depends on the sufficient statistic given by the feature frequencies, where M_{\\ell q} := \\sum_{i=1}^{n_q} A_{i\\ell q} (with observed values m_{\\ell q}) are collected in matrices \\bm{M} and \\bm{m}.\n\n\n\nSuppose the prior H(\\cdot;\\psi) is a Beta distribution with parameters \\psi = (-\\alpha, \\alpha+\\beta), i.e., \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta), \\qquad j=1,\\dots,N, \\quad q=1,\\dots,d.\n\n\n\n\n\nThen, the marginal probability that \\bm{Z} displays K_n = k distinct traits with feature frequencies \\bm M = \\bm{m} is \n      \\begin{split}\n      \\pi_n (\\bm{m}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left[1- \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}}  \\right]\\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\frac{-\\alpha}{(\\beta)_{n_q}}(1-\\alpha)_{m_{\\ell q}-1}(\\alpha + \\beta)_{n_q - m_{\\ell q}},\n      \\end{split}\n where (a)_n = a(a+1)\\cdots(a+n-1) is the ascending factorial with a &gt; 0."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#posterior-distribution",
+    "href": "post/BNP2026/BNP26_slides.html#posterior-distribution",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior distribution",
+    "text": "Posterior distribution\n\n\n\nTheorem (Posterior distribution; Ghilotti et al. (2025))\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model with prior \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nIf \\bm{Z} displays K_n = k distinct traits labeled X_1, \\ldots , X_k, with associated counts \\bm{a}, then the posterior distribution of \\tilde{\\bm\\mu} satisfies the distributional equality        \n(\\tilde{\\mu}_1, \\ldots, \\tilde{\\mu}_d) \\mid \\bm{Z} \\stackrel{d}{=}  (\\mu_1^*, \\ldots, \\mu_d^*) +  (\\mu_1', \\ldots, \\mu_d'),\n where \\bm{\\mu}^*:= (\\mu_1^*, \\ldots, \\mu_d^*) and \\bm{ \\mu}':=(\\mu_1', \\ldots, \\mu_d') are independent random vectors such that\n\nthe components of the vector \\bm{\\mu}^* are defined as \\mu_q^*(\\cdot) = \\sum_{\\ell=1}^k \\theta_{\\ell q}^* \\delta_{X_\\ell}(\\cdot), for q=1, \\ldots , d, and the random variables \\theta^*_{\\ell q} are independent with distribution H_{\\ell q} (\\mathrm{d}\\theta;\\psi) \\propto  \\prod_{i = 1}^{n_q} P(a_{i\\ell q}; \\theta)  H(\\mathrm{d}\\theta; \\psi).\nthe vector (\\mu_1', \\ldots, \\mu_d') is a \\textup{FCRV} (H^{\\prime(d)}, \\lambda',  P_0), where H^{\\prime(d)}(\\cdot\\,;\\psi) = H_1^\\prime(\\cdot\\,;\\psi) \\times \\cdots \\times H_d^\\prime(\\cdot\\,;\\psi), \n       \\lambda' = \\lambda \\prod_{q=1}^d \\int P(0; \\theta)^{n_q} H(\\mathrm{d}\\theta; \\psi),\n       \\quad\n       H'_q(\\mathrm{d}\\theta; \\psi)  \\propto  P(0;  \\theta)^{n_q} H(\\mathrm{d}\\theta;\\psi)."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#example-binary-traits-ii",
+    "href": "post/BNP2026/BNP26_slides.html#example-binary-traits-ii",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Example: binary traits II",
+    "text": "Example: binary traits II\n\nSuppose the traits are binary and assuming a beta prior law H(\\cdot;\\psi) with parameters (-\\alpha, \\alpha + \\beta).\nThe posterior distribution of \\tilde{\\bm{\\mu}} given \\bm{Z} decomposes as the sum of \\bm{\\mu}^* and \\bm{\\mu}', as in the general case.\n\nThe probabilities \\theta^*_{\\ell q} of re-observing an old feature X_\\ell are distributed as \n\\theta^*_{\\ell q} \\overset{\\textup{ind}}{\\sim} \\text{Beta}(m_{\\ell q} - \\alpha, \\alpha + \\beta + n_q - m_{\\ell q}),\n for \\ell=1,\\dots,k, q=1,\\dots,d.\nEach \\mu_q^\\prime =  \\sum_{j=1}^{N^\\prime} \\theta_{j q}^\\prime \\delta_{\\tilde{X}_j^\\prime}(\\cdot), which governs unobserved traits in subpopulation q, have a tractable form. In particular, the distribution of the number of unseen features N^\\prime = N - k is \nN^\\prime \\sim \\text{Poisson}(\\lambda^\\prime), \\qquad \\lambda^\\prime =  \\lambda \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}},\n whereas the probabilities of observing these traits are distributed as \\theta_{jq}^\\prime \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta + n_q)."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#from-known-groups-to-unknown-groups",
+    "href": "post/BNP2026/BNP26_slides.html#from-known-groups-to-unknown-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "From known-groups to unknown groups",
+    "text": "From known-groups to unknown groups\n\nThe partially exchangeable framework accommodates group-structured data by assuming homogeneity within predefined subpopulations.\nIn practice, however, either no grouping is known or the given partition may be inadequate. In such cases, one can instead learn the group structure from the data.\n\n\n\n\nIn the ’Ndrangheta application, affiliates can be grouped by their membership in locali.\nHowever, it is worth assessing whether this external partition reflects the structure of meeting attendance. Discrepancies between inferred clusters and locali may reveal unrecognized collaborations or new cross-group dynamics.\n\n\n\n\nWe consider an unknown-groups setting by embedding the partially exchangeable model in a Bayesian clustering framework, enabling cluster detection while accounting for unseen traits.\nOur goal is to infer a partition of the subjects Z_1, \\ldots, Z_n, rather than relying on predefined groups."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#model-specification-unknown-groups",
+    "href": "post/BNP2026/BNP26_slides.html#model-specification-unknown-groups",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Model specification (unknown groups)",
+    "text": "Model specification (unknown groups)\n\nLet \\bm{C} = {C_1,\\dots,C_d} be a partition of \\{1,\\dots,n\\}, where i,i’ \\in C_q iff subjects i and i’ belong to the same group.\nLet n_q = |C_q| be the size of cluster q, with \\sum_{q=1}^d n_q = n. If \\bm{C} is known, we recover the known-groups setting.\n\n\n\nWhen \\bm{C} is unknown, we place a prior on it, so both the cluster memberships and the number of groups d are random and learned from the data.\nConditionally on \\bm{C} = {C_1,\\dots,C_d}, for a fixed trait j and group q, we assume, as in the known-groups case, that \n\\tilde{A}_{ij} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot; \\theta_{jq}),\\qquad i \\in C_q.\n Moreover, as in the known-group case, we let \nN \\sim \\text{Poisson}(\\lambda), \\qquad \\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,"
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#random-partitions",
+    "href": "post/BNP2026/BNP26_slides.html#random-partitions",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Random partitions",
+    "text": "Random partitions\n\nAmong the various prior for \\bm{C}, we consider the prior induced by a Pitman–Yor process (Perman et al. 1992; Pitman and Yor 1997), which stands for its analytical tractability and whose density is \n\\mathbb{P}(\\bm{C} = \\{C_1,\\dots,C_d\\}) =\\frac{\\prod_{q=1}^{d-1}(\\gamma + q\\sigma)}{(\\gamma + 1)_{n-1}}\\prod_{q=1}^d(1 - \\sigma)_{n_q-1},\n where \\gamma &gt; -\\sigma, \\sigma \\in [0, 1).\nNote that the number of groups 1 \\le d \\le n is itself a random variable and there is no upper bound other than the sample size.\nThe above expression is referred to as exchangeable partition probability function Pitman (1996).\nWhen \\sigma = 0, the Pitman–Yor process reduces to a Dirichlet process (Ferguson 1973).\n\n\n\nFor a general characterization of exchangeable Gibbs-type random partitions, including the Pitman–Yor as a special case, see De Blasi et al. (2015).\nRecent developments on random partitions with finitely many clusters are discussed in Lijoi et al. (2020), Lijoi et al. (2024), Colombi et al. (2025)."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#ignoring-the-unseen-traits",
+    "href": "post/BNP2026/BNP26_slides.html#ignoring-the-unseen-traits",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Ignoring the unseen traits",
+    "text": "Ignoring the unseen traits\n\nHowever, LCA assume that N is a known constant, meaning that all traits are known in advance, including those equal to zero for all subjects. Ignoring unseen traits can skew the analysis.\nConsider the following predictive allocation probabilities: \np_{iq} = \\mathbb{P}(\\mu_i = \\tilde{\\mu}_q \\mid \\bm{Z}, \\bm{\\mu}_{-i}), \\qquad p_{i,\\text{new}} = \\mathbb{P}(\\mu_i = \\text{``new''} \\mid \\bm{Z}, \\bm{\\mu}_{-i}), \\qquad i=1,\\dots,n,\n where \\bm{\\mu}_{-i} = (\\mu_1,\\dots\\mu_{i-1},\\mu_{i+1},\\dots,\\mu_n) with d_{-i} distinct values \\tilde{\\mu}_1,\\dots,\\tilde{\\mu}_{d_{-i}}, for q = 1,\\dots,d_{-i}.\nWe similarly define p_{iq}^* and p_{i,\\text{new}}^* for the naïve model in which it is wrongly assumed that all traits are observed with N = k.\n\n\n\n\nProposition (Ghilotti et al. 2025)\n\n\nThe predictive allocation probabilities for a generic subject i under the proposed and a naïve model in which it is assumed that there are no unseen traits, with N = k, satisfy the inequality: \n\\frac{p_{i,\\textup{new}}}{p_{iq}} &lt;  \\frac{p_{i,\\textup{new}}^*}{p_{iq}^*}, \\qquad q=1,\\dots,d_{-i}, \\quad i=1,\\dots,n."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#markov-chain-monte-carlo-algorithm",
+    "href": "post/BNP2026/BNP26_slides.html#markov-chain-monte-carlo-algorithm",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Markov Chain Monte Carlo algorithm",
+    "text": "Markov Chain Monte Carlo algorithm\n\nPosterior inference for the partition \\bm{C} rely on a simple Gibbs sampling algorithm.\n\n\n\nWe iteratively sample the labels of \\mu_i \\mid \\bm Z, \\bm{\\mu}_{-i} for i=1,\\dots,n according to the full conditional probabilities p_{iq} and p_{i,\\text{new}}, which are proportional to \np_{iq} \\propto \\frac{n_{q,-i} - \\sigma}{n + \\gamma - 1}\\,\\pi_n(\\bm{a}_{iq}; \\lambda, \\psi), \\qquad p_{i,\\textup{new}} \\propto \\frac{\\gamma + d_{-i}\\sigma}{n+\\gamma-1}\\,\\pi_n(\\bm{a}_{i,\\textup{new}}; \\lambda, \\psi),\n where \\bm{a}_{iq} denotes the observed trait values organized according to the partition \\bm{C}_{-i}, with subject i allocated to cluster q. Similarly, \\bm{a}_{i,\\textup{new}} corresponds to the trait values organized according to the partition \\bm{C}_{-i} when subject i is assigned to a new cluster.\n\n\n\n\nThis scheme is straightforward thanks to the closed-form expression of \\pi_n(\\bm a; \\lambda, \\psi).\nWhen hyperpriors are placed on the parameters \\lambda and \\psi, the MCMC scheme described above is coupled with updates of \\lambda and \\psi from their respective full conditional distributions.\n\n\n\n\nAny other quantity of interest, such as N or \\theta_{jq}, can be easily sampled as a post-processing step exploiting the posterior representation."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#operazione-infinito-dataset",
+    "href": "post/BNP2026/BNP26_slides.html#operazione-infinito-dataset",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Operazione Infinito dataset",
+    "text": "Operazione Infinito dataset\n\nThe data stem from Operazione Infinito (Calderoni et al. 2017), a six-year-long, large-scale law enforcement operation aimed at monitoring and dismantling the core structure of La Lombardia, the highly pervasive branch of the ’Ndrangheta Mafia operating in the Milan area.\n\n\n\nThe attendance of the n affiliates at k distinct meetings can be represented by the n \\times k binary matrix \\bm{A}, where each entry A_{i\\ell} \\in \\{0, 1\\} indicates whether individual i attended meeting \\ell.\nWe are also interested in understanding the implications on the adjacency matrix \n\\bm{W} = \\bm{A}\\bm{A}^T,\n whose generic entry W_{ii'} represents the number of meetings jointly attended by affiliates i and i'.\n\n\n\n\nWe focus on the d = 5 most populated locali, with sizes n_1 = 16,n_2 = 14, n_3 = 23, n_4 = 15, n_5 = 16, of the Infinito dataset, for a total of n = 84 affiliates and k = 44 recorded meetings among them.\nAffiliates’ locale membership defines a natural five-group partition, which we compare with the groups inferred from the mixture model."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#adjacency-matrix-of-the-infinito-network",
+    "href": "post/BNP2026/BNP26_slides.html#adjacency-matrix-of-the-infinito-network",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Adjacency matrix of the Infinito network",
+    "text": "Adjacency matrix of the Infinito network\n\n\nObserved adjacency matrix, partitioned according to the VI clustering (Wade and Ghahramani 2018). Side colors correspond to the locali, with darker/lighter shades denoting bosses/affiliates."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#estimated-posterior-probabilities-of-co-occurrence",
+    "href": "post/BNP2026/BNP26_slides.html#estimated-posterior-probabilities-of-co-occurrence",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Estimated posterior probabilities of co-occurrence",
+    "text": "Estimated posterior probabilities of co-occurrence\n\n\n Posterior expectation under a known-groups specification with partition induced by locali membership.\n\n\n\n\n\n\n\n\nPosterior expectation under an unknown-groups model with groups \\bm{C} learned from the data."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#posterior-number-of-clusters",
+    "href": "post/BNP2026/BNP26_slides.html#posterior-number-of-clusters",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior number of clusters",
+    "text": "Posterior number of clusters\n\n\nPosterior distribution of the number of clusters d in the mixture model.\nIn particular, such a distribution is strictly greater than 5 (i.e. the number of locali), consolidating the idea that locali do not fully capture the network structure."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#posterior-distribution-of-the-unseen-meetings",
+    "href": "post/BNP2026/BNP26_slides.html#posterior-distribution-of-the-unseen-meetings",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Posterior distribution of the unseen meetings",
+    "text": "Posterior distribution of the unseen meetings\n\n\n Posterior distribution of N' under a known-groups specification with partition induced by locali membership.\n\n\n\n\n\n\n\n\nPosterior distribution of N' under an unknown-groups model with groups \\bm{C} learned from the data."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#thank-you",
+    "href": "post/BNP2026/BNP26_slides.html#thank-you",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nThe main paper is:\nGhilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. arXiv:2510.24526"
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#references",
+    "href": "post/BNP2026/BNP26_slides.html#references",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "References",
+    "text": "References\n\n\n\nCalderoni, F., Brunetto, D., and Piccardi, C. (2017), “Communities in criminal networks: A case study,” Social Networks, 48, 116–125.\n\n\nCatalano, M., Lijoi, A., and Prünster, I. (2021), “Measuring dependence in the Wasserstein distance for Bayesian nonparametric models,” The Annals of Statistics, 49, 2916–2947.\n\n\nColombi, A., Argiento, R., Camerlenghi, F., and Paci, L. (2025), “Hierarchical mixture of finite mixtures,” Bayesian Analysis, (In press).\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prünster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Transactions on Pattern Analysis and Machine Intelligence, 37, 212–229.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” The Annals of Statistics, 1, 209–230.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025), “Bayesian nonparametric modeling of multivariate count data with an unknown number of traits,” arXiv:2510.24526.\n\n\nJames, L. F. (2017), “Bayesian Poisson calculus for latent feature modeling via generalized Indian buffet process priors,” The Annals of Statistics, 45, 2016–2045.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modelling,” Biometrika, 107, 891–906.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2024), “Finite-dimensional discrete random structures and Bayesian clustering,” Journal of the American Statistical Association, 119, 929–941.\n\n\nPerman, M., Pitman, J., and Yor, M. (1992), “Size-biased sampling of Poisson point processes and excursions,” Probability Theory and Related Fields, 92, 21–39.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” Statistics, Probability and Game Theory, 30, 245–267.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” The Annals of Probability, 25, 855–900.\n\n\nShen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), “Double trouble: Predicting new variant counts across two heterogeneous populations,” Bayesian Analysis, In press.\n\n\nWade, S., and Ghahramani, Z. (2018), “Bayesian cluster analysis: point estimation and credible balls (with discussion),” Bayesian Analysis, International Society for Bayesian Analysis, 13, 559–626. https://doi.org/10.1214/17-BA1073."
+  },
+  {
+    "objectID": "post/BNP2026/BNP26_slides.html#hyperparameter-settings-and-practicalities",
+    "href": "post/BNP2026/BNP26_slides.html#hyperparameter-settings-and-practicalities",
+    "title": "BNP modeling of multivariate count data with unknown traits",
+    "section": "Hyperparameter settings and practicalities",
+    "text": "Hyperparameter settings and practicalities\n\nWe consider models for binary traits, where H(\\cdot;\\psi) is the beta distribution with parameters (-\\alpha, \\alpha + \\beta), with \\psi = (\\alpha, \\beta).\nPrior distributions for the model hyperparameters \\lambda, -\\alpha, and \\alpha + \\beta are specified as follows:\n\nThe parameter \\lambda, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters (\\alpha_\\lambda, \\beta_\\lambda).\nThe hyperparameters (\\alpha_\\lambda, \\beta_\\lambda) are chosen so that the prior expected value of N equals \\hat{N} = 1.5k, where k = 44 denotes the observed number of meetings in the dataset, and the prior variance of N is set to 10\\hat{N}.\nFor the parameters (a, b) = (-\\alpha, \\alpha + \\beta) of the beta distribution H, independent gamma priors are assumed with hyperparameters (\\alpha_a, \\beta_a) and (\\alpha_b, \\beta_b), respectively. Specifically, (\\alpha_a, \\beta_a) are set to induce a prior mean of 0.2 for a with a large variance, while (\\alpha_b, \\beta_b) are chosen so that the prior mean of b is 10, also with high variance.\n\nIn the mixture model, we additionally set \\sigma = 0, corresponding to a Dirichlet process, and \\gamma = 1.\nFor both models, posterior inference relies on 10,000 MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2."
+  },
+  {
     "objectID": "post/BNP2026/BNP26.html",
     "href": "post/BNP2026/BNP26.html",
     "title": "BNP modeling of multivariate count data with unknown traits",
@@ -4417,20 +4585,6 @@
     "text": "Random partitions\n\nAmong the various prior for \\bm{C}, we consider the prior induced by a Pitman–Yor process (Perman et al. 1992; Pitman and Yor 1997), which stands for its analytical tractability and whose density is \n\\mathbb{P}(\\bm{C} = \\{C_1,\\dots,C_d\\}) =\\frac{\\prod_{q=1}^{d-1}(\\gamma + q\\sigma)}{(\\gamma + 1)_{n-1}}\\prod_{q=1}^d(1 - \\sigma)_{n_q-1},\n where \\gamma &gt; -\\sigma, \\sigma \\in [0, 1).\nNote that the number of groups 1 \\le d \\le n is itself a random variable and there is no upper bound other than the sample size.\nThe above expression is referred to as exchangeable partition probability function Pitman (1996).\nWhen \\sigma = 0, the Pitman–Yor process reduces to a Dirichlet process (Ferguson 1973).\n\n\nFor a general characterization of exchangeable Gibbs-type random partitions, including the Pitman–Yor as a special case, see De Blasi et al. (2015).\nRecent developments on random partitions with finitely many clusters are discussed in Lijoi et al. (2020), Lijoi et al. (2024), Colombi et al. (2025)."
   },
   {
-    "objectID": "post/BNP2026/BNP26.html#hierarchical-representation-and-mixture-models",
-    "href": "post/BNP2026/BNP26.html#hierarchical-representation-and-mixture-models",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Hierarchical representation and mixture models",
-    "text": "Hierarchical representation and mixture models\n\nWe can equivalently express this model in a hierarchical form \n\\begin{aligned}\n      Z_i \\mid \\mu_i & \\overset{\\textup{ind}}{\\sim} \\textup{CP}(\\mu_i), \\qquad \\mu_i \\mid \\tilde{p} \\overset{\\textup{iid}}{\\sim}  \\tilde{p}, \\qquad i \\ge 1,\\\\\n       \\tilde{p} &\\sim \\mathcal{P},\n\\end{aligned}\n where \\tilde{p} is a discrete random probability measure, and \\mathcal{P} denotes its prior distribution. More precisely, we assume that \n  \\tilde{p}(\\cdot) = \\sum_{h \\geq 1} \\xi_h \\delta_{\\eta_h}(\\cdot),\n where (\\xi_h)_{h \\geq 1} are probability weights, and (\\eta_h)_{h \\geq 1} are random measures \\eta_h = \\sum_{j=1}^N\\phi_{jh}\\delta_{\\tilde{X}_j}.\nThe weights \\xi_h represent prior clustering probabilities, with \\xi_h giving the probability that \\mu_i is drawn from the hth component of \\tilde{p}, i.e., \\mu_i = \\eta_h.\nThey follow the stick-breaking representation of the Pitman–Yor process: \\xi_h = V_h \\prod_{r=1}^{h-1}(1 - V_r), where V_h \\sim \\text{Beta}(1 - \\sigma, \\gamma + h\\sigma) and \\xi_1 = V_1.\nWe assume that any d-dimensional subset of (\\eta_h)_{h \\geq 1} follows (\\tilde{\\eta}_1,\\ldots,\\tilde{\\eta}_d) \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26.html#hierarchical-representation-and-mixture-models-1",
-    "href": "post/BNP2026/BNP26.html#hierarchical-representation-and-mixture-models-1",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Hierarchical representation and mixture models",
-    "text": "Hierarchical representation and mixture models\n\nRemark. The discreteness of \\tilde{p} implies that there is a positive probability that \\mu_i and \\mu_{i'} are be identical, inducing clustering among the observations Z_1,\\dots,Z_n.\nBy employing an exchangeable prior for \\bm{C}, we are implicitly returning to an exchangeable framework \n\\begin{aligned}\n      Z_i \\mid \\tilde{p} &\\overset{\\textup{iid}}{\\sim} \\int \\textup{CP} (\\mu)\\tilde{p} (\\mathrm{d} \\mu) \\\\ % \\textup{CPM} (\\tilde{p}), \\qquad i \\ge 1,\\\\\n       \\tilde{p} &\\sim \\mathcal{P},\n\\end{aligned}\n where the subjects Z_i are conditionally iid draws from a process of counts mixture.\nThis model is far more flexible than the known-group, where Z_i \\mid \\tilde{\\mu} \\overset{\\textup{iid}}{\\sim} \\textup{CP}(\\tilde{\\mu}). Indeed, we have that Z_i(\\cdot) = \\sum_{j=1}^N \\tilde{A}_{ij}\\delta_{\\tilde{X}_j}(\\cdot) and \n\\mathbb{P}(\\tilde{A}_{i1} = \\tilde{a}_1,\\dots,\\tilde{A}_{iN} = \\tilde{a}_N\\mid \\tilde{p}) = \\sum_{h \\ge 1} \\xi_h \\prod_{j=1}^NP(\\tilde{a}_j; \\phi_{jh}), \\qquad i \\ge 1,\n where the random vectors (\\tilde{A}_{i1},\\dots, \\tilde{A}_{iN}) for i \\ge 1 are conditionally iid from the above law.\nThe proposed Bayesian model defined is related to latent class analysis (LCA)."
-  },
-  {
     "objectID": "post/BNP2026/BNP26.html#ignoring-the-unseen-traits",
     "href": "post/BNP2026/BNP26.html#ignoring-the-unseen-traits",
     "title": "BNP modeling of multivariate count data with unknown traits",
@@ -4496,188 +4650,6 @@
   {
     "objectID": "post/BNP2026/BNP26.html#hyperparameter-settings-and-practicalities",
     "href": "post/BNP2026/BNP26.html#hyperparameter-settings-and-practicalities",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Hyperparameter settings and practicalities",
-    "text": "Hyperparameter settings and practicalities\n\nWe consider models for binary traits, where H(\\cdot;\\psi) is the beta distribution with parameters (-\\alpha, \\alpha + \\beta), with \\psi = (\\alpha, \\beta).\nPrior distributions for the model hyperparameters \\lambda, -\\alpha, and \\alpha + \\beta are specified as follows:\n\nThe parameter \\lambda, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters (\\alpha_\\lambda, \\beta_\\lambda).\nThe hyperparameters (\\alpha_\\lambda, \\beta_\\lambda) are chosen so that the prior expected value of N equals \\hat{N} = 1.5k, where k = 44 denotes the observed number of meetings in the dataset, and the prior variance of N is set to 10\\hat{N}.\nFor the parameters (a, b) = (-\\alpha, \\alpha + \\beta) of the beta distribution H, independent gamma priors are assumed with hyperparameters (\\alpha_a, \\beta_a) and (\\alpha_b, \\beta_b), respectively. Specifically, (\\alpha_a, \\beta_a) are set to induce a prior mean of 0.2 for a with a large variance, while (\\alpha_b, \\beta_b) are chosen so that the prior mean of b is 10, also with high variance.\n\nIn the mixture model, we additionally set \\sigma = 0, corresponding to a Dirichlet process, and \\gamma = 1.\nFor both models, posterior inference relies on 10,000 MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#warm-thanks",
-    "href": "post/BNP2026/BNP26_slides.html#warm-thanks",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Warm thanks",
-    "text": "Warm thanks\n\n\nLorenzo Ghilotti (Duke University)\n\n\n\n\n\n\n\n\nFederico Camerlenghi (University of Milano-Bicocca)\n\n\n\n\n\n\n\n\nMichele Guindani (University of California Los Angeles)"
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#partially-exchangeable-trait-allocation-models",
-    "href": "post/BNP2026/BNP26_slides.html#partially-exchangeable-trait-allocation-models",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Partially exchangeable trait allocation models",
-    "text": "Partially exchangeable trait allocation models\n\nLet d be the number of subpopulations (groups), and suppose we observe a sample of size n, with n_q subjects from group q, for q = 1, \\ldots, d, so that \\sum_{q=1}^d n_q = n.\nLet K_n = k denote the total number of traits observed across all subjects and groups. The data can be represented by a collection of matrices \\bm{A}_q, each of dimension n_q \\times k, with entries \nA_{i\\ell q} \\in \\{0, 1, 2, \\ldots\\}, \\qquad i = 1,\\dots, n, \\quad \\ell = 1,\\dots,k, \\quad q=1,\\dots,d,\n denotes the count of trait \\ell for the ith subject in group q.\n\n\n\nLet (\\tilde{X}_j)_{j \\geq 1} denote the sequence of latent traits and let \\tilde{A}_{ijq} \\in \\{0, 1, 2, \\dots\\} be the abundance of trait \\tilde{X}_j for subject i in group q.\nIn a sample of size n, a trait \\tilde{X}_j is observed only if \\tilde{A}_{ijq} &gt; 0 for at least one subject in any group."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#data-from-a-partially-exchangeable-trait-model",
-    "href": "post/BNP2026/BNP26_slides.html#data-from-a-partially-exchangeable-trait-model",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Data from a partially exchangeable trait model",
-    "text": "Data from a partially exchangeable trait model\n\n\nObserved data from a partially exchangeable trait model (d = 2): two matrices of counts \\bm{A}_1 and \\bm{A}_2, each with n_1 = n_2= 5 subjects and K_n = 18 observed traits."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#model-specification-known-groups",
-    "href": "post/BNP2026/BNP26_slides.html#model-specification-known-groups",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Model specification (known groups)",
-    "text": "Model specification (known groups)\n\nThe latent traits \\tilde{A}_{ijq}, given the sequences of parameters (\\theta_{j1})_{j \\geq 1}, \\dots, (\\theta_{jd})_{j \\geq 1}, are conditionally iid across subjects belonging to the same group and for a given trait j and group q, that is \n\\tilde{A}_{ijq} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot\\,; \\theta_{jq}), \\qquad i \\geq 1,\n and they are also conditionally independent across traits for j \\geq 1 and subpopulations q = 1,\\dots,d.\n\n\n\n\nWe organize these quantities into counting measures Z_{iq}(\\cdot) = \\sum_{j \\ge 1} \\tilde{A}_{ijq} \\, \\delta_{\\tilde{X}_j}(\\cdot) for each subject i in subpopulation q, with i \\geq 1 and q = 1, \\ldots, d. Moreover, the parameters (\\theta_{jq})_{j \\ge 1} can be organized in a group-specific discrete measure \\tilde{\\mu}_q(\\cdot) = \\sum_{j \\geq 1} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot) for q=1,\\dots,d.\nThe full Bayesian specification for partially exchangeable data (known groups) is \n\\begin{aligned}\n  Z_{iq} \\mid \\tilde{\\mu}_q & \\overset{\\textup{ind}}{\\sim} \\textup{CP} (\\tilde{\\mu}_q), \\qquad i\\geq 1, \\quad q=1,\\ldots,d,\\\\\n  (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) &\\sim \\mathcal{Q}_d,\n\\end{aligned}\n where \\mathcal{Q}_d denotes the prior distribution."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#prior-specification-i",
-    "href": "post/BNP2026/BNP26_slides.html#prior-specification-i",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Prior specification I",
-    "text": "Prior specification I\n\nWe assume the total number of traits in the population, denoted with N, is finite and random. If K_n = k traits are observed, the number of unseen traits equals N-k.\nHence, there will be a finite collection of latent traits \\tilde{A}_{i1q}, \\dots, \\tilde{A}_{iNq} for each subject and group, with associated parameters \\theta_{1q},\\dots,\\theta_{Nq} for q = 1,\\dots,d.\n\n\n\nMoreover, we assume N is a Poisson random variable with parameter \\lambda&gt;0. In other terms, the group-specific measures \\tilde{\\mu}_q take the form \n  \\tilde{\\mu}_q(\\cdot) = \\sum_{j=1}^{ N} \\theta_{jq} \\delta_{\\tilde{X}_j}(\\cdot), \\qquad N \\sim \\mathrm{Poisson}(\\lambda),\n as q=1,\\ldots,d.\nMoreover, we assume the parameters \\theta_{jq} are iid draws from a probability law H(\\cdot\\,;\\psi), namely \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,\n where \\psi is a common hyperparameter sometimes endowed with a hyperprior."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#prior-specification-ii",
-    "href": "post/BNP2026/BNP26_slides.html#prior-specification-ii",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Prior specification II",
-    "text": "Prior specification II\n\nWe assign a prior to the atoms \\tilde{X}_j, which only label traits; it suffices that they are almost surely distinct, e.g., \\tilde{X}_j \\overset{\\textup{iid}}{\\sim} P_0 with P_0 non-atomic.\nThis specification is linked with infinite-dimensional trait models (James 2017; Shen et al. 2025).\nIndeed, (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) is a finite completely random vector (FCRV), a special case of completely random vectors (Catalano et al. 2021), crucially relying on the Poisson specification for N.\nMore precisely, \\tilde{\\bm{\\mu}} = (\\tilde{\\mu}_1,\\ldots,\\tilde{\\mu}_d) can be interpreted as an FCRV with parameters H^{(d)} =  H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi), \\lambda, and P_0, and we write \n\\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0).\n\n\n\n\n\nThis connection is relevant because as our results follow from a general CRV theory with Lévy intensities of the form \\rho_d(\\mathrm{d}\\theta_1 \\cdots \\mathrm{d}\\theta_d)\\,\\lambda P_0(\\mathrm{d}x), where \\rho_d may be infinite.\nThis framework covers both finite- and infinite-dimensional models; we focus on the finite case \\rho_d = H^{(d)} (a probability distribution), enabling estimation of the total number of traits, while Shen et al. (2025) consider the infinite-dimensional setting."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#the-augmented-likelihood-function",
-    "href": "post/BNP2026/BNP26_slides.html#the-augmented-likelihood-function",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "The augmented likelihood function",
-    "text": "The augmented likelihood function\n\n\n\nIf all traits were known (no missing information), the model would be extremely simple: a collection of independent random variables, with an easily computable augmented likelihood.\nLet \\tilde{\\bm{A}} = (\\tilde{A}_{ijq} : i = 1, \\dots, n_q; j = 1, \\dots, N; q = 1, \\dots , d) denote the latent counts whose realization is \\tilde{\\bm{a}} and let \\mathcal{A} = \\{j : \\sum_{q=1}^d \\sum_{i=1}^{n_q} \\tilde{a}_{ijq} &gt; 0\\} denote the indices of observed traits.\n\n\n\nThe augmented likelihood function \\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}}) given the parameters \\bm{\\theta} = (\\theta_{jq} : j=1,\\dots,N; q = 1,\\dots,d) and N, for the event (\\tilde{\\bm{A}} = \\tilde{\\bm{a}}, K_n = k) is \n\\mathscr{L}(\\bm{\\theta}, N; \\tilde{\\bm{a}})= \\prod_{q=1}^d  \\prod_{j=1}^N\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})= \\left[\\prod_{q=1}^d\\prod_{j \\not\\in \\mathcal{A}} P(0;\\theta_{j q})^{n_q}\\right]\\left[ \\prod_{q=1}^d \\prod_{j\\in \\mathcal{A}}\\prod_{i=1}^{n_q}P(\\tilde{a}_{ijq};\\theta_{j q})\\right].\n In the last term, the first product accounts for unobserved traits, while the second corresponds to observed ones.\n\n\n\nRemark. Combining the augmented likelihood with the iid priors H(\\mathrm{d}\\theta;\\psi), integrating over \\bm{\\theta} and N \\sim \\text{Poisson}(\\lambda), and summing over all \\mathcal{A}, we obtain the marginal probability of (\\bm{A} = \\bm{a}, K_n = k)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#marginal-distribution",
-    "href": "post/BNP2026/BNP26_slides.html#marginal-distribution",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Marginal distribution",
-    "text": "Marginal distribution\n\n\n\nTheorem (Marginal distribution; Ghilotti et al. (2025))\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model, with \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nThe probability that \\bm{Z} displays K_n = k distinct traits with counts \\bm A = \\bm{a} is given by \n\\begin{split}\n        \\pi_n (\\bm{a}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left( 1-\\prod_{q=1}^d  \\int P (0 ; \\theta)^{n_q}\n        H (\\mathrm{d}\\theta; \\psi) \\right) \\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\int  \\prod_{i=1}^{n_q} P (a_{i\\ell q} ; \\theta)  H(\\mathrm{d} \\theta; \\psi),\n\\end{split}\n where n=\\sum_{q=1}^d n_q and \\bm{n}=(n_1, \\ldots , n_d) are the sample sizes.\n\n\n\n\nThe quantity \\pi_n (\\bm{a}; \\lambda, \\psi) is the marginal likelihood of (\\lambda, \\psi) based on the observed data.\nInformally, it can be regarded as the “normalizing constant” of the posterior of \\tilde{\\bm{\\mu}}.\nThis is related to the partially Exchangeable Partition Probability Function (pEPPF) discussed in Franzolini et al. (2025) for partially exchangeable species sampling models."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#example-binary-traits-i",
-    "href": "post/BNP2026/BNP26_slides.html#example-binary-traits-i",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Example: binary traits I",
-    "text": "Example: binary traits I\n\nSuppose the traits are binary and P(a;\\theta) = \\theta^a(1-\\theta)^{1-a}, for a \\in \\{0, 1\\}, meaning that \n\\tilde{A}_{ijq} \\overset{\\textup{ind}}{\\sim} \\text{Bernoulli}(\\theta_{jq}), \\qquad i \\ge 1, \\quad j=1,\\dots,N, \\quad q = 1,\\dots,q.\n\nThe marginal law of \\bm{Z} depends on the sufficient statistic given by the feature frequencies, where M_{\\ell q} := \\sum_{i=1}^{n_q} A_{i\\ell q} (with observed values m_{\\ell q}) are collected in matrices \\bm{M} and \\bm{m}.\n\n\n\nSuppose the prior H(\\cdot;\\psi) is a Beta distribution with parameters \\psi = (-\\alpha, \\alpha+\\beta), i.e., \n\\theta_{jq} \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta), \\qquad j=1,\\dots,N, \\quad q=1,\\dots,d.\n\n\n\n\n\nThen, the marginal probability that \\bm{Z} displays K_n = k distinct traits with feature frequencies \\bm M = \\bm{m} is \n      \\begin{split}\n      \\pi_n (\\bm{m}; \\lambda, \\psi) = \\frac{\\lambda^k}{k!} \\exp \\left\\{ -\\lambda \\left[1- \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}}  \\right]\\right\\} \\prod_{\\ell=1}^k \\prod_{q=1}^d  \\frac{-\\alpha}{(\\beta)_{n_q}}(1-\\alpha)_{m_{\\ell q}-1}(\\alpha + \\beta)_{n_q - m_{\\ell q}},\n      \\end{split}\n where (a)_n = a(a+1)\\cdots(a+n-1) is the ascending factorial with a &gt; 0."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#posterior-distribution",
-    "href": "post/BNP2026/BNP26_slides.html#posterior-distribution",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Posterior distribution",
-    "text": "Posterior distribution\n\n\n\nTheorem (Posterior distribution; Ghilotti et al. (2025))\n\n\nLet \\bm{Z} be a sample from the partially exchangeable model with prior \\tilde{\\bm{\\mu}} \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0) and H^{(d)}(\\cdot\\,;\\psi) = H(\\cdot\\,;\\psi) \\times \\cdots \\times H(\\cdot\\,; \\psi).\nIf \\bm{Z} displays K_n = k distinct traits labeled X_1, \\ldots , X_k, with associated counts \\bm{a}, then the posterior distribution of \\tilde{\\bm\\mu} satisfies the distributional equality        \n(\\tilde{\\mu}_1, \\ldots, \\tilde{\\mu}_d) \\mid \\bm{Z} \\stackrel{d}{=}  (\\mu_1^*, \\ldots, \\mu_d^*) +  (\\mu_1', \\ldots, \\mu_d'),\n where \\bm{\\mu}^*:= (\\mu_1^*, \\ldots, \\mu_d^*) and \\bm{ \\mu}':=(\\mu_1', \\ldots, \\mu_d') are independent random vectors such that\n\nthe components of the vector \\bm{\\mu}^* are defined as \\mu_q^*(\\cdot) = \\sum_{\\ell=1}^k \\theta_{\\ell q}^* \\delta_{X_\\ell}(\\cdot), for q=1, \\ldots , d, and the random variables \\theta^*_{\\ell q} are independent with distribution H_{\\ell q} (\\mathrm{d}\\theta;\\psi) \\propto  \\prod_{i = 1}^{n_q} P(a_{i\\ell q}; \\theta)  H(\\mathrm{d}\\theta; \\psi).\nthe vector (\\mu_1', \\ldots, \\mu_d') is a \\textup{FCRV} (H^{\\prime(d)}, \\lambda',  P_0), where H^{\\prime(d)}(\\cdot\\,;\\psi) = H_1^\\prime(\\cdot\\,;\\psi) \\times \\cdots \\times H_d^\\prime(\\cdot\\,;\\psi), \n       \\lambda' = \\lambda \\prod_{q=1}^d \\int P(0; \\theta)^{n_q} H(\\mathrm{d}\\theta; \\psi),\n       \\quad\n       H'_q(\\mathrm{d}\\theta; \\psi)  \\propto  P(0;  \\theta)^{n_q} H(\\mathrm{d}\\theta;\\psi)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#example-binary-traits-ii",
-    "href": "post/BNP2026/BNP26_slides.html#example-binary-traits-ii",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Example: binary traits II",
-    "text": "Example: binary traits II\n\nSuppose the traits are binary and assuming a beta prior law H(\\cdot;\\psi) with parameters (-\\alpha, \\alpha + \\beta).\nThe posterior distribution of \\tilde{\\bm{\\mu}} given \\bm{Z} decomposes as the sum of \\bm{\\mu}^* and \\bm{\\mu}', as in the general case.\n\nThe probabilities \\theta^*_{\\ell q} of re-observing an old feature X_\\ell are distributed as \n\\theta^*_{\\ell q} \\overset{\\textup{ind}}{\\sim} \\text{Beta}(m_{\\ell q} - \\alpha, \\alpha + \\beta + n_q - m_{\\ell q}),\n for \\ell=1,\\dots,k, q=1,\\dots,d.\nEach \\mu_q^\\prime =  \\sum_{j=1}^{N^\\prime} \\theta_{j q}^\\prime \\delta_{\\tilde{X}_j^\\prime}(\\cdot), which governs unobserved traits in subpopulation q, have a tractable form. In particular, the distribution of the number of unseen features N^\\prime = N - k is \nN^\\prime \\sim \\text{Poisson}(\\lambda^\\prime), \\qquad \\lambda^\\prime =  \\lambda \\prod_{q=1}^d \\frac{(\\alpha + \\beta)_{n_q}}{(\\beta)_{n_q}},\n whereas the probabilities of observing these traits are distributed as \\theta_{jq}^\\prime \\overset{\\textup{iid}}{\\sim} \\text{Beta}(-\\alpha, \\alpha + \\beta + n_q)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#from-known-groups-to-unknown-groups",
-    "href": "post/BNP2026/BNP26_slides.html#from-known-groups-to-unknown-groups",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "From known-groups to unknown groups",
-    "text": "From known-groups to unknown groups\n\nThe partially exchangeable framework accommodates group-structured data by assuming homogeneity within predefined subpopulations.\nIn practice, however, either no grouping is known or the given partition may be inadequate. In such cases, one can instead learn the group structure from the data.\n\n\n\n\nIn the ’Ndrangheta application, affiliates can be grouped by their membership in locali.\nHowever, it is worth assessing whether this external partition reflects the structure of meeting attendance. Discrepancies between inferred clusters and locali may reveal unrecognized collaborations or new cross-group dynamics.\n\n\n\n\nWe consider an unknown-groups setting by embedding the partially exchangeable model in a Bayesian clustering framework, enabling cluster detection while accounting for unseen traits.\nOur goal is to infer a partition of the subjects Z_1, \\ldots, Z_n, rather than relying on predefined groups."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#model-specification-unknown-groups",
-    "href": "post/BNP2026/BNP26_slides.html#model-specification-unknown-groups",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Model specification (unknown groups)",
-    "text": "Model specification (unknown groups)\n\nLet \\bm{C} = {C_1,\\dots,C_d} be a partition of \\{1,\\dots,n\\}, where i,i’ \\in C_q iff subjects i and i’ belong to the same group.\nLet n_q = |C_q| be the size of cluster q, with \\sum_{q=1}^d n_q = n. If \\bm{C} is known, we recover the known-groups setting.\n\n\n\nWhen \\bm{C} is unknown, we place a prior on it, so both the cluster memberships and the number of groups d are random and learned from the data.\nConditionally on \\bm{C} = {C_1,\\dots,C_d}, for a fixed trait j and group q, we assume, as in the known-groups case, that \n\\tilde{A}_{ij} \\mid \\theta_{jq} \\overset{\\textup{iid}}{\\sim} P(\\cdot; \\theta_{jq}),\\qquad i \\in C_q.\n Moreover, as in the known-group case, we let \nN \\sim \\text{Poisson}(\\lambda), \\qquad \\theta_{jq} \\overset{\\textup{iid}}{\\sim} H(\\cdot\\,;\\psi), \\qquad j = 1,\\dots,N, \\quad q=1,\\dots,d,"
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#random-partitions",
-    "href": "post/BNP2026/BNP26_slides.html#random-partitions",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Random partitions",
-    "text": "Random partitions\n\nAmong the various prior for \\bm{C}, we consider the prior induced by a Pitman–Yor process (Perman et al. 1992; Pitman and Yor 1997), which stands for its analytical tractability and whose density is \n\\mathbb{P}(\\bm{C} = \\{C_1,\\dots,C_d\\}) =\\frac{\\prod_{q=1}^{d-1}(\\gamma + q\\sigma)}{(\\gamma + 1)_{n-1}}\\prod_{q=1}^d(1 - \\sigma)_{n_q-1},\n where \\gamma &gt; -\\sigma, \\sigma \\in [0, 1).\nNote that the number of groups 1 \\le d \\le n is itself a random variable and there is no upper bound other than the sample size.\nThe above expression is referred to as exchangeable partition probability function Pitman (1996).\nWhen \\sigma = 0, the Pitman–Yor process reduces to a Dirichlet process (Ferguson 1973).\n\n\n\nFor a general characterization of exchangeable Gibbs-type random partitions, including the Pitman–Yor as a special case, see De Blasi et al. (2015).\nRecent developments on random partitions with finitely many clusters are discussed in Lijoi et al. (2020), Lijoi et al. (2024), Colombi et al. (2025)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#hierarchical-representation-and-mixture-models",
-    "href": "post/BNP2026/BNP26_slides.html#hierarchical-representation-and-mixture-models",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Hierarchical representation and mixture models",
-    "text": "Hierarchical representation and mixture models\n\nWe can equivalently express this model in a hierarchical form \n\\begin{aligned}\n      Z_i \\mid \\mu_i & \\overset{\\textup{ind}}{\\sim} \\textup{CP}(\\mu_i), \\qquad \\mu_i \\mid \\tilde{p} \\overset{\\textup{iid}}{\\sim}  \\tilde{p}, \\qquad i \\ge 1,\\\\\n       \\tilde{p} &\\sim \\mathcal{P},\n\\end{aligned}\n where \\tilde{p} is a discrete random probability measure, and \\mathcal{P} denotes its prior distribution. More precisely, we assume that \n  \\tilde{p}(\\cdot) = \\sum_{h \\geq 1} \\xi_h \\delta_{\\eta_h}(\\cdot),\n where (\\xi_h)_{h \\geq 1} are probability weights, and (\\eta_h)_{h \\geq 1} are random measures \\eta_h = \\sum_{j=1}^N\\phi_{jh}\\delta_{\\tilde{X}_j}.\nThe weights \\xi_h represent prior clustering probabilities, with \\xi_h giving the probability that \\mu_i is drawn from the hth component of \\tilde{p}, i.e., \\mu_i = \\eta_h.\nThey follow the stick-breaking representation of the Pitman–Yor process: \\xi_h = V_h \\prod_{r=1}^{h-1}(1 - V_r), where V_h \\sim \\text{Beta}(1 - \\sigma, \\gamma + h\\sigma) and \\xi_1 = V_1.\nWe assume that any d-dimensional subset of (\\eta_h)_{h \\geq 1} follows (\\tilde{\\eta}_1,\\ldots,\\tilde{\\eta}_d) \\sim \\textup{FCRV}(H^{(d)}, \\lambda, P_0)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#hierarchical-representation-and-mixture-models-1",
-    "href": "post/BNP2026/BNP26_slides.html#hierarchical-representation-and-mixture-models-1",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Hierarchical representation and mixture models",
-    "text": "Hierarchical representation and mixture models\n\nRemark. The discreteness of \\tilde{p} implies that there is a positive probability that \\mu_i and \\mu_{i'} are be identical, inducing clustering among the observations Z_1,\\dots,Z_n.\nBy employing an exchangeable prior for \\bm{C}, we are implicitly returning to an exchangeable framework \n\\begin{aligned}\n      Z_i \\mid \\tilde{p} &\\overset{\\textup{iid}}{\\sim} \\int \\textup{CP} (\\mu)\\tilde{p} (\\mathrm{d} \\mu) \\\\ % \\textup{CPM} (\\tilde{p}), \\qquad i \\ge 1,\\\\\n       \\tilde{p} &\\sim \\mathcal{P},\n\\end{aligned}\n where the subjects Z_i are conditionally iid draws from a process of counts mixture.\nThis model is far more flexible than the known-group, where Z_i \\mid \\tilde{\\mu} \\overset{\\textup{iid}}{\\sim} \\textup{CP}(\\tilde{\\mu}). Indeed, we have that Z_i(\\cdot) = \\sum_{j=1}^N \\tilde{A}_{ij}\\delta_{\\tilde{X}_j}(\\cdot) and \n\\mathbb{P}(\\tilde{A}_{i1} = \\tilde{a}_1,\\dots,\\tilde{A}_{iN} = \\tilde{a}_N\\mid \\tilde{p}) = \\sum_{h \\ge 1} \\xi_h \\prod_{j=1}^NP(\\tilde{a}_j; \\phi_{jh}), \\qquad i \\ge 1,\n where the random vectors (\\tilde{A}_{i1},\\dots, \\tilde{A}_{iN}) for i \\ge 1 are conditionally iid from the above law.\nThe proposed Bayesian model defined is related to latent class analysis (LCA)."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#ignoring-the-unseen-traits",
-    "href": "post/BNP2026/BNP26_slides.html#ignoring-the-unseen-traits",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Ignoring the unseen traits",
-    "text": "Ignoring the unseen traits\n\nHowever, LCA assume that N is a known constant, meaning that all traits are known in advance, including those equal to zero for all subjects. Ignoring unseen traits can skew the analysis.\nConsider the following predictive allocation probabilities: \np_{iq} = \\mathbb{P}(\\mu_i = \\tilde{\\mu}_q \\mid \\bm{Z}, \\bm{\\mu}_{-i}), \\qquad p_{i,\\text{new}} = \\mathbb{P}(\\mu_i = \\text{``new''} \\mid \\bm{Z}, \\bm{\\mu}_{-i}), \\qquad i=1,\\dots,n,\n where \\bm{\\mu}_{-i} = (\\mu_1,\\dots\\mu_{i-1},\\mu_{i+1},\\dots,\\mu_n) with d_{-i} distinct values \\tilde{\\mu}_1,\\dots,\\tilde{\\mu}_{d_{-i}}, for q = 1,\\dots,d_{-i}.\nWe similarly define p_{iq}^* and p_{i,\\text{new}}^* for the naïve model in which it is wrongly assumed that all traits are observed with N = k.\n\n\n\n\nProposition (Ghilotti et al. 2025)\n\n\nThe predictive allocation probabilities for a generic subject i under the proposed and a naïve model in which it is assumed that there are no unseen traits, with N = k, satisfy the inequality: \n\\frac{p_{i,\\textup{new}}}{p_{iq}} &lt;  \\frac{p_{i,\\textup{new}}^*}{p_{iq}^*}, \\qquad q=1,\\dots,d_{-i}, \\quad i=1,\\dots,n."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#markov-chain-monte-carlo-algorithm",
-    "href": "post/BNP2026/BNP26_slides.html#markov-chain-monte-carlo-algorithm",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Markov Chain Monte Carlo algorithm",
-    "text": "Markov Chain Monte Carlo algorithm\n\nPosterior inference for the partition \\bm{C} rely on a simple Gibbs sampling algorithm.\n\n\n\nWe iteratively sample the labels of \\mu_i \\mid \\bm Z, \\bm{\\mu}_{-i} for i=1,\\dots,n according to the full conditional probabilities p_{iq} and p_{i,\\text{new}}, which are proportional to \np_{iq} \\propto \\frac{n_{q,-i} - \\sigma}{n + \\gamma - 1}\\,\\pi_n(\\bm{a}_{iq}; \\lambda, \\psi), \\qquad p_{i,\\textup{new}} \\propto \\frac{\\gamma + d_{-i}\\sigma}{n+\\gamma-1}\\,\\pi_n(\\bm{a}_{i,\\textup{new}}; \\lambda, \\psi),\n where \\bm{a}_{iq} denotes the observed trait values organized according to the partition \\bm{C}_{-i}, with subject i allocated to cluster q. Similarly, \\bm{a}_{i,\\textup{new}} corresponds to the trait values organized according to the partition \\bm{C}_{-i} when subject i is assigned to a new cluster.\n\n\n\n\nThis scheme is straightforward thanks to the closed-form expression of \\pi_n(\\bm a; \\lambda, \\psi).\nWhen hyperpriors are placed on the parameters \\lambda and \\psi, the MCMC scheme described above is coupled with updates of \\lambda and \\psi from their respective full conditional distributions.\n\n\n\n\nAny other quantity of interest, such as N or \\theta_{jq}, can be easily sampled as a post-processing step exploiting the posterior representation."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#operazione-infinito-dataset",
-    "href": "post/BNP2026/BNP26_slides.html#operazione-infinito-dataset",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Operazione Infinito dataset",
-    "text": "Operazione Infinito dataset\n\nThe data stem from Operazione Infinito (Calderoni et al. 2017), a six-year-long, large-scale law enforcement operation aimed at monitoring and dismantling the core structure of La Lombardia, the highly pervasive branch of the ’Ndrangheta Mafia operating in the Milan area.\n\n\n\nThe attendance of the n affiliates at k distinct meetings can be represented by the n \\times k binary matrix \\bm{A}, where each entry A_{i\\ell} \\in \\{0, 1\\} indicates whether individual i attended meeting \\ell.\nWe are also interested in understanding the implications on the adjacency matrix \n\\bm{W} = \\bm{A}\\bm{A}^T,\n whose generic entry W_{ii'} represents the number of meetings jointly attended by affiliates i and i'.\n\n\n\n\nWe focus on the d = 5 most populated locali, with sizes n_1 = 16,n_2 = 14, n_3 = 23, n_4 = 15, n_5 = 16, of the Infinito dataset, for a total of n = 84 affiliates and k = 44 recorded meetings among them.\nAffiliates’ locale membership defines a natural five-group partition, which we compare with the groups inferred from the mixture model."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#adjacency-matrix-of-the-infinito-network",
-    "href": "post/BNP2026/BNP26_slides.html#adjacency-matrix-of-the-infinito-network",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Adjacency matrix of the Infinito network",
-    "text": "Adjacency matrix of the Infinito network\n\n\nObserved adjacency matrix, partitioned according to the VI clustering (Wade and Ghahramani 2018). Side colors correspond to the locali, with darker/lighter shades denoting bosses/affiliates."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#estimated-posterior-probabilities-of-co-occurrence",
-    "href": "post/BNP2026/BNP26_slides.html#estimated-posterior-probabilities-of-co-occurrence",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Estimated posterior probabilities of co-occurrence",
-    "text": "Estimated posterior probabilities of co-occurrence\n\n\n Posterior expectation under a known-groups specification with partition induced by locali membership.\n\n\n\n\n\n\n\n\nPosterior expectation under an unknown-groups model with groups \\bm{C} learned from the data."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#posterior-number-of-clusters",
-    "href": "post/BNP2026/BNP26_slides.html#posterior-number-of-clusters",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Posterior number of clusters",
-    "text": "Posterior number of clusters\n\n\nPosterior distribution of the number of clusters d in the mixture model.\nIn particular, such a distribution is strictly greater than 5 (i.e. the number of locali), consolidating the idea that locali do not fully capture the network structure."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#posterior-distribution-of-the-unseen-meetings",
-    "href": "post/BNP2026/BNP26_slides.html#posterior-distribution-of-the-unseen-meetings",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Posterior distribution of the unseen meetings",
-    "text": "Posterior distribution of the unseen meetings\n\n\n Posterior distribution of N' under a known-groups specification with partition induced by locali membership.\n\n\n\n\n\n\n\n\nPosterior distribution of N' under an unknown-groups model with groups \\bm{C} learned from the data."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#thank-you",
-    "href": "post/BNP2026/BNP26_slides.html#thank-you",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "Thank you!",
-    "text": "Thank you!\n\nThe main paper is:\nGhilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. arXiv:2510.24526"
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#references",
-    "href": "post/BNP2026/BNP26_slides.html#references",
-    "title": "BNP modeling of multivariate count data with unknown traits",
-    "section": "References",
-    "text": "References\n\n\n\nCalderoni, F., Brunetto, D., and Piccardi, C. (2017), “Communities in criminal networks: A case study,” Social Networks, 48, 116–125.\n\n\nCatalano, M., Lijoi, A., and Prünster, I. (2021), “Measuring dependence in the Wasserstein distance for Bayesian nonparametric models,” The Annals of Statistics, 49, 2916–2947.\n\n\nColombi, A., Argiento, R., Camerlenghi, F., and Paci, L. (2025), “Hierarchical mixture of finite mixtures,” Bayesian Analysis, (In press).\n\n\nDe Blasi, P., Favaro, S., Lijoi, A., Mena, R. H., Prünster, I., and Ruggiero, M. (2015), “Are Gibbs-type priors the most natural generalization of the Dirichlet process?” IEEE Transactions on Pattern Analysis and Machine Intelligence, 37, 212–229.\n\n\nFerguson, T. S. (1973), “A Bayesian analysis of some nonparametric problems,” The Annals of Statistics, 1, 209–230.\n\n\nFranzolini, B., Lijoi, A., Prünster, I., and Rebaudo, G. (2025), “Multivariate species sampling models,” arXiv:2503.24004.\n\n\nGhilotti, L., Camerlenghi, F., Rigon, T., and Guindani, M. (2025), “Bayesian nonparametric modeling of multivariate count data with an unknown number of traits,” arXiv:2510.24526.\n\n\nJames, L. F. (2017), “Bayesian Poisson calculus for latent feature modeling via generalized Indian buffet process priors,” The Annals of Statistics, 45, 2016–2045.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2020), “The Pitman–Yor multinomial process for mixture modelling,” Biometrika, 107, 891–906.\n\n\nLijoi, A., Prünster, I., and Rigon, T. (2024), “Finite-dimensional discrete random structures and Bayesian clustering,” Journal of the American Statistical Association, 119, 929–941.\n\n\nPerman, M., Pitman, J., and Yor, M. (1992), “Size-biased sampling of Poisson point processes and excursions,” Probability Theory and Related Fields, 92, 21–39.\n\n\nPitman, J. (1996), “Some developments of the Blackwell-MacQueen urn scheme,” Statistics, Probability and Game Theory, 30, 245–267.\n\n\nPitman, J., and Yor, M. (1997), “The two-parameter Poisson-Dirichlet distribution derived from a stable subordinator,” The Annals of Probability, 25, 855–900.\n\n\nShen, Y., Masoero, L., Schraiber, J. G., and Broderick, T. (2025), “Double trouble: Predicting new variant counts across two heterogeneous populations,” Bayesian Analysis, In press.\n\n\nWade, S., and Ghahramani, Z. (2018), “Bayesian cluster analysis: point estimation and credible balls (with discussion),” Bayesian Analysis, International Society for Bayesian Analysis, 13, 559–626. https://doi.org/10.1214/17-BA1073."
-  },
-  {
-    "objectID": "post/BNP2026/BNP26_slides.html#hyperparameter-settings-and-practicalities",
-    "href": "post/BNP2026/BNP26_slides.html#hyperparameter-settings-and-practicalities",
     "title": "BNP modeling of multivariate count data with unknown traits",
     "section": "Hyperparameter settings and practicalities",
     "text": "Hyperparameter settings and practicalities\n\nWe consider models for binary traits, where H(\\cdot;\\psi) is the beta distribution with parameters (-\\alpha, \\alpha + \\beta), with \\psi = (\\alpha, \\beta).\nPrior distributions for the model hyperparameters \\lambda, -\\alpha, and \\alpha + \\beta are specified as follows:\n\nThe parameter \\lambda, governing the Poisson-distributed total number of meetings, is assigned a gamma prior with parameters (\\alpha_\\lambda, \\beta_\\lambda).\nThe hyperparameters (\\alpha_\\lambda, \\beta_\\lambda) are chosen so that the prior expected value of N equals \\hat{N} = 1.5k, where k = 44 denotes the observed number of meetings in the dataset, and the prior variance of N is set to 10\\hat{N}.\nFor the parameters (a, b) = (-\\alpha, \\alpha + \\beta) of the beta distribution H, independent gamma priors are assumed with hyperparameters (\\alpha_a, \\beta_a) and (\\alpha_b, \\beta_b), respectively. Specifically, (\\alpha_a, \\beta_a) are set to induce a prior mean of 0.2 for a with a large variance, while (\\alpha_b, \\beta_b) are chosen so that the prior mean of b is 10, also with high variance.\n\nIn the mixture model, we additionally set \\sigma = 0, corresponding to a Dirichlet process, and \\gamma = 1.\nFor both models, posterior inference relies on 10,000 MCMC iterations, with the first 1,000 samples discarded as burn-in and a thinning interval of 2."

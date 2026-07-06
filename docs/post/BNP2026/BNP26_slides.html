@@ -510,39 +510,39 @@ N \sim \text{Poisson}(\lambda), \qquad \theta_{jq} \overset{\textup{iid}}{\sim} 
 <li><p>For a general characterization of exchangeable <span class="blue">Gibbs-type random partitions</span>, including the Pitman–Yor as a special case, see <span class="citation" data-cites="DeBlasi2015">De Blasi et al. (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span>.</p></li>
 <li><p>Recent developments on random partitions with finitely many clusters are discussed in <span class="citation" data-cites="Lijoi2020">Lijoi et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>, <span class="citation" data-cites="Lijoi2024">Lijoi et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>, <span class="citation" data-cites="Colombi2025">Colombi et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>.</p></li>
 </ul>
+<!-- ## Hierarchical representation and mixture models -->
+<!-- - We can equivalently express this model in a [hierarchical]{.orange} form -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!--         Z_i \mid \mu_i & \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\ -->
+<!--          \tilde{p} &\sim \mathcal{P}, -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where $\tilde{p}$ is a [discrete random probability measure]{.blue}, and $\mathcal{P}$ denotes its prior distribution. More precisely, we assume that -->
+<!-- $$ -->
+<!--     \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot), -->
+<!-- $$ -->
+<!-- where $(\xi_h)_{h \geq 1}$ are probability weights, and $(\eta_h)_{h \geq 1}$ are random measures $\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}$.  -->
+<!-- - The weights $\xi_h$ represent prior clustering probabilities, with $\xi_h$ giving the probability that $\mu_i$ is drawn from the $h$th component of $\tilde{p}$, i.e., $\mu_i = \eta_h$.  -->
+<!-- - They follow the [stick-breaking]{.orange} representation of the Pitman–Yor process: $\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)$, where $V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)$ and $\xi_1 = V_1$. -->
+<!-- - We assume that any $d$-dimensional subset of $(\eta_h)_{h \geq 1}$ follows $(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$.  -->
+<!-- ## Hierarchical representation and mixture models -->
+<!-- - [Remark]{.orange}. The discreteness of $\tilde{p}$ implies that there is a positive probability that $\mu_i$ and $\mu_{i'}$ are be identical, inducing [clustering]{.blue} among the observations $Z_1,\dots,Z_n$.  -->
+<!-- - By employing an exchangeable prior for $\bm{C}$, we are implicitly returning to an exchangeable framework -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!--         Z_i \mid \tilde{p} &\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\ -->
+<!--          \tilde{p} &\sim \mathcal{P}, -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where the subjects $Z_i$ are conditionally iid draws from a process of counts [mixture]{.blue}.  -->
+<!-- - This model is far [more flexible]{.orange} than the known-group, where $Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})$. Indeed, we have that $Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)$ and -->
+<!-- $$ -->
+<!-- \mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1, -->
+<!-- $$ -->
+<!-- where the random vectors $(\tilde{A}_{i1},\dots, \tilde{A}_{iN})$ for $i \ge 1$ are conditionally iid from the above law.  -->
+<!-- - The proposed Bayesian model defined is related to [latent class analysis]{.blue} (LCA).  -->
 </div>
-</section>
-<section id="hierarchical-representation-and-mixture-models" class="slide level2 center">
-<h2>Hierarchical representation and mixture models</h2>
-<ul>
-<li><p>We can equivalently express this model in a <span class="orange">hierarchical</span> form <span class="math display">
-\begin{aligned}
-      Z_i \mid \mu_i &amp; \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\
-       \tilde{p} &amp;\sim \mathcal{P},
-\end{aligned}
-</span> where <span class="math inline">\tilde{p}</span> is a <span class="blue">discrete random probability measure</span>, and <span class="math inline">\mathcal{P}</span> denotes its prior distribution. More precisely, we assume that <span class="math display">
-  \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot),
-</span> where <span class="math inline">(\xi_h)_{h \geq 1}</span> are probability weights, and <span class="math inline">(\eta_h)_{h \geq 1}</span> are random measures <span class="math inline">\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}</span>.</p></li>
-<li><p>The weights <span class="math inline">\xi_h</span> represent prior clustering probabilities, with <span class="math inline">\xi_h</span> giving the probability that <span class="math inline">\mu_i</span> is drawn from the <span class="math inline">h</span>th component of <span class="math inline">\tilde{p}</span>, i.e., <span class="math inline">\mu_i = \eta_h</span>.</p></li>
-<li><p>They follow the <span class="orange">stick-breaking</span> representation of the Pitman–Yor process: <span class="math inline">\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)</span>, where <span class="math inline">V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)</span> and <span class="math inline">\xi_1 = V_1</span>.</p></li>
-<li><p>We assume that any <span class="math inline">d</span>-dimensional subset of <span class="math inline">(\eta_h)_{h \geq 1}</span> follows <span class="math inline">(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)</span>.</p></li>
-</ul>
-</section>
-<section id="hierarchical-representation-and-mixture-models-1" class="slide level2 center">
-<h2>Hierarchical representation and mixture models</h2>
-<ul>
-<li><p><span class="orange">Remark</span>. The discreteness of <span class="math inline">\tilde{p}</span> implies that there is a positive probability that <span class="math inline">\mu_i</span> and <span class="math inline">\mu_{i'}</span> are be identical, inducing <span class="blue">clustering</span> among the observations <span class="math inline">Z_1,\dots,Z_n</span>.</p></li>
-<li><p>By employing an exchangeable prior for <span class="math inline">\bm{C}</span>, we are implicitly returning to an exchangeable framework <span class="math display">
-\begin{aligned}
-      Z_i \mid \tilde{p} &amp;\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\
-       \tilde{p} &amp;\sim \mathcal{P},
-\end{aligned}
-</span> where the subjects <span class="math inline">Z_i</span> are conditionally iid draws from a process of counts <span class="blue">mixture</span>.</p></li>
-<li><p>This model is far <span class="orange">more flexible</span> than the known-group, where <span class="math inline">Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})</span>. Indeed, we have that <span class="math inline">Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)</span> and <span class="math display">
-\mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1,
-</span> where the random vectors <span class="math inline">(\tilde{A}_{i1},\dots, \tilde{A}_{iN})</span> for <span class="math inline">i \ge 1</span> are conditionally iid from the above law.</p></li>
-<li><p>The proposed Bayesian model defined is related to <span class="blue">latent class analysis</span> (LCA).</p></li>
-</ul>
 </section>
 <section id="ignoring-the-unseen-traits" class="slide level2 center">
 <h2>Ignoring the unseen traits</h2>
@@ -671,7 +671,7 @@ p_{iq} \propto \frac{n_{q,-i} - \sigma}{n + \gamma - 1}\,\pi_n(\bm{a}_{iq}; \lam
 <img data-src="img/QR.png" class="quarto-figure quarto-figure-center r-stretch" style="width:2.5in"><p>The <span class="orange">main paper</span> is:</p>
 <p>Ghilotti, L., Rigon, T., Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. <em>arXiv:2510.24526</em></p>
 </section>
-<section id="references" class="slide level2 unnumbered smaller scrollable">
+<section id="references" class="slide level2 smaller scrollable" data-visibility="uncounted">
 <h2>References</h2>
 <div style="font-size: 50%;">
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -723,7 +723,7 @@ Wade, S., and Ghahramani, Z. (2018), <span>“<span class="nocase">Bayesian clus
 </div>
 </div>
 </section>
-<section id="hyperparameter-settings-and-practicalities" class="slide level2 center">
+<section id="hyperparameter-settings-and-practicalities" class="slide level2 center" data-visibility="uncounted">
 <h2>Hyperparameter settings and practicalities</h2>
 <ul>
 <li><p>We consider models for <span class="orange">binary traits</span>, where <span class="math inline">H(\cdot;\psi)</span> is the beta distribution with parameters <span class="math inline">(-\alpha, \alpha + \beta)</span>, with <span class="math inline">\psi = (\alpha, \beta)</span>.</p></li>

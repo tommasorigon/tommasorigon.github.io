@@ -412,48 +412,48 @@ where $\gamma > -\sigma$, $\sigma \in [0, 1)$.
 
 - Recent developments on random partitions with finitely many clusters are discussed in @Lijoi2020, @Lijoi2024, @Colombi2025. 
 
-## Hierarchical representation and mixture models
+<!-- ## Hierarchical representation and mixture models -->
 
-- We can equivalently express this model in a [hierarchical]{.orange} form
-$$
-\begin{aligned}
-        Z_i \mid \mu_i & \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\
-         \tilde{p} &\sim \mathcal{P},
-\end{aligned}
-$$
-where $\tilde{p}$ is a [discrete random probability measure]{.blue}, and $\mathcal{P}$ denotes its prior distribution. More precisely, we assume that
-$$
-    \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot),
-$$
-where $(\xi_h)_{h \geq 1}$ are probability weights, and $(\eta_h)_{h \geq 1}$ are random measures $\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}$. 
+<!-- - We can equivalently express this model in a [hierarchical]{.orange} form -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!--         Z_i \mid \mu_i & \overset{\textup{ind}}{\sim} \textup{CP}(\mu_i), \qquad \mu_i \mid \tilde{p} \overset{\textup{iid}}{\sim}  \tilde{p}, \qquad i \ge 1,\\ -->
+<!--          \tilde{p} &\sim \mathcal{P}, -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where $\tilde{p}$ is a [discrete random probability measure]{.blue}, and $\mathcal{P}$ denotes its prior distribution. More precisely, we assume that -->
+<!-- $$ -->
+<!--     \tilde{p}(\cdot) = \sum_{h \geq 1} \xi_h \delta_{\eta_h}(\cdot), -->
+<!-- $$ -->
+<!-- where $(\xi_h)_{h \geq 1}$ are probability weights, and $(\eta_h)_{h \geq 1}$ are random measures $\eta_h = \sum_{j=1}^N\phi_{jh}\delta_{\tilde{X}_j}$.  -->
 
-- The weights $\xi_h$ represent prior clustering probabilities, with $\xi_h$ giving the probability that $\mu_i$ is drawn from the $h$th component of $\tilde{p}$, i.e., $\mu_i = \eta_h$. 
+<!-- - The weights $\xi_h$ represent prior clustering probabilities, with $\xi_h$ giving the probability that $\mu_i$ is drawn from the $h$th component of $\tilde{p}$, i.e., $\mu_i = \eta_h$.  -->
 
-- They follow the [stick-breaking]{.orange} representation of the Pitman–Yor process: $\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)$, where $V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)$ and $\xi_1 = V_1$.
+<!-- - They follow the [stick-breaking]{.orange} representation of the Pitman–Yor process: $\xi_h = V_h \prod_{r=1}^{h-1}(1 - V_r)$, where $V_h \sim \text{Beta}(1 - \sigma, \gamma + h\sigma)$ and $\xi_1 = V_1$. -->
 
-- We assume that any $d$-dimensional subset of $(\eta_h)_{h \geq 1}$ follows $(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$. 
+<!-- - We assume that any $d$-dimensional subset of $(\eta_h)_{h \geq 1}$ follows $(\tilde{\eta}_1,\ldots,\tilde{\eta}_d) \sim \textup{FCRV}(H^{(d)}, \lambda, P_0)$.  -->
 
 
-## Hierarchical representation and mixture models
+<!-- ## Hierarchical representation and mixture models -->
 
-- [Remark]{.orange}. The discreteness of $\tilde{p}$ implies that there is a positive probability that $\mu_i$ and $\mu_{i'}$ are be identical, inducing [clustering]{.blue} among the observations $Z_1,\dots,Z_n$. 
+<!-- - [Remark]{.orange}. The discreteness of $\tilde{p}$ implies that there is a positive probability that $\mu_i$ and $\mu_{i'}$ are be identical, inducing [clustering]{.blue} among the observations $Z_1,\dots,Z_n$.  -->
 
-- By employing an exchangeable prior for $\bm{C}$, we are implicitly returning to an exchangeable framework
-$$
-\begin{aligned}
-        Z_i \mid \tilde{p} &\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\
-         \tilde{p} &\sim \mathcal{P},
-\end{aligned}
-$$
-where the subjects $Z_i$ are conditionally iid draws from a process of counts [mixture]{.blue}. 
+<!-- - By employing an exchangeable prior for $\bm{C}$, we are implicitly returning to an exchangeable framework -->
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!--         Z_i \mid \tilde{p} &\overset{\textup{iid}}{\sim} \int \textup{CP} (\mu)\tilde{p} (\mathrm{d} \mu) \\ % \textup{CPM} (\tilde{p}), \qquad i \ge 1,\\ -->
+<!--          \tilde{p} &\sim \mathcal{P}, -->
+<!-- \end{aligned} -->
+<!-- $$ -->
+<!-- where the subjects $Z_i$ are conditionally iid draws from a process of counts [mixture]{.blue}.  -->
 
-- This model is far [more flexible]{.orange} than the known-group, where $Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})$. Indeed, we have that $Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)$ and
-$$
-\mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1,
-$$
-where the random vectors $(\tilde{A}_{i1},\dots, \tilde{A}_{iN})$ for $i \ge 1$ are conditionally iid from the above law. 
+<!-- - This model is far [more flexible]{.orange} than the known-group, where $Z_i \mid \tilde{\mu} \overset{\textup{iid}}{\sim} \textup{CP}(\tilde{\mu})$. Indeed, we have that $Z_i(\cdot) = \sum_{j=1}^N \tilde{A}_{ij}\delta_{\tilde{X}_j}(\cdot)$ and -->
+<!-- $$ -->
+<!-- \mathbb{P}(\tilde{A}_{i1} = \tilde{a}_1,\dots,\tilde{A}_{iN} = \tilde{a}_N\mid \tilde{p}) = \sum_{h \ge 1} \xi_h \prod_{j=1}^NP(\tilde{a}_j; \phi_{jh}), \qquad i \ge 1, -->
+<!-- $$ -->
+<!-- where the random vectors $(\tilde{A}_{i1},\dots, \tilde{A}_{iN})$ for $i \ge 1$ are conditionally iid from the above law.  -->
 
-- The proposed Bayesian model defined is related to [latent class analysis]{.blue} (LCA). 
+<!-- - The proposed Bayesian model defined is related to [latent class analysis]{.blue} (LCA).  -->
 
 ## Ignoring the unseen traits
 
@@ -609,7 +609,7 @@ The [main paper]{.orange} is:
 
 Ghilotti, L., Rigon, T.,  Camerlenghi F., and Guindani M. (2025). Bayesian nonparametric modeling of multivariate count data with an unknown number of traits. *arXiv:2510.24526*
 
-## References {.unnumbered}
+## References  {visibility="uncounted"}
 
 <div style="font-size: 50%;">
 
@@ -618,7 +618,7 @@ Ghilotti, L., Rigon, T.,  Camerlenghi F., and Guindani M. (2025). Bayesian nonpa
 
 </div>
 
-## Hyperparameter settings and practicalities
+## Hyperparameter settings and practicalities  {visibility="uncounted"}
 
 - We consider models for [binary traits]{.orange}, where $H(\cdot;\psi)$ is the beta distribution with parameters $(-\alpha, \alpha + \beta)$, with $\psi = (\alpha, \beta)$. 
 

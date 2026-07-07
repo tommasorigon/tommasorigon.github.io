@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  18 JUN 2026 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  7 JUL 2026 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,19 +922,19 @@ Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
 (rerunfilecheck)             Checksum: B77F679191450B44ACD67ED7BEDEAC63;1912.
  ) 
 Here is how much of TeX's memory you used:
- 16189 strings out of 473190
- 265675 string characters out of 5715800
+ 16185 strings out of 473190
+ 265541 string characters out of 5715800
  714459 words of memory out of 5000000
  38864 multiletter control sequences out of 15000+600000
- 607954 words of font info for 232 fonts, out of 8000000 for 9000
+ 607603 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,13n,107p,1005b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,13n,107p,1005b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/libertinus-type1/Liber
 tinusSerif-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libe
 rtinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2025/texmf-dist/fon
 ts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb>
-Output written on cv_Rigon.pdf (8 pages, 525798 bytes).
+Output written on cv_Rigon.pdf (8 pages, 525910 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams

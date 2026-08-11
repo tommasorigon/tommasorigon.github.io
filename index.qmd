@@ -26,7 +26,7 @@ about:
 
 ## About me {.central}
 
-I am an Associate Professor of Statistical Science (STAT-01/A) at the [department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
+I am an Associate Professor of Statistical Science (STAT-01/A) at the [Department of Economics, Management and Statistics](https://www.dems.unimib.it/en) (DEMS) of [University of Milano-Bicocca](https://en.unimib.it). I currently live in Milan, Italy.
 
 I am a member of the [BayesLab](https://bayeslab.unibocconi.eu) at the Bocconi Institute for Data Science and Analytics (BIDSA), and the [MIDAS Complex Data Modeling Research Network](https://midas.mat.uc.cl/network/).
 
@@ -34,7 +34,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [Research interests]{.blue}: applied Bayesian modeling; Bayesian clustering; Bayesian nonparametrics; computational statistics; generalized Bayes; functional data analysis; mixture models; species sampling models.
 
-[E-mail]{.blue}:  tommaso.rigon@unimib.it
+[E-mail]{.blue}: tommaso.rigon@unimib.it
 
 ----------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 [[2025]{.blue}] [Bnews Bicocca (ITA)]{.blue}. [*Statistica, tripletta di premi internazionali per il ricercatore di Bicocca Tommaso Rigon*](https://bnews.unimib.it/blog/statistica-premi-internazionali-tommaso-rigon/)
 
-[[2024]{.blue}] [Blackwell and Rosenbluth Award 2024]{.blue}. *The award aims at recognizing outstanding junior Bayesian researchers based on their overall contribution to the field and to the community*. Junior Section of International Society for Bayesian Analysis (j-ISBA). [[Award](https://j-isba.github.io/blackwell-rosenbluth.html)] [[News](https://stat.duke.edu/news/bu-rigon-win-blackwell-rosenbluth-awards)]
+[[2024]{.blue}] [Blackwell and Rosenbluth Award 2024]{.blue}. *The award aims to recognize outstanding junior Bayesian researchers based on their overall contribution to the field and to the community*. Junior Section of International Society for Bayesian Analysis (j-ISBA). [[Award](https://j-isba.github.io/blackwell-rosenbluth.html)] [[News](https://stat.duke.edu/news/bu-rigon-win-blackwell-rosenbluth-awards)]
 
 <!-- [[2024]{.blue}] I am part of the [j-ISBA Peer Mentoring]{.blue}, which is meant to provide advice on academic matters. [[Program Info](https://j-isba.github.io/peer-mentoring.html)] -->
 
@@ -60,7 +60,7 @@ My curriculum vitae is available [here](files/cv_Rigon.pdf). A complete list of 
 
 <!-- [[2021]{.blue}] [Young Talents Award 2021]{.blue}. University of Milano-Bicocca, Accademia Nazionale dei Lincei. [[Award](https://www.unimib.it/sites/default/files/GT_2021_Vincitori_1.pdf)] -->
 
-<!-- [[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. *The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertations that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis*. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)] -->
+<!-- [[2020]{.blue}] [Savage Award 2020 (Theory and Methods)]{.blue}. *The Savage Award (Theory and Methods) is bestowed each year to an outstanding doctoral dissertation that makes important original contributions to the foundations, theoretical developments, and/or general methodology of Bayesian analysis*. American Statistical Association (ASA), International Society for Bayesian Analysis (ISBA). [[Award](https://bayesian.org/project/savage-award/)] [[News](https://bidsa.unibocconi.eu/newsevents/tommaso-rigon-awarded-his-phd-dissertation)] -->
 
 ----------------------------------------------------------------------
 

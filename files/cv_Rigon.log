@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  12 AUG 2026 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.17)  12 AUG 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -562,12 +562,19 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `cv_Rigon.out' has not changed.
-(rerunfilecheck)             Checksum: 13430555A1443F679CB0E990861263F1;1745.
+
+
+Package rerunfilecheck Warning: File `cv_Rigon.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv_Rigon.out':
+(rerunfilecheck)             Before: 13430555A1443F679CB0E990861263F1;1745
+(rerunfilecheck)             After:  41D55D3F6C12F27BBD77737106B95934;1912.
  ) 
 Here is how much of TeX's memory you used:
- 13258 strings out of 473190
- 224193 string characters out of 5715800
+ 13259 strings out of 473190
+ 224204 string characters out of 5715800
  669741 words of memory out of 5000000
  35948 multiletter control sequences out of 15000+600000
  661396 words of font info for 284 fonts, out of 8000000 for 9000
@@ -577,10 +584,10 @@ Here is how much of TeX's memory you used:
 tinusSerif-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/libe
 rtinus-type1/LibertinusSerif-Italic.pfb></usr/local/texlive/2025/texmf-dist/fon
 ts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb>
-Output written on cv_Rigon.pdf (6 pages, 357744 bytes).
+Output written on cv_Rigon.pdf (6 pages, 358409 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
  58993 words of extra memory for PDF output out of 61914 (max. 10000000)
 

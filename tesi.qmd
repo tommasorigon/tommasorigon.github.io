@@ -25,7 +25,7 @@ Resta in capo al candidato [la responsabilità piena di ogni frase e di ogni ris
 
 [Importante]{.orange}. A partire dall'A.A. 2026/2027, è [obbligatorio dichiarare]{.orange} nelle pagine iniziali della tesi se si è fatto uso o meno di strumenti di intelligenza artificiale, quali e in che misura.
 
-Per le tesi triennali di cui io sarò relatore sarà inoltre prevista una [prova orale]{.blue}, necessaria per valutare l'effettiva conoscenza degli argomenti inclusi nella tesi. Per le tesi magistrali la discussione finale è prevista dal regolamento del corso di laurea.
+Per le tesi triennali di cui io sarò relatore sarà inoltre prevista una [prova orale]{.blue}, necessaria per valutare l'effettiva conoscenza degli argomenti inclusi nella tesi. Per le tesi magistrali la discussione finale è già prevista dal regolamento del corso di laurea.
 
 
 ## Il software LaTeX {.central}

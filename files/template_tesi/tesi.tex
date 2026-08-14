@@ -29,7 +29,9 @@
 \usepackage[T1]{fontenc}
 
 % Supporto input UTF-8 (lettere accentate, ù, é, etc.)
-\usepackage[utf8x]{inputenc}
+% Nota: con LaTeX moderno l'UTF-8 è già il default; la riga è mantenuta
+% per compatibilità con distribuzioni datate. Non usare "utf8x" (deprecato).
+\usepackage[utf8]{inputenc}
 
 %================================================================================
 % PACCHETTI MATEMATICA
@@ -239,6 +241,18 @@
     {\vfill\null}
 
 %================================================================================
+% AMBIENTE PERSONALIZZATO: DICHIARAZIONE SULL'USO DELL'INTELLIGENZA ARTIFICIALE
+%================================================================================
+
+\newenvironment{aideclaration}%
+    {\cleardoublepage\null\vfill\begin{center}\bfseries Dichiarazione sull'uso di strumenti di intelligenza artificiale\end{center}\medskip}%
+    {\vfill\null}
+
+% Caselle da barrare: \aibox = vuota, \aiboxx = barrata
+\newcommand{\aibox}{$\square$~}
+\newcommand{\aiboxx}{$\blacksquare$~}
+
+%================================================================================
 % PERCORSI FILE
 %================================================================================
 
@@ -313,10 +327,57 @@
 \tableofcontents
 
 % --- RINGRAZIAMENTI (opzionale) ---
-% Decommentare le 3 righe sotto e inserire i ringraziamenti
- \begin{acknowledgements}
- Inserire qui i ringraziamenti...
- \end{acknowledgements}
+% Sostituire il testo sotto, oppure commentare le 3 righe per ometterli
+\begin{acknowledgements}
+Inserire qui i ringraziamenti...
+\end{acknowledgements}
+
+% --- DICHIARAZIONE SULL'USO DELL'INTELLIGENZA ARTIFICIALE ---
+% ATTENZIONE: questa pagina è OBBLIGATORIA, a partire dall'A.A. 2026/2027, per
+% tutte le tesi il cui relatore è il Prof. Tommaso Rigon. Va compilata in ogni
+% caso: sia se si è fatto uso di strumenti di intelligenza artificiale, sia se
+% non se ne è fatto alcun uso (in tal caso è sufficiente barrare la prima
+% casella ed eliminare l'elenco degli strumenti e degli ambiti di utilizzo).
+%
+% Come compilare: sostituire \aibox (casella vuota) con \aiboxx (casella
+% barrata) in corrispondenza delle voci pertinenti, e completare i campi in
+% corsivo. L'elenco degli ambiti non è esaustivo: usare la voce "Altro".
+\begin{aideclaration}
+Il/La sottoscritto/a \textbf{Nome Cognome}, matricola \textbf{123456}, dichiara quanto segue in merito all'utilizzo di strumenti di intelligenza artificiale generativa (modelli linguistici di grandi dimensioni quali ChatGPT, Claude, Gemini, etc.) nella preparazione e nella stesura della presente tesi.
+
+\medskip
+\aibox Non ho fatto uso di alcuno strumento di intelligenza artificiale generativa.
+
+\aiboxx Ho fatto uso di tali strumenti, nei termini specificati di seguito.
+
+\medskip
+\noindent\textbf{Strumenti utilizzati}: \textit{indicare nome e versione, ad es.\ ChatGPT (GPT-5), Claude Opus 4.5, GitHub Copilot}.
+
+\medskip
+\noindent\textbf{Ambiti di utilizzo}:
+
+\medskip
+\noindent\aiboxx Revisione linguistica e correzione di errori ortografici o sintattici.
+
+\noindent\aibox Traduzione di testo da me redatto.
+
+\noindent\aibox Chiarimenti su concetti teorici e supporto allo studio della letteratura.
+
+\noindent\aibox Ricerca e reperimento di riferimenti bibliografici.
+
+\noindent\aiboxx Scrittura, correzione o debugging di codice.
+
+\noindent\aibox Elaborazione o analisi dei dati.
+
+\noindent\aibox Altro: \textit{specificare}.
+
+\medskip
+\noindent\textbf{Misura dell'utilizzo}: \textit{descrivere brevemente in quali parti dell'elaborato e con quale intensità tali strumenti sono stati impiegati}.
+
+\medskip
+Dichiaro che la struttura del lavoro, le scelte metodologiche, le analisi e l'interpretazione dei risultati sono opera personale, e sono consapevole di essere l'unico/a responsabile di ogni contenuto della presente tesi, comprese eventuali imprecisioni, dimostrazioni errate o riferimenti bibliografici inesistenti prodotti da tali strumenti.
+
+\end{aideclaration}
 
 \cleardoublepage
 
@@ -462,23 +523,29 @@ Si veda la \tablename~\ref{tab:esempio}.
 % ==============================================================================
 %
 % 1. MODIFICA DATI COPERTINA:
-%    Cerca "MODIFICA QUI" nel testo (righe ~170-195)
+%    Cerca "MODIFICA QUI" nel testo (sezione PAGINA DI COPERTINA)
 %    - Titolo tesi
 %    - Nome relatore
 %    - Nome e matricola studente
 %    - Anno accademico
 %
-% 2. COMPILAZIONE:
+% 2. DICHIARAZIONE SULL'USO DELL'INTELLIGENZA ARTIFICIALE:
+%    Pagina OBBLIGATORIA (dall'A.A. 2026/2027) per le tesi con relatore il
+%    Prof. Tommaso Rigon, da compilare anche in caso di mancato utilizzo.
+%    Cerca l'ambiente \begin{aideclaration} nel frontmatter e barra le voci
+%    pertinenti sostituendo \aibox con \aiboxx.
+%
+% 3. COMPILAZIONE:
 %    Con TeXstudio, overleaf, o command line:
 %    $ pdflatex tesi.tex
 %    $ bibtex tesi        (se usi citazioni)
 %    $ pdflatex tesi.tex  (2-3 volte per risolvere riferimenti)
 %
-% 3. IMMAGINI:
+% 4. IMMAGINI:
 %    Crea una cartella "img/" e metti le immagini lì
 %    Usa: \includegraphics[width=0.5\textwidth]{nome_file}
 %
-% 4. BIBLIOGRAFIA:
+% 5. BIBLIOGRAFIA:
 %    Crea file "biblio.bib" nello stesso percorso
 %    Aggiungi voci BibTeX, esempio:
 %    @article{chiave2020,
@@ -489,12 +556,12 @@ Si veda la \tablename~\ref{tab:esempio}.
 %    }
 %    Nel testo: \citet{chiave2020} o \citep{chiave2020}
 %
-% 5. NUOVI CAPITOLI:
+% 6. NUOVI CAPITOLI:
 %    Aggiungi prima della bibliografia:
 %    \chapter{Titolo Capitolo}
 %    Tuo contenuto qui...
 %
-% 6. AMBIENTI DISPONIBILI:
+% 7. AMBIENTI DISPONIBILI:
 %    - \begin{theorem} ... \end{theorem}
 %    - \begin{definition} ... \end{definition}
 %    - \begin{lemma} ... \end{lemma}
@@ -504,13 +571,13 @@ Si veda la \tablename~\ref{tab:esempio}.
 %    - \begin{remark} ... \end{remark}
 %    - \begin{assumption} ... \end{assumption}
 %
-% 7. COLORI LINK (personalizzabili):
-%    Modifica sezione HYPERREF (linee ~230-245)
+% 8. COLORI LINK (personalizzabili):
+%    Modifica la sezione CONFIGURAZIONE HYPERREF nel preambolo
 %    - urlcolor: colore URL (attualmente webbrown)
 %    - linkcolor: colore link interni (attualmente Maroon)
 %    - citecolor: colore citazioni (attualmente structural)
 %
-% 8. TROUBLESHOOTING:
+% 9. TROUBLESHOOTING:
 %    - Se immagini non compaiono: controlla percorso e estensione
 %    - Se citazioni non appaiono: esegui "bibtex" e ricompila
 %    - Se header non corretto: controlla \chaptermark e \sectionmark

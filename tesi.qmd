@@ -7,9 +7,19 @@ Sebbene talvolta vi sia una certa sovrapposizione, di norma [la didattica]{.blue
 
 Le tematiche di cui mi occupo sono: [applicazioni]{.orange} e [metodi]{.orange} di [statistica bayesiana]{.blue} (nonparametrica) & [statistica computazionale]{.blue}. Per maggiori informazioni, si consiglia di consultare la lista delle [pubblicazioni](papers.html), oppure la lista di tesi passate che trovate in questa pagina.
 
-Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più [applicativo]{.orange} (ad es. progetti legati ad uno stage esterno), oppure di [statistica metodologica classica]{.blue} (test d'ipotesi, metodi boostrap, etc.).
+Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più [applicativo]{.orange} (ad es. progetti legati ad uno stage esterno), oppure di [statistica metodologica classica]{.blue} (test d'ipotesi, metodi bootstrap, etc.).
 
 Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [Martedì alle ore 17.30]{.blue}.
+
+## Intelligenza artificiale e LLM {.central}
+
+L'uso di modelli linguistici di grandi dimensioni (ChatGPT, Claude, Gemini, etc.) è [permesso]{.blue} come strumento di supporto: revisione linguistica, controllo di errori, chiarimenti su concetti, debugging del codice. Non è invece ammesso [delegare la produzione dei contenuti]{.orange}: la struttura del lavoro, le scelte metodologiche, le analisi e l'interpretazione dei risultati devono essere opera del candidato.
+
+Resta in capo al candidato [la responsabilità piena di ogni frase e di ogni risultato]{.blue} contenuti nell'elaborato, comprese eventuali imprecisioni, dimostrazioni errate o riferimenti bibliografici inesistenti prodotti dal modello.
+
+[Importante]{.orange}. A partire dall'A.A. 2026/2027, è [obbligatorio dichiarare]{.orange} nelle pagine iniziali della tesi se si è fatto uso o meno di strumenti di intelligenza artificiale, quali e in che misura.
+
+Per le tesi triennali di cui io sarò relatore sarà inoltre prevista una [prova orale]{.blue}, necessaria per valutare l'effettiva conoscenza degli argomenti inclusi nella tesi. Per le tesi magistrali la discussione finale è prevista dal regolamento del corso di laurea.
 
 ## Il software LaTeX {.central}
 
@@ -20,6 +30,7 @@ LaTeX può essere scaricato gratuitamente da internet. In alternativa, è possib
 Viene inoltre reso disponibile un [template LaTeX](files/template_tesi.zip). Se compilato, il risultato finale dovrebbe coincidere con [questo file](files/tesi.pdf), in formato .pdf.
 
 <!-- Si suggeriscono inoltre le seguenti [linee guida per la scrittura di testi matematici](http://www-math.mit.edu/~poonen/papers/writing.pdf). -->
+
 
 ## Tesi passate (triennali, magistrali e dottorato) {.central}
 

@@ -1,0 +1,26 @@
+---
+title: "Fantacalcio"
+subtitle: "**_Previsione_**"
+description: "" 
+lang: it
+draft: true
+author: "[Tommaso Rigon]{.orange}"
+institute: |
+  _Università degli Studi di Milano-Bicocca_
+page-layout: full
+citeproc: true
+csl: https://www.zotero.org/styles/journal-of-the-american-statistical-association
+reference-location: margin
+execute:
+  cache: false
+format:
+  html:
+    toc: true
+  revealjs:
+    fig-dpi: 150
+    output-file: BNP26_slides.html
+format-links: true
+categories: talk
+---
+
+[Asta live](asta_live.html)

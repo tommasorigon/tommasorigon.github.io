@@ -16,9 +16,6 @@ execute:
 format:
   html:
     toc: true
-  revealjs:
-    fig-dpi: 150
-    output-file: BNP26_slides.html
 format-links: true
 categories: talk
 ---

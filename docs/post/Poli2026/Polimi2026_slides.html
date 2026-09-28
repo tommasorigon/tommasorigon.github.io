@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Tommaso Rigon">
-  <meta name="dcterms.date" content="2025-09-26">
-  <title>Tommaso Rigon – Project presentation</title>
+  <meta name="dcterms.date" content="2026-10-01">
+  <title>Tommaso Rigon – Clustering cultural innovation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -164,7 +164,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Project presentation</h1>
+  <h1 class="title">Clustering cultural innovation</h1>
   <p class="subtitle">Politecnico di Milano - Mathematical Engineering - Bayesian Statistics</p>
 
 <div class="quarto-title-authors">
@@ -178,21 +178,21 @@
     </div>
 </div>
 
-  <p class="date">2025-09-26</p>
+  <p class="date">2026-10-01</p>
 </section>
 <section id="short-bio" class="slide level2 center">
 <h2>Short Bio</h2>
 <ul>
-<li><p>My name is <span class="blue">Tommaso Rigon</span> and I am a <span class="orange">Senior Assistant Professor</span> (RTD-B).</p></li>
+<li><p>My name is <span class="blue">Tommaso Rigon</span> and I am an <span class="orange">Associate Professor</span> of Statistics.</p></li>
 <li><p><span class="blue">University of Milano-Bicocca</span>, Department of Economics, Management and Statistics (DEMS), Milan, Italy.</p>
 <ul>
-<li>Senior Assistant Professor (RTD-B), 2023 - Present</li>
+<li>Associate Professor, 2026 - Present</li>
+<li>Senior Assistant Professor (RTD-B), 2023 - 2026</li>
 <li>Junior Assistant Professor (RTD-A), 2020 - 2023</li>
 </ul></li>
 <li><p><span class="blue">Duke University</span>, Department of Statistical Science, Durham (NC), U.S.A.</p>
 <ul>
-<li>Postdoctoral Associate, 2020 - 2020</li>
-<li>Research Associate, 2019 - 2020</li>
+<li>Research/Postdoctoral Associate, 2019 - 2020</li>
 </ul></li>
 </ul>
 <div class="callout callout-note no-icon callout-titled callout-style-simple">
@@ -210,54 +210,59 @@
 </div>
 </div>
 </section>
-<section id="hyperbolic-secant-regression" class="slide level2 center">
-<h2>Hyperbolic secant regression</h2>
+<section id="the-neutral-theory-of-biodiversity-hubbell_2001" class="slide level2 center">
+<h2>The neutral theory of biodiversity <span class="citation" data-cites="Hubbell_2001">(<a href="#/references" role="doc-biblioref" onclick="">Hubbell 2001</a>)</span></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/Timeline_Hubbell2.jpg" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
+</figure>
+</div>
+</section>
+<section id="names-as-species" class="slide level2 center">
+<h2>Names as species</h2>
 <div class="callout callout-tip no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
 <p><strong>Background</strong></p>
 </div>
 <div class="callout-content">
-<p>Let <span class="math inline">Y_1,\dots,Y_n</span> be independent random variable distributed according to a <span class="orange">hyperbolic secant distribution</span>, whose <span class="blue">density</span> is <span class="math display">
-f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\pi y_i / 2)}, \qquad y_i \in \mathbb{R}, \; \theta_i \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right).
-</span> This distribution is discussed in <span class="citation" data-cites="Morris1982">Morris (<a href="#/references" role="doc-biblioref" onclick="">1982</a>)</span> and is an instance of highly tractable <span class="orange">exponential family</span> having a <span class="blue">quadratic variance</span> function.</p>
+<p>Under <span class="orange">Hubbell’s neutral model</span>, abundances <span class="math inline">n_1,\dots,n_K</span> of the <span class="math inline">K</span> distinct types among <span class="math inline">n</span> individuals follow the <span class="blue">Ewens sampling formula</span> <span class="citation" data-cites="ewens72">(<a href="#/references" role="doc-biblioref" onclick="">Ewens 1972</a>)</span> <span class="math display">
+p(n_1,\dots,n_K \mid \theta) = \frac{\theta^K}{(\theta)_n}\prod_{j=1}^K (n_j - 1)!, \qquad \theta &gt; 0.
+</span> A <span class="orange">single innovation parameter</span> <span class="math inline">\theta</span> governs diversity: a principled <span class="blue">null hypothesis</span> for apparent trends <span class="citation" data-cites="Rigon2026 Zito2026">(<a href="#/references" role="doc-biblioref" onclick="">Rigon et al. 2026+</a>; <a href="#/references" role="doc-biblioref" onclick="">Zito et al. 2026+</a>)</span>.</p>
 </div>
 </div>
 </div>
 <ul>
-<li><p>This distribution can be employed to build a novel <span class="blue">generalized linear model</span> (GLM), which automatically incorporates <span class="orange">heteroskedasticity</span> and exhibits <span class="blue">heavier tails</span> than the Gaussian law.</p></li>
-<li><p>There are multiple application areas for such a regression technique, including (but not limited to) financial data.</p></li>
+<li><p>Types are <span class="blue">species</span> in ecology, and <span class="orange">given names</span> here: US Social Security records, one table per state and year.</p></li>
+<li><p><span class="orange">Catch</span>: names below a privacy threshold are <span class="blue">censored</span>. These rare names carry most of the information about <span class="math inline">\theta</span>, and censoring bites hardest in the smallest states.</p></li>
 </ul>
 </section>
-<section id="objectives-and-expectations" class="slide level2 center">
-<h2>Objectives and expectations</h2>
+<section id="the-project" class="slide level2 center">
+<h2>The project</h2>
 <div class="callout callout-tip no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Research gap</strong></p>
+<p><strong>Plan</strong></p>
 </div>
 <div class="callout-content">
+<ol type="1">
+<li><p><span class="blue">State by state</span>: a data-augmentation <span class="orange">Gibbs sampler</span> that imputes the hidden multiplicities of rare names, giving the posterior of <span class="math inline">\theta_s</span> for each state <span class="math inline">s</span>.</p></li>
+<li><p><span class="blue">Across states</span>: a <span class="orange">nonparametric mixture prior</span> on <span class="math inline">\theta_1,\dots,\theta_{51}</span>, letting the data decide how many groups there are and which states belong together.</p></li>
+<li><p><span class="blue">Interpretation</span>: does the partition reflect geography, demography, or something else?</p></li>
+</ol>
+</div>
+</div>
+</div>
 <ul>
-<li><p>A systematic <span class="orange">Bayesian investigation</span> of such a GLM is entirely lacking. In principle, this GLM framework can be combined with modern Bayesian tools for regression, such as:</p>
-<ul>
-<li>Variable selection and regularization, e.g., shrinkage priors or spike-and-slab priors.</li>
-<li>Random effects (parametric and nonparametric).</li>
-<li>Generalized Additive Models (GAMs), e.g., Gaussian Processes.</li>
-</ul></li>
-<li><p><span class="orange">Overdispersion</span> may require novel generalized Bayes techniques <span class="citation" data-cites="Agnoletto2025">(<a href="#/references" role="doc-biblioref" onclick="">Agnoletto et al. 2025</a>)</span>.</p></li>
-<li><p>A <span class="blue">Polya-gamma</span> data augmentation scheme may be applicable by adapting the results in <span class="citation" data-cites="Polson2013">Polson et al. (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span>. If not, Hamiltonian Monte Carlo (HMC) remains a feasible option.</p></li>
+<li><span class="grey">Extensions</span>: richer information sharing across states, multiple years.</li>
 </ul>
-</div>
-</div>
-</div>
 <div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>Expected outcome</strong></p>
+<p><strong>Requirements</strong></p>
 </div>
 <div class="callout-content">
-<p>The group is expected to implement and develop 2–3 of the research gaps outlined above.</p>
-<p>I expect the group to be proficient in R programming (knowledge of C++ is a strong asset, though probably not essential). Most of the work will focus on the practical implementation of these ideas.</p>
+<p>Good knowledge of <span class="orange">R</span>; some C++ via <span class="blue">Rcpp</span> helps for the sampler. Prior exposure to MCMC for nonparametric mixtures is a plus.</p>
 </div>
 </div>
 </div>
@@ -267,14 +272,17 @@ f(y_i; \theta_i) = \frac{\exp\{\theta_i y_i - \log{\cos(\theta_i)} \}}{2 \cosh(\
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Agnoletto2025" class="csl-entry" role="listitem">
-Agnoletto, D., Rigon, T., and Dunson, D. B. (2025), <span>“Bayesian inference for generalized linear models via quasi-posteriors,”</span> <em>Biometrika</em>, 112.
+<div id="ref-ewens72" class="csl-entry" role="listitem">
+Ewens, W. (1972), <span>“The sampling theory of selectively neutral alleles,”</span> <em>Theoretical Population Biology</em>, 3, 87–112.
 </div>
-<div id="ref-Morris1982" class="csl-entry" role="listitem">
-Morris, C. N. (1982), <span>“Natural exponential families with quadratic variance functions,”</span> <em>Annals of Statistics</em>, 10, 65–80.
+<div id="ref-Hubbell_2001" class="csl-entry" role="listitem">
+Hubbell, S. P. (2001), <em>The unified neutral theory of biodiversity and biogeography</em>, Princeton University Press.
 </div>
-<div id="ref-Polson2013" class="csl-entry" role="listitem">
-Polson, N. G., Scott, J. G., and Windle, J. (2013), <span>“Bayesian inference for logistic models using polya-gamma latent variables,”</span> <em>Journal of the American Statistical Association</em>, Taylor {&amp;} Francis, 108, 1–42.
+<div id="ref-Rigon2026" class="csl-entry" role="listitem">
+Rigon, T., Hsu, C., and Dunson, D. B. (2026+), <span>“<a href="https://arxiv.org/abs/2608.11180">A bayesian theory for estimation of biodiversity</a>,”</span> <em>arXiv:2608.11180</em>.
+</div>
+<div id="ref-Zito2026" class="csl-entry" role="listitem">
+Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O., and Dunson, D. B. (2026+), <span>“<a href="https://www.biorxiv.org/content/10.64898/2026.05.29.728852v1">Predicting global biodiversity via <span>H</span>ubbell regression</a>,”</span> <em>bioRxiv</em>.
 </div>
 </div>
 </section>

@@ -61,9 +61,12 @@ Vengono riportati nel seguito alcuni degli studenti che ho seguito come relatore
 | 2024/2025 | [Triennale]{.blue} | Giovanni Pomati |   | M.Sc. in Statistics (EPFL) |
 | 2025/2026 | [Triennale]{.blue} | Enrico Maria Pedol |   | M.Sc. in Statistics and Data Science (LMU Munich) |
 | 2025/2026 | [Triennale]{.blue} | Antonio Urso |   | M.Sc. CLAMSES (Unimib) |
+| 2025/2026 | [Triennale]{.blue} | Giacomo Arrigoni |   | M.Sc. CLAMSES (Unimib) |
+| 2025/2026 | [Triennale]{.blue} | Francesco Badolato |   | M.Sc. CLAMSES (Unimib) |
 |  |  | **Laurea Magistrale** |  |  |
 | 2020/2021 | [Magistrale]{.orange} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](files/papers/Agnoletto_magistrale.pdf) | Ph.D. in Statistics (Unipd) |
 | 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Tesi](files/papers/Tine_magistrale_826904.pdf) | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |
+| 2022/2023 | [Magistrale]{.orange} | Christian Arlenghi |   | Data Analyst (Deloitte) |
 | 2023/2024 | [Magistrale]{.orange} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_magistrale_858541.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
 | 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Tesi](files/papers/Cantaroni_magistrale.pdf) | Data Scientist (PwC) |
 | 2023/2024 | [Magistrale]{.orange} | Marco Carrettoni |   | Credit Risk Consultant (KPMG) |
@@ -80,7 +83,7 @@ Vengono riportati nel seguito alcuni degli studenti che ho seguito come relatore
 | 2023 | [**Ph.D.**]{.darkred} (Duke) | [Alessandro Zito](https://alessandrozito.github.io/web/) | [Tesi](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard) |
 | 2024 | [**Ph.D.**]{.darkred} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke) |
 
-: Elenco delle tesi {tbl-colwidths="[10, 15, 25, 12, 38]"}
+: {tbl-colwidths="[10, 15, 25, 12, 38]"}
 
 <!-- ## FAQ {.central} -->
 

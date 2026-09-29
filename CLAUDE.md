@@ -54,7 +54,6 @@ These posts also include `biblio.bib` and an `img/` folder.
 
 `_quarto.yml` defines:
 - Output dir: `docs/`
-- `execute: freeze: auto` — R code only re-runs when the source `.qmd` changes; results cached in `.quarto/_freeze/` (this directory should be committed to git)
 - HTML theme: `simplex` + `template.css` (custom CSS with `.blue`, `.orange`, `.darkred` span classes used throughout)
 - RevealJS slides: logo `images/logoB.png`, footer linking to homepage
 - Lua filter `remove-pause.lua` applied globally (strips `{.pause}` from slides)
@@ -64,6 +63,6 @@ These posts also include `biblio.bib` and an `img/` folder.
 
 - Author name styling: `[Name]{.blue}` or `[Name]{.orange}` for collaborators
 - Citations in `papers.qmd`: ordered lists under category headers (`[Preprints]{.blue}`, `[Articles in refereed journals]{.blue}`, etc.)
-- Dunson's name is always formatted as `Dunson D. B.` (with space between initials)
+- Dunson's name is always formatted as `Dunson, D. B.` (comma after surname, space between initials)
 - Section headings use `{.central}` class: `## Section title {.central}`
 - Comments in `.qmd` files use standard HTML `<!-- -->` to hide outdated content rather than deleting it

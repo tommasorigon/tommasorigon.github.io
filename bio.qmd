@@ -22,7 +22,7 @@ I worked with prof. [Amy Herring](https://scholars.duke.edu/person/Amy.Herring) 
 
 - Research Affiliate, 2017 - 2020
 
-I have been a Research affiliate at the [Statistics initiative](https://www.carloalberto.org/research/statistics-initiative/).
+I have been a Research Affiliate at the [Statistics initiative](https://www.carloalberto.org/research/statistics-initiative/).
 
 
 ## Education {.central}
@@ -31,7 +31,7 @@ I have been a Research affiliate at the [Statistics initiative](https://www.carl
 
 - Thesis title: [*Finite-dimensional nonparametric priors: theory and applications*](files/papers/PhDThesis.pdf).  
 
-- I worked under the joint supervision of  prof. [Antonio Lijoi](http://mypage.unibocconi.eu/antoniolijoi/) and prof. [Igor Prünster](http://mypage.unibocconi.eu/igorpruenster/). 
+- I worked under the joint supervision of prof. [Antonio Lijoi](http://mypage.unibocconi.eu/antoniolijoi/) and prof. [Igor Prünster](http://mypage.unibocconi.eu/igorpruenster/). 
 
 Period 2015--2020. Ph.D. awarded with honors.
 
@@ -41,7 +41,7 @@ Period 2015--2020. Ph.D. awarded with honors.
 
 - Advisor: [Bruno Scarpa](https://homes.stat.unipd.it/brunoscarpa/).
 
-Period 2013 - 2015. Final mark: 110/110 cum laude.
+Period 2013--2015. Final mark: 110/110 cum laude.
 
 [B.Sc. in Statistics, Economics & Finance]{.blue}, [University of Padova](https://www.unipd.it), Padua, Italy.
 

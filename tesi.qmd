@@ -9,7 +9,7 @@ Le tematiche di cui mi occupo sono: [applicazioni]{.orange} e [metodi]{.orange} 
 
 Nel caso di tesi triennali, ho talvolta seguito anche progetti di carattere più [applicativo]{.orange} (ad es. progetti legati ad uno stage esterno), oppure di [statistica metodologica classica]{.blue} (test d'ipotesi, metodi bootstrap, etc.).
 
-Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [Martedì alle ore 17.30]{.blue}.
+Per informazioni riguardanti la tesi, si prega di scrivere una mail a tommaso.rigon\@unimib.it e venire quindi a ricevimento [martedì alle ore 17.30]{.blue}.
 
 ## Intelligenza artificiale e LLM {.central}
 
@@ -39,44 +39,57 @@ Viene inoltre reso disponibile un [template LaTeX](files/template_tesi.zip). Se 
 <!-- Si suggeriscono inoltre le seguenti [linee guida per la scrittura di testi matematici](http://www-math.mit.edu/~poonen/papers/writing.pdf). -->
 
 
-## Tesi passate (triennali, magistrali e dottorato) {.central}
+## Studenti e tesi passate {.central}
 
-Vengono riportate nel seguito alcune tesi triennali svolte negli anni passati di cui sono stato relatore, correlatore, oppure in cui sono stato attivamente coinvolto per altri motivi. Non è una lista esaustiva. 
+Vengono riportati nel seguito alcuni degli studenti che ho seguito come relatore o correlatore negli anni passati, insieme al loro percorso successivo, quando noto. Non è una lista esaustiva.
 
-| A.A. | Laurea | Candidata/o | Titolo | *Placement* |
-|:-------------:|:-------------:|:--------------|:----------------------------|:----------------------------|
-|  |  |  | **Laurea Triennale** | |
-| 2021/2022 | [Triennale]{.blue} | Marco Carrettoni | [Analisi dei consumi energetici degli edifici dell'Università degli studi di Milano-Bicocca](files/papers/Carrettoni_triennale_851292.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2021/2022 | [Triennale]{.blue} | Erica Delvino | [Regressione nonparametrica tramite processi gaussiani](files/papers/Delvino_triennale_851269.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2021/2022 | [Triennale]{.blue} | Anna Petranzan | [An introduction to Bayesian mixture models and applications](files/papers/Petranzan_triennale_858541.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2022/2023 | [Triennale]{.blue} | Giulia De Innocentiis | [Criteri di selezione di un modello in ambito bayesiano](files/papers/DeInnocentiis_triennale_865084.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2022/2023 | [Triennale]{.blue} | Tommaso Menghini | [Approccio bayesiano applicato a modelli di regressione probit](files/papers/Menghini_triennale_864946.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2023/2024 | [Triennale]{.blue} | Stefano Andreoli | [Metodi di stima intervallare in un modello binomiale](files/papers/Andreoli_triennale_880053.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2023/2024 | [Triennale]{.blue} | Riccardo Cicuttin | [Metodi di campionamento per distribuzioni univariate](files/papers/Cicuttin_triennale_879735.pdf) | M.Sc. in Mathematical Engineering (Polimi) |
-| 2024/2025 | [Triennale]{.blue} | Federico Boiocchi | [Robust variable selection: an approach based on knockoffs](files/papers/Boiocchi_triennale_895221.pdf) | M.Sc. DSBA (Bocconi) | 
-|  |  |  | **Laurea magistrale** |
-| 2020/2021 | [Magistrale]{.orange} (Unipd) | Davide Agnoletto | [Analisi delle curve di mortalità: stima non parametrica della densità con approccio bayesiano](files/papers/Agnoletto_magistrale.pdf) | Ph.D. in Statistics (Unipd) |
-| 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Previsione della sopravvivenza di pazienti affetti da sarcomi tramite un modello bayesiano per dati ad elevata dimensionalità](files/papers/Tine_magistrale_826904.pdf) | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |
-| 2023/2024 | [Magistrale]{.orange} | Anna Petranzan | [The Gnedin model: recent developments and future perspectives](files/papers/Petranzan_magistrale_858541.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
-| 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Analisi della struttura interna de *La Lombardia*, attraverso l’utilizzo di modelli per blocchi stocastici estesi](files/papers/Cantaroni_magistrale.pdf) | Data Scientist (PwC) | 
-| 2024/2025 | [Magistrale]{.orange} | Alessandro Colello | [Bayesian nonparametric clustering with variational inference and fusing of localized densities](files/papers/Colello_magistrale.pdf) | Ph.D. in Statistics (UT Austin) |
-| 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Distribuzione secante iperbolica: caratterizzazione, generalizzazione e applicazioni in modelli lineari generalizzati](files/papers/Mucilli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) | - |
-| 2024/2025 | [Magistrale]{.orange} | Tommaso Menghini | [Sondaggi elettorali: studio sull’affidabilità statistica degli istituti demoscopici e delle loro distorsioni sistematiche](files/papers/Menghini_magistrale.pdf) - [Slides](files/papers/Menghini_magistrale_slides.pdf) | - |
-|  |  |  | **Dottorato di ricerca** |
-| 2023 | [**Ph.D.**]{.darkred} (Duke) | Alessandro Zito | [Ecological modeling via Bayesian nonparametric species sampling priors](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard) |
-| 2024 | [**Ph.D.**]{.darkred} (Unipd) | Davide Agnoletto | [Statistical modeling within the generalized Bayesian paradigm](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke) |
+| A.A. | Laurea | Candidata/o | Materiale | *Placement* |
+|:-------------:|:-------------:|:--------------|:--------------|:--------------|
+|  |  | **Laurea Triennale** |  |  |
+| 2021/2022 | [Triennale]{.blue} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_triennale_858541.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | Marco Carrettoni | [Tesi](files/papers/Carrettoni_triennale_851292.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | Erica Delvino | [Tesi](files/papers/Delvino_triennale_851269.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) |   | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Giulia De Innocentiis | [Tesi](files/papers/DeInnocentiis_triennale_865084.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Tommaso Menghini | [Tesi](files/papers/Menghini_triennale_864946.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Marco Nobili |   | M.Sc. CLAMSES (Unimib) |
+| 2023/2024 | [Triennale]{.blue} | Stefano Andreoli | [Tesi](files/papers/Andreoli_triennale_880053.pdf) | M.Sc. CLAMSES (Unimib) |
+| 2023/2024 | [Triennale]{.blue} | Riccardo Cicuttin | [Tesi](files/papers/Cicuttin_triennale_879735.pdf) | M.Sc. in Mathematical Engineering (Polimi) |
+| 2024/2025 | [Triennale]{.blue} | Anna Ciapparelli |   | M.Sc. DSBA (Bocconi) |
+| 2024/2025 | [Triennale]{.blue} | Federico Boiocchi | [Tesi](files/papers/Boiocchi_triennale_895221.pdf) | M.Sc. DSBA (Bocconi) |
+| 2024/2025 | [Triennale]{.blue} | Giulio Maria Parisi |   | M.Sc. CLAMSES (Unimib) |
+| 2024/2025 | [Triennale]{.blue} | Giovanni Pomati |   | M.Sc. in Statistics (EPFL) |
+| 2025/2026 | [Triennale]{.blue} | Enrico Maria Pedol |   | M.Sc. in Statistics and Data Science (LMU Munich) |
+| 2025/2026 | [Triennale]{.blue} | Antonio Urso |   | M.Sc. CLAMSES (Unimib) |
+|  |  | **Laurea Magistrale** |  |  |
+| 2020/2021 | [Magistrale]{.orange} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](files/papers/Agnoletto_magistrale.pdf) | Ph.D. in Statistics (Unipd) |
+| 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Tesi](files/papers/Tine_magistrale_826904.pdf) | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |
+| 2023/2024 | [Magistrale]{.orange} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_magistrale_858541.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
+| 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Tesi](files/papers/Cantaroni_magistrale.pdf) | Data Scientist (PwC) |
+| 2023/2024 | [Magistrale]{.orange} | Marco Carrettoni |   | Credit Risk Consultant (KPMG) |
+| 2024/2025 | [Magistrale]{.orange} | Francesco Bosco |   | Credit Risk Consultant (KPMG) |
+| 2024/2025 | [Magistrale]{.orange} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) | [Tesi](files/papers/Colello_magistrale.pdf) | Ph.D. in Statistics (UT Austin) |
+| 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Tesi](files/papers/Mucilli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
+| 2024/2025 | [Magistrale]{.orange} | Tommaso Menghini | [Tesi](files/papers/Menghini_magistrale.pdf) - [Slides](files/papers/Menghini_magistrale_slides.pdf) | Statistician (Sigma Consulting) |
+| 2024/2025 | [Magistrale]{.orange} | Gaia Addis |   | Data Scientist (Cosmo) |
+| 2024/2025 | [Magistrale]{.orange} | Lidia Dell'Elba |   |   |
+| 2024/2025 | [Magistrale]{.orange} | Antonio Furfaro Serranò |   |   |
+| 2024/2025 | [Magistrale]{.orange} | Lucrezia Tusetti |   | Data Engineer (KPMG) |
+| 2025/2026 | [Magistrale]{.orange} | Stefano Andreoli |   | Ph.D. in Statistics (Duke) |
+|  |  | **Dottorato di Ricerca** |  |  |
+| 2023 | [**Ph.D.**]{.darkred} (Duke) | [Alessandro Zito](https://alessandrozito.github.io/web/) | [Tesi](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard) |
+| 2024 | [**Ph.D.**]{.darkred} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke) |
 
-
-: Thesis {tbl-colwidths="[8, 12, 18, 42, 20]"}
+: Elenco delle tesi {tbl-colwidths="[10, 15, 25, 12, 38]"}
 
 <!-- ## FAQ {.central} -->
 
-<!-- 1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Si, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi. -->
+<!-- 1.  [Devo ancora finire gli esami, posso cominciare a lavorare alla tesi?]{.blue} Sì, anzi è caldamente raccomandato chiedere informazioni prima del superamento di tutti gli esami. Tuttavia, la scrittura della tesi di laurea è un lavoro a tempo pieno che necessita di [almeno un paio di mesi]{.blue} per una tesi triennale e anche più tempo per una tesi magistrale. Ovviamente, non è possibile laurearsi senza aver superato tutti gli esami. Pertanto, si consiglia di concluderli prima di cominciare a lavorare alla tesi. -->
 
-<!-- 2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Si, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare. -->
+<!-- 2.  [È possibile proporre un personale progetto per la tesi?]{.blue} Sì, ma verranno considerati solamente progetti estremamente innovativi e che siano [in linea con gli interessi di ricerca]{.orange} del docente. Si raccomanda caldamente di concordare un progetto con il docente prima di cominciare a lavorare. -->
 
-<!-- 3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Si, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici. -->
+<!-- 3.  [Non ho mai usato LaTeX, posso usare Word?]{.blue} Sì, anche se l'uso del software Microsoft Word / Open Office rimane fortemente sconsigliato per la stesura di documenti scientifici. -->
 
-<!-- 4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Si, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca. -->
+<!-- 4.  [È possibile scrivere la tesi in lingua inglese?]{.blue} Sì, la tesi di laurea può essere scritta sia in lingua italiana che inglese, a seconda della personale preferenza del candidato. La lingua inglese è caldamente raccomandata per le tesi di ricerca. -->
 
-<!-- 5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Si, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato. -->
+<!-- 5.  [È possibile provare a pubblicare la propria tesi su una rivista scientifica?]{.blue} Sì, ma solamente se la qualità della tesi (magistrale) è di qualità eccezionale ed estremamente innovativa. Dato che questo implica uno sforzo considerevole ed i tempi delle pubblicazioni scientifiche sono molto lunghi (a volte anche anni), si consiglia questo percorso solamente nel caso in cui il candidato abbia intenzione di proseguire con un dottorato. -->

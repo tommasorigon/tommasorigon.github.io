@@ -62,8 +62,8 @@ Vengono riportati nel seguito alcuni degli studenti che ho seguito come relatore
 | 2024/2025 | [Triennale]{.blue} | Giovanni Pomati |   | M.Sc. in Statistics (EPFL) |  |
 | 2025/2026 | [Triennale]{.blue} | Enrico Maria Pedol |   | M.Sc. in Statistics and Data Science (LMU Munich) |  |
 | 2025/2026 | [Triennale]{.blue} | Antonio Urso |   | M.Sc. CLAMSES (Unimib) |  |
-| 2025/2026 | [Triennale]{.blue} | Giacomo Arrigoni |   | M.Sc. CLAMSES (Unimib) |  |
-| 2025/2026 | [Triennale]{.blue} | Francesco Badolato |   | M.Sc. CLAMSES (Unimib) |  |
+| 2025/2026 | [Triennale]{.blue} | Giacomo Arrigoni | [Tesi](files/papers/Arrigoni_triennale_908854.pdf) | M.Sc. CLAMSES (Unimib) |  |
+| 2025/2026 | [Triennale]{.blue} | Francesco Badolato | [Tesi](files/papers/Badolato_triennale_909302.pdf) | M.Sc. CLAMSES (Unimib) |  |
 |  |  | **Laurea Magistrale** |  |  |  |
 | 2020/2021 | [Magistrale]{.orange} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](files/papers/Agnoletto_magistrale.pdf) | Ph.D. in Statistics (Unipd) |  |
 | 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Tesi](files/papers/Tine_magistrale_826904.pdf) | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |  |

@@ -1,0 +1,84 @@
+---
+title: "Mondiali di calcio 2026"
+author: "[Tommaso Rigon]{.orange}"
+lang: it
+date: 2026-08-01
+execute:
+  cache: true
+format:
+  html:
+    html-math-method: katex
+    echo: false
+    callout-appearance: minimal
+    toc: true
+    embed-resources: false
+    code-line-numbers: true
+    smooth-scroll: true
+    fig-dpi: 250
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+rm(list = ls())
+library(tidyverse)
+
+results <- read_csv("https://raw.githubusercontent.com/martj42/international_results/master/results.csv")
+
+wc <- results |>
+  filter(tournament %in% c("FIFA World Cup", "FIFA World Cup qualification",
+                           "UEFA Nations League", "UEFA Euro qualification", "UEFA Euro",
+                           "Copa América",
+                           "African Cup of Nations qualification", "African Cup of Nations"),
+         date >= as.Date("2023-01-01")) |>
+  mutate(
+    decay = case_when(
+      tournament == "FIFA World Cup" ~ 1.0,
+      year(date) == 2026            ~ 0.8,
+      year(date) == 2025            ~ 0.6,
+      year(date) == 2024            ~ 0.4,
+      TRUE                          ~ 0.2
+    ),
+    match_id = row_number()
+  )
+
+worldcup <- bind_rows(
+  wc |> transmute(match_id, date, tournament, decay,
+                  attack_team = home_team, defense_team = away_team,
+                  goals = home_score, home = !neutral),
+  wc |> transmute(match_id, date, tournament, decay,
+                  attack_team = away_team, defense_team = home_team,
+                  goals = away_score, home = FALSE)
+) |>
+  arrange(match_id, desc(home)) %>% 
+  mutate(attack_team = factor(attack_team), defense_team = factor(defense_team))
+```
+
+```{r}
+library(brglm2)
+m1 <- glm(goals ~ attack_team + defense_team + home,
+          data = worldcup, family = poisson, weights = decay,
+          contrasts = list(attack_team  = "contr.sum",
+                           defense_team = "contr.sum"), method = "brglmFit")
+
+cf <- coef(m1)
+teams <- levels(worldcup$attack_team)
+
+betas  <- cf[grep("^attack_team",  names(cf))]
+betas  <- setNames(c(betas, -sum(betas)), teams)
+
+gammas <- cf[grep("^defense_team", names(cf))]
+gammas <- setNames(c(gammas, -sum(gammas)), teams)
+
+deltas <- betas - gammas
+```
+
+```{r}
+head(sort(betas, decreasing = T), 20)
+head(sort(gammas, decreasing = F), 20)
+print(head(sort(deltas, decreasing = T), 40), digits = 3)
+```
+

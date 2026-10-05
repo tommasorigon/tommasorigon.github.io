@@ -27,7 +27,6 @@ Resta in capo al candidato [la responsabilità piena di ogni frase e di ogni ris
 
 Per le tesi triennali di cui io sarò relatore sarà inoltre prevista una [prova orale]{.blue}, necessaria per valutare l'effettiva conoscenza degli argomenti inclusi nella tesi. Per le tesi magistrali la discussione finale è già prevista dal regolamento del corso di laurea.
 
-
 ## Il software LaTeX {.central}
 
 L'utilizzo del [software LaTeX](https://www.tug.org/texlive/) per la scrittura della tesi è [caldamente raccomandato]{.blue}.
@@ -43,47 +42,51 @@ Viene inoltre reso disponibile un [template LaTeX](files/template_tesi.zip). Se 
 
 Vengono riportati nel seguito alcuni degli studenti che ho seguito come relatore o correlatore negli anni passati, insieme al loro percorso successivo, quando noto. Non è una lista esaustiva.
 
-| A.A. | Laurea | Candidata/o | Materiale | *Placement* |
-|:-------------:|:-------------:|:--------------|:--------------|:--------------|
-|  |  | **Laurea Triennale** |  |  |
-| 2021/2022 | [Triennale]{.blue} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_triennale_858541.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2021/2022 | [Triennale]{.blue} | Marco Carrettoni | [Tesi](files/papers/Carrettoni_triennale_851292.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2021/2022 | [Triennale]{.blue} | Erica Delvino | [Tesi](files/papers/Delvino_triennale_851269.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2021/2022 | [Triennale]{.blue} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) |   | M.Sc. CLAMSES (Unimib) |
-| 2022/2023 | [Triennale]{.blue} | Giulia De Innocentiis | [Tesi](files/papers/DeInnocentiis_triennale_865084.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2022/2023 | [Triennale]{.blue} | Tommaso Menghini | [Tesi](files/papers/Menghini_triennale_864946.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2022/2023 | [Triennale]{.blue} | Marco Nobili |   | M.Sc. CLAMSES (Unimib) |
-| 2023/2024 | [Triennale]{.blue} | Stefano Andreoli | [Tesi](files/papers/Andreoli_triennale_880053.pdf) | M.Sc. CLAMSES (Unimib) |
-| 2023/2024 | [Triennale]{.blue} | Riccardo Cicuttin | [Tesi](files/papers/Cicuttin_triennale_879735.pdf) | M.Sc. in Mathematical Engineering (Polimi) |
-| 2024/2025 | [Triennale]{.blue} | Anna Ciapparelli |   | M.Sc. DSBA (Bocconi) |
-| 2024/2025 | [Triennale]{.blue} | Federico Boiocchi | [Tesi](files/papers/Boiocchi_triennale_895221.pdf) | M.Sc. DSBA (Bocconi) |
-| 2024/2025 | [Triennale]{.blue} | Giulio Maria Parisi |   | M.Sc. CLAMSES (Unimib) |
-| 2024/2025 | [Triennale]{.blue} | Giovanni Pomati |   | M.Sc. in Statistics (EPFL) |
-| 2025/2026 | [Triennale]{.blue} | Enrico Maria Pedol |   | M.Sc. in Statistics and Data Science (LMU Munich) |
-| 2025/2026 | [Triennale]{.blue} | Antonio Urso |   | M.Sc. CLAMSES (Unimib) |
-| 2025/2026 | [Triennale]{.blue} | Giacomo Arrigoni |   | M.Sc. CLAMSES (Unimib) |
-| 2025/2026 | [Triennale]{.blue} | Francesco Badolato |   | M.Sc. CLAMSES (Unimib) |
-|  |  | **Laurea Magistrale** |  |  |
-| 2020/2021 | [Magistrale]{.orange} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](files/papers/Agnoletto_magistrale.pdf) | Ph.D. in Statistics (Unipd) |
-| 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Tesi](files/papers/Tine_magistrale_826904.pdf) | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |
-| 2022/2023 | [Magistrale]{.orange} | Christian Arlenghi |   | Data Analyst (Deloitte) |
-| 2023/2024 | [Magistrale]{.orange} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_magistrale_858541.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
-| 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Tesi](files/papers/Cantaroni_magistrale.pdf) | Data Scientist (PwC) |
-| 2023/2024 | [Magistrale]{.orange} | Marco Carrettoni |   | Credit Risk Consultant (KPMG) |
-| 2024/2025 | [Magistrale]{.orange} | Francesco Bosco |   | Credit Risk Consultant (KPMG) |
-| 2024/2025 | [Magistrale]{.orange} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) | [Tesi](files/papers/Colello_magistrale.pdf) | Ph.D. in Statistics (UT Austin) |
-| 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Tesi](files/papers/Mucilli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) | Ph.D. in Economics, Statistics and Data Science (Unimib) |
-| 2024/2025 | [Magistrale]{.orange} | Tommaso Menghini | [Tesi](files/papers/Menghini_magistrale.pdf) - [Slides](files/papers/Menghini_magistrale_slides.pdf) | Statistician (Sigma Consulting) |
-| 2024/2025 | [Magistrale]{.orange} | Gaia Addis |   | Data Scientist (Cosmo) |
-| 2024/2025 | [Magistrale]{.orange} | Lidia Dell'Elba |   |   |
-| 2024/2025 | [Magistrale]{.orange} | Antonio Furfaro Serranò |   |   |
-| 2024/2025 | [Magistrale]{.orange} | Lucrezia Tusetti |   | Data Engineer (KPMG) |
-| 2025/2026 | [Magistrale]{.orange} | Stefano Andreoli |   | Ph.D. in Statistics (Duke) |
-|  |  | **Dottorato di Ricerca** |  |  |
-| 2023 | [**Ph.D.**]{.darkred} (Duke) | [Alessandro Zito](https://alessandrozito.github.io/web/) | [Tesi](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) | Postdoctoral researcher (Harvard) |
-| 2024 | [**Ph.D.**]{.darkred} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) | Postdoctoral researcher (Duke) |
+::: {.small-table}
 
-: {tbl-colwidths="[10, 15, 25, 12, 38]"}
+| A.A. | Laurea | Candidata/o | Materiale | Tesi all'estero | *Placement* |
+|:-------------:|:-------------:|:--------------|:--------------|:--------------|:--------------|
+|  |  | **Laurea Triennale** |  |  |  |
+| 2021/2022 | [Triennale]{.blue} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_triennale_858541.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | Marco Carrettoni | [Tesi](files/papers/Carrettoni_triennale_851292.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | Erica Delvino | [Tesi](files/papers/Delvino_triennale_851269.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2021/2022 | [Triennale]{.blue} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) |   |  | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Giulia De Innocentiis | [Tesi](files/papers/DeInnocentiis_triennale_865084.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Tommaso Menghini | [Tesi](files/papers/Menghini_triennale_864946.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2022/2023 | [Triennale]{.blue} | Marco Nobili |   |  | M.Sc. CLAMSES (Unimib) |
+| 2023/2024 | [Triennale]{.blue} | Stefano Andreoli | [Tesi](files/papers/Andreoli_triennale_880053.pdf) |  | M.Sc. CLAMSES (Unimib) |
+| 2023/2024 | [Triennale]{.blue} | Riccardo Cicuttin | [Tesi](files/papers/Cicuttin_triennale_879735.pdf) |  | M.Sc. in Mathematical Engineering (Polimi) |
+| 2024/2025 | [Triennale]{.blue} | Anna Ciapparelli |   |  | M.Sc. DSBA (Bocconi) |
+| 2024/2025 | [Triennale]{.blue} | Federico Boiocchi | [Tesi](files/papers/Boiocchi_triennale_895221.pdf) |  | M.Sc. DSBA (Bocconi) |
+| 2024/2025 | [Triennale]{.blue} | Giulio Maria Parisi |   |  | M.Sc. CLAMSES (Unimib) |
+| 2024/2025 | [Triennale]{.blue} | Giovanni Pomati |   |  | M.Sc. in Statistics (EPFL) |
+| 2025/2026 | [Triennale]{.blue} | Enrico Maria Pedol |   |  | M.Sc. in Statistics and Data Science (LMU Munich) |
+| 2025/2026 | [Triennale]{.blue} | Antonio Urso |   |  | M.Sc. CLAMSES (Unimib) |
+| 2025/2026 | [Triennale]{.blue} | Giacomo Arrigoni |   |  | M.Sc. CLAMSES (Unimib) |
+| 2025/2026 | [Triennale]{.blue} | Francesco Badolato |   |  | M.Sc. CLAMSES (Unimib) |
+|  |  | **Laurea Magistrale** |  |  |  |
+| 2020/2021 | [Magistrale]{.orange} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](files/papers/Agnoletto_magistrale.pdf) |  | Ph.D. in Statistics (Unipd) |
+| 2022/2023 | [Magistrale]{.orange} | Gabriele Tinè | [Tesi](files/papers/Tine_magistrale_826904.pdf) |  | Data Scientist (IRCCS Istituto Nazionale dei Tumori) |
+| 2022/2023 | [Magistrale]{.orange} | Christian Arlenghi |   | Oxford, UK (prof. [Francesco Rampazzo](https://francescorampazzo.com)) | Data Analyst (Deloitte) |
+| 2023/2024 | [Magistrale]{.orange} | [Anna Petranzan](https://sites.google.com/campus.unimib.it/anna-petranzan/) | [Tesi](files/papers/Petranzan_magistrale_858541.pdf) |  | Ph.D. in Economics, Statistics and Data Science (Unimib) |
+| 2023/2024 | [Magistrale]{.orange} | Luna Cantaroni | [Tesi](files/papers/Cantaroni_magistrale.pdf) |  | Data Scientist (PwC) |
+| 2023/2024 | [Magistrale]{.orange} | Marco Carrettoni |   |  | Credit Risk Consultant (KPMG) |
+| 2024/2025 | [Magistrale]{.orange} | Francesco Bosco |   |  | Credit Risk Consultant (KPMG) |
+| 2024/2025 | [Magistrale]{.orange} | [Alessandro Colello](https://stat.utexas.edu/directory/alessandro-colello) | [Tesi](files/papers/Colello_magistrale.pdf) |  | Ph.D. in Statistics (UT Austin) |
+| 2024/2025 | [Magistrale]{.orange} | Maria Regina Mucilli | [Tesi](files/papers/Mucilli_magistrale_872352.pdf) - [Slides](files/papers/Mucilli_magistrale_slides.pdf) |  | Ph.D. in Economics, Statistics and Data Science (Unimib) |
+| 2024/2025 | [Magistrale]{.orange} | Tommaso Menghini | [Tesi](files/papers/Menghini_magistrale.pdf) - [Slides](files/papers/Menghini_magistrale_slides.pdf) |  | Statistician (Sigma Consulting) |
+| 2024/2025 | [Magistrale]{.orange} | Gaia Addis |   |  | Data Scientist (Cosmo) |
+| 2024/2025 | [Magistrale]{.orange} | Lidia Dell'Elba |   | NUS, Singapore (prof.ssa [Maria De Iorio](https://discovery.nus.edu.sg/13583-maria-de-iorio)) |   |
+| 2024/2025 | [Magistrale]{.orange} | Antonio Furfaro Serranò |   |  |   |
+| 2024/2025 | [Magistrale]{.orange} | Lucrezia Tusetti |   |  | Data Engineer (KPMG) |
+| 2025/2026 | [Magistrale]{.orange} | Stefano Andreoli |   |  | Ph.D. in Statistics (Duke) |
+|  |  | **Dottorato di Ricerca** |  |  |  |
+| 2023 | [**Ph.D.**]{.darkred} (Duke) | [Alessandro Zito](https://alessandrozito.github.io/web/) | [Tesi](https://alessandrozito.github.io/web/files/thesis_alezito.pdf) - [Slides](https://alessandrozito.github.io/web/files/defense_alezito.pdf) |  | Postdoctoral researcher (Harvard) |
+| 2024 | [**Ph.D.**]{.darkred} | [Davide Agnoletto](https://davideagno.github.io) | [Tesi](https://www.research.unipd.it/retrieve/2d452b9b-ee95-4a6a-b0d5-9da3429643b4/Tesi_Agnoletto.pdf) |  | Postdoctoral researcher (Duke) |
+
+: {tbl-colwidths="[8, 11, 18, 12, 27, 24]"}
+
+:::
 
 <!-- ## FAQ {.central} -->
 

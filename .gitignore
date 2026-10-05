@@ -6,3 +6,5 @@ OLD
 .positai
 docs/CLAUDE.html
 docs/links.html
+
+**/*.quarto_ipynb

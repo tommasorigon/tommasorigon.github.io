@@ -188,6 +188,11 @@ karmic_score <- function(n, kappa) {
 
 ## Python code
 
+```{r}
+#| include: false
+reticulate::py_require(c("numpy", "scipy"))
+```
+
 ```{python}
 import numpy as np
 

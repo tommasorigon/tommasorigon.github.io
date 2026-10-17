@@ -1,0 +1,22 @@
+# RevealJS defaults for the slide decks inside post/, included by each deck with
+#   metadata-files:
+#     - ../revealjs-defaults.yml
+# They must NOT live in _quarto.yml or in a post/_metadata.yml: in Quarto 1.7.x a
+# second format defined there makes the full render fail while moving files to docs/.
+# Paths are relative to the document (post/<name>/<file>.qmd), hence ../../
+format:
+  revealjs:
+    auto-stretch: true
+    center: true
+    html-math-method: katex
+    transition: none
+    slide-number: true
+    callout-appearance: minimal
+    theme: [default, ../../template.css] # alternative themes (subset): default, night, dark
+    embed-resources: false
+    echo: false
+    fig-dpi: 200
+    # incremental: true  # Remove comment if you like incremental bullet points
+    logo: ../../images/logoB.png
+    footer: "[Home page](https://tommasorigon.github.io/)"
+    highlight-style: github

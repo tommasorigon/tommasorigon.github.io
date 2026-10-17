@@ -9,15 +9,21 @@ Personal academic website for Tommaso Rigon (Associate Professor, Università di
 ## Build commands
 
 ```bash
-# Full project render (preferred — always coherent)
-quarto render
+# Render file by file (this is the working workflow)
+quarto render index.qmd
+quarto render post/<name>/<name>.qmd
+# If that fails: rm -rf .quarto/_freeze/index && quarto render index.qmd
 
 # Preview with live reload
 quarto preview
 
-# Single file (use sparingly — can fail if freeze cache is stale)
-quarto render index.qmd
-# If that fails: rm -rf .quarto/_freeze/index && quarto render index.qmd
+# Full project render: works, as long as no format other than html is declared in
+# _quarto.yml or in a directory-level _metadata.yml (Quarto 1.7.x bug: that makes the
+# render end with a misleading "rename '<file>.html' -> 'docs/.../<file>.html'" NotFound
+# and leaves stray .html files and site_libs/ in the root). RevealJS defaults therefore
+# live in post/revealjs-defaults.yml, included by each deck via `metadata-files`.
+# A failing chunk in any file aborts the run with the same rename error; the real
+# error is higher up in the output.
 ```
 
 The output directory is `docs/`. Never delete it manually; doing so breaks the rename step in incremental builds.
@@ -55,7 +61,7 @@ These posts also include `biblio.bib` and an `img/` folder.
 `_quarto.yml` defines:
 - Output dir: `docs/`
 - HTML theme: `simplex` + `template.css` (custom CSS with `.blue`, `.orange`, `.darkred` span classes used throughout)
-- RevealJS slides: logo `images/logoB.png`, footer linking to homepage
+- RevealJS slide defaults (logo `images/logoB.png`, footer linking to homepage, theme) are in `post/revealjs-defaults.yml` (included by each deck with `metadata-files: [../revealjs-defaults.yml]`), NOT in `_quarto.yml` (see build notes)
 - Lua filter `remove-pause.lua` applied globally (strips `{.pause}` from slides)
 - Math: KaTeX
 

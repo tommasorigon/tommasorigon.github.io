@@ -14,6 +14,8 @@ csl: https://www.zotero.org/styles/journal-of-the-american-statistical-associati
 reference-location: margin
 execute:
   cache: false
+metadata-files:
+  - ../revealjs-defaults.yml
 format:
   html:
     toc: true

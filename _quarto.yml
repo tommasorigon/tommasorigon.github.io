@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "**/*.qmd"
+  resources:
+    - fonts/
 
 website:
   title: "Tommaso Rigon"
@@ -36,21 +40,6 @@ format:
     code-fold: false
     code-summary: "Show the code"
     fig-dpi: 200
-    highlight-style: github
-  revealjs:
-    auto-stretch: true
-    center: true
-    html-math-method: katex
-    transition: none
-    slide-number: true
-    callout-appearance: minimal
-    theme: [default, template.css] # alternative themes (subset): default, night, dark
-    embed-resources: false
-    echo: false
-    fig-dpi: 200
-    # incremental: true  # Remove comment if you like incremental bullet points
-    logo: images/logoB.png
-    footer: "[Home page](https://tommasorigon.github.io/)"
     highlight-style: github
 format-links: false
 

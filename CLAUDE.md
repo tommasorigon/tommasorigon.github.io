@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Instructions for Claude Code
+
+Read and follow this file before inspecting or changing the project. Treat it as the
+repository-level instructions for every Claude Code conversation. When a task touches
+content, also inspect the relevant `.qmd` source and its nearby assets before editing.
+Keep changes focused on source files; do not edit generated `docs/` files or local
+cache/state directories unless the user explicitly asks for generated output changes.
+
 ## What this is
 
 Personal academic website for Tommaso Rigon (Associate Professor, Università di Milano-Bicocca), built with **Quarto** and hosted on GitHub Pages from the `docs/` output directory.
@@ -27,6 +35,11 @@ quarto preview
 ```
 
 The output directory is `docs/`. Never delete it manually; doing so breaks the rename step in incremental builds.
+
+Generated and local-only directories include `.quarto/`, `.Rproj.user/`, and other
+editor/cache state. They are not source material and should be ignored during project
+analysis. PDFs, fonts, and other binary assets should be inspected only when relevant
+to the requested change.
 
 ## Project structure
 
@@ -72,3 +85,14 @@ These posts also include `biblio.bib` and an `img/` folder.
 - Dunson's name is always formatted as `Dunson, D. B.` (comma after surname, space between initials)
 - Section headings use `{.central}` class: `## Section title {.central}`
 - Comments in `.qmd` files use standard HTML `<!-- -->` to hide outdated content rather than deleting it
+
+## Change and verification workflow
+
+- Preserve existing user changes and check `git status` before editing.
+- Prefer the smallest source-only change that satisfies the request.
+- For content changes, render the affected page with `quarto render <file>.qmd` when
+  Quarto is available, then inspect the resulting diff and status.
+- If a full render is needed, follow the build notes above and keep generated output
+  consistent with the repository's normal workflow.
+- Report any render or dependency limitation clearly instead of modifying generated
+  files by hand.

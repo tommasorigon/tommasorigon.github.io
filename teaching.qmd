@@ -20,6 +20,8 @@
   - [Statistics I (ITA)](https://tommasorigon.github.io/StatI/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.  
   
   - [R for the multivariate statistical analysis (ITA)](https://tommasorigon.github.io/introR/), CdL in Scienze Statistiche ed Economiche, University of Milano-Bicocca.
+  
+  - [Statistical Models and Applications in Economics and Environmental Sciences](https://tommasorigon.github.io/EnvEcoStat/), CdL in Economics and Science for Environmental Sustainability, University of Milano-Bicocca.
 
 ## Slides of talks and seminars {.central}
 

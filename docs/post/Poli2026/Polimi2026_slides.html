@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-5c1318cf63eba56dbef7ba16bc7d56f5.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Tommaso Rigon">
   <meta name="dcterms.date" content="2026-10-01">
@@ -18,10 +18,16 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -50,7 +56,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-d305c1e09a602aff0b01fc98e216f1cf.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-bcd1ea77b88515d199d5f294f135d823.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -170,7 +176,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<span class="orange">Tommaso Rigon</span> 
+<span class="orange">Tommaso Rigon</span>
 </div>
         <p class="quarto-title-affiliation">
             <em>Università degli Studi di Milano-Bicocca</em>
@@ -228,7 +234,7 @@
 <div class="callout-content">
 <p>Under <span class="orange">Hubbell’s neutral model</span>, abundances <span class="math inline">n_1,\dots,n_K</span> of the <span class="math inline">K</span> distinct types among <span class="math inline">n</span> individuals follow the <span class="blue">Ewens sampling formula</span> <span class="citation" data-cites="ewens72">(<a href="#/references" role="doc-biblioref" onclick="">Ewens 1972</a>)</span> <span class="math display">
 p(n_1,\dots,n_K \mid \theta) = \frac{\theta^K}{(\theta)_n}\prod_{j=1}^K (n_j - 1)!, \qquad \theta &gt; 0.
-</span> A <span class="orange">single innovation parameter</span> <span class="math inline">\theta</span> governs diversity: a principled <span class="blue">null hypothesis</span> for apparent trends <span class="citation" data-cites="Rigon2026 Zito2026">(<a href="#/references" role="doc-biblioref" onclick="">Rigon et al. 2026+</a>; <a href="#/references" role="doc-biblioref" onclick="">Zito et al. 2026+</a>)</span>.</p>
+</span> A <span class="orange">single innovation parameter</span> <span class="math inline">\theta</span> governs diversity: a principled <span class="blue">null hypothesis</span> for apparent trends <span class="citation" data-cites="Rigon2026 Zito2026">(<a href="#/references" role="doc-biblioref" onclick="">Rigon et al. 2026+</a>; <a href="#/references" role="doc-biblioref" onclick=""><span class="nocase">Zito et al.</span> 2026+</a>)</span>.</p>
 </div>
 </div>
 </div>
@@ -282,7 +288,7 @@ Hubbell, S. P. (2001), <em>The unified neutral theory of biodiversity and biogeo
 Rigon, T., Hsu, C., and Dunson, D. B. (2026+), <span>“<a href="https://arxiv.org/abs/2608.11180">A bayesian theory for estimation of biodiversity</a>,”</span> <em>arXiv:2608.11180</em>.
 </div>
 <div id="ref-Zito2026" class="csl-entry" role="listitem">
-Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O., and Dunson, D. B. (2026+), <span>“<a href="https://www.biorxiv.org/content/10.64898/2026.05.29.728852v1">Climate structures global associations between human footprint and arthropod diversity</a>,”</span> <em>bioRxiv</em>.
+<span class="nocase">Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O., and Dunson, D. B.</span> (2026+), <span>“<a href="https://www.biorxiv.org/content/10.64898/2026.05.29.728852v1">Climate structures global associations between human footprint and arthropod diversity</a>,”</span> <em>bioRxiv</em>.
 </div>
 </div>
 </section>
@@ -531,13 +537,14 @@ Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., 
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

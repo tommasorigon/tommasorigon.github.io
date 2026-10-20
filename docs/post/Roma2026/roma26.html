@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,16 @@
 
 <title>BNP modeling of multivariate count data with unknown traits – Tommaso Rigon</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -55,10 +61,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71a093a88d50e748a1bb9dd980e20b96.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8f314ba4a6e958398f2ed4c6b94ac2a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-68f0efa39d6600891598d4248ddc8a81.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -104,7 +110,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -361,7 +367,7 @@ A_{i\ell} \in \{0,1,2,\ldots\}, \qquad i=1,\dots,n,\quad \ell=1,\dots,k,
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: exchangeable binary traits
+<span class="screen-reader-only">Note</span>Example: exchangeable binary traits
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -407,11 +413,11 @@ A_{i\ell q} \in \{0, 1, 2, \ldots\}, \qquad i = 1,\dots, n, \quad \ell = 1,\dots
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: known-groups binary traits
+<span class="screen-reader-only">Note</span>Example: known-groups binary traits
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This known-group structure (partial exchangeability) is well suited to the ’Ndrangheta data, where affiliates are grouped by membership in specific <em>locali</em>.</p>
+<p>This known-group structure (partial exchangeability) is well suited to the ‘Ndrangheta data, where affiliates are grouped by membership in specific <em>locali</em>.</p>
 </div>
 </div>
 </section>
@@ -510,7 +516,7 @@ Example: known-groups binary traits
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b">Ghilotti et al. (<a href="#ref-Ghilotti2025b" role="doc-biblioref">2025b</a>)</span>)
+<span class="screen-reader-only">Warning</span>Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b">Ghilotti et al. (<a href="#ref-Ghilotti2025b" role="doc-biblioref">2025b</a>)</span>)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -558,7 +564,7 @@ Theorem (Marginal distribution; <span class="citation" data-cites="Ghilotti2025b
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Theorem (Posterior distribution; <span class="citation" data-cites="Ghilotti2025b">Ghilotti et al. (<a href="#ref-Ghilotti2025b" role="doc-biblioref">2025b</a>)</span>)
+<span class="screen-reader-only">Warning</span>Theorem (Posterior distribution; <span class="citation" data-cites="Ghilotti2025b">Ghilotti et al. (<a href="#ref-Ghilotti2025b" role="doc-biblioref">2025b</a>)</span>)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -703,7 +709,7 @@ p_{iq} = \mathbb{P}(\mu_i = \tilde{\mu}_q \mid \bm{Z}, \bm{\mu}_{-i}), \qquad p_
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Proposition <span class="citation" data-cites="Ghilotti2025b">(<a href="#ref-Ghilotti2025b" role="doc-biblioref">Ghilotti et al. 2025b</a>)</span>
+<span class="screen-reader-only">Warning</span>Proposition <span class="citation" data-cites="Ghilotti2025b">(<a href="#ref-Ghilotti2025b" role="doc-biblioref">Ghilotti et al. 2025b</a>)</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -965,13 +971,14 @@ Wade, S., and Ghahramani, Z. (2018), <span>“<span class="nocase">Bayesian clus
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

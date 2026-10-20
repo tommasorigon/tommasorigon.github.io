@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>Karmic dice for Baldur’s Gate III – Tommaso Rigon</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -69,10 +75,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-92eaa9f3cac64f6982a8a06e2ba947a3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-71a093a88d50e748a1bb9dd980e20b96.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8f314ba4a6e958398f2ed4c6b94ac2a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-68f0efa39d6600891598d4248ddc8a81.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -118,7 +124,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -291,42 +297,42 @@ Y_t = - \kappa \:Y_{t-1} + \epsilon_t, \qquad \epsilon_t \sim \text{N}(0, 1),
 </span> for <span class="math inline">t = 2,\dots,n</span>. In other words, <span class="orange">if we were unlucky</span> at step <span class="math inline">t</span>, we had <span class="blue">better chances to be lucky</span> at step <span class="math inline">t+1</span> (and vice-versa). The amount of this <span class="grey">effect</span> is <span class="grey">regulated by the parameter <span class="math inline">\kappa</span></span>.</p>
 <p>In <strong>R / python code</strong>, the generation of the latent karma scores is straightforward:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Python code</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Python code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>karmic_score <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
-<span id="cb3-3"><a href="#cb3-3"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
-<span id="cb3-4"><a href="#cb3-4"></a>  </span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="co"># First latent karma Y_1</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a>  latent_score[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, sigma)</span>
-<span id="cb3-7"><a href="#cb3-7"></a>  </span>
-<span id="cb3-8"><a href="#cb3-8"></a>  <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>  <span class="cf">for</span> (t <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>(n <span class="sc">-</span> <span class="dv">1</span>)) {</span>
-<span id="cb3-10"><a href="#cb3-10"></a>    latent_score[t <span class="sc">+</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="sc">-</span>kappa <span class="sc">*</span> latent_score[t] <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb3-11"><a href="#cb3-11"></a>  }</span>
-<span id="cb3-12"><a href="#cb3-12"></a>  </span>
-<span id="cb3-13"><a href="#cb3-13"></a>  <span class="fu">return</span>(latent_score)</span>
-<span id="cb3-14"><a href="#cb3-14"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-label="1"></a>karmic_score <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-label="2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-label="3"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-label="4"></a>  </span>
+<span id="cb3-5"><a href="#cb3-5" aria-label="5"></a>  <span class="co"># First latent karma Y_1</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-label="6"></a>  latent_score[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, sigma)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-label="7"></a>  </span>
+<span id="cb3-8"><a href="#cb3-8" aria-label="8"></a>  <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-label="9"></a>  <span class="cf">for</span> (t <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>(n <span class="sc">-</span> <span class="dv">1</span>)) {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-label="10"></a>    latent_score[t <span class="sc">+</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="sc">-</span>kappa <span class="sc">*</span> latent_score[t] <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-label="11"></a>  }</span>
+<span id="cb3-12"><a href="#cb3-12" aria-label="12"></a>  </span>
+<span id="cb3-13"><a href="#cb3-13" aria-label="13"></a>  <span class="fu">return</span>(latent_score)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-label="14"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-2"><a href="#cb4-2"></a></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="kw">def</span> karmic_score(n, kappa):</span>
-<span id="cb4-4"><a href="#cb4-4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
-<span id="cb4-5"><a href="#cb4-5"></a>    latent_score <span class="op">=</span> np.zeros(n)</span>
-<span id="cb4-6"><a href="#cb4-6"></a>    </span>
-<span id="cb4-7"><a href="#cb4-7"></a>    <span class="co"># First latent karma Y_1</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a>    latent_score[<span class="dv">0</span>] <span class="op">=</span> np.random.normal(<span class="dv">0</span>, sigma)</span>
-<span id="cb4-9"><a href="#cb4-9"></a>    </span>
-<span id="cb4-10"><a href="#cb4-10"></a>    <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
-<span id="cb4-12"><a href="#cb4-12"></a>        latent_score[t] <span class="op">=</span> <span class="op">-</span>kappa <span class="op">*</span> latent_score[t <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb4-13"><a href="#cb4-13"></a>    </span>
-<span id="cb4-14"><a href="#cb4-14"></a>    <span class="cf">return</span> latent_score</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-label="1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-label="2"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-label="3"></a><span class="kw">def</span> karmic_score(n, kappa):</span>
+<span id="cb4-4"><a href="#cb4-4" aria-label="4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-label="5"></a>    latent_score <span class="op">=</span> np.zeros(n)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-label="6"></a>    </span>
+<span id="cb4-7"><a href="#cb4-7" aria-label="7"></a>    <span class="co"># First latent karma Y_1</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-label="8"></a>    latent_score[<span class="dv">0</span>] <span class="op">=</span> np.random.normal(<span class="dv">0</span>, sigma)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-label="9"></a>    </span>
+<span id="cb4-10"><a href="#cb4-10" aria-label="10"></a>    <span class="co"># Generation of the latent karma values Y_2,...,Y_n</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-label="11"></a>    <span class="cf">for</span> t <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n):</span>
+<span id="cb4-12"><a href="#cb4-12" aria-label="12"></a>        latent_score[t] <span class="op">=</span> <span class="op">-</span>kappa <span class="op">*</span> latent_score[t <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-label="13"></a>    </span>
+<span id="cb4-14"><a href="#cb4-14" aria-label="14"></a>    <span class="cf">return</span> latent_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -337,40 +343,40 @@ D_t = \text{ceiling}\{20 \Phi_\kappa(Y_t)\}, \qquad t = 1,\dots,n,
 </span> where <span class="math inline">\Phi_\kappa(y)</span> is the <span class="blue">cumulative distribution function</span> of a Gaussian with zero mean and variance <span class="math inline">1 / (1 - \kappa^2)</span>.</p>
 <p>The <span class="math inline">\text{ceiling}</span> operation rounds up its argument, producing an integer. Once again, this operation can be performed with a few lines of R / Python code.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python code</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">R code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Python code</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>karmic_dice <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
-<span id="cb5-2"><a href="#cb5-2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
-<span id="cb5-3"><a href="#cb5-3"></a>  </span>
-<span id="cb5-4"><a href="#cb5-4"></a>  <span class="co"># Generate the latent scores</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">karmic_score</span>(n, kappa)</span>
-<span id="cb5-6"><a href="#cb5-6"></a>  <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>  dice_results <span class="ot">&lt;-</span> <span class="fu">ceiling</span>(<span class="dv">20</span> <span class="sc">*</span> <span class="fu">pnorm</span>(latent_score, <span class="dv">0</span>, sigma))</span>
-<span id="cb5-8"><a href="#cb5-8"></a>  <span class="fu">return</span>(dice_results)</span>
-<span id="cb5-9"><a href="#cb5-9"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-label="1"></a>karmic_dice <span class="ot">&lt;-</span> <span class="cf">function</span>(n, kappa) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-label="2"></a>  sigma <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> kappa<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-label="3"></a>  </span>
+<span id="cb5-4"><a href="#cb5-4" aria-label="4"></a>  <span class="co"># Generate the latent scores</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-label="5"></a>  latent_score <span class="ot">&lt;-</span> <span class="fu">karmic_score</span>(n, kappa)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-label="6"></a>  <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-label="7"></a>  dice_results <span class="ot">&lt;-</span> <span class="fu">ceiling</span>(<span class="dv">20</span> <span class="sc">*</span> <span class="fu">pnorm</span>(latent_score, <span class="dv">0</span>, sigma))</span>
+<span id="cb5-8"><a href="#cb5-8" aria-label="8"></a>  <span class="fu">return</span>(dice_results)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-label="9"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
-<span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="kw">def</span> karmic_dice(n, kappa):</span>
-<span id="cb6-4"><a href="#cb6-4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
-<span id="cb6-5"><a href="#cb6-5"></a>    </span>
-<span id="cb6-6"><a href="#cb6-6"></a>    <span class="co"># Generate the latent scores</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a>    latent_score <span class="op">=</span> karmic_score(n, kappa)</span>
-<span id="cb6-8"><a href="#cb6-8"></a>    <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
-<span id="cb6-9"><a href="#cb6-9"></a>    dice_results <span class="op">=</span> np.ceil(<span class="dv">20</span> <span class="op">*</span> norm.cdf(latent_score, loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span>sigma))</span>
-<span id="cb6-10"><a href="#cb6-10"></a>    <span class="cf">return</span> dice_results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-label="1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb6-2"><a href="#cb6-2" aria-label="2"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-label="3"></a><span class="kw">def</span> karmic_dice(n, kappa):</span>
+<span id="cb6-4"><a href="#cb6-4" aria-label="4"></a>    sigma <span class="op">=</span> np.sqrt(<span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">-</span> kappa<span class="op">**</span><span class="dv">2</span>))</span>
+<span id="cb6-5"><a href="#cb6-5" aria-label="5"></a>    </span>
+<span id="cb6-6"><a href="#cb6-6" aria-label="6"></a>    <span class="co"># Generate the latent scores</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-label="7"></a>    latent_score <span class="op">=</span> karmic_score(n, kappa)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-label="8"></a>    <span class="co"># Convert the latent scores into integers between 1 and 20</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-label="9"></a>    dice_results <span class="op">=</span> np.ceil(<span class="dv">20</span> <span class="op">*</span> norm.cdf(latent_score, loc<span class="op">=</span><span class="dv">0</span>, scale<span class="op">=</span>sigma))</span>
+<span id="cb6-10"><a href="#cb6-10" aria-label="10"></a>    <span class="cf">return</span> dice_results</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
 </div>
 <p>The usage of this function is also straightforward. In R, we can get a bunch of values for the latent score and the dice as follows:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">30</span>, <span class="at">kappa =</span> <span class="fl">0.35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-label="1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">30</span>, <span class="at">kappa =</span> <span class="fl">0.35</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] 17 17  1 11 19  1  8  2  7  6 17  1  9  9  7  2  5 14  8 10 11  5 15  4 13
 [26]  5 17 18 17 20</code></pre>
@@ -422,7 +428,7 @@ D_t = \text{ceiling}\{20 \Phi_\kappa(Y_t)\}, \qquad t = 1,\dots,n,
 <p>The amount of compensation is regulated by <span class="math inline">\kappa</span>, a <span class="blue">crucial tuning parameter</span> that can be used to tune the dynamic of the karma dice.</p>
 <p>If <span class="math inline">\kappa</span> is close to <span class="math inline">0</span>, we get a regular dice. Vice versa, if <span class="math inline">\kappa</span> is close to <span class="math inline">1</span>, i.e., the theoretical maximum, we would get sequences like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">kappa =</span> <span class="fl">0.999</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-label="1"></a><span class="fu">karmic_dice</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">kappa =</span> <span class="fl">0.999</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1]  7 13  7 14  7 14  7 14  7 13  8 13  8 13  7 13  8 13  8 13  8 13  7 14  7
  [26] 14  7 14  7 14  7 14  8 13  7 14  7 14  8 14  8 13  8 13  8 13  8 13  9 13
@@ -489,13 +495,14 @@ D_t = \text{ceiling}\{20 \Phi_\kappa(Y_t)\}, \qquad t = 1,\dots,n,
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

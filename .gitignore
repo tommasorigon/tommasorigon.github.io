@@ -8,3 +8,6 @@ docs/CLAUDE.html
 docs/links.html
 
 **/*.quarto_ipynb
+.Rhistory
+.RData
+*_cache/

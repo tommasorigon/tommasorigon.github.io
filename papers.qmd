@@ -68,7 +68,7 @@
 
 1. **Rigon, T.**, Aliverti, E., Russo, M., and Scarpa, B. (2021). A discussion on: "Centered partition processes: Informative priors for clustering" Paganin, S., Herring, A. H., Olshan, A. F., Dunson, D. B., et al. (2021) in *Bayesian Analysis* **16**(1) 301--370. [[Link]](https://projecteuclid.org/journals/bayesian-analysis/volume-16/issue-1/Centered-Partition-Processes-Informative-Priors-for-Clustering-with-Discussion/10.1214/20-BA1197.full).
 
-1. Aliverti, E., Paganin, S., **Rigon, T.** and Russo, M. (2019). A discussion on: "Latent nested nonparametric priors" by Camerlenghi, F., Dunson, D.B., Lijoi, A., Prünster, I. and Rodriguez, A. in *Bayesian Analysis* **14**(4), 1303--1356. [[Link]](https://projecteuclid.org/euclid.ba/1561601089).
+1. Aliverti, E., Paganin, S., **Rigon, T.** and Russo, M. (2019). A discussion on: "Latent nested nonparametric priors" by Camerlenghi, F., Dunson, D. B., Lijoi, A., Prünster, I. and Rodriguez, A. in *Bayesian Analysis* **14**(4), 1303--1356. [[Link]](https://projecteuclid.org/euclid.ba/1561601089).
 
 1. Caponera, A., Denti, F., **Rigon, T.**, Sottosanti, A. and Gelfand, A. (2018). Hierarchical Spatio-Temporal Modeling of Resting State fMRI Data. In *Studies in Neural Data Science* (Canale, A., Durante, D., Paci, L. and Scarpa, B., editors). Springer. [[Link]](https://www.springer.com/us/book/9783030000387) [[GitHub repository]](https://github.com/tommasorigon/StartUpResearch).
 

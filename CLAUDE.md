@@ -26,7 +26,8 @@ quarto render post/<name>/<name>.qmd
 quarto preview
 
 # Full project render: works, as long as no format other than html is declared in
-# _quarto.yml or in a directory-level _metadata.yml (Quarto 1.7.x bug: that makes the
+# _quarto.yml or in a directory-level _metadata.yml (bug seen in Quarto 1.7.x, not
+# re-tested since; installed version is now 1.10.x. That setup makes the
 # render end with a misleading "rename '<file>.html' -> 'docs/.../<file>.html'" NotFound
 # and leaves stray .html files and site_libs/ in the root). RevealJS defaults therefore
 # live in post/revealjs-defaults.yml, included by each deck via `metadata-files`.

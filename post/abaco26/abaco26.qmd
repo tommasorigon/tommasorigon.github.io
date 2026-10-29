@@ -429,7 +429,7 @@ Out-of-sample prediction accuracy evaluated in terms of MSE and AUC for [regress
 
 The [main paper]{.orange} is: 
 
-Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. *arXiv:2507.08629*
+Agnoletto, D., Rigon, T., and Dunson, D. B. (2025+). Nonparametric predictive inference for discrete data via Metropolis-adjusted Dirichlet sequences. *arXiv:2507.08629*
 
 ## References {.unnumbered .smaller}
 

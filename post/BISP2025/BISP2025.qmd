@@ -304,7 +304,7 @@ where $\widehat{\mu}_i = \mu_i(\widehat{\boldsymbol{\beta}})$,  which is [fast]{
 
 The [main paper]{.orange} is: 
 
-Agnoletto, D., Rigon, T., and Dunson D.B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear.
+Agnoletto, D., Rigon, T., and Dunson, D. B. (2025+). Bayesian inference for generalized linear models via quasi-posteriors. *Biometrika*, to appear.
 
 ## References {.unnumbered}
 

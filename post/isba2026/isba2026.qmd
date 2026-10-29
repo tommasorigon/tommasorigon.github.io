@@ -481,7 +481,7 @@ HubbelGLM(cbind(n, y) ~ ., family = hubbell(sigma = 0), data = data)
 
 <div style="font-size: 80%;">
 
-Rigon, T., Hsu, C., and Dunson D.B. (2025). A Bayesian theory for estimation of biodiversity. *arXiv:2502.01333*
+Rigon, T., Hsu, C., and Dunson, D. B. (2025). A Bayesian theory for estimation of biodiversity. *arXiv:2502.01333*
 
 Zito, A., Rigon, T., Roslin, T., Niittynen, P., Hebert, P. D. N., Zakharov, E., Ratnasingham, S., iBOL Consortium, Ovaskainen, O. and Dunson, D. B. (2026). Predicting global biodiversity via Hubbell regression. *bioRxiv*
 </div>

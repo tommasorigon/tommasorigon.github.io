@@ -1,0 +1,215 @@
+provincia,prov_code,regione,sesso,lavoratori,media_annua
+Torino,001,Piemonte,Maschi,259817,40446.2849775034
+Torino,001,Piemonte,Femmine,127951,34780.61159350064
+Alessandria,006,Piemonte,Maschi,45826,37148.73824902894
+Alessandria,006,Piemonte,Femmine,20431,31553.784689931967
+Asti,005,Piemonte,Maschi,18494,34792.78555207094
+Asti,005,Piemonte,Femmine,9226,30858.339258616954
+Biella,096,Piemonte,Maschi,17090,36413.6200702165
+Biella,096,Piemonte,Femmine,10924,30953.009245697547
+Cuneo,004,Piemonte,Maschi,70937,36783.18546033805
+Cuneo,004,Piemonte,Femmine,30234,31526.40318846332
+Novara,003,Piemonte,Maschi,44361,38015.44579698384
+Novara,003,Piemonte,Femmine,21496,32293.550660588015
+Verbano-Cusio-Ossola,103,Piemonte,Maschi,11766,34426.11788203297
+Verbano-Cusio-Ossola,103,Piemonte,Femmine,5721,30160.80632756511
+Vercelli,002,Piemonte,Maschi,16816,37307.294957183636
+Vercelli,002,Piemonte,Femmine,9422,32008.02271279983
+Valle d'Aosta/Vallée d'Aoste,007,Valle d'Aosta,Maschi,11480,36363.03101045296
+Valle d'Aosta/Vallée d'Aoste,007,Valle d'Aosta,Femmine,4901,31948.39175678433
+Genova,010,Liguria,Maschi,89962,41753.16056779529
+Genova,010,Liguria,Femmine,35612,35071.31699988768
+Imperia,008,Liguria,Maschi,11609,31480.81962270652
+Imperia,008,Liguria,Femmine,5401,28955.725976670987
+La Spezia,011,Liguria,Maschi,21804,36861.87626123647
+La Spezia,011,Liguria,Femmine,6558,31897.48429399207
+Savona,009,Liguria,Maschi,20491,35463.477282709486
+Savona,009,Liguria,Femmine,7903,30667.70795900291
+Milano,015,Lombardia,Maschi,605823,53340.14533948035
+Milano,015,Lombardia,Femmine,352809,45464.3886663889
+Bergamo,016,Lombardia,Maschi,164144,38721.86804269422
+Bergamo,016,Lombardia,Femmine,62084,31929.857869982603
+Brescia,017,Lombardia,Maschi,177356,37430.08629536074
+Brescia,017,Lombardia,Femmine,66409,31233.367314671203
+Como,013,Lombardia,Maschi,67572,36819.70483336293
+Como,013,Lombardia,Femmine,32814,31645.33805692692
+Cremona,019,Lombardia,Maschi,39604,37348.51419048581
+Cremona,019,Lombardia,Femmine,20304,30296.60662923562
+Lecco,097,Lombardia,Maschi,45383,39393.388493488754
+Lecco,097,Lombardia,Femmine,17743,31551.071633883785
+Lodi,098,Lombardia,Maschi,23937,37161.14579939006
+Lodi,098,Lombardia,Femmine,10961,32215.954474956663
+Mantova,020,Lombardia,Maschi,51085,36725.14432808065
+Mantova,020,Lombardia,Femmine,23208,30169.21341778697
+Monza e della Brianza,108,Lombardia,Maschi,107273,42841.95156283501
+Monza e della Brianza,108,Lombardia,Femmine,48177,36245.11978745044
+Pavia,018,Lombardia,Maschi,47953,35188.17235626551
+Pavia,018,Lombardia,Femmine,23142,30516.6795436868
+Sondrio,014,Lombardia,Maschi,18315,36332.281681681685
+Sondrio,014,Lombardia,Femmine,7265,29780.761321403992
+Varese,012,Lombardia,Maschi,100546,39921.35792572554
+Varese,012,Lombardia,Femmine,46829,32646.778983108758
+Bolzano/Bozen,021,Trentino-Alto Adige,Maschi,71118,43384.77177367193
+Bolzano/Bozen,021,Trentino-Alto Adige,Femmine,23811,36508.26521355676
+Trento,022,Trentino-Alto Adige,Maschi,61058,37959.40358347801
+Trento,022,Trentino-Alto Adige,Femmine,22186,32926.40390336248
+Venezia,027,Veneto,Maschi,97946,36986.97593571968
+Venezia,027,Veneto,Femmine,40815,31748.482714688227
+Belluno,025,Veneto,Maschi,23983,37024.19230288121
+Belluno,025,Veneto,Femmine,13416,31459.350253428744
+Padova,028,Veneto,Maschi,131501,37941.35168553851
+Padova,028,Veneto,Femmine,57593,31993.581042835067
+Rovigo,029,Veneto,Maschi,21660,33576.053831948295
+Rovigo,029,Veneto,Femmine,9781,29244.268786422657
+Treviso,026,Veneto,Maschi,125002,37453.41894529688
+Treviso,026,Veneto,Femmine,53854,31076.233297433802
+Verona,023,Veneto,Maschi,123158,38422.83889800094
+Verona,023,Veneto,Femmine,51298,33251.45454013802
+Vicenza,024,Veneto,Maschi,132278,37887.45798999078
+Vicenza,024,Veneto,Femmine,54534,30693.345050794
+Trieste,032,Friuli-Venezia Giulia,Maschi,25329,42110.031584349956
+Trieste,032,Friuli-Venezia Giulia,Femmine,11043,36490.821063116906
+Gorizia,031,Friuli-Venezia Giulia,Maschi,17197,34588.52701052509
+Gorizia,031,Friuli-Venezia Giulia,Femmine,4629,31432.283430546555
+Pordenone,093,Friuli-Venezia Giulia,Maschi,39444,36811.7041628638
+Pordenone,093,Friuli-Venezia Giulia,Femmine,16726,30687.6378691857
+Udine,030,Friuli-Venezia Giulia,Maschi,60794,36785.5525709774
+Udine,030,Friuli-Venezia Giulia,Femmine,24332,30896.188393884597
+Bologna,037,Emilia-Romagna,Maschi,148740,42288.51162431088
+Bologna,037,Emilia-Romagna,Femmine,75582,35825.849355666694
+Ferrara,038,Emilia-Romagna,Maschi,25831,35063.76412063025
+Ferrara,038,Emilia-Romagna,Femmine,12247,30925.690863068507
+Forlì-Cesena,040,Emilia-Romagna,Maschi,45149,35778.20906332366
+Forlì-Cesena,040,Emilia-Romagna,Femmine,18913,30556.641780785703
+Modena,036,Emilia-Romagna,Maschi,108381,41965.680977293065
+Modena,036,Emilia-Romagna,Femmine,50807,34605.61898950932
+Parma,034,Emilia-Romagna,Maschi,67657,42261.645121716894
+Parma,034,Emilia-Romagna,Femmine,31636,35665.17720318624
+Piacenza,033,Emilia-Romagna,Maschi,40059,36842.193215007865
+Piacenza,033,Emilia-Romagna,Femmine,16684,31352.83289379046
+Ravenna,039,Emilia-Romagna,Maschi,43216,38159.78947611996
+Ravenna,039,Emilia-Romagna,Femmine,18661,31438.74288623332
+Reggio nell'Emilia,035,Emilia-Romagna,Maschi,74473,40268.29027969868
+Reggio nell'Emilia,035,Emilia-Romagna,Femmine,31983,33332.649876496886
+Rimini,099,Emilia-Romagna,Maschi,29764,34561.131131568334
+Rimini,099,Emilia-Romagna,Femmine,13195,29556.916559302765
+Firenze,048,Toscana,Maschi,125372,38350.94828191303
+Firenze,048,Toscana,Femmine,68404,34108.37876439974
+Arezzo,051,Toscana,Maschi,36573,33262.60670439942
+Arezzo,051,Toscana,Femmine,18102,29194.860623135566
+Grosseto,053,Toscana,Maschi,12811,31076.15408633206
+Grosseto,053,Toscana,Femmine,4998,29582.488595438175
+Livorno,049,Toscana,Maschi,27362,36318.279804107886
+Livorno,049,Toscana,Femmine,8919,32290.78809283552
+Lucca,046,Toscana,Maschi,43184,36411.87548629122
+Lucca,046,Toscana,Femmine,13977,32545.778779423337
+Massa-Carrara,045,Toscana,Maschi,15724,35205.89595522768
+Massa-Carrara,045,Toscana,Femmine,4203,31129.17630264097
+Pisa,050,Toscana,Maschi,45667,35731.202509470735
+Pisa,050,Toscana,Femmine,18682,31659.14366770153
+Pistoia,047,Toscana,Maschi,22673,33210.67953071936
+Pistoia,047,Toscana,Femmine,9823,29082.09640639316
+Prato,100,Toscana,Maschi,27218,32868.763355132636
+Prato,100,Toscana,Femmine,14807,28837.748699939217
+Siena,052,Toscana,Maschi,25684,36062.673142812644
+Siena,052,Toscana,Femmine,12650,35094.666166007904
+Perugia,054,Umbria,Maschi,64817,32318.49126000895
+Perugia,054,Umbria,Femmine,27017,29129.032275974387
+Terni,055,Umbria,Maschi,20904,32732.198813624185
+Terni,055,Umbria,Femmine,6104,29029.115825688074
+Ancona,042,Marche,Maschi,52490,35041.40783006287
+Ancona,042,Marche,Femmine,21319,30754.92110324124
+Ascoli Piceno,044,Marche,Maschi,20037,32749.43983630284
+Ascoli Piceno,044,Marche,Femmine,7438,30305.575289056196
+Fermo,109,Marche,Maschi,14095,29952.944164597375
+Fermo,109,Marche,Femmine,7475,26835.068762541807
+Macerata,043,Marche,Maschi,32021,31372.53717872646
+Macerata,043,Marche,Femmine,14047,28175.295009610592
+Pesaro e Urbino,041,Marche,Maschi,43515,33950.853613696425
+Pesaro e Urbino,041,Marche,Femmine,15468,29331.791698991467
+Roma,058,Lazio,Maschi,453007,42767.02785166675
+Roma,058,Lazio,Femmine,239899,40212.13895014152
+Frosinone,060,Lazio,Maschi,43476,31619.163101481277
+Frosinone,060,Lazio,Femmine,11610,30159.20947459087
+Latina,059,Lazio,Maschi,42423,33605.35054098013
+Latina,059,Lazio,Femmine,13864,34255.811742642814
+Rieti,057,Lazio,Maschi,8640,31713.061921296296
+Rieti,057,Lazio,Femmine,3552,28952.678772522522
+Viterbo,056,Lazio,Maschi,16878,31105.07512738476
+Viterbo,056,Lazio,Femmine,5584,28685.46901862464
+L'Aquila,066,Abruzzo,Maschi,22006,33667.380123602656
+L'Aquila,066,Abruzzo,Femmine,6862,31206.472894199942
+Chieti,069,Abruzzo,Maschi,46382,32989.2113966625
+Chieti,069,Abruzzo,Femmine,12589,29380.330208912543
+Pescara,068,Abruzzo,Maschi,25240,34392.75641838352
+Pescara,068,Abruzzo,Femmine,9176,30831.30568875327
+Teramo,067,Abruzzo,Maschi,29973,31056.267440696625
+Teramo,067,Abruzzo,Femmine,10550,27759.814976303318
+Campobasso,070,Molise,Maschi,14248,32060.550743964064
+Campobasso,070,Molise,Femmine,3838,30208.143303804063
+Isernia,094,Molise,Maschi,5320,28884.803947368422
+Isernia,094,Molise,Femmine,1794,28093.005016722407
+Napoli,063,Campania,Maschi,207096,33015.667531000116
+Napoli,063,Campania,Femmine,58643,31359.59490476272
+Avellino,064,Campania,Maschi,29632,30176.847225971924
+Avellino,064,Campania,Femmine,6894,28786.688569770817
+Benevento,062,Campania,Maschi,15716,29112.581891066427
+Benevento,062,Campania,Femmine,4569,27346.359159553514
+Caserta,061,Campania,Maschi,60369,29731.50901952989
+Caserta,061,Campania,Femmine,14107,28839.560218331324
+Salerno,065,Campania,Maschi,71561,29371.29936697363
+Salerno,065,Campania,Femmine,17813,28467.296974120025
+Bari,072,Puglia,Maschi,112476,32358.188680251787
+Bari,072,Puglia,Femmine,34413,30381.956905820476
+Barletta-Andria-Trani,110,Puglia,Maschi,19156,28890.87977657131
+Barletta-Andria-Trani,110,Puglia,Femmine,4903,27378.862941056497
+Brindisi,074,Puglia,Maschi,21913,32953.59558253092
+Brindisi,074,Puglia,Femmine,6259,29332.833679501517
+Foggia,071,Puglia,Maschi,31187,31103.44868053997
+Foggia,071,Puglia,Femmine,8461,30444.440137099635
+Lecce,075,Puglia,Maschi,44308,29322.934029972013
+Lecce,075,Puglia,Femmine,16663,27465.62377723099
+Taranto,073,Puglia,Maschi,37193,31701.47651439787
+Taranto,073,Puglia,Femmine,8921,28788.038448604417
+Potenza,076,Basilicata,Maschi,29548,29991.656220387165
+Potenza,076,Basilicata,Femmine,6580,28205.16337386018
+Matera,077,Basilicata,Maschi,12940,30308.50054095827
+Matera,077,Basilicata,Femmine,3376,28449.196090047393
+Catanzaro,079,Calabria,Maschi,18371,29624.85243046105
+Catanzaro,079,Calabria,Femmine,4684,29255.68274978651
+Cosenza,078,Calabria,Maschi,27608,29462.118951028686
+Cosenza,078,Calabria,Femmine,7364,29222.65793047257
+Crotone,101,Calabria,Maschi,6390,29879.275743348982
+Crotone,101,Calabria,Femmine,1618,28397.585290482075
+Reggio di Calabria,080,Calabria,Maschi,20420,31208.365768854066
+Reggio di Calabria,080,Calabria,Femmine,5527,30041.915143839335
+Vibo Valentia,102,Calabria,Maschi,5358,29326.167039940276
+Vibo Valentia,102,Calabria,Femmine,1294,28812.898763523957
+Palermo,082,Sicilia,Maschi,61096,32243.68547859107
+Palermo,082,Sicilia,Femmine,18612,32323.30383623469
+Agrigento,084,Sicilia,Maschi,13562,29864.913729538417
+Agrigento,084,Sicilia,Femmine,3405,29077.144493392072
+Caltanissetta,085,Sicilia,Maschi,13689,32351.898166410985
+Caltanissetta,085,Sicilia,Femmine,2506,29490.45011971269
+Catania,087,Sicilia,Maschi,64818,32487.056157240273
+Catania,087,Sicilia,Femmine,17645,31536.061943893455
+Enna,086,Sicilia,Maschi,5535,30025.476784101174
+Enna,086,Sicilia,Femmine,1891,29243.55790586991
+Messina,083,Sicilia,Maschi,28216,30628.580876098666
+Messina,083,Sicilia,Femmine,8445,29026.109058614566
+Ragusa,088,Sicilia,Maschi,17165,28402.854121759396
+Ragusa,088,Sicilia,Femmine,4575,27431.00043715847
+Siracusa,089,Sicilia,Maschi,22814,34948.17270097309
+Siracusa,089,Sicilia,Femmine,4494,30426.137294170003
+Trapani,081,Sicilia,Maschi,16658,29585.986553007562
+Trapani,081,Sicilia,Femmine,4285,28588.66137689615
+Sud Sardegna,111,Sardegna,Maschi,14559,30141.42317466859
+Sud Sardegna,111,Sardegna,Femmine,3939,28284.401370906322
+Cagliari,092,Sardegna,Maschi,40465,33337.95494872112
+Cagliari,092,Sardegna,Femmine,14383,30598.50448446082
+Nuoro,091,Sardegna,Maschi,9407,28677.2066546189
+Nuoro,091,Sardegna,Femmine,3226,27783.05052696838
+Oristano,095,Sardegna,Maschi,6477,29129.638104060523
+Oristano,095,Sardegna,Femmine,2417,28135.89408357468
+Sassari,090,Sardegna,Maschi,29569,30662.139166018464
+Sassari,090,Sardegna,Femmine,10577,29910.763259903564

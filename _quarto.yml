@@ -5,6 +5,7 @@ project:
     - "**/*.qmd"
   resources:
     - fonts/
+    - post/redditi/
 
 website:
   title: "Tommaso Rigon"

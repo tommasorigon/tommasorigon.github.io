@@ -5,6 +5,8 @@
 
 [Preprints]{.blue}
 
+1. Agnoletto, D., **Rigon, T.**, and Dunson, D. B. (2026+). Martingale posteriors for flexible regression via recursive least squares. Submitted.
+
 1. Stolf, F., **Rigon, T.**, and Dunson, D. B. (2026+). Bayesian inference on beta diversity via feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2608.11180) 
 
 
@@ -63,6 +65,8 @@
 1. **Rigon, T.**, Durante, D. and Torelli, N. (2019). Bayesian semiparametric modelling of contraceptive behavior in India via sequential logistic regressions. *Journal of the Royal Statistical Society Series A: Statistics in Society* **182**(1), 225--247. [[Link]](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12361) [[GitHub repository]](https://github.com/tommasorigon/India-SequentiaLogit).
 
 [Publications in monographs, volumes, and discussions]{.blue}
+
+1. Paganin, S., **Rigon, T.**, and Russo, M. (2026+). A discussion on: "Dependent Dirichlet processes" by MacEachern, S. N. in *Bayesian Analysis*, to appear. [[Link]](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Dependent-Dirichlet-Processes/10.1214/26-BA1610.full)
 
 1. Agnoletto, D., **Rigon, T.** and Dunson, D. B. (2025). Bayesian inference for generalized linear models via quasi-posteriors: an application to Eurasian Chaffinch abundance in Finland. In *Methodological and Applied Statistics and Demography III* (Pollice, A. and Mariani, P., editors). Springer. [[Link]](https://doi.org/10.1007/978-3-031-64431-3_1)
 

@@ -11,3 +11,11 @@ docs/links.html
 .Rhistory
 .RData
 *_cache/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz

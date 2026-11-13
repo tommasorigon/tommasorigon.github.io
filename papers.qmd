@@ -5,7 +5,7 @@
 
 [Preprints]{.blue}
 
-1. Agnoletto, D., **Rigon, T.**, and Dunson, D. B. (2026+). Martingale posteriors for flexible regression via recursive least squares. Submitted.
+1. Agnoletto, D., **Rigon, T.**, and Dunson, D. B. (2026+). Martingale posteriors for flexible regression via recursive least squares. Submitted. [[ArXiv]](https://arxiv.org/abs/2611.14719)
 
 1. Stolf, F., **Rigon, T.**, and Dunson, D. B. (2026+). Bayesian inference on beta diversity via feature allocation models. Submitted. [[ArXiv]](https://arxiv.org/abs/2608.11180) 
 
